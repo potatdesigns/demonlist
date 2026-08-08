@@ -9,30 +9,48 @@
    repeating the same expensive lookups. Two modes, meant to run on two
    different schedules (see the two workflow files in .github/workflows/):
 
-   - discover (default) — the expensive part: figure out *which* video is
-     the showcase for a level (search.list, 100 units/call). Staggered
-     and budget-capped (see below), because this is genuinely costly.
-     Verifier video *identity* is basically free (it's just read off
-     AREDL's own API), so that's resolved here too every time, cheaply.
-   - views — the cheap part: for every level that already has a verifier
-     and/or showcase video identified, refresh just their view counts
-     (videos.list, 1 unit — batched up to 50 ids per call, so refreshing
-     view counts for the *entire* ~1600-level list costs on the order of
-     60-70 units total). Meant to run frequently (see
+   - discover (default) — figures out *which* video is the showcase for
+     a level, and refreshes verifier-video identity/stats. Verifier
+     identity+stats are read straight off AREDL's own API + one
+     videos.list call per level (cheap: 1 unit, batched 50-at-a-time).
+     Showcases are resolved by cross-referencing a *channel video index*
+     (see "Channel index" below) rather than searching YouTube per
+     level — this used to be a search.list call per level (100 units
+     each, ~163,000 units to cover AREDL's full ~1600-level list, hence
+     the old staggering/budget dance). Now showcase lookup is a free
+     local map lookup once the index is built, so discover mode can
+     cover every level every run; only AREDL courtesy (MAX_LEVELS_PER_RUN)
+     and the shared YouTube-unit budget (for verifier stats + index
+     upkeep) still cap how much happens per run. In practice neither cap
+     binds anymore: this app only tracks the top LEVEL_LIST_SIZE (150)
+     of AREDL's list (see that constant below), so a run's queue is at
+     most 150 long — the entire tracked list gets refreshed every run.
+   - views — for every level that already has a verifier and/or showcase
+     identified, refresh just their view counts (videos.list, 1 unit —
+     batched up to 50 ids per call). Meant to run frequently (see
      .github/workflows/refresh-yt-views.yml, every 30 minutes) so the
-     numbers shown on the site are close to real-time, decoupled from how
-     slowly the expensive discovery crawl grinds through the list.
+     numbers shown on the site stay close to real-time. Also doubles as
+     the freshness source for verifier views between discover runs.
 
-   Staggering (discover mode): rather than bucketing levels by
-   day-of-week, this just always processes whichever levels have gone
-   longest without their showcase being (re-)discovered (never-discovered
-   first, then oldest-discoveredAt-first), capped by a per-run unit
-   budget safely under YouTube's 10,000/day default quota. Each level
-   costs ~102 units (one search.list call, bare level-ID query, plus a
-   couple 1-unit videos.list calls) — running discover mode daily at the
-   default 7000-unit budget covers roughly 68 new/re-checked levels per
-   day. Self-corrects if a run is skipped or the list grows; no
-   date-math bucketing needed.
+   Channel index (discover mode): for each trusted showcase channel
+   (SHOWCASE_CHANNELS below), the whole uploads history gets crawled via
+   its uploads playlist (channel ID with UC -> UU, no lookup needed) —
+   playlistItems.list (1 unit/50 videos) for the ID list, then
+   videos.list (1 unit/50 videos) for full title+description+stats.
+   Every video's title+description is scanned for standalone 5-10 digit
+   runs (candidate GD level IDs), and that's cached per video
+   (cache.channelIndex[channelId].videos), so re-matching against a
+   growing level list never needs to hit YouTube again. Once a channel's
+   full history is indexed (backfillDone), each later run only needs a
+   cheap "catch up to the newest known video" pass (cache.channelIndex[
+   channelId].newestVideoId is the watermark) — a handful of units per
+   channel, most days. Showcase-for-a-level is then: every indexed video
+   (across all channels) whose extracted ID set contains that level's
+   ID, highest-viewed *per channel*, then highest-viewed of those
+   per-channel picks wins overall — the same selection rule the old
+   per-level search used, just running against a complete local index
+   instead of whatever a single search.list call's top-50 happened to
+   surface.
 
    This is the only place that talks to YouTube's API at all — the site
    itself has no personal-key fallback (a genuinely global/shared cache
@@ -42,9 +60,10 @@
      YOUTUBE_API_KEY=... node scripts/refresh-yt-cache.mjs
      YOUTUBE_API_KEY=... YT_CACHE_MODE=views node scripts/refresh-yt-cache.mjs
    Env overrides (all optional):
-     YT_CACHE_MODE         default discover — "discover" or "views", see above
-     YT_CACHE_MAX_UNITS    default 7000     — discover mode: stop once this much of the day's quota would be spent
-     YT_CACHE_MAX_LEVELS   default 150      — discover mode: hard cap on levels processed per run regardless of unit math
+     YT_CACHE_MODE           default discover — "discover" or "views", see above
+     YT_CACHE_MAX_UNITS      default 7000     — discover mode: total quota-unit ceiling for the run (index upkeep + verifier stats)
+     YT_CACHE_CHANNEL_BUDGET default 4000     — discover mode: of that ceiling, how much the channel-index phase alone may spend (leaves room for verifier stats)
+     YT_CACHE_MAX_LEVELS     default 150      — discover mode: hard cap on levels processed per run (AREDL-courtesy, not quota-driven anymore)
    ===================================================================== */
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -55,10 +74,24 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CACHE_PATH = path.join(__dirname, '..', 'data', 'yt-cache.json');
 
 const AREDL_BASE = 'https://api.aredl.net/v2/api/aredl';
+// Keep in sync with CONFIG.LIST_SIZE in js/config.js and LEVEL_LIST_SIZE in
+// scripts/refresh-aredl-cache.mjs — this app only tracks the top this-many
+// AREDL positions, not the full ~1600-level list. Levels that fall out of
+// the top LEVEL_LIST_SIZE (positions shift as new levels get placed) are
+// pruned from the cache below rather than left to accumulate forever.
+const LEVEL_LIST_SIZE = 150;
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const MODE = process.env.YT_CACHE_MODE === 'views' ? 'views' : 'discover';
 const MAX_UNITS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_UNITS || '7000', 10);
+const CHANNEL_INDEX_BUDGET = parseInt(process.env.YT_CACHE_CHANNEL_BUDGET || '4000', 10);
 const MAX_LEVELS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_LEVELS || '150', 10);
+
+// Safety caps for the channel-index crawl (see refreshChannelIndex): bound
+// per-channel cost per run so one large/stale channel can't eat a whole
+// run's budget or (if its watermark video vanished) re-walk its entire
+// history every single run.
+const MAX_CATCHUP_PAGES = 10; // "catch up to newest known video" pass: 10 pages = 500 videos before giving up and resetting the watermark
+const MAX_BACKFILL_PAGES_PER_CHANNEL = 20; // "walk further into history" pass: 1000 videos/channel/run
 
 // Showcase channels this app trusts, resolved once (by hand, via
 // `GET /youtube/v3/channels?forHandle=<handle>` — 1 unit, not the
@@ -78,7 +111,6 @@ const SHOWCASE_CHANNELS = [
   { name: 'Newly Rated Extremes', handle: 'NewlyRatedExtremes', channelId: 'UClz5PjabyNVXnb0UsoQn0cw' },
   { name: 'MindCap', handle: 'mindcap.', channelId: 'UC5XddTLrnFtB1drApEfZzDQ' },
 ];
-const KNOWN_CHANNEL_IDS = new Set(SHOWCASE_CHANNELS.map(c => c.channelId));
 
 if (!YOUTUBE_API_KEY) {
   console.error('YOUTUBE_API_KEY is not set — nothing to do.');
@@ -91,7 +123,18 @@ function extractYouTubeId(url) {
   return m ? m[1] : null;
 }
 
+/** Standalone 5-10 digit runs (candidate GD level IDs) — not adjacent to further digits, so a 6-digit ID can't falsely match inside a longer number. */
+function extractLevelIds(text) {
+  return [...new Set((text || '').match(/(?<!\d)\d{5,10}(?!\d)/g) || [])];
+}
+
+/** A channel's uploads playlist ID is always its channel ID with the UC prefix swapped for UU. */
+function uploadsPlaylistId(channelId) {
+  return 'UU' + channelId.slice(2);
+}
+
 let unitsSpent = 0;
+let quotaHit = false;
 async function ytFetch(endpoint, params) {
   const url = new URL(`https://www.googleapis.com/youtube/v3/${endpoint}`);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
@@ -119,60 +162,13 @@ function statsFromItem(item) {
   };
 }
 
-async function getVideoStats(videoId) {
-  if (!videoId) return null;
-  const data = await ytFetch('videos', { part: 'snippet,statistics', id: videoId });
-  const item = data.items?.[0];
-  return item ? statsFromItem(item) : null;
-}
-
-/**
- * Find the showcase for a level: search for the bare numeric GD level ID
- * only (no other keywords at all), restricted to the known showcase
- * channels above. Any video whose title or description doesn't actually
- * contain the ID is discarded (search relevance isn't a guaranteed
- * substring match). Among what's left, the highest-viewed video *per
- * channel* is taken as that channel's showcase, then the highest-viewed
- * of those per-channel picks wins overall.
- *
- * The ID check is done against the description from the *videos.list*
- * call below, not search.list's own snippet.description — search.list
- * truncates descriptions to a short teaser (often cut off before
- * reaching a showcaser's "ID: 123456789" line further down), which was
- * silently discarding real matches. videos.list returns the full text.
- */
-async function findBestShowcase(levelId) {
-  if (!levelId) return null;
-  const idStr = String(levelId);
-
-  const data = await ytFetch('search', { part: 'snippet', q: idStr, type: 'video', maxResults: '50' });
-  const items = (data.items || []).filter(item => KNOWN_CHANNEL_IDS.has(item.snippet.channelId));
-  if (items.length === 0) return null;
-
-  const channelIdByVideo = new Map(items.map(item => [item.id.videoId, item.snippet.channelId]));
-
-  const ids = [...channelIdByVideo.keys()];
-  const statsData = await ytFetch('videos', { part: 'statistics,snippet', id: ids.join(',') });
-  const matched = (statsData.items || [])
-    .filter(item => item.snippet.title.includes(idStr) || (item.snippet.description || '').includes(idStr))
-    .map(statsFromItem);
-  if (matched.length === 0) return null;
-
-  const bestPerChannel = new Map();
-  for (const c of matched) {
-    const chId = channelIdByVideo.get(c.id);
-    const existing = bestPerChannel.get(chId);
-    if (!existing || c.viewCount > existing.viewCount) bestPerChannel.set(chId, c);
-  }
-
-  return [...bestPerChannel.values()].sort((a, b) => b.viewCount - a.viewCount)[0];
-}
-
 async function fetchAredlLevels() {
   const res = await fetch(`${AREDL_BASE}/levels`, { headers: { Accept: 'application/json' } });
   if (!res.ok) throw new Error(`AREDL returned ${res.status} for the level list`);
   const data = await res.json();
-  return (Array.isArray(data) ? data : (data.data || data.levels || [])).sort((a, b) => a.position - b.position);
+  return (Array.isArray(data) ? data : (data.data || data.levels || []))
+    .sort((a, b) => a.position - b.position)
+    .slice(0, LEVEL_LIST_SIZE);
 }
 
 async function fetchAredlVerificationVideo(levelId) {
@@ -204,40 +200,191 @@ function formatViews(n) {
   return (n / 1_000_000).toFixed(1) + 'M';
 }
 
-// --- discover mode: figure out which video is the showcase (expensive, staggered) ---
+// --- channel index: crawl each trusted channel's uploads once, then keep it caught up cheaply ---
+
+/**
+ * Bring one channel's index up to date: a cheap "catch up to the newest
+ * video we already know about" pass, plus (if the channel's full history
+ * hasn't been walked yet) a bounded step further into its backlog. Newly
+ * seen video IDs get their title+description+stats fetched (videos.list,
+ * batched 50) and their candidate level IDs extracted and cached — so
+ * later runs never need to re-fetch or re-scan a video once it's indexed.
+ */
+async function refreshChannelIndex(channel, entry, budget) {
+  const playlistId = uploadsPlaylistId(channel.channelId);
+  const newIds = [];
+
+  if (entry.newestVideoId) {
+    let pageToken;
+    for (let page = 0; page < MAX_CATCHUP_PAGES && unitsSpent < budget; page++) {
+      const data = await ytFetch('playlistItems', { part: 'contentDetails', playlistId, maxResults: '50', ...(pageToken ? { pageToken } : {}) });
+      const ids = (data.items || []).map(i => i.contentDetails.videoId);
+      const idx = ids.indexOf(entry.newestVideoId);
+      if (idx !== -1) { newIds.push(...ids.slice(0, idx)); break; }
+      newIds.push(...ids);
+      if (!data.nextPageToken) break;
+      pageToken = data.nextPageToken;
+    }
+    // Not found within the cap (video deleted/private, or >500 new uploads since last run) —
+    // fall through and let the watermark reset below rather than re-walking the whole channel.
+  }
+  if (newIds.length) entry.newestVideoId = newIds[0];
+
+  if (!entry.backfillDone) {
+    let pageToken = entry.oldestPageToken || undefined;
+    for (let page = 0; page < MAX_BACKFILL_PAGES_PER_CHANNEL && unitsSpent < budget; page++) {
+      const data = await ytFetch('playlistItems', { part: 'contentDetails', playlistId, maxResults: '50', ...(pageToken ? { pageToken } : {}) });
+      const ids = (data.items || []).map(i => i.contentDetails.videoId);
+      if (!entry.newestVideoId && ids.length) entry.newestVideoId = ids[0]; // very first run: page 1 is the newest video
+      newIds.push(...ids);
+      if (!data.nextPageToken) { entry.backfillDone = true; entry.oldestPageToken = null; break; }
+      entry.oldestPageToken = pageToken = data.nextPageToken;
+    }
+  }
+
+  const idsToFetch = [...new Set(newIds)].filter(id => !entry.videos[id]);
+  const now = new Date().toISOString();
+  for (let i = 0; i < idsToFetch.length && unitsSpent < budget; i += 50) {
+    const chunk = idsToFetch.slice(i, i + 50);
+    const data = await ytFetch('videos', { part: 'snippet,statistics', id: chunk.join(',') });
+    for (const item of data.items || []) {
+      entry.videos[item.id] = {
+        title: item.snippet.title,
+        channel: item.snippet.channelTitle,
+        viewCount: parseInt(item.statistics.viewCount || '0', 10),
+        levelIds: extractLevelIds(`${item.snippet.title}\n${item.snippet.description || ''}`),
+        checkedAt: now,
+      };
+    }
+  }
+
+  console.log(`  ${channel.name}: +${idsToFetch.length} new video(s) indexed (${Object.keys(entry.videos).length} total, backfill ${entry.backfillDone ? 'complete' : 'in progress'}).`);
+}
+
+async function updateChannelIndex(cache) {
+  const budget = Math.min(MAX_UNITS_PER_RUN, CHANNEL_INDEX_BUDGET);
+  for (const channel of SHOWCASE_CHANNELS) {
+    if (quotaHit || unitsSpent >= budget) break;
+    if (!cache.channelIndex[channel.channelId]) {
+      cache.channelIndex[channel.channelId] = { name: channel.name, newestVideoId: null, oldestPageToken: null, backfillDone: false, videos: {} };
+    }
+    try {
+      await refreshChannelIndex(channel, cache.channelIndex[channel.channelId], budget);
+    } catch (e) {
+      if (e.quota) { console.log(`Quota hit indexing ${channel.name} — stopping channel-index phase.`); quotaHit = true; break; }
+      console.warn(`  ${channel.name}: index refresh failed: ${e.message}`);
+    }
+  }
+}
+
+/** levelId (string) -> every indexed video across all channels whose title/description contains it. */
+function buildLevelIndex(cache) {
+  const index = new Map();
+  for (const channel of SHOWCASE_CHANNELS) {
+    const entry = cache.channelIndex[channel.channelId];
+    if (!entry) continue;
+    for (const [videoId, v] of Object.entries(entry.videos)) {
+      for (const levelId of v.levelIds) {
+        if (!index.has(levelId)) index.set(levelId, []);
+        index.get(levelId).push({
+          id: videoId,
+          url: `https://www.youtube.com/watch?v=${videoId}`,
+          title: v.title,
+          channel: v.channel,
+          viewCount: v.viewCount,
+          channelId: channel.channelId,
+        });
+      }
+    }
+  }
+  return index;
+}
+
+/** Highest-viewed video per channel among candidates for this level, then the highest-viewed of those per-channel picks. */
+function bestShowcaseFor(levelId, levelIndex) {
+  const candidates = levelIndex.get(String(levelId));
+  if (!candidates || candidates.length === 0) return null;
+
+  const bestPerChannel = new Map();
+  for (const c of candidates) {
+    const existing = bestPerChannel.get(c.channelId);
+    if (!existing || c.viewCount > existing.viewCount) bestPerChannel.set(c.channelId, c);
+  }
+
+  const { channelId, ...best } = [...bestPerChannel.values()].sort((a, b) => b.viewCount - a.viewCount)[0];
+  return best;
+}
+
+// --- discover mode: refresh the channel index, then match + refresh verifiers for every level (staggered by AREDL-courtesy cap) ---
 async function runDiscover() {
   const [levels, cache] = await Promise.all([fetchAredlLevels(), loadExistingCache()]);
+  if (!cache.channelIndex) cache.channelIndex = {};
   console.log(`AREDL list: ${levels.length} levels. Cache currently has ${Object.keys(cache.levels).length} entries.`);
 
-  const neverDiscovered = levels.filter(l => !cache.levels[l.id]);
-  const stale = levels
-    .filter(l => cache.levels[l.id])
-    .sort((a, b) => new Date(cache.levels[a.id].discoveredAt) - new Date(cache.levels[b.id].discoveredAt));
+  // Drop cache entries for levels that fell out of the top LEVEL_LIST_SIZE
+  // (position shifted below the cutoff) — otherwise they'd sit in
+  // data/yt-cache.json forever, un-refreshed and unused, defeating the
+  // point of capping the list in the first place.
+  const currentIds = new Set(levels.map(l => String(l.id)));
+  let pruned = 0;
+  for (const id of Object.keys(cache.levels)) {
+    if (!currentIds.has(id)) { delete cache.levels[id]; pruned++; }
+  }
+  if (pruned) console.log(`Pruned ${pruned} level(s) that fell out of the top ${LEVEL_LIST_SIZE}.`);
 
-  const queue = [...neverDiscovered, ...stale];
-  console.log(`${neverDiscovered.length} never discovered, ${stale.length} due for a re-check (oldest first).`);
-  console.log(`Budget: ${MAX_UNITS_PER_RUN} units / ${MAX_LEVELS_PER_RUN} levels this run.`);
+  try {
+    console.log('Updating channel index...');
+    await updateChannelIndex(cache);
+    const totalIndexed = Object.values(cache.channelIndex).reduce((n, c) => n + Object.keys(c.videos).length, 0);
+    console.log(`Channel index: ${totalIndexed} videos across ${SHOWCASE_CHANNELS.length} channels (${unitsSpent}u so far).`);
 
-  let processed = 0;
-  let quotaHit = false;
+    const levelIndex = buildLevelIndex(cache);
 
-  for (const level of queue) {
-    if (processed >= MAX_LEVELS_PER_RUN) { console.log('Hit MAX_LEVELS_PER_RUN, stopping.'); break; }
-    // A level costs ~102 units (one search.list call + a couple 1u videos.list calls) — stop before risking a mid-level failure that burns budget without saving a result.
-    if (unitsSpent + 102 > MAX_UNITS_PER_RUN) { console.log('Hit the unit budget, stopping.'); break; }
+    const neverDiscovered = levels.filter(l => !cache.levels[l.id]);
+    const stale = levels
+      .filter(l => cache.levels[l.id])
+      .sort((a, b) => new Date(cache.levels[a.id].discoveredAt) - new Date(cache.levels[b.id].discoveredAt));
+    const queue = [...neverDiscovered, ...stale].slice(0, MAX_LEVELS_PER_RUN);
+    console.log(`${neverDiscovered.length} never discovered, ${stale.length} due for a re-check. Processing ${queue.length} levels this run.`);
 
-    try {
-      const videoUrl = await fetchAredlVerificationVideo(level.id);
+    // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level.
+    const videoUrlByLevel = new Map();
+    for (const level of queue) {
+      try {
+        videoUrlByLevel.set(level.id, await fetchAredlVerificationVideo(level.id));
+      } catch (e) {
+        console.warn(`  skipped AREDL lookup for "${level.name}": ${e.message}`);
+      }
+    }
 
-      // Sequential, not Promise.all — a quota error from either call must
-      // abort the whole run immediately (see the outer catch below) rather
-      // than being swallowed as "checked, nothing found", which would
-      // permanently (until the next staleness cycle) write a false
-      // negative for every remaining level once quota runs out mid-run.
-      const verifier = videoUrl ? await getVideoStats(extractYouTubeId(videoUrl)) : null;
-      const showcase = videoUrl ? await findBestShowcase(level.level_id) : null;
-      const now = new Date().toISOString();
+    // Batch-fetch verifier video stats, 50 at a time — same trick as views mode.
+    const verifierIds = [...new Set([...videoUrlByLevel.values()].map(extractYouTubeId).filter(Boolean))];
+    const verifierStats = new Map();
+    const attemptedVerifierIds = new Set();
+    for (let i = 0; i < verifierIds.length; i += 50) {
+      if (quotaHit) break;
+      if (unitsSpent + 1 > MAX_UNITS_PER_RUN) { console.log('Hit the unit budget fetching verifier stats, stopping early.'); break; }
+      const chunk = verifierIds.slice(i, i + 50);
+      chunk.forEach(id => attemptedVerifierIds.add(id));
+      try {
+        const data = await ytFetch('videos', { part: 'snippet,statistics', id: chunk.join(',') });
+        for (const item of data.items || []) verifierStats.set(item.id, statsFromItem(item));
+      } catch (e) {
+        if (e.quota) { console.log('Quota hit fetching verifier stats — stopping.'); quotaHit = true; break; }
+        console.warn(`  verifier stats batch failed: ${e.message}`);
+      }
+    }
 
+    const now = new Date().toISOString();
+    let processed = 0;
+    for (const level of queue) {
+      if (!videoUrlByLevel.has(level.id)) continue; // AREDL lookup failed above
+      const videoUrl = videoUrlByLevel.get(level.id);
+      const verifierId = videoUrl ? extractYouTubeId(videoUrl) : null;
+      if (verifierId && !attemptedVerifierIds.has(verifierId)) continue; // quota/budget ran out before we could check this one — retry next run rather than recording a false negative
+
+      const verifier = verifierId ? (verifierStats.get(verifierId) || null) : null;
+      const showcase = bestShowcaseFor(level.level_id, levelIndex);
       cache.levels[level.id] = {
         name: level.name,
         position: level.position,
@@ -246,16 +393,15 @@ async function runDiscover() {
         discoveredAt: now,
       };
       processed++;
-      console.log(`  #${level.position} ${level.name} — verifier ${verifier ? formatViews(verifier.viewCount) : '—'}, showcase ${showcase ? `${showcase.channel} (${formatViews(showcase.viewCount)})` : 'none found'} (${unitsSpent}u so far)`);
-    } catch (e) {
-      if (e.quota) { console.log(`Quota hit on "${level.name}" — stopping this run without recording a (false) result for it.`); quotaHit = true; break; }
-      console.warn(`  skipped "${level.name}": ${e.message}`);
+      console.log(`  #${level.position} ${level.name} — verifier ${verifier ? formatViews(verifier.viewCount) : '—'}, showcase ${showcase ? `${showcase.channel} (${formatViews(showcase.viewCount)})` : 'none found'}`);
     }
-  }
 
-  await saveCache(cache);
-  const remaining = levels.length - Object.keys(cache.levels).length;
-  console.log(`Done. Processed ${processed} levels this run, ${unitsSpent} units spent${quotaHit ? ' (stopped early: quota)' : ''}. ${remaining} levels still never-discovered.`);
+    const remaining = levels.length - Object.keys(cache.levels).length;
+    console.log(`Done. Processed ${processed} levels this run, ${unitsSpent} units spent${quotaHit ? ' (stopped early: quota)' : ''}. ${remaining} levels still never-discovered.`);
+  } finally {
+    // Always persist whatever progress was made (channel index + any levels processed), even on quota/error.
+    await saveCache(cache);
+  }
 }
 
 // --- views mode: refresh view counts only, for everything already discovered (cheap, frequent) ---

@@ -33,6 +33,12 @@
    needed here — corsFetchJson() is still used for resilience against
    transient network hiccups, but it'll almost always take the direct
    path.
+
+   This app only tracks the top CONFIG.LIST_SIZE (150) of AREDL's ~1600
+   levels — see the comment on CONFIG.LIST_SIZE in config.js for why and
+   where that cap is applied. fetchFullList() below still fetches/sorts
+   AREDL's response the same way; the cap is a `.slice(0, CONFIG.LIST_SIZE)`
+   at the end of both fetchFromSnapshot() and fetchFromLiveApi().
    ===================================================================== */
 
 const AredlAPI = (() => {
@@ -118,7 +124,7 @@ const AredlAPI = (() => {
       if (!res.ok) return null;
       const data = await res.json();
       const list = Array.isArray(data?.levels) ? data.levels : null;
-      return list && list.length ? list.slice().sort((a, b) => a.position - b.position) : null;
+      return list && list.length ? list.slice().sort((a, b) => a.position - b.position).slice(0, CONFIG.LIST_SIZE) : null;
     } catch {
       return null; // missing file, bad JSON, whatever — fall back to the live API
     }
@@ -137,7 +143,11 @@ const AredlAPI = (() => {
     if (!Array.isArray(list)) {
       throw new Error('AREDL returned an unexpected response shape for the level list — try again in a moment.');
     }
-    return list.slice().sort((a, b) => a.position - b.position);
+    // Same top-CONFIG.LIST_SIZE cap the snapshot is built with (see
+    // scripts/refresh-aredl-cache.mjs) — this path only runs if the
+    // snapshot is missing/unreachable, and should never show more than
+    // the snapshot would.
+    return list.slice().sort((a, b) => a.position - b.position).slice(0, CONFIG.LIST_SIZE);
   }
 
   async function fetchListed({ limit = CONFIG.PAGE_SIZE, offset = 0 } = {}) {

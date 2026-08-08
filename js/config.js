@@ -18,6 +18,22 @@ const CONFIG = {
   // page 1 / page 2, which is what the two list-filter buttons jump to.
   PAGE_SIZE: 75,
 
+  // Only the top LIST_SIZE positions (by AREDL's own ranking) are fetched,
+  // cached, and displayed at all — AREDL's live list is much longer
+  // (~1600 rated extreme demons and growing), but this app only tracks
+  // the current top slice, sized to land exactly on the classic Main
+  // List (1-75) + Extended List (76-150) split PAGE_SIZE's comment above
+  // describes. Applied at the source: scripts/refresh-aredl-cache.mjs
+  // only writes the top LIST_SIZE levels to data/aredl-cache.json, and
+  // scripts/refresh-yt-cache.mjs prunes data/yt-cache.json to match
+  // (dropping levels that fall out of the top LIST_SIZE as positions
+  // shift) — so the "1600 levels" management burden this was added to
+  // avoid never actually lands in either cache file, not just hidden
+  // client-side. AredlAPI.fetchFromLiveApi()'s fallback path (used only
+  // if the snapshot is missing) also slices to this, so the live-API
+  // fallback can't show more than the cached snapshot ever would.
+  LIST_SIZE: 150,
+
   // Public passthrough CORS proxies, tried in order, used only when a
   // direct fetch() fails outright (network/CORS block) — see
   // corsFetchJson() in utils.js. These proxies always answer with HTTP

@@ -1,6 +1,8 @@
 # Demonlist
 
-An AREDL-powered extreme demon list for Geometry Dash. Pure HTML/CSS/JS,
+An AREDL-powered extreme demon list for Geometry Dash, showing the **top 150** — Main List
+(#1-75) + Extended List (#76-150) — rather than AREDL's full ~1600-level rated list (see
+[Reducing to a top-150 list](#reducing-to-a-top-150-list) below for why and how). Pure HTML/CSS/JS,
 no build step for the site itself — open `index.html` in a browser or host the folder anywhere static.
 (A couple of small Node scripts + scheduled GitHub Actions maintain a few JSON files in the
 background — see [Shared showcase/view-count cache](#shared-showcaseview-count-cache) and
@@ -20,7 +22,8 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
 
 ## What it does
 
-- **List page (`index.html`)** — pulls the full, live, currently-ranked AREDL list (~1600 levels)
+- **List page (`index.html`)** — pulls the top 150 of AREDL's live, currently-ranked list (AREDL
+  itself has ~1600 rated extreme demons; see [Reducing to a top-150 list](#reducing-to-a-top-150-list))
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
   creator(s), publisher, verifier, and — side by side — the verifier video's view count vs. the
   most-viewed *same-level* showcase's view count, with the higher number highlighted in gold.
@@ -33,14 +36,42 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   video, and an embedded player for the auto-discovered top showcase, with both view counts
   shown for direct comparison.
 
+## Reducing to a top-150 list
+
+This app only tracks AREDL's top `CONFIG.LIST_SIZE` positions (150, matching the classic Main
+List #1-75 + Extended List #76-150 split) rather than AREDL's full, ever-growing rated-extreme-
+demon list (~1600 entries and counting). AREDL was kept as the data source — Pointercrate was
+considered, but its own `/demons/listed/` endpoint isn't actually capped at 150 either anymore
+(confirmed live: positions well past 600 still come back), and it sits behind a Cloudflare
+managed challenge that hard-blocks plain server-to-server requests, which would have made every
+scheduled cache refresh depend on a public CORS proxy's uptime. AREDL has neither problem, so
+switching data sources wouldn't have bought anything — capping AREDL's own list does.
+
+The cap is applied at the source, not just hidden in the UI, so the "managing 1600 levels" burden
+this was added to avoid doesn't resurface in the cache files either:
+
+- **`scripts/refresh-aredl-cache.mjs`** fetches AREDL's full list, sorts by position, and writes
+  only the top `LEVEL_LIST_SIZE` (150) to `data/aredl-cache.json` — that file never has more than
+  150 entries.
+- **`scripts/refresh-yt-cache.mjs`** does the same for its own AREDL fetch, and additionally
+  *prunes* `data/yt-cache.json` on every `discover` run: any level that previously made the top
+  150 but has since been pushed out (new levels get inserted above existing ones, shifting
+  positions down) has its cached entry deleted, rather than sitting there forever unused.
+- **`js/api-aredl.js`**'s live-API fallback (used only if `data/aredl-cache.json` is missing or
+  fails to load) applies the same `.slice(0, CONFIG.LIST_SIZE)`, so it can never show more than
+  the cached snapshot would.
+
+`CONFIG.LIST_SIZE` in `js/config.js` and the matching `LEVEL_LIST_SIZE` constants in both scripts
+are the single knob if you ever want a different cutoff — keep all three in sync.
+
 ## Shared showcase/view-count cache
 
 View counts and "find the showcase on YouTube" both need YouTube's Data API, which is
 quota-limited (commonly 10,000 units/day, and a `search.list` call costs 100 of those; newer
 projects can start out with a much lower search-specific sub-limit until Google raises it).
-With ~1600 levels, every visitor doing their own lookups would burn through that fast and
-repeat the exact same searches everyone else already ran — so there's no personal-key option
-here at all. `data/yt-cache.json` is a **shared, precomputed cache** committed to this repo,
+Even tracking only the top 150 (see [Reducing to a top-150 list](#reducing-to-a-top-150-list)),
+every visitor doing their own lookups would burn through that fast and repeat the exact same
+searches everyone else already ran — so there's no personal-key option here at all. `data/yt-cache.json` is a **shared, precomputed cache** committed to this repo,
 populated by [`scripts/refresh-yt-cache.mjs`](scripts/refresh-yt-cache.mjs) on two separate
 schedules (see below), and the site just fetches that one static JSON file
 (`js/shared-cache.js`) — **zero YouTube API calls happen in the browser, ever.** A level whose
@@ -49,19 +80,26 @@ showcase hasn't been found yet just shows "Not cached yet".
 The script runs in two modes, split because *which video is the showcase* and *how many views
 it has* have very different costs and staleness needs:
 
-- **`discover`** (expensive, staggered) — figures out which video is the showcase for a level.
-  Processes whichever levels have gone longest without a check (never-checked first, then
-  oldest-`discoveredAt`-first), capped by a per-run unit budget (`YT_CACHE_MAX_UNITS`, default
-  7000) safely under the daily quota. Each level costs ~102 units (one `search.list` call —
-  see the algorithm below — plus a couple 1-unit `videos.list` calls), so at the default budget
-  and the standard 10,000-unit quota that's roughly **68 new levels per day**, meaning a full
-  first pass over ~1600 levels takes **about 3-4 weeks** — a hard limit of YouTube's quota, not
-  something the staggering can shortcut. If your key's search quota is capped even lower (some
-  newer projects start around 100 units/day — effectively one search call total), coverage will
-  be much slower until Google raises it; the script always stops cleanly on a quota error
-  rather than writing bad data. Runs daily
-  ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a run
-  is skipped or the list grows.
+- **`discover`** — figures out which video is the showcase for a level, by cross-referencing a
+  local **channel video index** (`cache.channelIndex`) instead of searching YouTube per level.
+  For each trusted showcase channel (see the algorithm below), the script walks its *uploads
+  playlist* (`playlistItems.list`, 1 unit/50 videos — the playlist ID is just the channel ID with
+  `UC` swapped for `UU`, no lookup needed) and fetches full title+description+stats for every new
+  video (`videos.list`, 1 unit/50), extracting candidate GD level IDs (standalone 5-10 digit runs)
+  from the text once and caching that per video. A channel only needs its *entire* history walked
+  once (`backfillDone`); after that, each run just catches up to the newest video it already knows
+  about (`newestVideoId`) — a handful of units per channel, most days. Indexing an entire channel's
+  history from scratch costs on the order of a few hundred units total across all 9 channels — far
+  cheaper than the old per-level `search.list` approach (100 units *per level*, ~163,000 units to
+  cover the full list). Once the index exists, showcase-matching for every level is a free local
+  map lookup, so `discover` covers every level every run; only a per-run level cap
+  (`YT_CACHE_MAX_LEVELS`, default 150, now just AREDL courtesy rather than quota-driven) and the
+  overall unit ceiling (`YT_CACHE_MAX_UNITS`, default 7000, split against `YT_CACHE_CHANNEL_BUDGET`
+  for the indexing phase) still bound a single run. The script always stops cleanly on a quota
+  error rather than writing bad data — a level whose verifier videos.list call got cut off by
+  quota is left for the next run instead of being recorded with a false "no verifier found". Runs
+  daily ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a
+  run is skipped or the list grows.
 - **`views`** (cheap, frequent) — once a level has a verifier/showcase video *identified*, its
   view count is refreshed independently of the (slow) discovery cycle: one batched
   `videos.list` call per 50 videos, so refreshing the *entire* list's view counts costs on the
@@ -96,18 +134,17 @@ or `YOUTUBE_API_KEY=... YT_CACHE_MODE=views node scripts/refresh-yt-cache.mjs` (
 
 ### Showcase-matching algorithm
 
-`findBestShowcase()` in the script:
+`bestShowcaseFor()` in the script, run against the channel index described above:
 
-1. Search YouTube for **the bare numeric GD level ID and nothing else** — no level name, no
-   "showcase"/"GD" keywords.
-2. Keep only results from a fixed allowlist of known showcase channels (see
-   `SHOWCASE_CHANNELS` in the script) — everyone else is discarded regardless of views. Nothing
-   is excluded by title keyword (earlier versions filtered out titles containing
-   "verification", but plenty of legitimate showcases use words like "verified" too, so that's
-   gone).
-3. Of what's left, drop anything where the ID doesn't actually appear in the title or
-   description (search relevance isn't a guaranteed substring match).
-4. Take the highest-viewed video *per channel*, then the highest-viewed of those across
+1. The candidate pool is every video from a fixed allowlist of known showcase channels (see
+   `SHOWCASE_CHANNELS` in the script) — there's no search step, so nothing outside the allowlist
+   is ever considered, and nothing is excluded by title keyword (earlier versions filtered out
+   titles containing "verification", but plenty of legitimate showcases use words like "verified"
+   too, so that's gone).
+2. A video counts as a candidate for a level if that level's numeric ID appears as a standalone
+   5-10 digit run (not glued to other digits) anywhere in its title or description — extracted
+   once per video when it's indexed, not re-scanned per level.
+3. Take the highest-viewed video *per channel*, then the highest-viewed of those across
    channels is the winner.
 
 The allowlist is currently: Nexus, Neiro, Viprin, Just a GD Player, IcedCave, fnm04, zof,
@@ -117,17 +154,19 @@ the search quota — see `SHOWCASE_CHANNELS` in the script). Note MindCap's hand
 
 ## Shared AREDL level-list cache
 
-Separately from the YouTube data, `data/aredl-cache.json` is a snapshot of AREDL's own
-`GET /levels` (the bare list — id, name, position, level_id, points, etc.), refreshed hourly by
+Separately from the YouTube data, `data/aredl-cache.json` is a snapshot of the top `LEVEL_LIST_SIZE`
+(150) of AREDL's own `GET /levels` (the bare list — id, name, position, level_id, points, etc.;
+see [Reducing to a top-150 list](#reducing-to-a-top-150-list) for why it's capped there rather
+than the full list), refreshed hourly by
 [`scripts/refresh-aredl-cache.mjs`](scripts/refresh-aredl-cache.mjs) /
 [`refresh-aredl-cache.yml`](.github/workflows/refresh-aredl-cache.yml). `AredlAPI.fetchFullList()`
 (`js/api-aredl.js`) reads that snapshot first and only falls back to a live AREDL call if it's
 missing or fails to load — so instead of every single visitor's page load independently
-re-fetching the same ~1600-entry list from AREDL, there's one shared, periodically-refreshed
-copy. This needs no API key (AREDL's list endpoint is public and free) and no budget/staggering
-logic — it's cheap enough to just refresh the whole thing every run. Hourly is comfortably
-ahead of how often levels actually get reordered/added ("every day or so"); nothing about level
-*position* changes faster than that in practice.
+re-fetching AREDL's full ~1600-entry list, there's one shared, periodically-refreshed, already-
+trimmed-to-150 copy. This needs no API key (AREDL's list endpoint is public and free) and no
+budget/staggering logic — it's cheap enough to just refresh the whole thing every run. Hourly is
+comfortably ahead of how often levels actually get reordered/added ("every day or so"); nothing
+about level *position* changes faster than that in practice.
 
 This only covers the base list. Per-level detail (verification video, publisher, creators) —
 which needs a separate `GET /levels/{id}` call per level — is unrelated and still fetched
@@ -185,9 +224,11 @@ and live responses. Two shape quirks worth knowing if you're touching either fil
   hydrated with those once they scroll into view — see `AredlAPI.fetchExtras()` and the
   `hydrateCards()`/`hydrateAredlExtrasIfNeeded()` flow in `js/list.js`.
 - `GET /levels` accepts `limit`/`offset` but silently ignores them — it always returns every
-  level (~1600 of them). `api-aredl.js` reads that full list from the hourly-refreshed
-  `data/aredl-cache.json` snapshot (falling back to a live call if it's missing), caches it in
-  memory for the session, and paginates/searches client-side from there.
+  level (~1600 of them). `api-aredl.js` reads the hourly-refreshed `data/aredl-cache.json`
+  snapshot instead (already trimmed to the top 150, see
+  [Reducing to a top-150 list](#reducing-to-a-top-150-list)), falling back to a live call sliced
+  the same way if the snapshot is missing, caches it in memory for the session, and
+  paginates/searches client-side from there.
 
 If AREDL changes their API shape in the future, that GitHub repo's `src/aredl/levels/` and
 `src/aredl/records/` directories are the place to re-check field names against.
