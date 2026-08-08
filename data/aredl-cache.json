@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T17:19:39.117Z",
+  "generatedAt": "2026-08-08T18:20:03.711Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1160,9 +1160,10 @@
       "tags": [
         "1.9PS",
         "Long",
-        "High CPS",
-        "Learny",
         "Timings",
+        "Learny",
+        "Memory",
+        "High CPS",
         "Ship",
         "UFO"
       ],
@@ -12024,7 +12025,7 @@
       "song": 63082,
       "edel_enjoyment": 60.90909091,
       "is_edel_pending": false,
-      "gddl_tier": 27.956756756756757,
+      "gddl_tier": 27.956989247311828,
       "nlw_tier": "Remorseless"
     },
     {
@@ -15871,7 +15872,7 @@
       "song": 508568,
       "edel_enjoyment": 65.97402597,
       "is_edel_pending": false,
-      "gddl_tier": 25.88105726872247,
+      "gddl_tier": 25.88157894736842,
       "nlw_tier": "Insane"
     },
     {
@@ -19314,7 +19315,7 @@
       "song": 467339,
       "edel_enjoyment": 54.37662338,
       "is_edel_pending": false,
-      "gddl_tier": 23.97891891891892,
+      "gddl_tier": 23.979492714517,
       "nlw_tier": "Very Hard"
     },
     {
@@ -20555,7 +20556,7 @@
       "song": 1218829,
       "edel_enjoyment": 67.28571429,
       "is_edel_pending": false,
-      "gddl_tier": 23.08894878706199,
+      "gddl_tier": 23.139107611548557,
       "nlw_tier": "Hard"
     },
     {
@@ -21793,7 +21794,7 @@
       "song": 649922,
       "edel_enjoyment": 68.76811594,
       "is_edel_pending": false,
-      "gddl_tier": 23.0125,
+      "gddl_tier": 23.012345679012345,
       "nlw_tier": "Hard"
     },
     {
@@ -22915,7 +22916,7 @@
       "song": 467339,
       "edel_enjoyment": 51.04545455,
       "is_edel_pending": false,
-      "gddl_tier": 23.036458333333332,
+      "gddl_tier": 23.03639514731369,
       "nlw_tier": "Hard"
     },
     {
@@ -22937,7 +22938,7 @@
       "song": 663969,
       "edel_enjoyment": 85.91666667,
       "is_edel_pending": false,
-      "gddl_tier": 21.8,
+      "gddl_tier": 21.9,
       "nlw_tier": "Fuck"
     },
     {
@@ -25094,7 +25095,7 @@
       "song": 774063,
       "edel_enjoyment": 65.68831169,
       "is_edel_pending": false,
-      "gddl_tier": 22.5625,
+      "gddl_tier": 22.565891472868216,
       "nlw_tier": "Medium"
     },
     {
@@ -29575,7 +29576,7 @@
       "song": 1142765,
       "edel_enjoyment": 65.26315789,
       "is_edel_pending": false,
-      "gddl_tier": 21.444444444444443,
+      "gddl_tier": 21.4,
       "nlw_tier": "Easy"
     },
     {
@@ -30286,7 +30287,7 @@
       "song": 114645,
       "edel_enjoyment": 70.02597403,
       "is_edel_pending": false,
-      "gddl_tier": 21.68838028169014,
+      "gddl_tier": 21.687170474516694,
       "nlw_tier": "Easy"
     },
     {
@@ -30697,7 +30698,7 @@
       "song": null,
       "edel_enjoyment": 66.93617021,
       "is_edel_pending": false,
-      "gddl_tier": 21.457091237579043,
+      "gddl_tier": 21.455035971223023,
       "nlw_tier": "Beginner"
     },
     {
@@ -31267,7 +31268,7 @@
       "song": 672264,
       "edel_enjoyment": 63.04545455,
       "is_edel_pending": false,
-      "gddl_tier": 21.203742203742205,
+      "gddl_tier": 21.20249221183801,
       "nlw_tier": "Beginner"
     },
     {
@@ -31674,7 +31675,7 @@
       "song": 688899,
       "edel_enjoyment": 68.42857143,
       "is_edel_pending": false,
-      "gddl_tier": 20.91031390134529,
+      "gddl_tier": 20.910714285714285,
       "nlw_tier": "Beginner"
     },
     {
@@ -31819,7 +31820,7 @@
       "song": 952053,
       "edel_enjoyment": 67.55882353,
       "is_edel_pending": false,
-      "gddl_tier": 21.266666666666666,
+      "gddl_tier": 21.25,
       "nlw_tier": "Beginner"
     },
     {
@@ -32927,7 +32928,7 @@
       "song": 1165027,
       "edel_enjoyment": 62.03896104,
       "is_edel_pending": false,
-      "gddl_tier": 21,
+      "gddl_tier": 20.994011976047904,
       "nlw_tier": "Beginner"
     },
     {
@@ -33312,7 +33313,7 @@
       "song": 693041,
       "edel_enjoyment": 69.75373134,
       "is_edel_pending": false,
-      "gddl_tier": 21.02928870292887,
+      "gddl_tier": 21.033333333333335,
       "nlw_tier": "Beginner"
     },
     {
@@ -34204,7 +34205,7 @@
       "song": 467339,
       "edel_enjoyment": 49.7987013,
       "is_edel_pending": false,
-      "gddl_tier": 20.915708812260537,
+      "gddl_tier": 20.915805587447377,
       "nlw_tier": "Beginner"
     },
     {
@@ -34494,7 +34495,7 @@
       "song": 1270724,
       "edel_enjoyment": 79.29310345,
       "is_edel_pending": false,
-      "gddl_tier": 20.725806451612904,
+      "gddl_tier": 20.73015873015873,
       "nlw_tier": "Beginner"
     },
     {
@@ -34562,7 +34563,7 @@
       "song": 136501,
       "edel_enjoyment": 78.0625,
       "is_edel_pending": false,
-      "gddl_tier": 20.8125,
+      "gddl_tier": 20.848484848484848,
       "nlw_tier": "Beginner"
     },
     {
@@ -36031,7 +36032,7 @@
       "song": null,
       "edel_enjoyment": 76.94805195,
       "is_edel_pending": false,
-      "gddl_tier": 20.336263736263735,
+      "gddl_tier": 20.335526315789473,
       "nlw_tier": "Beginner"
     },
     {
@@ -36101,7 +36102,7 @@
       "song": 660937,
       "edel_enjoyment": 56,
       "is_edel_pending": false,
-      "gddl_tier": 20.27777777777778,
+      "gddl_tier": 20.31578947368421,
       "nlw_tier": "Beginner"
     },
     {
@@ -36290,7 +36291,7 @@
       "song": null,
       "edel_enjoyment": 63.42207792,
       "is_edel_pending": false,
-      "gddl_tier": 20.39620081411126,
+      "gddl_tier": 20.39512855209743,
       "nlw_tier": "Beginner"
     },
     {
@@ -36382,7 +36383,7 @@
       "song": 1236581,
       "edel_enjoyment": 56.72077922,
       "is_edel_pending": false,
-      "gddl_tier": 20.09605911330049,
+      "gddl_tier": 20.095823095823096,
       "nlw_tier": "Beginner"
     },
     {
@@ -36430,7 +36431,7 @@
       "song": -14,
       "edel_enjoyment": 39.35714286,
       "is_edel_pending": false,
-      "gddl_tier": 20.136363636363637,
+      "gddl_tier": 20.13314447592068,
       "nlw_tier": "Beginner"
     },
     {
@@ -37104,7 +37105,7 @@
       "song": 726252,
       "edel_enjoyment": null,
       "is_edel_pending": false,
-      "gddl_tier": 16.958291708291707,
+      "gddl_tier": 16.958395615346284,
       "nlw_tier": null
     },
     {
