@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T18:20:03.711Z",
+  "generatedAt": "2026-08-08T19:20:16.343Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -10508,7 +10508,7 @@
       "song": 114114,
       "edel_enjoyment": 51.43076923,
       "is_edel_pending": false,
-      "gddl_tier": 28.95,
+      "gddl_tier": 29,
       "nlw_tier": "Relentless"
     },
     {
@@ -14622,7 +14622,7 @@
       "song": 574484,
       "edel_enjoyment": 54.83766234,
       "is_edel_pending": false,
-      "gddl_tier": 26.75125628140704,
+      "gddl_tier": 26.75280898876405,
       "nlw_tier": "Extreme"
     },
     {
@@ -16841,7 +16841,7 @@
       "song": 591117,
       "edel_enjoyment": 77.77272727,
       "is_edel_pending": false,
-      "gddl_tier": 25.6,
+      "gddl_tier": 25.636363636363637,
       "nlw_tier": "Insane"
     },
     {
@@ -19879,7 +19879,7 @@
       "song": null,
       "edel_enjoyment": 71.56521739,
       "is_edel_pending": false,
-      "gddl_tier": 24.21951219512195,
+      "gddl_tier": 24.214285714285715,
       "nlw_tier": "Hard"
     },
     {
@@ -24811,7 +24811,7 @@
       "song": 472169,
       "edel_enjoyment": 59.59027778,
       "is_edel_pending": false,
-      "gddl_tier": 22.227450980392156,
+      "gddl_tier": 22.229571984435797,
       "nlw_tier": "Medium"
     },
     {
@@ -35348,7 +35348,7 @@
       "song": null,
       "edel_enjoyment": 78.71428571,
       "is_edel_pending": false,
-      "gddl_tier": 20.76590909090909,
+      "gddl_tier": 20.764172335600907,
       "nlw_tier": "Beginner"
     },
     {
@@ -36567,7 +36567,7 @@
       "song": 1086825,
       "edel_enjoyment": 84.81818182,
       "is_edel_pending": false,
-      "gddl_tier": 20.033898305084747,
+      "gddl_tier": 20.033333333333335,
       "nlw_tier": "Beginner"
     },
     {
@@ -37058,7 +37058,7 @@
       "song": 718168,
       "edel_enjoyment": null,
       "is_edel_pending": false,
-      "gddl_tier": 20.09090909090909,
+      "gddl_tier": 20.10606060606061,
       "nlw_tier": null
     },
     {
