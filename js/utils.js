@@ -85,14 +85,20 @@ async function corsFetchJson(url, { headers = {} } = {}) {
   throw err;
 }
 
-/** Difficulty tier (1-6) from a requirement percentage, hardest = 6. */
-function tierFromRequirement(requirement) {
-  if (requirement === null || requirement === undefined) return 3;
-  if (requirement >= 100) return 6;
-  if (requirement >= 95) return 5;
-  if (requirement >= 90) return 4;
-  if (requirement >= 80) return 3;
-  if (requirement >= 60) return 2;
+/**
+ * Difficulty tier (1-6, hardest = 6) from a level's rank position relative
+ * to the list's total length, so the color-coding scales automatically as
+ * AREDL's list grows rather than using hardcoded rank cutoffs. Roughly:
+ * top 1% / 6% / 16% / 32% / 58% / everyone else.
+ */
+function tierFromPosition(position, total) {
+  if (!position || !total) return 3;
+  const pct = position / total;
+  if (pct <= 0.01) return 6;
+  if (pct <= 0.06) return 5;
+  if (pct <= 0.16) return 4;
+  if (pct <= 0.32) return 3;
+  if (pct <= 0.58) return 2;
   return 1;
 }
 

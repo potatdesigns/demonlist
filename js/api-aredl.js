@@ -58,9 +58,6 @@ const AredlAPI = (() => {
       id: raw.id,
       name: raw.name,
       position: raw.position,
-      // AREDL ranks by position/points rather than a Pointercrate-style
-      // requirement %, so there's nothing meaningful to put here.
-      requirement: null,
       videoUrl: null,
       thumbnail: null,
       levelId: raw.level_id ?? null,
@@ -81,7 +78,6 @@ const AredlAPI = (() => {
       id: raw.id,
       name: raw.name,
       position: raw.position,
-      requirement: null,
       videoUrl,
       thumbnail: youTubeThumbnail(videoUrl),
       levelId: raw.level_id ?? null,
@@ -127,6 +123,30 @@ const AredlAPI = (() => {
     return {
       demons: slice.map(normalizeLevelBase),
       nextUrl: offset + limit < all.length ? `__offset__${offset + limit}` : null,
+      total: all.length,
+    };
+  }
+
+  /** Total level count, for "jump to rank" bounds and position-based tier coloring. Resolves once the list has loaded at least once. */
+  async function getTotalCount() {
+    const all = await fetchFullList();
+    return all.length;
+  }
+
+  /**
+   * Search across the *entire* list by name, not just whatever page
+   * happens to be loaded — the full list is already cached in memory
+   * (see fetchFullList above) so this is a plain client-side filter, no
+   * extra network round trip beyond the one-time initial fetch.
+   */
+  async function searchByName(query, { limit = 200 } = {}) {
+    const all = await fetchFullList();
+    const q = query.trim().toLowerCase();
+    if (!q) return { demons: [], total: 0 };
+    const matches = all.filter(raw => raw.name.toLowerCase().includes(q));
+    return {
+      demons: matches.slice(0, limit).map(normalizeLevelBase),
+      total: matches.length,
     };
   }
 
@@ -158,5 +178,5 @@ const AredlAPI = (() => {
   // list-page card once it scrolls into view — see list.js.
   const fetchExtras = fetchDemon;
 
-  return { fetchListed, fetchDemon, fetchExtras };
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount };
 })();

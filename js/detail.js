@@ -8,7 +8,6 @@
 
   YtKeyUI.mountKeyButton(headerActions, () => location.reload());
 
-  const source = qs('source') || getSource() || 'pointercrate';
   const id = qs('id');
 
   if (!id) {
@@ -21,14 +20,18 @@
   async function init() {
     root.innerHTML = skeletonDetail();
     try {
-      const demon = await DataSource.fetchOne(source, id);
-      renderDetail(demon);
+      const [demon, totalCount, sharedEntry] = await Promise.all([
+        DataSource.fetchOne(id),
+        AredlAPI.getTotalCount().catch(() => 0),
+        SharedYtCache.getEntry(id).catch(() => undefined),
+      ]);
+      renderDetail(demon, totalCount, sharedEntry);
     } catch (err) {
       console.error(err);
       root.innerHTML = `
         <div class="state-banner error">
-          Couldn't load this level from <strong>${source === 'aredl' ? 'AREDL' : 'Pointercrate'}</strong>: ${escapeHtml(err.message)}
-          ${source === 'aredl' ? ' — see the notes at the top of <code>js/api-aredl.js</code> if the API shape changed.' : ''}
+          Couldn't load this level from <strong>AREDL</strong>: ${escapeHtml(err.message)}
+          — see the notes at the top of <code>js/api-aredl.js</code> if the API shape changed.
         </div>
         <a class="back-link" href="index.html">&larr; Back to the list</a>
       `;
@@ -53,10 +56,11 @@
     `;
   }
 
-  function renderDetail(demon) {
-    const tier = tierFromRequirement(demon.requirement);
+  function renderDetail(demon, totalCount, sharedEntry) {
+    const tier = tierFromPosition(demon.position, totalCount);
     const tierColor = tierColorVar(tier);
-    document.title = `${demon.name} — GD Demonlist`;
+    const points = demon.raw?.points;
+    document.title = `${demon.name} — Demonlist`;
 
     root.innerHTML = `
       <a class="back-link" href="index.html">&larr; Back to the list</a>
@@ -66,8 +70,7 @@
         <div class="detail-titles">
           <h1>${escapeHtml(demon.name)}</h1>
           <div class="detail-tags">
-            <span class="chip"><span class="swatch" style="background:${tierColor};width:8px;height:8px;border-radius:2px;display:inline-block;"></span>Requirement ${demon.requirement ?? '—'}%</span>
-            <span class="chip">${demon.source === 'aredl' ? 'AREDL' : 'Pointercrate'}</span>
+            ${Number.isFinite(points) ? `<span class="chip"><span class="swatch" style="background:${tierColor};width:8px;height:8px;border-radius:2px;display:inline-block;"></span>${points} points</span>` : ''}
           </div>
         </div>
       </div>
@@ -109,25 +112,31 @@
       </div>
     `;
 
-    mountVerifierVideo(demon);
-    mountShowcaseVideo(demon);
+    mountVerifierVideo(demon, sharedEntry);
+    mountShowcaseVideo(demon, sharedEntry);
   }
 
   function embedIframe(container, videoId, title) {
     container.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}" title="${escapeHtml(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   }
 
-  async function mountVerifierVideo(demon) {
+  /** sharedEntry is the (possibly undefined) data/yt-cache.json entry for this level — see SharedYtCache in js/shared-cache.js. When present it's authoritative and no YouTube call is made at all. */
+  async function mountVerifierVideo(demon, sharedEntry) {
     const embedEl = document.getElementById('verifier-embed');
     const infoEl = document.getElementById('verifier-info');
     const vid = extractYouTubeId(demon.videoUrl);
 
     if (!vid) {
-      embedEl.innerHTML = `<div class="thumb-fallback">No verification video linked on ${demon.source === 'aredl' ? 'AREDL' : 'Pointercrate'}.</div>`;
+      embedEl.innerHTML = `<div class="thumb-fallback">No verification video linked on AREDL.</div>`;
       infoEl.innerHTML = '';
       return;
     }
     embedIframe(embedEl, vid, `${demon.name} — verification`);
+
+    if (sharedEntry) {
+      infoEl.innerHTML = sharedEntry.verifier ? videoInfoHtml(sharedEntry.verifier) : `<span class="v-title">Video details unavailable.</span>`;
+      return;
+    }
 
     if (!YouTube.hasKey()) {
       infoEl.innerHTML = keyPromptHtml('See the exact view count');
@@ -141,9 +150,22 @@
     }
   }
 
-  async function mountShowcaseVideo(demon) {
+  async function mountShowcaseVideo(demon, sharedEntry) {
     const embedEl = document.getElementById('showcase-embed');
     const infoEl = document.getElementById('showcase-info');
+
+    if (sharedEntry) {
+      if (!sharedEntry.showcase) {
+        embedEl.innerHTML = `<div class="thumb-fallback">No clear showcase video found for this level.</div>`;
+        infoEl.innerHTML = '';
+        return;
+      }
+      embedIframe(embedEl, sharedEntry.showcase.id, sharedEntry.showcase.title);
+      infoEl.innerHTML = videoInfoHtml(sharedEntry.showcase);
+      const verifierViews = getRenderedViewCount('verifier-info');
+      if (verifierViews !== null) markWinner('verifier-info', 'showcase-info', verifierViews, sharedEntry.showcase.viewCount);
+      return;
+    }
 
     if (!YouTube.hasKey()) {
       embedEl.innerHTML = `<div class="thumb-fallback">Add a YouTube API key to auto-find the top showcase.</div>`;

@@ -1,0 +1,57 @@
+name: Refresh shared YouTube cache
+
+# Populates data/yt-cache.json — see scripts/refresh-yt-cache.mjs for the
+# staggering/budget logic and js/shared-cache.js for how the site reads it.
+# Requires a repo secret YOUTUBE_API_KEY (Settings -> Secrets and variables
+# -> Actions -> New repository secret). Without it this workflow will fail
+# fast with a clear error instead of silently doing nothing.
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # once a day; the script itself staggers which levels get checked
+  workflow_dispatch:
+    inputs:
+      max_levels:
+        description: 'Override: max levels to process this run'
+        required: false
+        default: ''
+      max_units:
+        description: 'Override: max YouTube quota units to spend this run'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-yt-cache
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run refresh script
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YT_CACHE_MAX_LEVELS: ${{ github.event.inputs.max_levels }}
+          YT_CACHE_MAX_UNITS: ${{ github.event.inputs.max_units }}
+        run: node scripts/refresh-yt-cache.mjs
+
+      - name: Commit and push data/yt-cache.json if it changed
+        run: |
+          if git diff --quiet -- data/yt-cache.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/yt-cache.json
+          git commit -m "chore: refresh shared YouTube cache"
+          git push

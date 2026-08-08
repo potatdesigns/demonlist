@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GD Demonlist — extreme demon rankings</title>
-<meta name="description" content="A Pointercrate / AREDL powered Geometry Dash extreme demon list, with verifier vs. showcase view counts.">
+<title>Demonlist — extreme demon rankings</title>
+<meta name="description" content="An AREDL-powered Geometry Dash extreme demon list, with verifier vs. showcase view counts.">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/list.css">
 </head>
@@ -13,11 +13,7 @@
 <header class="site-header">
   <div class="brand">
     <span class="brand-mark" aria-hidden="true"></span>
-    <span class="brand-text">GD DEMONLIST<span>Pointercrate / AREDL live data</span></span>
-  </div>
-  <div class="source-toggle" role="tablist" aria-label="List source">
-    <button type="button" data-source="pointercrate" role="tab">Pointercrate</button>
-    <button type="button" data-source="aredl" role="tab">AREDL</button>
+    <span class="brand-text">DEMONLIST<span>AREDL live data</span></span>
   </div>
   <div class="header-actions" id="header-actions"></div>
 </header>
@@ -25,14 +21,21 @@
 <main class="page">
   <section class="list-hero">
     <h1>Extreme Demon Rankings</h1>
-    <p>Live from the public Pointercrate and AREDL APIs. Click any level for its verification video, the most-viewed showcase, and full details.</p>
+    <p>Live from the public AREDL API. Click any level for its verification video, the most-viewed showcase, and full details.</p>
 
     <div class="controls-row">
       <label class="search-box">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-        <input type="text" id="search-input" placeholder="Search levels by name…" aria-label="Search levels">
+        <input type="text" id="search-input" placeholder="Search all levels by name…" aria-label="Search levels">
       </label>
+      <form class="jump-box" id="jump-form">
+        <span class="jump-hash" aria-hidden="true">#</span>
+        <input type="number" id="jump-input" min="1" placeholder="Jump to rank" aria-label="Jump to rank">
+        <button type="submit" class="btn-ghost">Go</button>
+      </form>
     </div>
+
+    <div class="range-chips" id="range-chips" aria-label="Quick jump ranges"></div>
 
     <div class="legend" aria-hidden="true">
       <span><span class="swatch" style="background:var(--cyan)"></span>Verifier video views</span>
@@ -51,15 +54,16 @@
 </main>
 
 <p class="footer-note">
-  Not affiliated with Pointercrate or AREDL. Level data via their public APIs · view counts &amp; showcase discovery via the
-  <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener">YouTube Data API</a> using your own free key.
+  Not affiliated with AREDL. Level data via its public API · view counts &amp; showcase discovery via a shared,
+  periodically-refreshed cache (see the README) with the
+  <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener">YouTube Data API</a> and your own free key as an on-demand fallback.
 </p>
 
 <script src="js/config.js"></script>
 <script src="js/utils.js"></script>
-<script src="js/api-pointercrate.js"></script>
 <script src="js/api-aredl.js"></script>
 <script src="js/data-source.js"></script>
+<script src="js/shared-cache.js"></script>
 <script src="js/youtube.js"></script>
 <script src="js/ytkey-ui.js"></script>
 <script src="js/list.js"></script>
