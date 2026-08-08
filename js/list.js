@@ -19,7 +19,10 @@
 
   YtKeyUI.mountKeyButton(headerActions, () => {
     // key just saved — (re)try loading counts for cards already on screen
-    observeAllCards();
+    // that came up empty ("Add key"/N/A) the first time around
+    const stale = [...gridEl.querySelectorAll('.demon-card')].filter(c => c.querySelector('.stat-value.na'));
+    if (stale.length) hydrateCards(stale);
+    observeAllCards(); // and observe anything not yet seen, as before
   });
 
   sourceButtons.forEach(btn => {
@@ -62,9 +65,17 @@
     );
     const detailUrl = `level.html?source=${demon.source}&id=${encodeURIComponent(demon.id)}`;
     const reqLabel = demon.requirement !== null ? `${demon.requirement}%` : '—';
+    const byNames = joinNames(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean));
 
     return `
-      <article class="demon-card" style="--tier-color: ${tierColorVar(tier)}" data-video="${escapeHtml(demon.videoUrl || '')}" data-name="${escapeHtml(demon.name)}">
+      <article class="demon-card"
+        style="--tier-color: ${tierColorVar(tier)}"
+        data-id="${escapeHtml(String(demon.id))}"
+        data-source="${escapeHtml(demon.source)}"
+        data-needs-extras="${demon.needsExtras ? '1' : '0'}"
+        data-video="${escapeHtml(demon.videoUrl || '')}"
+        data-name="${escapeHtml(demon.name)}"
+        data-level-id="${demon.levelId ?? ''}">
         <a class="card-link" href="${detailUrl}">
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" onerror="this.style.opacity=0">
@@ -73,8 +84,8 @@
           <div class="card-body">
             <div class="card-title">${escapeHtml(demon.name)}</div>
             <div class="card-meta">
-              <span><strong>By</strong> ${escapeHtml(joinNames(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean)))}</span>
-              <span><strong>Verified by</strong> ${escapeHtml(demon.verifier?.name || 'Unknown')} <span class="mono" style="color:var(--text-dim)">· req ${reqLabel}</span></span>
+              <span><strong>By</strong> <span data-role="by-names">${escapeHtml(byNames)}</span></span>
+              <span><strong>Verified by</strong> <span data-role="verifier-name">${escapeHtml(demon.verifier?.name || (demon.needsExtras ? '…' : 'Unknown'))}</span> <span class="mono" style="color:var(--text-dim)">· req ${reqLabel}</span></span>
             </div>
           </div>
         </a>
@@ -101,17 +112,20 @@
     observeAllCards();
   }
 
-  // --- lazy view-count loading, only for cards currently visible ---
+  // --- lazy hydration, only for cards currently visible ---
+  // Each IntersectionObserver callback can report several cards becoming
+  // visible in one batch (e.g. the initial page render, or a fast scroll)
+  // — that batch is hydrated together so verifier-video stats can be
+  // fetched as a single videos.list call instead of one per card (see
+  // hydrateCards() below, and CONFIG.YT_* in config.js for why this
+  // matters for quota).
   let observer = null;
   function observeAllCards() {
     if (!observer) {
       observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            loadViewCounts(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
+        const targets = entries.filter(e => e.isIntersecting).map(e => e.target);
+        targets.forEach(t => observer.unobserve(t));
+        if (targets.length) hydrateCards(targets);
       }, { rootMargin: '200px' });
     }
     gridEl.querySelectorAll('.demon-card:not([data-observed])').forEach(card => {
@@ -120,50 +134,104 @@
     });
   }
 
-  async function loadViewCounts(card) {
+  /** Resolve AREDL's verification video/thumbnail/verifier/creators for a card that only has bare list fields so far. */
+  async function hydrateAredlExtrasIfNeeded(card) {
+    if (card.dataset.source !== 'aredl' || card.dataset.needsExtras !== '1') return;
+    try {
+      const demon = await AredlAPI.fetchExtras(card.dataset.id);
+      card.dataset.needsExtras = '0';
+      card.dataset.video = demon.videoUrl || '';
+
+      const img = card.querySelector('.card-thumb-wrap img');
+      if (img && demon.thumbnail) { img.src = demon.thumbnail; img.style.opacity = ''; }
+
+      const byEl = card.querySelector('[data-role="by-names"]');
+      if (byEl) {
+        const names = demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean);
+        byEl.textContent = joinNames(names);
+      }
+
+      const verifierEl = card.querySelector('[data-role="verifier-name"]');
+      if (verifierEl) verifierEl.textContent = demon.verifier?.name || 'Unknown';
+    } catch (e) {
+      card.dataset.needsExtras = '0'; // don't retry forever on failure
+      const verifierEl = card.querySelector('[data-role="verifier-name"]');
+      if (verifierEl && verifierEl.textContent === '…') verifierEl.textContent = 'Unknown';
+    }
+  }
+
+  function markNeedsKey(card) {
+    const verifierStat = card.querySelector('[data-role="verifier-stat"]');
+    const showcaseStat = card.querySelector('[data-role="showcase-stat"]');
+    [verifierStat, showcaseStat].forEach(el => {
+      const val = el.querySelector('.stat-value');
+      val.textContent = 'Add key';
+      val.classList.remove('loading');
+      val.classList.add('na');
+      el.style.cursor = 'pointer';
+      el.title = 'Click to add a YouTube API key';
+      el.addEventListener('click', () => YtKeyUI.openModal(() => hydrateCards([card])), { once: true });
+    });
+  }
+
+  function clearNeedsKeyAffordance(card) {
+    card.querySelectorAll('[data-role="verifier-stat"], [data-role="showcase-stat"]').forEach(el => {
+      el.style.cursor = '';
+      el.removeAttribute('title');
+    });
+  }
+
+  async function applyStatsAndShowcase(card, verifierStats) {
     const verifierStat = card.querySelector('[data-role="verifier-stat"]');
     const showcaseStat = card.querySelector('[data-role="showcase-stat"]');
     const verifierVal = verifierStat.querySelector('.stat-value');
     const showcaseVal = showcaseStat.querySelector('.stat-value');
-    const videoUrl = card.dataset.video;
     const name = card.dataset.name;
+    const levelId = card.dataset.levelId || null;
+
+    const vViews = verifierStats?.viewCount ?? null;
+    verifierVal.textContent = vViews !== null ? formatCount(vViews) : 'N/A';
+    verifierVal.classList.remove('loading', 'na');
+    if (vViews === null) verifierVal.classList.add('na');
+
+    let sViews = null;
+    try {
+      const showcase = name ? await YouTube.findBestShowcase(name, levelId) : null;
+      sViews = showcase?.viewCount ?? null;
+    } catch { /* leave sViews null — surfaced as N/A below */ }
+
+    showcaseVal.textContent = sViews !== null ? formatCount(sViews) : 'N/A';
+    showcaseVal.classList.remove('loading', 'na');
+    if (sViews === null) showcaseVal.classList.add('na');
+
+    verifierStat.classList.remove('leader');
+    showcaseStat.classList.remove('leader');
+    if (vViews !== null && sViews !== null) {
+      if (vViews > sViews) verifierStat.classList.add('leader');
+      else if (sViews > vViews) showcaseStat.classList.add('leader');
+    }
+  }
+
+  /** Hydrate a batch of cards that just became visible: AREDL extras first (own API, no quota cost), then one batched YouTube stats call for all of them. */
+  async function hydrateCards(cards) {
+    await Promise.all(cards.map(hydrateAredlExtrasIfNeeded));
 
     if (!YouTube.hasKey()) {
-      verifierVal.textContent = 'Add key';
-      showcaseVal.textContent = 'Add key';
-      verifierVal.classList.add('na');
-      showcaseVal.classList.add('na');
-      [verifierStat, showcaseStat].forEach(el => {
-        el.style.cursor = 'pointer';
-        el.title = 'Click to add a YouTube API key';
-        el.addEventListener('click', () => YtKeyUI.openModal(observeAllCards), { once: true });
-      });
+      cards.forEach(markNeedsKey);
       return;
     }
 
+    cards.forEach(clearNeedsKeyAffordance);
+
+    const videoUrls = cards.map(c => c.dataset.video || null);
+    let statsResults;
     try {
-      const [verifierStats, showcase] = await Promise.all([
-        videoUrl ? YouTube.getVideoStats(videoUrl).catch(() => null) : Promise.resolve(null),
-        name ? YouTube.findBestShowcase(name).catch(() => null) : Promise.resolve(null),
-      ]);
-      const vViews = verifierStats?.viewCount ?? null;
-      const sViews = showcase?.viewCount ?? null;
-
-      verifierVal.textContent = vViews !== null ? formatCount(vViews) : 'N/A';
-      showcaseVal.textContent = sViews !== null ? formatCount(sViews) : 'N/A';
-      verifierVal.classList.remove('loading');
-      showcaseVal.classList.remove('loading');
-      if (vViews === null) verifierVal.classList.add('na');
-      if (sViews === null) showcaseVal.classList.add('na');
-
-      if (vViews !== null && sViews !== null) {
-        if (vViews > sViews) verifierStat.classList.add('leader');
-        else if (sViews > vViews) showcaseStat.classList.add('leader');
-      }
+      statsResults = await YouTube.getVideoStatsBatch(videoUrls);
     } catch (e) {
-      verifierVal.textContent = 'Error';
-      showcaseVal.textContent = 'Error';
+      statsResults = cards.map(() => null);
     }
+
+    await Promise.all(cards.map((card, i) => applyStatsAndShowcase(card, statsResults[i])));
   }
 
   // --- data loading ---

@@ -31,6 +31,60 @@ function youTubeThumbnail(videoUrl) {
   return `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 }
 
+/**
+ * fetch() that falls back to a public CORS proxy (config.js CORS_PROXIES)
+ * when the direct request fails outright — the browser-level symptom of a
+ * server that sends no Access-Control-Allow-Origin header, which shows up
+ * as a bare "Failed to fetch" TypeError with no useful status code.
+ *
+ * Also treats an HTML error page served with a non-2xx status as a signal
+ * to try the proxy (some CDN/bot-protection challenge pages slip through
+ * as a "successful" fetch from the browser's point of view).
+ *
+ * Proxies used here always answer 200 regardless of the upstream status,
+ * so `res.viaProxy` is set on the returned Response so callers can decide
+ * how much to trust `res.ok` / do their own shape-sanity-check on proxied
+ * bodies instead.
+ */
+async function corsFetchJson(url, { headers = {} } = {}) {
+  const reqHeaders = { Accept: 'application/json', ...headers };
+
+  let direct;
+  let directErr;
+  try {
+    direct = await fetch(url, { headers: reqHeaders });
+  } catch (e) {
+    directErr = e;
+  }
+
+  if (direct) {
+    const looksLikeBlockedChallenge = !direct.ok && (direct.headers.get('content-type') || '').includes('text/html');
+    if (!looksLikeBlockedChallenge) {
+      direct.viaProxy = false;
+      return direct;
+    }
+  }
+
+  const proxies = (CONFIG.CORS_PROXIES || []);
+  for (const buildProxyUrl of proxies) {
+    try {
+      const res = await fetch(buildProxyUrl(url), { headers: { Accept: 'application/json' } });
+      if (res.ok) {
+        res.viaProxy = true;
+        return res;
+      }
+    } catch { /* try the next proxy */ }
+  }
+
+  if (direct) { direct.viaProxy = false; return direct; } // return the original blocked/error response as a last resort
+  const err = new Error(
+    `Couldn't reach the API directly — this is almost always the server not allowing cross-origin browser requests — ` +
+    `and the CORS-proxy fallback failed too. Check your connection and try again in a moment.`
+  );
+  err.cause = directErr;
+  throw err;
+}
+
 /** Difficulty tier (1-6) from a requirement percentage, hardest = 6. */
 function tierFromRequirement(requirement) {
   if (requirement === null || requirement === undefined) return 3;

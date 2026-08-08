@@ -1,16 +1,38 @@
 /* =====================================================================
-   AREDL ADAPTER  (best-effort)
+   AREDL ADAPTER
+   Confirmed directly against the open-source backend
+   (github.com/All-Rated-Extreme-Demon-List/aredl-backend-v2) and live
+   responses from api.aredl.net, since the field names aren't published
+   as plain-text docs the way Pointercrate's are — see src/aredl/levels/
+   {model,routes}.rs, src/aredl/levels/records/model.rs and
+   src/aredl/levels/creators/{model,routes}.rs in that repo.
 
-   AREDL's public API lives at https://api.aredl.net/v2/docs but, unlike
-   Pointercrate, its full schema is only published in an interactive
-   Scalar/OpenAPI viewer rather than plain text — so the field names
-   below are a best-effort mapping and are isolated in this one file on
-   purpose. If AREDL changes their shape, or if a field below turns out
-   to be named differently, this is the only place that needs patching;
-   list.js and detail.js only ever see the normalized object.
+   Two things the previous version of this file got wrong:
 
-   To verify/adjust: open https://api.aredl.net/v2/docs in a browser,
-   find the "levels" endpoints, and update ENDPOINTS + normalizeLevel().
+   1) GET /levels (the list) only returns bare-bones entries — id, name,
+      position, points, legacy, level_id, two_player, tags, description,
+      song, edel_enjoyment, gddl_tier, nlw_tier. No video, no thumbnail,
+      no verifier, no creators, and `publisher` is just a `publisher_id`
+      UUID, not a resolved player. All of that only exists on
+      GET /levels/{id} (verification video + submitter live under
+      `verifications[0]`, publisher is resolved) and the separate
+      GET /levels/{id}/creators endpoint.
+
+      Fetching per-level detail for all ~1600 levels up front isn't
+      reasonable, so list cards start with the bare fields and get
+      hydrated with video/thumbnail/verifier/publisher lazily as they
+      scroll into view — see fetchExtras() below and list.js.
+
+   2) GET /levels accepts `limit`/`offset` query params but silently
+      ignores them and always returns the full list. Pagination here is
+      done client-side: fetch the full list once (cached in memory for
+      the session) and slice it.
+
+   AREDL's CORS headers are already correct (confirmed: it reflects
+   Access-Control-Allow-Origin per-origin), so no proxy fallback is
+   needed here — corsFetchJson() is still used for resilience against
+   transient network hiccups, but it'll almost always take the direct
+   path.
    ===================================================================== */
 
 const AredlAPI = (() => {
@@ -18,65 +40,123 @@ const AredlAPI = (() => {
   const ENDPOINTS = {
     listed: () => `${CONFIG.AREDL_BASE}/levels`,
     detail: (id) => `${CONFIG.AREDL_BASE}/levels/${id}`,
+    creators: (id) => `${CONFIG.AREDL_BASE}/levels/${id}/creators`,
   };
 
-  function normalizePlayer(p) {
-    if (!p) return null;
-    if (typeof p === 'string') return { id: null, name: p };
-    return { id: p.id ?? null, name: p.name ?? p.username ?? String(p) };
+  /** AREDL players are { id, username, global_name } — global_name is the freely-set display name. */
+  function normalizePlayer(u) {
+    if (!u) return null;
+    if (typeof u === 'string') return { id: null, name: u };
+    return { id: u.id ?? null, name: u.global_name || u.username || String(u) };
   }
 
-  function normalizeLevel(raw) {
-    const video = raw.verification || raw.video || raw.showcase_video || null;
-    const creatorsRaw = raw.creators || raw.publishers || [];
+  // Bare list entry — video/verifier/thumbnail/publisher/creators aren't
+  // available until fetchExtras() resolves for this card.
+  function normalizeLevelBase(raw) {
     return {
       source: 'aredl',
-      id: raw.id ?? raw.level_id,
+      id: raw.id,
       name: raw.name,
-      position: raw.position ?? raw.placement ?? raw.rank,
-      // AREDL doesn't use a single "requirement %" the way Pointercrate
-      // does; approximate a tier from position among ~top 200 so the
-      // same color-coding logic in utils.js still applies sensibly.
-      requirement: raw.requirement ?? null,
-      videoUrl: video,
-      thumbnail: raw.thumbnail || youTubeThumbnail(video) || null,
-      levelId: raw.level_id ?? raw.gd_id ?? null,
-      verifier: normalizePlayer(raw.verifier),
-      publisher: normalizePlayer(raw.publisher || (creatorsRaw[0] ?? null)),
-      creators: Array.isArray(creatorsRaw) ? creatorsRaw.map(normalizePlayer) : [],
+      position: raw.position,
+      // AREDL ranks by position/points rather than a Pointercrate-style
+      // requirement %, so there's nothing meaningful to put here.
+      requirement: null,
+      videoUrl: null,
+      thumbnail: null,
+      levelId: raw.level_id ?? null,
+      verifier: null,
+      publisher: null,
+      creators: [],
+      needsExtras: true,
       raw,
     };
   }
 
-  async function fetchListed({ limit = CONFIG.PAGE_SIZE, offset = 0 } = {}) {
-    const url = `${ENDPOINTS.listed()}?limit=${limit}&offset=${offset}`;
-    const res = await fetch(url, { headers: { Accept: 'application/json' } });
-    if (!res.ok) {
-      throw new Error(
-        `AREDL returned ${res.status}. Its API shape may have changed — ` +
-        `check https://api.aredl.net/v2/docs and update js/api-aredl.js.`
-      );
-    }
-    const data = await res.json();
-    const list = Array.isArray(data) ? data : (data.data || data.levels || []);
+  // Full detail (GET /levels/{id} + GET /levels/{id}/creators combined).
+  function normalizeResolvedLevel(raw, creators) {
+    const verification = (raw.verifications || [])[0] || null;
+    const videoUrl = verification?.video_url || null;
     return {
-      demons: list.map(normalizeLevel),
-      nextUrl: list.length === limit ? `__offset__${offset + limit}` : null,
+      source: 'aredl',
+      id: raw.id,
+      name: raw.name,
+      position: raw.position,
+      requirement: null,
+      videoUrl,
+      thumbnail: youTubeThumbnail(videoUrl),
+      levelId: raw.level_id ?? null,
+      verifier: normalizePlayer(verification?.submitted_by),
+      publisher: normalizePlayer(raw.publisher),
+      creators: Array.isArray(creators) ? creators.map(normalizePlayer) : [],
+      needsExtras: false,
+      raw,
+    };
+  }
+
+  // The list endpoint ignores limit/offset and always returns everything
+  // (confirmed live: passing limit=3 still returns all ~1600 levels), so
+  // fetch it once, cache it for the session, and paginate client-side.
+  let fullListCache = null;
+  let fullListPromise = null;
+  function fetchFullList() {
+    if (fullListCache) return Promise.resolve(fullListCache);
+    if (!fullListPromise) {
+      fullListPromise = (async () => {
+        const res = await corsFetchJson(ENDPOINTS.listed());
+        if (!res.ok && !res.viaProxy) {
+          throw new Error(
+            `AREDL returned ${res.status} for the level list. Its API shape may have changed — ` +
+            `check https://api.aredl.net/v2/docs and update js/api-aredl.js.`
+          );
+        }
+        const data = await res.json();
+        const list = Array.isArray(data) ? data : (data.data || data.levels || []);
+        if (!Array.isArray(list)) {
+          throw new Error('AREDL returned an unexpected response shape for the level list — try again in a moment.');
+        }
+        fullListCache = list.slice().sort((a, b) => a.position - b.position);
+        return fullListCache;
+      })().finally(() => { fullListPromise = null; });
+    }
+    return fullListPromise;
+  }
+
+  async function fetchListed({ limit = CONFIG.PAGE_SIZE, offset = 0 } = {}) {
+    const all = await fetchFullList();
+    const slice = all.slice(offset, offset + limit);
+    return {
+      demons: slice.map(normalizeLevelBase),
+      nextUrl: offset + limit < all.length ? `__offset__${offset + limit}` : null,
     };
   }
 
   async function fetchDemon(id) {
-    const url = ENDPOINTS.detail(id);
-    const res = await fetch(url, { headers: { Accept: 'application/json' } });
-    if (!res.ok) {
+    const [detailRes, creatorsRes] = await Promise.all([
+      corsFetchJson(ENDPOINTS.detail(id)),
+      corsFetchJson(ENDPOINTS.creators(id)).catch(() => null),
+    ]);
+    if (!detailRes.ok && !detailRes.viaProxy) {
       throw new Error(
-        `AREDL returned ${res.status} for level ${id}. Check ` +
+        `AREDL returned ${detailRes.status} for level ${id}. Check ` +
         `https://api.aredl.net/v2/docs and update js/api-aredl.js if the shape changed.`
       );
     }
-    const data = await res.json();
-    return normalizeLevel(data.data || data);
+    const data = await detailRes.json();
+    const raw = data.data || data;
+    if (!raw || raw.id === undefined) {
+      throw new Error(`AREDL returned an unexpected response shape for level ${id} — try again in a moment.`);
+    }
+    let creators = [];
+    if (creatorsRes && (creatorsRes.ok || creatorsRes.viaProxy)) {
+      const creatorsData = await creatorsRes.json().catch(() => null);
+      if (Array.isArray(creatorsData)) creators = creatorsData;
+    }
+    return normalizeResolvedLevel(raw, creators);
   }
 
-  return { fetchListed, fetchDemon };
+  // Lazily fills in video/thumbnail/verifier/publisher/creators for a
+  // list-page card once it scrolls into view — see list.js.
+  const fetchExtras = fetchDemon;
+
+  return { fetchListed, fetchDemon, fetchExtras };
 })();

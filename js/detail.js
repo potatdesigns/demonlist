@@ -154,7 +154,7 @@
     }
 
     try {
-      const best = await YouTube.findBestShowcase(demon.name);
+      const best = await YouTube.findBestShowcase(demon.name, demon.levelId);
       if (!best) {
         embedEl.innerHTML = `<div class="thumb-fallback">No clear showcase video found for this level.</div>`;
         infoEl.innerHTML = '';
