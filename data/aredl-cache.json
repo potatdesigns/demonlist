@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T19:20:16.343Z",
+  "generatedAt": "2026-08-08T20:15:42.725Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -2722,7 +2722,7 @@
       "song": null,
       "edel_enjoyment": 79.41666667,
       "is_edel_pending": false,
-      "gddl_tier": 36,
+      "gddl_tier": 35.5,
       "nlw_tier": null
     },
     {
@@ -3867,7 +3867,7 @@
       "song": 555736,
       "edel_enjoyment": 79.83333333,
       "is_edel_pending": false,
-      "gddl_tier": 33.75,
+      "gddl_tier": 33.55555555555556,
       "nlw_tier": "Excruciating"
     },
     {
@@ -7863,7 +7863,7 @@
       "song": 634513,
       "edel_enjoyment": 71.025,
       "is_edel_pending": false,
-      "gddl_tier": 30.58823529411765,
+      "gddl_tier": 30.61111111111111,
       "nlw_tier": "Terrifying"
     },
     {
@@ -10743,7 +10743,7 @@
       "song": 943768,
       "edel_enjoyment": 81.36842105,
       "is_edel_pending": false,
-      "gddl_tier": 27.966666666666665,
+      "gddl_tier": 27.967741935483872,
       "nlw_tier": "Remorseless"
     },
     {
@@ -18434,7 +18434,7 @@
       "song": 998365,
       "edel_enjoyment": 62.30985915,
       "is_edel_pending": false,
-      "gddl_tier": 24.458333333333332,
+      "gddl_tier": 24.448979591836736,
       "nlw_tier": "Hard"
     },
     {
@@ -19291,7 +19291,7 @@
       "song": null,
       "edel_enjoyment": 84.41558442,
       "is_edel_pending": false,
-      "gddl_tier": 23.95045045045045,
+      "gddl_tier": 23.95067264573991,
       "nlw_tier": "Hard"
     },
     {
@@ -19362,7 +19362,7 @@
       "song": 888042,
       "edel_enjoyment": 84.81818182,
       "is_edel_pending": false,
-      "gddl_tier": 22.922535211267604,
+      "gddl_tier": 22.950704225352112,
       "nlw_tier": "Fuck"
     },
     {
@@ -20702,7 +20702,7 @@
       "song": 723714,
       "edel_enjoyment": 65.96875,
       "is_edel_pending": false,
-      "gddl_tier": 23.80327868852459,
+      "gddl_tier": 23.806451612903224,
       "nlw_tier": "Hard"
     },
     {
@@ -23710,7 +23710,7 @@
       "song": 544277,
       "edel_enjoyment": 82.79411765,
       "is_edel_pending": false,
-      "gddl_tier": 23.095238095238095,
+      "gddl_tier": 23.09090909090909,
       "nlw_tier": "Medium"
     },
     {
@@ -26706,7 +26706,7 @@
       "song": 76677,
       "edel_enjoyment": 77.55555556,
       "is_edel_pending": false,
-      "gddl_tier": 22,
+      "gddl_tier": 22.055555555555557,
       "nlw_tier": "Easy"
     },
     {
@@ -30450,7 +30450,7 @@
       "song": null,
       "edel_enjoyment": 66.95833333,
       "is_edel_pending": false,
-      "gddl_tier": 21.18987341772152,
+      "gddl_tier": 21.20125786163522,
       "nlw_tier": "Beginner"
     },
     {
@@ -34728,7 +34728,7 @@
       "song": 938470,
       "edel_enjoyment": 74.47019868,
       "is_edel_pending": false,
-      "gddl_tier": 20.58139534883721,
+      "gddl_tier": 20.583333333333332,
       "nlw_tier": "Beginner"
     },
     {
@@ -34755,7 +34755,7 @@
       "song": 349494,
       "edel_enjoyment": 64.87037037,
       "is_edel_pending": false,
-      "gddl_tier": 20.557377049180328,
+      "gddl_tier": 20.555555555555557,
       "nlw_tier": "Beginner"
     },
     {
@@ -35470,7 +35470,7 @@
       "song": 1311890,
       "edel_enjoyment": 83.70992366,
       "is_edel_pending": false,
-      "gddl_tier": 20.1875,
+      "gddl_tier": 20.183150183150182,
       "nlw_tier": "Beginner"
     },
     {
@@ -37036,7 +37036,7 @@
       "song": -14,
       "edel_enjoyment": null,
       "is_edel_pending": false,
-      "gddl_tier": 19.781795511221944,
+      "gddl_tier": 19.779850746268657,
       "nlw_tier": null
     },
     {
