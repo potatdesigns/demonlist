@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T04:07:28.614Z",
+  "generatedAt": "2026-08-08T05:33:49.017Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -2808,7 +2808,10 @@
       "legacy": false,
       "level_id": 137334994,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "Long"
+      ],
       "description": null,
       "song": 755193,
       "edel_enjoyment": null,
@@ -15527,7 +15530,10 @@
       "legacy": false,
       "level_id": 116089123,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "Long"
+      ],
       "description": null,
       "song": null,
       "edel_enjoyment": 67.5,
@@ -24636,11 +24642,38 @@
       "nlw_tier": "Medium"
     },
     {
+      "id": "e7c8a7a8-9857-44ab-8ddf-91ff12598b8a",
+      "name": "Esencia",
+      "position": 1030,
+      "publisher_id": "ab5448d3-d60c-4c87-a186-5c51fa09278e",
+      "points": 221,
+      "legacy": false,
+      "level_id": 54988894,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "XXL",
+        "NONG",
+        "Overall",
+        "Fast-Paced",
+        "Learny",
+        "High CPS",
+        "Flow",
+        "Nerve Control"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 79.73333333,
+      "is_edel_pending": false,
+      "gddl_tier": 22.723076923076924,
+      "nlw_tier": "Medium"
+    },
+    {
       "id": "b6be928b-d18c-404e-a128-80c9e76610f9",
       "name": "Aureole",
-      "position": 1030,
+      "position": 1031,
       "publisher_id": "7f1ffe54-1b6c-4a33-ac66-a87ff8289d67",
-      "points": 221,
+      "points": 220,
       "legacy": false,
       "level_id": 66044291,
       "two_player": false,
@@ -24662,7 +24695,7 @@
     {
       "id": "ef235a26-3e4a-49cc-8edb-3aaabd1e0b0c",
       "name": "Dance Til Dawn",
-      "position": 1031,
+      "position": 1032,
       "publisher_id": "9850ef68-9c2f-428a-a097-afbb0e0f8a1b",
       "points": 220,
       "legacy": false,
@@ -24686,9 +24719,9 @@
     {
       "id": "ee5ea8de-b91e-48c0-b5bc-dca2c80c2475",
       "name": "Evangelion",
-      "position": 1032,
+      "position": 1033,
       "publisher_id": "4eb2b5ab-5170-4180-990e-829ffac43e53",
-      "points": 220,
+      "points": 219,
       "legacy": false,
       "level_id": 62151546,
       "two_player": false,
@@ -24708,7 +24741,7 @@
     {
       "id": "8b4fab7d-888b-4cff-a42a-a73ff63ba015",
       "name": "Draco Meteor",
-      "position": 1033,
+      "position": 1034,
       "publisher_id": "f68bb12d-4e08-45f2-89c9-88c714c74cde",
       "points": 219,
       "legacy": false,
@@ -24732,9 +24765,9 @@
     {
       "id": "b063f9fc-1f35-452b-bbb3-e3f962b7bf07",
       "name": "SLAY MOMENT",
-      "position": 1034,
+      "position": 1035,
       "publisher_id": "7dccb18b-658a-4b3c-94b5-9eece8cd57c4",
-      "points": 219,
+      "points": 218,
       "legacy": false,
       "level_id": 118366680,
       "two_player": false,
@@ -24755,9 +24788,9 @@
     {
       "id": "00acdb43-6791-4033-9eac-fd3c8f0f2fd6",
       "name": "Heartbeat (KrmaL)",
-      "position": 1035,
+      "position": 1036,
       "publisher_id": "add5d6cb-bdab-4323-99ce-594230168979",
-      "points": 218,
+      "points": 217,
       "legacy": false,
       "level_id": 20321297,
       "two_player": false,
@@ -24783,7 +24816,7 @@
     {
       "id": "993cccc2-ee2a-41fe-8a19-e02490677810",
       "name": "Neon Mixtape Tour",
-      "position": 1036,
+      "position": 1037,
       "publisher_id": "3beff31c-b09c-4fb7-9b10-8fc7a70d6b49",
       "points": 217,
       "legacy": false,
@@ -24805,9 +24838,9 @@
     {
       "id": "49dda14e-96c0-4110-aab1-7a68053c64fd",
       "name": "GANGIMARI",
-      "position": 1037,
+      "position": 1038,
       "publisher_id": "2c6b0514-a7cc-48ab-8b3c-93bd574fd988",
-      "points": 217,
+      "points": 216,
       "legacy": false,
       "level_id": 85698971,
       "two_player": false,
@@ -24829,7 +24862,7 @@
     {
       "id": "c720aea6-c5ee-4910-a311-12471f8e06a8",
       "name": "Dumbest Girl Alive",
-      "position": 1038,
+      "position": 1039,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
       "points": 216,
       "legacy": false,
@@ -24849,33 +24882,6 @@
       "is_edel_pending": false,
       "gddl_tier": 21.692307692307693,
       "nlw_tier": "Easy"
-    },
-    {
-      "id": "e7c8a7a8-9857-44ab-8ddf-91ff12598b8a",
-      "name": "Esencia",
-      "position": 1039,
-      "publisher_id": "ab5448d3-d60c-4c87-a186-5c51fa09278e",
-      "points": 216,
-      "legacy": false,
-      "level_id": 54988894,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "XXL",
-        "NONG",
-        "Overall",
-        "Fast-Paced",
-        "Learny",
-        "High CPS",
-        "Flow",
-        "Nerve Control"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 79.73333333,
-      "is_edel_pending": false,
-      "gddl_tier": 22.723076923076924,
-      "nlw_tier": "Medium"
     },
     {
       "id": "abbb46af-1189-46f3-8e1f-cc70e7970c14",
