@@ -34,8 +34,9 @@ const CONFIG = {
   // YouTube API calls at all). A relative path so it resolves next to
   // wherever index.html is served from (GitHub Pages, a fork, a local
   // `python -m http.server`, etc.) without needing an absolute origin baked in.
+  // Fetched fresh every page load (see js/shared-cache.js) — no client-side
+  // TTL, since that was exactly what caused stale data to stick around.
   SHARED_YT_CACHE_URL: 'data/yt-cache.json',
-  SHARED_YT_CACHE_TTL_MS: 1000 * 60 * 60, // re-fetch the file at most once an hour per visitor
 
   // Same idea, but for AREDL's own level list — see scripts/refresh-aredl-cache.mjs
   // + .github/workflows/refresh-aredl-cache.yml (hourly, no key needed).
