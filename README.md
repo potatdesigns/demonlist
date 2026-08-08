@@ -136,11 +136,19 @@ it has* have very different costs and staleness needs:
   map lookup, so `discover` covers every level every run; only a per-run level cap
   (`YT_CACHE_MAX_LEVELS`, default 150, now just AREDL courtesy rather than quota-driven) and the
   overall unit ceiling (`YT_CACHE_MAX_UNITS`, default 7000, split against `YT_CACHE_CHANNEL_BUDGET`
-  for the indexing phase) still bound a single run. The script always stops cleanly on a quota
-  error rather than writing bad data — a level whose verifier videos.list call got cut off by
-  quota is left for the next run instead of being recorded with a false "no verifier found". Runs
-  daily ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a
-  run is skipped or the list grows.
+  for the indexing phase) still bound a single run. Levels are processed in priority order —
+  whichever ones have no showcase on file yet go first (nothing to compare, and finding one is the
+  valuable work), then the rest ordered by ascending showcase view count, lowest-viewed first —
+  recomputed fresh from the current cache every run rather than a persisted position, so once the
+  whole list has a showcase this is just a live ascending sort that keeps reshuffling as view
+  counts change; "reorder and restart" falls out of that for free rather than needing separate
+  cycle-tracking state. This mostly matters when a run gets cut short (quota, or a lower
+  `YT_CACHE_MAX_LEVELS` override): whatever's left unprocessed is exactly what a false "no
+  showcase" would have hurt the least to skip. The script always stops cleanly on a quota error
+  rather than writing bad data — a level whose verifier videos.list call got cut off by quota is
+  left for the next run instead of being recorded with a false "no verifier found". Runs daily
+  ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a run is
+  skipped or the list grows.
 - **`views`** (cheap, frequent) — once a level has a verifier/showcase video *identified*, its
   view count is refreshed independently of the (slow) discovery cycle: one batched
   `videos.list` call per 50 videos, so refreshing the *entire* list's view counts costs on the

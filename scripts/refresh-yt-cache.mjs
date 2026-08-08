@@ -358,12 +358,24 @@ async function runDiscover() {
       }
     }
     if (!queue) {
-      const neverDiscovered = levels.filter(l => !cache.levels[l.id]);
-      const stale = levels
-        .filter(l => cache.levels[l.id])
-        .sort((a, b) => new Date(cache.levels[a.id].discoveredAt) - new Date(cache.levels[b.id].discoveredAt));
-      queue = [...neverDiscovered, ...stale].slice(0, MAX_LEVELS_PER_RUN);
-      console.log(`${neverDiscovered.length} never discovered, ${stale.length} due for a re-check. Processing ${queue.length} levels this run.`);
+      // Priority queue, recomputed fresh every run from the current cache
+      // state (no separate persisted position — "restart" falls out of
+      // that for free): levels with no showcase on file yet — either
+      // never discovered, or discovered but nothing matched — sort first,
+      // since there's nothing yet to compare and finding one is the
+      // valuable work. Once a level has a showcase, it's ordered by that
+      // showcase's view count, lowest first, so heavily-viewed (and
+      // presumably already-settled) showcases get re-checked last. Once
+      // the whole list has a showcase, this is just an ascending sort by
+      // view count that keeps reshuffling as those counts change — the
+      // "reorder and restart" happens automatically, every run.
+      const showcaseViews = l => cache.levels[l.id]?.showcase?.viewCount ?? null;
+      const withoutShowcase = levels.filter(l => showcaseViews(l) === null);
+      const byShowcaseViews = levels
+        .filter(l => showcaseViews(l) !== null)
+        .sort((a, b) => showcaseViews(a) - showcaseViews(b));
+      queue = [...withoutShowcase, ...byShowcaseViews].slice(0, MAX_LEVELS_PER_RUN);
+      console.log(`${withoutShowcase.length} without a showcase yet (first), ${byShowcaseViews.length} ordered by ascending showcase views. Processing ${queue.length} levels this run.`);
     }
 
     // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level.
