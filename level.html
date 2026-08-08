@@ -11,7 +11,20 @@
 
 <header class="site-header">
   <a href="index.html" class="brand" style="cursor:pointer;">
-    <span class="brand-mark" aria-hidden="true"></span>
+    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+      <defs>
+        <linearGradient id="brandGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#3ef2d8"/>
+          <stop offset="0.5" stop-color="#8a6bff"/>
+          <stop offset="1" stop-color="#ff4fb8"/>
+        </linearGradient>
+      </defs>
+      <rect x="1.5" y="1.5" width="29" height="29" rx="8" fill="url(#brandGrad)"/>
+      <rect x="1.5" y="1.5" width="29" height="29" rx="8" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <circle cx="11.5" cy="14" r="2.6" fill="#07080d"/>
+      <circle cx="20.5" cy="14" r="2.6" fill="#07080d"/>
+      <path d="M10 21c1.8 2 4 3 6 3s4.2-1 6-3" stroke="#07080d" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    </svg>
     <span class="brand-text">DEMONLIST<span>AREDL live data</span></span>
   </a>
   <div class="header-actions" id="header-actions"></div>
@@ -21,8 +34,8 @@
 
 <p class="footer-note">
   Not affiliated with AREDL. Level data via its public API · view counts &amp; showcase discovery via a shared,
-  periodically-refreshed cache (see the README) with the
-  <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener">YouTube Data API</a> and your own free key as an on-demand fallback.
+  periodically-refreshed cache (see the README) built from the
+  <a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener">YouTube Data API</a>.
 </p>
 
 <script src="js/config.js"></script>
@@ -30,8 +43,6 @@
 <script src="js/api-aredl.js"></script>
 <script src="js/data-source.js"></script>
 <script src="js/shared-cache.js"></script>
-<script src="js/youtube.js"></script>
-<script src="js/ytkey-ui.js"></script>
 <script src="js/detail.js"></script>
 </body>
 </html>

@@ -1,20 +1,17 @@
 /* =====================================================================
    DATA SOURCE
-   Thin pass-through to AredlAPI. Kept as its own module (rather than
-   having list.js/detail.js call AredlAPI directly) so the rest of the
-   app doesn't need to change shape if another list source is ever added
-   back — cursor format (an `__offset__N` marker) is opaque to callers
-   either way.
+   Thin pass-through to AredlAPI, keyed by 1-indexed page number (each
+   page is CONFIG.PAGE_SIZE levels) rather than an opaque cursor — the
+   whole list is cached in memory client-side (see fetchFullList in
+   api-aredl.js), so any page is just a synchronous slice of it.
    ===================================================================== */
 
 const DataSource = (() => {
 
-  async function fetchPage(cursor) {
-    const offset = typeof cursor === 'string' && cursor.startsWith('__offset__')
-      ? parseInt(cursor.replace('__offset__', ''), 10)
-      : 0;
-    const { demons, nextUrl, total } = await AredlAPI.fetchListed({ limit: CONFIG.PAGE_SIZE, offset });
-    return { demons, nextCursor: nextUrl, total, offset };
+  async function fetchPage(page) {
+    const offset = (Math.max(1, page) - 1) * CONFIG.PAGE_SIZE;
+    const { demons, total } = await AredlAPI.fetchListed({ limit: CONFIG.PAGE_SIZE, offset });
+    return { demons, total };
   }
 
   async function fetchOne(id) {

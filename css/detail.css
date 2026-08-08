@@ -176,20 +176,6 @@
 .video-info .v-stats b { color: var(--text-hi); font-weight: 600; }
 .video-info .v-stats .win { color: var(--gold); }
 
-.yt-key-notice {
-  border: 1px dashed var(--line);
-  border-radius: var(--radius);
-  padding: 12px 14px;
-  font-size: 12.5px;
-  color: var(--text-mid);
-  margin-bottom: 14px;
-}
-.yt-key-notice a, .yt-key-notice button.link {
-  color: var(--cyan);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
 .creators-list {
   display: flex;
   flex-wrap: wrap;

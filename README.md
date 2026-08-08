@@ -23,9 +23,10 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
   creator(s), publisher, verifier, and — side by side — the verifier video's view count vs. the
   most-viewed *same-level* showcase's view count, with the higher number highlighted in gold.
-  Search filters across the *entire* list, not just whatever page happens to be loaded, and a
-  "jump to rank" box plus quick range chips get you anywhere in the list without endless
-  "Load more" clicking.
+  Paginated 75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of
+  Y" jump box; **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and
+  page 2 (#76-150). Search filters across the *entire* list, not just the current page, and the
+  "jump to rank" box takes you straight to whichever page contains that rank.
 - **Detail page (`level.html`)** — click any card for the full picture: list ID, GD level ID,
   points, verifier, publisher, all creators, an embedded player for the official verification
   video, and an embedded player for the auto-discovered top showcase, with both view counts
@@ -34,29 +35,32 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
 ## Shared showcase/view-count cache
 
 View counts and "find the best showcase on YouTube" both need YouTube's Data API, which is
-quota-limited (10,000 units/day by default, and a `search.list` call — the expensive part of
-showcase discovery — costs 100 of those). With ~1600 levels, every visitor doing their own
-lookups with their own key would burn through that fast and repeat the exact same searches
-everyone else already ran.
-
-Instead, `data/yt-cache.json` is a **shared, precomputed cache** committed to this repo,
-populated by [`scripts/refresh-yt-cache.mjs`](scripts/refresh-yt-cache.mjs) running on a
-schedule via [`.github/workflows/refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml).
-The site fetches this one static JSON file (`js/shared-cache.js`) and, for any level it covers,
-shows those numbers directly — **zero personal API usage** for the vast majority of browsing.
+quota-limited (commonly 10,000 units/day, and a `search.list` call — the expensive part of
+showcase discovery — costs 100 of those; newer projects can start out with a much lower
+search-specific sub-limit until Google raises it). With ~1600 levels, every visitor doing their
+own lookups would burn through that fast and repeat the exact same searches everyone else
+already ran — so there's no personal-key option here at all. `data/yt-cache.json` is a
+**shared, precomputed cache** committed to this repo, populated by
+[`scripts/refresh-yt-cache.mjs`](scripts/refresh-yt-cache.mjs) running on a schedule via
+[`.github/workflows/refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml), and the site
+just fetches that one static JSON file (`js/shared-cache.js`) — **zero YouTube API calls happen
+in the browser, ever.** A level the cache hasn't reached yet just shows "Not cached yet".
 
 - **Staggered, not all at once**: each run processes whichever levels have gone longest without
   a check (never-checked first, then oldest-`checkedAt`-first), capped by a per-run unit budget
-  safely under the daily quota. Running daily naturally spreads a full pass across roughly
-  3-4 weeks for AREDL's current size — self-correcting if a run is skipped or the list grows,
-  no day-of-week bucketing needed.
-- **One key, not everyone's**: the workflow uses a single key stored as a repo secret
-  (`YOUTUBE_API_KEY`), so the pooled daily quota gets spent deliberately by one controlled
-  process instead of being absorbed by whichever visitor happens to have added their own.
-- **Personal key = on-demand fallback only**: if you add your own key via the header's key
-  icon, it's only ever used for a level the shared cache hasn't reached yet (brand new, or not
-  due for its staggered refresh) — never as the default path. Without a key, those levels just
-  show "Not cached yet" instead of an error.
+  (`YT_CACHE_MAX_UNITS`, default 7000) safely under the daily quota. Each level costs a flat
+  ~202 units (two fixed `search.list` queries, always both — see below — plus a couple 1-unit
+  `videos.list` calls), so at the default budget and the standard 10,000-unit quota that's
+  roughly **34 new levels per day**, meaning a full first pass over ~1600 levels takes **about
+  45 days** — a hard limit of YouTube's quota, not something the staggering logic can shortcut.
+  If your key's search quota is capped even lower (some newer projects start around 100
+  units/day — effectively one search call), coverage will be much slower until Google raises
+  it; the script always stops cleanly on a quota error rather than writing bad data (see the
+  comments in the script for how). Running daily is self-correcting either way if a run is
+  skipped or the list grows — no date-bucketing needed.
+- **One key for everyone**: the workflow uses a single key stored as a repo secret
+  (`YOUTUBE_API_KEY`), so the whole site's quota usage is one deliberate, controlled process
+  instead of N visitors each burning their own.
 
 ### Setting it up
 
@@ -70,17 +74,13 @@ shows those numbers directly — **zero personal API usage** for the vast majori
 
 You can also run it locally: `YOUTUBE_API_KEY=... node scripts/refresh-yt-cache.mjs`.
 
-Showcase discovery requires the result to actually be *of that level* before it's eligible at
-all — every significant word of the level name must appear in the candidate's title, or the
-numeric GD level ID must appear in the title/description (lesser-known levels' showcases often
-cite the ID). Uploads that look like a raw verification video are dropped, known showcase
-channels are preferred when present (`SHOWCASE_CHANNELS` in `js/config.js`, kept in sync with
-the same list in the refresh script), and otherwise the highest view count among same-level
-matches wins. This logic lives in two places that must be kept in sync by hand (there's no
-shared module system here — the browser files are plain `<script>` globals, the refresh script
-is a standalone Node ESM file): `findBestShowcase()`/`matchesLevel()` in `js/youtube.js` for the
-personal-key live fallback, and the same functions ported into
-`scripts/refresh-yt-cache.mjs` for the scheduled crawl.
+Showcase discovery (`findBestShowcase()` in the script) runs exactly two fixed queries every
+time — `<level name> GD showcase` and `<GD level ID> showcase` — and merges the results. The
+only eligibility check is whether the numeric GD level ID appears in a candidate's title or
+description; nothing is excluded by keyword (earlier versions filtered out titles containing
+"verification", but plenty of legitimate showcases use words like "verified" too, so that's
+gone) and there's no channel allowlist (any channel is equally eligible). Among whatever passes
+the ID check, the highest view count wins.
 
 ## CORS
 
@@ -96,18 +96,16 @@ index.html                  list page markup
 level.html                   detail page markup
 css/
   base.css                   design tokens, header, shared layout/states
-  list.css                    card grid, view-count chips, search/jump/range controls
+  list.css                    card grid, pager, search/jump/list-filter controls
   detail.css                   detail page layout + dual video panels
 js/
   config.js                  endpoints, storage keys, tunables
   utils.js                     formatting/parsing helpers + corsFetchJson, shared by both pages
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below)
-  data-source.js                 thin pass-through to the AREDL adapter
-  shared-cache.js                 reads data/yt-cache.json (see above)
-  youtube.js                       YouTube Data API wrapper — personal-key on-demand fallback
-  ytkey-ui.js                       the "add API key" modal, shared by both pages
-  list.js                            list page controller
-  detail.js                           detail page controller
+  data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
+  shared-cache.js                 reads data/yt-cache.json (see above) — the only source of view counts/showcases
+  list.js                           list page controller
+  detail.js                          detail page controller
 data/
   yt-cache.json               the shared cache itself — committed, machine-updated, don't hand-edit
 scripts/

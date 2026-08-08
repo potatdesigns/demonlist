@@ -4,9 +4,6 @@
 
 (() => {
   const root = document.getElementById('detail-root');
-  const headerActions = document.getElementById('header-actions');
-
-  YtKeyUI.mountKeyButton(headerActions, () => location.reload());
 
   const id = qs('id');
 
@@ -120,8 +117,8 @@
     container.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}" title="${escapeHtml(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   }
 
-  /** sharedEntry is the (possibly undefined) data/yt-cache.json entry for this level — see SharedYtCache in js/shared-cache.js. When present it's authoritative and no YouTube call is made at all. */
-  async function mountVerifierVideo(demon, sharedEntry) {
+  /** sharedEntry is the (possibly undefined) data/yt-cache.json entry for this level — see SharedYtCache in js/shared-cache.js. It's the only source for view counts/showcase; there's no personal-key live fallback. */
+  function mountVerifierVideo(demon, sharedEntry) {
     const embedEl = document.getElementById('verifier-embed');
     const infoEl = document.getElementById('verifier-info');
     const vid = extractYouTubeId(demon.videoUrl);
@@ -133,68 +130,34 @@
     }
     embedIframe(embedEl, vid, `${demon.name} — verification`);
 
-    if (sharedEntry) {
-      infoEl.innerHTML = sharedEntry.verifier ? videoInfoHtml(sharedEntry.verifier) : `<span class="v-title">Video details unavailable.</span>`;
+    if (!sharedEntry) {
+      infoEl.innerHTML = `<span class="v-title">Not in the shared cache yet — check back once the next refresh reaches this level.</span>`;
       return;
     }
-
-    if (!YouTube.hasKey()) {
-      infoEl.innerHTML = keyPromptHtml('See the exact view count');
-      return;
-    }
-    try {
-      const stats = await YouTube.getVideoStats(vid);
-      infoEl.innerHTML = stats ? videoInfoHtml(stats) : `<span class="v-title">Video details unavailable.</span>`;
-    } catch (e) {
-      infoEl.innerHTML = `<span class="v-title" style="color:#ffb4c6">${escapeHtml(e.message)}</span>`;
-    }
+    infoEl.innerHTML = sharedEntry.verifier ? videoInfoHtml(sharedEntry.verifier) : `<span class="v-title">Video details unavailable.</span>`;
   }
 
-  async function mountShowcaseVideo(demon, sharedEntry) {
+  function mountShowcaseVideo(demon, sharedEntry) {
     const embedEl = document.getElementById('showcase-embed');
     const infoEl = document.getElementById('showcase-info');
 
-    if (sharedEntry) {
-      if (!sharedEntry.showcase) {
-        embedEl.innerHTML = `<div class="thumb-fallback">No clear showcase video found for this level.</div>`;
-        infoEl.innerHTML = '';
-        return;
-      }
-      embedIframe(embedEl, sharedEntry.showcase.id, sharedEntry.showcase.title);
-      infoEl.innerHTML = videoInfoHtml(sharedEntry.showcase);
-      const verifierViews = getRenderedViewCount('verifier-info');
-      if (verifierViews !== null) markWinner('verifier-info', 'showcase-info', verifierViews, sharedEntry.showcase.viewCount);
-      return;
-    }
-
-    if (!YouTube.hasKey()) {
-      embedEl.innerHTML = `<div class="thumb-fallback">Add a YouTube API key to auto-find the top showcase.</div>`;
+    if (!sharedEntry) {
       const searchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(demon.name + ' GD showcase')}`;
-      infoEl.innerHTML = keyPromptHtml('Find the top showcase automatically') +
-        `<a class="v-channel" href="${searchUrl}" target="_blank" rel="noopener">Search YouTube for "${escapeHtml(demon.name)}" manually &rarr;</a>`;
+      embedEl.innerHTML = `<div class="thumb-fallback">Not in the shared cache yet.</div>`;
+      infoEl.innerHTML = `<a class="v-channel" href="${searchUrl}" target="_blank" rel="noopener">Search YouTube for "${escapeHtml(demon.name)}" manually &rarr;</a>`;
       return;
     }
 
-    try {
-      const best = await YouTube.findBestShowcase(demon.name, demon.levelId);
-      if (!best) {
-        embedEl.innerHTML = `<div class="thumb-fallback">No clear showcase video found for this level.</div>`;
-        infoEl.innerHTML = '';
-        return;
-      }
-      embedIframe(embedEl, best.id, best.title);
-      infoEl.innerHTML = videoInfoHtml(best);
-
-      // now that we have both view counts, highlight whichever is higher
-      const verifierViews = getRenderedViewCount('verifier-info');
-      const showcaseViews = best.viewCount;
-      if (verifierViews !== null) {
-        markWinner('verifier-info', 'showcase-info', verifierViews, showcaseViews);
-      }
-    } catch (e) {
-      embedEl.innerHTML = `<div class="thumb-fallback">Search failed: ${escapeHtml(e.message)}</div>`;
+    if (!sharedEntry.showcase) {
+      embedEl.innerHTML = `<div class="thumb-fallback">No clear showcase video found for this level.</div>`;
       infoEl.innerHTML = '';
+      return;
     }
+
+    embedIframe(embedEl, sharedEntry.showcase.id, sharedEntry.showcase.title);
+    infoEl.innerHTML = videoInfoHtml(sharedEntry.showcase);
+    const verifierViews = getRenderedViewCount('verifier-info');
+    if (verifierViews !== null) markWinner('verifier-info', 'showcase-info', verifierViews, sharedEntry.showcase.viewCount);
   }
 
   function videoInfoHtml(v) {
@@ -203,10 +166,6 @@
       <span class="v-channel">${escapeHtml(v.channel)}</span>
       <span class="v-stats" data-views="${v.viewCount}"><span class="views-num">👁 <b>${formatCount(v.viewCount)}</b> views</span></span>
     `;
-  }
-
-  function keyPromptHtml(actionLabel) {
-    return `<div class="yt-key-notice" style="margin:0;">${actionLabel} — <button class="link" id="inline-add-key">add a YouTube API key</button>.</div>`;
   }
 
   function getRenderedViewCount(infoElId) {
@@ -220,10 +179,4 @@
     if (verifierViews > showcaseViews) vPanel?.querySelector('.views-num')?.classList.add('win');
     else if (showcaseViews > verifierViews) sPanel?.querySelector('.views-num')?.classList.add('win');
   }
-
-  root.addEventListener('click', (e) => {
-    if (e.target && e.target.id === 'inline-add-key') {
-      YtKeyUI.openModal(() => location.reload());
-    }
-  });
 })();

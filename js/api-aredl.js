@@ -122,7 +122,6 @@ const AredlAPI = (() => {
     const slice = all.slice(offset, offset + limit);
     return {
       demons: slice.map(normalizeLevelBase),
-      nextUrl: offset + limit < all.length ? `__offset__${offset + limit}` : null,
       total: all.length,
     };
   }

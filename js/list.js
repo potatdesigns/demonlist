@@ -4,79 +4,78 @@
 
 (() => {
   const gridEl = document.getElementById('demon-grid');
-  const loadMoreRow = document.getElementById('load-more-row');
-  const loadMoreBtn = document.getElementById('load-more-btn');
   const searchInput = document.getElementById('search-input');
   const jumpForm = document.getElementById('jump-form');
   const jumpInput = document.getElementById('jump-input');
-  const rangeChipsEl = document.getElementById('range-chips');
+  const filterMainBtn = document.getElementById('filter-main');
+  const filterExtendedBtn = document.getElementById('filter-extended');
   const stateBanner = document.getElementById('state-banner');
-  const headerActions = document.getElementById('header-actions');
+  const pagerRow = document.getElementById('pager-row');
+  const pagerPrevBtn = document.getElementById('pager-prev');
+  const pagerNextBtn = document.getElementById('pager-next');
+  const pagerPageForm = document.getElementById('pager-page-form');
+  const pagerPageInput = document.getElementById('pager-page-input');
+  const pagerTotalPagesEl = document.getElementById('pager-total-pages');
 
-  let cursor = null;
-  let allLoaded = [];       // demons loaded so far, in order
+  let currentPage = 1;
+  let totalCount = 0;
+  let totalPages = 1;
   let filterQuery = '';
   let loading = false;
-  let totalCount = 0;       // known once the first page (or the total-count lookup) resolves
-
-  YtKeyUI.mountKeyButton(headerActions, () => {
-    // key just saved — (re)try loading counts for cards already on screen
-    // that came up empty ("Add key"/N/A) the first time around
-    const stale = [...gridEl.querySelectorAll('.demon-card')].filter(c => c.querySelector('.stat-value.na'));
-    if (stale.length) hydrateCards(stale);
-    observeAllCards(); // and observe anything not yet seen, as before
-  });
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
-    setActiveChip(null);
-    resetAndLoad();
+    load();
   }, 350));
 
   jumpForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const pos = parseInt(jumpInput.value, 10);
-    if (Number.isFinite(pos) && pos > 0) jumpToPosition(pos);
+    if (Number.isFinite(pos) && pos > 0) goToPage(Math.ceil(pos / CONFIG.PAGE_SIZE));
   });
 
-  // --- quick range chips: static, round breakpoints tuned for AREDL's
-  // current list size (~1600); ranges beyond the real total are simply
-  // skipped, so this doesn't need retuning if the list grows.
-  const RANGE_BREAKPOINTS = [1, 51, 151, 301, 601, 1001];
-  function renderRangeChips(total) {
-    if (!total || rangeChipsEl.childElementCount) return;
-    const ranges = RANGE_BREAKPOINTS
-      .filter(start => start <= total)
-      .map((start, i, arr) => [start, i + 1 < arr.length ? arr[i + 1] - 1 : total]);
-    rangeChipsEl.innerHTML = ranges.map(([start, end]) =>
-      `<button type="button" class="range-chip" data-start="${start}">#${start}${end > start ? `–${end}` : ''}</button>`
-    ).join('');
-  }
-  rangeChipsEl.addEventListener('click', (e) => {
-    const btn = e.target.closest('.range-chip');
-    if (!btn) return;
-    setActiveChip(btn);
-    jumpToPosition(parseInt(btn.dataset.start, 10));
-  });
-  function setActiveChip(btn) {
-    rangeChipsEl.querySelectorAll('.range-chip').forEach(c => c.classList.toggle('active', c === btn));
-  }
+  filterMainBtn.addEventListener('click', () => goToPage(1));
+  filterExtendedBtn.addEventListener('click', () => goToPage(2));
 
-  function jumpToPosition(pos) {
-    const clamped = totalCount ? Math.max(1, Math.min(pos, totalCount)) : Math.max(1, pos);
+  pagerPrevBtn.addEventListener('click', () => goToPage(currentPage - 1));
+  pagerNextBtn.addEventListener('click', () => goToPage(currentPage + 1));
+  pagerPageForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const page = parseInt(pagerPageInput.value, 10);
+    if (Number.isFinite(page)) goToPage(page);
+  });
+
+  function goToPage(page) {
+    currentPage = Math.max(1, totalPages ? Math.min(page, totalPages) : page);
     filterQuery = '';
     searchInput.value = '';
-    jumpInput.value = clamped > 1 ? String(clamped) : '';
-    startLoadingFrom(clamped > 1 ? `__offset__${clamped - 1}` : null);
+    jumpInput.value = '';
+    load();
     gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+  }
+
+  function updateControlsUI() {
+    filterMainBtn.classList.toggle('active', !filterQuery && currentPage === 1);
+    filterExtendedBtn.classList.toggle('active', !filterQuery && currentPage === 2);
+
+    if (filterQuery) {
+      pagerRow.style.display = 'none';
+      return;
+    }
+    pagerRow.style.display = totalPages > 1 ? 'flex' : 'none';
+    pagerPrevBtn.disabled = currentPage <= 1;
+    pagerNextBtn.disabled = currentPage >= totalPages;
+    pagerPageInput.value = currentPage;
+    pagerPageInput.max = String(totalPages);
+    pagerTotalPagesEl.textContent = totalPages;
   }
 
   AredlAPI.getTotalCount().then(total => {
     totalCount = total;
-    renderRangeChips(total);
-    jumpInput.max = String(total);
+    totalPages = Math.max(1, Math.ceil(total / CONFIG.PAGE_SIZE));
     jumpInput.placeholder = `Jump to rank (1–${total})`;
     searchInput.placeholder = `Search all ${total} levels by name…`;
+    updateControlsUI();
   }).catch(() => { /* the main load below will surface the real error */ });
 
   function showBanner(msg, isError = false) {
@@ -144,20 +143,15 @@
     `;
   }
 
-  function renderCards(demons, { append }) {
-    const html = demons.map(cardTemplate).join('');
-    if (append) gridEl.insertAdjacentHTML('beforeend', html);
-    else gridEl.innerHTML = html;
+  function renderCards(demons) {
+    gridEl.innerHTML = demons.map(cardTemplate).join('');
     observeAllCards();
   }
 
   // --- lazy hydration, only for cards currently visible ---
   // Each IntersectionObserver callback can report several cards becoming
-  // visible in one batch (e.g. the initial page render, or a fast scroll)
-  // — that batch is hydrated together so verifier-video stats can be
-  // fetched as a single videos.list call instead of one per card (see
-  // hydrateCards() below, and CONFIG.YT_* in config.js for why this
-  // matters for quota).
+  // visible in one batch — that batch is hydrated together (see
+  // hydrateCards() below).
   let observer = null;
   function observeAllCards() {
     if (!observer) {
@@ -203,32 +197,11 @@
     }
   }
 
-  function markNeedsKey(card) {
-    const verifierStat = card.querySelector('[data-role="verifier-stat"]');
-    const showcaseStat = card.querySelector('[data-role="showcase-stat"]');
-    [verifierStat, showcaseStat].forEach(el => {
-      const val = el.querySelector('.stat-value');
-      val.textContent = 'Not cached yet';
-      val.classList.remove('loading');
-      val.classList.add('na');
-      el.style.cursor = 'pointer';
-      el.title = 'Not in the shared cache yet — click to check live with your own YouTube API key';
-      el.addEventListener('click', () => YtKeyUI.openModal(() => hydrateCards([card])), { once: true });
-    });
-  }
-
-  function clearNeedsKeyAffordance(card) {
-    card.querySelectorAll('[data-role="verifier-stat"], [data-role="showcase-stat"]').forEach(el => {
-      el.style.cursor = '';
-      el.removeAttribute('title');
-    });
-  }
-
-  /** Write one view-count value into a verifier/showcase stat block and stash the raw number on it for updateLeader(). */
+  /** Write one view-count value into a verifier/showcase stat block. */
   function setStatValue(statEl, viewCount) {
     const val = statEl.querySelector('.stat-value');
     const has = viewCount !== null && viewCount !== undefined;
-    val.textContent = has ? formatCount(viewCount) : 'N/A';
+    val.textContent = has ? formatCount(viewCount) : 'Not cached yet';
     val.classList.remove('loading');
     val.classList.toggle('na', !has);
     statEl.dataset.views = has ? String(viewCount) : '';
@@ -248,78 +221,33 @@
     }
   }
 
-  /** Live personal-key lookup for a card the shared cache hasn't reached yet — only ever called for that gap, never as the default path. */
-  async function applyStatsAndShowcase(card, verifierStats) {
-    const verifierStat = card.querySelector('[data-role="verifier-stat"]');
-    const showcaseStat = card.querySelector('[data-role="showcase-stat"]');
-    const name = card.dataset.name;
-    const levelId = card.dataset.levelId || null;
-
-    setStatValue(verifierStat, verifierStats?.viewCount ?? null);
-
-    let sViews = null;
-    try {
-      const showcase = name ? await YouTube.findBestShowcase(name, levelId) : null;
-      sViews = showcase?.viewCount ?? null;
-    } catch { /* leave sViews null — surfaced as N/A below */ }
-    setStatValue(showcaseStat, sViews);
-
-    updateLeader(card);
-  }
-
   /**
    * Hydrate a batch of cards that just became visible:
-   *  1) AREDL extras (own API, no YouTube quota cost either way)
-   *  2) the shared cache (data/yt-cache.json via SharedYtCache) — free,
-   *     works for every visitor, no quota touched at all
-   *  3) only for cards the shared cache hasn't reached yet: a personal-key
-   *     live lookup, batched into one videos.list call for the whole gap
+   *  1) AREDL extras (video/thumbnail/verifier/publisher/creators)
+   *  2) the shared cache (data/yt-cache.json via SharedYtCache) for view
+   *     counts / showcase — the only source for those; there's no
+   *     personal-key live fallback anymore, so a level the shared cache
+   *     hasn't reached yet just shows "Not cached yet".
    */
   async function hydrateCards(cards) {
     await Promise.all(cards.map(hydrateAredlExtrasIfNeeded));
 
     const sharedEntries = await Promise.all(cards.map(c => SharedYtCache.getEntry(c.dataset.id)));
-    const gapCards = [];
     cards.forEach((card, i) => {
       const entry = sharedEntries[i];
-      if (entry) {
-        setStatValue(card.querySelector('[data-role="verifier-stat"]'), entry.verifier?.viewCount ?? null);
-        setStatValue(card.querySelector('[data-role="showcase-stat"]'), entry.showcase?.viewCount ?? null);
-        updateLeader(card);
-      } else {
-        gapCards.push(card);
-      }
+      setStatValue(card.querySelector('[data-role="verifier-stat"]'), entry?.verifier?.viewCount ?? null);
+      setStatValue(card.querySelector('[data-role="showcase-stat"]'), entry?.showcase?.viewCount ?? null);
+      updateLeader(card);
     });
-
-    if (gapCards.length === 0) return;
-
-    if (!YouTube.hasKey()) {
-      gapCards.forEach(markNeedsKey);
-      return;
-    }
-
-    gapCards.forEach(clearNeedsKeyAffordance);
-
-    const videoUrls = gapCards.map(c => c.dataset.video || null);
-    let statsResults;
-    try {
-      statsResults = await YouTube.getVideoStatsBatch(videoUrls);
-    } catch (e) {
-      statsResults = gapCards.map(() => null);
-    }
-
-    await Promise.all(gapCards.map((card, i) => applyStatsAndShowcase(card, statsResults[i])));
   }
 
   // --- data loading ---
-  async function loadPage(isFirstPage) {
+  async function load() {
     if (loading) return;
     loading = true;
-    loadMoreBtn.disabled = true;
-    loadMoreBtn.textContent = 'Loading…';
 
     try {
-      let demons, nextCursor, matchCount = null;
+      let demons, matchCount = null;
       if (filterQuery) {
         // full-list search — AredlAPI already holds the whole list in
         // memory (see fetchFullList in api-aredl.js), so this filters
@@ -327,21 +255,19 @@
         const result = await AredlAPI.searchByName(filterQuery);
         demons = result.demons;
         matchCount = result.total;
-        nextCursor = null;
       } else {
-        const page = await DataSource.fetchPage(cursor);
+        const page = await DataSource.fetchPage(currentPage);
         demons = page.demons;
-        nextCursor = page.nextCursor;
-        if (page.total) totalCount = page.total;
+        if (page.total) {
+          totalCount = page.total;
+          totalPages = Math.max(1, Math.ceil(totalCount / CONFIG.PAGE_SIZE));
+        }
       }
 
-      cursor = nextCursor;
-      allLoaded = allLoaded.concat(demons);
-
-      if (isFirstPage && demons.length === 0) {
+      if (demons.length === 0) {
         gridEl.innerHTML = `<div class="empty-state">No levels found${filterQuery ? ` for “${escapeHtml(filterQuery)}”` : ''}.</div>`;
       } else {
-        renderCards(demons, { append: !isFirstPage });
+        renderCards(demons);
       }
 
       if (matchCount !== null && matchCount > demons.length) {
@@ -349,7 +275,7 @@
       } else {
         hideBanner();
       }
-      loadMoreRow.style.display = cursor ? 'flex' : 'none';
+      updateControlsUI();
     } catch (err) {
       console.error(err);
       showBanner(
@@ -357,26 +283,18 @@
         ` — its API shape may differ from what <code>js/api-aredl.js</code> expects; see the notes at the top of that file.`,
         true
       );
-      if (allLoaded.length === 0) gridEl.innerHTML = '';
-      loadMoreRow.style.display = 'none';
+      gridEl.innerHTML = '';
+      pagerRow.style.display = 'none';
     } finally {
       loading = false;
-      loadMoreBtn.disabled = false;
-      loadMoreBtn.textContent = 'Load more';
     }
   }
 
-  function startLoadingFrom(initialCursor) {
-    cursor = initialCursor;
-    allLoaded = [];
-    gridEl.innerHTML = skeletonCards(8);
+  function initialLoad() {
+    gridEl.innerHTML = skeletonCards(CONFIG.PAGE_SIZE);
     hideBanner();
-    loadPage(true);
+    load();
   }
 
-  function resetAndLoad() { startLoadingFrom(null); }
-
-  loadMoreBtn.addEventListener('click', () => loadPage(false));
-
-  resetAndLoad();
+  initialLoad();
 })();

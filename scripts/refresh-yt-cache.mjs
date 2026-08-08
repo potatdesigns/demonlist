@@ -13,18 +13,16 @@
    Staggering: rather than bucketing levels by day-of-week, this just
    always processes whichever levels are least-recently checked (never
    checked first, then oldest checkedAt), capped by a per-run unit
-   budget safely under YouTube's 10,000/day default quota. Running this
-   daily naturally spreads a full pass across ~total/perRunBudget days
-   (roughly 3-4 weeks for AREDL's ~1600 levels at the default budget),
-   self-corrects if a run is skipped or the list grows, and needs no
-   date-math bucketing to get that staggering.
+   budget safely under YouTube's 10,000/day default quota. Each level
+   costs ~202 units (two fixed search.list queries, unconditionally —
+   see findBestShowcase() — plus a couple 1-unit videos.list calls), so
+   running this daily at the default 7000-unit budget spreads a full
+   pass across ~45 days for AREDL's ~1600 levels; self-corrects if a run
+   is skipped or the list grows, no date-math bucketing needed.
 
-   The showcase-matching logic (significantWords/matchesLevel) is
-   intentionally kept in sync with js/youtube.js by hand — there's no
-   shared module system here since the browser files are plain
-   <script>-loaded globals, not ES modules, and this project has no
-   build step. If you change the matching heuristic in one place,
-   change it in the other.
+   This is the only place that talks to YouTube's API at all — the site
+   itself has no personal-key fallback (a genuinely global/shared cache
+   means there's no reason for every visitor to need their own key too).
 
    Usage:
      YOUTUBE_API_KEY=... node scripts/refresh-yt-cache.mjs
@@ -45,13 +43,6 @@ const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const MAX_UNITS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_UNITS || '7000', 10);
 const MAX_LEVELS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_LEVELS || '150', 10);
 
-// Channels known for high-production showcase/completion videos — kept in
-// sync with CONFIG.SHOWCASE_CHANNELS in js/config.js.
-const SHOWCASE_CHANNELS = [
-  'Nexus', 'Neiro', 'Requi', 'ThatSlurpo', 'iamgd10', 'Bezt',
-  'Bagage GD', 'Chevron GD', 'Dorami', 'Silica GD', 'zenithGD',
-];
-
 if (!YOUTUBE_API_KEY) {
   console.error('YOUTUBE_API_KEY is not set — nothing to do.');
   process.exit(1);
@@ -61,28 +52,6 @@ function extractYouTubeId(url) {
   if (!url) return null;
   const m = url.match(/(?:youtube\.com\/watch\?v=|youtube\.com\/shorts\/|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
   return m ? m[1] : null;
-}
-
-function significantWords(name) {
-  return (name || '')
-    .toLowerCase()
-    .replace(/\(.*?\)/g, ' ')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim()
-    .split(' ')
-    .filter(w => w.length > 2);
-}
-
-function matchesLevel(candidate, levelName, levelId) {
-  const words = significantWords(levelName);
-  const haystack = candidate.title.toLowerCase();
-  const nameMatches = words.length > 0 && words.every(w => haystack.includes(w));
-  if (nameMatches) return true;
-  if (levelId) {
-    const idStr = String(levelId);
-    if (haystack.includes(idStr) || (candidate.description || '').includes(idStr)) return true;
-  }
-  return false;
 }
 
 let unitsSpent = 0;
@@ -120,41 +89,43 @@ async function getVerifierStats(videoUrl) {
   return item ? statsFromItem(item) : null;
 }
 
-/** Ported from findBestShowcase() in js/youtube.js — keep the two in sync. */
+/**
+ * Find the most-viewed showcase for a level. Two fixed queries, always
+ * both run (no escalation/tiering) — results are merged into one pool.
+ * The only eligibility check is whether the numeric GD level ID appears
+ * in the video's title or description; no title keyword is excluded (a
+ * lot of legitimate showcases use words like "verified"/"verification"
+ * in their titles, so filtering those out was dropping real showcases),
+ * and no channel allowlist is applied — every channel is equally
+ * eligible, purest highest-view-count-among-ID-matches wins.
+ */
 async function findBestShowcase(levelName, levelId) {
-  const queryTiers = [
-    [`"${levelName}" Geometry Dash showcase`],
-    [`${levelName} GD showcase`, `${levelName} Geometry Dash`],
-  ];
+  if (!levelId) return null;
 
-  for (const tier of queryTiers) {
-    const seen = new Map();
-    for (const q of tier) {
-      const data = await ytFetch('search', { part: 'snippet', q, type: 'video', maxResults: '10', order: 'viewCount' });
-      for (const item of data.items || []) {
-        const vid = item.id?.videoId;
-        if (!vid || seen.has(vid)) continue;
-        seen.set(vid, { id: vid, title: item.snippet.title, description: item.snippet.description || '', channel: item.snippet.channelTitle });
-      }
-    }
-    if (seen.size === 0) continue;
-
-    const ids = [...seen.keys()].slice(0, 40);
-    const statsData = await ytFetch('videos', { part: 'statistics,snippet', id: ids.join(',') });
-    const candidates = (statsData.items || []).map(statsFromItem);
-
-    const matched = candidates
-      .filter(c => !/\bverification\b/i.test(c.title))
-      .filter(c => matchesLevel({ title: c.title, description: seen.get(c.id)?.description || '' }, levelName, levelId));
-
-    if (matched.length > 0) {
-      const known = matched.filter(c => SHOWCASE_CHANNELS.some(ch => c.channel.toLowerCase().includes(ch.toLowerCase())));
-      const pool = known.length ? known : matched;
-      pool.sort((a, b) => b.viewCount - a.viewCount);
-      return pool[0];
+  const queries = [`${levelName} GD showcase`, `${levelId} showcase`];
+  const seen = new Map();
+  for (const q of queries) {
+    const data = await ytFetch('search', { part: 'snippet', q, type: 'video', maxResults: '10', order: 'viewCount' });
+    for (const item of data.items || []) {
+      const vid = item.id?.videoId;
+      if (!vid || seen.has(vid)) continue;
+      seen.set(vid, { id: vid, description: item.snippet.description || '' });
     }
   }
-  return null;
+  if (seen.size === 0) return null;
+
+  const ids = [...seen.keys()].slice(0, 40);
+  const statsData = await ytFetch('videos', { part: 'statistics,snippet', id: ids.join(',') });
+  const candidates = (statsData.items || []).map(statsFromItem);
+
+  const idStr = String(levelId);
+  const matched = candidates.filter(c =>
+    c.title.includes(idStr) || (seen.get(c.id)?.description || '').includes(idStr)
+  );
+  if (matched.length === 0) return null;
+
+  matched.sort((a, b) => b.viewCount - a.viewCount);
+  return matched[0];
 }
 
 async function fetchAredlLevels() {
@@ -199,8 +170,8 @@ async function main() {
 
   for (const level of queue) {
     if (processed >= MAX_LEVELS_PER_RUN) { console.log('Hit MAX_LEVELS_PER_RUN, stopping.'); break; }
-    // Worst case a level costs ~201 units (two search tiers + a couple videos.list calls) — stop before risking a mid-level failure that burns budget without saving a result.
-    if (unitsSpent + 201 > MAX_UNITS_PER_RUN) { console.log('Hit the unit budget, stopping.'); break; }
+    // A level always costs ~202 units now (both showcase queries run unconditionally, 100u each, plus a couple 1u videos.list calls) — stop before risking a mid-level failure that burns budget without saving a result.
+    if (unitsSpent + 202 > MAX_UNITS_PER_RUN) { console.log('Hit the unit budget, stopping.'); break; }
 
     try {
       const videoUrl = await fetchAredlVerificationVideo(level.id);
