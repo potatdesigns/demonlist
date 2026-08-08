@@ -2,6 +2,22 @@
    CONFIG — endpoints, storage keys, tunables
    ===================================================================== */
 
+// Repo this site is deployed from, and the branch its scheduled cache-
+// refresh workflows commit to — deliberately NOT `main`. See README's
+// "Cache branch" section: keeping the every-30-min/hourly/daily bot
+// commits off `main` means a human's `git push` there never gets
+// rejected by "remote contains work you do not have" from a cache
+// refresh that landed in between. Update GITHUB_REPO if you fork the
+// project; CACHE_BRANCH only needs to change if you rename the branch.
+const GITHUB_REPO = 'potatdesigns/demonlist';
+const CACHE_BRANCH = 'cache';
+function rawCacheUrl(pathFromRepoRoot) {
+  // raw.githubusercontent.com caches for ~5 minutes (Cache-Control:
+  // max-age=300) — negligible next to how often these files actually
+  // refresh (30 min / hourly / daily).
+  return `https://raw.githubusercontent.com/${GITHUB_REPO}/${CACHE_BRANCH}/${pathFromRepoRoot}`;
+}
+
 const CONFIG = {
   // AREDL: public API, docs at https://api.aredl.net/v2/docs. Confirmed
   // against the open-source backend (github.com/All-Rated-Extreme-Demon-List/aredl-backend-v2):
@@ -43,27 +59,25 @@ const CONFIG = {
     (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
   ],
 
-  // The shared, precomputed showcase/view-count cache committed to this
-  // repo by .github/workflows/refresh-yt-cache.yml + refresh-yt-views.yml
-  // (see scripts/refresh-yt-cache.mjs, which is where the YouTube-quota-
+  // The shared, precomputed showcase/view-count cache committed to the
+  // `cache` branch (not `main`, see above) by
+  // .github/workflows/refresh-yt-cache.yml + refresh-yt-views.yml (see
+  // scripts/refresh-yt-cache.mjs, which is where the YouTube-quota-
   // related tunables now live — this site itself makes no client-side
-  // YouTube API calls at all). A relative path so it resolves next to
-  // wherever index.html is served from (GitHub Pages, a fork, a local
-  // `python -m http.server`, etc.) without needing an absolute origin baked in.
-  // Fetched fresh every page load (see js/shared-cache.js) — no client-side
-  // TTL, since that was exactly what caused stale data to stick around.
-  SHARED_YT_CACHE_URL: 'data/yt-cache.json',
+  // YouTube API calls at all). Fetched fresh every page load (see
+  // js/shared-cache.js) — no client-side TTL, since that was exactly
+  // what caused stale data to stick around.
+  SHARED_YT_CACHE_URL: rawCacheUrl('data/yt-cache.json'),
 
   // Same idea, but for AREDL's own level list — see scripts/refresh-aredl-cache.mjs
   // + .github/workflows/refresh-aredl-cache.yml (hourly, no key needed).
   // AredlAPI.fetchFullList() reads this first and only falls back to a
   // live AREDL call if the snapshot is missing or fails to load.
-  AREDL_CACHE_URL: 'data/aredl-cache.json',
+  AREDL_CACHE_URL: rawCacheUrl('data/aredl-cache.json'),
 
-  // Repo this site is deployed from — used only to build a link to the
-  // GitHub Actions "run workflow" page (see the header's cache-refresh
-  // button in list.js/detail.js). Update this if you fork the project.
-  GITHUB_REPO: 'potatdesigns/demonlist',
+  // Used to build a link to the GitHub Actions "run workflow" page (see
+  // the header's cache-refresh button in list.js/detail.js).
+  GITHUB_REPO,
 
   // localStorage keys
   STORAGE: {

@@ -8,6 +8,13 @@ name: Refresh shared YouTube cache (views)
 # showcase-discovery crawl (refresh-yt-cache.yml) works through the
 # list. See scripts/refresh-yt-cache.mjs for details. Requires the same
 # repo secret YOUTUBE_API_KEY as the discover workflow.
+#
+# Published to the `cache` branch, not `main` — see README's "Cache
+# branch" section and scripts/publish-cache-branch.sh. Since data/*.json
+# isn't tracked on `main` anymore, the *existing* data/yt-cache.json
+# (whose verifier/showcase entries this run refreshes view counts for)
+# is pulled from the cache branch before the script runs, not from the
+# checkout.
 
 on:
   schedule:
@@ -33,21 +40,17 @@ jobs:
         with:
           node-version: 20
 
+      - name: Fetch current data/yt-cache.json from the cache branch
+        run: |
+          git fetch origin cache
+          mkdir -p data
+          git show origin/cache:data/yt-cache.json > data/yt-cache.json 2>/dev/null || echo "No existing cache file found on the cache branch — nothing to refresh."
+
       - name: Run refresh script (views mode)
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           YT_CACHE_MODE: views
         run: node scripts/refresh-yt-cache.mjs
 
-      - name: Commit and push data/yt-cache.json if it changed
-        run: |
-          if git diff --quiet -- data/yt-cache.json; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/yt-cache.json
-          git commit -m "chore: refresh shared YouTube cache (views)"
-          git pull --rebase
-          git push
+      - name: Publish data/yt-cache.json to the cache branch
+        run: 'bash scripts/publish-cache-branch.sh "chore: refresh shared YouTube cache (views)" data/yt-cache.json'

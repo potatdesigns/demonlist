@@ -64,6 +64,42 @@ this was added to avoid doesn't resurface in the cache files either:
 `CONFIG.LIST_SIZE` in `js/config.js` and the matching `LEVEL_LIST_SIZE` constants in both scripts
 are the single knob if you ever want a different cutoff — keep all three in sync.
 
+## Cache branch
+
+The three scheduled cache-refresh workflows (`refresh-aredl-cache.yml`, `refresh-yt-cache.yml`,
+`refresh-yt-views.yml`) publish their generated `data/*.json` files to a dedicated `cache` branch,
+**not** `main`. `main` doesn't track `data/*.json` at all (see `.gitignore`) — the site fetches
+both files straight from the `cache` branch via `raw.githubusercontent.com`
+(`CONFIG.SHARED_YT_CACHE_URL` / `AREDL_CACHE_URL` in `js/config.js`, built from `GITHUB_REPO` +
+`CACHE_BRANCH`; confirmed `raw.githubusercontent.com` sends `Access-Control-Allow-Origin: *`, so
+this works as a plain cross-origin `fetch()`).
+
+Why: with three workflows running as often as every 30 minutes, `main` was accumulating dozens of
+bot commits a day, and a human's `git push` on `main` would get rejected ("remote contains work
+you do not have") any time one of those had landed since the last pull — routine, not exceptional,
+given the views workflow alone runs 48 times a day. Moving that churn to its own branch means
+`main` only ever moves when a person moves it.
+
+[`scripts/publish-cache-branch.sh`](scripts/publish-cache-branch.sh) is what each workflow calls
+instead of a plain `git commit && git push`: it works from an isolated `git worktree` checked out
+on `cache` (never touching whatever's checked out in the main job), re-fetches and hard-resets to
+`origin/cache` right before every commit attempt, and retries (up to 5 times, with a short random
+backoff) if the push is rejected — expected now, since the AREDL workflow and both YouTube
+workflows all target this one branch (different files, but the same ref).
+
+One consequence: `scripts/refresh-yt-cache.mjs`'s incremental discover logic (staggering, the
+channel-index watermarks) and the views refresh both depend on the *existing* `data/yt-cache.json`
+as their starting point. Since that file no longer sits in the `main` checkout, both YouTube
+workflows fetch the current version from the `cache` branch (`git show
+origin/cache:data/yt-cache.json`) as a step before running the script. `refresh-aredl-cache.mjs`
+doesn't need this — it always regenerates its file from scratch.
+
+Trade-off: `raw.githubusercontent.com` caches responses for ~5 minutes (`Cache-Control:
+max-age=300`), negligible against the 30-minute/hourly/daily refresh cadences. Forks need to
+update `GITHUB_REPO` in `js/config.js` (already noted there) and bootstrap their own `cache`
+branch — an orphan branch containing just a `data/` directory is enough; running any of the
+scripts locally and committing the output there once seeds it.
+
 ## Shared showcase/view-count cache
 
 View counts and "find the showcase on YouTube" both need YouTube's Data API, which is
@@ -71,11 +107,12 @@ quota-limited (commonly 10,000 units/day, and a `search.list` call costs 100 of 
 projects can start out with a much lower search-specific sub-limit until Google raises it).
 Even tracking only the top 150 (see [Reducing to a top-150 list](#reducing-to-a-top-150-list)),
 every visitor doing their own lookups would burn through that fast and repeat the exact same
-searches everyone else already ran — so there's no personal-key option here at all. `data/yt-cache.json` is a **shared, precomputed cache** committed to this repo,
-populated by [`scripts/refresh-yt-cache.mjs`](scripts/refresh-yt-cache.mjs) on two separate
-schedules (see below), and the site just fetches that one static JSON file
-(`js/shared-cache.js`) — **zero YouTube API calls happen in the browser, ever.** A level whose
-showcase hasn't been found yet just shows "Not cached yet".
+searches everyone else already ran — so there's no personal-key option here at all. `data/yt-cache.json` is a **shared, precomputed cache** published to the
+[`cache` branch](#cache-branch) (not `main`), populated by
+[`scripts/refresh-yt-cache.mjs`](scripts/refresh-yt-cache.mjs) on two separate schedules (see
+below), and the site just fetches that one static JSON file (`js/shared-cache.js`) — **zero
+YouTube API calls happen in the browser, ever.** A level whose showcase hasn't been found yet
+just shows "Not cached yet".
 
 The script runs in two modes, split because *which video is the showcase* and *how many views
 it has* have very different costs and staleness needs:
@@ -109,7 +146,9 @@ it has* have very different costs and staleness needs:
   (re-)checked once every few weeks.
 
 Both workflows write the same file, so they share a `concurrency` group (only one runs at a
-time) and rebase before pushing.
+time) and both publish via [`scripts/publish-cache-branch.sh`](scripts/publish-cache-branch.sh)
+(see [Cache branch](#cache-branch)), which retries on a rejected push rather than assuming it
+won't happen.
 
 **Manual refresh**: the header's refresh icon links to the discover workflow's page on GitHub
 Actions (`https://github.com/<repo>/actions/workflows/refresh-yt-cache.yml`) rather than
@@ -157,7 +196,7 @@ the search quota — see `SHOWCASE_CHANNELS` in the script). Note MindCap's hand
 Separately from the YouTube data, `data/aredl-cache.json` is a snapshot of the top `LEVEL_LIST_SIZE`
 (150) of AREDL's own `GET /levels` (the bare list — id, name, position, level_id, points, etc.;
 see [Reducing to a top-150 list](#reducing-to-a-top-150-list) for why it's capped there rather
-than the full list), refreshed hourly by
+than the full list), published to the [`cache` branch](#cache-branch) hourly by
 [`scripts/refresh-aredl-cache.mjs`](scripts/refresh-aredl-cache.mjs) /
 [`refresh-aredl-cache.yml`](.github/workflows/refresh-aredl-cache.yml). `AredlAPI.fetchFullList()`
 (`js/api-aredl.js`) reads that snapshot first and only falls back to a live AREDL call if it's
@@ -189,20 +228,19 @@ css/
   list.css                    card grid, pager, search/jump/list-filter controls
   detail.css                   detail page layout + dual video panels
 js/
-  config.js                  endpoints, storage keys, tunables
+  config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson, shared by both pages
-  api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads data/aredl-cache.json first
+  api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache branch's aredl-cache.json first
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
-  shared-cache.js                 reads data/yt-cache.json (see above) — the only source of view counts/showcases
+  shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               header link to the discover workflow's GitHub Actions page
   list.js                           list page controller
   detail.js                          detail page controller
-data/
-  yt-cache.json               shared YouTube cache — committed, machine-updated, don't hand-edit
-  aredl-cache.json            shared AREDL level-list snapshot — committed, machine-updated, don't hand-edit
+data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
+  publish-cache-branch.sh     what both scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases)
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
