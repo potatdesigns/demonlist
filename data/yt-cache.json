@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T08:27:55.448Z",
+  "generatedAt": "2026-08-08T08:49:12.887Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -1295,6 +1295,489 @@
         "viewsCheckedAt": "2026-08-08T08:27:55.018Z"
       },
       "discoveredAt": "2026-08-08T08:15:37.465Z"
+    },
+    "4cfb07b5-3e6e-4d7e-9833-d7f013a85064": {
+      "name": "The Plunge",
+      "position": 73,
+      "verifier": {
+        "id": "8gW1-_u1K0Y",
+        "url": "https://www.youtube.com/watch?v=8gW1-_u1K0Y",
+        "title": "[VERIFIED] “THE PLUNGE” by Dola [Extreme Demon]",
+        "channel": "Gokill GD",
+        "viewCount": 68150,
+        "viewsCheckedAt": "2026-08-08T08:49:03.059Z"
+      },
+      "showcase": {
+        "id": "vWN9heYCB1w",
+        "url": "https://www.youtube.com/watch?v=vWN9heYCB1w",
+        "title": "【4K】\"The Plunge\" by Dolabill (Extreme Demon) | GD 2.2",
+        "channel": "zof",
+        "viewCount": 18340,
+        "viewsCheckedAt": "2026-08-08T08:49:03.059Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:03.059Z"
+    },
+    "68f7dca1-2735-431b-84f5-5fe940e27da8": {
+      "name": "Fracture",
+      "position": 74,
+      "verifier": {
+        "id": "R_-chk3SRFI",
+        "url": "https://www.youtube.com/watch?v=R_-chk3SRFI",
+        "title": "[VERIFIED] Fracture by Arrowgazi || Top 64",
+        "channel": "Dezstro",
+        "viewCount": 18907,
+        "viewsCheckedAt": "2026-08-08T08:49:03.429Z"
+      },
+      "showcase": {
+        "id": "l-sRivK38lc",
+        "url": "https://www.youtube.com/watch?v=l-sRivK38lc",
+        "title": "【4K】 \"Fracture\" by Arrowgazi & Dezstro | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 11336,
+        "viewsCheckedAt": "2026-08-08T08:49:03.429Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:03.429Z"
+    },
+    "345a0d2d-b272-4f17-9264-4ef3407f5314": {
+      "name": "walter white",
+      "position": 75,
+      "verifier": {
+        "id": "KzK62PkWOJ0",
+        "url": "https://www.youtube.com/watch?v=KzK62PkWOJ0",
+        "title": "(VERIFIED) Walter White by Renn241 (Top 15)",
+        "channel": "iIiLaseriIi",
+        "viewCount": 286651,
+        "viewsCheckedAt": "2026-08-08T08:49:03.863Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:03.863Z"
+    },
+    "2c273751-18cc-4871-87e4-5a1a9879e05e": {
+      "name": "Infinite Chaos",
+      "position": 76,
+      "verifier": {
+        "id": "wOMVERxU5IA",
+        "url": "https://www.youtube.com/watch?v=wOMVERxU5IA",
+        "title": "Infinite Chaos VERIFIED! | Extreme Demon | Geometry Dash",
+        "channel": "Victurkey",
+        "viewCount": 32594,
+        "viewsCheckedAt": "2026-08-08T08:49:04.201Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:04.201Z"
+    },
+    "c46ddc54-db3f-4641-888a-f087a38ea4c9": {
+      "name": "BRITNEY NO SCLEARS",
+      "position": 77,
+      "verifier": {
+        "id": "ff_mQSXwjhU",
+        "url": "https://www.youtube.com/watch?v=ff_mQSXwjhU",
+        "title": "(Verification) BRITNEY NO SCLEARS 100% - wabas",
+        "channel": "Scotchtape",
+        "viewCount": 30035,
+        "viewsCheckedAt": "2026-08-08T08:49:04.636Z"
+      },
+      "showcase": {
+        "id": "Ul24DkMIAvM",
+        "url": "https://www.youtube.com/watch?v=Ul24DkMIAvM",
+        "title": "【4K】 \"BRITNEY NO SCLEARS\" by wabas | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 21562,
+        "viewsCheckedAt": "2026-08-08T08:49:04.636Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:04.636Z"
+    },
+    "876b0b3b-0916-4764-94dc-2e433f8109c3": {
+      "name": "Operation Evolution",
+      "position": 78,
+      "verifier": {
+        "id": "WsVF-ayipvY",
+        "url": "https://www.youtube.com/watch?v=WsVF-ayipvY",
+        "title": "Operation Evolution VERIFIED (1.9 Extreme Demon)",
+        "channel": "cobrablitz",
+        "viewCount": 55333,
+        "viewsCheckedAt": "2026-08-08T08:49:04.983Z"
+      },
+      "showcase": {
+        "id": "mz98AzyAU5M",
+        "url": "https://www.youtube.com/watch?v=mz98AzyAU5M",
+        "title": "Operation Evolution",
+        "channel": "Neiro",
+        "viewCount": 43438,
+        "viewsCheckedAt": "2026-08-08T08:49:04.983Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:04.983Z"
+    },
+    "59a49d83-77fd-4890-a04d-689f1947ad16": {
+      "name": "Damascus",
+      "position": 79,
+      "verifier": {
+        "id": "MWQyCUGt76Y",
+        "url": "https://www.youtube.com/watch?v=MWQyCUGt76Y",
+        "title": "(Top 25) DAMASCUS Verified (Extreme Demon by Dzeser, Rob Buck, vArctic, and more)",
+        "channel": "Timo",
+        "viewCount": 119348,
+        "viewsCheckedAt": "2026-08-08T08:49:05.267Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:05.267Z"
+    },
+    "9e4fe89f-e634-41f6-a1d7-c388d426856b": {
+      "name": "Decks Dark",
+      "position": 80,
+      "verifier": {
+        "id": "l52ApE4HWkY",
+        "url": "https://www.youtube.com/watch?v=l52ApE4HWkY",
+        "title": "(Verified!) Decks Dark 100%!",
+        "channel": "Whizkid05",
+        "viewCount": 34485,
+        "viewsCheckedAt": "2026-08-08T08:49:05.665Z"
+      },
+      "showcase": {
+        "id": "BRYuNXRDW7c",
+        "url": "https://www.youtube.com/watch?v=BRYuNXRDW7c",
+        "title": "DECKS DARK",
+        "channel": "Neiro",
+        "viewCount": 18078,
+        "viewsCheckedAt": "2026-08-08T08:49:05.665Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:05.665Z"
+    },
+    "cfad0fb6-7ff9-4c8d-841b-d9cf2221443d": {
+      "name": "SARYYX NEVER CLEAR",
+      "position": 81,
+      "verifier": {
+        "id": "rRlyvmjcz_4",
+        "url": "https://www.youtube.com/watch?v=rRlyvmjcz_4",
+        "title": "[VERIFIED] SARYYX NEVER CLEAR by artos and more (Extreme Demon) | Geometry Dash",
+        "channel": "skzyl",
+        "viewCount": 99004,
+        "viewsCheckedAt": "2026-08-08T08:49:06.010Z"
+      },
+      "showcase": {
+        "id": "g6sEoflVhA0",
+        "url": "https://www.youtube.com/watch?v=g6sEoflVhA0",
+        "title": "【4K】\"SARYYX NEVER CLEAR\" by aartos & More (Extreme Demon) | GD 2.11",
+        "channel": "zof",
+        "viewCount": 22021,
+        "viewsCheckedAt": "2026-08-08T08:49:06.010Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:06.010Z"
+    },
+    "52df535a-4674-4af7-8004-bcd5453883a9": {
+      "name": "The Yangire",
+      "position": 82,
+      "verifier": {
+        "id": "V3FjIorIfWg",
+        "url": "https://www.youtube.com/watch?v=V3FjIorIfWg",
+        "title": "THE YANGIRE 100% VERIFIED! (MY HARDEST EXTREME DEMON) | Geometry Dash 2.2",
+        "channel": "Dorami",
+        "viewCount": 1472823,
+        "viewsCheckedAt": "2026-08-08T08:49:06.476Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:06.476Z"
+    },
+    "d7373b5b-fa60-4b67-9683-cf3c1f088a8d": {
+      "name": "Climax",
+      "position": 83,
+      "verifier": {
+        "id": "E4ppq2WeAAs",
+        "url": "https://www.youtube.com/watch?v=E4ppq2WeAAs",
+        "title": "[VERIFIED] Climax 100% By HushLC & Wain (Extreme Demon)",
+        "channel": "Wain",
+        "viewCount": 75746,
+        "viewsCheckedAt": "2026-08-08T08:49:06.761Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:06.761Z"
+    },
+    "699e6b35-7f79-4413-b300-0b30c0cdb8d6": {
+      "name": "ORDINARY",
+      "position": 84,
+      "verifier": {
+        "id": "4QiHP3jpGnk",
+        "url": "https://www.youtube.com/watch?v=4QiHP3jpGnk",
+        "title": "(Verified, Top 50) Ordinary 100% by @vit124 and more",
+        "channel": "wPopoff",
+        "viewCount": 178774,
+        "viewsCheckedAt": "2026-08-08T08:49:07.211Z"
+      },
+      "showcase": {
+        "id": "oRrc5sCd6Z4",
+        "url": "https://www.youtube.com/watch?v=oRrc5sCd6Z4",
+        "title": "EXTREME DEMON TOP 60 | \"Ordinary\" by Vit12",
+        "channel": "Neiro",
+        "viewCount": 24509,
+        "viewsCheckedAt": "2026-08-08T08:49:07.211Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:07.211Z"
+    },
+    "1a093f68-cff4-48bc-9b95-02e2aed07104": {
+      "name": "TrakineS",
+      "position": 85,
+      "verifier": {
+        "id": "oKuoI-_JzKU",
+        "url": "https://www.youtube.com/watch?v=oKuoI-_JzKU",
+        "title": "[VERIFIED] TrakineS (Extreme Demon) 100% | Laranjoo and more | SPIKELESS TOP 50?",
+        "channel": "mariner",
+        "viewCount": 16206,
+        "viewsCheckedAt": "2026-08-08T08:49:07.636Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:07.636Z"
+    },
+    "5dd207e6-8773-471c-a153-4fae56250ad4": {
+      "name": "Wavterminal",
+      "position": 86,
+      "verifier": {
+        "id": "dlvsCE3xYkQ",
+        "url": "https://www.youtube.com/watch?v=dlvsCE3xYkQ",
+        "title": "Wavterminal VERIFIED (by Skyavoxii)",
+        "channel": "Frice",
+        "viewCount": 31452,
+        "viewsCheckedAt": "2026-08-08T08:49:07.941Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:07.941Z"
+    },
+    "9484f345-fbfb-4d82-bb6b-faa642aa3d80": {
+      "name": "Sinister Silence",
+      "position": 87,
+      "verifier": {
+        "id": "dJCdTMQxHMo",
+        "url": "https://www.youtube.com/watch?v=dJCdTMQxHMo",
+        "title": "Sinister Silence 100%",
+        "channel": "DarkTD",
+        "viewCount": 71715,
+        "viewsCheckedAt": "2026-08-08T08:49:08.280Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:08.280Z"
+    },
+    "3237ed55-fa08-43ae-a93e-bd485ffe8d55": {
+      "name": "THE JET ENGINE",
+      "position": 88,
+      "verifier": {
+        "id": "8Q20XU__LoQ",
+        "url": "https://www.youtube.com/watch?v=8Q20XU__LoQ",
+        "title": "THE JET ENGINE by ‪@BillzerGD VERIFIED! (TOP 65) | Geometry Dash",
+        "channel": "eviljoeGD",
+        "viewCount": 26472,
+        "viewsCheckedAt": "2026-08-08T08:49:08.649Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:08.649Z"
+    },
+    "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e": {
+      "name": "Trickshot",
+      "position": 89,
+      "verifier": {
+        "id": "IMLjnmnIWRc",
+        "url": "https://www.youtube.com/watch?v=IMLjnmnIWRc",
+        "title": "(MY BEST LEVEL) \"Trickshot\" VERIFIED (Solo Top 75 Extreme Demon by vonic)",
+        "channel": "vonic",
+        "viewCount": 14270,
+        "viewsCheckedAt": "2026-08-08T08:49:09.008Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:09.008Z"
+    },
+    "174221f2-19ab-48b4-8a81-50733db8bd3f": {
+      "name": "Midnight",
+      "position": 90,
+      "verifier": {
+        "id": "NhkN_a9cNi8",
+        "url": "https://www.youtube.com/watch?v=NhkN_a9cNi8",
+        "title": "Midnight by Yuko VERIFIED | Geometry Dash",
+        "channel": "nei",
+        "viewCount": 74956,
+        "viewsCheckedAt": "2026-08-08T08:49:09.284Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:09.284Z"
+    },
+    "e444695d-3fc6-4dc8-82f2-0da259ad6dc9": {
+      "name": "Doppler (Solo)",
+      "position": 91,
+      "verifier": {
+        "id": "xSP43i61SLM",
+        "url": "https://www.youtube.com/watch?v=xSP43i61SLM",
+        "title": "[SOLO VERIFIED] DOPPLER 100% By At424 & Latezk",
+        "channel": "Daniel j",
+        "viewCount": 5629,
+        "viewsCheckedAt": "2026-08-08T08:49:09.632Z"
+      },
+      "showcase": {
+        "id": "EyrJ-xS-6ms",
+        "url": "https://www.youtube.com/watch?v=EyrJ-xS-6ms",
+        "title": "【4K】 \"Doppler\" by At242 & LaTeZk | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 4185,
+        "viewsCheckedAt": "2026-08-08T08:49:09.632Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:09.632Z"
+    },
+    "80533210-51be-417f-a492-22edff194d94": {
+      "name": "Cimmerian Shade",
+      "position": 92,
+      "verifier": {
+        "id": "lUNvV1k19HA",
+        "url": "https://www.youtube.com/watch?v=lUNvV1k19HA",
+        "title": "Cimmerian Shade VERIFIED // SrGuillester and Azuler",
+        "channel": "spcreat",
+        "viewCount": 151645,
+        "viewsCheckedAt": "2026-08-08T08:49:10.033Z"
+      },
+      "showcase": {
+        "id": "C3W9kxPXi6s",
+        "url": "https://www.youtube.com/watch?v=C3W9kxPXi6s",
+        "title": "THIS IMPOSSIBLE LEVEL GOT VERIFIED | \"Cimmerian Shade\" by SrGuillester and Azuler",
+        "channel": "Neiro",
+        "viewCount": 31658,
+        "viewsCheckedAt": "2026-08-08T08:49:10.033Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:10.033Z"
+    },
+    "46b88712-6024-4018-b526-7d103659bcb4": {
+      "name": "PSYCHOPATH (DeniPol)",
+      "position": 93,
+      "verifier": {
+        "id": "1luL7tTE8p8",
+        "url": "https://www.youtube.com/watch?v=1luL7tTE8p8",
+        "title": "[Reverified // NO CBF] PSYCHOPATH by DeniPol 100% [ft. СТИНТ] (Поинтер психи Demon) | GD 2.2",
+        "channel": "BONN GD",
+        "viewCount": 65447,
+        "viewsCheckedAt": "2026-08-08T08:49:10.476Z"
+      },
+      "showcase": {
+        "id": "VA9RLSwoRo8",
+        "url": "https://www.youtube.com/watch?v=VA9RLSwoRo8",
+        "title": "VERIFIED Top 30 Extreme Demon | \"Psychopath\" (CBF) by DeniPol",
+        "channel": "Neiro",
+        "viewCount": 158939,
+        "viewsCheckedAt": "2026-08-08T08:49:10.476Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:10.476Z"
+    },
+    "5ff9fbb4-05b0-42cf-87f0-808e3482f29a": {
+      "name": "arcturus",
+      "position": 94,
+      "verifier": {
+        "id": "a_Bqa8l9Xtc",
+        "url": "https://www.youtube.com/watch?v=a_Bqa8l9Xtc",
+        "title": "ARCTURUS by Maxfs VERIFIED! (Top 1 Demon)",
+        "channel": "ultrakawaHD",
+        "viewCount": 809683,
+        "viewsCheckedAt": "2026-08-08T08:49:10.901Z"
+      },
+      "showcase": {
+        "id": "wHXFFnmMB1Q",
+        "url": "https://www.youtube.com/watch?v=wHXFFnmMB1Q",
+        "title": "【4K】 \"Arcturus\" [NEW TOP 1!] by maxFS (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 1531107,
+        "viewsCheckedAt": "2026-08-08T08:49:10.901Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:10.901Z"
+    },
+    "2a8c1979-8f50-4652-8ff0-223471a9a7b5": {
+      "name": "Diabolic ClubStep",
+      "position": 95,
+      "verifier": {
+        "id": "BN7DxkMaQfg",
+        "url": "https://www.youtube.com/watch?v=BN7DxkMaQfg",
+        "title": "(Verification) Diabolic ClubStep",
+        "channel": "Sevant",
+        "viewCount": 96241,
+        "viewsCheckedAt": "2026-08-08T08:49:11.256Z"
+      },
+      "showcase": {
+        "id": "pjOaUpSWgOs",
+        "url": "https://www.youtube.com/watch?v=pjOaUpSWgOs",
+        "title": "Top 10 Hardest UNRATED Extreme Demons in Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 92465,
+        "viewsCheckedAt": "2026-08-08T08:49:11.256Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:11.256Z"
+    },
+    "eae489bc-dbf9-47b3-9c23-9730f5343d06": {
+      "name": "BEELINE (Solo)",
+      "position": 96,
+      "verifier": {
+        "id": "nt6T9YDb6gw",
+        "url": "https://www.youtube.com/watch?v=nt6T9YDb6gw",
+        "title": "BEELINE 100% [Verified SOLO]",
+        "channel": "Motor",
+        "viewCount": 38920,
+        "viewsCheckedAt": "2026-08-08T08:49:11.613Z"
+      },
+      "showcase": null,
+      "discoveredAt": "2026-08-08T08:49:11.613Z"
+    },
+    "e6132f57-97c2-413e-82e2-bbdf2702ce83": {
+      "name": "DreamStep",
+      "position": 97,
+      "verifier": {
+        "id": "EK5-0OB1tmc",
+        "url": "https://www.youtube.com/watch?v=EK5-0OB1tmc",
+        "title": "[2.2] DreamStep Verified",
+        "channel": "youngs6",
+        "viewCount": 11951,
+        "viewsCheckedAt": "2026-08-08T08:49:11.959Z"
+      },
+      "showcase": {
+        "id": "eDpe9QDqsmc",
+        "url": "https://www.youtube.com/watch?v=eDpe9QDqsmc",
+        "title": "【4K】\"DreamStep\" by Blaster1337 (Extreme Demon) | GD 2.2",
+        "channel": "zof",
+        "viewCount": 853,
+        "viewsCheckedAt": "2026-08-08T08:49:11.959Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:11.959Z"
+    },
+    "994ebf0f-e54e-49e4-bb7d-24097535d19d": {
+      "name": "Sonic Wave Infinity",
+      "position": 98,
+      "verifier": {
+        "id": "C3-l_fFikpQ",
+        "url": "https://www.youtube.com/watch?v=C3-l_fFikpQ",
+        "title": "SONIC WAVE INFINITY VERIFIED! [By APTeam and Riot] (HARDEST DEMON)",
+        "channel": "Xanii",
+        "viewCount": 1459620,
+        "viewsCheckedAt": "2026-08-08T08:49:12.336Z"
+      },
+      "showcase": {
+        "id": "UQVNbhQEiLE",
+        "url": "https://www.youtube.com/watch?v=UQVNbhQEiLE",
+        "title": "【4K】 \"Sonic Wave Infinity\" by APTeam (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 2325112,
+        "viewsCheckedAt": "2026-08-08T08:49:12.336Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:12.336Z"
+    },
+    "dee17e9e-bdfb-4183-a18b-894f24df5edf": {
+      "name": "Tartarus",
+      "position": 99,
+      "verifier": {
+        "id": "JptG7rwti1U",
+        "url": "https://www.youtube.com/watch?v=JptG7rwti1U",
+        "title": "(Showcase) Tartarus by Riot and more",
+        "channel": "Demon List",
+        "viewCount": 62265,
+        "viewsCheckedAt": "2026-08-08T08:49:12.755Z"
+      },
+      "showcase": {
+        "id": "0rzzFP6LHfU",
+        "url": "https://www.youtube.com/watch?v=0rzzFP6LHfU",
+        "title": "【4K】 \"Tartarus\" by Riot & more (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 1351346,
+        "viewsCheckedAt": "2026-08-08T08:49:12.755Z"
+      },
+      "discoveredAt": "2026-08-08T08:49:12.755Z"
     }
   }
 }
