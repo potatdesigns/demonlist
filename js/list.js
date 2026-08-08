@@ -23,6 +23,8 @@
   let filterQuery = '';
   let loading = false;
 
+  CacheAdminUI.mountRefreshButton(document.getElementById('header-actions'));
+
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
     load();

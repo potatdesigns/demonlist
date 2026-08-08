@@ -1,0 +1,46 @@
+name: Refresh AREDL level-list cache
+
+# Populates data/aredl-cache.json — a snapshot of AREDL's level list so
+# visitors read one shared, periodically-refreshed file instead of every
+# single page load hitting AREDL's live API for the same ~1600-entry
+# list. See scripts/refresh-aredl-cache.mjs. Unauthenticated and free
+# (no API key, no quota), so this just runs hourly, comfortably ahead of
+# how often levels actually get added/reordered.
+
+on:
+  schedule:
+    - cron: '0 * * * *' # hourly
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aredl-cache-write
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run refresh script
+        run: node scripts/refresh-aredl-cache.mjs
+
+      - name: Commit and push data/aredl-cache.json if it changed
+        run: |
+          if git diff --quiet -- data/aredl-cache.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/aredl-cache.json
+          git commit -m "chore: refresh AREDL level-list cache"
+          git pull --rebase
+          git push

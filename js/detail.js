@@ -5,6 +5,8 @@
 (() => {
   const root = document.getElementById('detail-root');
 
+  CacheAdminUI.mountRefreshButton(document.getElementById('header-actions'));
+
   const id = qs('id');
 
   if (!id) {

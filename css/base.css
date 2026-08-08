@@ -137,6 +137,19 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text-mid);
+  background: var(--bg-surface);
+  transition: color .15s, border-color .15s;
+}
+.icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); }
+
 /* =====================================================================
    SHARED: page shell / states
    ===================================================================== */

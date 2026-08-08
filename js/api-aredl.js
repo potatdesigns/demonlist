@@ -90,31 +90,54 @@ const AredlAPI = (() => {
   }
 
   // The list endpoint ignores limit/offset and always returns everything
-  // (confirmed live: passing limit=3 still returns all ~1600 levels), so
-  // fetch it once, cache it for the session, and paginate client-side.
+  // (confirmed live: passing limit=3 still returns all ~1600 levels), and
+  // every visitor re-fetching that same ~1600-entry list on every page
+  // load is wasteful — so this reads the periodically-refreshed static
+  // snapshot at CONFIG.AREDL_CACHE_URL first (see scripts/refresh-aredl-cache.mjs
+  // + .github/workflows/refresh-aredl-cache.yml, hourly), and only falls
+  // back to a live AREDL call if that snapshot is missing or fails to
+  // load (e.g. before the workflow's first run). Either way, the result
+  // is cached in memory for the rest of the session and paginated client-side.
   let fullListCache = null;
   let fullListPromise = null;
   function fetchFullList() {
     if (fullListCache) return Promise.resolve(fullListCache);
     if (!fullListPromise) {
       fullListPromise = (async () => {
-        const res = await corsFetchJson(ENDPOINTS.listed());
-        if (!res.ok && !res.viaProxy) {
-          throw new Error(
-            `AREDL returned ${res.status} for the level list. Its API shape may have changed — ` +
-            `check https://api.aredl.net/v2/docs and update js/api-aredl.js.`
-          );
-        }
-        const data = await res.json();
-        const list = Array.isArray(data) ? data : (data.data || data.levels || []);
-        if (!Array.isArray(list)) {
-          throw new Error('AREDL returned an unexpected response shape for the level list — try again in a moment.');
-        }
-        fullListCache = list.slice().sort((a, b) => a.position - b.position);
+        const snapshot = await fetchFromSnapshot();
+        fullListCache = snapshot || await fetchFromLiveApi();
         return fullListCache;
       })().finally(() => { fullListPromise = null; });
     }
     return fullListPromise;
+  }
+
+  async function fetchFromSnapshot() {
+    try {
+      const res = await fetch(CONFIG.AREDL_CACHE_URL, { cache: 'no-cache' });
+      if (!res.ok) return null;
+      const data = await res.json();
+      const list = Array.isArray(data?.levels) ? data.levels : null;
+      return list && list.length ? list.slice().sort((a, b) => a.position - b.position) : null;
+    } catch {
+      return null; // missing file, bad JSON, whatever — fall back to the live API
+    }
+  }
+
+  async function fetchFromLiveApi() {
+    const res = await corsFetchJson(ENDPOINTS.listed());
+    if (!res.ok && !res.viaProxy) {
+      throw new Error(
+        `AREDL returned ${res.status} for the level list. Its API shape may have changed — ` +
+        `check https://api.aredl.net/v2/docs and update js/api-aredl.js.`
+      );
+    }
+    const data = await res.json();
+    const list = Array.isArray(data) ? data : (data.data || data.levels || []);
+    if (!Array.isArray(list)) {
+      throw new Error('AREDL returned an unexpected response shape for the level list — try again in a moment.');
+    }
+    return list.slice().sort((a, b) => a.position - b.position);
   }
 
   async function fetchListed({ limit = CONFIG.PAGE_SIZE, offset = 0 } = {}) {

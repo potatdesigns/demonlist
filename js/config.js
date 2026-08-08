@@ -28,14 +28,25 @@ const CONFIG = {
   ],
 
   // The shared, precomputed showcase/view-count cache committed to this
-  // repo by .github/workflows/refresh-yt-cache.yml (see scripts/refresh-yt-cache.mjs,
-  // which is where the YouTube-quota-related tunables now live — this
-  // site itself makes no client-side YouTube API calls at all). A
-  // relative path so it resolves next to wherever index.html is served
-  // from (GitHub Pages, a fork, a local `python -m http.server`, etc.)
-  // without needing an absolute origin baked in.
+  // repo by .github/workflows/refresh-yt-cache.yml + refresh-yt-views.yml
+  // (see scripts/refresh-yt-cache.mjs, which is where the YouTube-quota-
+  // related tunables now live — this site itself makes no client-side
+  // YouTube API calls at all). A relative path so it resolves next to
+  // wherever index.html is served from (GitHub Pages, a fork, a local
+  // `python -m http.server`, etc.) without needing an absolute origin baked in.
   SHARED_YT_CACHE_URL: 'data/yt-cache.json',
   SHARED_YT_CACHE_TTL_MS: 1000 * 60 * 60, // re-fetch the file at most once an hour per visitor
+
+  // Same idea, but for AREDL's own level list — see scripts/refresh-aredl-cache.mjs
+  // + .github/workflows/refresh-aredl-cache.yml (hourly, no key needed).
+  // AredlAPI.fetchFullList() reads this first and only falls back to a
+  // live AREDL call if the snapshot is missing or fails to load.
+  AREDL_CACHE_URL: 'data/aredl-cache.json',
+
+  // Repo this site is deployed from — used only to build a link to the
+  // GitHub Actions "run workflow" page (see the header's cache-refresh
+  // button in list.js/detail.js). Update this if you fork the project.
+  GITHUB_REPO: 'potatdesigns/demonlist',
 
   // localStorage keys
   STORAGE: {

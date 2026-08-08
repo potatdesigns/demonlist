@@ -2,8 +2,9 @@
 
 An AREDL-powered extreme demon list for Geometry Dash. Pure HTML/CSS/JS,
 no build step for the site itself — open `index.html` in a browser or host the folder anywhere static.
-(A small Node script + a scheduled GitHub Action maintain one JSON file in the background — see
-[Shared showcase/view-count cache](#shared-showcaseview-count-cache) below.)
+(A couple of small Node scripts + scheduled GitHub Actions maintain a few JSON files in the
+background — see [Shared showcase/view-count cache](#shared-showcaseview-count-cache) and
+[Shared AREDL level-list cache](#shared-aredl-level-list-cache) below.)
 
 ## Running it
 
@@ -72,6 +73,14 @@ it has* have very different costs and staleness needs:
 Both workflows write the same file, so they share a `concurrency` group (only one runs at a
 time) and rebase before pushing.
 
+**Manual refresh**: the header's refresh icon links to the discover workflow's page on GitHub
+Actions (`https://github.com/<repo>/actions/workflows/refresh-yt-cache.yml`) rather than
+triggering it directly — GitHub's `workflow_dispatch` API needs an authenticated request, and
+there's no safe way to expose a one-click trigger from a public static site (embedding a token
+client-side would let anyone on the internet trigger runs and burn the day's quota). The link
+is shown to everyone since it's harmless either way: GitHub's own permissions gate the actual
+"Run workflow" button to signed-in collaborators with write access.
+
 ### Setting it up
 
 1. Get a free key from the [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
@@ -107,6 +116,24 @@ search quota). **Mindcap is not included** — the handle given for it (`@mindca
 an unrelated, near-empty channel (1 video, 14 subscribers), almost certainly not the intended
 one; add it once the correct handle/channel ID is confirmed.
 
+## Shared AREDL level-list cache
+
+Separately from the YouTube data, `data/aredl-cache.json` is a snapshot of AREDL's own
+`GET /levels` (the bare list — id, name, position, level_id, points, etc.), refreshed hourly by
+[`scripts/refresh-aredl-cache.mjs`](scripts/refresh-aredl-cache.mjs) /
+[`refresh-aredl-cache.yml`](.github/workflows/refresh-aredl-cache.yml). `AredlAPI.fetchFullList()`
+(`js/api-aredl.js`) reads that snapshot first and only falls back to a live AREDL call if it's
+missing or fails to load — so instead of every single visitor's page load independently
+re-fetching the same ~1600-entry list from AREDL, there's one shared, periodically-refreshed
+copy. This needs no API key (AREDL's list endpoint is public and free) and no budget/staggering
+logic — it's cheap enough to just refresh the whole thing every run. Hourly is comfortably
+ahead of how often levels actually get reordered/added ("every day or so"); nothing about level
+*position* changes faster than that in practice.
+
+This only covers the base list. Per-level detail (verification video, publisher, creators) —
+which needs a separate `GET /levels/{id}` call per level — is unrelated and still fetched
+live/lazily as cards scroll into view, same as before.
+
 ## CORS
 
 AREDL's API sends proper CORS headers, so it's fetched directly — no proxy needed. The one
@@ -126,18 +153,22 @@ css/
 js/
   config.js                  endpoints, storage keys, tunables
   utils.js                     formatting/parsing helpers + corsFetchJson, shared by both pages
-  api-aredl.js                  AREDL adapter (confirmed API shape, see note below)
+  api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads data/aredl-cache.json first
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads data/yt-cache.json (see above) — the only source of view counts/showcases
+  cache-admin-ui.js               header link to the discover workflow's GitHub Actions page
   list.js                           list page controller
   detail.js                          detail page controller
 data/
-  yt-cache.json               the shared cache itself — committed, machine-updated, don't hand-edit
+  yt-cache.json               shared YouTube cache — committed, machine-updated, don't hand-edit
+  aredl-cache.json            shared AREDL level-list snapshot — committed, machine-updated, don't hand-edit
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
+  refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases)
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
+  refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
 ```
 
 ## A note on AREDL
@@ -155,8 +186,9 @@ and live responses. Two shape quirks worth knowing if you're touching either fil
   hydrated with those once they scroll into view — see `AredlAPI.fetchExtras()` and the
   `hydrateCards()`/`hydrateAredlExtrasIfNeeded()` flow in `js/list.js`.
 - `GET /levels` accepts `limit`/`offset` but silently ignores them — it always returns every
-  level (~1600 of them). `api-aredl.js` fetches that full list once per session, caches it in
-  memory, and paginates/searches client-side from there.
+  level (~1600 of them). `api-aredl.js` reads that full list from the hourly-refreshed
+  `data/aredl-cache.json` snapshot (falling back to a live call if it's missing), caches it in
+  memory for the session, and paginates/searches client-side from there.
 
 If AREDL changes their API shape in the future, that GitHub repo's `src/aredl/levels/` and
 `src/aredl/records/` directories are the place to re-check field names against.
