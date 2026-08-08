@@ -1,14 +1,18 @@
-name: Refresh shared YouTube cache
+name: Refresh shared YouTube cache (discover)
 
-# Populates data/yt-cache.json — see scripts/refresh-yt-cache.mjs for the
-# staggering/budget logic and js/shared-cache.js for how the site reads it.
-# Requires a repo secret YOUTUBE_API_KEY (Settings -> Secrets and variables
-# -> Actions -> New repository secret). Without it this workflow will fail
-# fast with a clear error instead of silently doing nothing.
+# The expensive half: figures out *which* video is the showcase for each
+# level (search.list, 100 units/call), staggered/budget-capped across
+# runs. See scripts/refresh-yt-cache.mjs for the staggering/budget logic
+# and js/shared-cache.js for how the site reads data/yt-cache.json. View
+# counts are refreshed separately and much more often — see
+# refresh-yt-views.yml. Requires a repo secret YOUTUBE_API_KEY (Settings
+# -> Secrets and variables -> Actions -> New repository secret); without
+# it this workflow fails fast with a clear error instead of silently
+# doing nothing.
 
 on:
   schedule:
-    - cron: '0 8 * * *' # once a day; the script itself staggers which levels get checked
+    - cron: '0 8 * * *' # once a day; the script itself staggers which levels get (re-)checked
   workflow_dispatch:
     inputs:
       max_levels:
@@ -23,8 +27,10 @@ on:
 permissions:
   contents: write
 
+# Shared with refresh-yt-views.yml — both workflows write the same
+# data/yt-cache.json file, so only one of the two runs at a time system-wide.
 concurrency:
-  group: refresh-yt-cache
+  group: yt-cache-write
   cancel-in-progress: false
 
 jobs:
@@ -37,9 +43,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run refresh script
+      - name: Run refresh script (discover mode)
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YT_CACHE_MODE: discover
           YT_CACHE_MAX_LEVELS: ${{ github.event.inputs.max_levels }}
           YT_CACHE_MAX_UNITS: ${{ github.event.inputs.max_units }}
         run: node scripts/refresh-yt-cache.mjs
@@ -53,5 +60,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/yt-cache.json
-          git commit -m "chore: refresh shared YouTube cache"
+          git commit -m "chore: refresh shared YouTube cache (discover)"
+          git pull --rebase
           git push

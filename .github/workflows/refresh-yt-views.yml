@@ -1,0 +1,53 @@
+name: Refresh shared YouTube cache (views)
+
+# The cheap, frequent half: refreshes view counts only, for every video
+# already identified in data/yt-cache.json (videos.list, 1 unit each,
+# batched 50-at-a-time — the whole list costs on the order of 60-70
+# units total). Runs every 30 minutes so the numbers shown on the site
+# stay close to real-time, independent of how slowly the expensive
+# showcase-discovery crawl (refresh-yt-cache.yml) works through the
+# list. See scripts/refresh-yt-cache.mjs for details. Requires the same
+# repo secret YOUTUBE_API_KEY as the discover workflow.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Shared with refresh-yt-cache.yml — both workflows write the same
+# data/yt-cache.json file, so only one of the two runs at a time system-wide.
+concurrency:
+  group: yt-cache-write
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run refresh script (views mode)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YT_CACHE_MODE: views
+        run: node scripts/refresh-yt-cache.mjs
+
+      - name: Commit and push data/yt-cache.json if it changed
+        run: |
+          if git diff --quiet -- data/yt-cache.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/yt-cache.json
+          git commit -m "chore: refresh shared YouTube cache (views)"
+          git pull --rebase
+          git push
