@@ -159,10 +159,17 @@ const AredlAPI = (() => {
     };
   }
 
-  /** Total level count, for "jump to rank" bounds and position-based tier coloring. Resolves once the list has loaded at least once. */
+  /** Total level count, for "open rank" bounds and position-based tier coloring. Resolves once the list has loaded at least once. */
   async function getTotalCount() {
     const all = await fetchFullList();
     return all.length;
+  }
+
+  /** Resolves a 1-indexed rank straight to that level's id — the full list is already cached in memory (see fetchFullList above), so this is a plain lookup, no extra round trip. Used by the "open rank" box to jump straight into a level's detail page instead of just the page containing it. */
+  async function getIdByPosition(position) {
+    const all = await fetchFullList();
+    const found = all.find(l => l.position === position);
+    return found ? found.id : null;
   }
 
   /**
@@ -210,5 +217,5 @@ const AredlAPI = (() => {
   // list-page card once it scrolls into view — see list.js.
   const fetchExtras = fetchDemon;
 
-  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount };
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition };
 })();

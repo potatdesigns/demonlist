@@ -30,6 +30,10 @@ on:
         description: 'Override: max YouTube quota units to spend this run'
         required: false
         default: ''
+      target_level_id:
+        description: 'Force-refresh a single level (its AREDL internal id, not the GD level id — see the "refresh this level" button on its detail page, which copies it for you), bypassing the staggered queue. Leave blank for the normal run.'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -62,6 +66,7 @@ jobs:
           YT_CACHE_MODE: discover
           YT_CACHE_MAX_LEVELS: ${{ github.event.inputs.max_levels }}
           YT_CACHE_MAX_UNITS: ${{ github.event.inputs.max_units }}
+          YT_CACHE_TARGET_LEVEL_ID: ${{ github.event.inputs.target_level_id }}
         run: node scripts/refresh-yt-cache.mjs
 
       - name: Publish data/yt-cache.json to the cache branch

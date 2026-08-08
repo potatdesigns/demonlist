@@ -64,6 +64,7 @@
      YT_CACHE_MAX_UNITS      default 7000     — discover mode: total quota-unit ceiling for the run (index upkeep + verifier stats)
      YT_CACHE_CHANNEL_BUDGET default 4000     — discover mode: of that ceiling, how much the channel-index phase alone may spend (leaves room for verifier stats)
      YT_CACHE_MAX_LEVELS     default 150      — discover mode: hard cap on levels processed per run (AREDL-courtesy, not quota-driven anymore)
+     YT_CACHE_TARGET_LEVEL_ID default (none)  — discover mode: AREDL internal id (not the GD level id) of a single level to force-refresh, bypassing the staggered queue entirely — see the detail page's "refresh this level" button
    ===================================================================== */
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -85,6 +86,7 @@ const MODE = process.env.YT_CACHE_MODE === 'views' ? 'views' : 'discover';
 const MAX_UNITS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_UNITS || '7000', 10);
 const CHANNEL_INDEX_BUDGET = parseInt(process.env.YT_CACHE_CHANNEL_BUDGET || '4000', 10);
 const MAX_LEVELS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_LEVELS || '150', 10);
+const TARGET_LEVEL_ID = process.env.YT_CACHE_TARGET_LEVEL_ID || null;
 
 // Safety caps for the channel-index crawl (see refreshChannelIndex): bound
 // per-channel cost per run so one large/stale channel can't eat a whole
@@ -340,12 +342,29 @@ async function runDiscover() {
 
     const levelIndex = buildLevelIndex(cache);
 
-    const neverDiscovered = levels.filter(l => !cache.levels[l.id]);
-    const stale = levels
-      .filter(l => cache.levels[l.id])
-      .sort((a, b) => new Date(cache.levels[a.id].discoveredAt) - new Date(cache.levels[b.id].discoveredAt));
-    const queue = [...neverDiscovered, ...stale].slice(0, MAX_LEVELS_PER_RUN);
-    console.log(`${neverDiscovered.length} never discovered, ${stale.length} due for a re-check. Processing ${queue.length} levels this run.`);
+    // Manual single-level override — see the detail page's "refresh this
+    // level" button (js/cache-admin-ui.js), which copies a level's AREDL
+    // internal id to the clipboard for pasting in here. Bypasses the
+    // staggered queue and MAX_LEVELS_PER_RUN entirely; a single level is
+    // trivial next to either budget.
+    let queue;
+    if (TARGET_LEVEL_ID) {
+      const target = levels.find(l => String(l.id) === TARGET_LEVEL_ID);
+      if (target) {
+        queue = [target];
+        console.log(`Targeting a single level: #${target.position} ${target.name} (${TARGET_LEVEL_ID}).`);
+      } else {
+        console.warn(`target_level_id "${TARGET_LEVEL_ID}" isn't in the current top ${LEVEL_LIST_SIZE} — falling back to the normal staggered queue.`);
+      }
+    }
+    if (!queue) {
+      const neverDiscovered = levels.filter(l => !cache.levels[l.id]);
+      const stale = levels
+        .filter(l => cache.levels[l.id])
+        .sort((a, b) => new Date(cache.levels[a.id].discoveredAt) - new Date(cache.levels[b.id].discoveredAt));
+      queue = [...neverDiscovered, ...stale].slice(0, MAX_LEVELS_PER_RUN);
+      console.log(`${neverDiscovered.length} never discovered, ${stale.length} due for a re-check. Processing ${queue.length} levels this run.`);
+    }
 
     // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level.
     const videoUrlByLevel = new Map();

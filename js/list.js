@@ -22,18 +22,35 @@
   let totalPages = 1;
   let filterQuery = '';
   let loading = false;
-
-  CacheAdminUI.mountRefreshButton(document.getElementById('header-actions'));
+  let opening = false;
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
     load();
   }, 350));
 
-  jumpForm.addEventListener('submit', (e) => {
+  /** Opens a rank straight into its detail page — not just the list page containing it — since that's what you actually want when you type a specific rank in. */
+  jumpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (opening) return;
     const pos = parseInt(jumpInput.value, 10);
-    if (Number.isFinite(pos) && pos > 0) goToPage(Math.ceil(pos / CONFIG.PAGE_SIZE));
+    if (!Number.isFinite(pos) || pos <= 0) return;
+
+    opening = true;
+    jumpInput.disabled = true;
+    try {
+      const id = await AredlAPI.getIdByPosition(pos);
+      if (id) {
+        window.location.href = `level.html?id=${encodeURIComponent(id)}`;
+      } else {
+        showBanner(`No level at rank #${pos}${totalCount ? ` (list runs 1–${totalCount})` : ''}.`, true);
+      }
+    } catch (err) {
+      showBanner(`Couldn't open rank #${pos}: ${escapeHtml(err.message)}`, true);
+    } finally {
+      opening = false;
+      jumpInput.disabled = false;
+    }
   });
 
   filterMainBtn.addEventListener('click', () => goToPage(1));
@@ -75,7 +92,7 @@
   AredlAPI.getTotalCount().then(total => {
     totalCount = total;
     totalPages = Math.max(1, Math.ceil(total / CONFIG.PAGE_SIZE));
-    jumpInput.placeholder = `Jump to rank (1–${total})`;
+    jumpInput.placeholder = `Open rank (1–${total})`;
     searchInput.placeholder = `Search all ${total} levels by name…`;
     updateControlsUI();
   }).catch(() => { /* the main load below will surface the real error */ });

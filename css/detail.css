@@ -98,6 +98,11 @@
   font-size: 20px;
   font-weight: 700;
 }
+.video-section-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 .video-compare {
   display: grid;

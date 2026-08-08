@@ -131,12 +131,6 @@ img { max-width: 100%; display: block; }
   margin-top: 2px;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .icon-btn {
   width: 34px;
   height: 34px;

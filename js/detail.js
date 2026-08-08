@@ -5,8 +5,6 @@
 (() => {
   const root = document.getElementById('detail-root');
 
-  CacheAdminUI.mountRefreshButton(document.getElementById('header-actions'));
-
   const id = qs('id');
 
   if (!id) {
@@ -90,7 +88,10 @@
 
       <div class="video-section-head">
         <h2>Verification vs. showcase</h2>
-        <span class="eyebrow">view counts, side by side</span>
+        <div class="video-section-actions">
+          <span class="eyebrow">view counts, side by side</span>
+          <div id="level-refresh-actions"></div>
+        </div>
       </div>
 
       <div class="video-compare">
@@ -113,6 +114,7 @@
 
     mountVerifierVideo(demon, sharedEntry);
     mountShowcaseVideo(demon, sharedEntry);
+    CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
   }
 
   function embedIframe(container, videoId, title) {

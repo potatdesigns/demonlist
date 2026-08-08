@@ -30,11 +30,15 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   Paginated 75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of
   Y" jump box; **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and
   page 2 (#76-150). Search filters across the *entire* list, not just the current page, and the
-  "jump to rank" box takes you straight to whichever page contains that rank.
-- **Detail page (`level.html`)** — click any card for the full picture: list ID, GD level ID,
-  points, verifier, publisher, all creators, an embedded player for the official verification
-  video, and an embedded player for the auto-discovered top showcase, with both view counts
-  shown for direct comparison.
+  **Open rank** box takes you straight *into* that level's detail page (`AredlAPI.getIdByPosition()`
+  resolves the rank to an id client-side, from the already-cached full list — no extra round trip)
+  rather than just the list page it happens to sit on.
+- **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
+  ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
+  verification video, and an embedded player for the auto-discovered top showcase, with both view
+  counts shown for direct comparison. A refresh icon next to that section lets a signed-in
+  collaborator force a re-check of just this level (see
+  [Manual refresh](#shared-showcaseview-count-cache) below).
 
 ## Reducing to a top-150 list
 
@@ -150,13 +154,18 @@ time) and both publish via [`scripts/publish-cache-branch.sh`](scripts/publish-c
 (see [Cache branch](#cache-branch)), which retries on a rejected push rather than assuming it
 won't happen.
 
-**Manual refresh**: the header's refresh icon links to the discover workflow's page on GitHub
-Actions (`https://github.com/<repo>/actions/workflows/refresh-yt-cache.yml`) rather than
-triggering it directly — GitHub's `workflow_dispatch` API needs an authenticated request, and
-there's no safe way to expose a one-click trigger from a public static site (embedding a token
-client-side would let anyone on the internet trigger runs and burn the day's quota). The link
-is shown to everyone since it's harmless either way: GitHub's own permissions gate the actual
-"Run workflow" button to signed-in collaborators with write access.
+**Manual refresh**: each detail page has a refresh icon (`js/cache-admin-ui.js`,
+`mountLevelRefreshButton()`) next to "Verification vs. showcase" that copies that level's AREDL
+internal id to the clipboard and opens the discover workflow's page on GitHub Actions
+(`https://github.com/<repo>/actions/workflows/refresh-yt-cache.yml`) — paste the id into the
+optional `target_level_id` input there to force a re-check of just that level, bypassing the
+normal staggered queue (see `YT_CACHE_TARGET_LEVEL_ID` in `scripts/refresh-yt-cache.mjs`). This
+isn't a one-click trigger, the same way the old site-wide version wasn't: GitHub's
+`workflow_dispatch` API needs an authenticated request, and there's no safe way to expose that
+from a public static site (embedding a token client-side would let anyone on the internet trigger
+runs and burn the day's quota). The button is shown to every visitor since it's harmless either
+way — GitHub's own permissions gate the actual "Run workflow" button to signed-in collaborators
+with write access; a visitor without that access just ends up looking at a page they can't submit.
 
 ### Setting it up
 
@@ -223,6 +232,9 @@ outright; harmless if never triggered, useful insurance if AREDL's CORS setup ev
 ```
 index.html                  list page markup
 level.html                   detail page markup
+assets/
+  logo.png                   site logo — header mark + PNG favicon source (256px, downsized from the original)
+  favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png
 css/
   base.css                   design tokens, header, shared layout/states
   list.css                    card grid, pager, search/jump/list-filter controls
@@ -233,7 +245,7 @@ js/
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache branch's aredl-cache.json first
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
-  cache-admin-ui.js               header link to the discover workflow's GitHub Actions page
+  cache-admin-ui.js               detail-page "refresh this level" control, see "Manual refresh" above
   list.js                           list page controller
   detail.js                          detail page controller
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
@@ -242,7 +254,7 @@ scripts/
   refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
   publish-cache-branch.sh     what both scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
 .github/workflows/
-  refresh-yt-cache.yml        daily — discover mode (find showcases)
+  refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
   refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
 ```
