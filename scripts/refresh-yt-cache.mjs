@@ -65,11 +65,8 @@ const MAX_LEVELS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_LEVELS || '150', 10
 // constrained search quota) from the handles given for this feature.
 // Handles can be renamed; channel IDs can't, so those are what's used at
 // match time.
-//
-// NOTE: the handle given for "Mindcap" (@mindcap) resolves to an
-// unrelated, near-empty channel (1 video, 14 subscribers, unrelated
-// name) — almost certainly not the intended channel, so it's left out
-// until the correct handle/channel ID is confirmed.
+// NOTE: the handle "@mindcap" (no trailing dot) resolves to an unrelated,
+// near-empty channel — the real one is "@mindcap." (with the trailing dot).
 const SHOWCASE_CHANNELS = [
   { name: 'Nexus', handle: 'NexusGD10', channelId: 'UCZwP1iUQiAKYQp5w-9mJb_w' },
   { name: 'Neiro', handle: 'Neiro1999', channelId: 'UCCj0f5y47A94_dahjTbem-A' },
@@ -79,6 +76,7 @@ const SHOWCASE_CHANNELS = [
   { name: 'fnm04', handle: 'fnm04', channelId: 'UCw00BI5Nm1nXxxbTsXHNaLg' },
   { name: 'zof', handle: 'The_zof', channelId: 'UC5Ljfy4cP_jmMN2UckIOpMg' },
   { name: 'Newly Rated Extremes', handle: 'NewlyRatedExtremes', channelId: 'UClz5PjabyNVXnb0UsoQn0cw' },
+  { name: 'MindCap', handle: 'mindcap.', channelId: 'UC5XddTLrnFtB1drApEfZzDQ' },
 ];
 const KNOWN_CHANNEL_IDS = new Set(SHOWCASE_CHANNELS.map(c => c.channelId));
 
@@ -136,6 +134,12 @@ async function getVideoStats(videoId) {
  * substring match). Among what's left, the highest-viewed video *per
  * channel* is taken as that channel's showcase, then the highest-viewed
  * of those per-channel picks wins overall.
+ *
+ * The ID check is done against the description from the *videos.list*
+ * call below, not search.list's own snippet.description — search.list
+ * truncates descriptions to a short teaser (often cut off before
+ * reaching a showcaser's "ID: 123456789" line further down), which was
+ * silently discarding real matches. videos.list returns the full text.
  */
 async function findBestShowcase(levelId) {
   if (!levelId) return null;
@@ -146,13 +150,12 @@ async function findBestShowcase(levelId) {
   if (items.length === 0) return null;
 
   const channelIdByVideo = new Map(items.map(item => [item.id.videoId, item.snippet.channelId]));
-  const descByVideo = new Map(items.map(item => [item.id.videoId, item.snippet.description || '']));
 
   const ids = [...channelIdByVideo.keys()];
   const statsData = await ytFetch('videos', { part: 'statistics,snippet', id: ids.join(',') });
   const matched = (statsData.items || [])
-    .map(statsFromItem)
-    .filter(c => c.title.includes(idStr) || (descByVideo.get(c.id) || '').includes(idStr));
+    .filter(item => item.snippet.title.includes(idStr) || (item.snippet.description || '').includes(idStr))
+    .map(statsFromItem);
   if (matched.length === 0) return null;
 
   const bestPerChannel = new Map();

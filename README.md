@@ -110,11 +110,10 @@ or `YOUTUBE_API_KEY=... YT_CACHE_MODE=views node scripts/refresh-yt-cache.mjs` (
 4. Take the highest-viewed video *per channel*, then the highest-viewed of those across
    channels is the winner.
 
-The allowlist is currently: Nexus, Neiro, Viprin, Just a GD Player, IcedCave, fnm04, zof, and
-Newly Rated Extremes (resolved to channel IDs via `channels.list?forHandle=`, not the
-search quota). **Mindcap is not included** — the handle given for it (`@mindcap`) resolves to
-an unrelated, near-empty channel (1 video, 14 subscribers), almost certainly not the intended
-one; add it once the correct handle/channel ID is confirmed.
+The allowlist is currently: Nexus, Neiro, Viprin, Just a GD Player, IcedCave, fnm04, zof,
+Newly Rated Extremes, and MindCap (resolved to channel IDs via `channels.list?forHandle=`, not
+the search quota — see `SHOWCASE_CHANNELS` in the script). Note MindCap's handle is
+`@mindcap.` *with* a trailing dot — `@mindcap` (no dot) is an unrelated, near-empty channel.
 
 ## Shared AREDL level-list cache
 
