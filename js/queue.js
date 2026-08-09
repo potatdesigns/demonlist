@@ -1,13 +1,17 @@
 /* =====================================================================
    QUEUE PAGE CONTROLLER
 
-   Shows the current showcase-discovery priority queue as a plain,
-   scannable list — mirrors the exact ordering logic in
-   scripts/refresh-yt-cache.mjs's runDiscover(): levels with no showcase
-   on file yet go first, then the rest ordered by ascending showcase view
-   count (see the README's "Shared showcase/view-count cache" section for
-   why). Purely read-only/informational — no trigger lives here, see
-   js/cache-admin-ui.js for the one remaining (per-level) refresh control.
+   Shows the actual persisted showcase-discovery queue (cache.queue in
+   data/yt-cache.json, see scripts/refresh-yt-cache.mjs's runDiscover())
+   in its real stored order — not a fresh client-side re-sort. That queue
+   is built once (null-showcase levels first, then ascending by showcase
+   view count) and then *drains* as the discover workflow actually
+   processes levels, refilling from scratch once empty — so this list
+   should visibly shrink between runs and jump back to ~150 on refill,
+   rather than always showing the same full list. Purely read-only/
+   informational — no trigger lives here, see js/cache-admin-ui.js for
+   the one remaining (per-level) refresh control, which also moves that
+   level to the front of this same queue.
    ===================================================================== */
 
 (() => {
@@ -43,12 +47,31 @@
       ]);
 
       const showcaseViews = (d) => ytCache.levels?.[d.id]?.showcase?.viewCount ?? null;
-      const withoutShowcase = demons.filter(d => showcaseViews(d) === null);
-      const byShowcaseViews = demons.filter(d => showcaseViews(d) !== null).sort((a, b) => showcaseViews(a) - showcaseViews(b));
-      const queue = [...withoutShowcase, ...byShowcaseViews];
+      const demonsById = new Map(demons.map(d => [d.id, d]));
 
-      listEl.innerHTML = queue.map((d, i) => rowTemplate(d, i + 1, showcaseViews(d), i)).join('');
-      showBanner(`${withoutShowcase.length} of ${total} levels have no showcase on file yet — those go first, then ascending by showcase views.`);
+      // A cache written before the persisted queue existed won't have
+      // cache.queue yet — fall back to computing the same starting order
+      // client-side, purely so this page isn't blank in the meantime.
+      // Once the next discover run writes a real cache.queue, this
+      // branch stops being taken.
+      const hasPersistedQueue = Array.isArray(ytCache.queue);
+      const queue = hasPersistedQueue
+        ? ytCache.queue.map(id => demonsById.get(id)).filter(Boolean)
+        : (() => {
+            const withoutShowcase = demons.filter(d => showcaseViews(d) === null);
+            const byShowcaseViews = demons.filter(d => showcaseViews(d) !== null).sort((a, b) => showcaseViews(a) - showcaseViews(b));
+            return [...withoutShowcase, ...byShowcaseViews];
+          })();
+
+      if (queue.length === 0) {
+        listEl.innerHTML = `<div class="empty-state">Queue's empty — every tracked level was checked this cycle. It refills automatically once the discover workflow runs again.</div>`;
+      } else {
+        listEl.innerHTML = queue.map((d, i) => rowTemplate(d, i + 1, showcaseViews(d), i)).join('');
+      }
+
+      showBanner(hasPersistedQueue
+        ? `${queue.length} of ${total} levels still need a check this cycle — shrinks as the discover workflow runs, refills once it hits zero.`
+        : `${queue.length} of ${total} levels have no showcase on file yet — those go first, then ascending by showcase views. (No persisted queue in the cache yet — showing a freshly computed starting order until the next discover run writes one.)`);
     } catch (err) {
       console.error(err);
       showBanner(`Couldn't load the queue: ${escapeHtml(err.message)}`, true);

@@ -90,6 +90,13 @@
 
 .queue-row.skeleton-row { padding: 14px; animation: none; }
 
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 13.5px;
+}
+
 @media (max-width: 560px) {
   .queue-row { grid-template-columns: 36px 44px 1fr; }
   .queue-status { display: none; }

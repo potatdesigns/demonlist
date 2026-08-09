@@ -51,16 +51,13 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   doesn't host level screenshots itself; tries the 1280x720 `maxresdefault` thumbnail first,
   falling back to `hqdefault` when YouTube hasn't generated one (it silently serves a small gray
   placeholder with a real `200` status rather than a 404 for those, so this checks the loaded
-  image's actual pixel width rather than trusting the response to fail). Clicking a card into its
-  detail page (or back) animates as a cross-fade+scale via the browser's native cross-document
-  View Transitions (`@view-transition { navigation: auto; }` in `css/base.css`) — Chrome/Edge
-  126+ only as of writing; everywhere else navigation is instant, same as before this existed.
+  image's actual pixel width rather than trusting the response to fail).
 - **Queue page (`queue.html`)**, linked from the header — a plain top-to-bottom list (no cards,
-  closer to AREDL's own changelog styling) of every tracked level in the exact order the next
-  showcase-discovery run will process them: levels with no showcase found yet first, then the
-  rest ascending by showcase view count. Mirrors `scripts/refresh-yt-cache.mjs`'s real
-  priority-queue logic client-side (see
-  [the queue ordering below](#shared-showcaseview-count-cache)) — read-only, no trigger lives here.
+  closer to AREDL's own changelog styling) showing the *actual* persisted showcase-discovery
+  queue in its real stored order — not a fresh client-side re-sort — so it visibly shrinks as the
+  discover workflow works through it and jumps back to ~150 once it refills (see
+  [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no trigger lives
+  here.
 
 ## Reducing to a top-150 list
 
@@ -155,22 +152,34 @@ it has* have very different costs and staleness needs:
   history from scratch costs on the order of a few hundred units total across all 9 channels — far
   cheaper than the old per-level `search.list` approach (100 units *per level*, ~163,000 units to
   cover the full list). Once the index exists, showcase-matching for every level is a free local
-  map lookup, so `discover` covers every level every run; only a per-run level cap
-  (`YT_CACHE_MAX_LEVELS`, default 150, now just AREDL courtesy rather than quota-driven) and the
-  overall unit ceiling (`YT_CACHE_MAX_UNITS`, default 7000, split against `YT_CACHE_CHANNEL_BUDGET`
-  for the indexing phase) still bound a single run. Levels are processed in priority order —
-  whichever ones have no showcase on file yet go first (nothing to compare, and finding one is the
-  valuable work), then the rest ordered by ascending showcase view count, lowest-viewed first —
-  recomputed fresh from the current cache every run rather than a persisted position, so once the
-  whole list has a showcase this is just a live ascending sort that keeps reshuffling as view
-  counts change; "reorder and restart" falls out of that for free rather than needing separate
-  cycle-tracking state. This mostly matters when a run gets cut short (quota, or a lower
-  `YT_CACHE_MAX_LEVELS` override): whatever's left unprocessed is exactly what a false "no
-  showcase" would have hurt the least to skip. The script always stops cleanly on a quota error
-  rather than writing bad data — a level whose verifier videos.list call got cut off by quota is
-  left for the next run instead of being recorded with a false "no verifier found". Runs daily
+  map lookup.
+
+  **The queue is persisted (`cache.queue` in `data/yt-cache.json`), not recomputed from scratch
+  every run.** It's built fresh only when empty — levels with no showcase on file yet first
+  (nothing to compare, and finding one is the valuable work), then the rest ascending by showcase
+  view count — and then *drains* as levels actually get checked: each run takes a batch off the
+  front (up to `YT_CACHE_MAX_LEVELS`, default 150) and removes whichever of those it successfully
+  processed. Once the queue hits empty, the next run rebuilds it from scratch and the cycle
+  restarts. [`queue.html`](queue.html) shows this list in its real stored order, so it visibly
+  shrinks run to run and jumps back to ~150 on refill — see `js/queue.js`. With
+  `YT_CACHE_MAX_LEVELS` at its default of 150 (the full tracked list), a run typically drains and
+  immediately needs refilling in the same run, so draining is only really visible if you lower
+  that below 150 (spreading a full cycle across several days instead of finishing it every run —
+  a real trade-off against freshness, not just a display setting).
+
+  The one exception to draining: a manual single-level refresh (see [Manual
+  refresh](#shared-showcaseview-count-cache) below) moves that level to the *front* of the queue
+  instead of removing it — both as visible confirmation the trigger worked, and so it's first in
+  line again the next time the automatic run works through the queue.
+
+  A level whose per-run batch got cut short (quota, or the `YT_CACHE_MAX_LEVELS` cap) stays in the
+  queue rather than being marked done — retried next run instead of recorded with a false "no
+  showcase". The script always stops cleanly on a quota error rather than writing bad data — a
+  level whose verifier `videos.list` call got cut off by quota is left in the queue instead of
+  being recorded with a false "no verifier found". Runs daily
   ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a run is
-  skipped or the list grows.
+  skipped or the list grows (new/never-seen levels join the front of the queue immediately, not
+  just at the next refill).
 
   Before resolving verifier stats, the script looks up each queued level's verification video on
   AREDL (`GET /levels/{id}`, plain HTTP, no YouTube quota) — and that step used to be a plain
@@ -199,11 +208,12 @@ time) and both publish via [`scripts/publish-cache-branch.sh`](scripts/publish-c
 won't happen.
 
 **Manual refresh**: a refresh icon on each detail page, next to "Verification vs. showcase"
-(`js/cache-admin-ui.js`, `mountLevelRefreshButton()`), passes `target_level_id` to jump that one
-level to the front of the queue (see `YT_CACHE_TARGET_LEVEL_ID` in `scripts/refresh-yt-cache.mjs`,
-and [the queue ordering above](#shared-showcaseview-count-cache) for what "front" means — the run
-that follows still updates the same cache the priority order is computed from, so this reshuffles
-the queue for next time too, not just the level it targeted). There used to also be a site-wide
+(`js/cache-admin-ui.js`, `mountLevelRefreshButton()`), passes `target_level_id` to check that one
+level immediately and move it to the front of the persisted queue (see `YT_CACHE_TARGET_LEVEL_ID`
+in `scripts/refresh-yt-cache.mjs`, and [the queue behavior above](#shared-showcaseview-count-cache))
+rather than dropping it once checked the way the normal automatic processing does — both as
+visible confirmation on [`queue.html`](queue.html) that the trigger worked, and so it's first in
+line again next time the automatic run works through the queue. There used to also be a site-wide
 button that ran a normal queue-wide discover pass — removed, since it let any visitor trigger an
 expensive full-list run on demand; only this narrower per-level version remains, and the Worker
 below refuses to dispatch without a `target_level_id` even if called directly. [`queue.html`](queue.html)
@@ -366,7 +376,7 @@ js/
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
   list.js                           list page controller — also owns the ?main/?extended/?q= URL sync
   detail.js                          detail page controller
-  queue.js                           queue page controller — mirrors the server-side priority-queue sort client-side
+  queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above

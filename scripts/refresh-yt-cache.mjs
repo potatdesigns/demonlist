@@ -350,6 +350,24 @@ function bestShowcaseFor(levelId, levelIndex) {
   return best;
 }
 
+/**
+ * Fresh priority order for a new queue cycle — levels with no showcase on
+ * file yet first (nothing to compare, and finding one is the valuable
+ * work), then the rest ascending by showcase view count (heavily-viewed,
+ * presumably already-settled showcases get re-checked last). Only called
+ * when the persisted queue (cache.queue, see runDiscover()) has been
+ * fully drained — this is the "refill sorted" step, not something that
+ * runs every time.
+ */
+function buildFreshQueue(levels, cache) {
+  const showcaseViews = l => cache.levels[l.id]?.showcase?.viewCount ?? null;
+  const withoutShowcase = levels.filter(l => showcaseViews(l) === null);
+  const byShowcaseViews = levels
+    .filter(l => showcaseViews(l) !== null)
+    .sort((a, b) => showcaseViews(a) - showcaseViews(b));
+  return [...withoutShowcase, ...byShowcaseViews].map(l => l.id);
+}
+
 // --- discover mode: refresh the channel index, then match + refresh verifiers for every level (staggered by AREDL-courtesy cap) ---
 async function runDiscover() {
   const [levels, cache] = await Promise.all([fetchAredlLevels(), loadExistingCache()]);
@@ -375,11 +393,38 @@ async function runDiscover() {
 
     const levelIndex = buildLevelIndex(cache);
 
+    // --- persisted priority queue ---
+    // cache.queue is an ordered list of level ids still owed a check this
+    // cycle — built fresh once (buildFreshQueue(), null-showcase levels
+    // first, then ascending by showcase view count), then *drained* as
+    // levels actually get processed below, rather than recomputed from
+    // scratch every run. Once it empties out, it gets rebuilt from
+    // scratch and the cycle restarts. See queue.html, which shows exactly
+    // this list — so it visibly shrinks run to run and jumps back to
+    // ~150 on refill, instead of always showing the same full,
+    // freshly-re-sorted 150 every time.
+    if (!Array.isArray(cache.queue)) cache.queue = [];
+    const beforePrune = cache.queue.length;
+    cache.queue = cache.queue.filter(id => currentIds.has(id));
+    if (cache.queue.length !== beforePrune) {
+      console.log(`Pruned ${beforePrune - cache.queue.length} level(s) from the queue that fell out of the top ${LEVEL_LIST_SIZE}.`);
+    }
+    // A level newly inside the top LEVEL_LIST_SIZE that's never been
+    // discovered at all can't already be mid-cycle (it wasn't trackable
+    // before) — goes straight to the front, same priority
+    // buildFreshQueue() would give it anyway.
+    const queuedIds = new Set(cache.queue);
+    const neverSeen = levels.filter(l => !cache.levels[l.id] && !queuedIds.has(l.id));
+    if (neverSeen.length) cache.queue.unshift(...neverSeen.map(l => l.id));
+
     // Manual single-level override — see the detail page's "refresh this
-    // level" button (js/cache-admin-ui.js), which copies a level's AREDL
-    // internal id to the clipboard for pasting in here. Bypasses the
-    // staggered queue and MAX_LEVELS_PER_RUN entirely; a single level is
-    // trivial next to either budget.
+    // level" button (js/cache-admin-ui.js), which passes a level's AREDL
+    // internal id as target_level_id. Bypasses the queue batch and
+    // MAX_LEVELS_PER_RUN entirely; a single level is trivial next to
+    // either budget. What it does to cache.queue is handled after
+    // processing, below — moved to the front rather than removed, both
+    // as visible confirmation the trigger worked and so it's first in
+    // line again for the automatic run too.
     let queue;
     if (TARGET_LEVEL_ID) {
       const target = levels.find(l => String(l.id) === TARGET_LEVEL_ID);
@@ -387,28 +432,17 @@ async function runDiscover() {
         queue = [target];
         console.log(`Targeting a single level: #${target.position} ${target.name} (${TARGET_LEVEL_ID}).`);
       } else {
-        console.warn(`target_level_id "${TARGET_LEVEL_ID}" isn't in the current top ${LEVEL_LIST_SIZE} — falling back to the normal staggered queue.`);
+        console.warn(`target_level_id "${TARGET_LEVEL_ID}" isn't in the current top ${LEVEL_LIST_SIZE} — falling back to the normal queue.`);
       }
     }
     if (!queue) {
-      // Priority queue, recomputed fresh every run from the current cache
-      // state (no separate persisted position — "restart" falls out of
-      // that for free): levels with no showcase on file yet — either
-      // never discovered, or discovered but nothing matched — sort first,
-      // since there's nothing yet to compare and finding one is the
-      // valuable work. Once a level has a showcase, it's ordered by that
-      // showcase's view count, lowest first, so heavily-viewed (and
-      // presumably already-settled) showcases get re-checked last. Once
-      // the whole list has a showcase, this is just an ascending sort by
-      // view count that keeps reshuffling as those counts change — the
-      // "reorder and restart" happens automatically, every run.
-      const showcaseViews = l => cache.levels[l.id]?.showcase?.viewCount ?? null;
-      const withoutShowcase = levels.filter(l => showcaseViews(l) === null);
-      const byShowcaseViews = levels
-        .filter(l => showcaseViews(l) !== null)
-        .sort((a, b) => showcaseViews(a) - showcaseViews(b));
-      queue = [...withoutShowcase, ...byShowcaseViews].slice(0, MAX_LEVELS_PER_RUN);
-      console.log(`${withoutShowcase.length} without a showcase yet (first), ${byShowcaseViews.length} ordered by ascending showcase views. Processing ${queue.length} levels this run.`);
+      if (cache.queue.length === 0) {
+        cache.queue = buildFreshQueue(levels, cache);
+        console.log(`Queue was empty — refilled with all ${cache.queue.length} tracked levels, sorted fresh.`);
+      }
+      const levelById = new Map(levels.map(l => [l.id, l]));
+      queue = cache.queue.slice(0, MAX_LEVELS_PER_RUN).map(id => levelById.get(id)).filter(Boolean);
+      console.log(`${cache.queue.length} levels left in the queue this cycle. Processing ${queue.length} this run.`);
     }
 
     // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level, paced (see AREDL_PACE_MS).
@@ -458,11 +492,19 @@ async function runDiscover() {
         discoveredAt: now,
       };
       processed++;
+
+      if (TARGET_LEVEL_ID && level.id === TARGET_LEVEL_ID) {
+        // Manually triggered — move to the front rather than drop it, whether or not it was already in the queue.
+        cache.queue = [level.id, ...cache.queue.filter(id => id !== level.id)];
+      } else {
+        // Normal processing — done for this cycle; buildFreshQueue() picks it back up once the queue empties and refills.
+        cache.queue = cache.queue.filter(id => id !== level.id);
+      }
+
       console.log(`  #${level.position} ${level.name} — verifier ${verifier ? formatViews(verifier.viewCount) : '—'}, showcase ${showcase ? `${showcase.channel} (${formatViews(showcase.viewCount)})` : 'none found'}`);
     }
 
-    const remaining = levels.length - Object.keys(cache.levels).length;
-    console.log(`Done. Processed ${processed} levels this run, ${unitsSpent} units spent${quotaHit ? ' (stopped early: quota)' : ''}. ${remaining} levels still never-discovered.`);
+    console.log(`Done. Processed ${processed} levels this run, ${unitsSpent} units spent${quotaHit ? ' (stopped early: quota)' : ''}. ${cache.queue.length} levels left in the queue this cycle.`);
   } finally {
     // Always persist whatever progress was made (channel index + any levels processed), even on quota/error.
     await saveCache(cache);
