@@ -86,24 +86,40 @@ async function corsFetchJson(url, { headers = {} } = {}) {
 }
 
 /**
- * Difficulty tier (1-6, hardest = 6) from a level's rank position relative
- * to the list's total length, so the color-coding scales automatically as
- * AREDL's list grows rather than using hardcoded rank cutoffs. Roughly:
- * top 1% / 6% / 16% / 32% / 58% / everyone else.
+ * Continuous difficulty color for a level's rank position relative to the
+ * list's total length — a smooth gradient from GOLD (position 1, hardest)
+ * down to DULL (position = total, easiest), rather than sorting positions
+ * into a handful of discrete buckets. The old bucket boundaries (top 1% /
+ * 6% / 16% / 32% / 58% / everyone else) front-loaded all the visual
+ * variety into the first ~15% of the list — everything from roughly
+ * position 88 to 150 landed in the exact same dullest bucket, i.e. it
+ * "went dull" abruptly rather than gradually. Interpolating continuously
+ * means every position gets a very slightly different shade from its
+ * neighbor, evenly, across the *entire* 1..total range.
+ *
+ * STOPS mirrors the old --tier-1..6 tokens (dullest to hottest) as the
+ * gradient's waypoints, interpolated in RGB space — simple, and keeps the
+ * same hand-picked palette rather than a mechanically-generated one.
  */
-function tierFromPosition(position, total) {
-  if (!position || !total) return 3;
-  const pct = position / total;
-  if (pct <= 0.01) return 6;
-  if (pct <= 0.06) return 5;
-  if (pct <= 0.16) return 4;
-  if (pct <= 0.32) return 3;
-  if (pct <= 0.58) return 2;
-  return 1;
+const POSITION_COLOR_STOPS = ['#7a7a7a', '#969696', '#b8b8b8', '#cf8a3e', '#ff9a33', '#ff6e00'];
+
+function hexToRgb(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+}
+function rgbToHex(rgb) {
+  return '#' + rgb.map(v => Math.round(v).toString(16).padStart(2, '0')).join('');
 }
 
-function tierColorVar(tier) {
-  return `var(--tier-${tier})`;
+function positionColor(position, total) {
+  if (!position || !total || total <= 1) return POSITION_COLOR_STOPS[POSITION_COLOR_STOPS.length - 1];
+  const t = 1 - (position - 1) / (total - 1); // 1 at position 1 (hardest) -> 0 at position=total (easiest)
+  const scaled = Math.min(1, Math.max(0, t)) * (POSITION_COLOR_STOPS.length - 1);
+  const i = Math.min(POSITION_COLOR_STOPS.length - 2, Math.floor(scaled));
+  const localT = scaled - i;
+  const a = hexToRgb(POSITION_COLOR_STOPS[i]);
+  const b = hexToRgb(POSITION_COLOR_STOPS[i + 1]);
+  return rgbToHex(a.map((v, k) => v + (b[k] - v) * localT));
 }
 
 function escapeHtml(str) {

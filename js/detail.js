@@ -7,10 +7,14 @@
 
   CacheAdminUI.mountQueueRefreshButton(document.getElementById('header-actions'));
 
-  const id = qs('id');
+  // The URL carries a level's rank (1-150), not its long AREDL id — much
+  // easier to read/share (see cardTemplate()'s detailUrl in list.js).
+  // Resolved to the actual id via AredlAPI.getIdByPosition() below before
+  // fetching anything.
+  const rankParam = qs('id');
 
-  if (!id) {
-    root.innerHTML = `<div class="state-banner error">No level id given. Go back to the <a href="index.html">list</a> and click a card.</div>`;
+  if (!rankParam) {
+    root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="index.html">list</a> and click a card.</div>`;
     return;
   }
 
@@ -19,6 +23,15 @@
   async function init() {
     root.innerHTML = skeletonDetail();
     try {
+      const position = parseInt(rankParam, 10);
+      if (!Number.isFinite(position) || position <= 0) {
+        throw new Error(`"${rankParam}" isn't a valid rank.`);
+      }
+      const id = await AredlAPI.getIdByPosition(position);
+      if (!id) {
+        throw new Error(`No level at rank #${position}.`);
+      }
+
       const [demon, totalCount, sharedEntry] = await Promise.all([
         DataSource.fetchOne(id),
         AredlAPI.getTotalCount().catch(() => 0),
@@ -28,10 +41,7 @@
     } catch (err) {
       console.error(err);
       root.innerHTML = `
-        <div class="state-banner error">
-          Couldn't load this level from <strong>AREDL</strong>: ${escapeHtml(err.message)}
-          — see the notes at the top of <code>js/api-aredl.js</code> if the API shape changed.
-        </div>
+        <div class="state-banner error">Couldn't load this level: ${escapeHtml(err.message)}</div>
         <a class="back-link" href="index.html">&larr; Back to the list</a>
       `;
     }
@@ -56,8 +66,7 @@
   }
 
   function renderDetail(demon, totalCount, sharedEntry) {
-    const tier = tierFromPosition(demon.position, totalCount);
-    const tierColor = tierColorVar(tier);
+    const tierColor = positionColor(demon.position, totalCount);
     const points = demon.raw?.points;
     document.title = `${demon.name} — Demonlist`;
 

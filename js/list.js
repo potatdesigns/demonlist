@@ -22,37 +22,25 @@
   let totalPages = 1;
   let filterQuery = '';
   let loading = false;
-  let opening = false;
 
   CacheAdminUI.mountQueueRefreshButton(document.getElementById('header-actions'));
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
+    writeUrlState(true);
     load();
   }, 350));
 
-  /** Opens a rank straight into its detail page — not just the list page containing it — since that's what you actually want when you type a specific rank in. */
-  jumpForm.addEventListener('submit', async (e) => {
+  /** Opens a rank straight into its detail page — not just the list page containing it — since that's what you actually want when you type a specific rank in. Detail-page URLs are the rank itself (see cardTemplate()'s detailUrl), so this is just a bounds-checked redirect, no lookup needed. */
+  jumpForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (opening) return;
     const pos = parseInt(jumpInput.value, 10);
     if (!Number.isFinite(pos) || pos <= 0) return;
-
-    opening = true;
-    jumpInput.disabled = true;
-    try {
-      const id = await AredlAPI.getIdByPosition(pos);
-      if (id) {
-        window.location.href = `level.html?id=${encodeURIComponent(id)}`;
-      } else {
-        showBanner(`No level at rank #${pos}${totalCount ? ` (list runs 1–${totalCount})` : ''}.`, true);
-      }
-    } catch (err) {
-      showBanner(`Couldn't open rank #${pos}: ${escapeHtml(err.message)}`, true);
-    } finally {
-      opening = false;
-      jumpInput.disabled = false;
+    if (totalCount && pos > totalCount) {
+      showBanner(`No level at rank #${pos} (list runs 1–${totalCount}).`, true);
+      return;
     }
+    window.location.href = `level.html?id=${pos}`;
   });
 
   filterMainBtn.addEventListener('click', () => goToPage(1));
@@ -71,9 +59,54 @@
     filterQuery = '';
     searchInput.value = '';
     jumpInput.value = '';
+    writeUrlState(true);
     load();
     gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
   }
+
+  /**
+   * Reflects which page/filter is showing in the URL — page 1 and page 2
+   * specifically as `?list=main` / `?list=extended` (matching the two
+   * named filter buttons), a search as `?q=...`, anything else (Prev/Next/
+   * page-jump past page 2, if the list ever grows beyond two pages) as
+   * `?page=N`. `push` controls whether this creates a new browser-history
+   * entry (user-initiated navigation) or just normalizes the current one
+   * (initial load, popstate) — see readUrlState()'s callers.
+   */
+  function writeUrlState(push) {
+    const params = new URLSearchParams();
+    if (filterQuery) params.set('q', filterQuery);
+    else if (currentPage === 1) params.set('list', 'main');
+    else if (currentPage === 2) params.set('list', 'extended');
+    else params.set('page', String(currentPage));
+
+    const url = `${window.location.pathname}?${params.toString()}`;
+    const state = { page: currentPage, query: filterQuery };
+    if (push) history.pushState(state, '', url);
+    else history.replaceState(state, '', url);
+  }
+
+  function readUrlState() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q) return { page: 1, query: q };
+    const list = params.get('list');
+    if (list === 'extended') return { page: 2, query: '' };
+    if (list === 'main') return { page: 1, query: '' };
+    const page = parseInt(params.get('page'), 10);
+    if (Number.isFinite(page) && page > 0) return { page, query: '' };
+    return { page: 1, query: '' };
+  }
+
+  /** Browser back/forward — re-sync state from the URL without pushing another history entry (that's what got us here). */
+  window.addEventListener('popstate', () => {
+    const state = readUrlState();
+    currentPage = state.page;
+    filterQuery = state.query;
+    searchInput.value = filterQuery;
+    jumpInput.value = '';
+    load();
+  });
 
   function updateControlsUI() {
     filterMainBtn.classList.toggle('active', !filterQuery && currentPage === 1);
@@ -116,17 +149,17 @@
   }
 
   function cardTemplate(demon) {
-    const tier = tierFromPosition(demon.position, totalCount);
+    const tierColor = positionColor(demon.position, totalCount);
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
       `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
-    const detailUrl = `level.html?id=${encodeURIComponent(demon.id)}`;
+    const detailUrl = `level.html?id=${demon.position}`;
     const byNames = joinNames(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean));
     const publisherLabel = demon.publisher?.name || (demon.needsExtras ? '…' : 'Unknown');
 
     return `
       <article class="demon-card"
-        style="--tier-color: ${tierColorVar(tier)}"
+        style="--tier-color: ${tierColor}"
         data-id="${escapeHtml(String(demon.id))}"
         data-source="${escapeHtml(demon.source)}"
         data-needs-extras="${demon.needsExtras ? '1' : '0'}"
@@ -311,6 +344,12 @@
   }
 
   function initialLoad() {
+    const state = readUrlState();
+    currentPage = state.page;
+    filterQuery = state.query;
+    searchInput.value = filterQuery;
+    writeUrlState(false); // normalize e.g. a bare index.html into ?list=main, without an extra history entry
+
     gridEl.innerHTML = skeletonCards(CONFIG.PAGE_SIZE);
     hideBanner();
     load();
