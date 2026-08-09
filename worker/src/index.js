@@ -18,6 +18,14 @@
    propagation window could in principle slip past the cooldown together
    — acceptable for this; it's not protecting anything that valuable.
 
+   The cooldown is only recorded after a *successful* dispatch (see
+   markDispatched(), called only in the success branch below) — it used
+   to be set unconditionally up front, which meant a failed attempt (bad
+   GITHUB_TOKEN, GitHub outage, whatever) burned the same 10-minute
+   window a successful run would have, blocking even an immediate retry
+   right after fixing the underlying problem. A failure now costs
+   nothing but itself.
+
    Required bindings (see wrangler.toml / README):
      KV namespace  RATE_LIMIT     — cooldown tracking
      secret        GITHUB_TOKEN   — fine-grained PAT, "Actions: read and
@@ -41,23 +49,21 @@ function json(body, status = 200) {
   });
 }
 
-async function checkAndSetCooldown(env) {
-  const key = 'last_dispatch_at';
+/** Seconds still remaining on the cooldown, or 0 if a dispatch is allowed right now. Read-only — does not itself start a new cooldown. */
+async function getCooldownRemaining(env) {
   const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '600', 10);
-  const last = await env.RATE_LIMIT.get(key);
-  const now = Date.now();
+  const last = await env.RATE_LIMIT.get('last_dispatch_at');
+  if (!last) return 0;
+  const elapsedSeconds = (Date.now() - parseInt(last, 10)) / 1000;
+  return Math.max(0, Math.ceil(cooldownSeconds - elapsedSeconds));
+}
 
-  if (last) {
-    const elapsedSeconds = (now - parseInt(last, 10)) / 1000;
-    if (elapsedSeconds < cooldownSeconds) {
-      return { ok: false, retryAfterSeconds: Math.ceil(cooldownSeconds - elapsedSeconds) };
-    }
-  }
-
+/** Starts a fresh cooldown window — call only after a dispatch actually succeeds. */
+async function markDispatched(env) {
+  const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '600', 10);
   // TTL a little past the cooldown itself, just so a stale key can't
   // linger indefinitely if something odd happens.
-  await env.RATE_LIMIT.put(key, String(now), { expirationTtl: cooldownSeconds + 60 });
-  return { ok: true };
+  await env.RATE_LIMIT.put('last_dispatch_at', String(Date.now()), { expirationTtl: cooldownSeconds + 60 });
 }
 
 async function dispatchWorkflow(env, targetLevelId) {
@@ -103,13 +109,14 @@ export default {
       ? body.targetLevelId.trim()
       : null;
 
-    const cooldown = await checkAndSetCooldown(env);
-    if (!cooldown.ok) {
-      return json({ ok: false, error: 'rate_limited', retryAfterSeconds: cooldown.retryAfterSeconds }, 429);
+    const remaining = await getCooldownRemaining(env);
+    if (remaining > 0) {
+      return json({ ok: false, error: 'rate_limited', retryAfterSeconds: remaining }, 429);
     }
 
     try {
       await dispatchWorkflow(env, targetLevelId);
+      await markDispatched(env); // only start the cooldown once we know it actually worked
       return json({ ok: true, targetLevelId });
     } catch (err) {
       return json({ ok: false, error: err.message }, 502);
