@@ -313,25 +313,89 @@ async function updateChannelIndex(cache) {
 }
 
 /** levelId (string) -> every indexed video across all channels whose title/description contains it. */
-function buildLevelIndex(cache) {
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Numeric-ID matching (extractLevelIds(), at indexing time) misses videos
+ * that reference a level only by name — e.g. a showcaser titles their
+ * video "Tidal Wave by OniLinkGD" without ever writing the raw GD level
+ * ID anywhere. This builds a whole-word, case-insensitive matcher per
+ * level, checked against a video's *title* only (not its description —
+ * usually longer, less curated boilerplate text, more prone to an
+ * accidental substring hit).
+ *
+ * Confirmed live against the real channel index: this genuinely finds
+ * hundreds of legitimate matches ID-extraction alone misses ("Tidal
+ * Wave", "Thinking Space II", etc., titled exactly that with no ID in
+ * sight) — but also at least one real false positive: a level named
+ * "UNKNOWN" matched a video titled "Best Unknown Layout I've Ever
+ * Played", which is about something else entirely. A handful of GD
+ * level names are themselves ordinary English words, and no length
+ * floor or word-boundary check rules that out. Rather than trying to
+ * out-guess which names are "too generic" with a hand-maintained
+ * blocklist, buildLevelIndex() below only runs name matching as a
+ * *fallback* for levels ID matching found zero candidates for at all —
+ * so a coincidental word match can never outrank, or get mixed in with,
+ * a level that already has a reliable ID-based showcase; it can only
+ * ever be the difference between "no showcase" and "a plausible one" for
+ * a level that had nothing before. Names under 4 characters are skipped
+ * even then (too likely to false-positive against unrelated common
+ * words) — those levels simply stay showcase-less until an ID match
+ * turns up.
+ */
+function nameMatchers(levels) {
+  return levels
+    .filter(l => l.level_id && l.name && l.name.trim().length >= 4)
+    .map(l => ({ levelId: String(l.level_id), regex: new RegExp(`\\b${escapeRegExp(l.name.trim())}\\b`, 'i') }));
+}
+
+function buildLevelIndex(cache, levels) {
   const index = new Map();
+  const seen = new Set(); // "levelId:videoId" — a video matching both by ID and by name shouldn't appear twice for the same level
+
+  function addCandidate(levelId, videoId, v, channelId) {
+    const key = `${levelId}:${videoId}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    if (!index.has(levelId)) index.set(levelId, []);
+    index.get(levelId).push({
+      id: videoId,
+      url: `https://www.youtube.com/watch?v=${videoId}`,
+      title: v.title,
+      channel: v.channel,
+      viewCount: v.viewCount,
+      channelId,
+    });
+  }
+
+  // Pass 1: numeric-ID matches — the reliable signal, extracted once per
+  // video at indexing time (see extractLevelIds()).
   for (const channel of SHOWCASE_CHANNELS) {
     const entry = cache.channelIndex[channel.channelId];
     if (!entry) continue;
     for (const [videoId, v] of Object.entries(entry.videos)) {
-      for (const levelId of v.levelIds) {
-        if (!index.has(levelId)) index.set(levelId, []);
-        index.get(levelId).push({
-          id: videoId,
-          url: `https://www.youtube.com/watch?v=${videoId}`,
-          title: v.title,
-          channel: v.channel,
-          viewCount: v.viewCount,
-          channelId: channel.channelId,
-        });
+      for (const levelId of v.levelIds) addCandidate(levelId, videoId, v, channel.channelId);
+    }
+  }
+
+  // Pass 2: name matching, fallback-only — see nameMatchers()'s doc
+  // comment for why this doesn't run for levels pass 1 already found
+  // something for.
+  const matchers = nameMatchers(levels.filter(l => !index.has(String(l.level_id))));
+  if (matchers.length) {
+    for (const channel of SHOWCASE_CHANNELS) {
+      const entry = cache.channelIndex[channel.channelId];
+      if (!entry) continue;
+      for (const [videoId, v] of Object.entries(entry.videos)) {
+        for (const { levelId, regex } of matchers) {
+          if (regex.test(v.title)) addCandidate(levelId, videoId, v, channel.channelId);
+        }
       }
     }
   }
+
   return index;
 }
 
@@ -391,7 +455,7 @@ async function runDiscover() {
     const totalIndexed = Object.values(cache.channelIndex).reduce((n, c) => n + Object.keys(c.videos).length, 0);
     console.log(`Channel index: ${totalIndexed} videos across ${SHOWCASE_CHANNELS.length} channels (${unitsSpent}u so far).`);
 
-    const levelIndex = buildLevelIndex(cache);
+    const levelIndex = buildLevelIndex(cache, levels);
 
     // --- persisted priority queue ---
     // cache.queue is an ordered list of level ids still owed a check this

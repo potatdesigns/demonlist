@@ -290,18 +290,31 @@ or `YOUTUBE_API_KEY=... YT_CACHE_MODE=views node scripts/refresh-yt-cache.mjs` (
 
 ### Showcase-matching algorithm
 
-`bestShowcaseFor()` in the script, run against the channel index described above:
+`buildLevelIndex()` + `bestShowcaseFor()` in the script, run against the channel index described
+above:
 
 1. The candidate pool is every video from a fixed allowlist of known showcase channels (see
    `SHOWCASE_CHANNELS` in the script) — there's no search step, so nothing outside the allowlist
    is ever considered, and nothing is excluded by title keyword (earlier versions filtered out
    titles containing "verification", but plenty of legitimate showcases use words like "verified"
    too, so that's gone).
-2. A video counts as a candidate for a level if that level's numeric ID appears as a standalone
-   5-10 digit run (not glued to other digits) anywhere in its title or description — extracted
-   once per video when it's indexed, not re-scanned per level.
-3. Take the highest-viewed video *per channel*, then the highest-viewed of those across
-   channels is the winner.
+2. **Pass 1, ID matching:** a video counts as a candidate for a level if that level's numeric ID
+   appears as a standalone 5-10 digit run (not glued to other digits) anywhere in its title or
+   description — extracted once per video when it's indexed, not re-scanned per level.
+3. **Pass 2, name matching (fallback only):** for whichever levels pass 1 found *zero* candidates
+   for, also match on the level's name appearing as a whole word in a video's title (case-
+   insensitive; names under 4 characters are skipped as too likely to false-positive against
+   unrelated common words). This exists because plenty of legitimate showcases never write out
+   the raw level ID at all — titling the video just "Tidal Wave" is enough for a human, but
+   invisible to ID-only matching. Confirmed live against the real channel index: hundreds of
+   genuine matches ID-extraction alone missed, at the cost of at least one real false positive (a
+   level named "UNKNOWN" matching an unrelated video titled "Best Unknown Layout I've Ever
+   Played") — which is exactly why this is fallback-only rather than always-on: a level that
+   already has a reliable ID-based candidate never runs pass 2 at all, so a coincidental word
+   match can never outrank or get mixed in with a match that's actually reliable. It can only ever
+   be the difference between "no showcase" and "a plausible one" for a level that had nothing.
+4. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
+   then the highest-viewed of those across channels is the winner.
 
 The allowlist is currently: Nexus, Neiro, Viprin, Just a GD Player, IcedCave, fnm04, zof,
 Newly Rated Extremes, and MindCap (resolved to channel IDs via `channels.list?forHandle=`, not
