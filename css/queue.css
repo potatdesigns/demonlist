@@ -1,0 +1,96 @@
+/* =====================================================================
+   QUEUE PAGE
+   ===================================================================== */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  transition: color .15s;
+}
+.back-link:hover { color: var(--primary); }
+
+.queue-hero {
+  padding: 10px 0 22px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: 20px;
+}
+.queue-hero h1 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 800;
+  color: var(--text-hi);
+}
+.queue-hero p {
+  color: var(--text-mid);
+  font-size: 13.5px;
+  margin-top: 8px;
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+.queue-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.queue-row {
+  display: grid;
+  grid-template-columns: 44px 56px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--bg-surface);
+  transition: background .12s, padding-left .12s;
+  animation: row-in .35s cubic-bezier(.16,1,.3,1) both;
+  animation-delay: calc(min(var(--i, 0), 30) * 12ms);
+}
+.queue-row:last-child { border-bottom: none; }
+.queue-row:hover { background: var(--bg-surface-2); padding-left: 18px; }
+
+@keyframes row-in {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.queue-pos {
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.queue-rank {
+  font-family: ui-monospace, monospace;
+  font-size: 12.5px;
+  color: var(--text-mid);
+}
+.queue-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.queue-status {
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--text-mid);
+  white-space: nowrap;
+}
+.queue-status.null {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.queue-row.skeleton-row { padding: 14px; animation: none; }
+
+@media (max-width: 560px) {
+  .queue-row { grid-template-columns: 36px 44px 1fr; }
+  .queue-status { display: none; }
+}

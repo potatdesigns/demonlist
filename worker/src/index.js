@@ -2,10 +2,17 @@
    CACHE-REFRESH TRIGGER (Cloudflare Worker)
 
    Lets any site visitor actually trigger the showcase-discovery workflow
-   (refresh-yt-cache.yml) — either for one level (target_level_id) or a
-   normal queue-wide run — without needing a GitHub sign-in. The GitHub
+   (refresh-yt-cache.yml) for a single level (target_level_id required —
+   see the check below) without needing a GitHub sign-in. The GitHub
    token that can do that lives only here, as a Worker secret, never in
    the browser; visitors call this Worker, and this Worker calls GitHub.
+
+   Deliberately can't trigger a queue-wide run (no target_level_id) —
+   that used to be allowed, but letting any visitor kick off an expensive
+   full-list discover run on demand was too much power to hand out
+   publicly. This is enforced here, not just left to the site's UI, so a
+   request straight to this Worker (bypassing the site entirely) can't do
+   it either.
 
    Rate-limited by a single global cooldown (COOLDOWN_SECONDS, shared by
    both level-specific and queue-wide triggers, tracked as one KV key) —
@@ -108,6 +115,10 @@ export default {
     const targetLevelId = typeof body.targetLevelId === 'string' && body.targetLevelId.trim()
       ? body.targetLevelId.trim()
       : null;
+
+    if (!targetLevelId) {
+      return json({ ok: false, error: 'Queue-wide refresh is disabled — target_level_id is required.' }, 400);
+    }
 
     const remaining = await getCooldownRemaining(env);
     if (remaining > 0) {

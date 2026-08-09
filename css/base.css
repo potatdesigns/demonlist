@@ -114,7 +114,8 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
-.brand-mark { flex-shrink: 0; border-radius: 6px; }
+.brand-mark { flex-shrink: 0; border-radius: 6px; transition: transform .25s cubic-bezier(.34,1.56,.64,1); }
+.brand:hover .brand-mark { transform: rotate(-8deg) scale(1.08); }
 
 .brand-text {
   font-family: 'Poppins', system-ui, sans-serif;
@@ -150,10 +151,11 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius);
   color: var(--text-mid);
   background: var(--bg-surface);
-  transition: color .15s, border-color .15s;
+  transition: color .15s, border-color .15s, transform .15s;
 }
-.icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); }
-.icon-btn:disabled { opacity: .6; cursor: default; }
+.icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
+.icon-btn:active { transform: scale(.92); }
+.icon-btn:disabled { opacity: .6; cursor: default; transform: none; }
 
 .icon-spin { animation: icon-spin 0.9s linear infinite; }
 @keyframes icon-spin { to { transform: rotate(360deg); } }
@@ -241,8 +243,10 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   color: var(--text-mid);
   border: 1px solid var(--line);
+  transition: color .15s, border-color .15s, transform .15s;
 }
-.btn-ghost:hover { color: var(--text-hi); border-color: var(--text-dim); }
+.btn-ghost:hover:not(:disabled) { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
+.btn-ghost:active:not(:disabled) { transform: translateY(0) scale(.96); }
 .btn-ghost:disabled { opacity: 0.4; cursor: default; }
 .btn-ghost:disabled:hover { color: var(--text-mid); }
 

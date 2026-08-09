@@ -26,19 +26,29 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   itself has ~1600 rated extreme demons; see [Reducing to a top-150 list](#reducing-to-a-top-150-list))
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
   creator(s), publisher, verifier, and — side by side — the verifier video's view count vs. the
-  most-viewed *same-level* showcase's view count, with the higher number highlighted in gold.
-  Paginated 75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of
-  Y" jump box; **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and
-  page 2 (#76-150). Search filters across the *entire* list, not just the current page, and the
-  **Open rank** box takes you straight *into* that level's detail page (`AredlAPI.getIdByPosition()`
-  resolves the rank to an id client-side, from the already-cached full list — no extra round trip)
-  rather than just the list page it happens to sit on.
+  most-viewed *same-level* showcase's view count, with the higher number highlighted in gold. Each
+  card's accent color is a continuous gradient by rank (`positionColor()` in `js/utils.js`) — cool
+  blue at the easy end sweeping through violet/magenta/red up to the brand orange at #1, rather
+  than a handful of discrete difficulty buckets, so no two nearby ranks look identical. Paginated
+  75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of Y" jump box;
+  **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and page 2 (#76-150)
+  — reflected in the URL too (`?main` / `?extended`, a search as `?q=...`), synced via
+  `history.pushState` so back/forward work and a specific view is shareable. The **Open rank** box
+  takes you straight *into* that level's detail page rather than just the list page it sits on.
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view
-  counts shown for direct comparison. A refresh icon next to that section lets a signed-in
-  collaborator force a re-check of just this level (see
-  [Manual refresh](#shared-showcaseview-count-cache) below).
+  counts shown for direct comparison. Its URL is just the level's rank (`level.html?42`, resolved
+  to the actual AREDL id via `AredlAPI.getIdByPosition()` before fetching anything) rather than
+  AREDL's 36-character id. A refresh icon next to the video section lets any visitor force a
+  re-check of just this level (see [Manual refresh](#shared-showcaseview-count-cache) below) —
+  deliberately *only* this level, not the whole list; see
+  [One-click refresh trigger](#one-click-refresh-trigger).
+- **Queue page (`queue.html`)** — a plain top-to-bottom list (no cards, closer to AREDL's own
+  changelog styling) of every tracked level in the exact order the next showcase-discovery run
+  will process them: levels with no showcase found yet first, then the rest ascending by showcase
+  view count. Mirrors `scripts/refresh-yt-cache.mjs`'s real priority-queue logic client-side (see
+  [the queue ordering below](#shared-showcaseview-count-cache)) — read-only, no trigger lives here.
 
 ## Reducing to a top-150 list
 
@@ -176,24 +186,26 @@ time) and both publish via [`scripts/publish-cache-branch.sh`](scripts/publish-c
 (see [Cache branch](#cache-branch)), which retries on a rejected push rather than assuming it
 won't happen.
 
-**Manual refresh**: two refresh icons, both in `js/cache-admin-ui.js` — a site-wide one in the
-header (both pages, `mountQueueRefreshButton()`) that runs a normal queue-wide discover pass, and
-a per-level one on each detail page next to "Verification vs. showcase"
-(`mountLevelRefreshButton()`) that passes `target_level_id` to jump that one level to the front,
-bypassing the normal priority order (see `YT_CACHE_TARGET_LEVEL_ID` in
-`scripts/refresh-yt-cache.mjs`, and [the queue ordering above](#shared-showcaseview-count-cache)
-for what "front" means — either way, the run that follows still updates the same cache the
-priority order is computed from, so both kinds of trigger reshuffle the queue for next time, not
-just whatever they targeted). Both are real one-click triggers, safe to show every visitor,
-*if* `CONFIG.TRIGGER_WORKER_URL` is set — see [One-click refresh trigger](#one-click-refresh-trigger)
-just below. Left unset, both buttons fall back to copying the level id (if any) to the clipboard
-and opening the workflow's GitHub Actions page instead — the same degraded-but-safe behavior the
-site shipped with before that Worker existed, still gated by GitHub's own sign-in to whoever
-actually has write access to run it.
+**Manual refresh**: a refresh icon on each detail page, next to "Verification vs. showcase"
+(`js/cache-admin-ui.js`, `mountLevelRefreshButton()`), passes `target_level_id` to jump that one
+level to the front of the queue (see `YT_CACHE_TARGET_LEVEL_ID` in `scripts/refresh-yt-cache.mjs`,
+and [the queue ordering above](#shared-showcaseview-count-cache) for what "front" means — the run
+that follows still updates the same cache the priority order is computed from, so this reshuffles
+the queue for next time too, not just the level it targeted). There used to also be a site-wide
+button that ran a normal queue-wide discover pass — removed, since it let any visitor trigger an
+expensive full-list run on demand; only this narrower per-level version remains, and the Worker
+below refuses to dispatch without a `target_level_id` even if called directly. [`queue.html`](queue.html)
+gives visibility into the current queue order without being able to trigger anything.
+
+This is a real one-click trigger, safe to show every visitor, *if* `CONFIG.TRIGGER_WORKER_URL` is
+set — see [One-click refresh trigger](#one-click-refresh-trigger) just below. Left unset, it falls
+back to copying the level id to the clipboard and opening the workflow's GitHub Actions page
+instead — the same degraded-but-safe behavior the site shipped with before that Worker existed,
+still gated by GitHub's own sign-in to whoever actually has write access to run it.
 
 ## One-click refresh trigger
 
-Making the refresh buttons work for every visitor — not just signed-in collaborators — means
+Making the refresh button work for every visitor — not just signed-in collaborators — means
 something has to be able to call GitHub's `workflow_dispatch` API with a token. That can't be the
 browser: a token embedded in client-side JS is visible to anyone who views source, who could then
 not just spam-trigger this workflow (burning the day's YouTube quota) but potentially misuse the
@@ -204,13 +216,16 @@ GitHub:
 - **The token never reaches the browser.** The site's JS calls the Worker; the Worker calls
   GitHub. `js/config.js`'s `TRIGGER_WORKER_URL` is just the Worker's public URL — nothing
   privileged.
+- **Level-specific only.** The Worker rejects any request without a `target_level_id` (`400`) —
+  it can't be used to trigger a queue-wide run, whether that request comes from this site's UI or
+  a direct call to the Worker itself.
 - **Rate-limited.** A single global cooldown (`COOLDOWN_SECONDS`, default 600 = 10 minutes),
-  shared across *both* the queue-wide and per-level triggers, tracked as one Workers KV key — see
-  the comments in [`worker/src/index.js`](worker/src/index.js) for why a single shared cooldown
-  is deliberate rather than something more elaborate (the resource being protected, a discover
-  run, is already cheap; this is abuse-proofing against button-mashing, not a hard security
-  boundary — and KV's eventual consistency across Cloudflare's edge means it isn't a perfectly
-  strict lock anyway, which is fine for what this needs to do).
+  tracked as one Workers KV key, only started *after* a dispatch actually succeeds — see the
+  comments in [`worker/src/index.js`](worker/src/index.js) for why a single shared cooldown is
+  deliberate rather than something more elaborate (the resource being protected, a discover run
+  for one level, is already cheap; this is abuse-proofing against button-mashing, not a hard
+  security boundary — and KV's eventual consistency across Cloudflare's edge means it isn't a
+  perfectly strict lock anyway, which is fine for what this needs to do).
 - **Scoped narrowly.** The GitHub token this needs is a **fine-grained personal access token**
   scoped to this one repository, with **Actions: read and write** permission and nothing else —
   it can dispatch workflow runs, that's it. It cannot push code, read secrets, or touch other
@@ -232,9 +247,8 @@ GitHub:
    uploads it directly): from `worker/`, run `wrangler secret put GITHUB_TOKEN`.
 5. `wrangler deploy`. This prints the Worker's URL (`https://demonlist-cache-trigger.<your
    subdomain>.workers.dev` by default).
-6. Set `TRIGGER_WORKER_URL` in `js/config.js` to that URL and deploy the site. Both refresh
-   buttons switch from the copy-and-open fallback to actually triggering runs the moment that's
-   set.
+6. Set `TRIGGER_WORKER_URL` in `js/config.js` to that URL and deploy the site. The refresh button
+   switches from the copy-and-open fallback to actually triggering runs the moment that's set.
 
 If you fork this project, `wrangler.toml`'s `GITHUB_REPO` var needs updating to match (alongside
 the other fork-specific spots — `GITHUB_REPO` in `js/config.js`, see [Cache branch](#cache-branch)).
@@ -322,6 +336,7 @@ outright; harmless if never triggered, useful insurance if AREDL's CORS setup ev
 ```
 index.html                  list page markup
 level.html                   detail page markup
+queue.html                    read-only priority-queue view markup, see "What it does" above
 assets/
   logo.png                   site logo — header mark + PNG favicon source (256px, downsized from the original)
   favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png
@@ -329,15 +344,17 @@ css/
   base.css                   design tokens, header, shared layout/states
   list.css                    card grid, pager, search/jump/list-filter controls
   detail.css                   detail page layout + dual video panels
+  queue.css                     plain-list row styling for queue.html
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
-  utils.js                     formatting/parsing helpers + corsFetchJson, shared by both pages
+  utils.js                     formatting/parsing helpers + corsFetchJson + positionColor(), shared by all pages
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache branch's aredl-cache.json first
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
-  cache-admin-ui.js               refresh buttons (queue-wide + per-level), see "Manual refresh" above
-  list.js                           list page controller
+  cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
+  list.js                           list page controller — also owns the ?main/?extended/?q= URL sync
   detail.js                          detail page controller
+  queue.js                           queue page controller — mirrors the server-side priority-queue sort client-side
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
@@ -347,8 +364,8 @@ scripts/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
   refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
-worker/                      Cloudflare Worker proxy so refresh buttons work for every visitor, see "One-click refresh trigger" above
-  src/index.js                 the Worker itself — rate-limits, then calls GitHub's workflow_dispatch API
+worker/                      Cloudflare Worker proxy so the refresh button works for every visitor, see "One-click refresh trigger" above
+  src/index.js                 the Worker itself — rejects queue-wide requests, rate-limits, then calls GitHub's workflow_dispatch API
   wrangler.toml                 Cloudflare deploy config (KV binding, repo/workflow vars — no secrets)
 ```
 

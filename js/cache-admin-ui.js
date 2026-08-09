@@ -1,15 +1,14 @@
 /* =====================================================================
    CACHE ADMIN UI
-   Refresh controls for the showcase-discovery workflow (refresh-yt-cache.yml,
-   see scripts/refresh-yt-cache.mjs) — a site-wide "refresh the queue" button
-   (header, both pages) and a per-level "refresh this level" button (detail
-   page, next to "Verification vs. showcase"). Both run the exact same
-   workflow; the only difference is whether a `target_level_id` is sent —
-   see scripts/refresh-yt-cache.mjs for how that's used to jump one level
-   to the front of the queue, bypassing the normal priority order. Either
-   way, the workflow always writes through the same discover logic, so
-   both kinds of trigger update the queue's priority ordering for next time,
-   not just the one thing they targeted.
+   Per-level "refresh this level" button (detail page, next to
+   "Verification vs. showcase") — triggers the showcase-discovery
+   workflow (refresh-yt-cache.yml, see scripts/refresh-yt-cache.mjs)
+   scoped to just that one level via `target_level_id`, which jumps it to
+   the front of the queue. There used to also be a site-wide "refresh
+   everything" button in the header — removed, since it let any visitor
+   kick off an expensive full-list discover run on demand; only this
+   narrower, per-level version remains. (See queue.html for visibility
+   into the current queue order without being able to trigger anything.)
 
    Two ways this can actually run a trigger:
 
@@ -17,13 +16,16 @@
       (see worker/), which holds a GitHub token server-side and rate-limits
       requests. This is a real one-click trigger, safe to show to every
       visitor, because the token never reaches the browser. See
-      worker/src/index.js and README's "One-click refresh trigger".
+      worker/src/index.js and README's "One-click refresh trigger". The
+      Worker itself also refuses to dispatch without a target_level_id —
+      so even a direct request to it (bypassing this UI) can't trigger a
+      queue-wide run either.
    2. CONFIG.TRIGGER_WORKER_URL unset (not deployed yet) — falls back to
-      copying the level id (if any) to the clipboard and opening the
-      workflow's GitHub Actions page, same as before. GitHub's own auth
-      still gates the actual "Run workflow" button there to signed-in
-      collaborators with write access — safe to show to everyone, just not
-      a one-click trigger for anyone who isn't one.
+      copying the level id to the clipboard and opening the workflow's
+      GitHub Actions page, same as before. GitHub's own auth still gates
+      the actual "Run workflow" button there to signed-in collaborators
+      with write access — safe to show to everyone, just not a one-click
+      trigger for anyone who isn't one.
    ===================================================================== */
 
 const CacheAdminUI = (() => {
@@ -55,7 +57,7 @@ const CacheAdminUI = (() => {
     const res = await fetch(workerUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(targetLevelId ? { targetLevelId } : {}),
+      body: JSON.stringify({ targetLevelId }),
     });
     const data = await res.json().catch(() => ({}));
     if (res.status === 429) {
@@ -70,21 +72,14 @@ const CacheAdminUI = (() => {
 
   async function fallbackCopyAndOpen(targetLevelId) {
     const url = `https://github.com/${CONFIG.GITHUB_REPO}/actions/workflows/refresh-yt-cache.yml`;
-    if (targetLevelId) {
-      try { await navigator.clipboard.writeText(String(targetLevelId)); } catch { /* clipboard unavailable — still open the link */ }
-    }
+    try { await navigator.clipboard.writeText(String(targetLevelId)); } catch { /* clipboard unavailable — still open the link */ }
     window.open(url, '_blank', 'noopener');
     return { ok: true, fallback: true };
   }
 
-  /**
-   * @param container  element to append the button into
-   * @param opts.levelId  AREDL internal id to target — omit for a queue-wide run
-   * @param opts.label    accessible label, e.g. "Refresh this level's videos" / "Refresh showcase queue"
-   */
-  function mountRefreshButton(container, { levelId = null, label = 'Refresh showcase cache' } = {}) {
-    if (!container) return;
-
+  function mountLevelRefreshButton(container, levelId) {
+    if (!container || levelId === undefined || levelId === null) return;
+    const label = "Refresh this level's videos";
     const idleTitle = CONFIG.TRIGGER_WORKER_URL
       ? label
       : `${label} (copies the level id and opens the workflow page — needs repo write access to run)`;
@@ -117,7 +112,7 @@ const CacheAdminUI = (() => {
           flash(btn, { icon: CHECK, title: 'Refresh triggered' }, { icon: ICON, title: idleTitle });
           showStatus(statusEl, 'Refresh triggered — check back in a few minutes.', false);
         } else if (result.ok && result.fallback) {
-          const msg = levelId ? 'Level ID copied — paste it into "target_level_id" on the workflow page.' : 'Opened the workflow page.';
+          const msg = 'Level ID copied — paste it into "target_level_id" on the workflow page.';
           flash(btn, { icon: CHECK, title: msg }, { icon: ICON, title: idleTitle });
           showStatus(statusEl, msg, false);
         } else {
@@ -138,9 +133,5 @@ const CacheAdminUI = (() => {
     container.appendChild(wrap);
   }
 
-  return {
-    mountRefreshButton,
-    mountLevelRefreshButton: (container, levelId) => mountRefreshButton(container, { levelId, label: "Refresh this level's videos" }),
-    mountQueueRefreshButton: (container) => mountRefreshButton(container, { label: 'Refresh showcase queue' }),
-  };
+  return { mountLevelRefreshButton };
 })();

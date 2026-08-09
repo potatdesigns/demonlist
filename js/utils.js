@@ -87,21 +87,19 @@ async function corsFetchJson(url, { headers = {} } = {}) {
 
 /**
  * Continuous difficulty color for a level's rank position relative to the
- * list's total length — a smooth gradient from GOLD (position 1, hardest)
- * down to DULL (position = total, easiest), rather than sorting positions
- * into a handful of discrete buckets. The old bucket boundaries (top 1% /
- * 6% / 16% / 32% / 58% / everyone else) front-loaded all the visual
- * variety into the first ~15% of the list — everything from roughly
- * position 88 to 150 landed in the exact same dullest bucket, i.e. it
- * "went dull" abruptly rather than gradually. Interpolating continuously
- * means every position gets a very slightly different shade from its
- * neighbor, evenly, across the *entire* 1..total range.
- *
- * STOPS mirrors the old --tier-1..6 tokens (dullest to hottest) as the
- * gradient's waypoints, interpolated in RGB space — simple, and keeps the
- * same hand-picked palette rather than a mechanically-generated one.
+ * list's total length — cool blue (position = total, easiest) sweeping
+ * through violet/magenta/red up to the brand orange (position 1, hardest),
+ * rather than sorting positions into a handful of discrete buckets. The
+ * old bucket boundaries (top 1% / 6% / 16% / 32% / 58% / everyone else)
+ * front-loaded all the visual variety into the first ~15% of the list —
+ * everything from roughly position 88 to 150 landed in the exact same
+ * dullest gray, i.e. it "went dull" abruptly rather than gradually. This
+ * interpolates continuously instead, so every position gets a distinct,
+ * evenly-spaced hue across the *entire* 1..total range — and a wide hue
+ * sweep (not just a light->dark ramp of one color) makes any two ranks
+ * visually distinguishable at a glance, not just the extremes.
  */
-const POSITION_COLOR_STOPS = ['#7a7a7a', '#969696', '#b8b8b8', '#cf8a3e', '#ff9a33', '#ff6e00'];
+const POSITION_COLOR_STOPS = ['#3d7cff', '#7a5cf0', '#b13ce0', '#e23ab0', '#ff3d6e', '#ff6e00'];
 
 function hexToRgb(hex) {
   const n = parseInt(hex.slice(1), 16);

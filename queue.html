@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demonlist</title>
+<title>Demonlist | Queue</title>
+<meta name="description" content="The current showcase-discovery priority queue — which levels get re-checked next, and why.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/detail.css">
+<link rel="stylesheet" href="css/queue.css">
 </head>
 <body>
 
@@ -16,14 +17,25 @@
     <img class="brand-mark" src="assets/logo.png" width="32" height="32" alt="">
     <span class="brand-text">DEMONLIST<span>AREDL live data</span></span>
   </a>
-  <div class="header-actions" id="header-actions">
-    <a class="icon-btn" href="queue.html" aria-label="View the refresh queue" title="View the refresh queue — the order levels get re-checked in">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-    </a>
-  </div>
 </header>
 
-<main class="page" id="detail-root"></main>
+<main class="page">
+  <a class="back-link" href="index.html">&larr; Back to the list</a>
+
+  <section class="queue-hero">
+    <h1>Refresh Queue</h1>
+    <p>
+      The order the next showcase-discovery run processes levels in — levels with no showcase
+      found on YouTube yet go first, then the rest ordered by ascending showcase view count.
+      The whole list fits in one run, so everything gets checked either way; this mainly matters
+      as a priority if a run ever gets cut short.
+    </p>
+  </section>
+
+  <div class="state-banner" id="state-banner" style="display:none;"></div>
+
+  <div class="queue-list" id="queue-list"></div>
+</main>
 
 <p class="footer-note">
   &copy; 2026 &middot; Not affiliated with RobTop Games, Geometry Dash, or AREDL.
@@ -34,7 +46,6 @@
 <script src="js/api-aredl.js"></script>
 <script src="js/data-source.js"></script>
 <script src="js/shared-cache.js"></script>
-<script src="js/cache-admin-ui.js"></script>
-<script src="js/detail.js"></script>
+<script src="js/queue.js"></script>
 </body>
 </html>

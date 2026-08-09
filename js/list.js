@@ -23,8 +23,6 @@
   let filterQuery = '';
   let loading = false;
 
-  CacheAdminUI.mountQueueRefreshButton(document.getElementById('header-actions'));
-
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
     writeUrlState(true);
@@ -40,7 +38,7 @@
       showBanner(`No level at rank #${pos} (list runs 1–${totalCount}).`, true);
       return;
     }
-    window.location.href = `level.html?id=${pos}`;
+    window.location.href = `level.html?${pos}`;
   });
 
   filterMainBtn.addEventListener('click', () => goToPage(1));
@@ -66,21 +64,26 @@
 
   /**
    * Reflects which page/filter is showing in the URL — page 1 and page 2
-   * specifically as `?list=main` / `?list=extended` (matching the two
-   * named filter buttons), a search as `?q=...`, anything else (Prev/Next/
+   * specifically as bare `?main` / `?extended` (matching the two named
+   * filter buttons), a search as `?q=...`, anything else (Prev/Next/
    * page-jump past page 2, if the list ever grows beyond two pages) as
-   * `?page=N`. `push` controls whether this creates a new browser-history
-   * entry (user-initiated navigation) or just normalizes the current one
-   * (initial load, popstate) — see readUrlState()'s callers.
+   * `?page=N`. True path-based URLs (`/main`, `/1`) aren't safely doable
+   * here — this is a static site with no server to rewrite `/main` back
+   * to `index.html` (GitHub Pages' 404-fallback trick could simulate it,
+   * but breaks `python -m http.server`-style local dev entirely, and
+   * assumes a specific host); bare flag-style query params is the closest
+   * equivalent that still works identically everywhere. `push` controls
+   * whether this creates a new browser-history entry (user-initiated
+   * navigation) or just normalizes the current one (initial load,
+   * popstate) — see readUrlState()'s callers.
    */
   function writeUrlState(push) {
-    const params = new URLSearchParams();
-    if (filterQuery) params.set('q', filterQuery);
-    else if (currentPage === 1) params.set('list', 'main');
-    else if (currentPage === 2) params.set('list', 'extended');
-    else params.set('page', String(currentPage));
+    const qs = filterQuery ? `q=${encodeURIComponent(filterQuery)}`
+      : currentPage === 1 ? 'main'
+      : currentPage === 2 ? 'extended'
+      : `page=${currentPage}`;
 
-    const url = `${window.location.pathname}?${params.toString()}`;
+    const url = `${window.location.pathname}?${qs}`;
     const state = { page: currentPage, query: filterQuery };
     if (push) history.pushState(state, '', url);
     else history.replaceState(state, '', url);
@@ -90,9 +93,8 @@
     const params = new URLSearchParams(window.location.search);
     const q = params.get('q');
     if (q) return { page: 1, query: q };
-    const list = params.get('list');
-    if (list === 'extended') return { page: 2, query: '' };
-    if (list === 'main') return { page: 1, query: '' };
+    if (params.has('extended')) return { page: 2, query: '' };
+    if (params.has('main')) return { page: 1, query: '' };
     const page = parseInt(params.get('page'), 10);
     if (Number.isFinite(page) && page > 0) return { page, query: '' };
     return { page: 1, query: '' };
@@ -111,6 +113,7 @@
   function updateControlsUI() {
     filterMainBtn.classList.toggle('active', !filterQuery && currentPage === 1);
     filterExtendedBtn.classList.toggle('active', !filterQuery && currentPage === 2);
+    updateDocumentTitle();
 
     if (filterQuery) {
       pagerRow.style.display = 'none';
@@ -122,6 +125,13 @@
     pagerPageInput.value = currentPage;
     pagerPageInput.max = String(totalPages);
     pagerTotalPagesEl.textContent = totalPages;
+  }
+
+  function updateDocumentTitle() {
+    if (filterQuery) document.title = `Demonlist | Search: ${filterQuery}`;
+    else if (currentPage === 1) document.title = 'Demonlist | Main';
+    else if (currentPage === 2) document.title = 'Demonlist | Extended';
+    else document.title = `Demonlist | Page ${currentPage}`;
   }
 
   AredlAPI.getTotalCount().then(total => {
@@ -148,18 +158,18 @@
     `).join('');
   }
 
-  function cardTemplate(demon) {
+  function cardTemplate(demon, index) {
     const tierColor = positionColor(demon.position, totalCount);
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
       `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
-    const detailUrl = `level.html?id=${demon.position}`;
+    const detailUrl = `level.html?${demon.position}`;
     const byNames = joinNames(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean));
     const publisherLabel = demon.publisher?.name || (demon.needsExtras ? '…' : 'Unknown');
 
     return `
       <article class="demon-card"
-        style="--tier-color: ${tierColor}"
+        style="--tier-color: ${tierColor}; --i: ${index}"
         data-id="${escapeHtml(String(demon.id))}"
         data-source="${escapeHtml(demon.source)}"
         data-needs-extras="${demon.needsExtras ? '1' : '0'}"
@@ -197,7 +207,7 @@
   }
 
   function renderCards(demons) {
-    gridEl.innerHTML = demons.map(cardTemplate).join('');
+    gridEl.innerHTML = demons.map((d, i) => cardTemplate(d, i)).join('');
     observeAllCards();
   }
 
