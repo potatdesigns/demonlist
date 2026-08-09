@@ -193,6 +193,17 @@ const AredlAPI = (() => {
     return found ? found.id : null;
   }
 
+  // Some level names carry a parenthetical annotation — "(Solo)" for a
+  // solo-verified level, or a creator's name — that's part of the
+  // display name (see cardTemplate() in list.js, unaffected by this)
+  // but not really part of the *name* someone would search for.
+  // Stripped before matching so searching "Deimos" still finds "Deimos
+  // (ItsHybrid)", but searching "Solo" doesn't surface every
+  // solo-verified level in the tracked list as a false positive.
+  function stripParens(name) {
+    return name.replace(/\([^)]*\)/g, ' ');
+  }
+
   /**
    * Search across the *entire* list by name, not just whatever page
    * happens to be loaded — the full list is already cached in memory
@@ -203,7 +214,7 @@ const AredlAPI = (() => {
     const all = await fetchFullList();
     const q = query.trim().toLowerCase();
     if (!q) return { demons: [], total: 0 };
-    const matches = all.filter(raw => raw.name.toLowerCase().includes(q));
+    const matches = all.filter(raw => stripParens(raw.name).toLowerCase().includes(q));
     return {
       demons: matches.slice(0, limit).map(normalizeLevel),
       total: matches.length,
