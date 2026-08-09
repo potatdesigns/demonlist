@@ -11,7 +11,7 @@
   margin-bottom: 18px;
   transition: color .15s;
 }
-.back-link:hover { color: var(--cyan); }
+.back-link:hover { color: var(--primary); }
 
 .detail-head {
   display: flex;
@@ -23,18 +23,16 @@
 }
 
 .detail-rank {
-  font-family: 'Orbitron', sans-serif;
   font-weight: 800;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1;
-  color: var(--tier-color, var(--cyan));
-  text-shadow: 0 0 24px color-mix(in srgb, var(--tier-color, var(--cyan)) 55%, transparent);
+  color: var(--tier-color, var(--primary));
   flex-shrink: 0;
   min-width: 74px;
 }
 .detail-rank span {
   display: block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, monospace;
   font-size: 10px;
   color: var(--text-dim);
   letter-spacing: 0.1em;
@@ -44,8 +42,7 @@
 .detail-titles { flex: 1 1 320px; min-width: 0; }
 
 .detail-titles h1 {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: clamp(24px, 4vw, 34px);
+  font-size: clamp(22px, 3.6vw, 32px);
   font-weight: 700;
   color: var(--text-hi);
   word-break: break-word;
@@ -78,7 +75,7 @@
 }
 .fact dd {
   margin: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, monospace;
   font-size: 14.5px;
   color: var(--text-hi);
   word-break: break-word;
@@ -94,8 +91,7 @@
   gap: 8px;
 }
 .video-section-head h2 {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
 }
 .video-section-actions {
@@ -133,9 +129,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.video-panel.verifier .panel-tag { color: var(--cyan); }
-.video-panel.showcase .panel-tag { color: var(--magenta); }
-.panel-tag .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
+.video-panel.verifier .panel-tag { color: var(--text-mid); }
+.video-panel.showcase .panel-tag { color: var(--primary); }
+.panel-tag .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
 .video-embed {
   position: relative;
@@ -175,7 +171,7 @@
   display: flex;
   gap: 14px;
   margin-top: 4px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, monospace;
   font-size: 13px;
 }
 .video-info .v-stats b { color: var(--text-hi); font-weight: 600; }

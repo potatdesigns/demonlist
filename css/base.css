@@ -1,41 +1,48 @@
 /* =====================================================================
    BASE — design tokens, reset, shared layout
+
+   Palette/type pulled from AREDL's own production site (aredl.net) — its
+   compiled Tailwind CSS exposes its real shadcn/ui theme tokens
+   (--primary, --card, --border, --muted, etc. as literal HSL triples),
+   so these aren't a guess: --primary is hsl(26,100%,50%) = #ff6e00, body
+   text is near-white neutral gray (not a hue-tinted "text-mid"), cards
+   are flat hsl(0,0%,15%) with no color cast, radius is 0.5rem, and the
+   page background is a barely-there near-black radial
+   (#191919 -> #0a0a0a), not a colored gradient. Font is Poppins
+   (@font-face entries in the same CSS). Converted to hex here since this
+   site doesn't otherwise use Tailwind/HSL vars.
    ===================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* --- color: dark GD-inspired base with a neon spike gradient --- */
-  --bg-void:      #07080d;
-  --bg-base:      #0b0d14;
-  --bg-surface:   #12151f;
-  --bg-surface-2: #191d2b;
-  --line:         #262b3d;
-  --line-soft:    #1b1f2e;
+  /* --- color: AREDL's own neutral-gray + single-orange-accent system --- */
+  --bg-void:      #0a0a0a;
+  --bg-base:      #1b1a1e;
+  --bg-surface:   #262626;
+  --bg-surface-2: #333333;
+  --line:         #404040;
+  --line-soft:    #333333;
 
-  --text-hi:      #eef0f7;
-  --text-mid:     #aab0c4;
-  --text-dim:     #6d7286;
+  --text-hi:      #e6e6e6;
+  --text-mid:     #999999;
+  --text-dim:     #6b6b6b;
 
-  --cyan:         #3ef2d8;
-  --violet:       #8a6bff;
-  --magenta:      #ff4fb8;
-  --gold:         #ffcf4a;
+  --primary:      #ff6e00; /* AREDL's brand orange — the one spot color */
+  --primary-dark: #e66300;
+  --gold:         #ffcf4a; /* view-count "winner" highlight only */
+  --danger:       #ff5a5a;
 
-  /* difficulty tiers, cool -> hot as requirement % rises */
-  --tier-1: #3ef2d8; /* easy demon territory */
-  --tier-2: #5a9dff;
-  --tier-3: #8a6bff;
-  --tier-4: #c060ff;
-  --tier-5: #ff4fb8;
-  --tier-6: #ff5a5a; /* top-of-list extreme */
+  /* difficulty tiers: muted gray -> primary orange as position climbs, not a rainbow */
+  --tier-1: #7a7a7a;
+  --tier-2: #969696;
+  --tier-3: #b8b8b8;
+  --tier-4: #cf8a3e;
+  --tier-5: #ff9a33;
+  --tier-6: #ff6e00;
 
-  --spike-gradient: linear-gradient(120deg, var(--cyan), var(--violet) 45%, var(--magenta) 85%);
-
-  --radius: 3px;
-  --cut: 14px; /* corner-cut size for the "spike" card shape */
-
-  --shadow-card: 0 1px 0 rgba(255,255,255,0.02) inset, 0 12px 24px -16px rgba(0,0,0,0.6);
+  --radius: 8px;
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.25);
 }
 
 * { box-sizing: border-box; }
@@ -44,23 +51,21 @@ html { color-scheme: dark; scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg-base);
-  background-image:
-    radial-gradient(1200px 600px at 12% -10%, rgba(138,107,255,0.10), transparent 60%),
-    radial-gradient(900px 500px at 100% 0%, rgba(62,242,216,0.08), transparent 55%);
+  background-image: radial-gradient(circle at 24% 69%, #191919 0%, var(--bg-void) 99%);
+  background-attachment: fixed;
   color: var(--text-hi);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
 
 h1, h2, h3, .num {
-  font-family: 'Rajdhani', 'Inter', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   font-weight: 700;
-  letter-spacing: 0.01em;
   margin: 0;
 }
 
-.mono { font-family: 'JetBrains Mono', monospace; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -74,10 +79,10 @@ button {
 
 img { max-width: 100%; display: block; }
 
-::selection { background: var(--violet); color: #05060a; }
+::selection { background: var(--primary); color: #1a0d00; }
 
 :focus-visible {
-  outline: 2px solid var(--cyan);
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 
@@ -99,7 +104,7 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 16px;
   padding: 16px clamp(16px, 4vw, 40px);
-  background: rgba(10, 11, 17, 0.82);
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line-soft);
 }
@@ -110,22 +115,22 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
-.brand-mark { flex-shrink: 0; }
+.brand-mark { flex-shrink: 0; border-radius: 6px; }
 
 .brand-text {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   font-size: 15px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   line-height: 1.1;
 }
 
 .brand-text span {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   font-weight: 500;
   font-size: 10.5px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   color: var(--text-dim);
   text-transform: uppercase;
   margin-top: 2px;
@@ -177,7 +182,7 @@ img { max-width: 100%; display: block; }
   transition: opacity .15s, transform .15s;
 }
 .refresh-status.visible { opacity: 1; transform: translateY(0); }
-.refresh-status.error { border-color: #5c2233; color: #ffb4c6; background: #1a0f14; }
+.refresh-status.error { border-color: #5c2233; color: #ffb4c6; background: #1f1215; }
 
 /* =====================================================================
    SHARED: page shell / states
@@ -198,8 +203,8 @@ img { max-width: 100%; display: block; }
   color: var(--text-mid);
   margin-bottom: 16px;
 }
-.state-banner.error { border-color: #5c2233; color: #ffb4c6; background: #1a0f14; }
-.state-banner a { color: var(--cyan); text-decoration: underline; text-underline-offset: 2px; }
+.state-banner.error { border-color: #5c2233; color: #ffb4c6; background: #1f1215; }
+.state-banner a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
 
 .skeleton {
   background: linear-gradient(100deg, var(--bg-surface) 30%, var(--bg-surface-2) 50%, var(--bg-surface) 70%);
@@ -210,9 +215,9 @@ img { max-width: 100%; display: block; }
 @keyframes shimmer { to { background-position: -200% 0; } }
 
 .eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 11px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-dim);
 }
@@ -238,7 +243,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-mid);
   border: 1px solid var(--line);
 }
-.btn-ghost:hover { color: var(--text-hi); }
+.btn-ghost:hover { color: var(--text-hi); border-color: var(--text-dim); }
 .btn-ghost:disabled { opacity: 0.4; cursor: default; }
 .btn-ghost:disabled:hover { color: var(--text-mid); }
 
