@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T05:28:03.276Z",
+  "generatedAt": "2026-08-09T05:32:48.916Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -415,18 +415,18 @@
         "url": "https://www.youtube.com/watch?v=sBKR6aUorzA",
         "title": "[VERIFIED] ACHERON (LEGENDARY DEMON) By Riot, Ryamu, and more",
         "channel": "Zoink",
-        "viewCount": 3694200,
-        "viewsCheckedAt": "2026-08-09T05:28:02.756Z"
+        "viewCount": 3694202,
+        "viewsCheckedAt": "2026-08-09T05:32:48.916Z"
       },
       "showcase": {
-        "id": "OC-0Q64z9-U",
-        "url": "https://www.youtube.com/watch?v=OC-0Q64z9-U",
-        "title": "TARTARUS → ACHERON → AETERNUS",
+        "id": "zBuS1fPAVs4",
+        "url": "https://www.youtube.com/watch?v=zBuS1fPAVs4",
+        "title": "[4K] Top 10 Hardest Extreme Demons in Geometry Dash",
         "channel": "Neiro",
-        "viewCount": 101920,
-        "viewsCheckedAt": "2026-08-09T05:28:02.756Z"
+        "viewCount": 834623,
+        "viewsCheckedAt": "2026-08-09T05:32:48.916Z"
       },
-      "discoveredAt": "2026-08-08T08:15:25.825Z"
+      "discoveredAt": "2026-08-09T05:32:48.916Z"
     },
     "8d117c28-8955-4cf9-9b72-4ca2e211534a": {
       "name": "Spectre",
@@ -1791,8 +1791,8 @@
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
       "newestVideoId": "WRwwoElKlOQ",
-      "oldestPageToken": "EAAaH1BUOkNMZ1hJaEJDTVRGRE9FSXlRa0l6UmtFMU5USkQ",
-      "backfillDone": false,
+      "oldestPageToken": null,
+      "backfillDone": true,
       "videos": {
         "Z8Fx6BrtEdo": {
           "title": "The Tower but Classic Mode",
@@ -26279,6 +26279,852 @@
           "viewCount": 15297,
           "levelIds": [],
           "checkedAt": "2026-08-09T04:26:47.508Z"
+        },
+        "InHWHFe-BGY": {
+          "title": "Geometry Dash [2.1] - ''NERFED SONIC WAVE'' by GreedyBearGD (VERIFIED ON STREAM)",
+          "channel": "Nexus [GD]",
+          "viewCount": 36237,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "E-cZd8bz8rA": {
+          "title": "Nerfed Sonic Wave (Verified) :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 26605,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Rh4pcu22xoc": {
+          "title": "Level Request #6 - ''OverLand'' by SrPotato & SkillzAura",
+          "channel": "Nexus [GD]",
+          "viewCount": 12504,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "koQFOuN69ww": {
+          "title": "Verifying a Level :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 9233,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "C75iPcQVqhU": {
+          "title": "Geometry Dash [2.1] - ''InsanitY'' by Serponge (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 47834,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "rtreM4qbVMg": {
+          "title": "Insanity 100% :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 12061,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "asetjaSbAvM": {
+          "title": "InsanitY :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 14738,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "mzKvnasEDdc": {
+          "title": "Level Request #5 - ''Lullaby'' by Freedom101",
+          "channel": "Nexus [GD]",
+          "viewCount": 8682,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "APoeXR5dMZo": {
+          "title": "UltraSonic 83% :^) [Part 12]",
+          "channel": "Nexus [GD]",
+          "viewCount": 11899,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Ax-ieCNsZNs": {
+          "title": "UltraSonic 83% :^) [Part 11]",
+          "channel": "Nexus [GD]",
+          "viewCount": 14761,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "5H8uVVTVFGU": {
+          "title": "Top 5 Most Confusing Levels In Geometry Dash",
+          "channel": "Nexus [GD]",
+          "viewCount": 177979,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "x25rccr0IY0": {
+          "title": "UltraSonic 83% :^) [Part 10]",
+          "channel": "Nexus [GD]",
+          "viewCount": 7925,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "bKHDgj67oO8": {
+          "title": "Red World Rebirth vs Red World: [Comparison]",
+          "channel": "Nexus [GD]",
+          "viewCount": 34436,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "PXArPXmQopU": {
+          "title": "UltraSonic :^) [Part 9]",
+          "channel": "Nexus [GD]",
+          "viewCount": 9729,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "h9VFIq80rKM": {
+          "title": "UltraSonic :^) [Part 8]",
+          "channel": "Nexus [GD]",
+          "viewCount": 7029,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "c9vyq5TjDas": {
+          "title": "Geometry Dash [2.1] - ''Invisible Light'' by Nacho21 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 14500,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "k0QgzwyrVd4": {
+          "title": "UltraSonic :^) [Part 7]",
+          "channel": "Nexus [GD]",
+          "viewCount": 8073,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "0yBjbLVRVBg": {
+          "title": "Geometry Dash [2.1] - ''Mayhem'' by LazerBlitz (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 8065,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "H-1va4haCwY": {
+          "title": "UltraSonic :^) [Part 6]",
+          "channel": "Nexus [GD]",
+          "viewCount": 9021,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "93OF6t8fXYw": {
+          "title": "UltraSonic 80%",
+          "channel": "Nexus [GD]",
+          "viewCount": 19499,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "G5HiyGeJMkk": {
+          "title": "ULTRASONIC 80% :^) [Part 5]",
+          "channel": "Nexus [GD]",
+          "viewCount": 10982,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "CMm4c9ooT2w": {
+          "title": "Geometry Dash [2.1] - ''Volcanic Rush'' by Manix648",
+          "channel": "Nexus [GD]",
+          "viewCount": 13620,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "9fns1Br8VO8": {
+          "title": "Geometry Dash [2.1] - ''VorteX'' by Albinomaster (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11821,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "EjfrCD1FkmY": {
+          "title": "Mayhem & Invisible Light [COMPLETE] :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 6047,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "boS-FmTgdwQ": {
+          "title": "Volcanic Rush & VorteX [COMPLETE] :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 9668,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "JRiVUmG9bxU": {
+          "title": "[Outdated] Top 5 Upcoming Extreme Demons",
+          "channel": "Nexus [GD]",
+          "viewCount": 67524,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "XvawWjO6t5A": {
+          "title": "Eff :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 19187,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Het4nK2DX3I": {
+          "title": "Level Request #4 - ''Echo'' by Friction",
+          "channel": "Nexus [GD]",
+          "viewCount": 9015,
+          "levelIds": [
+            "30794798"
+          ],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "LsE011XuDtc": {
+          "title": "Eff :^) [Part 2]",
+          "channel": "Nexus [GD]",
+          "viewCount": 10296,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "2o8WbcSzipA": {
+          "title": "Eff :^) [Part 1]",
+          "channel": "Nexus [GD]",
+          "viewCount": 12824,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "1xI42WTAwrk": {
+          "title": "Geometry Dash [2.1] - \"Paracosm Circles\" By N1XO",
+          "channel": "Nexus [GD]",
+          "viewCount": 88742,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Hg9tTA3Bayw": {
+          "title": "Nine Circles Levels :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11534,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "QK-IGnhqiEs": {
+          "title": "Geometry Dash [2.1] - ''-Sirius-'' by FunnyGame (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 32821,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "i_u3jR8P9XI": {
+          "title": "Geometry Dash [2.1] - ''Ditched Machine'' by Jeyzor (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 26856,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "05x2gm-AvwE": {
+          "title": "UltraSonic :^) [Part 4]",
+          "channel": "Nexus [GD]",
+          "viewCount": 26668,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "yP6Qmsm6DHQ": {
+          "title": "Iridescent :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11296,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "rLhAVYZ4gXI": {
+          "title": "Iridescent :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 9567,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "5gZFIPbbFhY": {
+          "title": "Geometry Dash [2.1] - \"Titanity\" by Jo2000 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 15804,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "b6cGzfvDSN4": {
+          "title": "Iridescent :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 7576,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "0A1b_Ibn8K4": {
+          "title": "Demons | 10K SUBS :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11650,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "fc59QAISb4U": {
+          "title": "Titanity :^) [Complete]",
+          "channel": "Nexus [GD]",
+          "viewCount": 12137,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "iMO5ryvBLZ8": {
+          "title": "Geometry Dash [2.1] - ''TOE III'' by Manix648 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 65266,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "LK9VxPHv910": {
+          "title": "TOE III :^) [Complete]",
+          "channel": "Nexus [GD]",
+          "viewCount": 21626,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "yLp7dbpqpSk": {
+          "title": "Demon Gauntlet :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11012,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "XDGgNGKS0zk": {
+          "title": "Geometry Dash [2.1] - ''Lemonade'' by Lemons (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 7304,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "eq1QGdIbMl4": {
+          "title": "Geometry Dash [2.1] - ''Impact X'' by NiTro451 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 9366,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "O8ZcAa4QOOE": {
+          "title": "TOE III :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 25344,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "0-3HHXwncvU": {
+          "title": "Geometry Dash [2.1] - ''Zafari'' by Rustam (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 77767,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "NUWiVr2_j9I": {
+          "title": "Demons :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 18836,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "cTd_3nE6QJ4": {
+          "title": "Level Request #3 - ''Asleep'' by ItsEviil",
+          "channel": "Nexus [GD]",
+          "viewCount": 5380,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "BEq_WjTAArM": {
+          "title": "UltraSonic :^) [Part 3]",
+          "channel": "Nexus [GD]",
+          "viewCount": 20427,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "S321G6taneg": {
+          "title": "Forest Temple :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 14448,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "TGOU8PhfB4k": {
+          "title": "Geometry Dash [2.1] - ''Forsaken Neon'' by Zobros & TriAxis (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 22738,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "fFlVrNZSrrw": {
+          "title": "Forsaken Neon [Complete] :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 12026,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "ubCvggRMo4M": {
+          "title": "Level Request #2 - ''Game Over'' by Ramppi",
+          "channel": "Nexus [GD]",
+          "viewCount": 10911,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "GcE_D_NU3jM": {
+          "title": "Forsaken Neon :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 12171,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "atmt2VfaTO8": {
+          "title": "Geometry Dash [2.1] - ''The Hydragaryu'' by Manix648 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 28654,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "QrMnZdZZA1o": {
+          "title": "The Hydragaryu :^) [COMPLETE]",
+          "channel": "Nexus [GD]",
+          "viewCount": 25987,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "TPbXq5xJnQQ": {
+          "title": "Ultrasonic :^) [Part 2] [64%]",
+          "channel": "Nexus [GD]",
+          "viewCount": 14955,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "USf4pB-NFtE": {
+          "title": "Ultrasonic :^) [Part 1] [64%]",
+          "channel": "Nexus [GD]",
+          "viewCount": 27420,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "KDd2HKZCTAc": {
+          "title": "Level Request #1 - ''Toxin Circles'' by ItzShineStyles",
+          "channel": "Nexus [GD]",
+          "viewCount": 13512,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "vwKUverQ04c": {
+          "title": "Gauntlets :^)",
+          "channel": "Nexus [GD]",
+          "viewCount": 13336,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "18-wy_GM-U0": {
+          "title": "Geometry Dash [2.1] - ''Freedom'' by MrPPs & More (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 38516,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "vGc7I0agcNE": {
+          "title": "Geometry Dash [2.1] - ''Supersonic'' COMPLETE by ZenthicAlpha & More (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 161409,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "w4QVTqfR1ak": {
+          "title": "How To Unlock All Geometry Dash 2.1 Colors!",
+          "channel": "Nexus [GD]",
+          "viewCount": 376930,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "nvfjHcuRa9s": {
+          "title": "Supersonic :^) [FINAL]",
+          "channel": "Nexus [GD]",
+          "viewCount": 56303,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "C_e7lPW6m48": {
+          "title": "Geometry Dash [2.1] - ''MANIX'' by Manix648 (On Stream)",
+          "channel": "Nexus [GD]",
+          "viewCount": 16643,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "60BCcWUiH9M": {
+          "title": "Supersonic :^) [Part 4]",
+          "channel": "Nexus [GD]",
+          "viewCount": 40782,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "kwlLWEY3R0Q": {
+          "title": "Supersonic :^) [Part 2]",
+          "channel": "Nexus [GD]",
+          "viewCount": 22664,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "kFvmlkAkfM8": {
+          "title": "First Stream",
+          "channel": "Nexus [GD]",
+          "viewCount": 52494,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "KKgs23RekhA": {
+          "title": "[NEW] Top 5 Boss Battles",
+          "channel": "Nexus [GD]",
+          "viewCount": 6834320,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "GVC5YahUOG8": {
+          "title": "Supersonic 87%",
+          "channel": "Nexus [GD]",
+          "viewCount": 7531,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "suO-qCbQ3xg": {
+          "title": "Geometry Dash [2.1] - ''Lonely Travel'' by FunnyGame (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 284492,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "PXShIXCIrGM": {
+          "title": "Geometry Dash [2.1] - ''Secret Box'' by DzRas (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 70206,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "9gLzbLOs5XI": {
+          "title": "Supersonic 67%",
+          "channel": "Nexus [GD]",
+          "viewCount": 8530,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "3x6s5k_sNH8": {
+          "title": "How to unlock all Geometry Dash 2.1 Icons! | Como desbloquear Todos los Iconos de La 2.1!",
+          "channel": "Nexus [GD]",
+          "viewCount": 3145294,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "8SFf_J32m4w": {
+          "title": "Geometry Dash [2.1] - ''Spider Challenges''",
+          "channel": "Nexus [GD]",
+          "viewCount": 114193,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "yuf94vtBs4s": {
+          "title": "Geometry Dash [2.1] - ''FingerDash'' 100% Complete (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 88053,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "LI6oHywXSxE": {
+          "title": "Progress...",
+          "channel": "Nexus [GD]",
+          "viewCount": 8665,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "zgyW05CH5K4": {
+          "title": "Geometry Dash [2.0] - ''Dem Travel'' by Serponge (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 25477,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "cUPlGgpxcww": {
+          "title": "Geometry Dash [2.0] - Endorphin Rush by TamaN (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 23383,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "oeXu7mAt5oI": {
+          "title": "Geometry Dash [2.0] - ''Dear Nostalgists'' by TriAxis (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 281872,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "LRZd9q9Xsmw": {
+          "title": "Geometry Dash [2.0] - ''Vibration'' by Schady (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 38274,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "2ak6XBrnO4k": {
+          "title": "Geometry Dash [2.0] - DeadLine by Danolex (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 6001,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "r9Np08DSGOg": {
+          "title": "Geometry Dash World - \"The Challenge\"",
+          "channel": "Nexus [GD]",
+          "viewCount": 46614,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "TVq73lzjlow": {
+          "title": "Geometry Dash World - \"All Levels\"",
+          "channel": "Nexus [GD]",
+          "viewCount": 2199484,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "QX5yd89kc3A": {
+          "title": "Geometry Dash [2.0] - Ultra Drivers by LazerBlitz (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 43998,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "bxtAcnQ3OJA": {
+          "title": "Geometry Dash [2.0] - Voyager by Nasgubb (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 28309,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "_9yNHNPfUro": {
+          "title": "Geometry Dash [2.0] - Don't Cry by FunnyGame",
+          "channel": "Nexus [GD]",
+          "viewCount": 14012,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "m8RQLt613WY": {
+          "title": "Geometry Dash [2.0] - Theory of Skrillex by Noobas (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 336542,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "1Zm-HpAW1s0": {
+          "title": "Geometry Dash [2.0] - Mayhem by LazerBlitz (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 6010,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "INNCLulo8Ik": {
+          "title": "Geometry Dash [2.0] -  \"Ultimate Circles\" by Suomi (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 29417,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "5pfArG5XIW4": {
+          "title": "Geometry Dash [2.0] - Metal Crusher by 6Jose9 (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 39363,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "8j7M2FKSuE0": {
+          "title": "Every Bug Level",
+          "channel": "Nexus [GD]",
+          "viewCount": 14696,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "bZKGxPNE9rM": {
+          "title": "Geometry Dash [2.0] - Universal Remote by Rustam (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 13274,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "_maWC3bN1YU": {
+          "title": "Geometry Dash [2.0] - Jawbreaker by ZenthicAlpha (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 27334,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Dzemhg8ynYg": {
+          "title": "Geometry Dash [2.0] - Lonely by Danolex (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 13488,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "6JlcP0ZvXA8": {
+          "title": "Geometry Dash [2.0] - Yunique by Yunhaseu14 (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 16877,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "tk96Y25SGkU": {
+          "title": "Geometry Dash [2.0] - Mario Temple by Davjt123 (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 185161,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "2vBP7jpPmSY": {
+          "title": "Geometry Dash [2.0] - Spacelocked by LazerBlitz (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 66810,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "gnYzd8MxtWg": {
+          "title": "Geometry Dash (2.0) - Grasmatta by Nasgubb (All Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 8283,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "fPwm9t9KcWQ": {
+          "title": "Geometry Dash (2.0) - Patience by Quasar",
+          "channel": "Nexus [GD]",
+          "viewCount": 9525,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "SZP4VU1_Fos": {
+          "title": "Geometry Dash [2.0] - Virtual Breeze by Tedesco96 (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 7832,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "sQ6ldRzAFnM": {
+          "title": "Geometry Dash [2.0] - Flying Skill by Caustic",
+          "channel": "Nexus [GD]",
+          "viewCount": 11895,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "-UPVSOBZKgA": {
+          "title": "Geometry Dash [2.0] | Hardbeat by TheRM22 (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11532,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "FK_tnAXaB04": {
+          "title": "BATTLE VS TRUMP - Geometry Dash [2.0] - Trump Boss Fight",
+          "channel": "Nexus [GD]",
+          "viewCount": 223288,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "7T3ElFYNZEg": {
+          "title": "Geometry Dash [2.0] - Traction by Ferdefunky (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 19817,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "QGex_uG6LrM": {
+          "title": "Geometry Dash [2.0] | Sublime by DWShin & Goose (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 11420,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "9Peg0KAwl_o": {
+          "title": "Geometry Dash [2.0] | Limitless by Lemons (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 24109,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "kV9lYAZLgDk": {
+          "title": "Geometry Dash (2.0) - 2011 by ValentInsanity (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 23913,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "yejlIQTrFWE": {
+          "title": "Geometry Dash (2.0) - Megalovania by AirSwipe (Demon)",
+          "channel": "Nexus [GD]",
+          "viewCount": 106631,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "mMJmArZSGPM": {
+          "title": "¿Free Demon? ¡Very Easy Demon! #1",
+          "channel": "Nexus [GD]",
+          "viewCount": 47583,
+          "levelIds": [
+            "379772"
+          ],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "X-VwSOi2P_k": {
+          "title": "Geometry Dash [2.0] - Moving Obstacles II by Sumsar",
+          "channel": "Nexus [GD]",
+          "viewCount": 15356,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Phnjb9zkFeo": {
+          "title": "FREE STARS #1 - New Fade by CreatorSS",
+          "channel": "Nexus [GD]",
+          "viewCount": 16825,
+          "levelIds": [
+            "11956368"
+          ],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "NlLUq5-SwV0": {
+          "title": "Geometry Dash [2.0] - Virtual Stimulus by  Echonox (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 16841,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "bv9jpyME5SM": {
+          "title": "Geometry Dash - [2.0] Ghost House by haoN (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 46451,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "Pi6mtnSKqOc": {
+          "title": "Geometry Dash by CreatorErika [2.0] (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 53083,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "RpbJW8d_Nr0": {
+          "title": "Geometry Dash - [2.0] PartyZion by Partition (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 59796,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "uiiMOLeHizk": {
+          "title": "Geometry Dash - [2.0] Hot Pursuit by Adiale (3 Coins)",
+          "channel": "Nexus [GD]",
+          "viewCount": 80731,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
+        },
+        "wluaDxY3-go": {
+          "title": "Geometry Dash - Stardust by GGFK [3 Coins]",
+          "channel": "Nexus [GD]",
+          "viewCount": 428255,
+          "levelIds": [],
+          "checkedAt": "2026-08-09T05:32:46.261Z"
         }
       }
     },
