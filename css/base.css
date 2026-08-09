@@ -154,6 +154,31 @@ img { max-width: 100%; display: block; }
 .icon-spin { animation: icon-spin 0.9s linear infinite; }
 @keyframes icon-spin { to { transform: rotate(360deg); } }
 
+.refresh-btn-wrap { position: relative; display: inline-flex; }
+
+.refresh-status {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 50;
+  min-width: 220px;
+  max-width: 300px;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1.45;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity .15s, transform .15s;
+}
+.refresh-status.visible { opacity: 1; transform: translateY(0); }
+.refresh-status.error { border-color: #5c2233; color: #ffb4c6; background: #1a0f14; }
+
 /* =====================================================================
    SHARED: page shell / states
    ===================================================================== */

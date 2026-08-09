@@ -42,6 +42,15 @@ const CacheAdminUI = (() => {
     }, ms);
   }
 
+  /** Actually-visible status message (not just a hover-only title) — appears under the button, auto-hides. Errors get more time on screen since they're the ones worth actually reading. */
+  function showStatus(statusEl, message, isError) {
+    clearTimeout(statusEl._hideTimer);
+    statusEl.textContent = message;
+    statusEl.classList.toggle('error', !!isError);
+    statusEl.classList.add('visible');
+    statusEl._hideTimer = setTimeout(() => statusEl.classList.remove('visible'), isError ? 9000 : 5000);
+  }
+
   async function triggerViaWorker(workerUrl, targetLevelId) {
     const res = await fetch(workerUrl, {
       method: 'POST',
@@ -80,12 +89,19 @@ const CacheAdminUI = (() => {
       ? label
       : `${label} (copies the level id and opens the workflow page — needs repo write access to run)`;
 
+    const wrap = document.createElement('span');
+    wrap.className = 'refresh-btn-wrap';
+
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'icon-btn';
     btn.setAttribute('aria-label', label);
     btn.title = idleTitle;
     btn.innerHTML = ICON;
+
+    const statusEl = document.createElement('div');
+    statusEl.className = 'refresh-status';
+    statusEl.setAttribute('role', 'status');
 
     btn.addEventListener('click', async () => {
       if (btn.disabled) return;
@@ -98,20 +114,28 @@ const CacheAdminUI = (() => {
           : await fallbackCopyAndOpen(levelId);
 
         if (result.ok && !result.fallback) {
-          flash(btn, { icon: CHECK, title: 'Refresh triggered — check back in a few minutes' }, { icon: ICON, title: idleTitle });
+          flash(btn, { icon: CHECK, title: 'Refresh triggered' }, { icon: ICON, title: idleTitle });
+          showStatus(statusEl, 'Refresh triggered — check back in a few minutes.', false);
         } else if (result.ok && result.fallback) {
-          flash(btn, { icon: CHECK, title: levelId ? 'Level ID copied — paste it into "target_level_id" on the workflow page' : 'Opened the workflow page' }, { icon: ICON, title: idleTitle });
+          const msg = levelId ? 'Level ID copied — paste it into "target_level_id" on the workflow page.' : 'Opened the workflow page.';
+          flash(btn, { icon: CHECK, title: msg }, { icon: ICON, title: idleTitle });
+          showStatus(statusEl, msg, false);
         } else {
           flash(btn, { icon: WARN, title: result.message }, { icon: ICON, title: idleTitle });
+          showStatus(statusEl, result.message, true);
         }
       } catch (err) {
-        flash(btn, { icon: WARN, title: `Couldn't reach the refresh trigger: ${err.message}` }, { icon: ICON, title: idleTitle });
+        const msg = `Couldn't reach the refresh trigger: ${err.message}`;
+        flash(btn, { icon: WARN, title: msg }, { icon: ICON, title: idleTitle });
+        showStatus(statusEl, msg, true);
       } finally {
         btn.disabled = false;
       }
     });
 
-    container.appendChild(btn);
+    wrap.appendChild(btn);
+    wrap.appendChild(statusEl);
+    container.appendChild(wrap);
   }
 
   return {

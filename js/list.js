@@ -94,7 +94,6 @@
   AredlAPI.getTotalCount().then(total => {
     totalCount = total;
     totalPages = Math.max(1, Math.ceil(total / CONFIG.PAGE_SIZE));
-    jumpInput.placeholder = `Open rank (1–${total})`;
     searchInput.placeholder = `Search all ${total} levels by name…`;
     updateControlsUI();
   }).catch(() => { /* the main load below will surface the real error */ });
