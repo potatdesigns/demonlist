@@ -124,6 +124,41 @@
     mountVerifierVideo(demon, sharedEntry);
     mountShowcaseVideo(demon, sharedEntry);
     CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
+    mountDetailBackground(demon.videoUrl);
+  }
+
+  /**
+   * Ambient background: the verification video's own YouTube thumbnail,
+   * blurred (see .detail-bg in css/detail.css) — the closest thing to "a
+   * picture of this level" available at all, since AREDL doesn't host
+   * level screenshots and there's no client-side YouTube API access (see
+   * README's "Shared showcase/view-count cache"). Tries maxresdefault
+   * first (1280x720) for quality; YouTube serves that as a real image
+   * only for videos it was generated for, otherwise silently returns a
+   * small gray placeholder *with a 200*, not a 404 — so this checks the
+   * loaded image's actual width rather than relying on `onerror`, and
+   * falls back to hqdefault (480x360, effectively always present) when
+   * the "high-res" one turns out to be that placeholder.
+   */
+  function mountDetailBackground(videoUrl) {
+    const bgEl = document.getElementById('detail-bg');
+    const vid = extractYouTubeId(videoUrl);
+    if (!bgEl || !vid) return;
+
+    const maxres = `https://i.ytimg.com/vi/${vid}/maxresdefault.jpg`;
+    const fallback = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
+
+    const probe = new Image();
+    probe.onload = () => {
+      const url = probe.naturalWidth > 200 ? maxres : fallback;
+      bgEl.style.backgroundImage = `url("${url}")`;
+      requestAnimationFrame(() => bgEl.classList.add('visible'));
+    };
+    probe.onerror = () => {
+      bgEl.style.backgroundImage = `url("${fallback}")`;
+      requestAnimationFrame(() => bgEl.classList.add('visible'));
+    };
+    probe.src = maxres;
   }
 
   function embedIframe(container, videoId, title) {

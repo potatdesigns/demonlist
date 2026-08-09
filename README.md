@@ -45,11 +45,21 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   AREDL's 36-character id. A refresh icon next to the video section lets any visitor force a
   re-check of just this level (see [Manual refresh](#shared-showcaseview-count-cache) below) —
   deliberately *only* this level, not the whole list; see
-  [One-click refresh trigger](#one-click-refresh-trigger).
-- **Queue page (`queue.html`)** — a plain top-to-bottom list (no cards, closer to AREDL's own
-  changelog styling) of every tracked level in the exact order the next showcase-discovery run
-  will process them: levels with no showcase found yet first, then the rest ascending by showcase
-  view count. Mirrors `scripts/refresh-yt-cache.mjs`'s real priority-queue logic client-side (see
+  [One-click refresh trigger](#one-click-refresh-trigger). The background is the verification
+  video's own YouTube thumbnail, heavily blurred/darkened (`mountDetailBackground()` in
+  `js/detail.js`) — the closest thing to "a picture of this level" available at all, since AREDL
+  doesn't host level screenshots itself; tries the 1280x720 `maxresdefault` thumbnail first,
+  falling back to `hqdefault` when YouTube hasn't generated one (it silently serves a small gray
+  placeholder with a real `200` status rather than a 404 for those, so this checks the loaded
+  image's actual pixel width rather than trusting the response to fail). Clicking a card into its
+  detail page (or back) animates as a cross-fade+scale via the browser's native cross-document
+  View Transitions (`@view-transition { navigation: auto; }` in `css/base.css`) — Chrome/Edge
+  126+ only as of writing; everywhere else navigation is instant, same as before this existed.
+- **Queue page (`queue.html`)**, linked from the header — a plain top-to-bottom list (no cards,
+  closer to AREDL's own changelog styling) of every tracked level in the exact order the next
+  showcase-discovery run will process them: levels with no showcase found yet first, then the
+  rest ascending by showcase view count. Mirrors `scripts/refresh-yt-cache.mjs`'s real
+  priority-queue logic client-side (see
   [the queue ordering below](#shared-showcaseview-count-cache)) — read-only, no trigger lives here.
 
 ## Reducing to a top-150 list

@@ -88,7 +88,29 @@ img { max-width: 100%; display: block; }
 /* --- reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  /* ::view-transition-* live in a separate tree the browser renders outside
+     the normal DOM — a wildcard *::before/::after above doesn't reach them. */
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
+
+/* --- cross-document view transitions: a real "cool entering effect" for
+   clicking a card into level.html, and back — no per-card JS pre-animation
+   before navigating (that'd only add latency), just letting the browser
+   animate the actual page swap. `navigation: auto` opts every same-origin
+   link click/history navigation between pages that both declare this in.
+   Chrome/Edge 126+ only as of writing; everywhere else this block is
+   inert and navigation is instant, exactly like before it existed. */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: view-out .22s cubic-bezier(.4,0,1,1) both;
+}
+::view-transition-new(root) {
+  animation: view-in .38s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes view-out { to { opacity: 0; transform: scale(1.015); } }
+@keyframes view-in { from { opacity: 0; transform: scale(.985); } }
 
 /* =====================================================================
    SITE HEADER
@@ -155,6 +177,25 @@ img { max-width: 100%; display: block; }
 }
 .icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
 .icon-btn:active { transform: scale(.92); }
+
+/* Labeled header link (e.g. the Queue link) — same look as .icon-btn but
+   auto-width with a visible text label, not just an icon+tooltip. */
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 34px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text-mid);
+  background: var(--bg-surface);
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: color .15s, border-color .15s, transform .15s;
+}
+.header-link:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
+.header-link:active { transform: scale(.96); }
 .icon-btn:disabled { opacity: .6; cursor: default; transform: none; }
 
 .icon-spin { animation: icon-spin 0.9s linear infinite; }
@@ -190,6 +231,8 @@ img { max-width: 100%; display: block; }
    ===================================================================== */
 
 .page {
+  position: relative;
+  z-index: 1; /* stack above .detail-bg (level.html) — no effect on pages without one */
   max-width: 1180px;
   margin: 0 auto;
   padding: 28px clamp(16px, 4vw, 40px) 80px;
@@ -251,6 +294,8 @@ img { max-width: 100%; display: block; }
 .btn-ghost:disabled:hover { color: var(--text-mid); }
 
 .footer-note {
+  position: relative;
+  z-index: 1; /* stack above .detail-bg (level.html) — no effect on pages without one */
   text-align: center;
   color: var(--text-dim);
   font-size: 11.5px;

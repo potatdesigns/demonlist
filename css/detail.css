@@ -2,6 +2,27 @@
    DETAIL PAGE
    ===================================================================== */
 
+/* Ambient background — the verification video's own YouTube thumbnail
+   (the only level-specific imagery AREDL's data leads to at all, since
+   it doesn't host level screenshots itself), heavily blurred/darkened
+   behind the content. Set + faded in by mountDetailBackground() in
+   detail.js once the video id is known; plain and unset (just the
+   shared dark body background) for a level with no verification video
+   on file, or before it's loaded. inset:-5% + the blur overscans the
+   viewport so the blur's own soft edge never peeks in from a side. */
+.detail-bg {
+  position: fixed;
+  inset: -5%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(44px) brightness(0.38) saturate(1.3);
+  opacity: 0;
+  transition: opacity .9s ease;
+  pointer-events: none;
+}
+.detail-bg.visible { opacity: 1; }
+
 .back-link {
   display: inline-flex;
   align-items: center;
