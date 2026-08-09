@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T17:55:34.325Z",
+  "generatedAt": "2026-08-09T18:16:08.999Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -842,11 +842,18 @@
         "url": "https://www.youtube.com/watch?v=QBe5x2o9v2w",
         "title": "\"Firework\" VERIFIED! (IMPOSSIBLE DEMON) By Trick & More",
         "channel": "Trick",
-        "viewCount": 2388031,
-        "viewsCheckedAt": "2026-08-09T17:55:33.601Z"
+        "viewCount": 2388053,
+        "viewsCheckedAt": "2026-08-09T18:16:08.999Z"
       },
-      "showcase": null,
-      "discoveredAt": "2026-08-08T08:15:30.344Z"
+      "showcase": {
+        "id": "8RcZVS0kzCg",
+        "url": "https://www.youtube.com/watch?v=8RcZVS0kzCg",
+        "title": "\"Firework\" by [cherry] team | TOP 1 Extreme Demon [4K SHOWCASE]",
+        "channel": "Just a GD player",
+        "viewCount": 3201042,
+        "viewsCheckedAt": "2026-08-09T18:16:08.999Z"
+      },
+      "discoveredAt": "2026-08-09T18:16:08.999Z"
     },
     "99bfbecd-4821-4914-85fd-dd0bb613510e": {
       "name": "Silentlocked",
