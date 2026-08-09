@@ -18,10 +18,17 @@
       `verifications[0]`, publisher is resolved) and the separate
       GET /levels/{id}/creators endpoint.
 
-      Fetching per-level detail for all ~1600 levels up front isn't
-      reasonable, so list cards start with the bare fields and get
-      hydrated with video/thumbnail/verifier/publisher lazily as they
-      scroll into view — see fetchExtras() below and list.js.
+      scripts/refresh-aredl-cache.mjs now fetches that detail for every
+      cached level too (merged onto the same object, plus a `creators`
+      array) — see normalizeLevel() below, which uses it directly with
+      no extra round trip whenever it's present, and only falls back to
+      a live per-level fetch (fetchDemon(), used as fetchExtras() by
+      list.js) for a level whose detail happened to be missing from the
+      last cache refresh. Before that script cached detail too, *every*
+      card needed its own live GET /levels/{id} call from the visitor's
+      own browser to fill in a thumbnail/verifier/publisher at all —
+      which is what made cards show a black placeholder while pending,
+      and occasionally error out if that live call failed.
 
    2) GET /levels accepts `limit`/`offset` query params but silently
       ignores them and always returns the full list. Pagination here is
@@ -95,6 +102,20 @@ const AredlAPI = (() => {
     };
   }
 
+  /**
+   * Dispatches to whichever of the two normalizers fits — `raw.verifications`
+   * is only present once scripts/refresh-aredl-cache.mjs has merged
+   * GET /levels/{id} detail onto this entry (it attaches a `creators`
+   * array from the separate endpoint at the same time), so its presence
+   * is exactly the signal that this entry needs no extra round trip.
+   * Bare entries (a level whose detail fetch failed on the last cache
+   * refresh, or a cache from before this existed) fall back to
+   * needsExtras: true, same as every card used to.
+   */
+  function normalizeLevel(raw) {
+    return raw.verifications !== undefined ? normalizeResolvedLevel(raw, raw.creators) : normalizeLevelBase(raw);
+  }
+
   // The list endpoint ignores limit/offset and always returns everything
   // (confirmed live: passing limit=3 still returns all ~1600 levels), and
   // every visitor re-fetching that same ~1600-entry list on every page
@@ -154,7 +175,7 @@ const AredlAPI = (() => {
     const all = await fetchFullList();
     const slice = all.slice(offset, offset + limit);
     return {
-      demons: slice.map(normalizeLevelBase),
+      demons: slice.map(normalizeLevel),
       total: all.length,
     };
   }
@@ -184,12 +205,28 @@ const AredlAPI = (() => {
     if (!q) return { demons: [], total: 0 };
     const matches = all.filter(raw => raw.name.toLowerCase().includes(q));
     return {
-      demons: matches.slice(0, limit).map(normalizeLevelBase),
+      demons: matches.slice(0, limit).map(normalizeLevel),
       total: matches.length,
     };
   }
 
+  /**
+   * Cache-first: the level list is already in memory (see fetchFullList
+   * above) with full detail merged in by scripts/refresh-aredl-cache.mjs
+   * for the normal case, so this is usually just a lookup — no network
+   * call at all. Only falls back to a live GET /levels/{id} (+creators)
+   * for a level whose detail is missing from the cache (a transient
+   * failure on the last refresh, or a level outside the cached top
+   * LEVEL_LIST_SIZE reached via a direct link).
+   */
   async function fetchDemon(id) {
+    const all = await fetchFullList();
+    const cached = all.find(l => l.id === id);
+    if (cached && cached.verifications !== undefined) return normalizeResolvedLevel(cached, cached.creators);
+    return fetchDemonLive(id);
+  }
+
+  async function fetchDemonLive(id) {
     const [detailRes, creatorsRes] = await Promise.all([
       corsFetchJson(ENDPOINTS.detail(id)),
       corsFetchJson(ENDPOINTS.creators(id)).catch(() => null),
@@ -214,7 +251,8 @@ const AredlAPI = (() => {
   }
 
   // Lazily fills in video/thumbnail/verifier/publisher/creators for a
-  // list-page card once it scrolls into view — see list.js.
+  // list-page card once it scrolls into view — now almost always an
+  // in-memory cache hit (see fetchDemon above) rather than a live call.
   const fetchExtras = fetchDemon;
 
   return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition };

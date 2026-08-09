@@ -269,14 +269,32 @@ than the full list), published to the [`cache` branch](#cache-branch) hourly by
 (`js/api-aredl.js`) reads that snapshot first and only falls back to a live AREDL call if it's
 missing or fails to load — so instead of every single visitor's page load independently
 re-fetching AREDL's full ~1600-entry list, there's one shared, periodically-refreshed, already-
-trimmed-to-150 copy. This needs no API key (AREDL's list endpoint is public and free) and no
-budget/staggering logic — it's cheap enough to just refresh the whole thing every run. Hourly is
-comfortably ahead of how often levels actually get reordered/added ("every day or so"); nothing
-about level *position* changes faster than that in practice.
+trimmed-to-150 copy.
 
-This only covers the base list. Per-level detail (verification video, publisher, creators) —
-which needs a separate `GET /levels/{id}` call per level — is unrelated and still fetched
-live/lazily as cards scroll into view, same as before.
+Each of those 150 levels is then enriched with its own `GET /levels/{id}` detail (verification
+video, resolved verifier/publisher) and `GET /levels/{id}/creators`, merged directly onto the same
+cached object. Earlier versions of this cache only held the bare list — cards had to make their
+own live per-level AREDL call just to get a thumbnail or verifier name, which is what caused a
+black placeholder while that pending call resolved (and an "AREDL API..." error on the detail page
+if it failed). That live-per-card model was reasonable back when the tracked list was AREDL's full
+~1600 levels — pre-fetching detail for all of them on every refresh wasn't — but stopped being
+reasonable once the list got capped at 150 (see above): 150 levels' worth of detail is a perfectly
+ordinary thing to fetch once an hour server-side instead. `AredlAPI.fetchDemon()` (used for both
+the lazy per-card hydration in `list.js` and the detail page) now reads straight from this cache
+and only falls back to a live call for a level whose detail happened to be missing from the last
+refresh — see `normalizeLevel()` in `js/api-aredl.js`.
+
+**AREDL's per-level endpoints are actually rate-limited** (confirmed live: firing ~30 concurrent
+requests to distinct levels was enough to draw several `429`s, each with a `retry-after` header —
+unlike `GET /levels` itself, which has no documented limit and is what's used for the bare list).
+`scripts/refresh-aredl-cache.mjs` fetches detail for those 150 levels at limited concurrency
+(`CONCURRENCY = 4`, each level being 2 simultaneous requests) with a short pause between each
+(`PACE_MS = 250`), and retries a `429` after waiting whatever `retry-after` says — floored at 2
+seconds, since AREDL sometimes sends `retry-after: 0`, which taken literally just re-trips the
+same limiter instantly. A level whose detail still fails after retries is written with just its
+bare fields for that run; the client's live-fallback covers it individually rather than the whole
+refresh failing. A full run currently takes on the order of a minute — comfortably fine for an
+hourly job.
 
 ## CORS
 
@@ -331,9 +349,12 @@ and live responses. Two shape quirks worth knowing if you're touching either fil
 - `GET /levels` (the list) only returns bare fields — no video, no thumbnail, no verifier, no
   creators, and `publisher` is just a `publisher_id` UUID. All of that lives on
   `GET /levels/{id}` (verification video + submitter under `verifications[0]`, publisher
-  resolved) and a separate `GET /levels/{id}/creators`. List cards start bare and get
-  hydrated with those once they scroll into view — see `AredlAPI.fetchExtras()` and the
-  `hydrateCards()`/`hydrateAredlExtrasIfNeeded()` flow in `js/list.js`.
+  resolved) and a separate `GET /levels/{id}/creators`. `scripts/refresh-aredl-cache.mjs` fetches
+  and merges both onto every cached level now (see
+  [Shared AREDL level-list cache](#shared-aredl-level-list-cache)), so cards are hydrated on
+  arrival in the normal case; `AredlAPI.fetchExtras()` and the
+  `hydrateCards()`/`hydrateAredlExtrasIfNeeded()` flow in `js/list.js` are what's left as the
+  live-fallback path for the rare level missing from the cache.
 - `GET /levels` accepts `limit`/`offset` but silently ignores them — it always returns every
   level (~1600 of them). `api-aredl.js` reads the hourly-refreshed `data/aredl-cache.json`
   snapshot instead (already trimmed to the top 150, see
