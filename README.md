@@ -52,12 +52,13 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   falling back to `hqdefault` when YouTube hasn't generated one (it silently serves a small gray
   placeholder with a real `200` status rather than a 404 for those, so this checks the loaded
   image's actual pixel width rather than trusting the response to fail).
-- **Queue page (`queue.html`)**, linked from the header — a plain top-to-bottom list (no cards,
-  closer to AREDL's own changelog styling) showing the *actual* persisted showcase-discovery
-  queue in its real stored order — not a fresh client-side re-sort — so it visibly shrinks as the
-  discover workflow works through it and jumps back to ~150 once it refills (see
-  [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no trigger lives
-  here.
+- **Queue page (`queue.html`)** — not linked from anywhere in the UI, deliberately (direct-URL-only,
+  an admin/curiosity view rather than something every visitor needs). A plain top-to-bottom list
+  (no cards, closer to AREDL's own changelog styling) showing the *actual* persisted
+  showcase-discovery queue in its real stored order — not a fresh client-side re-sort — so it
+  visibly shrinks as the discover workflow works through it and jumps back to ~150 once it
+  refills (see [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no
+  trigger lives here.
 
 ## Reducing to a top-150 list
 
@@ -159,18 +160,18 @@ it has* have very different costs and staleness needs:
   (nothing to compare, and finding one is the valuable work), then the rest ascending by showcase
   view count — and then *drains* as levels actually get checked: each run takes a batch off the
   front (up to `YT_CACHE_MAX_LEVELS`, default 150) and removes whichever of those it successfully
-  processed. Once the queue hits empty, the next run rebuilds it from scratch and the cycle
-  restarts. [`queue.html`](queue.html) shows this list in its real stored order, so it visibly
-  shrinks run to run and jumps back to ~150 on refill — see `js/queue.js`. With
-  `YT_CACHE_MAX_LEVELS` at its default of 150 (the full tracked list), a run typically drains and
-  immediately needs refilling in the same run, so draining is only really visible if you lower
-  that below 150 (spreading a full cycle across several days instead of finishing it every run —
-  a real trade-off against freshness, not just a display setting).
-
-  The one exception to draining: a manual single-level refresh (see [Manual
-  refresh](#shared-showcaseview-count-cache) below) moves that level to the *front* of the queue
-  instead of removing it — both as visible confirmation the trigger worked, and so it's first in
-  line again the next time the automatic run works through the queue.
+  processed, manual single-level triggers (see [Manual refresh](#shared-showcaseview-count-cache)
+  below) included — a level that was just manually checked is done for the cycle exactly like one
+  the automatic batch checked, not re-queued to be checked again immediately. The empty check runs
+  unconditionally at the *start* of every run, before deciding whether it's a manual single-level
+  run or a normal batch one, specifically so a run (or a string of manual-only runs) can never
+  leave the queue stuck empty just because none of them happened to take the batch-processing
+  branch that owns removing from it. [`queue.html`](queue.html) shows this list in its real stored
+  order, so it visibly shrinks run to run and jumps back to ~150 on refill — see `js/queue.js`.
+  With `YT_CACHE_MAX_LEVELS` at its default of 150 (the full tracked list), a normal run typically
+  drains and immediately needs refilling in the same run, so draining is only really visible if
+  you lower that below 150 (spreading a full cycle across several days instead of finishing it
+  every run — a real trade-off against freshness, not just a display setting).
 
   A level whose per-run batch got cut short (quota, or the `YT_CACHE_MAX_LEVELS` cap) stays in the
   queue rather than being marked done — retried next run instead of recorded with a false "no
@@ -209,15 +210,15 @@ won't happen.
 
 **Manual refresh**: a refresh icon on each detail page, next to "Verification vs. showcase"
 (`js/cache-admin-ui.js`, `mountLevelRefreshButton()`), passes `target_level_id` to check that one
-level immediately and move it to the front of the persisted queue (see `YT_CACHE_TARGET_LEVEL_ID`
-in `scripts/refresh-yt-cache.mjs`, and [the queue behavior above](#shared-showcaseview-count-cache))
-rather than dropping it once checked the way the normal automatic processing does — both as
-visible confirmation on [`queue.html`](queue.html) that the trigger worked, and so it's first in
-line again next time the automatic run works through the queue. There used to also be a site-wide
-button that ran a normal queue-wide discover pass — removed, since it let any visitor trigger an
-expensive full-list run on demand; only this narrower per-level version remains, and the Worker
-below refuses to dispatch without a `target_level_id` even if called directly. [`queue.html`](queue.html)
-gives visibility into the current queue order without being able to trigger anything.
+level immediately (see `YT_CACHE_TARGET_LEVEL_ID` in `scripts/refresh-yt-cache.mjs`) — removed
+from the queue afterward exactly like a normal automatic check would be (see [the queue behavior
+above](#shared-showcaseview-count-cache)), since it was just checked; re-queuing it to be checked
+again soon would just be repeating what the trigger itself already did. There used to also be a
+site-wide button that ran a normal queue-wide discover pass — removed, since it let any visitor
+trigger an expensive full-list run on demand; only this narrower per-level version remains, and
+the Worker below refuses to dispatch without a `target_level_id` even if called directly.
+[`queue.html`](queue.html) (not linked anywhere in the UI — direct-URL-only) shows the current
+queue order without being able to trigger anything.
 
 This is a real one-click trigger, safe to show every visitor, *if* `CONFIG.TRIGGER_WORKER_URL` is
 set — see [One-click refresh trigger](#one-click-refresh-trigger) just below. Left unset, it falls

@@ -155,25 +155,6 @@ img { max-width: 100%; display: block; }
 }
 .icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
 .icon-btn:active { transform: scale(.92); }
-
-/* Labeled header link (e.g. the Queue link) — same look as .icon-btn but
-   auto-width with a visible text label, not just an icon+tooltip. */
-.header-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  height: 34px;
-  padding: 0 13px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  color: var(--text-mid);
-  background: var(--bg-surface);
-  font-size: 12.5px;
-  font-weight: 600;
-  transition: color .15s, border-color .15s, transform .15s;
-}
-.header-link:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
-.header-link:active { transform: scale(.96); }
 .icon-btn:disabled { opacity: .6; cursor: default; transform: none; }
 
 .icon-spin { animation: icon-spin 0.9s linear infinite; }

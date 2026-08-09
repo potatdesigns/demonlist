@@ -505,14 +505,26 @@ async function runDiscover() {
     const neverSeen = levels.filter(l => !cache.levels[l.id] && !queuedIds.has(l.id));
     if (neverSeen.length) cache.queue.unshift(...neverSeen.map(l => l.id));
 
+    // Refill check runs unconditionally, *before* deciding whether this
+    // is a manual single-level run or a normal one — a run of manual
+    // single-level triggers back to back (each valid on its own, none of
+    // them touching this) must not be able to leave the queue stuck
+    // empty just because none of them happened to take the normal-batch
+    // branch below, which used to be the only place this was checked.
+    if (cache.queue.length === 0) {
+      cache.queue = buildFreshQueue(levels, cache);
+      console.log(`Queue was empty — refilled with all ${cache.queue.length} tracked levels, sorted fresh.`);
+    }
+
     // Manual single-level override — see the detail page's "refresh this
     // level" button (js/cache-admin-ui.js), which passes a level's AREDL
     // internal id as target_level_id. Bypasses the queue batch and
     // MAX_LEVELS_PER_RUN entirely; a single level is trivial next to
-    // either budget. What it does to cache.queue is handled after
-    // processing, below — moved to the front rather than removed, both
-    // as visible confirmation the trigger worked and so it's first in
-    // line again for the automatic run too.
+    // either budget. It's removed from cache.queue after processing
+    // exactly like a normal automatic check would be (see the results
+    // loop below) — it was *just* checked, so re-queuing it to be
+    // checked again soon would just be a duplicate of what this run
+    // already did.
     let queue;
     if (TARGET_LEVEL_ID) {
       const target = levels.find(l => String(l.id) === TARGET_LEVEL_ID);
@@ -524,10 +536,6 @@ async function runDiscover() {
       }
     }
     if (!queue) {
-      if (cache.queue.length === 0) {
-        cache.queue = buildFreshQueue(levels, cache);
-        console.log(`Queue was empty — refilled with all ${cache.queue.length} tracked levels, sorted fresh.`);
-      }
       const levelById = new Map(levels.map(l => [l.id, l]));
       queue = cache.queue.slice(0, MAX_LEVELS_PER_RUN).map(id => levelById.get(id)).filter(Boolean);
       console.log(`${cache.queue.length} levels left in the queue this cycle. Processing ${queue.length} this run.`);
@@ -581,13 +589,9 @@ async function runDiscover() {
       };
       processed++;
 
-      if (TARGET_LEVEL_ID && level.id === TARGET_LEVEL_ID) {
-        // Manually triggered — move to the front rather than drop it, whether or not it was already in the queue.
-        cache.queue = [level.id, ...cache.queue.filter(id => id !== level.id)];
-      } else {
-        // Normal processing — done for this cycle; buildFreshQueue() picks it back up once the queue empties and refills.
-        cache.queue = cache.queue.filter(id => id !== level.id);
-      }
+      // Done for this cycle, manual trigger or not — buildFreshQueue()
+      // picks it back up once the queue empties and refills.
+      cache.queue = cache.queue.filter(id => id !== level.id);
 
       console.log(`  #${level.position} ${level.name} — verifier ${verifier ? formatViews(verifier.viewCount) : '—'}, showcase ${showcase ? `${showcase.channel} (${formatViews(showcase.viewCount)})` : 'none found'}`);
     }
