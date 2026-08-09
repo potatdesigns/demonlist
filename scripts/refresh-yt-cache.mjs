@@ -116,8 +116,17 @@ const MAX_BACKFILL_PAGES_PER_CHANNEL = 20; // "walk further into history" pass: 
 // need 'description' checked instead — see refreshChannelIndex(), which
 // only bothers persisting the description text for channels that
 // actually need it, to avoid bloating the cache for the other 8.
+// nameMatchPattern: how the level name has to appear in that field —
+// defaults to a bare whole-word match (see nameMatchPatternFor() below).
+// Nexus's descriptions are long, boilerplate-heavy text (credits,
+// hashtags, other level shoutouts), so a bare whole-word search over all
+// of it false-positives on levels whose name is also an everyday word
+// appearing somewhere unrelated (confirmed live: "Mayhem" matched a
+// video that wasn't a Mayhem showcase at all). His descriptions do
+// consistently label the actual showcased level as "Level: <name>"
+// though, so 'label' anchors to that instead of the free-form text.
 const SHOWCASE_CHANNELS = [
-  { name: 'Nexus', handle: 'NexusGD10', channelId: 'UCZwP1iUQiAKYQp5w-9mJb_w', nameMatchField: 'description' },
+  { name: 'Nexus', handle: 'NexusGD10', channelId: 'UCZwP1iUQiAKYQp5w-9mJb_w', nameMatchField: 'description', nameMatchPattern: 'label' },
   { name: 'Neiro', handle: 'Neiro1999', channelId: 'UCCj0f5y47A94_dahjTbem-A' },
   { name: 'Viprin', handle: 'viprin', channelId: 'UCUwapObI2gw2Tovu5oj-wng' },
   { name: 'Just a GD Player', handle: 'justagdplayer', channelId: 'UCVqV78rREnC02D1-5qYyxZQ' },
@@ -346,6 +355,14 @@ function nameMatchFieldFor(channel) {
   return channel.nameMatchField === 'description' ? 'description' : 'title';
 }
 
+/** How a level's name has to appear in that field for a given channel — a bare whole-word match, unless that channel's SHOWCASE_CHANNELS entry says otherwise (Nexus: 'label', anchored to his "Level: <name>" convention, see there for why). */
+function nameMatchPatternFor(channel) {
+  if (channel.nameMatchPattern === 'label') {
+    return (name) => new RegExp(`\\blevel\\s*:\\s*${escapeRegExp(name)}\\b`, 'i');
+  }
+  return (name) => new RegExp(`\\b${escapeRegExp(name)}\\b`, 'i');
+}
+
 /**
  * Numeric-ID matching (extractLevelIds(), at indexing time) misses videos
  * that reference a level only by name — e.g. a showcaser titles their
@@ -379,17 +396,24 @@ function nameMatchFieldFor(channel) {
  * rules that out. Names under 4 characters are skipped as a partial
  * guard (too likely to false-positive against unrelated common words),
  * but that's a blunt instrument, not a real fix — the trade-off being
- * made here is real, not eliminated.
+ * made here is real, not eliminated. Nexus hit this same class of bug
+ * worse than most (his match field is his long, boilerplate-heavy
+ * description, not a short curated title — confirmed live: "Mayhem"
+ * matched a video that wasn't a Mayhem showcase), which is what
+ * nameMatchPatternFor()'s 'label' mode is for — anchoring to his
+ * "Level: <name>" convention instead of a bare word search over all of
+ * it. That's specific to how Nexus writes his descriptions, not a
+ * general fix; a channel added later with equally noisy text and no
+ * such convention would still need something else.
  */
-function nameMatchers(levels) {
+function nameMatchers(levels, buildRegex) {
   return levels
     .filter(l => l.level_id && l.name && l.name.trim().length >= 4)
-    .map(l => ({ levelId: String(l.level_id), regex: new RegExp(`\\b${escapeRegExp(l.name.trim())}\\b`, 'i') }));
+    .map(l => ({ levelId: String(l.level_id), regex: buildRegex(l.name.trim()) }));
 }
 
 function buildLevelIndex(cache, levels) {
   const index = new Map();
-  const matchers = nameMatchers(levels);
   const seen = new Set(); // "levelId:videoId" — a video matching both by ID and by name shouldn't appear twice for the same level
 
   function addCandidate(levelId, videoId, v, channelId) {
@@ -411,6 +435,12 @@ function buildLevelIndex(cache, levels) {
     const entry = cache.channelIndex[channel.channelId];
     if (!entry) continue;
     const nameField = nameMatchFieldFor(channel);
+    // Per-channel, not shared — a level's matcher depends on how *this*
+    // channel is checked (bare word vs Nexus's "Level: <name>" label,
+    // see nameMatchPatternFor()), so one channel's matcher can't be
+    // reused for another. Cheap either way: ~150 levels x a handful of
+    // channels is a trivial number of regex compiles, once per run.
+    const matchers = nameMatchers(levels, nameMatchPatternFor(channel));
     for (const [videoId, v] of Object.entries(entry.videos)) {
       for (const levelId of v.levelIds) addCandidate(levelId, videoId, v, channel.channelId);
       const nameMatchText = v[nameField] || '';

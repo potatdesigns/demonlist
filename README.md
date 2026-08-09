@@ -330,16 +330,22 @@ above:
    the *description* instead, since his titles frequently don't name the level at all (see
    `nameMatchFieldFor()`/`SHOWCASE_CHANNELS` in the script; only Nexus's video descriptions are
    persisted in the cache at all, to avoid bloating it for the other 8 channels that don't need
-   them). Runs for every level, alongside ID matching, not just as a fallback when ID matching
-   finds nothing — a showcase that never states the raw ID can legitimately be the most-viewed one
-   for that level, and gating name matches out whenever *any* ID match already existed would mean
-   a hugely popular name-only showcase loses to an obscure ID-bearing one every time, which is the
-   wrong call more often than the alternative. The trade-off: this can false-positive when a
-   level's name is itself an ordinary word — confirmed live, a level named "UNKNOWN" matches (and,
-   by view count, wins the pick for) an unrelated video titled "Best Unknown Layout I've Ever
-   Played", beating every legitimate "UNKNOWN" showcase including the actual verification video.
-   No length floor or word-boundary check rules that out; it's an accepted cost of matching by
-   name at all, not a solved problem.
+   them). For Nexus that whole-word check is also anchored to his "Level: `<name>`" convention
+   (`nameMatchPatternFor()`'s `'label'` mode) rather than a bare search over the whole description —
+   his descriptions are long, boilerplate-heavy text (credits, hashtags, other level shoutouts), and
+   a bare word search over all of it false-positived even worse than a title would (confirmed live:
+   "Mayhem" matched a video that wasn't a Mayhem showcase, just mentioned it in passing). Every
+   other channel still gets the plain whole-word check. Runs for every level, alongside ID matching,
+   not just as a fallback when ID matching finds nothing — a showcase that never states the raw ID
+   can legitimately be the most-viewed one for that level, and gating name matches out whenever
+   *any* ID match already existed would mean a hugely popular name-only showcase loses to an
+   obscure ID-bearing one every time, which is the wrong call more often than the alternative. The
+   trade-off: this can still false-positive when a level's name is itself an ordinary word —
+   confirmed live, a level named "UNKNOWN" matches (and, by view count, wins the pick for) an
+   unrelated video titled "Best Unknown Layout I've Ever Played", beating every legitimate
+   "UNKNOWN" showcase including the actual verification video. No length floor or word-boundary
+   check rules that out generally; the "Level: `<name>`" anchor only fixes it for channels that
+   happen to label things that consistently.
 4. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
    then the highest-viewed of those across channels is the winner.
 
