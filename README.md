@@ -162,18 +162,68 @@ time) and both publish via [`scripts/publish-cache-branch.sh`](scripts/publish-c
 (see [Cache branch](#cache-branch)), which retries on a rejected push rather than assuming it
 won't happen.
 
-**Manual refresh**: each detail page has a refresh icon (`js/cache-admin-ui.js`,
-`mountLevelRefreshButton()`) next to "Verification vs. showcase" that copies that level's AREDL
-internal id to the clipboard and opens the discover workflow's page on GitHub Actions
-(`https://github.com/<repo>/actions/workflows/refresh-yt-cache.yml`) — paste the id into the
-optional `target_level_id` input there to force a re-check of just that level, bypassing the
-normal staggered queue (see `YT_CACHE_TARGET_LEVEL_ID` in `scripts/refresh-yt-cache.mjs`). This
-isn't a one-click trigger, the same way the old site-wide version wasn't: GitHub's
-`workflow_dispatch` API needs an authenticated request, and there's no safe way to expose that
-from a public static site (embedding a token client-side would let anyone on the internet trigger
-runs and burn the day's quota). The button is shown to every visitor since it's harmless either
-way — GitHub's own permissions gate the actual "Run workflow" button to signed-in collaborators
-with write access; a visitor without that access just ends up looking at a page they can't submit.
+**Manual refresh**: two refresh icons, both in `js/cache-admin-ui.js` — a site-wide one in the
+header (both pages, `mountQueueRefreshButton()`) that runs a normal queue-wide discover pass, and
+a per-level one on each detail page next to "Verification vs. showcase"
+(`mountLevelRefreshButton()`) that passes `target_level_id` to jump that one level to the front,
+bypassing the normal priority order (see `YT_CACHE_TARGET_LEVEL_ID` in
+`scripts/refresh-yt-cache.mjs`, and [the queue ordering above](#shared-showcaseview-count-cache)
+for what "front" means — either way, the run that follows still updates the same cache the
+priority order is computed from, so both kinds of trigger reshuffle the queue for next time, not
+just whatever they targeted). Both are real one-click triggers, safe to show every visitor,
+*if* `CONFIG.TRIGGER_WORKER_URL` is set — see [One-click refresh trigger](#one-click-refresh-trigger)
+just below. Left unset, both buttons fall back to copying the level id (if any) to the clipboard
+and opening the workflow's GitHub Actions page instead — the same degraded-but-safe behavior the
+site shipped with before that Worker existed, still gated by GitHub's own sign-in to whoever
+actually has write access to run it.
+
+## One-click refresh trigger
+
+Making the refresh buttons work for every visitor — not just signed-in collaborators — means
+something has to be able to call GitHub's `workflow_dispatch` API with a token. That can't be the
+browser: a token embedded in client-side JS is visible to anyone who views source, who could then
+not just spam-trigger this workflow (burning the day's YouTube quota) but potentially misuse the
+token for anything else it's scoped to. [`worker/`](worker/) is a small Cloudflare Worker that
+solves this the standard way — it holds the token server-side and stands between visitors and
+GitHub:
+
+- **The token never reaches the browser.** The site's JS calls the Worker; the Worker calls
+  GitHub. `js/config.js`'s `TRIGGER_WORKER_URL` is just the Worker's public URL — nothing
+  privileged.
+- **Rate-limited.** A single global cooldown (`COOLDOWN_SECONDS`, default 600 = 10 minutes),
+  shared across *both* the queue-wide and per-level triggers, tracked as one Workers KV key — see
+  the comments in [`worker/src/index.js`](worker/src/index.js) for why a single shared cooldown
+  is deliberate rather than something more elaborate (the resource being protected, a discover
+  run, is already cheap; this is abuse-proofing against button-mashing, not a hard security
+  boundary — and KV's eventual consistency across Cloudflare's edge means it isn't a perfectly
+  strict lock anyway, which is fine for what this needs to do).
+- **Scoped narrowly.** The GitHub token this needs is a **fine-grained personal access token**
+  scoped to this one repository, with **Actions: read and write** permission and nothing else —
+  it can dispatch workflow runs, that's it. It cannot push code, read secrets, or touch other
+  repos.
+
+### Deploying it
+
+1. Install [`wrangler`](https://developers.cloudflare.com/workers/wrangler/) (Cloudflare's CLI)
+   and sign in: `npm install -g wrangler`, then `wrangler login` (opens a browser to authorize —
+   creates a free Cloudflare account for you if you don't already have one).
+2. From `worker/`, create the KV namespace used for rate-limiting: `wrangler kv namespace create
+   RATE_LIMIT`. It prints an id — paste that into the `id` field of `wrangler.toml`'s
+   `kv_namespaces` entry (replacing `REPLACE_WITH_KV_NAMESPACE_ID`).
+3. Create a GitHub fine-grained PAT: **GitHub Settings → Developer settings → Personal access
+   tokens → Fine-grained tokens → Generate new token**. Set **Repository access** to only this
+   repo, and under **Permissions** set **Actions** to **Read and write** — leave everything else
+   as No access.
+4. Store it as a Worker secret (not in any file — `wrangler secret put` prompts for the value and
+   uploads it directly): from `worker/`, run `wrangler secret put GITHUB_TOKEN`.
+5. `wrangler deploy`. This prints the Worker's URL (`https://demonlist-cache-trigger.<your
+   subdomain>.workers.dev` by default).
+6. Set `TRIGGER_WORKER_URL` in `js/config.js` to that URL and deploy the site. Both refresh
+   buttons switch from the copy-and-open fallback to actually triggering runs the moment that's
+   set.
+
+If you fork this project, `wrangler.toml`'s `GITHUB_REPO` var needs updating to match (alongside
+the other fork-specific spots — `GITHUB_REPO` in `js/config.js`, see [Cache branch](#cache-branch)).
 
 ### Setting it up
 
@@ -253,7 +303,7 @@ js/
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache branch's aredl-cache.json first
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
-  cache-admin-ui.js               detail-page "refresh this level" control, see "Manual refresh" above
+  cache-admin-ui.js               refresh buttons (queue-wide + per-level), see "Manual refresh" above
   list.js                           list page controller
   detail.js                          detail page controller
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
@@ -265,6 +315,9 @@ scripts/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
   refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
+worker/                      Cloudflare Worker proxy so refresh buttons work for every visitor, see "One-click refresh trigger" above
+  src/index.js                 the Worker itself — rate-limits, then calls GitHub's workflow_dispatch API
+  wrangler.toml                 Cloudflare deploy config (KV binding, repo/workflow vars — no secrets)
 ```
 
 ## A note on AREDL

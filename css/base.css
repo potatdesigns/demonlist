@@ -131,6 +131,12 @@ img { max-width: 100%; display: block; }
   margin-top: 2px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .icon-btn {
   width: 34px;
   height: 34px;
@@ -143,6 +149,10 @@ img { max-width: 100%; display: block; }
   transition: color .15s, border-color .15s;
 }
 .icon-btn:hover { color: var(--text-hi); border-color: var(--text-dim); }
+.icon-btn:disabled { opacity: .6; cursor: default; }
+
+.icon-spin { animation: icon-spin 0.9s linear infinite; }
+@keyframes icon-spin { to { transform: rotate(360deg); } }
 
 /* =====================================================================
    SHARED: page shell / states

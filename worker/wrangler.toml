@@ -1,0 +1,22 @@
+# Cloudflare Worker config for the cache-refresh trigger proxy.
+# See ../README.md's "One-click refresh trigger" section for the full
+# deploy walkthrough (KV namespace creation, GitHub token scope, secret
+# setup). Quick reference once you have the pieces:
+#
+#   wrangler kv namespace create RATE_LIMIT      # prints an id — paste it below
+#   wrangler secret put GITHUB_TOKEN             # pastes the token, not stored in this file
+#   wrangler deploy
+
+name = "demonlist-cache-trigger"
+main = "src/index.js"
+compatibility_date = "2026-08-09"
+
+kv_namespaces = [
+  { binding = "RATE_LIMIT", id = "REPLACE_WITH_KV_NAMESPACE_ID" }
+]
+
+[vars]
+GITHUB_REPO = "potatdesigns/demonlist"
+WORKFLOW_FILE = "refresh-yt-cache.yml"
+GIT_REF = "main"
+COOLDOWN_SECONDS = "600"

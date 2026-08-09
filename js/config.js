@@ -75,9 +75,21 @@ const CONFIG = {
   // live AREDL call if the snapshot is missing or fails to load.
   AREDL_CACHE_URL: rawCacheUrl('data/aredl-cache.json'),
 
-  // Used to build a link to the GitHub Actions "run workflow" page (see
-  // the header's cache-refresh button in list.js/detail.js).
+  // Used to build a fallback link to the GitHub Actions "run workflow"
+  // page (see js/cache-admin-ui.js) for whenever TRIGGER_WORKER_URL
+  // below isn't set.
   GITHUB_REPO,
+
+  // Cloudflare Worker that lets any visitor actually trigger a cache
+  // refresh (site-wide queue run, or a single level) without needing a
+  // GitHub sign-in — the Worker holds the GitHub token and rate-limits
+  // requests server-side; nothing privileged lives in this file. See
+  // worker/ + README's "One-click refresh trigger" section to deploy
+  // one. Left blank until you do: js/cache-admin-ui.js falls back to
+  // the old copy-the-id-and-open-GitHub flow (which still needs repo
+  // write access to actually run) whenever this is empty, so the
+  // refresh buttons work in degraded form even before you set this.
+  TRIGGER_WORKER_URL: '',
 
   // localStorage keys
   STORAGE: {
