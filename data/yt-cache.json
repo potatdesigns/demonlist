@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T17:02:58.646Z",
+  "generatedAt": "2026-08-09T17:29:47.454Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -303,11 +303,18 @@
         "url": "https://www.youtube.com/watch?v=aTxt76U3e2Q",
         "title": "ASHLEY WAVE TRIALS // VERIFIED // ODDMOD",
         "channel": "Zoink",
-        "viewCount": 2467486,
-        "viewsCheckedAt": "2026-08-09T17:02:57.948Z"
+        "viewCount": 2467520,
+        "viewsCheckedAt": "2026-08-09T17:29:47.454Z"
       },
-      "showcase": null,
-      "discoveredAt": "2026-08-08T08:15:24.306Z"
+      "showcase": {
+        "id": "KrdMngKSLKc",
+        "url": "https://www.youtube.com/watch?v=KrdMngKSLKc",
+        "title": "Ashley Wave Trials by OddMod | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 13128763,
+        "viewsCheckedAt": "2026-08-09T17:29:47.454Z"
+      },
+      "discoveredAt": "2026-08-09T17:29:47.454Z"
     },
     "4736d3e3-6166-44eb-941d-d94a5f2d6cc4": {
       "name": "Ultra Paracosm",
@@ -31328,7 +31335,7 @@
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "xj90vUweLbM",
+      "newestVideoId": "XaaocRvaC5Q",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -54894,6 +54901,16 @@
           "viewCount": 74732,
           "levelIds": [],
           "checkedAt": "2026-08-09T04:26:52.097Z"
+        },
+        "XaaocRvaC5Q": {
+          "title": "NEW MAIN LIST DEMON",
+          "channel": "Neiro",
+          "viewCount": 10509,
+          "levelIds": [
+            "106783",
+            "146538900"
+          ],
+          "checkedAt": "2026-08-09T17:29:44.462Z"
         }
       }
     },
@@ -111390,5 +111407,7 @@
       }
     }
   },
-  "queue": []
+  "queue": [
+    "7b90f819-624d-461a-9987-f1b6a0a54ef2"
+  ]
 }
