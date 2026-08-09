@@ -89,7 +89,7 @@ const CONFIG = {
   // the old copy-the-id-and-open-GitHub flow (which still needs repo
   // write access to actually run) whenever this is empty, so the
   // refresh buttons work in degraded form even before you set this.
-  TRIGGER_WORKER_URL: '',
+  TRIGGER_WORKER_URL: 'https://demonlist-cache-trigger.lukeguo87-470.workers.dev',
 
   // localStorage keys
   STORAGE: {

@@ -2,3 +2,6 @@
 # published to the `cache` branch (see README's "Cache branch" section)
 # instead of being committed here — main no longer tracks these.
 /data/*.json
+
+# wrangler's local build cache (worker/) — machine-local, not deploy state.
+.wrangler/
