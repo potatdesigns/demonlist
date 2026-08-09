@@ -109,8 +109,15 @@ const MAX_BACKFILL_PAGES_PER_CHANNEL = 20; // "walk further into history" pass: 
 // match time.
 // NOTE: the handle "@mindcap" (no trailing dot) resolves to an unrelated,
 // near-empty channel — the real one is "@mindcap." (with the trailing dot).
+// nameMatchField: which field buildLevelIndex()'s name-matching pass
+// checks for this channel — defaults to 'title' (see nameMatchFieldFor()
+// below) for everyone. Nexus's own titles often don't include the level
+// name at all (it's mentioned in the description instead), so his videos
+// need 'description' checked instead — see refreshChannelIndex(), which
+// only bothers persisting the description text for channels that
+// actually need it, to avoid bloating the cache for the other 8.
 const SHOWCASE_CHANNELS = [
-  { name: 'Nexus', handle: 'NexusGD10', channelId: 'UCZwP1iUQiAKYQp5w-9mJb_w' },
+  { name: 'Nexus', handle: 'NexusGD10', channelId: 'UCZwP1iUQiAKYQp5w-9mJb_w', nameMatchField: 'description' },
   { name: 'Neiro', handle: 'Neiro1999', channelId: 'UCCj0f5y47A94_dahjTbem-A' },
   { name: 'Viprin', handle: 'viprin', channelId: 'UCUwapObI2gw2Tovu5oj-wng' },
   { name: 'Just a GD Player', handle: 'justagdplayer', channelId: 'UCVqV78rREnC02D1-5qYyxZQ' },
@@ -277,7 +284,17 @@ async function refreshChannelIndex(channel, entry, budget) {
     }
   }
 
-  const idsToFetch = [...new Set(newIds)].filter(id => !entry.videos[id]);
+  const newVideoIds = [...new Set(newIds)].filter(id => !entry.videos[id]);
+  // One-time migration: a channel that just started needing description
+  // text (nameMatchField: 'description', currently just Nexus) has
+  // existing indexed videos from before that requirement existed, with
+  // no description stored — re-fetch those too rather than leaving them
+  // permanently unable to name-match, since backfill/catch-up only ever
+  // fetch videos *not already indexed*.
+  const needsDescriptionBackfill = channel.nameMatchField === 'description'
+    ? Object.keys(entry.videos).filter(id => entry.videos[id].description === undefined)
+    : [];
+  const idsToFetch = [...new Set([...newVideoIds, ...needsDescriptionBackfill])];
   const now = new Date().toISOString();
   for (let i = 0; i < idsToFetch.length && unitsSpent < budget; i += 50) {
     const chunk = idsToFetch.slice(i, i + 50);
@@ -288,12 +305,19 @@ async function refreshChannelIndex(channel, entry, budget) {
         channel: item.snippet.channelTitle,
         viewCount: parseInt(item.statistics.viewCount || '0', 10),
         levelIds: extractLevelIds(`${item.snippet.title}\n${item.snippet.description || ''}`),
+        // Persisted only for channels whose nameMatchField needs it (see
+        // SHOWCASE_CHANNELS) — level IDs get extracted once here and
+        // cached forever regardless, but *name* matching happens later,
+        // at buildLevelIndex() time, against whatever the top-150 list
+        // looks like then, so the raw text has to stick around instead.
+        ...(channel.nameMatchField === 'description' ? { description: item.snippet.description || '' } : {}),
         checkedAt: now,
       };
     }
   }
 
-  console.log(`  ${channel.name}: +${idsToFetch.length} new video(s) indexed (${Object.keys(entry.videos).length} total, backfill ${entry.backfillDone ? 'complete' : 'in progress'}).`);
+  const backfillNote = needsDescriptionBackfill.length ? `, ${needsDescriptionBackfill.length} re-fetched for description` : '';
+  console.log(`  ${channel.name}: +${newVideoIds.length} new video(s) indexed${backfillNote} (${Object.keys(entry.videos).length} total, backfill ${entry.backfillDone ? 'complete' : 'in progress'}).`);
 }
 
 async function updateChannelIndex(cache) {
@@ -317,14 +341,23 @@ function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+/** Which field of a video buildLevelIndex()'s name-matching pass should check for a given channel — 'title' unless that channel's SHOWCASE_CHANNELS entry says otherwise (Nexus: 'description', see there for why). */
+function nameMatchFieldFor(channel) {
+  return channel.nameMatchField === 'description' ? 'description' : 'title';
+}
+
 /**
  * Numeric-ID matching (extractLevelIds(), at indexing time) misses videos
  * that reference a level only by name — e.g. a showcaser titles their
  * video "Tidal Wave by OniLinkGD" without ever writing the raw GD level
  * ID anywhere. This builds a whole-word, case-insensitive matcher per
- * level, checked against a video's *title* only (not its description —
- * usually longer, less curated boilerplate text, more prone to an
- * accidental substring hit).
+ * level, checked against a video's title for most channels — except
+ * Nexus, whose titles frequently don't name the level at all, so his
+ * videos are checked against the description instead (see
+ * nameMatchFieldFor() and SHOWCASE_CHANNELS). Title is preferred by
+ * default over description generally, since description text tends to
+ * be longer, less curated boilerplate (credits, hashtags, links), more
+ * prone to an accidental substring hit.
  *
  * Runs for *every* level, not just ones ID matching found nothing for —
  * an earlier version gated it to ID-less levels only, on the theory that
@@ -377,10 +410,12 @@ function buildLevelIndex(cache, levels) {
   for (const channel of SHOWCASE_CHANNELS) {
     const entry = cache.channelIndex[channel.channelId];
     if (!entry) continue;
+    const nameField = nameMatchFieldFor(channel);
     for (const [videoId, v] of Object.entries(entry.videos)) {
       for (const levelId of v.levelIds) addCandidate(levelId, videoId, v, channel.channelId);
+      const nameMatchText = v[nameField] || '';
       for (const { levelId, regex } of matchers) {
-        if (regex.test(v.title)) addCandidate(levelId, videoId, v, channel.channelId);
+        if (regex.test(nameMatchText)) addCandidate(levelId, videoId, v, channel.channelId);
       }
     }
   }

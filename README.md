@@ -302,17 +302,21 @@ above:
    as a standalone 5-10 digit run (not glued to other digits) anywhere in its title or
    description — extracted once per video when it's indexed, not re-scanned per level.
 3. **Name matching:** a video *also* counts as a candidate if the level's name appears as a whole
-   word in its title (case-insensitive; names under 4 characters are skipped as too likely to
-   false-positive against unrelated common words). Runs for every level, alongside ID matching,
-   not just as a fallback when ID matching finds nothing — a showcase that never states the raw
-   ID can legitimately be the most-viewed one for that level, and gating name matches out
-   whenever *any* ID match already existed would mean a hugely popular name-only showcase loses
-   to an obscure ID-bearing one every time, which is the wrong call more often than the
-   alternative. The trade-off: this can false-positive when a level's name is itself an ordinary
-   word — confirmed live, a level named "UNKNOWN" matches (and, by view count, wins the pick for)
-   an unrelated video titled "Best Unknown Layout I've Ever Played", beating every legitimate
-   "UNKNOWN" showcase including the actual verification video. No length floor or word-boundary
-   check rules that out; it's an accepted cost of matching by name at all, not a solved problem.
+   word (case-insensitive; names under 4 characters are skipped as too likely to false-positive
+   against unrelated common words) in its *title* — except for Nexus specifically, checked against
+   the *description* instead, since his titles frequently don't name the level at all (see
+   `nameMatchFieldFor()`/`SHOWCASE_CHANNELS` in the script; only Nexus's video descriptions are
+   persisted in the cache at all, to avoid bloating it for the other 8 channels that don't need
+   them). Runs for every level, alongside ID matching, not just as a fallback when ID matching
+   finds nothing — a showcase that never states the raw ID can legitimately be the most-viewed one
+   for that level, and gating name matches out whenever *any* ID match already existed would mean
+   a hugely popular name-only showcase loses to an obscure ID-bearing one every time, which is the
+   wrong call more often than the alternative. The trade-off: this can false-positive when a
+   level's name is itself an ordinary word — confirmed live, a level named "UNKNOWN" matches (and,
+   by view count, wins the pick for) an unrelated video titled "Best Unknown Layout I've Ever
+   Played", beating every legitimate "UNKNOWN" showcase including the actual verification video.
+   No length floor or word-boundary check rules that out; it's an accepted cost of matching by
+   name at all, not a solved problem.
 4. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
    then the highest-viewed of those across channels is the winner.
 
