@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T17:29:47.454Z",
+  "generatedAt": "2026-08-09T17:47:37.790Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -373,11 +373,18 @@
         "url": "https://www.youtube.com/watch?v=0eYG1ogJpIQ",
         "title": "[VERIFIED] Subsuming Vortex // SeptaGon7 // (IMPOSSIBLE DEMON)",
         "channel": "Cursed",
-        "viewCount": 607811,
-        "viewsCheckedAt": "2026-08-09T17:02:57.948Z"
+        "viewCount": 607850,
+        "viewsCheckedAt": "2026-08-09T17:47:37.790Z"
       },
-      "showcase": null,
-      "discoveredAt": "2026-08-08T08:15:25.421Z"
+      "showcase": {
+        "id": "3dKj12cQSII",
+        "url": "https://www.youtube.com/watch?v=3dKj12cQSII",
+        "title": "NEW TOP 5? | \"SUBSUMING VORTEX\" by Renn241 & SeptaGon7",
+        "channel": "fnm04",
+        "viewCount": 706626,
+        "viewsCheckedAt": "2026-08-09T17:47:37.790Z"
+      },
+      "discoveredAt": "2026-08-09T17:47:37.790Z"
     },
     "298bb7f4-38e4-4376-b8b6-8659cf2d2c00": {
       "name": "Anathema",
@@ -111408,6 +111415,7 @@
     }
   },
   "queue": [
+    "596c8672-afa6-43c3-83f2-2078756a0554",
     "7b90f819-624d-461a-9987-f1b6a0a54ef2"
   ]
 }
