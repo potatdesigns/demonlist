@@ -88,6 +88,13 @@ const CHANNEL_INDEX_BUDGET = parseInt(process.env.YT_CACHE_CHANNEL_BUDGET || '40
 const MAX_LEVELS_PER_RUN = parseInt(process.env.YT_CACHE_MAX_LEVELS || '150', 10);
 const TARGET_LEVEL_ID = process.env.YT_CACHE_TARGET_LEVEL_ID || null;
 
+// Small pause between each sequential AREDL per-level lookup — see
+// fetchAredlJson()'s docs below on why AREDL's per-level endpoints need
+// this kind of care. Even purely sequential requests can trip AREDL's
+// rate limiter if they're fast enough back-to-back (Cloudflare-cached
+// responses return in tens of ms).
+const AREDL_PACE_MS = 150;
+
 // Safety caps for the channel-index crawl (see refreshChannelIndex): bound
 // per-channel cost per run so one large/stale channel can't eat a whole
 // run's budget or (if its watermark video vanished) re-walk its entire
@@ -173,10 +180,36 @@ async function fetchAredlLevels() {
     .slice(0, LEVEL_LIST_SIZE);
 }
 
+/**
+ * AREDL's per-level endpoints are rate-limited (confirmed live: bursts of
+ * concurrent requests to distinct levels draw 429s with a `retry-after`
+ * header — unlike GET /levels itself, which has no documented limit).
+ * This used to be a bare fetch with no retry at all, which meant one
+ * 429 partway through the queue silently dropped every level after it
+ * for the rest of the run — not a one-off, but a *persistent* gap, since
+ * the queue lands on roughly the same levels early each run and AREDL's
+ * limiter, once tripped, keeps rejecting immediate follow-ups (no
+ * backoff = no recovery). Floors the wait at 2s regardless of what
+ * `retry-after` says — AREDL sometimes sends `retry-after: 0`, which
+ * taken literally just re-trips the same limiter instantly. Same fix as
+ * scripts/refresh-aredl-cache.mjs, which hits the same endpoints.
+ */
+async function fetchAredlJson(url, { retries = 4 } = {}) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (res.ok) return res.json();
+    if (res.status === 429 && attempt < retries) {
+      const retryAfterSeconds = Math.max(parseInt(res.headers.get('retry-after'), 10) || 0, 2);
+      console.log(`  429 from AREDL — waiting ${retryAfterSeconds}s (attempt ${attempt + 1}/${retries}) before retrying ${url}`);
+      await new Promise(r => setTimeout(r, retryAfterSeconds * 1000));
+      continue;
+    }
+    throw new Error(`AREDL returned ${res.status} for ${url}`);
+  }
+}
+
 async function fetchAredlVerificationVideo(levelId) {
-  const res = await fetch(`${AREDL_BASE}/levels/${levelId}`, { headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`AREDL returned ${res.status} for level ${levelId}`);
-  const data = await res.json();
+  const data = await fetchAredlJson(`${AREDL_BASE}/levels/${levelId}`);
   const raw = data.data || data;
   return raw.verifications?.[0]?.video_url || null;
 }
@@ -378,7 +411,7 @@ async function runDiscover() {
       console.log(`${withoutShowcase.length} without a showcase yet (first), ${byShowcaseViews.length} ordered by ascending showcase views. Processing ${queue.length} levels this run.`);
     }
 
-    // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level.
+    // AREDL verification-video lookups are plain HTTP, no YouTube quota — sequential, one per level, paced (see AREDL_PACE_MS).
     const videoUrlByLevel = new Map();
     for (const level of queue) {
       try {
@@ -386,6 +419,7 @@ async function runDiscover() {
       } catch (e) {
         console.warn(`  skipped AREDL lookup for "${level.name}": ${e.message}`);
       }
+      await new Promise(r => setTimeout(r, AREDL_PACE_MS));
     }
 
     // Batch-fetch verifier video stats, 50 at a time — same trick as views mode.

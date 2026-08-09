@@ -149,6 +149,20 @@ it has* have very different costs and staleness needs:
   left for the next run instead of being recorded with a false "no verifier found". Runs daily
   ([`refresh-yt-cache.yml`](.github/workflows/refresh-yt-cache.yml)); self-correcting if a run is
   skipped or the list grows.
+
+  Before resolving verifier stats, the script looks up each queued level's verification video on
+  AREDL (`GET /levels/{id}`, plain HTTP, no YouTube quota) — and that step used to be a plain
+  sequential `fetch()` with no retry at all. AREDL's per-level endpoints turn out to be genuinely
+  rate-limited (confirmed live: bursts of concurrent requests to distinct levels draw `429`s with
+  a `retry-after` header — unlike `GET /levels` itself, which has none), and once a discover run
+  tripped it, every level queued *after* that point got silently dropped from the run with no
+  retry — not a one-off miss, but a **persistent** gap, since the queue lands on roughly the same
+  levels early each day and AREDL's limiter, once tripped, keeps rejecting immediate follow-ups.
+  This is what caused a clean, stuck split where roughly the back third of the list never had a
+  cache entry at all, day after day. Fixed the same way as the AREDL list-detail fetch above (see
+  [Shared AREDL level-list cache](#shared-aredl-level-list-cache)): paced (`AREDL_PACE_MS`, 150ms
+  between each sequential lookup) and retried on `429` with the `retry-after` wait floored at 2s.
+  Confirmed live against the full 150-level list: 0 rate-limit hits with the pacing in place.
 - **`views`** (cheap, frequent) — once a level has a verifier/showcase video *identified*, its
   view count is refreshed independently of the (slow) discovery cycle: one batched
   `videos.list` call per 50 videos, so refreshing the *entire* list's view counts costs on the
