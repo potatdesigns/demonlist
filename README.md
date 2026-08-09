@@ -66,6 +66,14 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   visibly shrinks as the discover workflow works through it and jumps back to ~150 once it
   refills (see [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no
   trigger lives here.
+- **Keyboard shortcuts** (`js/shortcuts.js`, all three pages) — `M`/`E`/`Q` jump to Main list,
+  Extended list, and the queue page; `?` opens a panel listing them all (also reachable via the
+  floating `?` button, bottom-right). Plain unmodified letters rather than a `Ctrl`-combo — some
+  of the obvious mnemonic combos (`Ctrl+Q`/`M`/`E`) collide with real, JS-unoverridable browser or
+  OS bindings (tab-close, window-minimize, address-bar search), where a bare letter key is never
+  reserved by the browser. Suspended while a text field is focused (so typing "extreme" in the
+  search box doesn't jump you to the extended list mid-word), and `M`/`E` update the current page
+  in place via a hash change when already on `index.html` rather than reloading.
 
 ## Reducing to a top-150 list
 
@@ -402,6 +410,7 @@ js/
   list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
+  shortcuts.js                        M/E/Q + ? keyboard shortcuts and the shortcuts panel, all three pages, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above

@@ -262,3 +262,103 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
 }
 .footer-note a { color: var(--text-mid); text-decoration: underline; text-underline-offset: 2px; }
+
+/* =====================================================================
+   KEYBOARD SHORTCUTS — floating button + panel (js/shortcuts.js)
+   ===================================================================== */
+
+.shortcuts-fab {
+  position: fixed;
+  right: clamp(16px, 4vw, 32px);
+  bottom: clamp(16px, 4vw, 32px);
+  z-index: 60;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid var(--line);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  box-shadow: var(--shadow-card);
+  transition: color .15s, border-color .15s, transform .15s;
+}
+.shortcuts-fab:hover { color: var(--text-hi); border-color: var(--primary); transform: translateY(-2px); }
+.shortcuts-fab:active { transform: translateY(0) scale(.92); }
+
+.shortcuts-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+.shortcuts-overlay.open { display: flex; }
+
+.shortcuts-panel {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: shortcuts-pop 0.18s cubic-bezier(.34, 1.56, .64, 1);
+}
+@keyframes shortcuts-pop {
+  from { transform: scale(0.94); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.shortcuts-panel h2 { font-size: 15px; margin-bottom: 4px; }
+
+.shortcuts-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 0 0 16px;
+}
+
+.shortcuts-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.shortcuts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shortcuts-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-mid);
+}
+
+.shortcuts-key {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  min-width: 22px;
+  text-align: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  background: var(--bg-surface-2);
+  color: var(--text-hi);
+}
