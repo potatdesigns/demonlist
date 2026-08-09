@@ -298,21 +298,21 @@ above:
    is ever considered, and nothing is excluded by title keyword (earlier versions filtered out
    titles containing "verification", but plenty of legitimate showcases use words like "verified"
    too, so that's gone).
-2. **Pass 1, ID matching:** a video counts as a candidate for a level if that level's numeric ID
-   appears as a standalone 5-10 digit run (not glued to other digits) anywhere in its title or
+2. **ID matching:** a video counts as a candidate for a level if that level's numeric ID appears
+   as a standalone 5-10 digit run (not glued to other digits) anywhere in its title or
    description — extracted once per video when it's indexed, not re-scanned per level.
-3. **Pass 2, name matching (fallback only):** for whichever levels pass 1 found *zero* candidates
-   for, also match on the level's name appearing as a whole word in a video's title (case-
-   insensitive; names under 4 characters are skipped as too likely to false-positive against
-   unrelated common words). This exists because plenty of legitimate showcases never write out
-   the raw level ID at all — titling the video just "Tidal Wave" is enough for a human, but
-   invisible to ID-only matching. Confirmed live against the real channel index: hundreds of
-   genuine matches ID-extraction alone missed, at the cost of at least one real false positive (a
-   level named "UNKNOWN" matching an unrelated video titled "Best Unknown Layout I've Ever
-   Played") — which is exactly why this is fallback-only rather than always-on: a level that
-   already has a reliable ID-based candidate never runs pass 2 at all, so a coincidental word
-   match can never outrank or get mixed in with a match that's actually reliable. It can only ever
-   be the difference between "no showcase" and "a plausible one" for a level that had nothing.
+3. **Name matching:** a video *also* counts as a candidate if the level's name appears as a whole
+   word in its title (case-insensitive; names under 4 characters are skipped as too likely to
+   false-positive against unrelated common words). Runs for every level, alongside ID matching,
+   not just as a fallback when ID matching finds nothing — a showcase that never states the raw
+   ID can legitimately be the most-viewed one for that level, and gating name matches out
+   whenever *any* ID match already existed would mean a hugely popular name-only showcase loses
+   to an obscure ID-bearing one every time, which is the wrong call more often than the
+   alternative. The trade-off: this can false-positive when a level's name is itself an ordinary
+   word — confirmed live, a level named "UNKNOWN" matches (and, by view count, wins the pick for)
+   an unrelated video titled "Best Unknown Layout I've Ever Played", beating every legitimate
+   "UNKNOWN" showcase including the actual verification video. No length floor or word-boundary
+   check rules that out; it's an accepted cost of matching by name at all, not a solved problem.
 4. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
    then the highest-viewed of those across channels is the winner.
 

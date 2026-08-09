@@ -326,24 +326,27 @@ function escapeRegExp(s) {
  * usually longer, less curated boilerplate text, more prone to an
  * accidental substring hit).
  *
- * Confirmed live against the real channel index: this genuinely finds
- * hundreds of legitimate matches ID-extraction alone misses ("Tidal
- * Wave", "Thinking Space II", etc., titled exactly that with no ID in
- * sight) — but also at least one real false positive: a level named
- * "UNKNOWN" matched a video titled "Best Unknown Layout I've Ever
- * Played", which is about something else entirely. A handful of GD
- * level names are themselves ordinary English words, and no length
- * floor or word-boundary check rules that out. Rather than trying to
- * out-guess which names are "too generic" with a hand-maintained
- * blocklist, buildLevelIndex() below only runs name matching as a
- * *fallback* for levels ID matching found zero candidates for at all —
- * so a coincidental word match can never outrank, or get mixed in with,
- * a level that already has a reliable ID-based showcase; it can only
- * ever be the difference between "no showcase" and "a plausible one" for
- * a level that had nothing before. Names under 4 characters are skipped
- * even then (too likely to false-positive against unrelated common
- * words) — those levels simply stay showcase-less until an ID match
- * turns up.
+ * Runs for *every* level, not just ones ID matching found nothing for —
+ * an earlier version gated it to ID-less levels only, on the theory that
+ * a coincidental word match should never be able to outrank a reliable
+ * ID-based candidate. That's backwards: the actual best showcase for a
+ * level can legitimately be the one that never states its ID, and it can
+ * legitimately out-view the ones that do — gating name matches out
+ * whenever *any* ID match existed meant a hugely popular name-only
+ * showcase would lose to an obscure ID-bearing one every time, which is
+ * exactly the wrong call. bestShowcaseFor()'s highest-viewed-wins logic
+ * already handles deciding between candidates from either source
+ * correctly; the fix belongs there, not in gating one source out.
+ *
+ * The real risk this runs is a false positive: confirmed live against
+ * the real channel index that a level named "UNKNOWN" matches a video
+ * titled "Best Unknown Layout I've Ever Played", which is about
+ * something else entirely — a handful of GD level names are themselves
+ * ordinary English words, and no length floor or word-boundary check
+ * rules that out. Names under 4 characters are skipped as a partial
+ * guard (too likely to false-positive against unrelated common words),
+ * but that's a blunt instrument, not a real fix — the trade-off being
+ * made here is real, not eliminated.
  */
 function nameMatchers(levels) {
   return levels
@@ -353,6 +356,7 @@ function nameMatchers(levels) {
 
 function buildLevelIndex(cache, levels) {
   const index = new Map();
+  const matchers = nameMatchers(levels);
   const seen = new Set(); // "levelId:videoId" — a video matching both by ID and by name shouldn't appear twice for the same level
 
   function addCandidate(levelId, videoId, v, channelId) {
@@ -370,28 +374,13 @@ function buildLevelIndex(cache, levels) {
     });
   }
 
-  // Pass 1: numeric-ID matches — the reliable signal, extracted once per
-  // video at indexing time (see extractLevelIds()).
   for (const channel of SHOWCASE_CHANNELS) {
     const entry = cache.channelIndex[channel.channelId];
     if (!entry) continue;
     for (const [videoId, v] of Object.entries(entry.videos)) {
       for (const levelId of v.levelIds) addCandidate(levelId, videoId, v, channel.channelId);
-    }
-  }
-
-  // Pass 2: name matching, fallback-only — see nameMatchers()'s doc
-  // comment for why this doesn't run for levels pass 1 already found
-  // something for.
-  const matchers = nameMatchers(levels.filter(l => !index.has(String(l.level_id))));
-  if (matchers.length) {
-    for (const channel of SHOWCASE_CHANNELS) {
-      const entry = cache.channelIndex[channel.channelId];
-      if (!entry) continue;
-      for (const [videoId, v] of Object.entries(entry.videos)) {
-        for (const { levelId, regex } of matchers) {
-          if (regex.test(v.title)) addCandidate(levelId, videoId, v, channel.channelId);
-        }
+      for (const { levelId, regex } of matchers) {
+        if (regex.test(v.title)) addCandidate(levelId, videoId, v, channel.channelId);
       }
     }
   }
