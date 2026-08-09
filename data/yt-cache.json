@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T18:26:55.390Z",
+  "generatedAt": "2026-08-09T18:30:01.221Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -555,11 +555,18 @@
         "url": "https://www.youtube.com/watch?v=KDa5c0CJTHs",
         "title": "\"Kyouki\" VERIFIED (Solo Extreme Demon) | Geometry Dash",
         "channel": "{出見塩}Demishio",
-        "viewCount": 1117761,
-        "viewsCheckedAt": "2026-08-09T18:26:54.795Z"
+        "viewCount": 1117757,
+        "viewsCheckedAt": "2026-08-09T18:30:01.221Z"
       },
-      "showcase": null,
-      "discoveredAt": "2026-08-08T08:15:27.030Z"
+      "showcase": {
+        "id": "HV8tbGVcai4",
+        "url": "https://www.youtube.com/watch?v=HV8tbGVcai4",
+        "title": "【4K】 FINALLY, A GOOD-LOOKING TOP 3! \"Kyouki\" (Extreme Demon) by 出見塩 | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 958112,
+        "viewsCheckedAt": "2026-08-09T18:30:01.221Z"
+      },
+      "discoveredAt": "2026-08-09T18:30:01.221Z"
     },
     "ae0be266-2806-4af8-9cb1-d962a8a83010": {
       "name": "Based After Based",
