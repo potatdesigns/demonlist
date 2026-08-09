@@ -31,18 +31,27 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   bright red at #1 (hardest) sweeping down through pink/magenta/violet to bright purple at #150
   (easiest), 11 key points roughly every 15 ranks, deliberately taking the *short* way around the
   hue wheel so it never crosses into orange/yellow/green/cyan/blue — rather than a handful of
-  discrete difficulty buckets, so no two nearby ranks look identical. Paginated
-  75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of Y" jump box;
-  **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and page 2 (#76-150)
-  — reflected in the URL too (`?main` / `?extended`, a search as `?q=...`), synced via
-  `history.pushState` so back/forward work and a specific view is shareable. The **Open rank** box
-  takes you straight *into* that level's detail page rather than just the list page it sits on.
+  discrete difficulty buckets, so no two nearby ranks look identical. A trio of large, softly
+  blurred, slowly-drifting color blobs in that same red/purple/orange palette sit behind the page
+  (`.ambient-bg`, `css/base.css`) — list.html and queue.html only; level.html has its own
+  level-specific background instead (see below). Paginated 75-at-a-time (5 columns x 15 rows at
+  desktop width) with Prev/Next and a "page X of Y" jump box; **Main List** and **Extended List**
+  buttons jump straight to page 1 (#1-75) and page 2 (#76-150) without scrolling the page (they
+  sit right where you're already looking, in the hero at the top — Prev/Next/the page-jump form
+  live at the bottom of the grid instead, and still scroll back up, since staying put there would
+  leave you looking at the tail end of a new page). Reflected in the URL too as a *hash*, not a
+  query string — `#main` / `#extended`, a search as `#q=...` — synced via `history.pushState` so
+  back/forward work and a specific view is shareable; see `writeUrlState()` in `js/list.js` for
+  why a hash rather than `?...` or a true path (short version: a hash needs no server involvement
+  at all, so it works identically on any host, unlike a path rewrite). The **Open rank** box takes
+  you straight *into* that level's detail page rather than just the list page it sits on.
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view
-  counts shown for direct comparison. Its URL is just the level's rank (`level.html?42`, resolved
-  to the actual AREDL id via `AredlAPI.getIdByPosition()` before fetching anything) rather than
-  AREDL's 36-character id. A refresh icon next to the video section lets any visitor force a
+  counts shown for direct comparison. Its URL is just the level's rank as a hash fragment
+  (`level.html#42`, resolved to the actual AREDL id via `AredlAPI.getIdByPosition()` before
+  fetching anything) rather than AREDL's 36-character id or a `?id=`-style query string. A refresh
+  icon next to the video section lets any visitor force a
   re-check of just this level (see [Manual refresh](#shared-showcaseview-count-cache) below) —
   deliberately *only* this level, not the whole list; see
   [One-click refresh trigger](#one-click-refresh-trigger). The background is the verification
@@ -392,7 +401,7 @@ js/
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  list.js                           list page controller — also owns the ?main/?extended/?q= URL sync
+  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below

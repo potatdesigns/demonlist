@@ -5,11 +5,13 @@
 (() => {
   const root = document.getElementById('detail-root');
 
-  // The URL carries a level's rank (1-150) as a bare query flag —
-  // level.html?42, not ?id=<uuid> — much easier to read/share (see
-  // cardTemplate()'s detailUrl in list.js). Resolved to the actual AREDL
-  // id via AredlAPI.getIdByPosition() below before fetching anything.
-  const rankParam = [...new URLSearchParams(window.location.search).keys()][0] || null;
+  // The URL carries a level's rank (1-150) as a bare hash fragment —
+  // level.html#42, no question mark and no long AREDL id (see
+  // cardTemplate()'s detailUrl in list.js, and writeUrlState()'s doc
+  // comment in list.js for why hash over a query string). Resolved to
+  // the actual AREDL id via AredlAPI.getIdByPosition() below before
+  // fetching anything.
+  const rankParam = [...new URLSearchParams(window.location.hash.replace(/^#/, '')).keys()][0] || null;
 
   if (!rankParam) {
     root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="index.html">list</a> and click a card.</div>`;

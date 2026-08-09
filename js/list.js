@@ -38,11 +38,16 @@
       showBanner(`No level at rank #${pos} (list runs 1–${totalCount}).`, true);
       return;
     }
-    window.location.href = `level.html?${pos}`;
+    window.location.href = `level.html#${pos}`;
   });
 
-  filterMainBtn.addEventListener('click', () => goToPage(1));
-  filterExtendedBtn.addEventListener('click', () => goToPage(2));
+  // Main/Extended sit right in the hero at the top of the page — you're
+  // already looking at where the grid is about to change, so scrolling
+  // is just noise. Prev/Next/the page-jump form live at the *bottom* of
+  // the grid instead, where staying put would leave you looking at the
+  // tail end of a new page — those keep the scroll.
+  filterMainBtn.addEventListener('click', () => goToPage(1, { scroll: false }));
+  filterExtendedBtn.addEventListener('click', () => goToPage(2, { scroll: false }));
 
   pagerPrevBtn.addEventListener('click', () => goToPage(currentPage - 1));
   pagerNextBtn.addEventListener('click', () => goToPage(currentPage + 1));
@@ -52,45 +57,50 @@
     if (Number.isFinite(page)) goToPage(page);
   });
 
-  function goToPage(page) {
+  function goToPage(page, { scroll = true } = {}) {
     currentPage = Math.max(1, totalPages ? Math.min(page, totalPages) : page);
     filterQuery = '';
     searchInput.value = '';
     jumpInput.value = '';
     writeUrlState(true);
     load();
-    gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+    if (scroll) gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
   }
 
   /**
-   * Reflects which page/filter is showing in the URL — page 1 and page 2
-   * specifically as bare `?main` / `?extended` (matching the two named
-   * filter buttons), a search as `?q=...`, anything else (Prev/Next/
-   * page-jump past page 2, if the list ever grows beyond two pages) as
-   * `?page=N`. True path-based URLs (`/main`, `/1`) aren't safely doable
-   * here — this is a static site with no server to rewrite `/main` back
-   * to `index.html` (GitHub Pages' 404-fallback trick could simulate it,
-   * but breaks `python -m http.server`-style local dev entirely, and
-   * assumes a specific host); bare flag-style query params is the closest
-   * equivalent that still works identically everywhere. `push` controls
-   * whether this creates a new browser-history entry (user-initiated
-   * navigation) or just normalizes the current one (initial load,
-   * popstate) — see readUrlState()'s callers.
+   * Reflects which page/filter is showing in the URL — as a *hash*
+   * fragment (`#main`, `#extended`, `#q=...`, `#page=N`), not a query
+   * string. True path-based URLs (`/main`, `/1`) still aren't safely
+   * doable without knowing this site's actual host (would need a
+   * GitHub-Pages-style 404-fallback rewrite, which not every static host
+   * supports the same way, and which breaks plain `python -m
+   * http.server` local dev entirely) — but a hash needs *no* server
+   * involvement at all: the browser never sends it in the request, so
+   * `index.html#main` loads exactly like `index.html` on literally any
+   * host, and JS just reads `location.hash` once it's there. That's also
+   * why `level.html#42` (see cardTemplate()'s detailUrl) doesn't have a
+   * question mark either, and why queue.html doesn't have a fragment at
+   * all — it has no state to encode (it's not a filtered view of
+   * something else the way main/extended/a rank are), so there's nothing
+   * to put after a `#`. `push` controls whether this creates a new
+   * browser-history entry (user-initiated navigation) or just normalizes
+   * the current one (initial load, popstate) — see readUrlState()'s
+   * callers.
    */
   function writeUrlState(push) {
-    const qs = filterQuery ? `q=${encodeURIComponent(filterQuery)}`
+    const hash = filterQuery ? `q=${encodeURIComponent(filterQuery)}`
       : currentPage === 1 ? 'main'
       : currentPage === 2 ? 'extended'
       : `page=${currentPage}`;
 
-    const url = `${window.location.pathname}?${qs}`;
+    const url = `${window.location.pathname}#${hash}`;
     const state = { page: currentPage, query: filterQuery };
     if (push) history.pushState(state, '', url);
     else history.replaceState(state, '', url);
   }
 
   function readUrlState() {
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.hash.replace(/^#/, ''));
     const q = params.get('q');
     if (q) return { page: 1, query: q };
     if (params.has('extended')) return { page: 2, query: '' };
@@ -101,14 +111,21 @@
   }
 
   /** Browser back/forward — re-sync state from the URL without pushing another history entry (that's what got us here). */
-  window.addEventListener('popstate', () => {
+  function syncFromUrl() {
     const state = readUrlState();
     currentPage = state.page;
     filterQuery = state.query;
     searchInput.value = filterQuery;
     jumpInput.value = '';
     load();
-  });
+  }
+  window.addEventListener('popstate', syncFromUrl);
+  // popstate alone only fires for back/forward and pushState/replaceState
+  // (which is all the buttons above ever do) — not for someone editing
+  // the hash directly in the address bar, or a raw `#extended`-style
+  // link, which the browser treats as a same-document navigation that
+  // fires *this* instead.
+  window.addEventListener('hashchange', syncFromUrl);
 
   function updateControlsUI() {
     filterMainBtn.classList.toggle('active', !filterQuery && currentPage === 1);
@@ -163,7 +180,7 @@
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
       `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
-    const detailUrl = `level.html?${demon.position}`;
+    const detailUrl = `level.html#${demon.position}`;
     const byNames = joinNames(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean));
     const publisherLabel = demon.publisher?.name || (demon.needsExtras ? '…' : 'Unknown');
 
@@ -358,7 +375,7 @@
     currentPage = state.page;
     filterQuery = state.query;
     searchInput.value = filterQuery;
-    writeUrlState(false); // normalize e.g. a bare index.html into ?list=main, without an extra history entry
+    writeUrlState(false); // normalize e.g. a bare index.html into index.html#main, without an extra history entry
 
     gridEl.innerHTML = skeletonCards(CONFIG.PAGE_SIZE);
     hideBanner();

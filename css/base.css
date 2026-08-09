@@ -91,6 +91,58 @@ img { max-width: 100%; display: block; }
 }
 
 /* =====================================================================
+   AMBIENT BACKGROUND — list.html/queue.html only (level.html has its own
+   level-specific one instead, see .detail-bg in css/detail.css). Three
+   large, heavily-blurred blobs in the same red -> purple palette as the
+   difficulty gradient (js/utils.js POSITION_COLOR_STOPS), drifting
+   slowly — ties these pages to the site's own color language instead of
+   generic decoration. Markup is just `<div class="ambient-bg"
+   aria-hidden="true"><span></span>x3</div>` as the first element in
+   <body>; .page/.footer-note's z-index:1 (below) keeps real content
+   stacked above it automatically.
+   ===================================================================== */
+
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.ambient-bg span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.26;
+  mix-blend-mode: screen;
+}
+.ambient-bg span:nth-child(1) {
+  width: 480px; height: 480px;
+  background: #fa2e2e;
+  top: -140px; left: -100px;
+  animation: drift-a 26s ease-in-out infinite alternate;
+}
+.ambient-bg span:nth-child(2) {
+  width: 560px; height: 560px;
+  background: #942efa;
+  bottom: -180px; right: -120px;
+  animation: drift-b 32s ease-in-out infinite alternate;
+}
+.ambient-bg span:nth-child(3) {
+  width: 380px; height: 380px;
+  background: #ff6e00;
+  top: 45%; left: 55%;
+  animation: drift-c 22s ease-in-out infinite alternate;
+}
+@keyframes drift-a { from { transform: translate(0, 0); } to { transform: translate(70px, 50px); } }
+@keyframes drift-b { from { transform: translate(0, 0); } to { transform: translate(-60px, -70px); } }
+@keyframes drift-c { from { transform: translate(0, 0); } to { transform: translate(-50px, 60px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-bg span { animation: none; }
+}
+
+/* =====================================================================
    SITE HEADER
    ===================================================================== */
 
