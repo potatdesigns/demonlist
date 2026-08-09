@@ -42,7 +42,14 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   back/forward work and a specific view is shareable; see `writeUrlState()` in `js/list.js` for
   why a hash rather than `?...` or a true path (short version: a hash needs no server involvement
   at all, so it works identically on any host, unlike a path rewrite). The **Open rank** box takes
-  you straight *into* that level's detail page rather than just the list page it sits on.
+  you straight *into* that level's detail page rather than just the list page it sits on. A
+  **Filters** dropdown (next to Open rank) narrows the grid to levels with no showcase found yet,
+  and/or a verifier-view-count range — like search, it checks the *entire* tracked list rather
+  than just the current page, so it also overrides pagination and the Main/Extended split while
+  active. Unlike search/page, it's session-local only (not reflected in the URL or restored on
+  back/forward) — a refinement on top of whatever you're looking at rather than a view of its own
+  worth bookmarking, and it's dropped whenever you navigate to a different page/search so it can't
+  linger invisibly underneath a view that looks unfiltered.
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view

@@ -34,6 +34,26 @@
         <input type="number" id="jump-input" min="1" aria-label="Open level by rank">
         <button type="submit" class="btn-ghost" aria-label="Open">&rarr;</button>
       </form>
+      <div class="filter-box">
+        <button type="button" class="btn-ghost filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+          Filters<span class="filter-badge" id="filter-badge" style="display:none;"></span>
+        </button>
+        <div class="filter-panel" id="filter-panel">
+          <label class="filter-check">
+            <input type="checkbox" id="filter-no-showcase">
+            No showcase found
+          </label>
+          <div class="filter-range">
+            <span>Verifier views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-verifier-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum verifier views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-verifier-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum verifier views">
+            </div>
+          </div>
+          <button type="button" class="btn-ghost filter-clear" id="filter-clear">Clear filters</button>
+        </div>
+      </div>
     </div>
 
     <div class="range-chips" id="list-filters" aria-label="List filters">

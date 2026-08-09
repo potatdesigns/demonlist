@@ -9,6 +9,13 @@
   const jumpInput = document.getElementById('jump-input');
   const filterMainBtn = document.getElementById('filter-main');
   const filterExtendedBtn = document.getElementById('filter-extended');
+  const filterToggleBtn = document.getElementById('filter-toggle');
+  const filterPanel = document.getElementById('filter-panel');
+  const filterBadge = document.getElementById('filter-badge');
+  const noShowcaseCheckbox = document.getElementById('filter-no-showcase');
+  const verifierMinInput = document.getElementById('filter-verifier-min');
+  const verifierMaxInput = document.getElementById('filter-verifier-max');
+  const filterClearBtn = document.getElementById('filter-clear');
   const stateBanner = document.getElementById('state-banner');
   const pagerRow = document.getElementById('pager-row');
   const pagerPrevBtn = document.getElementById('pager-prev');
@@ -22,6 +29,17 @@
   let totalPages = 1;
   let filterQuery = '';
   let loading = false;
+
+  // Not persisted in the URL like page/query (see writeUrlState) —
+  // these are session-local refinements on top of whatever view you're
+  // already on, not a "view" of their own worth bookmarking/sharing.
+  const filters = { noShowcase: false, verifierMin: null, verifierMax: null };
+  function filtersActive() {
+    return filters.noShowcase || filters.verifierMin !== null || filters.verifierMax !== null;
+  }
+  function activeFilterCount() {
+    return (filters.noShowcase ? 1 : 0) + (filters.verifierMin !== null ? 1 : 0) + (filters.verifierMax !== null ? 1 : 0);
+  }
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
@@ -49,6 +67,56 @@
   filterMainBtn.addEventListener('click', () => goToPage(1, { scroll: false }));
   filterExtendedBtn.addEventListener('click', () => goToPage(2, { scroll: false }));
 
+  filterToggleBtn.addEventListener('click', () => {
+    const open = filterPanel.classList.toggle('open');
+    filterToggleBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (!filterPanel.classList.contains('open')) return;
+    if (e.target === filterToggleBtn || filterToggleBtn.contains(e.target) || filterPanel.contains(e.target)) return;
+    closeFilterPanel();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && filterPanel.classList.contains('open')) closeFilterPanel();
+  });
+  function closeFilterPanel() {
+    filterPanel.classList.remove('open');
+    filterToggleBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function parseViewsInput(input) {
+    const n = parseInt(input.value, 10);
+    return Number.isFinite(n) && n >= 0 ? n : null;
+  }
+  function syncFilterUI() {
+    filterToggleBtn.classList.toggle('active', filtersActive());
+    const count = activeFilterCount();
+    filterBadge.textContent = String(count);
+    filterBadge.style.display = count ? '' : 'none';
+  }
+  function applyFiltersFromUI() {
+    filters.noShowcase = noShowcaseCheckbox.checked;
+    filters.verifierMin = parseViewsInput(verifierMinInput);
+    filters.verifierMax = parseViewsInput(verifierMaxInput);
+    syncFilterUI();
+    load();
+  }
+  /** Used when navigating to a different page/search (Main/Extended chips, the M/E shortcuts, back/forward) — filters are a refinement on top of whatever you're looking at, not part of that navigable state (see the `filters` declaration above), so moving to a different view drops them rather than silently keeping a stale, invisible-looking refinement applied underneath it. */
+  function clearFilters() {
+    filters.noShowcase = false;
+    filters.verifierMin = null;
+    filters.verifierMax = null;
+    noShowcaseCheckbox.checked = false;
+    verifierMinInput.value = '';
+    verifierMaxInput.value = '';
+    syncFilterUI();
+  }
+  noShowcaseCheckbox.addEventListener('change', applyFiltersFromUI);
+  const debouncedApplyFilters = debounce(applyFiltersFromUI, 350);
+  verifierMinInput.addEventListener('input', debouncedApplyFilters);
+  verifierMaxInput.addEventListener('input', debouncedApplyFilters);
+  filterClearBtn.addEventListener('click', () => { clearFilters(); load(); });
+
   pagerPrevBtn.addEventListener('click', () => goToPage(currentPage - 1));
   pagerNextBtn.addEventListener('click', () => goToPage(currentPage + 1));
   pagerPageForm.addEventListener('submit', (e) => {
@@ -62,6 +130,7 @@
     filterQuery = '';
     searchInput.value = '';
     jumpInput.value = '';
+    clearFilters();
     writeUrlState(true);
     load();
     if (scroll) gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
@@ -117,6 +186,7 @@
     filterQuery = state.query;
     searchInput.value = filterQuery;
     jumpInput.value = '';
+    clearFilters();
     load();
   }
   window.addEventListener('popstate', syncFromUrl);
@@ -128,11 +198,12 @@
   window.addEventListener('hashchange', syncFromUrl);
 
   function updateControlsUI() {
-    filterMainBtn.classList.toggle('active', !filterQuery && currentPage === 1);
-    filterExtendedBtn.classList.toggle('active', !filterQuery && currentPage === 2);
+    const customView = !!filterQuery || filtersActive();
+    filterMainBtn.classList.toggle('active', !customView && currentPage === 1);
+    filterExtendedBtn.classList.toggle('active', !customView && currentPage === 2);
     updateDocumentTitle();
 
-    if (filterQuery) {
+    if (customView) {
       pagerRow.style.display = 'none';
       return;
     }
@@ -146,6 +217,7 @@
 
   function updateDocumentTitle() {
     if (filterQuery) document.title = `Demonlist | Search: ${filterQuery}`;
+    else if (filtersActive()) document.title = 'Demonlist | Filtered';
     else if (currentPage === 1) document.title = 'Demonlist | Main';
     else if (currentPage === 2) document.title = 'Demonlist | Extended';
     else document.title = `Demonlist | Page ${currentPage}`;
@@ -321,6 +393,34 @@
     });
   }
 
+  /** Human-readable pieces of whatever's currently checked/filled in the filter panel, for the banner and empty-state text. */
+  function filterDescriptionParts() {
+    const parts = [];
+    if (filters.noShowcase) parts.push('no showcase found');
+    if (filters.verifierMin !== null) parts.push(`verifier views ≥ ${filters.verifierMin.toLocaleString()}`);
+    if (filters.verifierMax !== null) parts.push(`verifier views ≤ ${filters.verifierMax.toLocaleString()}`);
+    return parts;
+  }
+
+  /**
+   * Filters (no-showcase / verifier-view thresholds) need the shared
+   * view-count cache, not just AREDL's own fields — SharedYtCache.load()
+   * fetches data/yt-cache.json once and caches it in memory (see
+   * js/shared-cache.js), so getEntry() below is a plain in-memory lookup
+   * after the first call on the page, not a fresh network round trip per
+   * candidate level.
+   */
+  async function applyViewFilters(candidates) {
+    const entries = await Promise.all(candidates.map(d => SharedYtCache.getEntry(d.id)));
+    return candidates.filter((d, i) => {
+      const entry = entries[i];
+      if (filters.noShowcase && entry?.showcase) return false;
+      if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
+      if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
+      return true;
+    });
+  }
+
   // --- data loading ---
   async function load() {
     if (loading) return;
@@ -328,13 +428,21 @@
 
     try {
       let demons, matchCount = null;
-      if (filterQuery) {
-        // full-list search — AredlAPI already holds the whole list in
-        // memory (see fetchFullList in api-aredl.js), so this filters
-        // across all ~1600 levels, not just whatever page was loaded.
-        const result = await AredlAPI.searchByName(filterQuery);
-        demons = result.demons;
-        matchCount = result.total;
+      if (filterQuery || filtersActive()) {
+        // Search and the filter panel both need the *entire* tracked
+        // list to check against, not just whatever page was loaded —
+        // AredlAPI already holds it in memory (see fetchFullList in
+        // api-aredl.js), so neither of these costs an extra round trip.
+        let candidates;
+        if (filterQuery) {
+          const result = await AredlAPI.searchByName(filterQuery);
+          candidates = result.demons;
+          matchCount = result.total;
+        } else {
+          candidates = (await AredlAPI.fetchListed({ limit: CONFIG.LIST_SIZE, offset: 0 })).demons;
+        }
+        if (filtersActive()) candidates = await applyViewFilters(candidates);
+        demons = candidates;
       } else {
         const page = await DataSource.fetchPage(currentPage);
         demons = page.demons;
@@ -345,12 +453,17 @@
       }
 
       if (demons.length === 0) {
-        gridEl.innerHTML = `<div class="empty-state">No levels found${filterQuery ? ` for “${escapeHtml(filterQuery)}”` : ''}.</div>`;
+        const queryPart = filterQuery ? ` for “${escapeHtml(filterQuery)}”` : '';
+        const filterPart = filtersActive() ? ` matching your filters (${escapeHtml(filterDescriptionParts().join(', '))})` : '';
+        gridEl.innerHTML = `<div class="empty-state">No levels found${queryPart}${filterPart}.</div>`;
       } else {
         renderCards(demons);
       }
 
-      if (matchCount !== null && matchCount > demons.length) {
+      if (filtersActive()) {
+        const queryPart = filterQuery ? ` matching “${escapeHtml(filterQuery)}” and` : '';
+        showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${queryPart} matching: ${escapeHtml(filterDescriptionParts().join(', '))}.`);
+      } else if (matchCount !== null && matchCount > demons.length) {
         showBanner(`Showing the first ${demons.length} of ${matchCount} matches for “${escapeHtml(filterQuery)}” — narrow your search to see the rest.`);
       } else {
         hideBanner();
