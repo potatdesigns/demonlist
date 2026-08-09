@@ -39,10 +39,6 @@
           Filters<span class="filter-badge" id="filter-badge" style="display:none;"></span>
         </button>
         <div class="filter-panel" id="filter-panel">
-          <label class="filter-check">
-            <input type="checkbox" id="filter-no-showcase">
-            No showcase found
-          </label>
           <div class="filter-range">
             <span>Verifier views</span>
             <div class="filter-range-inputs">
@@ -51,9 +47,24 @@
               <input type="number" id="filter-verifier-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum verifier views">
             </div>
           </div>
+          <div class="filter-range">
+            <span>Showcase views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-showcase-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum showcase views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-showcase-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum showcase views">
+            </div>
+          </div>
           <button type="button" class="btn-ghost filter-clear" id="filter-clear">Clear filters</button>
         </div>
       </div>
+      <select class="sort-select btn-ghost" id="sort-select" aria-label="Sort by">
+        <option value="">Sort: Position</option>
+        <option value="verifier-desc">Verifier views: High to Low</option>
+        <option value="verifier-asc">Verifier views: Low to High</option>
+        <option value="showcase-desc">Showcase views: High to Low</option>
+        <option value="showcase-asc">Showcase views: Low to High</option>
+      </select>
     </div>
 
     <div class="range-chips" id="list-filters" aria-label="List filters">

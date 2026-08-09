@@ -12,10 +12,12 @@
   const filterToggleBtn = document.getElementById('filter-toggle');
   const filterPanel = document.getElementById('filter-panel');
   const filterBadge = document.getElementById('filter-badge');
-  const noShowcaseCheckbox = document.getElementById('filter-no-showcase');
   const verifierMinInput = document.getElementById('filter-verifier-min');
   const verifierMaxInput = document.getElementById('filter-verifier-max');
+  const showcaseMinInput = document.getElementById('filter-showcase-min');
+  const showcaseMaxInput = document.getElementById('filter-showcase-max');
   const filterClearBtn = document.getElementById('filter-clear');
+  const sortSelect = document.getElementById('sort-select');
   const stateBanner = document.getElementById('state-banner');
   const pagerRow = document.getElementById('pager-row');
   const pagerPrevBtn = document.getElementById('pager-prev');
@@ -33,13 +35,30 @@
   // Not persisted in the URL like page/query (see writeUrlState) —
   // these are session-local refinements on top of whatever view you're
   // already on, not a "view" of their own worth bookmarking/sharing.
-  const filters = { noShowcase: false, verifierMin: null, verifierMax: null };
+  const filters = { verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
   function filtersActive() {
-    return filters.noShowcase || filters.verifierMin !== null || filters.verifierMax !== null;
+    return filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
   }
   function activeFilterCount() {
-    return (filters.noShowcase ? 1 : 0) + (filters.verifierMin !== null ? 1 : 0) + (filters.verifierMax !== null ? 1 : 0);
+    return [filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
   }
+
+  // '' (default, position order) | 'verifier-desc' | 'verifier-asc' | 'showcase-desc' | 'showcase-asc'
+  // — same session-local, not-in-the-URL treatment as `filters` above,
+  // and the same reason: it's a lens on the current view, not a view of
+  // its own. Sorting by either video's view count doesn't correspond to
+  // any fixed rank order, so it's mutually exclusive with Main/Extended
+  // (see customViewActive()) the same way search/filters already are.
+  let sortMode = '';
+  function sortActive() { return sortMode !== ''; }
+  const SORT_LABELS = {
+    'verifier-desc': 'verifier views, high to low',
+    'verifier-asc': 'verifier views, low to high',
+    'showcase-desc': 'showcase views, high to low',
+    'showcase-asc': 'showcase views, low to high',
+  };
+  /** True whenever the grid shows something other than a plain Main/Extended page — search, a filter, or a sort — see load()'s branch on this. */
+  function customViewActive() { return !!filterQuery || filtersActive() || sortActive(); }
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
@@ -95,27 +114,37 @@
     filterBadge.style.display = count ? '' : 'none';
   }
   function applyFiltersFromUI() {
-    filters.noShowcase = noShowcaseCheckbox.checked;
     filters.verifierMin = parseViewsInput(verifierMinInput);
     filters.verifierMax = parseViewsInput(verifierMaxInput);
+    filters.showcaseMin = parseViewsInput(showcaseMinInput);
+    filters.showcaseMax = parseViewsInput(showcaseMaxInput);
     syncFilterUI();
     load();
   }
-  /** Used when navigating to a different page/search (Main/Extended chips, the M/E shortcuts, back/forward) — filters are a refinement on top of whatever you're looking at, not part of that navigable state (see the `filters` declaration above), so moving to a different view drops them rather than silently keeping a stale, invisible-looking refinement applied underneath it. */
+  /** Scoped to the filter panel only — the "Clear filters" button clears the range filters, not the separate sort dropdown (see clearSort()/resetRefinements() below for the broader reset used on navigation). */
   function clearFilters() {
-    filters.noShowcase = false;
     filters.verifierMin = null;
     filters.verifierMax = null;
-    noShowcaseCheckbox.checked = false;
+    filters.showcaseMin = null;
+    filters.showcaseMax = null;
     verifierMinInput.value = '';
     verifierMaxInput.value = '';
+    showcaseMinInput.value = '';
+    showcaseMaxInput.value = '';
     syncFilterUI();
   }
-  noShowcaseCheckbox.addEventListener('change', applyFiltersFromUI);
   const debouncedApplyFilters = debounce(applyFiltersFromUI, 350);
   verifierMinInput.addEventListener('input', debouncedApplyFilters);
   verifierMaxInput.addEventListener('input', debouncedApplyFilters);
+  showcaseMinInput.addEventListener('input', debouncedApplyFilters);
+  showcaseMaxInput.addEventListener('input', debouncedApplyFilters);
   filterClearBtn.addEventListener('click', () => { clearFilters(); load(); });
+
+  function clearSort() { sortMode = ''; sortSelect.value = ''; }
+  sortSelect.addEventListener('change', () => { sortMode = sortSelect.value; load(); });
+
+  /** Used when navigating to a different page/search (Main/Extended chips, the M/E shortcuts, back/forward) — filters and sort are both a lens on top of whatever you're looking at, not part of that navigable state, so moving to a different view drops them rather than silently keeping a stale, invisible-looking refinement applied underneath it. */
+  function resetRefinements() { clearFilters(); clearSort(); }
 
   pagerPrevBtn.addEventListener('click', () => goToPage(currentPage - 1));
   pagerNextBtn.addEventListener('click', () => goToPage(currentPage + 1));
@@ -130,7 +159,7 @@
     filterQuery = '';
     searchInput.value = '';
     jumpInput.value = '';
-    clearFilters();
+    resetRefinements();
     writeUrlState(true);
     load();
     if (scroll) gridEl.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
@@ -186,7 +215,7 @@
     filterQuery = state.query;
     searchInput.value = filterQuery;
     jumpInput.value = '';
-    clearFilters();
+    resetRefinements();
     load();
   }
   window.addEventListener('popstate', syncFromUrl);
@@ -198,7 +227,7 @@
   window.addEventListener('hashchange', syncFromUrl);
 
   function updateControlsUI() {
-    const customView = !!filterQuery || filtersActive();
+    const customView = customViewActive();
     filterMainBtn.classList.toggle('active', !customView && currentPage === 1);
     filterExtendedBtn.classList.toggle('active', !customView && currentPage === 2);
     updateDocumentTitle();
@@ -218,6 +247,7 @@
   function updateDocumentTitle() {
     if (filterQuery) document.title = `Demonlist | Search: ${filterQuery}`;
     else if (filtersActive()) document.title = 'Demonlist | Filtered';
+    else if (sortActive()) document.title = 'Demonlist | Sorted';
     else if (currentPage === 1) document.title = 'Demonlist | Main';
     else if (currentPage === 2) document.title = 'Demonlist | Extended';
     else document.title = `Demonlist | Page ${currentPage}`;
@@ -393,31 +423,44 @@
     });
   }
 
-  /** Human-readable pieces of whatever's currently checked/filled in the filter panel, for the banner and empty-state text. */
+  /** Human-readable pieces of whatever's currently filled in the filter panel, for the banner and empty-state text. */
   function filterDescriptionParts() {
     const parts = [];
-    if (filters.noShowcase) parts.push('no showcase found');
     if (filters.verifierMin !== null) parts.push(`verifier views ≥ ${filters.verifierMin.toLocaleString()}`);
     if (filters.verifierMax !== null) parts.push(`verifier views ≤ ${filters.verifierMax.toLocaleString()}`);
+    if (filters.showcaseMin !== null) parts.push(`showcase views ≥ ${filters.showcaseMin.toLocaleString()}`);
+    if (filters.showcaseMax !== null) parts.push(`showcase views ≤ ${filters.showcaseMax.toLocaleString()}`);
     return parts;
   }
 
-  /**
-   * Filters (no-showcase / verifier-view thresholds) need the shared
-   * view-count cache, not just AREDL's own fields — SharedYtCache.load()
-   * fetches data/yt-cache.json once and caches it in memory (see
-   * js/shared-cache.js), so getEntry() below is a plain in-memory lookup
-   * after the first call on the page, not a fresh network round trip per
-   * candidate level.
-   */
-  async function applyViewFilters(candidates) {
-    const entries = await Promise.all(candidates.map(d => SharedYtCache.getEntry(d.id)));
-    return candidates.filter((d, i) => {
-      const entry = entries[i];
-      if (filters.noShowcase && entry?.showcase) return false;
-      if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
-      if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
-      return true;
+  /** Combined description of whatever's making this a custom (non-paginated) view, for the banner and empty-state text. */
+  function customViewDescription() {
+    const bits = [];
+    if (filterQuery) bits.push(`matching “${escapeHtml(filterQuery)}”`);
+    const filterParts = filterDescriptionParts();
+    if (filterParts.length) bits.push(`filtered by ${escapeHtml(filterParts.join(', '))}`);
+    if (sortActive()) bits.push(`sorted by ${SORT_LABELS[sortMode]}`);
+    return bits.join(', ');
+  }
+
+  function passesFilters(entry) {
+    if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
+    if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
+    if (filters.showcaseMin !== null && !(entry?.showcase?.viewCount >= filters.showcaseMin)) return false;
+    if (filters.showcaseMax !== null && !(entry?.showcase?.viewCount <= filters.showcaseMax)) return false;
+    return true;
+  }
+
+  /** Sorts by whichever video + direction sortMode names, missing values last regardless of direction — "unknown" isn't meaningfully high or low, so it shouldn't win either end of the sort. */
+  function sortCandidates(list, entryById) {
+    const [field, dir] = sortMode.split('-'); // field: 'verifier' | 'showcase', dir: 'asc' | 'desc'
+    const viewsOf = (d) => entryById.get(d.id)?.[field]?.viewCount;
+    return list.slice().sort((a, b) => {
+      const av = viewsOf(a), bv = viewsOf(b);
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return dir === 'asc' ? av - bv : bv - av;
     });
   }
 
@@ -427,21 +470,31 @@
     loading = true;
 
     try {
-      let demons, matchCount = null;
-      if (filterQuery || filtersActive()) {
-        // Search and the filter panel both need the *entire* tracked
-        // list to check against, not just whatever page was loaded —
-        // AredlAPI already holds it in memory (see fetchFullList in
-        // api-aredl.js), so neither of these costs an extra round trip.
-        let candidates;
-        if (filterQuery) {
-          const result = await AredlAPI.searchByName(filterQuery);
-          candidates = result.demons;
-          matchCount = result.total;
-        } else {
-          candidates = (await AredlAPI.fetchListed({ limit: CONFIG.LIST_SIZE, offset: 0 })).demons;
+      let demons;
+      if (customViewActive()) {
+        // Search, the filter panel, and the sort dropdown all need the
+        // *entire* tracked list to work against, not just whatever page
+        // was loaded — AredlAPI already holds it in memory (see
+        // fetchFullList in api-aredl.js), so none of these cost an
+        // extra round trip.
+        let candidates = filterQuery
+          ? (await AredlAPI.searchByName(filterQuery)).demons
+          : (await AredlAPI.fetchListed({ limit: CONFIG.LIST_SIZE, offset: 0 })).demons;
+
+        if (filtersActive() || sortActive()) {
+          // Filtering and sorting both need the shared view-count cache,
+          // not just AREDL's own fields — SharedYtCache.load() fetches
+          // data/yt-cache.json once and caches it in memory (see
+          // js/shared-cache.js), so getEntry() below is a plain
+          // in-memory lookup after the first call on the page, not a
+          // fresh network round trip per candidate level. Fetched once
+          // here and shared between the filter and sort passes rather
+          // than each doing its own pass over the cache.
+          const entries = await Promise.all(candidates.map(d => SharedYtCache.getEntry(d.id)));
+          const entryById = new Map(candidates.map((d, i) => [d.id, entries[i]]));
+          if (filtersActive()) candidates = candidates.filter(d => passesFilters(entryById.get(d.id)));
+          if (sortActive()) candidates = sortCandidates(candidates, entryById);
         }
-        if (filtersActive()) candidates = await applyViewFilters(candidates);
         demons = candidates;
       } else {
         const page = await DataSource.fetchPage(currentPage);
@@ -453,18 +506,15 @@
       }
 
       if (demons.length === 0) {
-        const queryPart = filterQuery ? ` for “${escapeHtml(filterQuery)}”` : '';
-        const filterPart = filtersActive() ? ` matching your filters (${escapeHtml(filterDescriptionParts().join(', '))})` : '';
-        gridEl.innerHTML = `<div class="empty-state">No levels found${queryPart}${filterPart}.</div>`;
+        const desc = customViewDescription();
+        gridEl.innerHTML = `<div class="empty-state">No levels found${desc ? ` ${desc}` : ''}.</div>`;
       } else {
         renderCards(demons);
       }
 
-      if (filtersActive()) {
-        const queryPart = filterQuery ? ` matching “${escapeHtml(filterQuery)}” and` : '';
-        showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${queryPart} matching: ${escapeHtml(filterDescriptionParts().join(', '))}.`);
-      } else if (matchCount !== null && matchCount > demons.length) {
-        showBanner(`Showing the first ${demons.length} of ${matchCount} matches for “${escapeHtml(filterQuery)}” — narrow your search to see the rest.`);
+      if (customViewActive()) {
+        const desc = customViewDescription();
+        showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${desc ? ` ${desc}` : ''}.`);
       } else {
         hideBanner();
       }
