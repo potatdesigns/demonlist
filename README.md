@@ -27,9 +27,11 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
   creator(s), publisher, verifier, and — side by side — the verifier video's view count vs. the
   most-viewed *same-level* showcase's view count, with the higher number highlighted in gold. Each
-  card's accent color is a continuous gradient by rank (`positionColor()` in `js/utils.js`) — cool
-  blue at the easy end sweeping through violet/magenta/red up to the brand orange at #1, rather
-  than a handful of discrete difficulty buckets, so no two nearby ranks look identical. Paginated
+  card's accent color is a continuous gradient by rank (`positionColor()` in `js/utils.js`) —
+  bright red at #1 (hardest) sweeping down through pink/magenta/violet to bright purple at #150
+  (easiest), 11 key points roughly every 15 ranks, deliberately taking the *short* way around the
+  hue wheel so it never crosses into orange/yellow/green/cyan/blue — rather than a handful of
+  discrete difficulty buckets, so no two nearby ranks look identical. Paginated
   75-at-a-time (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of Y" jump box;
   **Main List** and **Extended List** buttons jump straight to page 1 (#1-75) and page 2 (#76-150)
   — reflected in the URL too (`?main` / `?extended`, a search as `?q=...`), synced via

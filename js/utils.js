@@ -87,19 +87,18 @@ async function corsFetchJson(url, { headers = {} } = {}) {
 
 /**
  * Continuous difficulty color for a level's rank position relative to the
- * list's total length — cool blue (position = total, easiest) sweeping
- * through violet/magenta/red up to the brand orange (position 1, hardest),
- * rather than sorting positions into a handful of discrete buckets. The
- * old bucket boundaries (top 1% / 6% / 16% / 32% / 58% / everyone else)
- * front-loaded all the visual variety into the first ~15% of the list —
- * everything from roughly position 88 to 150 landed in the exact same
- * dullest gray, i.e. it "went dull" abruptly rather than gradually. This
- * interpolates continuously instead, so every position gets a distinct,
- * evenly-spaced hue across the *entire* 1..total range — and a wide hue
- * sweep (not just a light->dark ramp of one color) makes any two ranks
- * visually distinguishable at a glance, not just the extremes.
+ * list's total length — bright red at position 1 (hardest) sweeping down
+ * to bright purple at position = total (easiest), rather than sorting
+ * positions into a handful of discrete buckets (see git history for why
+ * that approach fell short — it front-loaded all the visual variety into
+ * the first ~15% of the list). 11 evenly-spaced key points (~every 15
+ * positions across 150) walk the hue wheel from 360deg (red) down to
+ * 270deg (purple) — the *short* way, through pink/magenta, deliberately
+ * never crossing orange/yellow/green/cyan/blue, so the sweep reads as one
+ * deliberate red-to-purple gradient rather than looping around toward
+ * blue and back.
  */
-const POSITION_COLOR_STOPS = ['#3d7cff', '#7a5cf0', '#b13ce0', '#e23ab0', '#ff3d6e', '#ff6e00'];
+const POSITION_COLOR_STOPS = ['#942efa', '#b22efa', '#d12efa', '#ef2efa', '#fa2ee5', '#fa2ec7', '#fa2ea8', '#fa2e8a', '#fa2e6b', '#fa2e4d', '#fa2e2e'];
 
 function hexToRgb(hex) {
   const n = parseInt(hex.slice(1), 16);
