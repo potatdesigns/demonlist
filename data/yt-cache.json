@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T08:08:54.235Z",
+  "generatedAt": "2026-08-09T08:50:43.733Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -283,17 +283,17 @@
         "title": "[TOP 1] \"SILENT CLUBSTEP\" VERIFIED!! (LEGENDARY DEMON)",
         "channel": "paqoe",
         "viewCount": 2317887,
-        "viewsCheckedAt": "2026-08-09T08:08:53.746Z"
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
       },
       "showcase": {
         "id": "4VQzSID55lY",
         "url": "https://www.youtube.com/watch?v=4VQzSID55lY",
         "title": "SILENT CLUBSTEP by TheRealSailent",
         "channel": "fnm04",
-        "viewCount": 2801835,
-        "viewsCheckedAt": "2026-08-09T08:08:53.746Z"
+        "viewCount": 2801159,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
       },
-      "discoveredAt": "2026-08-09T06:45:02.976Z"
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
     },
     "7b90f819-624d-461a-9987-f1b6a0a54ef2": {
       "name": "Ashley Wave Trials",
@@ -1792,6 +1792,1077 @@
         "viewsCheckedAt": "2026-08-09T08:08:53.746Z"
       },
       "discoveredAt": "2026-08-08T08:49:12.755Z"
+    },
+    "9c12bb17-9512-4771-b6e9-9e51c819ed01": {
+      "name": "Coalescence",
+      "position": 100,
+      "verifier": {
+        "id": "do-a2EzZ4R8",
+        "url": "https://www.youtube.com/watch?v=do-a2EzZ4R8",
+        "title": "Coalescence Verified | Amplitron, Slayer, Notes, Pixll, Kaza",
+        "channel": "Amplitron",
+        "viewCount": 59615,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "Y0_IB6rsZkY",
+        "url": "https://www.youtube.com/watch?v=Y0_IB6rsZkY",
+        "title": "【4K】 \"Coalescence\" by amplitron & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 52011,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "5c8c6aa7-fc03-4adc-9363-02c6a30cc817": {
+      "name": "Waterfall",
+      "position": 101,
+      "verifier": {
+        "id": "VKuVdqneG9Y",
+        "url": "https://www.youtube.com/watch?v=VKuVdqneG9Y",
+        "title": "Waterfall Verified | Cherryteam",
+        "channel": "LordVadercraft",
+        "viewCount": 178864,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "DHcNbhI-siE",
+        "url": "https://www.youtube.com/watch?v=DHcNbhI-siE",
+        "title": "WATERFALL by CherryTeam // GRAND FINALE (official full version) - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 739212,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "ab157b89-82de-436e-817a-24e4ad8a38ba": {
+      "name": "Jigsaw",
+      "position": 102,
+      "verifier": {
+        "id": "FPfSqlI0T30",
+        "url": "https://www.youtube.com/watch?v=FPfSqlI0T30",
+        "title": "[VERIFIED] “JIGSAW” by Nekon [Extreme Demon]",
+        "channel": "Gokill GD",
+        "viewCount": 79088,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "hkVwt7y6rXs",
+        "url": "https://www.youtube.com/watch?v=hkVwt7y6rXs",
+        "title": "JIGSAW",
+        "channel": "Neiro",
+        "viewCount": 50882,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "f3416b47-4beb-48af-b248-5c12bc8f1d72": {
+      "name": "Delta",
+      "position": 103,
+      "verifier": {
+        "id": "_rr3J8DkIm4",
+        "url": "https://www.youtube.com/watch?v=_rr3J8DkIm4",
+        "title": "(VERIFIED) Delta by ArtsiBurn, Drakosa, & more",
+        "channel": "Doggie",
+        "viewCount": 194906,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "QE3oVDW-jUM",
+        "url": "https://www.youtube.com/watch?v=QE3oVDW-jUM",
+        "title": "(Extreme Demon) ''Sigma Interface'' 100% by Platnuu | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 173751,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "414afb01-7ce8-4237-ba08-5da2ed4ee3ef": {
+      "name": "Between Duality",
+      "position": 104,
+      "verifier": {
+        "id": "uOb-ajQ4bgw",
+        "url": "https://www.youtube.com/watch?v=uOb-ajQ4bgw",
+        "title": "(Top 100) Between Duality VERIFIED // Nexel",
+        "channel": "destr",
+        "viewCount": 9078,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "4klna8SSBRg",
+        "url": "https://www.youtube.com/watch?v=4klna8SSBRg",
+        "title": "【4K】 \"Between Duality\" by rnexel | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 3062,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "7e39c9be-cbcc-4aff-a23c-08add685a336": {
+      "name": "BPATA MPAKA",
+      "position": 105,
+      "verifier": {
+        "id": "sSbHYzYgYfA",
+        "url": "https://www.youtube.com/watch?v=sSbHYzYgYfA",
+        "title": "\"BPATA MPAKA\" VERIFIED! [TOP 45 DEMON] by Inex & more",
+        "channel": "maybee",
+        "viewCount": 73500,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "L78PYOfiRQM",
+        "url": "https://www.youtube.com/watch?v=L78PYOfiRQM",
+        "title": "CTPAX 3AMKOB",
+        "channel": "Nexus [GD]",
+        "viewCount": 73299,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "d022317b-32cc-462b-98a1-9aa37a6c8431": {
+      "name": "The Wonder of You",
+      "position": 106,
+      "verifier": {
+        "id": "iQ3RzYCvLvA",
+        "url": "https://www.youtube.com/watch?v=iQ3RzYCvLvA",
+        "title": "[Verified] The Wonder of You // HangerLord // Geometry Dash 2.11",
+        "channel": "Helix",
+        "viewCount": 63418,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "xtS4ibDPGxE",
+        "url": "https://www.youtube.com/watch?v=xtS4ibDPGxE",
+        "title": "Verified! | \"The Wonder of You\" by HangerLord",
+        "channel": "Neiro",
+        "viewCount": 84052,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "5531d67e-30cb-4cec-b42b-8b826830a7d7": {
+      "name": "Natural Disaster",
+      "position": 107,
+      "verifier": {
+        "id": "_0GqdSFmG_8",
+        "url": "https://www.youtube.com/watch?v=_0GqdSFmG_8",
+        "title": "NATURAL DISASTER VERIFIED (EXTREME DEMON) | Geometry Dash",
+        "channel": "iIiLaseriIi",
+        "viewCount": 115563,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "xevg8eyS9Po",
+        "url": "https://www.youtube.com/watch?v=xevg8eyS9Po",
+        "title": "IT`S VERIFIED!!! | Natural Disaster - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 412248,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "be331419-aac0-449a-aac3-b5bc78d3c2bd": {
+      "name": "Dualist (Solo)",
+      "position": 108,
+      "verifier": {
+        "id": "6ntYaDqBqu4",
+        "url": "https://www.youtube.com/watch?v=6ntYaDqBqu4",
+        "title": "[SOLO VERIFIED] DUALIST 100% By Syncroned & More",
+        "channel": "Draks",
+        "viewCount": 14211,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "IYw3XFPx678",
+        "url": "https://www.youtube.com/watch?v=IYw3XFPx678",
+        "title": "【4K】 \"Dualist\" by Syncroned & Cluncherp | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 3978,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b": {
+      "name": "The Golden",
+      "position": 109,
+      "verifier": {
+        "id": "wpS5PSHmji0",
+        "url": "https://www.youtube.com/watch?v=wpS5PSHmji0",
+        "title": "[VERIFIED] The Golden by Bo and more!",
+        "channel": "nSwish archive",
+        "viewCount": 171536,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "SJ7SIDO5sj4",
+        "url": "https://www.youtube.com/watch?v=SJ7SIDO5sj4",
+        "title": "【4K】 \"The Golden\" by Bo & more (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 3251105,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376": {
+      "name": "Oblivion",
+      "position": 110,
+      "verifier": {
+        "id": "ZcmDAm50BB0",
+        "url": "https://www.youtube.com/watch?v=ZcmDAm50BB0",
+        "title": "[Verification] Oblivion by Benji & More 100% (Official Cognition Sequel)",
+        "channel": "Dice88",
+        "viewCount": 255587,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "gSBuyBbyWcE",
+        "url": "https://www.youtube.com/watch?v=gSBuyBbyWcE",
+        "title": "【4K】 \"Oblivion\" [Cognition Sequel] by Benji & more (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 246268,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "03bbc794-51e3-4ad7-8c13-28070b97c9e9": {
+      "name": "Viprin UFO",
+      "position": 111,
+      "verifier": {
+        "id": "LTMW9Py-nHE",
+        "url": "https://www.youtube.com/watch?v=LTMW9Py-nHE",
+        "title": "Viprin UFO by @hawkyre Verified! (TOP 75 EXTREME DEMON)",
+        "channel": "TheGoldenBo",
+        "viewCount": 93283,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "wZt4DOqwePc",
+        "url": "https://www.youtube.com/watch?v=wZt4DOqwePc",
+        "title": "【4K】 \"Viprin UFO\" by hawkyre & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 99033,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "f8b060e5-3bda-43ec-ba57-1b439863caa5": {
+      "name": "NETWORK (Agat3)",
+      "position": 112,
+      "verifier": {
+        "id": "K7wJi01J5D8",
+        "url": "https://www.youtube.com/watch?v=K7wJi01J5D8",
+        "title": "NETWORK (Extreme Demon) by Agat3 and Amza VERIFIED | Geometry Dash [On Stream]",
+        "channel": "vulcanium4",
+        "viewCount": 89044,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "3bt2-rzQDG0",
+        "url": "https://www.youtube.com/watch?v=3bt2-rzQDG0",
+        "title": "\"NETWORK\" (Extreme Demon) by Agat3, Amza & theworldofme | Geometry Dash 2.11",
+        "channel": "Viprin",
+        "viewCount": 33518,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "231fdd45-f2f7-40a0-bb86-3743eba20ec0": {
+      "name": "Terminal Rampancy",
+      "position": 113,
+      "verifier": {
+        "id": "29hRhhqQTLc",
+        "url": "https://www.youtube.com/watch?v=29hRhhqQTLc",
+        "title": "VERIFIED! | \"Terminal Rampancy\" by Xyriak (Extreme Demon)",
+        "channel": "Bigthunder556",
+        "viewCount": 69278,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "XX0y1xlYdyU",
+        "url": "https://www.youtube.com/watch?v=XX0y1xlYdyU",
+        "title": "Terminal Rampancy (IT`S VERIFIED) - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 34595,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "aa141ae4-eb2e-4fa2-a26b-a244d070e54b": {
+      "name": "Verdant Landscape",
+      "position": 114,
+      "verifier": {
+        "id": "wjZxkS5KC0A",
+        "url": "https://www.youtube.com/watch?v=wjZxkS5KC0A",
+        "title": "VERDANT LANDSCAPE VERIFIED!!! [Hardest Solo Extreme Demon] by Nisha (me)",
+        "channel": "Sandrone",
+        "viewCount": 262043,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "dSbox0NKuXs",
+        "url": "https://www.youtube.com/watch?v=dSbox0NKuXs",
+        "title": "VERDANT LANDSCAPE by Nisha",
+        "channel": "fnm04",
+        "viewCount": 304091,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "5476e168-1f14-4250-b7df-d01f2d029367": {
+      "name": "Levigo",
+      "position": 115,
+      "verifier": {
+        "id": "AROmUo7DNkE",
+        "url": "https://www.youtube.com/watch?v=AROmUo7DNkE",
+        "title": "[VERIFIED] \"Levigo\" (TOP 30) by @SwibGD (On Stream)",
+        "channel": "KandaiGDG",
+        "viewCount": 25606,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "CWZknmr875g",
+        "url": "https://www.youtube.com/watch?v=CWZknmr875g",
+        "title": "RUST, but... MODERN TOP 20?! | Levigo - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 45945,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "20c0ea80-99d8-4474-87c8-2bd814a1ea73": {
+      "name": "UNKNOWN",
+      "position": 116,
+      "verifier": {
+        "id": "a1sQxQqU6EM",
+        "url": "https://www.youtube.com/watch?v=a1sQxQqU6EM",
+        "title": "UNKNOWN Verified (Extreme Demon) by NineDice, Relayne, muriday and more",
+        "channel": "Diamond",
+        "viewCount": 586744,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "EDg5TAbMp4g",
+        "url": "https://www.youtube.com/watch?v=EDg5TAbMp4g",
+        "title": "Page Not Found by TDP9 | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 937958,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "92ce0a98-11ae-4aca-9188-a8a56c5bb02d": {
+      "name": "ATOMIC CANNON Mk III",
+      "position": 117,
+      "verifier": {
+        "id": "xlAI_wVvnx8",
+        "url": "https://www.youtube.com/watch?v=xlAI_wVvnx8",
+        "title": "ATOMIC CANNON Mk III Update",
+        "channel": "Twonium",
+        "viewCount": 24794,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "dlEIPYl4Nvw",
+        "url": "https://www.youtube.com/watch?v=dlEIPYl4Nvw",
+        "title": "ATOMIC CANNON Mk III",
+        "channel": "Neiro",
+        "viewCount": 37599,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc": {
+      "name": "Shukketsu",
+      "position": 118,
+      "verifier": {
+        "id": "nkG4hKJIz2g",
+        "url": "https://www.youtube.com/watch?v=nkG4hKJIz2g",
+        "title": "Shukketsu VERIFIED | by zYuko and more (Top 15?)",
+        "channel": "Baeru",
+        "viewCount": 172259,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "MO2IN_EOLkk",
+        "url": "https://www.youtube.com/watch?v=MO2IN_EOLkk",
+        "title": "An ARTCORE TOP 1? | \"Shukketsu\" by Yuko (Full Unnerfed Showcase)",
+        "channel": "fnm04",
+        "viewCount": 157114,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "b158e365-0f31-485e-816d-be35f8623bf2": {
+      "name": "idontknowwhatthisis",
+      "position": 119,
+      "verifier": {
+        "id": "Dg9Q6s8EOlg",
+        "url": "https://www.youtube.com/watch?v=Dg9Q6s8EOlg",
+        "title": "[VERIFIED] | \"idontknowwhatthisis\" by YeldA & @puhyuu 100% | Geometry Dash",
+        "channel": "YeldA",
+        "viewCount": 7267,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "nmsGLSN0itU",
+        "url": "https://www.youtube.com/watch?v=nmsGLSN0itU",
+        "title": "【4K】 \"idontknowwhatthisis\" by YeldA & puhyuu | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 4673,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "d53edfd9-3a71-48f4-8c44-862cd83fccf3": {
+      "name": "Checked Steam",
+      "position": 120,
+      "verifier": {
+        "id": "cq6047eYGXs",
+        "url": "https://www.youtube.com/watch?v=cq6047eYGXs",
+        "title": "(Verified!) Checked Steam 100%",
+        "channel": "Whizkid05",
+        "viewCount": 172864,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "t1Ni-6t__S4",
+        "url": "https://www.youtube.com/watch?v=t1Ni-6t__S4",
+        "title": "Checked Steam",
+        "channel": "Neiro",
+        "viewCount": 59338,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "da77ff62-f03a-40e5-a11c-4753ea7f568a": {
+      "name": "Critical Heat",
+      "position": 121,
+      "verifier": {
+        "id": "UjYIt2jy_BY",
+        "url": "https://www.youtube.com/watch?v=UjYIt2jy_BY",
+        "title": "[VERIFIED] Critical Heat by Zeniux & Zeus (Top 30 Extreme Demon) | Geometry Dash",
+        "channel": "hstorm",
+        "viewCount": 60488,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "J3y8-hmyRZ0",
+        "url": "https://www.youtube.com/watch?v=J3y8-hmyRZ0",
+        "title": "Upcoming NEW Top 30 | Critical Heat - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 27994,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "8d02375c-8c31-4352-af21-d4533f63e3af": {
+      "name": "WOBBLING MACHINE (Solo)",
+      "position": 122,
+      "verifier": {
+        "id": "RKX6VOsICOg",
+        "url": "https://www.youtube.com/watch?v=RKX6VOsICOg",
+        "title": "(First Solo Victor) WOBBLING MACHINE By Smarted",
+        "channel": "conski",
+        "viewCount": 27776,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "0vvYFv4vnQg",
+        "url": "https://www.youtube.com/watch?v=0vvYFv4vnQg",
+        "title": "[4k] \"WOBBLING MACHINE\" by Smarted | Geometry Dash 2.11",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 29955,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "0ccd1fd2-5803-44b4-8ce3-bd749907e748": {
+      "name": "Crystal Crusher (Solo)",
+      "position": 123,
+      "verifier": {
+        "id": "qirwgz-haVQ",
+        "url": "https://www.youtube.com/watch?v=qirwgz-haVQ",
+        "title": "[SOLO VERIFIED!] \"Crystal Crusher\" by Zeniux and Zeus 100% [29th Extreme Demon/CBF]",
+        "channel": "GuitGuit",
+        "viewCount": 36500,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "8rh_hr7O1lg",
+        "url": "https://www.youtube.com/watch?v=8rh_hr7O1lg",
+        "title": "2P | \"Crystal Crusher\" by Zeniux and Zeus",
+        "channel": "Neiro",
+        "viewCount": 20813,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "c43eb1e4-b38d-466a-8da5-987204999072": {
+      "name": "limbo but uwu ig idk",
+      "position": 124,
+      "verifier": {
+        "id": "3B36N-qfOD8",
+        "url": "https://www.youtube.com/watch?v=3B36N-qfOD8",
+        "title": "Verified | Limbo but uwu ig idk by Akunakun [Extreme Demon]",
+        "channel": "ViperVenom95",
+        "viewCount": 200027,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "SzghIVktVDw",
+        "url": "https://www.youtube.com/watch?v=SzghIVktVDw",
+        "title": "(Extreme Demon) ''limbo but uwu ig idk'' by Akunakunn | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 477784,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd": {
+      "name": "Graceful",
+      "position": 125,
+      "verifier": {
+        "id": "5kOD37vQHKE",
+        "url": "https://www.youtube.com/watch?v=5kOD37vQHKE",
+        "title": "Graceful Update by D a G and Zentraa 100% VERIFIED! [EXTREME DEMON] | PLEASE READ DESCRIPTION",
+        "channel": "D a G",
+        "viewCount": 56135,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "pjOaUpSWgOs",
+        "url": "https://www.youtube.com/watch?v=pjOaUpSWgOs",
+        "title": "Top 10 Hardest UNRATED Extreme Demons in Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 92470,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "e8324cab-fc88-47c0-993d-87ce9de64a00": {
+      "name": "paranoia (amplitron)",
+      "position": 126,
+      "verifier": {
+        "id": "Aw83i8Zmh_0",
+        "url": "https://www.youtube.com/watch?v=Aw83i8Zmh_0",
+        "title": "[Solo Main List] Paranoia Verified | Geometry Dash",
+        "channel": "Amplitron",
+        "viewCount": 42647,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "w7s6OZCriQI",
+        "url": "https://www.youtube.com/watch?v=w7s6OZCriQI",
+        "title": "【4K】 \"paranoia\" by amplitron | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 8491,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "68308581-f1b6-4c0f-8851-82449ab1977f": {
+      "name": "The Paroxysm of Rage",
+      "position": 127,
+      "verifier": {
+        "id": "nq3i1qJQeEk",
+        "url": "https://www.youtube.com/watch?v=nq3i1qJQeEk",
+        "title": "The Paroxysm of Rage VERIFIED (Top 20) by Zacanaii & Evil Buds",
+        "channel": "turtl",
+        "viewCount": 43248,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "0ap21i99o7Y",
+        "url": "https://www.youtube.com/watch?v=0ap21i99o7Y",
+        "title": "NEW TOP 20?! | \"The Paroxysm of Rage\" by Zacanaii - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 40731,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "5b183ded-437a-4a25-8c81-8341fca626db": {
+      "name": "Blood Echo",
+      "position": 128,
+      "verifier": {
+        "id": "fSvk4tLlQzQ",
+        "url": "https://www.youtube.com/watch?v=fSvk4tLlQzQ",
+        "title": "[VERIFIED] Blood Echo by Farva, Lime and more (Haunted Corridor sequel)",
+        "channel": "swiborg",
+        "viewCount": 44230,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "OTVqy8n_dOU",
+        "url": "https://www.youtube.com/watch?v=OTVqy8n_dOU",
+        "title": "Haunted Corridor sequel | \"Blood Echo\" by Farva, Lime and more",
+        "channel": "Neiro",
+        "viewCount": 39365,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "48ef05df-7d3d-4653-8fdd-8cc67917c3b2": {
+      "name": "Aerial Gleam",
+      "position": 129,
+      "verifier": {
+        "id": "eyZjKtrGVYw",
+        "url": "https://www.youtube.com/watch?v=eyZjKtrGVYw",
+        "title": "Aerial Gleam NERFDATE Verified! - Geometry Dash",
+        "channel": "Doggie",
+        "viewCount": 252065,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "YrwMLHHmUJY",
+        "url": "https://www.youtube.com/watch?v=YrwMLHHmUJY",
+        "title": "AERIAL GLEAM by CuLuC & Endlevel",
+        "channel": "fnm04",
+        "viewCount": 549808,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "aa5788c8-80a2-4df1-a5a0-3f1b7533935e": {
+      "name": "DISCONNECT",
+      "position": 130,
+      "verifier": {
+        "id": "HxHo-LzwSao",
+        "url": "https://www.youtube.com/watch?v=HxHo-LzwSao",
+        "title": "DISCONNECT VERIFIED",
+        "channel": "Elinore",
+        "viewCount": 22099,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "ZBSysGnG1CE",
+        "url": "https://www.youtube.com/watch?v=ZBSysGnG1CE",
+        "title": "this broke my eyes",
+        "channel": "Neiro",
+        "viewCount": 25567,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "c2837416-7fb4-4866-ba91-e9c134a0a59a": {
+      "name": "VOID",
+      "position": 131,
+      "verifier": {
+        "id": "kN1FUoucoSc",
+        "url": "https://www.youtube.com/watch?v=kN1FUoucoSc",
+        "title": "(Verified!) Void 100%!",
+        "channel": "Whizkid05",
+        "viewCount": 41121,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "7G0wRbf8usw",
+        "url": "https://www.youtube.com/watch?v=7G0wRbf8usw",
+        "title": "Void Wave (RTX: ON) - Without LDM in Perfect Quality (4K, 60fps) (17K SPECIAL) - Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 355159,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87": {
+      "name": "Starlit Stroll",
+      "position": 132,
+      "verifier": {
+        "id": "U7MM74dTXuI",
+        "url": "https://www.youtube.com/watch?v=U7MM74dTXuI",
+        "title": "[NEW TOP 75 VERIFIED] STARLIT STROLL by EnfurGD & xCork \\\\ Geometry Dash 2.2",
+        "channel": "Nocta XI",
+        "viewCount": 23182,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "sKs_tfeTXHo",
+        "url": "https://www.youtube.com/watch?v=sKs_tfeTXHo",
+        "title": "【4K】\"Starlit Stroll\" by Enfur & More (Extreme Demon) | GD 2.2",
+        "channel": "zof",
+        "viewCount": 13559,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "53fb0da7-8845-4736-9832-c1f98bb388cc": {
+      "name": "Henken",
+      "position": 133,
+      "verifier": {
+        "id": "M--2oQKrV68",
+        "url": "https://www.youtube.com/watch?v=M--2oQKrV68",
+        "title": "\"Henken\" by Plolek and Yozyo VERIFIED (Extreme Demon)",
+        "channel": "Gokill GD",
+        "viewCount": 40996,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "pjOaUpSWgOs",
+        "url": "https://www.youtube.com/watch?v=pjOaUpSWgOs",
+        "title": "Top 10 Hardest UNRATED Extreme Demons in Geometry Dash",
+        "channel": "Neiro",
+        "viewCount": 92470,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f": {
+      "name": "Trueffet",
+      "position": 134,
+      "verifier": {
+        "id": "yHESkazVD4Q",
+        "url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
+        "title": "[EXTREME DEMON] Trueffet VERIFIED by SyQual & Rainstorm (Top 10)",
+        "channel": "Baeru",
+        "viewCount": 374843,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "eOUJZPn8YuU",
+        "url": "https://www.youtube.com/watch?v=eOUJZPn8YuU",
+        "title": "【4K】 \"Trueffet\" [TOP 10?] by SyQual & Rainstorm (Extreme Demon) [38K SPECIAL] | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 582561,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "2f954949-01cb-4946-be55-a8cb76b04794": {
+      "name": "azure blast",
+      "position": 135,
+      "verifier": {
+        "id": "TN0FQ3KBv4w",
+        "url": "https://www.youtube.com/watch?v=TN0FQ3KBv4w",
+        "title": "[VERIFIED] Azure Blast by AlbinoSnail & More 100% / Extreme Demon / Geometry Dash 2.2",
+        "channel": "DNM121",
+        "viewCount": 31110,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "IWC5C8xmMUY",
+        "url": "https://www.youtube.com/watch?v=IWC5C8xmMUY",
+        "title": "Rate This! | \"Azure Blast\" by AlbinoSnail & More - Geometry Dash 2.2",
+        "channel": "Neiro",
+        "viewCount": 21745,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "7103a26a-fb0e-4e4b-b3a6-716007df87c1": {
+      "name": "Kenos",
+      "position": 136,
+      "verifier": {
+        "id": "Bs1kVySdUtI",
+        "url": "https://www.youtube.com/watch?v=Bs1kVySdUtI",
+        "title": "KENOS VERIFIED (Extreme Demon) by Bianox & More!",
+        "channel": "npesta",
+        "viewCount": 7676340,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "TfwUCuC6Z2I",
+        "url": "https://www.youtube.com/watch?v=TfwUCuC6Z2I",
+        "title": "【4K】 \"Kenos\" by npesta (Extreme Demon) [11K SPECIAL] | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 1077342,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "56aee27a-8b38-4a03-9baa-6d033211832a": {
+      "name": "Fragile",
+      "position": 137,
+      "verifier": {
+        "id": "XfXzGv0oALw",
+        "url": "https://www.youtube.com/watch?v=XfXzGv0oALw",
+        "title": "Fragile Update VERIFIED",
+        "channel": "vaen",
+        "viewCount": 65669,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "vKGBWS04gK0",
+        "url": "https://www.youtube.com/watch?v=vKGBWS04gK0",
+        "title": "【4K】 \"Fragile\" by EndLevel & more (Extreme Demon) | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 315338,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "94d2322d-b1f2-44cc-909d-6cf18cd644ee": {
+      "name": "chrome hearts",
+      "position": 138,
+      "verifier": {
+        "id": "7o3I45B8-yY",
+        "url": "https://www.youtube.com/watch?v=7o3I45B8-yY",
+        "title": "[Verified] chrome hearts by Roadbose 100%",
+        "channel": "산갈치",
+        "viewCount": 29500,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "ZaDiR2pGOK8",
+        "url": "https://www.youtube.com/watch?v=ZaDiR2pGOK8",
+        "title": "【4K】 \"chrome hearts\" by roadkiller | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 21559,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "6f5299ae-a62f-4701-b5a8-ace004b8f7ef": {
+      "name": "Starlight Summit",
+      "position": 139,
+      "verifier": {
+        "id": "LB9xx41M4Ns",
+        "url": "https://www.youtube.com/watch?v=LB9xx41M4Ns",
+        "title": "[NEW HARDEST!] \"Starlight Summit\" VERIFIED! (Extreme Demon) by hazelmrow (me)",
+        "channel": "hazelmrow",
+        "viewCount": 23502,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "G76zzxWOhQY",
+        "url": "https://www.youtube.com/watch?v=G76zzxWOhQY",
+        "title": "【4K】 \"Starlight Summit\" by Pengi1 | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 21021,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "1d340102-5afd-4fdd-9b42-1567d5696090": {
+      "name": "Esfera",
+      "position": 140,
+      "verifier": {
+        "id": "GK0Z8rgziH4",
+        "url": "https://www.youtube.com/watch?v=GK0Z8rgziH4",
+        "title": "Esfera VERIFIED | by KeiAs and more (Top 30?)",
+        "channel": "Baeru",
+        "viewCount": 147948,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "13xVO059qkc",
+        "url": "https://www.youtube.com/watch?v=13xVO059qkc",
+        "title": "This NEW Extreme is AMAZING! | Playing \"Esfera\" by SyQual & More",
+        "channel": "fnm04",
+        "viewCount": 37506,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "b3d27bc6-68ba-42b3-8643-dae93c88a66a": {
+      "name": "Silent Lunch",
+      "position": 141,
+      "verifier": {
+        "id": "V8pu6Rrer8M",
+        "url": "https://www.youtube.com/watch?v=V8pu6Rrer8M",
+        "title": "Silent Lunch VERIFIED | DreamTide & more...",
+        "channel": "LordVadercraft",
+        "viewCount": 18185,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "oYORFIbFzc0",
+        "url": "https://www.youtube.com/watch?v=oYORFIbFzc0",
+        "title": "【4K】 \"Silent Lunch\" by DreamTide & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 3034,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "89695048-2cde-41d8-9692-0d5bd9ad4ff4": {
+      "name": "Destruction 19",
+      "position": 142,
+      "verifier": {
+        "id": "UUyzGg_4mqs",
+        "url": "https://www.youtube.com/watch?v=UUyzGg_4mqs",
+        "title": "Destruction 19 by bosjoker (VERIFICATION)",
+        "channel": "razsta4ax",
+        "viewCount": 30912,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "2q4f6CWXwwg",
+        "url": "https://www.youtube.com/watch?v=2q4f6CWXwwg",
+        "title": "【4K】\"Destruction 19\" by bosjoker (Extreme Demon) | GD 2.2",
+        "channel": "zof",
+        "viewCount": 3203,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "ecabf47d-a7fb-4eaf-90fb-0737e5452e5a": {
+      "name": "in this",
+      "position": 143,
+      "verifier": {
+        "id": "gQiOdxOyNGg",
+        "url": "https://www.youtube.com/watch?v=gQiOdxOyNGg",
+        "title": "[TOP 150] in this Verified - Geometry Dash",
+        "channel": "Xplode",
+        "viewCount": 25654,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "MFDh_rTa2ng",
+        "url": "https://www.youtube.com/watch?v=MFDh_rTa2ng",
+        "title": "\"Mr CrazyHands\" 100% (XXL Demon) by ExtoPlasm | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 21796307,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "7d85c8d2-18d9-4362-8d98-249f65cbe843": {
+      "name": "NEUTRA",
+      "position": 144,
+      "verifier": {
+        "id": "0fNBFwNS1qg",
+        "url": "https://www.youtube.com/watch?v=0fNBFwNS1qg",
+        "title": "NEUTRA VERIFIED (Extreme Demon) By Jenkins // Geometry Dash",
+        "channel": "AeonAir",
+        "viewCount": 414823,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "hzvlfUXe4Xw",
+        "url": "https://www.youtube.com/watch?v=hzvlfUXe4Xw",
+        "title": "\"NEUTRA\" (Extreme Demon) by Jenkins, ILRELL & Marwec | Geometry Dash 2.11",
+        "channel": "Viprin",
+        "viewCount": 418180,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "b894d496-a12e-4ae7-8427-09bd1b0bb5b6": {
+      "name": "ROCKBOTTOM",
+      "position": 145,
+      "verifier": {
+        "id": "HAyxOJ1XuBk",
+        "url": "https://www.youtube.com/watch?v=HAyxOJ1XuBk",
+        "title": "[MAINLIST] ROCKBOTTOM VERIFIED... // 111342 ATTEMPTS",
+        "channel": "ZazaGD",
+        "viewCount": 29263,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "U2zNFh7-geY",
+        "url": "https://www.youtube.com/watch?v=U2zNFh7-geY",
+        "title": "【4K】 \"ROCKBOTTOM\" by Bimms | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 23941,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "c3cb42dc-b5de-4eb5-85e0-ef5f538a0efb": {
+      "name": "Dark Dimension",
+      "position": 146,
+      "verifier": {
+        "id": "g2DrT9bHjOI",
+        "url": "https://www.youtube.com/watch?v=g2DrT9bHjOI",
+        "title": "[ VERIFIED ] Dark Dimension by ThePurgatory",
+        "channel": "The Nixuz GD",
+        "viewCount": 50995,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "zRKWLYxcE14",
+        "url": "https://www.youtube.com/watch?v=zRKWLYxcE14",
+        "title": "(Extreme Demon) ''Dark Dimension'' by ThePurgatory | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 406450,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "1ead6aa0-ae53-40f6-939d-d073abb87d13": {
+      "name": "Swing Swing",
+      "position": 147,
+      "verifier": {
+        "id": "_hL9hFU3WI4",
+        "url": "https://www.youtube.com/watch?v=_hL9hFU3WI4",
+        "title": "(Verified!) Swing Swing 100%!",
+        "channel": "Whizkid05",
+        "viewCount": 118993,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "Pjj-R6bsGAg",
+        "url": "https://www.youtube.com/watch?v=Pjj-R6bsGAg",
+        "title": "(Extreme Demon) ''Swing Swing'' by KazaGD | Geometry Dash",
+        "channel": "Nexus [GD]",
+        "viewCount": 246800,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "65ba56d3-b399-4adc-b120-aa8850436241": {
+      "name": "Guideless Goobering",
+      "position": 148,
+      "verifier": {
+        "id": "pFxdGKYQrcg",
+        "url": "https://www.youtube.com/watch?v=pFxdGKYQrcg",
+        "title": "Guideless Goobering 100% - Extreme Demon Verification",
+        "channel": "Zytrox",
+        "viewCount": 33623,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "bdYZpka1K4o",
+        "url": "https://www.youtube.com/watch?v=bdYZpka1K4o",
+        "title": "【4K】\"Guideless Goobering\" by Enfur & More (Extreme Demon) | GD 2.2",
+        "channel": "zof",
+        "viewCount": 1731,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "259b667f-ffc8-41cd-837d-e0627105d5aa": {
+      "name": "Hard Machine",
+      "position": 149,
+      "verifier": {
+        "id": "z3grmsqAaas",
+        "url": "https://www.youtube.com/watch?v=z3grmsqAaas",
+        "title": "Hard Machine - Original Audio",
+        "channel": "Varium",
+        "viewCount": 20386,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "o8Ek_IXkQPU",
+        "url": "https://www.youtube.com/watch?v=o8Ek_IXkQPU",
+        "title": "【4K】 \"Hard Machine\" [NEW TOP 3!] by komp (Extreme Demon) [41K SPECIAL] | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 370391,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
+    },
+    "f4e8002d-a60c-4ab3-b768-94d62858a803": {
+      "name": "DISSONANCE",
+      "position": 150,
+      "verifier": {
+        "id": "IfFser-f9c0",
+        "url": "https://www.youtube.com/watch?v=IfFser-f9c0",
+        "title": "[Verified] DISSONANCE by ImMaxX1 - Extreme Demon",
+        "channel": "zSquidKnight",
+        "viewCount": 35769,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "showcase": {
+        "id": "WjoSwQ3eaVM",
+        "url": "https://www.youtube.com/watch?v=WjoSwQ3eaVM",
+        "title": "DISSONANCE by ImMaxX1",
+        "channel": "fnm04",
+        "viewCount": 96203,
+        "viewsCheckedAt": "2026-08-09T08:50:43.731Z"
+      },
+      "discoveredAt": "2026-08-09T08:50:43.731Z"
     }
   },
   "channelIndex": {
@@ -110319,58 +111390,5 @@
       }
     }
   },
-  "queue": [
-    "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
-    "9c12bb17-9512-4771-b6e9-9e51c819ed01",
-    "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
-    "ab157b89-82de-436e-817a-24e4ad8a38ba",
-    "f3416b47-4beb-48af-b248-5c12bc8f1d72",
-    "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
-    "7e39c9be-cbcc-4aff-a23c-08add685a336",
-    "d022317b-32cc-462b-98a1-9aa37a6c8431",
-    "5531d67e-30cb-4cec-b42b-8b826830a7d7",
-    "be331419-aac0-449a-aac3-b5bc78d3c2bd",
-    "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-    "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-    "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
-    "f8b060e5-3bda-43ec-ba57-1b439863caa5",
-    "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
-    "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-    "5476e168-1f14-4250-b7df-d01f2d029367",
-    "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-    "92ce0a98-11ae-4aca-9188-a8a56c5bb02d",
-    "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
-    "b158e365-0f31-485e-816d-be35f8623bf2",
-    "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
-    "da77ff62-f03a-40e5-a11c-4753ea7f568a",
-    "8d02375c-8c31-4352-af21-d4533f63e3af",
-    "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
-    "c43eb1e4-b38d-466a-8da5-987204999072",
-    "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
-    "e8324cab-fc88-47c0-993d-87ce9de64a00",
-    "68308581-f1b6-4c0f-8851-82449ab1977f",
-    "5b183ded-437a-4a25-8c81-8341fca626db",
-    "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
-    "aa5788c8-80a2-4df1-a5a0-3f1b7533935e",
-    "c2837416-7fb4-4866-ba91-e9c134a0a59a",
-    "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
-    "53fb0da7-8845-4736-9832-c1f98bb388cc",
-    "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-    "2f954949-01cb-4946-be55-a8cb76b04794",
-    "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
-    "56aee27a-8b38-4a03-9baa-6d033211832a",
-    "94d2322d-b1f2-44cc-909d-6cf18cd644ee",
-    "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
-    "1d340102-5afd-4fdd-9b42-1567d5696090",
-    "b3d27bc6-68ba-42b3-8643-dae93c88a66a",
-    "89695048-2cde-41d8-9692-0d5bd9ad4ff4",
-    "ecabf47d-a7fb-4eaf-90fb-0737e5452e5a",
-    "7d85c8d2-18d9-4362-8d98-249f65cbe843",
-    "b894d496-a12e-4ae7-8427-09bd1b0bb5b6",
-    "c3cb42dc-b5de-4eb5-85e0-ef5f538a0efb",
-    "1ead6aa0-ae53-40f6-939d-d073abb87d13",
-    "65ba56d3-b399-4adc-b120-aa8850436241",
-    "259b667f-ffc8-41cd-837d-e0627105d5aa",
-    "f4e8002d-a60c-4ab3-b768-94d62858a803"
-  ]
+  "queue": []
 }
