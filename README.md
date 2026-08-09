@@ -31,11 +31,9 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   bright red at #1 (hardest) sweeping down through pink/magenta/violet to bright purple at #150
   (easiest), 11 key points roughly every 15 ranks, deliberately taking the *short* way around the
   hue wheel so it never crosses into orange/yellow/green/cyan/blue — rather than a handful of
-  discrete difficulty buckets, so no two nearby ranks look identical. A trio of large, softly
-  blurred, slowly-drifting color blobs in that same red/purple/orange palette sit behind the page
-  (`.ambient-bg`, `css/base.css`) — list.html and queue.html only; level.html has its own
-  level-specific background instead (see below). Paginated 75-at-a-time (5 columns x 15 rows at
-  desktop width) with Prev/Next and a "page X of Y" jump box; **Main List** and **Extended List**
+  discrete difficulty buckets, so no two nearby ranks look identical. Paginated 75-at-a-time
+  (5 columns x 15 rows at desktop width) with Prev/Next and a "page X of Y" jump box; **Main List**
+  and **Extended List**
   buttons jump straight to page 1 (#1-75) and page 2 (#76-150) without scrolling the page (they
   sit right where you're already looking, in the hero at the top — Prev/Next/the page-jump form
   live at the bottom of the grid instead, and still scroll back up, since staying put there would

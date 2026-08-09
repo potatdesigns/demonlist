@@ -29,7 +29,7 @@
       ? `<span class="queue-status null">no showcase yet</span>`
       : `<span class="queue-status">${formatCount(viewCount)} views</span>`;
     return `
-      <a class="queue-row" href="level.html?${demon.position}" style="--i: ${index}">
+      <a class="queue-row" href="level.html#${demon.position}" style="--i: ${index}">
         <span class="queue-pos">${queuePos}</span>
         <span class="queue-rank">#${demon.position}</span>
         <span class="queue-name">${escapeHtml(demon.name)}</span>

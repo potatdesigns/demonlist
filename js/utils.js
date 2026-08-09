@@ -2,10 +2,6 @@
    UTILS
    ===================================================================== */
 
-function qs(param) {
-  return new URLSearchParams(window.location.search).get(param);
-}
-
 function formatCount(n) {
   if (n === null || n === undefined || Number.isNaN(n)) return '—';
   if (n < 1000) return String(n);
