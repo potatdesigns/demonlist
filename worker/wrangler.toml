@@ -19,4 +19,4 @@ kv_namespaces = [
 GITHUB_REPO = "potatdesigns/demonlist"
 WORKFLOW_FILE = "refresh-yt-cache.yml"
 GIT_REF = "main"
-COOLDOWN_SECONDS = "600"
+COOLDOWN_SECONDS = "60"

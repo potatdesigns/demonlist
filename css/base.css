@@ -44,37 +44,8 @@
   --shadow-card: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.25);
 }
 
-/* Light theme — toggled via js/settings.js (Settings.set('theme', ...)),
-   applied as a data attribute rather than a media query, since it's a
-   deliberate visitor choice, not a system-preference reflection (see
-   the inline anti-flash script in <head> on every page, which sets
-   this same attribute from localStorage before first paint). --primary
-   /--gold/--danger stay the same in both — swapping the neutral
-   surface/text tokens and keeping the one brand accent constant is
-   what makes this a token swap rather than a from-scratch second
-   palette; every card/chip/chart that already reads var(--text-mid)
-   etc. instead of a literal hex picks this up for free. The three
-   named categorical hues stats.js' channel-share donut uses are the
-   one exception — those are hardcoded hex (SHARE_COLORS/SHARE_COLORS_LIGHT
-   in js/stats.js) since a CSS variable can't hold "swap to the
-   dataviz-skill-validated light-mode step of this hue," and are
-   switched in JS by reading this same attribute. */
-:root[data-theme="light"] {
-  --bg-void:      #f2f1ec;
-  --bg-base:      #fbfaf7;
-  --bg-surface:   #ffffff;
-  --bg-surface-2: #efece4;
-  --line:         #d9d6cb;
-  --line-soft:    #e6e3d9;
-
-  --text-hi:      #18170f;
-  --text-mid:     #55534a;
-  --text-dim:     #86837a;
-}
-
 * { box-sizing: border-box; }
 html { color-scheme: dark; scroll-behavior: smooth; }
-:root[data-theme="light"] html { color-scheme: light; }
 
 body {
   margin: 0;
@@ -85,9 +56,6 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-}
-:root[data-theme="light"] body {
-  background-image: radial-gradient(circle at 24% 69%, #ffffff 0%, var(--bg-void) 99%);
 }
 
 h1, h2, h3, .num {

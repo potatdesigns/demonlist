@@ -9,12 +9,13 @@
    Settings.get(key) — list.js/detail.js do, see their own comments —
    rather than this file reaching into their DOM directly.
 
-   Theme and reduce-motion are also applied by a tiny inline <script>
-   in every page's <head> (before this file, before first paint) —
-   this file's own applyEffects() call below is what keeps them applied
-   after a change, the inline one is only there so the *first* paint
-   already matches a returning visitor's choice instead of flashing
-   dark-mode-then-switching. Keep both in sync if the logic here changes.
+   Reduce-motion is also applied by a tiny inline <script> in every
+   page's <head> (before this file, before first paint) — this file's
+   own applyEffects() call below is what keeps it applied after a
+   change, the inline one is only there so the *first* paint already
+   matches a returning visitor's choice. Keep both in sync if the logic
+   here changes. (A theme/light-mode setting lived here briefly — cut,
+   it didn't look good; see git history if it's ever worth revisiting.)
 
    No "remove cooldown" toggle here — the per-level refresh cooldown
    (worker/src/index.js) is a single global rate limit shared by every
@@ -29,7 +30,6 @@
 
 const Settings = (() => {
   const DEFAULTS = {
-    theme: 'dark', // 'dark' | 'light'
     defaultList: 'main', // 'main' | 'extended' — which list index.html opens to with no page in the URL
     openInNewTab: false, // card links / Previous-Next open in a new tab
     autoplayVideos: false, // detail-page video embeds autoplay, muted (browsers block unmuted autoplay outright)
@@ -54,7 +54,6 @@ const Settings = (() => {
   }
 
   function applyEffects() {
-    document.documentElement.dataset.theme = state.theme;
     document.documentElement.dataset.reduceMotion = state.reduceMotion ? 'true' : 'false';
   }
 
@@ -73,10 +72,6 @@ const Settings = (() => {
   // --- panel UI ---
 
   const SCHEMA = [
-    {
-      key: 'theme', type: 'choice', label: 'Theme',
-      options: [['dark', 'Dark'], ['light', 'Light']],
-    },
     {
       key: 'defaultList', type: 'choice', label: 'Default list on open',
       desc: 'Which list index.html opens to when the URL has no page in it.',
@@ -142,7 +137,6 @@ const Settings = (() => {
       </div>
       <div class="settings-body">
         ${SCHEMA.map(rowHtml).join('')}
-        <p class="settings-note">Saved on this device only. There's no per-visitor cooldown override here — the per-level refresh limit is a single shared server-side rate limit, not a local one, so it can't honestly be toggled off from a settings panel.</p>
       </div>
     </div>
   `;

@@ -28,7 +28,7 @@
    The cooldown is only recorded after a *successful* dispatch (see
    markDispatched(), called only in the success branch below) — it used
    to be set unconditionally up front, which meant a failed attempt (bad
-   GITHUB_TOKEN, GitHub outage, whatever) burned the same 10-minute
+   GITHUB_TOKEN, GitHub outage, whatever) burned the same cooldown
    window a successful run would have, blocking even an immediate retry
    right after fixing the underlying problem. A failure now costs
    nothing but itself.
@@ -40,7 +40,7 @@
      var           GITHUB_REPO    — "owner/repo"
      var           WORKFLOW_FILE  — e.g. "refresh-yt-cache.yml"
      var           GIT_REF        — branch the workflow lives on, e.g. "main"
-     var           COOLDOWN_SECONDS (optional, default 600)
+     var           COOLDOWN_SECONDS (optional, default 60)
    ===================================================================== */
 
 const CORS_HEADERS = {
@@ -58,7 +58,7 @@ function json(body, status = 200) {
 
 /** Seconds still remaining on the cooldown, or 0 if a dispatch is allowed right now. Read-only — does not itself start a new cooldown. */
 async function getCooldownRemaining(env) {
-  const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '600', 10);
+  const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '60', 10);
   const last = await env.RATE_LIMIT.get('last_dispatch_at');
   if (!last) return 0;
   const elapsedSeconds = (Date.now() - parseInt(last, 10)) / 1000;
@@ -67,7 +67,7 @@ async function getCooldownRemaining(env) {
 
 /** Starts a fresh cooldown window — call only after a dispatch actually succeeds. */
 async function markDispatched(env) {
-  const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '600', 10);
+  const cooldownSeconds = parseInt(env.COOLDOWN_SECONDS || '60', 10);
   // TTL a little past the cooldown itself, just so a stale key can't
   // linger indefinitely if something odd happens.
   await env.RATE_LIMIT.put('last_dispatch_at', String(Date.now()), { expirationTtl: cooldownSeconds + 60 });
