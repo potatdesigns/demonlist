@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T04:47:43.265Z",
+  "generatedAt": "2026-08-10T04:58:39.183Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -1746,24 +1746,24 @@
     },
     "699e6b35-7f79-4413-b300-0b30c0cdb8d6": {
       "name": "ORDINARY",
-      "position": 84,
+      "position": 85,
       "verifier": {
         "id": "4QiHP3jpGnk",
         "url": "https://www.youtube.com/watch?v=4QiHP3jpGnk",
         "title": "(Verified, Top 50) Ordinary 100% by @vit124 and more",
         "channel": "wPopoff",
-        "viewCount": 179635,
-        "viewsCheckedAt": "2026-08-10T03:22:07.703Z"
+        "viewCount": 179668,
+        "viewsCheckedAt": "2026-08-10T04:58:39.183Z"
       },
       "showcase": {
-        "id": "29NTgRXWuMc",
-        "url": "https://www.youtube.com/watch?v=29NTgRXWuMc",
-        "title": "(Extreme Demon) ''Napalm'' 100% by Marwec & More | Geometry Dash",
+        "id": "MdlJH8hi_8A",
+        "url": "https://www.youtube.com/watch?v=MdlJH8hi_8A",
+        "title": "The Normal Elevator",
         "channel": "Nexus [GD]",
-        "viewCount": 402880,
-        "viewsCheckedAt": "2026-08-10T03:22:07.703Z"
+        "viewCount": 312426,
+        "viewsCheckedAt": "2026-08-10T04:58:39.183Z"
       },
-      "discoveredAt": "2026-08-09T18:47:40.230Z"
+      "discoveredAt": "2026-08-10T04:58:39.183Z"
     },
     "1a093f68-cff4-48bc-9b95-02e2aed07104": {
       "name": "TrakineS",
@@ -111801,7 +111801,6 @@
     "c586d155-f78c-43f6-933c-3c11c4aa6600",
     "c2837416-7fb4-4866-ba91-e9c134a0a59a",
     "259b667f-ffc8-41cd-837d-e0627105d5aa",
-    "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
     "c3cb42dc-b5de-4eb5-85e0-ef5f538a0efb",
     "5531d67e-30cb-4cec-b42b-8b826830a7d7",
     "7d85c8d2-18d9-4362-8d98-249f65cbe843",
