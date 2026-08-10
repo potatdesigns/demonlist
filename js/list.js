@@ -12,6 +12,8 @@
   const filterToggleBtn = document.getElementById('filter-toggle');
   const filterPanel = document.getElementById('filter-panel');
   const filterBadge = document.getElementById('filter-badge');
+  const rankMinInput = document.getElementById('filter-rank-min');
+  const rankMaxInput = document.getElementById('filter-rank-max');
   const verifierMinInput = document.getElementById('filter-verifier-min');
   const verifierMaxInput = document.getElementById('filter-verifier-max');
   const showcaseMinInput = document.getElementById('filter-showcase-min');
@@ -35,12 +37,13 @@
   // Not persisted in the URL like page/query (see writeUrlState) —
   // these are session-local refinements on top of whatever view you're
   // already on, not a "view" of their own worth bookmarking/sharing.
-  const filters = { verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
+  const filters = { rankMin: null, rankMax: null, verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
   function filtersActive() {
-    return filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
+    return filters.rankMin !== null || filters.rankMax !== null
+      || filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
   }
   function activeFilterCount() {
-    return [filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
+    return [filters.rankMin, filters.rankMax, filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
   }
 
   // '' (default, position order) | 'verifier-desc' | 'verifier-asc' | 'showcase-desc' | 'showcase-asc'
@@ -114,6 +117,8 @@
     filterBadge.style.display = count ? '' : 'none';
   }
   function applyFiltersFromUI() {
+    filters.rankMin = parseViewsInput(rankMinInput);
+    filters.rankMax = parseViewsInput(rankMaxInput);
     filters.verifierMin = parseViewsInput(verifierMinInput);
     filters.verifierMax = parseViewsInput(verifierMaxInput);
     filters.showcaseMin = parseViewsInput(showcaseMinInput);
@@ -123,10 +128,14 @@
   }
   /** Scoped to the filter panel only — the "Clear filters" button clears the range filters, not the separate sort dropdown (see clearSort()/resetRefinements() below for the broader reset used on navigation). */
   function clearFilters() {
+    filters.rankMin = null;
+    filters.rankMax = null;
     filters.verifierMin = null;
     filters.verifierMax = null;
     filters.showcaseMin = null;
     filters.showcaseMax = null;
+    rankMinInput.value = '';
+    rankMaxInput.value = '';
     verifierMinInput.value = '';
     verifierMaxInput.value = '';
     showcaseMinInput.value = '';
@@ -134,6 +143,8 @@
     syncFilterUI();
   }
   const debouncedApplyFilters = debounce(applyFiltersFromUI, 350);
+  rankMinInput.addEventListener('input', debouncedApplyFilters);
+  rankMaxInput.addEventListener('input', debouncedApplyFilters);
   verifierMinInput.addEventListener('input', debouncedApplyFilters);
   verifierMaxInput.addEventListener('input', debouncedApplyFilters);
   showcaseMinInput.addEventListener('input', debouncedApplyFilters);
@@ -296,18 +307,56 @@
     const byNamesTitle = namesTitle(creatorsList);
     const publisherLabel = demon.publisher?.name || (demon.needsExtras ? '…' : 'Unknown');
 
-    return `
-      <article class="demon-card"
-        style="--tier-color: ${tierColor}; --i: ${index}"
+    const dataAttrs = `
         data-id="${escapeHtml(String(demon.id))}"
         data-source="${escapeHtml(demon.source)}"
         data-needs-extras="${demon.needsExtras ? '1' : '0'}"
         data-video="${escapeHtml(demon.videoUrl || '')}"
         data-name="${escapeHtml(demon.name)}"
-        data-level-id="${demon.levelId ?? ''}">
+        data-level-id="${demon.levelId ?? ''}"`;
+
+    // Both stat blocks keep the same [data-role] hooks in either layout —
+    // hydrateCards()/setStatValue()/updateLeader() below don't care which
+    // template produced them, only that they're there.
+    const statsHtml = `
+      <div class="view-stat verifier" data-role="verifier-stat">
+        <span class="dot"></span>
+        <span class="stat-text"><span class="stat-label">Verifier vid</span><span class="stat-value loading">···</span></span>
+      </div>
+      <div class="view-stat showcase" data-role="showcase-stat">
+        <span class="dot"></span>
+        <span class="stat-text"><span class="stat-label">Top showcase</span><span class="stat-value loading">···</span></span>
+      </div>
+    `;
+
+    if (Settings.get('displayMode') === 'list') {
+      return `
+        <article class="demon-card demon-row"
+          style="--tier-color: ${tierColor}; --i: ${index}"${dataAttrs}>
+          <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
+            <span class="row-rank">#${demon.position ?? '?'}</span>
+            <div class="row-thumb">
+              <img src="${thumb}" alt="" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
+            </div>
+            <div class="row-title">
+              <div class="card-title">${escapeHtml(demon.name)}</div>
+              <div class="card-meta row-meta">
+                <span><strong>By</strong> <span data-role="by-names"${byNamesTitle ? ` title="${escapeHtml(byNamesTitle)}"` : ''}>${escapeHtml(byNames)}</span></span>
+                <span><strong>Verified by</strong> <span data-role="verifier-name">${escapeHtml(demon.verifier?.name || (demon.needsExtras ? '…' : 'Unknown'))}</span></span>
+              </div>
+            </div>
+            <div class="row-stats view-compare">${statsHtml}</div>
+          </a>
+        </article>
+      `;
+    }
+
+    return `
+      <article class="demon-card"
+        style="--tier-color: ${tierColor}; --i: ${index}"${dataAttrs}>
         <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
           <div class="card-thumb-wrap">
-            <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" onerror="this.style.opacity=0">
+            <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
             ${demon.videoUrl ? `
             <span class="play-badge" aria-hidden="true">
@@ -324,22 +373,14 @@
           </div>
         </a>
         <div class="card-body" style="padding-top:0;">
-          <div class="view-compare">
-            <div class="view-stat verifier" data-role="verifier-stat">
-              <span class="dot"></span>
-              <span class="stat-text"><span class="stat-label">Verifier vid</span><span class="stat-value loading">···</span></span>
-            </div>
-            <div class="view-stat showcase" data-role="showcase-stat">
-              <span class="dot"></span>
-              <span class="stat-text"><span class="stat-label">Top showcase</span><span class="stat-value loading">···</span></span>
-            </div>
-          </div>
+          <div class="view-compare">${statsHtml}</div>
         </div>
       </article>
     `;
   }
 
   function renderCards(demons) {
+    gridEl.classList.toggle('view-list', Settings.get('displayMode') === 'list');
     gridEl.innerHTML = demons.map((d, i) => cardTemplate(d, i)).join('');
     observeAllCards();
   }
@@ -371,7 +412,7 @@
       card.dataset.needsExtras = '0';
       card.dataset.video = demon.videoUrl || '';
 
-      const img = card.querySelector('.card-thumb-wrap img');
+      const img = card.querySelector('img');
       if (img && demon.thumbnail) { img.src = demon.thumbnail; img.style.opacity = ''; }
 
       const byEl = card.querySelector('[data-role="by-names"]');
@@ -430,6 +471,14 @@
   async function hydrateCards(cards) {
     await Promise.all(cards.map(hydrateAredlExtrasIfNeeded));
 
+    // Fire-and-forget: the extracted color is a progressive upgrade over
+    // positionColor()'s already-set gradient, not something worth
+    // blocking the view-count hydration below on.
+    cards.forEach(card => {
+      const img = card.querySelector('img');
+      if (img) resolveThumbnailColor(img, color => { if (color) card.style.setProperty('--tier-color', color); });
+    });
+
     const sharedEntries = await Promise.all(cards.map(c => SharedYtCache.getEntry(c.dataset.id)));
     cards.forEach((card, i) => {
       const entry = sharedEntries[i];
@@ -442,6 +491,8 @@
   /** Human-readable pieces of whatever's currently filled in the filter panel, for the banner and empty-state text. */
   function filterDescriptionParts() {
     const parts = [];
+    if (filters.rankMin !== null) parts.push(`rank ≥ #${filters.rankMin}`);
+    if (filters.rankMax !== null) parts.push(`rank ≤ #${filters.rankMax}`);
     if (filters.verifierMin !== null) parts.push(`verifier views ≥ ${filters.verifierMin.toLocaleString()}`);
     if (filters.verifierMax !== null) parts.push(`verifier views ≤ ${filters.verifierMax.toLocaleString()}`);
     if (filters.showcaseMin !== null) parts.push(`showcase views ≥ ${filters.showcaseMin.toLocaleString()}`);
@@ -459,7 +510,9 @@
     return bits.join(', ');
   }
 
-  function passesFilters(entry) {
+  function passesFilters(demon, entry) {
+    if (filters.rankMin !== null && !(demon.position >= filters.rankMin)) return false;
+    if (filters.rankMax !== null && !(demon.position <= filters.rankMax)) return false;
     if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
     if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
     if (filters.showcaseMin !== null && !(entry?.showcase?.viewCount >= filters.showcaseMin)) return false;
@@ -508,7 +561,7 @@
           // than each doing its own pass over the cache.
           const entries = await Promise.all(candidates.map(d => SharedYtCache.getEntry(d.id)));
           const entryById = new Map(candidates.map((d, i) => [d.id, entries[i]]));
-          if (filtersActive()) candidates = candidates.filter(d => passesFilters(entryById.get(d.id)));
+          if (filtersActive()) candidates = candidates.filter(d => passesFilters(d, entryById.get(d.id)));
           if (sortActive()) candidates = sortCandidates(candidates, entryById);
         }
         demons = candidates;
@@ -567,9 +620,11 @@
   // network round trip. defaultList only matters on the *next* bare
   // index.html load, nothing to re-render for it now.
   let lastOpenInNewTab = Settings.get('openInNewTab');
+  let lastDisplayMode = Settings.get('displayMode');
   Settings.subscribe((state) => {
-    if (state.openInNewTab !== lastOpenInNewTab) {
+    if (state.openInNewTab !== lastOpenInNewTab || state.displayMode !== lastDisplayMode) {
       lastOpenInNewTab = state.openInNewTab;
+      lastDisplayMode = state.displayMode;
       load();
     }
   });

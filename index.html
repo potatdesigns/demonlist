@@ -17,7 +17,7 @@
 <header class="site-header">
   <div class="brand">
     <img class="brand-mark" src="assets/logo.png" width="32" height="32" alt="">
-    <span class="brand-text">DEMONLIST<span>AREDL live data</span></span>
+    <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
   </div>
   <div class="header-actions" id="header-actions"></div>
 </header>
@@ -25,6 +25,13 @@
 <main class="page">
   <section class="list-hero">
     <h1>Extreme Demon Rankings</h1>
+    <p>
+      Ranked by AREDL's own list order. For each level we also pull its verification video
+      and try to find the highest-viewed showcase of it on YouTube — matched automatically
+      by level name and ID across a set of GD showcase channels, not hand-picked — so you
+      can see how a video an AREDL judge watched once stacks up against the one the wider
+      community actually kept watching.
+    </p>
 
     <div class="controls-row">
       <label class="search-box">
@@ -41,6 +48,14 @@
           Filters<span class="filter-badge" id="filter-badge" style="display:none;"></span>
         </button>
         <div class="filter-panel" id="filter-panel">
+          <div class="filter-range">
+            <span>Rank</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-rank-min" placeholder="min" min="1" max="150" inputmode="numeric" aria-label="Minimum rank">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-rank-max" placeholder="max" min="1" max="150" inputmode="numeric" aria-label="Maximum rank">
+            </div>
+          </div>
           <div class="filter-range">
             <span>Verifier views</span>
             <div class="filter-range-inputs">
@@ -77,7 +92,6 @@
     <div class="legend" aria-hidden="true">
       <span><span class="swatch" style="background:var(--text-mid)"></span>Verifier video views</span>
       <span><span class="swatch" style="background:var(--primary)"></span>Top showcase views</span>
-      <span><b>Gold value</b> = higher view count of the two</span>
     </div>
   </section>
 

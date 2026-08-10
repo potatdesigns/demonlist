@@ -44,7 +44,7 @@
 }
 
 .detail-rank {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1;
   color: var(--tier-color, var(--primary));
@@ -109,13 +109,6 @@
   font-weight: 700;
   color: var(--text-hi);
   word-break: break-word;
-}
-
-.detail-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
 }
 
 .detail-facts {

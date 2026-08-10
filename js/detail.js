@@ -109,7 +109,6 @@
 
   function renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel) {
     const tierColor = positionColor(demon.position, totalCount);
-    const points = demon.raw?.points;
     document.title = `Demonlist | ${demon.name}`;
     prevPosition = prevLevel ? demon.position - 1 : null;
     nextPosition = nextLevel ? demon.position + 1 : null;
@@ -121,9 +120,6 @@
         <div class="detail-rank" style="--tier-color:${tierColor}">#${demon.position ?? '?'}<span>RANK</span></div>
         <div class="detail-titles">
           <h1>${escapeHtml(demon.name)}</h1>
-          <div class="detail-tags">
-            ${Number.isFinite(points) ? `<span class="chip"><span class="swatch" style="background:${tierColor};width:8px;height:8px;border-radius:2px;display:inline-block;"></span>${points} points</span>` : ''}
-          </div>
         </div>
       </div>
 
@@ -198,11 +194,20 @@
     const maxres = `https://i.ytimg.com/vi/${vid}/maxresdefault.jpg`;
     const fallback = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
 
+    // crossOrigin doesn't affect its use as a CSS background-image below —
+    // set purely so the same already-fetched probe can also feed
+    // resolveThumbnailColor()'s canvas read without a second request.
     const probe = new Image();
+    probe.crossOrigin = 'anonymous';
+    const upgradeRankColor = () => {
+      const rankEl = document.querySelector('.detail-rank');
+      if (rankEl) resolveThumbnailColor(probe, color => { if (color) rankEl.style.setProperty('--tier-color', color); });
+    };
     probe.onload = () => {
       const url = probe.naturalWidth > 200 ? maxres : fallback;
       bgEl.style.backgroundImage = `url("${url}")`;
       requestAnimationFrame(() => bgEl.classList.add('visible'));
+      upgradeRankColor();
     };
     probe.onerror = () => {
       bgEl.style.backgroundImage = `url("${fallback}")`;

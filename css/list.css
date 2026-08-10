@@ -2,6 +2,27 @@
    LIST PAGE
    ===================================================================== */
 
+/* A faint diamond crosshatch across the whole viewport, fixed and pinned
+   behind everything (negative z-index — paints above body's own radial
+   gradient in css/base.css but below every actual element, so it never
+   competes with real content) — pointercrate's list page has a similar
+   bit of texture in its background instead of flat black. Only shows
+   where nothing opaque sits on top of it, which in practice means the
+   side gutters beyond the centered .page column and the gaps between
+   cards — "the page has texture," not a pattern you consciously notice.
+   Scoped to this file (loaded only by index.html) rather than base.css
+   since it's specifically a Main/Extended-list touch, not sitewide. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(45deg, color-mix(in srgb, var(--primary) 6%, transparent) 0 1px, transparent 1px 34px),
+    repeating-linear-gradient(-45deg, color-mix(in srgb, var(--primary) 6%, transparent) 0 1px, transparent 1px 34px);
+}
+
 .list-hero {
   padding: 34px 0 22px;
   border-bottom: 1px solid var(--line-soft);
@@ -10,9 +31,16 @@
 
 .list-hero h1 {
   font-size: clamp(24px, 3.6vw, 34px);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-hi);
   line-height: 1.15;
+}
+.list-hero p {
+  margin-top: 10px;
+  max-width: 640px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dim);
 }
 
 .controls-row {
@@ -65,7 +93,7 @@
 }
 .jump-hash { color: var(--text-dim); font-family: ui-monospace, monospace; font-size: 13px; }
 .jump-box input {
-  width: 92px;
+  width: 52px;
   background: none;
   border: none;
   color: var(--text-hi);
@@ -99,7 +127,6 @@
   font-size: 11.5px;
   color: var(--text-dim);
 }
-.legend b { color: var(--text-mid); font-weight: 600; }
 .legend .swatch {
   width: 9px; height: 9px; border-radius: 2px; display: inline-block; margin-right: 5px;
 }
@@ -311,6 +338,70 @@
 
 .view-stat .stat-value.loading { color: var(--text-dim); }
 .view-stat .stat-value.na { color: var(--text-dim); }
+
+/* --- "List" display mode (Settings > Level display) — a dense AREDL-style
+   row list instead of thumbnail cards. Reuses .demon-card as the root
+   element (same hover/entrance-animation base, same hydration hooks —
+   see cardTemplate()/hydrateCards() in js/list.js) so only what actually
+   differs between the two layouts needs its own rules here. --- */
+.demon-grid.view-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.demon-row::before { display: none; } /* the card grid's top color bar becomes a left edge stripe instead, below */
+.demon-row {
+  border-left: 3px solid var(--tier-color, var(--primary));
+}
+.demon-row:hover {
+  transform: translateX(3px);
+  border-color: var(--tier-color, var(--text-dim));
+  border-left-color: var(--tier-color, var(--primary));
+  box-shadow: 0 4px 16px -8px color-mix(in srgb, var(--tier-color, var(--primary)) 45%, transparent), var(--shadow-card);
+}
+.demon-row .card-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+}
+.row-rank {
+  flex: 0 0 40px;
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--tier-color, var(--primary));
+  text-align: right;
+}
+.row-thumb {
+  flex: 0 0 auto;
+  width: 68px;
+  aspect-ratio: 16/9;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg-void);
+}
+.row-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.row-title { flex: 1 1 auto; min-width: 0; }
+.row-title .card-title { font-size: 14px; }
+.row-meta {
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 3px;
+}
+.row-meta span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row-stats {
+  flex: 0 0 auto;
+  margin-top: 0;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+}
+@media (max-width: 720px) {
+  .row-meta { display: none; }
+  .row-stats { grid-template-columns: 1fr; gap: 4px; }
+}
+@media (max-width: 480px) {
+  .row-stats { display: none; }
+}
 
 .pager-row {
   display: flex;

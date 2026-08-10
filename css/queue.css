@@ -20,7 +20,7 @@
 }
 .queue-hero h1 {
   font-size: clamp(24px, 3.6vw, 34px);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-hi);
 }
 .queue-hero p {

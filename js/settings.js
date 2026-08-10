@@ -31,6 +31,7 @@
 const Settings = (() => {
   const DEFAULTS = {
     defaultList: 'main', // 'main' | 'extended' — which list index.html opens to with no page in the URL
+    displayMode: 'cards', // 'cards' | 'list' — how each level renders in the Main/Extended grid
     openInNewTab: false, // card links / Previous-Next open in a new tab
     autoplayVideos: false, // detail-page video embeds autoplay, muted (browsers block unmuted autoplay outright)
     reduceMotion: false, // same effect as prefers-reduced-motion, opted into manually
@@ -76,6 +77,11 @@ const Settings = (() => {
       key: 'defaultList', type: 'choice', label: 'Default list on open',
       desc: 'Which list index.html opens to when the URL has no page in it.',
       options: [['main', 'Main'], ['extended', 'Extended']],
+    },
+    {
+      key: 'displayMode', type: 'choice', label: 'Level display',
+      desc: 'How each level renders in the Main/Extended list — full thumbnail cards, or a denser AREDL-style row list.',
+      options: [['cards', 'Cards'], ['list', 'List']],
     },
     {
       key: 'openInNewTab', type: 'toggle', label: 'Open levels in a new tab',

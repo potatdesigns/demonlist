@@ -31,6 +31,8 @@
   const filterToggleBtn = document.getElementById('filter-toggle');
   const filterPanel = document.getElementById('filter-panel');
   const filterBadge = document.getElementById('filter-badge');
+  const rankMinInput = document.getElementById('filter-rank-min');
+  const rankMaxInput = document.getElementById('filter-rank-max');
   const verifierMinInput = document.getElementById('filter-verifier-min');
   const verifierMaxInput = document.getElementById('filter-verifier-max');
   const showcaseMinInput = document.getElementById('filter-showcase-min');
@@ -39,6 +41,8 @@
   const scatterBody = document.getElementById('chart-scatter');
   const trendBody = document.getElementById('chart-trend');
   const trendLegend = document.getElementById('trend-legend');
+  const perLevelBody = document.getElementById('chart-perlevel');
+  const perLevelLegend = document.getElementById('perlevel-legend');
   const channelsBody = document.getElementById('chart-channels');
   const channelsVerifierBody = document.getElementById('chart-channels-verifier');
   const leadBody = document.getElementById('chart-lead');
@@ -52,7 +56,7 @@
   let cache = { levels: {} };
   let range = 'all';
   let channelFilter = '';
-  const filters = { verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
+  const filters = { rankMin: null, rankMax: null, verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
 
   function showBanner(msg, isError) {
     stateBanner.innerHTML = msg;
@@ -64,12 +68,15 @@
   function entryFor(d) { return cache.levels ? cache.levels[d.id] : undefined; }
 
   function filtersActive() {
-    return filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
+    return filters.rankMin !== null || filters.rankMax !== null
+      || filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
   }
   function activeFilterCount() {
-    return [filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
+    return [filters.rankMin, filters.rankMax, filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
   }
-  function passesFilters(entry) {
+  function passesFilters(demon, entry) {
+    if (filters.rankMin !== null && !(demon.position >= filters.rankMin)) return false;
+    if (filters.rankMax !== null && !(demon.position <= filters.rankMax)) return false;
     if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
     if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
     if (filters.showcaseMin !== null && !(entry?.showcase?.viewCount >= filters.showcaseMin)) return false;
@@ -77,12 +84,13 @@
     return true;
   }
 
+  /** Main/Extended/All are quick presets; the filter panel's Rank min/max (below) layers on top for finer ranges (e.g. just #1-25) that no fixed chip set could cover. */
   function filteredDemons() {
     let list = allDemons;
     if (range === 'main') list = list.filter(d => d.position <= 75);
     else if (range === 'extended') list = list.filter(d => d.position > 75);
     if (channelFilter) list = list.filter(d => entryFor(d)?.showcase?.channel === channelFilter);
-    if (filtersActive()) list = list.filter(d => passesFilters(entryFor(d)));
+    if (filtersActive()) list = list.filter(d => passesFilters(d, entryFor(d)));
     return list;
   }
 
@@ -118,6 +126,8 @@
     filterBadge.style.display = count ? '' : 'none';
   }
   function applyFiltersFromUI() {
+    filters.rankMin = parseViewsInput(rankMinInput);
+    filters.rankMax = parseViewsInput(rankMaxInput);
     filters.verifierMin = parseViewsInput(verifierMinInput);
     filters.verifierMax = parseViewsInput(verifierMaxInput);
     filters.showcaseMin = parseViewsInput(showcaseMinInput);
@@ -126,13 +136,15 @@
     renderAll();
   }
   const debouncedApplyFilters = debounce(applyFiltersFromUI, 350);
+  rankMinInput.addEventListener('input', debouncedApplyFilters);
+  rankMaxInput.addEventListener('input', debouncedApplyFilters);
   verifierMinInput.addEventListener('input', debouncedApplyFilters);
   verifierMaxInput.addEventListener('input', debouncedApplyFilters);
   showcaseMinInput.addEventListener('input', debouncedApplyFilters);
   showcaseMaxInput.addEventListener('input', debouncedApplyFilters);
   filterClearBtn.addEventListener('click', () => {
-    filters.verifierMin = filters.verifierMax = filters.showcaseMin = filters.showcaseMax = null;
-    verifierMinInput.value = verifierMaxInput.value = showcaseMinInput.value = showcaseMaxInput.value = '';
+    filters.rankMin = filters.rankMax = filters.verifierMin = filters.verifierMax = filters.showcaseMin = filters.showcaseMax = null;
+    rankMinInput.value = rankMaxInput.value = verifierMinInput.value = verifierMaxInput.value = showcaseMinInput.value = showcaseMaxInput.value = '';
     syncFilterUI();
     renderAll();
   });
@@ -481,6 +493,101 @@
     });
   }
 
+  /**
+   * Same verifier/showcase-by-rank shape as renderTrend() above, but
+   * unbucketed — one dot per level instead of averaged 10 at a time.
+   * The bucketed chart is the readable trend line; this is the detail
+   * underneath it for anyone who wants to see a specific level (or how
+   * noisy the trend actually is level-to-level) rather than a smoothed
+   * average. x position is the level's real rank (not just its index in
+   * the filtered set), so a rank-range filter leaves gaps rather than
+   * silently compressing the remaining levels together.
+   */
+  function renderPerLevelTrend(demons) {
+    const points = demons.slice().sort((a, b) => a.position - b.position).map(d => {
+      const entry = entryFor(d);
+      const v = entry?.verifier?.viewCount, s = entry?.showcase?.viewCount;
+      return { demon: d, v: Number.isFinite(v) ? v : null, s: Number.isFinite(s) ? s : null };
+    }).filter(p => p.v !== null || p.s !== null);
+
+    if (!points.length) {
+      perLevelBody.innerHTML = `<div class="chart-empty">Not enough data yet.</div>`;
+      perLevelLegend.innerHTML = '';
+      return;
+    }
+    perLevelLegend.innerHTML = `
+      <span class="legend-key"><span class="legend-line" style="background:var(--text-mid)"></span>Verifier</span>
+      <span class="legend-key"><span class="legend-line" style="background:var(--primary)"></span>Showcase</span>
+    `;
+
+    const W = 760, H = 340, M = { l: 64, r: 20, t: 16, b: 34 };
+    const plotW = W - M.l - M.r, plotH = H - M.t - M.b;
+    const allVals = points.flatMap(p => [p.v, p.s]).filter(v => v !== null);
+    const min = Math.min(...allVals), max = Math.max(...allVals);
+    const positions = points.map(p => p.demon.position);
+    const posMin = Math.min(...positions), posMax = Math.max(...positions);
+    const xAt = pos => posMax > posMin ? M.l + ((pos - posMin) / (posMax - posMin)) * plotW : M.l + plotW / 2;
+    const yAt = v => M.t + plotH - logPos(v, min, max, plotH);
+    const ticks = logTicks(min, max);
+
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Verifier and showcase views by individual level rank">`;
+    ticks.forEach(t => {
+      const yPos = logPos(t, min, max, plotH);
+      if (!inPlotBounds(yPos, plotH)) return;
+      const yp = M.t + plotH - yPos;
+      svg += `<line class="chart-axis" x1="${M.l}" y1="${yp}" x2="${M.l + plotW}" y2="${yp}" />`;
+      svg += `<text class="chart-axis-text" x="${M.l - 8}" y="${yp + 3}" text-anchor="end">${formatCount(t)}</text>`;
+    });
+
+    // A handful of rank ticks for orientation — every point still has its own hoverable dot, this is just the x-axis scale.
+    const xTickCount = Math.min(10, posMax - posMin + 1);
+    const xTickStep = Math.max(1, Math.round((posMax - posMin) / Math.max(1, xTickCount - 1)));
+    for (let pos = posMin; pos <= posMax; pos += xTickStep) {
+      svg += `<text class="chart-axis-text" x="${xAt(pos)}" y="${M.t + plotH + 18}" text-anchor="middle">#${pos}</text>`;
+    }
+
+    function pathFor(key) {
+      let d = '';
+      points.forEach(p => {
+        if (p[key] === null) return;
+        d += `${d === '' ? 'M' : 'L'}${xAt(p.demon.position)},${yAt(p[key])} `;
+      });
+      return d.trim();
+    }
+    svg += `<path class="chart-line-verifier" d="${pathFor('v')}" fill="none" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />`;
+    svg += `<path class="chart-line-showcase" d="${pathFor('s')}" fill="none" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" />`;
+
+    points.forEach((p, i) => {
+      const xp = xAt(p.demon.position);
+      if (p.v !== null) {
+        svg += `<circle class="chart-hit" cx="${xp}" cy="${yAt(p.v)}" r="7" data-i="${i}" />`;
+        svg += `<circle class="chart-dot-verifier" cx="${xp}" cy="${yAt(p.v)}" r="2.5" />`;
+      }
+      if (p.s !== null) {
+        svg += `<circle class="chart-hit" cx="${xp}" cy="${yAt(p.s)}" r="7" data-i="${i}" />`;
+        svg += `<circle class="chart-dot-showcase" cx="${xp}" cy="${yAt(p.s)}" r="2.5" />`;
+      }
+    });
+    svg += `</svg>`;
+
+    const rows = points.map(p => [`#${p.demon.position}`, p.demon.name, p.v !== null ? formatCount(p.v) : '—', p.s !== null ? formatCount(p.s) : '—']);
+    perLevelBody.innerHTML = svg + tableToggleHtml('chart-perlevel-table', ['Rank', 'Level', 'Verifier views', 'Showcase views'], rows);
+
+    const tooltip = makeTooltip(perLevelBody);
+    perLevelBody.querySelectorAll('.chart-hit').forEach(hit => {
+      const p = points[+hit.dataset.i];
+      hit.addEventListener('pointermove', (e) => {
+        const rect = perLevelBody.getBoundingClientRect();
+        tooltip.show(e.clientX - rect.left, e.clientY - rect.top, `
+          <div class="tt-title">#${p.demon.position} ${escapeHtml(p.demon.name)}</div>
+          ${p.v !== null ? `<div class="tt-row"><span class="tt-key" style="background:var(--text-mid)"></span>Verifier <span class="tt-value">${formatCount(p.v)}</span></div>` : ''}
+          ${p.s !== null ? `<div class="tt-row"><span class="tt-key" style="background:var(--primary)"></span>Showcase <span class="tt-value">${formatCount(p.s)}</span></div>` : ''}
+        `);
+      });
+      hit.addEventListener('pointerleave', () => tooltip.hide());
+    });
+  }
+
   // --- chart 3: total views by channel (showcase + verifier) ---
 
   /** Generic "total views by channel" ranked bar, shared by the showcase and verifier variants. Caps at topN rows, folding the rest into one "Other" row — magnitude bars don't have the donut's color-identity ceiling, this cap is purely so a long tail (verifier channels run to 100+, almost all one level each) doesn't turn into a page-length chart. */
@@ -809,19 +916,20 @@
     renderKpis(computeStats(demons));
     renderScatter(demons);
     renderLeadDonut(demons);
-    renderChannelShareBar(shareBody, demons, 'showcase', 'Showcase channel share');
     renderChannelShareBar(shareVerifierBody, demons, 'verifier', 'Verifier channel share');
+    renderChannelShareBar(shareBody, demons, 'showcase', 'Showcase channel share');
     renderHistogram(demons);
     renderTrend(demons);
-    renderChannelTotals(channelsBody, demons, 'showcase', {
-      barClass: 'chart-bar-showcase',
-      ariaLabel: 'Total showcase views by channel',
-      countLabel: n => `Top pick for <span class="tt-value">${n}</span> level${n === 1 ? '' : 's'}`,
-    });
+    renderPerLevelTrend(demons);
     renderChannelTotals(channelsVerifierBody, demons, 'verifier', {
       barClass: 'chart-bar-verifier',
       ariaLabel: 'Total verifier views by channel',
       countLabel: n => `Verified <span class="tt-value">${n}</span> level${n === 1 ? '' : 's'}`,
+    });
+    renderChannelTotals(channelsBody, demons, 'showcase', {
+      barClass: 'chart-bar-showcase',
+      ariaLabel: 'Total showcase views by channel',
+      countLabel: n => `Top pick for <span class="tt-value">${n}</span> level${n === 1 ? '' : 's'}`,
     });
   }
 
