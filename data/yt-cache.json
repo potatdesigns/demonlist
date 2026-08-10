@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T03:22:08.464Z",
+  "generatedAt": "2026-08-10T03:51:32.288Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -1347,24 +1347,24 @@
     },
     "822815ac-fcb8-40b3-b42d-bd692095129c": {
       "name": "The Catacombs",
-      "position": 65,
+      "position": 66,
       "verifier": {
         "id": "T9-75lfKVQg",
         "url": "https://www.youtube.com/watch?v=T9-75lfKVQg",
         "title": "\"The Catacombs\" VERIFIED [Top 30]",
         "channel": "Slithium",
-        "viewCount": 43443,
-        "viewsCheckedAt": "2026-08-10T03:22:07.703Z"
+        "viewCount": 43462,
+        "viewsCheckedAt": "2026-08-10T03:51:32.287Z"
       },
       "showcase": {
-        "id": "8d_1MZjLFs4",
-        "url": "https://www.youtube.com/watch?v=8d_1MZjLFs4",
-        "title": "''BAD OMEN'' 100% (Demon) by Custi [3 Coins] | Geometry Dash",
-        "channel": "Nexus [GD]",
-        "viewCount": 115551,
-        "viewsCheckedAt": "2026-08-10T03:22:07.703Z"
+        "id": "4h6FrAHSF0A",
+        "url": "https://www.youtube.com/watch?v=4h6FrAHSF0A",
+        "title": "【4K】 \"The Catacombs\" by Cersia | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 17519,
+        "viewsCheckedAt": "2026-08-10T03:51:32.287Z"
       },
-      "discoveredAt": "2026-08-09T18:47:40.230Z"
+      "discoveredAt": "2026-08-10T03:51:32.287Z"
     },
     "21bb5019-d59c-4f9b-94de-281cf4b0ced7": {
       "name": "LIMBO",
@@ -3155,7 +3155,7 @@
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "WRwwoElKlOQ",
+      "newestVideoId": "3TOwA9DysLw",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31610,6 +31610,17 @@
           "levelIds": [],
           "description": "",
           "checkedAt": "2026-08-09T06:44:52.688Z"
+        },
+        "3TOwA9DysLw": {
+          "title": "Mk2",
+          "channel": "Nexus [GD]",
+          "viewCount": 5074,
+          "levelIds": [
+            "146198284",
+            "724710"
+          ],
+          "description": "This used be a hard demon when it first came out, since then it has been nerfed to an easy demon\nLevel: Mk2 by Dolphe\nID: 146198284\nSong: cYsmix - Peer Gynt\nhttps://www.newgrounds.com/audio/listen/724710",
+          "checkedAt": "2026-08-10T03:51:29.521Z"
         }
       }
     },
@@ -111771,7 +111782,6 @@
     "72bf2c18-1299-408b-bca2-3da986956632",
     "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
     "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
-    "822815ac-fcb8-40b3-b42d-bd692095129c",
     "68de8323-1894-46b9-9d39-cda105d81155",
     "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
     "46b88712-6024-4018-b526-7d103659bcb4",
