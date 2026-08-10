@@ -309,6 +309,10 @@
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
+            ${demon.videoUrl ? `
+            <span class="play-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>` : ''}
           </div>
           <div class="card-body">
             <div class="card-title">${escapeHtml(demon.name)}</div>
