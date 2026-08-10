@@ -126,6 +126,29 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   `index.html` rather than reloading. `level.html` also has its own `ArrowLeft`/`ArrowRight` for
   Previous/Next (see above), not listed in this panel since it's page-specific rather than
   site-wide.
+- **Settings** (`js/settings.js`, gear icon, index/level/stats.html — no header-actions slot on
+  queue.html, same as the Random/Stats buttons, though its *effects* still apply there, see below)
+  — a slide-in side panel for five preferences, persisted to `localStorage`
+  (`CONFIG.STORAGE.SETTINGS`) and applied immediately, no reload needed: **Theme** (Dark/Light — a
+  straight token swap under `:root[data-theme="light"]` in `css/base.css`, keeping `--primary`/
+  `--gold`/`--danger` constant and only swapping the neutral surface/text tokens, so every
+  card/chip/chart that already reads `var(--text-mid)` etc. picks it up for free; the stats page's
+  channel-share donut is the one exception, since its three categorical hues are hardcoded hex, not
+  a CSS variable — see the comment in `js/stats.js`, which validated *both* modes separately via
+  the project's dataviz skill rather than assuming light mode is a safe automatic flip), **default
+  list on open** (Main/Extended — only affects a bare `index.html` with no page in the URL, never
+  an explicit `#main`/`#extended` link), **open levels in a new tab**, **autoplay videos** (muted —
+  browsers block unmuted autoplay outright, so this always pairs `autoplay=1` with `mute=1`), and
+  **reduce motion** (the same effect `prefers-reduced-motion` already gets from the OS, opted into
+  manually here). Theme and reduce-motion are also set by a tiny inline `<script>` in every page's
+  `<head>`, before `js/settings.js` itself loads, so a returning visitor's choice is already applied
+  before first paint instead of flashing dark-then-switching. Deliberately does **not** have a
+  "remove cooldown" toggle — the per-level refresh cooldown (`worker/src/index.js`) is a single
+  rate limit shared by every visitor, enforced server-side in Cloudflare KV specifically so no one
+  visitor can trigger the expensive discover workflow more than once per window; a client-side
+  toggle can't honestly bypass that (the server rejects the request the same regardless of any
+  local setting), and defeating it would undo exactly the protection it was built for — see
+  [One-click refresh trigger](#one-click-refresh-trigger).
 
 ## Reducing to a top-150 list
 
@@ -478,6 +501,7 @@ js/
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
   nav-actions.js                   Copy link + Random level + Stats header buttons, index/level/stats.html, see "What it does" above
+  settings.js                       theme/list/new-tab/autoplay/motion side panel, all four pages, see "What it does" above
   list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort

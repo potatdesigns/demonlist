@@ -205,7 +205,10 @@
     if (params.has('main')) return { page: 1, query: '' };
     const page = parseInt(params.get('page'), 10);
     if (Number.isFinite(page) && page > 0) return { page, query: '' };
-    return { page: 1, query: '' };
+    // No page in the URL at all (a bare index.html) — Settings' "default
+    // list on open" only applies here, not to an explicit #main/#extended
+    // link someone actually navigated to.
+    return { page: Settings.get('defaultList') === 'extended' ? 2 : 1, query: '' };
   }
 
   /** Browser back/forward — re-sync state from the URL without pushing another history entry (that's what got us here). */
@@ -277,6 +280,11 @@
     `).join('');
   }
 
+  /** Settings.get('openInNewTab') — read fresh per render rather than cached, so a mid-session change (no reload needed) takes effect on the next render. rel="noopener" is required whenever target="_blank" is added dynamically like this (the static level.html#N links elsewhere don't need it since they never carry target="_blank" at all). */
+  function levelLinkAttrs() {
+    return Settings.get('openInNewTab') ? ' target="_blank" rel="noopener"' : '';
+  }
+
   function cardTemplate(demon, index) {
     const tierColor = positionColor(demon.position, totalCount);
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
@@ -297,7 +305,7 @@
         data-video="${escapeHtml(demon.videoUrl || '')}"
         data-name="${escapeHtml(demon.name)}"
         data-level-id="${demon.levelId ?? ''}">
-        <a class="card-link" href="${detailUrl}">
+        <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
@@ -548,6 +556,19 @@
     hideBanner();
     load();
   }
+
+  // Re-render already-visible cards with fresh levelLinkAttrs() when
+  // "open in new tab" changes mid-session — load() is cheap here since
+  // AredlAPI/SharedYtCache are already in memory by this point, no
+  // network round trip. defaultList only matters on the *next* bare
+  // index.html load, nothing to re-render for it now.
+  let lastOpenInNewTab = Settings.get('openInNewTab');
+  Settings.subscribe((state) => {
+    if (state.openInNewTab !== lastOpenInNewTab) {
+      lastOpenInNewTab = state.openInNewTab;
+      load();
+    }
+  });
 
   initialLoad();
 })();

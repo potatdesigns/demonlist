@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Applies theme/motion before first paint, so a returning visitor's choice doesn't flash — see js/settings.js's file header. -->
+<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.theme==='light')document.documentElement.setAttribute('data-theme','light');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Demonlist</title>
@@ -34,6 +36,7 @@
 <script src="js/shared-cache.js"></script>
 <script src="js/cache-admin-ui.js"></script>
 <script src="js/nav-actions.js"></script>
+<script src="js/settings.js"></script>
 <script src="js/detail.js"></script>
 <script src="js/shortcuts.js"></script>
 </body>

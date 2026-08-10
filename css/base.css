@@ -44,8 +44,37 @@
   --shadow-card: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.25);
 }
 
+/* Light theme — toggled via js/settings.js (Settings.set('theme', ...)),
+   applied as a data attribute rather than a media query, since it's a
+   deliberate visitor choice, not a system-preference reflection (see
+   the inline anti-flash script in <head> on every page, which sets
+   this same attribute from localStorage before first paint). --primary
+   /--gold/--danger stay the same in both — swapping the neutral
+   surface/text tokens and keeping the one brand accent constant is
+   what makes this a token swap rather than a from-scratch second
+   palette; every card/chip/chart that already reads var(--text-mid)
+   etc. instead of a literal hex picks this up for free. The three
+   named categorical hues stats.js' channel-share donut uses are the
+   one exception — those are hardcoded hex (SHARE_COLORS/SHARE_COLORS_LIGHT
+   in js/stats.js) since a CSS variable can't hold "swap to the
+   dataviz-skill-validated light-mode step of this hue," and are
+   switched in JS by reading this same attribute. */
+:root[data-theme="light"] {
+  --bg-void:      #f2f1ec;
+  --bg-base:      #fbfaf7;
+  --bg-surface:   #ffffff;
+  --bg-surface-2: #efece4;
+  --line:         #d9d6cb;
+  --line-soft:    #e6e3d9;
+
+  --text-hi:      #18170f;
+  --text-mid:     #55534a;
+  --text-dim:     #86837a;
+}
+
 * { box-sizing: border-box; }
 html { color-scheme: dark; scroll-behavior: smooth; }
+:root[data-theme="light"] html { color-scheme: light; }
 
 body {
   margin: 0;
@@ -56,6 +85,9 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+}
+:root[data-theme="light"] body {
+  background-image: radial-gradient(circle at 24% 69%, #ffffff 0%, var(--bg-void) 99%);
 }
 
 h1, h2, h3, .num {
@@ -88,6 +120,16 @@ img { max-width: 100%; display: block; }
 /* --- reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+/* Same effect, opted into manually (Settings.set('reduceMotion', true))
+   rather than inherited from the OS — for anyone who wants it here
+   specifically without changing a system-wide setting. */
+:root[data-reduce-motion="true"] *,
+:root[data-reduce-motion="true"] *::before,
+:root[data-reduce-motion="true"] *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
 }
 
 /* =====================================================================
@@ -496,3 +538,117 @@ img { max-width: 100%; display: block; }
 }
 
 .shortcuts-plus { font-size: 11px; color: var(--text-dim); }
+
+/* =====================================================================
+   SETTINGS — gear icon + slide-in side panel (js/settings.js)
+   ===================================================================== */
+
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+.settings-overlay.open { display: block; }
+
+.settings-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 81;
+  width: min(340px, 90vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border-left: 1px solid var(--line);
+  box-shadow: -24px 0 60px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform .25s cubic-bezier(.16, 1, .3, 1);
+}
+.settings-overlay.open .settings-panel { transform: translateX(0); }
+
+.settings-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line-soft);
+  flex-shrink: 0;
+}
+.settings-panel-head h2 { font-size: 16px; font-weight: 700; color: var(--text-hi); }
+
+.settings-body {
+  padding: 18px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  overflow-y: auto;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.settings-row-label { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.settings-row-label .settings-title { font-size: 13px; font-weight: 600; color: var(--text-hi); }
+.settings-row-label .settings-desc { font-size: 11.5px; color: var(--text-dim); line-height: 1.45; }
+
+.settings-note {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  padding: 12px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  background: var(--bg-surface-2);
+}
+
+/* Toggle switch */
+.settings-switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid var(--line);
+  background: var(--bg-surface-2);
+  transition: background .15s, border-color .15s;
+}
+.settings-switch.on { background: var(--primary); border-color: var(--primary); }
+.settings-switch .knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-hi);
+  transition: transform .15s, background .15s;
+}
+.settings-switch.on .knob { transform: translateX(18px); background: #1a0d00; }
+
+/* Two/three-way choice, same visual language as .range-chip but a
+   compact attached group rather than separate pill buttons — this is
+   a single setting's mutually exclusive options, not a filter row. */
+.settings-btn-group {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.settings-btn-opt {
+  padding: 6px 12px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-mid);
+  background: var(--bg-surface-2);
+  transition: background .15s, color .15s;
+}
+.settings-btn-opt:not(:last-child) { border-right: 1px solid var(--line); }
+.settings-btn-opt.active { background: var(--primary); color: #1a0d00; }
+.settings-btn-opt:hover:not(.active) { color: var(--text-hi); }

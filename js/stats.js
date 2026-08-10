@@ -634,8 +634,19 @@
   // the data) via the project's dataviz skill's validator; past three
   // series the skill's own default palette can't clear that bar either,
   // which is why this folds the rest into one muted "Other" slice
-  // instead of adding a 4th/5th named hue.
-  const SHARE_COLORS = ['#3987e5', '#c98500', '#199e70'];
+  // instead of adding a 4th/5th named hue. Separate dark/light steps of
+  // the same three hues (not a CSS variable — a custom property can't
+  // hold "the validated light-mode step of this hue") since dark mode
+  // is Settings' default and light mode is a real, separately-validated
+  // second surface, not an automatic flip (light mode passes the same
+  // gates but only with a WARN on raw fill contrast — mitigated by the
+  // legend/tooltip labels every slice already carries regardless of
+  // theme, which is exactly the "relief channel" a contrast WARN calls
+  // for, so it isn't a blocker).
+  const SHARE_COLORS = {
+    dark: ['#3987e5', '#c98500', '#199e70'],
+    light: ['#2a78d6', '#eda100', '#1baf7a'],
+  };
   const SHARE_OTHER_COLOR = 'var(--text-dim)';
 
   function renderShareDonut(demons) {
@@ -648,7 +659,8 @@
     const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
     const top = sorted.slice(0, 3);
     const rest = sorted.slice(3).reduce((a, [, n]) => a + n, 0);
-    const slices = top.map(([channel, n], i) => ({ label: channel, value: n, color: SHARE_COLORS[i] }));
+    const colors = SHARE_COLORS[Settings.get('theme') === 'light' ? 'light' : 'dark'];
+    const slices = top.map(([channel, n], i) => ({ label: channel, value: n, color: colors[i] }));
     if (rest > 0) slices.push({ label: 'Other', value: rest, color: SHARE_OTHER_COLOR });
     renderDonut(shareBody, shareLegend, slices, { centerLabel: 'Levels' });
   }
@@ -772,6 +784,18 @@
       showBanner(`Couldn't load stats: ${escapeHtml(err.message)}`, true);
     }
   }
+
+  // The channel-share donut's colors are theme-aware (see SHARE_COLORS)
+  // but only re-picked when it renders — without this, switching theme
+  // from the settings panel while already on this page would leave it
+  // showing the wrong mode's steps until the next filter change.
+  let lastTheme = Settings.get('theme');
+  Settings.subscribe((state) => {
+    if (state.theme !== lastTheme) {
+      lastTheme = state.theme;
+      if (allDemons.length) renderShareDonut(filteredDemons());
+    }
+  });
 
   init();
 })();

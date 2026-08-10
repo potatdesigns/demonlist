@@ -93,7 +93,8 @@
     if (!level) return `<span class="detail-nav-btn disabled ${dir}"><span class="nav-arrow">${dir === 'prev' ? '&larr;' : '&rarr;'}</span><span class="nav-info"><span class="nav-label">${dir === 'prev' ? 'Previous' : 'Next'}</span></span></span>`;
     const info = `<span class="nav-info"><span class="nav-label">${dir === 'prev' ? 'Previous' : 'Next'}</span><span class="nav-name">#${position} ${escapeHtml(level.name)}</span></span>`;
     const arrow = `<span class="nav-arrow">${dir === 'prev' ? '&larr;' : '&rarr;'}</span>`;
-    return `<a class="detail-nav-btn ${dir}" href="level.html#${position}">${dir === 'prev' ? arrow + info : info + arrow}</a>`;
+    const targetAttrs = Settings.get('openInNewTab') ? ' target="_blank" rel="noopener"' : '';
+    return `<a class="detail-nav-btn ${dir}" href="level.html#${position}"${targetAttrs}>${dir === 'prev' ? arrow + info : info + arrow}</a>`;
   }
 
   /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. */
@@ -210,8 +211,11 @@
     probe.src = maxres;
   }
 
+  /** Autoplay is opt-in (Settings.get('autoplayVideos')) and always paired with mute=1 — browsers block unmuted autoplay outright regardless, so a silent "autoplay" that isn't muted just wouldn't play at all. */
   function embedIframe(container, videoId, title) {
-    container.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}" title="${escapeHtml(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
+    const autoplay = Settings.get('autoplayVideos');
+    const src = `https://www.youtube.com/embed/${videoId}${autoplay ? '?autoplay=1&mute=1' : ''}`;
+    container.innerHTML = `<iframe src="${src}" title="${escapeHtml(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
   }
 
   /** sharedEntry is the (possibly undefined) data/yt-cache.json entry for this level — see SharedYtCache in js/shared-cache.js. It's the only source for view counts/showcase; there's no personal-key live fallback. */
