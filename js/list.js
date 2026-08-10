@@ -545,5 +545,54 @@
     load();
   }
 
+  function recordCard(label, demon, value) {
+    return `
+      <a class="record-card" href="level.html#${demon.position}">
+        <span class="record-label">${escapeHtml(label)}</span>
+        <span class="record-value">${escapeHtml(value)}</span>
+        <span class="record-name">#${demon.position} ${escapeHtml(demon.name)}</span>
+      </a>
+    `;
+  }
+
+  /**
+   * Three standout stats across the *whole* tracked list — unaffected
+   * by the current page/search/filter/sort, so computed and rendered
+   * once, independent of load(). Reuses the same in-memory sources
+   * hydration already relies on (AredlAPI's cached full list,
+   * SharedYtCache's cached whole-cache fetch), so this costs no extra
+   * round trip beyond what the page was already going to do.
+   */
+  async function loadRecords() {
+    const recordsEl = document.getElementById('records-row');
+    try {
+      const [{ demons }, cache] = await Promise.all([
+        AredlAPI.fetchListed({ limit: CONFIG.LIST_SIZE, offset: 0 }),
+        SharedYtCache.load(),
+      ]);
+      let topVerifier = null, topShowcase = null, topLead = null;
+      for (const d of demons) {
+        const entry = cache.levels?.[d.id];
+        if (!entry) continue;
+        const v = entry.verifier?.viewCount;
+        const s = entry.showcase?.viewCount;
+        if (Number.isFinite(v) && (!topVerifier || v > topVerifier.views)) topVerifier = { demon: d, views: v };
+        if (Number.isFinite(s) && (!topShowcase || s > topShowcase.views)) topShowcase = { demon: d, views: s };
+        if (Number.isFinite(v) && Number.isFinite(s) && s > v && (!topLead || s - v > topLead.lead)) {
+          topLead = { demon: d, lead: s - v };
+        }
+      }
+      const cards = [];
+      if (topVerifier) cards.push(recordCard('Most-viewed verification', topVerifier.demon, formatCount(topVerifier.views)));
+      if (topShowcase) cards.push(recordCard('Most-viewed showcase', topShowcase.demon, formatCount(topShowcase.views)));
+      if (topLead) cards.push(recordCard('Biggest showcase lead', topLead.demon, `+${formatCount(topLead.lead)}`));
+      recordsEl.innerHTML = cards.join('');
+    } catch {
+      // Purely decorative — leave it empty rather than surfacing an
+      // error banner over what the rest of the page is doing.
+    }
+  }
+
   initialLoad();
+  loadRecords();
 })();

@@ -193,6 +193,13 @@ const AredlAPI = (() => {
     return found ? found.id : null;
   }
 
+  /** Same lookup as getIdByPosition, but returns {id, name} — used for the detail page's Previous/Next preview (js/detail.js), which wants to show what's actually at the adjacent rank, not just link to it blind. Returning null past either end of the tracked list is what tells the caller there's no previous/next to show — no separate bounds check needed. */
+  async function getByPosition(position) {
+    const all = await fetchFullList();
+    const found = all.find(l => l.position === position);
+    return found ? { id: found.id, name: found.name } : null;
+  }
+
   // Some level names carry a parenthetical annotation — "(Solo)" for a
   // solo-verified level, or a creator's name — that's part of the
   // display name (see cardTemplate() in list.js, unaffected by this)
@@ -266,5 +273,5 @@ const AredlAPI = (() => {
   // in-memory cache hit (see fetchDemon above) rather than a live call.
   const fetchExtras = fetchDemon;
 
-  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition };
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition };
 })();

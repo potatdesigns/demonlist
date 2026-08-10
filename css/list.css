@@ -208,6 +208,47 @@
   width: 9px; height: 9px; border-radius: 2px; display: inline-block; margin-right: 5px;
 }
 
+/* Standout single stats across the *entire* tracked list (not the
+   current page/filter/sort) — see loadRecords() in list.js. Empty and
+   invisible (no skeleton) until that resolves; low-priority chrome, not
+   worth a loading state of its own. */
+.records-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+.record-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  transition: border-color .15s, transform .15s;
+}
+.record-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+.record-card .record-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.record-card .record-value {
+  font-family: ui-monospace, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.record-card .record-name {
+  font-size: 12.5px;
+  color: var(--text-mid);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* --- the card grid: one page = 75 levels, laid out 5 columns x 15 rows
    at desktop width, degrading to fewer columns (more rows) on narrower
    screens — see the pager below for how pages are navigated. --- */

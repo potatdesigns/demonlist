@@ -60,6 +60,48 @@
   margin-top: 2px;
 }
 
+/* Previous/Next — also reachable via the ArrowLeft/ArrowRight keys
+   (js/detail.js), same "jump straight to the adjacent rank" shortcut
+   the arrows themselves are. */
+.detail-pagenav {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0 28px;
+}
+.detail-nav-btn {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  transition: border-color .15s, color .15s, transform .15s;
+}
+.detail-nav-btn.next { justify-content: flex-end; text-align: right; }
+.detail-nav-btn:not(.disabled):hover { border-color: var(--primary); color: var(--text-hi); transform: translateY(-1px); }
+.detail-nav-btn.disabled { opacity: 0.35; }
+.detail-nav-btn .nav-arrow { font-size: 18px; flex-shrink: 0; }
+.detail-nav-btn .nav-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.detail-nav-btn .nav-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.detail-nav-btn .nav-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 480px) { .detail-nav-btn .nav-name { display: none; } }
+
 .detail-titles { flex: 1 1 320px; min-width: 0; }
 
 .detail-titles h1 {

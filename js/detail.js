@@ -11,16 +11,25 @@
   // comment in list.js for why hash over a query string). Resolved to
   // the actual AREDL id via AredlAPI.getIdByPosition() below before
   // fetching anything.
-  const rankParam = [...new URLSearchParams(window.location.hash.replace(/^#/, '')).keys()][0] || null;
-
-  if (!rankParam) {
-    root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="index.html">list</a> and click a card.</div>`;
-    return;
+  function getRankParam() {
+    return [...new URLSearchParams(window.location.hash.replace(/^#/, '')).keys()][0] || null;
   }
 
   init();
+  // Prev/Next (both the <a href="level.html#N"> links and the
+  // ArrowLeft/ArrowRight handler below) change only the hash while
+  // already on level.html — same-document navigation, not a reload, so
+  // nothing would re-run init() without this. Same reasoning list.js's
+  // own hashchange/popstate listeners give for the exact same pattern.
+  window.addEventListener('popstate', init);
+  window.addEventListener('hashchange', init);
 
   async function init() {
+    const rankParam = getRankParam();
+    if (!rankParam) {
+      root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="index.html">list</a> and click a card.</div>`;
+      return;
+    }
     root.innerHTML = skeletonDetail();
     try {
       const position = parseInt(rankParam, 10);
@@ -32,12 +41,14 @@
         throw new Error(`No level at rank #${position}.`);
       }
 
-      const [demon, totalCount, sharedEntry] = await Promise.all([
+      const [demon, totalCount, sharedEntry, prevLevel, nextLevel] = await Promise.all([
         DataSource.fetchOne(id),
         AredlAPI.getTotalCount().catch(() => 0),
         SharedYtCache.getEntry(id).catch(() => undefined),
+        AredlAPI.getByPosition(position - 1).catch(() => null),
+        AredlAPI.getByPosition(position + 1).catch(() => null),
       ]);
-      renderDetail(demon, totalCount, sharedEntry);
+      renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel);
     } catch (err) {
       console.error(err);
       root.innerHTML = `
@@ -65,10 +76,32 @@
     `;
   }
 
-  function renderDetail(demon, totalCount, sharedEntry) {
+  // Set by renderDetail(), read by the ArrowLeft/ArrowRight handler
+  // below — module-level so the listener (registered once, outside
+  // renderDetail) always sees whatever the *current* level's neighbors
+  // are, not whatever they were when the listener was first attached.
+  let prevPosition = null, nextPosition = null;
+
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.altKey || e.metaKey) return;
+    if (/^(input|textarea|select)$/i.test(e.target.tagName) || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevPosition !== null) window.location.href = `level.html#${prevPosition}`;
+    else if (e.key === 'ArrowRight' && nextPosition !== null) window.location.href = `level.html#${nextPosition}`;
+  });
+
+  function navButton(dir, position, level) {
+    if (!level) return `<span class="detail-nav-btn disabled ${dir}"><span class="nav-arrow">${dir === 'prev' ? '&larr;' : '&rarr;'}</span><span class="nav-info"><span class="nav-label">${dir === 'prev' ? 'Previous' : 'Next'}</span></span></span>`;
+    const info = `<span class="nav-info"><span class="nav-label">${dir === 'prev' ? 'Previous' : 'Next'}</span><span class="nav-name">#${position} ${escapeHtml(level.name)}</span></span>`;
+    const arrow = `<span class="nav-arrow">${dir === 'prev' ? '&larr;' : '&rarr;'}</span>`;
+    return `<a class="detail-nav-btn ${dir}" href="level.html#${position}">${dir === 'prev' ? arrow + info : info + arrow}</a>`;
+  }
+
+  function renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel) {
     const tierColor = positionColor(demon.position, totalCount);
     const points = demon.raw?.points;
     document.title = `Demonlist | ${demon.name}`;
+    prevPosition = prevLevel ? demon.position - 1 : null;
+    nextPosition = nextLevel ? demon.position + 1 : null;
 
     root.innerHTML = `
       <a class="back-link" href="index.html">&larr; Back to the list</a>
@@ -81,6 +114,11 @@
             ${Number.isFinite(points) ? `<span class="chip"><span class="swatch" style="background:${tierColor};width:8px;height:8px;border-radius:2px;display:inline-block;"></span>${points} points</span>` : ''}
           </div>
         </div>
+      </div>
+
+      <div class="detail-pagenav">
+        ${navButton('prev', prevPosition, prevLevel)}
+        ${navButton('next', nextPosition, nextLevel)}
       </div>
 
       <dl class="detail-facts">

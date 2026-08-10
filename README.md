@@ -52,23 +52,36 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   search/filters already were). Unlike search/page, both are session-local only (not reflected in
   the URL or restored on back/forward) — a lens on top of whatever you're looking at rather than a
   view of its own worth bookmarking, and both are dropped whenever you navigate to a different
-  page/search so they can't linger invisibly underneath a view that looks unfiltered/unsorted.
+  page/search so they can't linger invisibly underneath a view that looks unfiltered/unsorted. A
+  **Records** row (below the legend) surfaces three standout stats across the *whole* tracked
+  list — most-viewed verification, most-viewed showcase, biggest showcase-over-verifier lead —
+  each linking straight to that level; computed once from the same in-memory data hydration
+  already uses, unaffected by the current page/search/filter/sort (see `loadRecords()` in
+  `js/list.js`).
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view
   counts shown for direct comparison. Its URL is just the level's rank as a hash fragment
   (`level.html#42`, resolved to the actual AREDL id via `AredlAPI.getIdByPosition()` before
-  fetching anything) rather than AREDL's 36-character id or a `?id=`-style query string. A refresh
-  icon next to the video section lets any visitor force a
-  re-check of just this level (see [Manual refresh](#shared-showcaseview-count-cache) below) —
-  deliberately *only* this level, not the whole list; see
-  [One-click refresh trigger](#one-click-refresh-trigger). The background is the verification
-  video's own YouTube thumbnail, heavily blurred/darkened (`mountDetailBackground()` in
-  `js/detail.js`) — the closest thing to "a picture of this level" available at all, since AREDL
-  doesn't host level screenshots itself; tries the 1280x720 `maxresdefault` thumbnail first,
-  falling back to `hqdefault` when YouTube hasn't generated one (it silently serves a small gray
-  placeholder with a real `200` status rather than a 404 for those, so this checks the loaded
-  image's actual pixel width rather than trusting the response to fail).
+  fetching anything) rather than AREDL's 36-character id or a `?id=`-style query string.
+  **Previous/Next** boxes (also `ArrowLeft`/`ArrowRight`) jump straight to the adjacent rank,
+  previewing its name before you click; since that's a `level.html#N` -> `level.html#M`
+  same-document hash change rather than a real page load, `js/detail.js` listens for its own
+  `hashchange`/`popstate` to re-render in place (the same reason `js/list.js` does for
+  Main/Extended/search) rather than assuming a fresh navigation. A **Copy link** button and a
+  **Random level** button sit in the header (`js/nav-actions.js`, also reachable as the `R`
+  keyboard shortcut) — Copy link only on this page, Random on this page and the list page (there's
+  nothing level-specific for the list page to copy). A refresh icon next to the video section lets
+  any visitor force a re-check of just this level (see
+  [Manual refresh](#shared-showcaseview-count-cache) below) — deliberately *only* this level, not
+  the whole list; see [One-click refresh trigger](#one-click-refresh-trigger). The background is
+  the verification video's own YouTube thumbnail, heavily blurred/darkened
+  (`mountDetailBackground()` in `js/detail.js`) — the closest thing to "a picture of this level"
+  available at all, since AREDL doesn't host level screenshots itself; tries the 1280x720
+  `maxresdefault` thumbnail first, falling back to `hqdefault` when YouTube hasn't generated one
+  (it silently serves a small gray placeholder with a real `200` status rather than a 404 for
+  those, so this checks the loaded image's actual pixel width rather than trusting the response to
+  fail).
 - **Queue page (`queue.html`)** — not linked from anywhere in the UI, deliberately (direct-URL-only,
   an admin/curiosity view rather than something every visitor needs). A plain top-to-bottom list
   (no cards, closer to AREDL's own changelog styling) showing the *actual* persisted
@@ -77,13 +90,16 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   refills (see [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no
   trigger lives here.
 - **Keyboard shortcuts** (`js/shortcuts.js`, all three pages) — `M`/`E`/`Q` jump to Main list,
-  Extended list, and the queue page; `?` opens a panel listing them all (also reachable via the
-  floating `?` button, bottom-right). Plain unmodified letters rather than a `Ctrl`-combo — some
-  of the obvious mnemonic combos (`Ctrl+Q`/`M`/`E`) collide with real, JS-unoverridable browser or
-  OS bindings (tab-close, window-minimize, address-bar search), where a bare letter key is never
-  reserved by the browser. Suspended while a text field is focused (so typing "extreme" in the
-  search box doesn't jump you to the extended list mid-word), and `M`/`E` update the current page
-  in place via a hash change when already on `index.html` rather than reloading.
+  Extended list, and the queue page; `R` jumps to a random level (`js/nav-actions.js`, shared with
+  the header button); `?` opens a panel listing them all (also reachable via the floating `?`
+  button, bottom-right). Plain unmodified letters rather than a `Ctrl`-combo — some of the obvious
+  mnemonic combos (`Ctrl+Q`/`M`/`E`) collide with real, JS-unoverridable browser or OS bindings
+  (tab-close, window-minimize, address-bar search), where a bare letter key is never reserved by
+  the browser. Suspended while a text field is focused (so typing "extreme" in the search box
+  doesn't jump you to the extended list mid-word), and `M`/`E` update the current page in place via
+  a hash change when already on `index.html` rather than reloading. `level.html` also has its own
+  `ArrowLeft`/`ArrowRight` for Previous/Next (see above), not listed in this panel since it's
+  page-specific rather than site-wide.
 
 ## Reducing to a top-150 list
 
@@ -423,10 +439,11 @@ js/
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
-  detail.js                          detail page controller
+  nav-actions.js                   Copy link + Random level header buttons, index.html + level.html, see "What it does" above
+  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync and the Records row
+  detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
-  shortcuts.js                        M/E/Q + ? keyboard shortcuts and the shortcuts panel, all three pages, see "What it does" above
+  shortcuts.js                        M/E/Q/R + ? keyboard shortcuts and the shortcuts panel, all three pages, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above

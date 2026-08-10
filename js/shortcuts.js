@@ -1,7 +1,7 @@
 /* =====================================================================
    KEYBOARD SHORTCUTS
 
-   Plain, unmodified letter keys (m/e/q) rather than the Ctrl-combo the
+   Plain, unmodified letter keys (m/e/q/r) rather than the Ctrl-combo the
    idea started as — Ctrl+Q/M/E collide with real browser/OS bindings
    (tab-close, window-minimize, address-bar search, ...) that JS can't
    reliably override, and some are intercepted before a page ever sees
@@ -10,7 +10,9 @@
    this reason. Site-wide (included on index/level/queue.html) so the
    shortcuts work no matter which page you're on; each one degrades to
    a full navigation when it can't just update the current page in
-   place (see go() below).
+   place (see go() below). 'r' calls into js/nav-actions.js
+   (NavActions.goToRandomLevel — loaded on all three pages, ahead of
+   this script), which also owns the equivalent header button.
    ===================================================================== */
 
 (() => {
@@ -18,6 +20,7 @@
     { key: 'm', label: 'Main list' },
     { key: 'e', label: 'Extended list' },
     { key: 'q', label: 'Queue' },
+    { key: 'r', label: 'Random level' },
     { key: '?', label: 'Toggle this panel' },
   ];
 
@@ -84,6 +87,7 @@
       case 'm': case 'M': go('main'); break;
       case 'e': case 'E': go('extended'); break;
       case 'q': case 'Q': goQueue(); break;
+      case 'r': case 'R': NavActions.goToRandomLevel(); break;
       default: return;
     }
   });
