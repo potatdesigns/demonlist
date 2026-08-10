@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T01:00:30.863Z",
+  "generatedAt": "2026-08-10T01:22:17.581Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3130,26 +3130,26 @@
       },
       "discoveredAt": "2026-08-09T18:47:40.230Z"
     },
-    "f4e8002d-a60c-4ab3-b768-94d62858a803": {
-      "name": "DISSONANCE",
-      "position": 150,
+    "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
+      "name": "NervHell",
+      "position": 51,
       "verifier": {
-        "id": "IfFser-f9c0",
-        "url": "https://www.youtube.com/watch?v=IfFser-f9c0",
-        "title": "[Verified] DISSONANCE by ImMaxX1 - Extreme Demon",
-        "channel": "zSquidKnight",
-        "viewCount": 35974,
-        "viewsCheckedAt": "2026-08-10T01:00:30.287Z"
+        "id": "1zrvPgDAoaA",
+        "url": "https://www.youtube.com/watch?v=1zrvPgDAoaA",
+        "title": "[VERIFIED] (TOP 60) NERVHELL 100% | Geometry Dash",
+        "channel": "ChopBlox",
+        "viewCount": 39117,
+        "viewsCheckedAt": "2026-08-10T01:22:17.581Z"
       },
       "showcase": {
-        "id": "WjoSwQ3eaVM",
-        "url": "https://www.youtube.com/watch?v=WjoSwQ3eaVM",
-        "title": "DISSONANCE by ImMaxX1",
-        "channel": "fnm04",
-        "viewCount": 96275,
-        "viewsCheckedAt": "2026-08-10T01:00:30.287Z"
+        "id": "85Honcoc3aw",
+        "url": "https://www.youtube.com/watch?v=85Honcoc3aw",
+        "title": "【4K】 \"NervHell\" by ASVTeam | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 2525,
+        "viewsCheckedAt": "2026-08-10T01:22:17.581Z"
       },
-      "discoveredAt": "2026-08-09T18:47:40.230Z"
+      "discoveredAt": "2026-08-10T01:22:17.581Z"
     }
   },
   "channelIndex": {
@@ -92452,7 +92452,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "ak2z4j8C5Zw",
+      "newestVideoId": "wVzeSx2bhRs",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -102843,6 +102843,16 @@
             "945695"
           ],
           "checkedAt": "2026-08-08T23:51:24.938Z"
+        },
+        "wVzeSx2bhRs": {
+          "title": "【4K】\"NervHell\" by ASVTeam (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 39,
+          "levelIds": [
+            "143718114",
+            "4298147"
+          ],
+          "checkedAt": "2026-08-10T01:22:16.510Z"
         }
       }
     },
@@ -111755,7 +111765,6 @@
     "53fb0da7-8845-4736-9832-c1f98bb388cc",
     "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
     "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
-    "f4e8002d-a60c-4ab3-b768-94d62858a803",
     "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
     "4736d3e3-6166-44eb-941d-d94a5f2d6cc4",
     "213ff25e-eac6-47fb-baee-6180b436ec8d",
