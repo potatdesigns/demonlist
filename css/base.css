@@ -253,7 +253,9 @@ img { max-width: 100%; display: block; }
   border-style: dashed;
   color: var(--text-dim);
   cursor: help;
+  transition: color .15s, border-color .15s;
 }
+.chip-more:hover { color: var(--text-hi); border-color: var(--text-dim); }
 
 /* Range-toggle chip group — used by the list page's Main/Extended
    buttons and the stats page's All/Main/Extended filter, hence living
@@ -423,18 +425,25 @@ img { max-width: 100%; display: block; }
 .shortcuts-fab:hover { color: var(--text-hi); border-color: var(--primary); transform: translateY(-2px); }
 .shortcuts-fab:active { transform: translateY(0) scale(.92); }
 
+/* Always in the DOM/layout, faded + click-through when closed — same
+   opacity+pointer-events transition .filter-panel already uses, rather
+   than a display:none/flex toggle, so *closing* animates too (a bare
+   display swap can't transition; it's just gone the next frame). */
 .shortcuts-overlay {
   position: fixed;
   inset: 0;
   z-index: 70;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease;
 }
-.shortcuts-overlay.open { display: flex; }
+.shortcuts-overlay.open { opacity: 1; pointer-events: auto; }
 
 .shortcuts-panel {
   position: relative;
@@ -445,12 +454,10 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius);
   background: var(--bg-surface);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  animation: shortcuts-pop 0.18s cubic-bezier(.34, 1.56, .64, 1);
+  transform: scale(0.94) translateY(8px);
+  transition: transform .2s cubic-bezier(.34, 1.56, .64, 1);
 }
-@keyframes shortcuts-pop {
-  from { transform: scale(0.94); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
+.shortcuts-overlay.open .shortcuts-panel { transform: scale(1) translateY(0); }
 
 .shortcuts-panel h2 { font-size: 15px; margin-bottom: 4px; }
 
@@ -511,14 +518,21 @@ img { max-width: 100%; display: block; }
    SETTINGS — gear icon + slide-in side panel (js/settings.js)
    ===================================================================== */
 
+/* Same reasoning as .shortcuts-overlay above — opacity+pointer-events
+   transition rather than display:none/block, so the backdrop fades on
+   the way out too, not just in. The .settings-panel slide (below)
+   already animates both directions since it was transition-based
+   from the start, not a one-shot animation. */
 .settings-overlay {
   position: fixed;
   inset: 0;
   z-index: 80;
-  display: none;
   background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
 }
-.settings-overlay.open { display: block; }
+.settings-overlay.open { opacity: 1; pointer-events: auto; }
 
 .settings-panel {
   position: fixed;

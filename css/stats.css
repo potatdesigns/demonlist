@@ -154,11 +154,11 @@ a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
 }
 .chart-ref-line { stroke: var(--line); stroke-width: 1; }
 
-.chart-dot-verifier { fill: var(--text-mid); pointer-events: none; }
-.chart-dot-showcase { fill: var(--primary); pointer-events: none; }
+.chart-dot-verifier { fill: var(--text-mid); pointer-events: none; transition: r .12s, stroke-width .12s, stroke .12s; }
+.chart-dot-showcase { fill: var(--primary); pointer-events: none; transition: r .12s, stroke-width .12s, stroke .12s; }
 .chart-line-verifier { stroke: var(--text-mid); pointer-events: none; }
 .chart-line-showcase { stroke: var(--primary); pointer-events: none; }
-.chart-bar-showcase { fill: var(--primary); pointer-events: none; }
+.chart-bar-showcase { fill: var(--primary); pointer-events: none; transition: filter .12s; }
 
 .chart-mark-label {
   fill: var(--text-hi);
@@ -216,6 +216,7 @@ a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
   cursor: pointer;
   color: var(--text-mid);
   width: fit-content;
+  transition: color .15s;
 }
 .chart-table-toggle summary:hover { color: var(--text-hi); }
 .chart-table {
@@ -230,6 +231,8 @@ a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
   border-bottom: 1px solid var(--line-soft);
   font-family: ui-monospace, monospace;
 }
+.chart-table tbody tr { transition: background-color .12s; }
+.chart-table tbody tr:hover { background-color: var(--bg-surface-2); }
 .chart-table th {
   color: var(--text-dim);
   font-weight: 600;
