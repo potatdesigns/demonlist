@@ -20,7 +20,15 @@
   line-height: 1.6;
   color: var(--text-dim);
 }
-.stats-hero .range-chips { margin-top: 18px; }
+.stats-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.stats-controls .range-chips { margin-top: 0; }
+.stats-controls .sort-select { min-width: 150px; }
 
 /* --- KPI row: averages + records, same tile for both --- */
 .kpi-row {
@@ -105,6 +113,30 @@ a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
 
 .chart-body { position: relative; width: 100%; }
 .chart-body svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+/* --- donut charts: leadership split + channel share --- */
+.donut-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-bottom: 22px;
+}
+.donut-card { margin-bottom: 0; }
+.donut-body { display: flex; justify-content: center; padding: 6px 0 2px; }
+.donut-body svg { width: 200px; height: 200px; }
+.donut-legend { flex-wrap: wrap; justify-content: center; gap: 8px 18px; margin: 6px 0 4px; }
+.donut-legend .legend-key { gap: 7px; cursor: default; }
+.donut-legend .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+.donut-slice { stroke: var(--bg-surface); stroke-width: 2; transition: opacity .1s; pointer-events: none; }
+.donut-hit { fill: transparent; cursor: pointer; }
+.donut-hit:hover + .donut-slice { opacity: 0.82; }
+.donut-center-value { font-family: ui-monospace, monospace; font-size: 22px; font-weight: 700; fill: var(--text-hi); text-anchor: middle; }
+.donut-center-label { font-size: 9.5px; fill: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; text-anchor: middle; }
+
+/* --- histogram: grouped columns, verifier vs. showcase per view-count bucket --- */
+.chart-col-verifier { fill: var(--text-mid); pointer-events: none; }
+.chart-col-showcase { fill: var(--primary); pointer-events: none; }
 
 .chart-empty {
   padding: 40px 0;

@@ -28,12 +28,41 @@
     <p>
       Averages, records, and trends across the tracked list's verifier-vs-showcase view counts —
       the same numbers every card shows individually, aggregated. Everything below reacts to the
-      range chips.
+      filters in this row together.
     </p>
-    <div class="range-chips" id="stats-range" aria-label="Range filter">
-      <button type="button" class="range-chip active" data-range="all">All <span class="mono">#1–150</span></button>
-      <button type="button" class="range-chip" data-range="main">Main List <span class="mono">#1–75</span></button>
-      <button type="button" class="range-chip" data-range="extended">Extended List <span class="mono">#76–150</span></button>
+    <div class="stats-controls">
+      <div class="range-chips" id="stats-range" aria-label="Range filter">
+        <button type="button" class="range-chip active" data-range="all">All <span class="mono">#1–150</span></button>
+        <button type="button" class="range-chip" data-range="main">Main List <span class="mono">#1–75</span></button>
+        <button type="button" class="range-chip" data-range="extended">Extended List <span class="mono">#76–150</span></button>
+      </div>
+      <select class="sort-select btn-ghost" id="channel-filter" aria-label="Filter by showcase channel">
+        <option value="">All channels</option>
+      </select>
+      <div class="filter-box">
+        <button type="button" class="btn-ghost filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+          Filters<span class="filter-badge" id="filter-badge" style="display:none;"></span>
+        </button>
+        <div class="filter-panel" id="filter-panel">
+          <div class="filter-range">
+            <span>Verifier views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-verifier-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum verifier views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-verifier-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum verifier views">
+            </div>
+          </div>
+          <div class="filter-range">
+            <span>Showcase views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-showcase-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum showcase views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-showcase-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum showcase views">
+            </div>
+          </div>
+          <button type="button" class="btn-ghost filter-clear" id="filter-clear">Clear filters</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -49,6 +78,41 @@
       </div>
     </div>
     <div class="chart-body" id="chart-scatter"></div>
+  </section>
+
+  <div class="donut-row">
+    <section class="chart-card donut-card" id="chart-lead-card">
+      <div class="chart-head">
+        <div>
+          <h2>Who leads</h2>
+          <p class="chart-sub">Share of levels where the showcase out-views the verification video, or doesn't.</p>
+        </div>
+      </div>
+      <div class="chart-body donut-body" id="chart-lead"></div>
+      <div class="chart-legend donut-legend" id="lead-legend"></div>
+    </section>
+
+    <section class="chart-card donut-card" id="chart-share-card">
+      <div class="chart-head">
+        <div>
+          <h2>Showcase channel share</h2>
+          <p class="chart-sub">Share of levels *won* by each channel — the top pick by view count, not the total views behind it (see the bar chart below for that).</p>
+        </div>
+      </div>
+      <div class="chart-body donut-body" id="chart-share"></div>
+      <div class="chart-legend donut-legend" id="share-legend"></div>
+    </section>
+  </div>
+
+  <section class="chart-card" id="chart-hist-card">
+    <div class="chart-head">
+      <div>
+        <h2>Distribution of view counts</h2>
+        <p class="chart-sub">How many levels' verifier/showcase views fall into each range. Log-scale buckets, since views span orders of magnitude.</p>
+      </div>
+      <div class="chart-legend" id="hist-legend"></div>
+    </div>
+    <div class="chart-body" id="chart-hist"></div>
   </section>
 
   <section class="chart-card" id="chart-trend-card">

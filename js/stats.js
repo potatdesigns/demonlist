@@ -1,34 +1,57 @@
 /* =====================================================================
    STATS PAGE CONTROLLER
 
-   Averages, records, and three charts built from the same two sources
+   Averages, records, and six charts built from the same two sources
    every other page already reads — AredlAPI's cached full list and
    SharedYtCache's whole-cache fetch — aggregated across the tracked
    list instead of shown per-card. No charting library: plain hand-built
    SVG (this site has no build step to bring one in through), following
    the project's dataviz skill — sequential/emphasis color (gray
    verifier vs. orange showcase, the same mapping the list page's legend
-   and cards already use, not a new convention), log scales (view counts
-   span 4+ orders of magnitude), a hover tooltip on every mark with a
-   hit target larger than the mark itself, and a "View as table" fallback
-   on every chart so nothing here is chart-only.
+   and cards already use, not a new convention, everywhere except the
+   channel-share donut, which needs real categorical identity — see its
+   own comment on why it deliberately avoids the site's orange), log
+   scales (view counts span 4+ orders of magnitude), a hover tooltip on
+   every mark with a hit target larger than the mark itself, and a
+   "View as table" fallback on every chart with more rows than a legend
+   can hold.
 
-   The All/Main/Extended range chips are the one filter, scoping the KPI
-   row and all three charts together — see renderAll().
+   Three filters — range chips (All/Main/Extended), a channel select,
+   and a verifier/showcase view-count range panel (the last two shared
+   with the list page's own filter UI, see css/base.css) — combine
+   (AND) to scope the KPI row and every chart together. See
+   filteredDemons() and renderAll().
    ===================================================================== */
 
 (() => {
   const stateBanner = document.getElementById('state-banner');
   const kpiRow = document.getElementById('kpi-row');
   const rangeChipsEl = document.getElementById('stats-range');
+  const channelFilterEl = document.getElementById('channel-filter');
+  const filterToggleBtn = document.getElementById('filter-toggle');
+  const filterPanel = document.getElementById('filter-panel');
+  const filterBadge = document.getElementById('filter-badge');
+  const verifierMinInput = document.getElementById('filter-verifier-min');
+  const verifierMaxInput = document.getElementById('filter-verifier-max');
+  const showcaseMinInput = document.getElementById('filter-showcase-min');
+  const showcaseMaxInput = document.getElementById('filter-showcase-max');
+  const filterClearBtn = document.getElementById('filter-clear');
   const scatterBody = document.getElementById('chart-scatter');
   const trendBody = document.getElementById('chart-trend');
   const trendLegend = document.getElementById('trend-legend');
   const channelsBody = document.getElementById('chart-channels');
+  const leadBody = document.getElementById('chart-lead');
+  const leadLegend = document.getElementById('lead-legend');
+  const shareBody = document.getElementById('chart-share');
+  const shareLegend = document.getElementById('share-legend');
+  const histBody = document.getElementById('chart-hist');
+  const histLegend = document.getElementById('hist-legend');
 
   let allDemons = [];
   let cache = { levels: {} };
   let range = 'all';
+  let channelFilter = '';
+  const filters = { verifierMin: null, verifierMax: null, showcaseMin: null, showcaseMax: null };
 
   function showBanner(msg, isError) {
     stateBanner.innerHTML = msg;
@@ -37,13 +60,93 @@
   }
   function hideBanner() { stateBanner.style.display = 'none'; }
 
-  function filteredDemons() {
-    if (range === 'main') return allDemons.filter(d => d.position <= 75);
-    if (range === 'extended') return allDemons.filter(d => d.position > 75);
-    return allDemons;
+  function entryFor(d) { return cache.levels ? cache.levels[d.id] : undefined; }
+
+  function filtersActive() {
+    return filters.verifierMin !== null || filters.verifierMax !== null || filters.showcaseMin !== null || filters.showcaseMax !== null;
+  }
+  function activeFilterCount() {
+    return [filters.verifierMin, filters.verifierMax, filters.showcaseMin, filters.showcaseMax].filter(v => v !== null).length;
+  }
+  function passesFilters(entry) {
+    if (filters.verifierMin !== null && !(entry?.verifier?.viewCount >= filters.verifierMin)) return false;
+    if (filters.verifierMax !== null && !(entry?.verifier?.viewCount <= filters.verifierMax)) return false;
+    if (filters.showcaseMin !== null && !(entry?.showcase?.viewCount >= filters.showcaseMin)) return false;
+    if (filters.showcaseMax !== null && !(entry?.showcase?.viewCount <= filters.showcaseMax)) return false;
+    return true;
   }
 
-  function entryFor(d) { return cache.levels ? cache.levels[d.id] : undefined; }
+  function filteredDemons() {
+    let list = allDemons;
+    if (range === 'main') list = list.filter(d => d.position <= 75);
+    else if (range === 'extended') list = list.filter(d => d.position > 75);
+    if (channelFilter) list = list.filter(d => entryFor(d)?.showcase?.channel === channelFilter);
+    if (filtersActive()) list = list.filter(d => passesFilters(entryFor(d)));
+    return list;
+  }
+
+  // --- filter panel wiring (verifier/showcase view-count ranges) — same
+  // pattern as the list page's Filters dropdown (js/list.js), sharing
+  // its CSS (moved to css/base.css for that reason) ---
+
+  function closeFilterPanel() {
+    filterPanel.classList.remove('open');
+    filterToggleBtn.setAttribute('aria-expanded', 'false');
+  }
+  filterToggleBtn.addEventListener('click', () => {
+    const open = filterPanel.classList.toggle('open');
+    filterToggleBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (!filterPanel.classList.contains('open')) return;
+    if (e.target === filterToggleBtn || filterToggleBtn.contains(e.target) || filterPanel.contains(e.target)) return;
+    closeFilterPanel();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && filterPanel.classList.contains('open')) closeFilterPanel();
+  });
+
+  function parseViewsInput(input) {
+    const n = parseInt(input.value, 10);
+    return Number.isFinite(n) && n >= 0 ? n : null;
+  }
+  function syncFilterUI() {
+    filterToggleBtn.classList.toggle('active', filtersActive());
+    const count = activeFilterCount();
+    filterBadge.textContent = String(count);
+    filterBadge.style.display = count ? '' : 'none';
+  }
+  function applyFiltersFromUI() {
+    filters.verifierMin = parseViewsInput(verifierMinInput);
+    filters.verifierMax = parseViewsInput(verifierMaxInput);
+    filters.showcaseMin = parseViewsInput(showcaseMinInput);
+    filters.showcaseMax = parseViewsInput(showcaseMaxInput);
+    syncFilterUI();
+    renderAll();
+  }
+  const debouncedApplyFilters = debounce(applyFiltersFromUI, 350);
+  verifierMinInput.addEventListener('input', debouncedApplyFilters);
+  verifierMaxInput.addEventListener('input', debouncedApplyFilters);
+  showcaseMinInput.addEventListener('input', debouncedApplyFilters);
+  showcaseMaxInput.addEventListener('input', debouncedApplyFilters);
+  filterClearBtn.addEventListener('click', () => {
+    filters.verifierMin = filters.verifierMax = filters.showcaseMin = filters.showcaseMax = null;
+    verifierMinInput.value = verifierMaxInput.value = showcaseMinInput.value = showcaseMaxInput.value = '';
+    syncFilterUI();
+    renderAll();
+  });
+
+  channelFilterEl.addEventListener('change', () => {
+    channelFilter = channelFilterEl.value;
+    renderAll();
+  });
+
+  /** Populated once the data's in — every channel that's the top showcase pick for at least one tracked level, alphabetical. */
+  function populateChannelFilter() {
+    const channels = [...new Set(allDemons.map(d => entryFor(d)?.showcase?.channel).filter(Boolean))].sort();
+    channelFilterEl.innerHTML = `<option value="">All channels</option>` +
+      channels.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
+  }
 
   // --- small chart-building helpers, shared by all three charts ---
 
@@ -99,9 +202,41 @@
 
   // --- KPI row ---
 
+  function median(arr) {
+    if (!arr.length) return null;
+    const sorted = arr.slice().sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  }
+
+  /**
+   * Pearson correlation, on log10 of the raw values rather than the
+   * values themselves — view counts span 4+ orders of magnitude (same
+   * reason every chart on this page uses a log scale), so a raw-value
+   * correlation would just measure whether the single biggest outliers
+   * line up, not whether the two are actually related across the whole
+   * range. Only over levels with both values present and positive.
+   */
+  function logCorrelation(pairs) {
+    const xs = [], ys = [];
+    for (const [v, s] of pairs) {
+      if (v > 0 && s > 0) { xs.push(Math.log10(v)); ys.push(Math.log10(s)); }
+    }
+    if (xs.length < 2) return null;
+    const mean = arr => arr.reduce((a, b) => a + b, 0) / arr.length;
+    const mx = mean(xs), my = mean(ys);
+    let num = 0, dx2 = 0, dy2 = 0;
+    for (let i = 0; i < xs.length; i++) {
+      const dx = xs[i] - mx, dy = ys[i] - my;
+      num += dx * dy; dx2 += dx * dx; dy2 += dy * dy;
+    }
+    const denom = Math.sqrt(dx2 * dy2);
+    return denom === 0 ? null : num / denom;
+  }
+
   function computeStats(demons) {
-    const verifierVals = [], showcaseVals = [];
-    let topVerifier = null, topShowcase = null, topLead = null;
+    const verifierVals = [], showcaseVals = [], pairs = [];
+    let topVerifier = null, topShowcase = null, topLead = null, leads = 0, bothCount = 0;
     for (const d of demons) {
       const entry = entryFor(d);
       if (!entry) continue;
@@ -115,8 +250,11 @@
         showcaseVals.push(s);
         if (!topShowcase || s > topShowcase.views) topShowcase = { demon: d, views: s };
       }
-      if (Number.isFinite(v) && Number.isFinite(s) && s > v && (!topLead || s - v > topLead.lead)) {
-        topLead = { demon: d, lead: s - v };
+      if (Number.isFinite(v) && Number.isFinite(s)) {
+        pairs.push([v, s]);
+        bothCount++;
+        if (s > v) leads++;
+        if (s > v && (!topLead || s - v > topLead.lead)) topLead = { demon: d, lead: s - v };
       }
     }
     const avg = arr => arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : null;
@@ -124,7 +262,13 @@
       count: demons.length,
       avgVerifier: avg(verifierVals),
       avgShowcase: avg(showcaseVals),
+      medianVerifier: median(verifierVals),
+      medianShowcase: median(showcaseVals),
       topVerifier, topShowcase, topLead,
+      showcaseWinRate: bothCount ? leads / bothCount : null,
+      showcaseWins: leads,
+      verifierWins: bothCount - leads,
+      correlation: logCorrelation(pairs),
     };
   }
 
@@ -142,6 +286,10 @@
       kpiTile('Tracked levels', String(stats.count)),
       kpiTile('Avg. verifier views', stats.avgVerifier !== null ? formatCount(Math.round(stats.avgVerifier)) : '—'),
       kpiTile('Avg. showcase views', stats.avgShowcase !== null ? formatCount(Math.round(stats.avgShowcase)) : '—'),
+      kpiTile('Median verifier views', stats.medianVerifier !== null ? formatCount(Math.round(stats.medianVerifier)) : '—',
+        { sub: 'less skewed by outliers than the average' }),
+      kpiTile('Median showcase views', stats.medianShowcase !== null ? formatCount(Math.round(stats.medianShowcase)) : '—',
+        { sub: 'less skewed by outliers than the average' }),
     ];
     if (stats.topVerifier) {
       tiles.push(kpiTile('Most-viewed verification', formatCount(stats.topVerifier.views),
@@ -154,6 +302,14 @@
     if (stats.topLead) {
       tiles.push(kpiTile('Biggest showcase lead', `+${formatCount(stats.topLead.lead)}`,
         { sub: `#${stats.topLead.demon.position} ${stats.topLead.demon.name}`, href: `level.html#${stats.topLead.demon.position}` }));
+    }
+    if (stats.showcaseWinRate !== null) {
+      tiles.push(kpiTile('Showcase win rate', `${Math.round(stats.showcaseWinRate * 100)}%`,
+        { sub: `${stats.showcaseWins} of ${stats.showcaseWins + stats.verifierWins} levels` }));
+    }
+    if (stats.correlation !== null) {
+      tiles.push(kpiTile('Correlation (log views)', stats.correlation.toFixed(2),
+        { sub: 'verifier ↔ showcase, −1 to 1' }));
     }
     kpiRow.innerHTML = tiles.join('');
   }
@@ -383,12 +539,210 @@
     });
   }
 
+  // --- chart 4/5: donut charts (leadership split, channel share) ---
+
+  /**
+   * Generic donut: slices = [{ label, value, color }]. A hit-ring path
+   * per slice (pointer-events:auto) sits behind the painted slice
+   * (pointer-events:none in CSS, same reason as every other chart on
+   * this page — see the SVG chart chrome comment in stats.css), and the
+   * legend is the identity channel (never color alone) doubling as this
+   * chart's "View as table" — a 2-4 slice donut's whole dataset already
+   * fits directly on screen, so a separate collapsed table would just
+   * repeat the legend.
+   */
+  function renderDonut(bodyEl, legendEl, slices, { centerLabel = 'Total' } = {}) {
+    const total = slices.reduce((a, s) => a + s.value, 0);
+    if (!total) {
+      bodyEl.innerHTML = `<div class="chart-empty">No data yet.</div>`;
+      legendEl.innerHTML = '';
+      return;
+    }
+    const size = 200, r = 92, innerR = 58, cx = size / 2, cy = size / 2;
+    let angle = -Math.PI / 2;
+    const arcs = slices.filter(s => s.value > 0).map(s => {
+      const frac = s.value / total;
+      const a0 = angle;
+      angle += frac * Math.PI * 2;
+      return { ...s, a0, a1: angle, frac };
+    });
+
+    function slicePath(a0, a1) {
+      const full = (a1 - a0) >= Math.PI * 2 - 0.001;
+      if (full) {
+        return `M${cx + r},${cy} A${r},${r} 0 1 1 ${cx - r},${cy} A${r},${r} 0 1 1 ${cx + r},${cy} `
+          + `M${cx + innerR},${cy} A${innerR},${innerR} 0 1 0 ${cx - innerR},${cy} A${innerR},${innerR} 0 1 0 ${cx + innerR},${cy} Z`;
+      }
+      const largeArc = (a1 - a0) > Math.PI ? 1 : 0;
+      const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0);
+      const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+      const ix0 = cx + innerR * Math.cos(a1), iy0 = cy + innerR * Math.sin(a1);
+      const ix1 = cx + innerR * Math.cos(a0), iy1 = cy + innerR * Math.sin(a0);
+      return `M${x0},${y0} A${r},${r} 0 ${largeArc} 1 ${x1},${y1} L${ix0},${iy0} A${innerR},${innerR} 0 ${largeArc} 0 ${ix1},${iy1} Z`;
+    }
+
+    let svg = `<svg viewBox="0 0 ${size} ${size}" role="img" aria-label="Donut chart">`;
+    arcs.forEach((s, i) => {
+      const path = slicePath(s.a0, s.a1);
+      svg += `<path class="donut-hit" d="${path}" data-i="${i}" />`;
+      svg += `<path class="donut-slice" d="${path}" fill="${s.color}" data-i="${i}" />`;
+    });
+    svg += `<text class="donut-center-value" x="${cx}" y="${cy - 2}">${escapeHtml(formatCount(total))}</text>`;
+    svg += `<text class="donut-center-label" x="${cx}" y="${cy + 14}">${escapeHtml(centerLabel)}</text>`;
+    svg += `</svg>`;
+    bodyEl.innerHTML = svg;
+
+    legendEl.innerHTML = arcs.map(s => `
+      <span class="legend-key"><span class="legend-dot" style="background:${s.color}"></span>${escapeHtml(s.label)} <span class="mono">${Math.round(s.frac * 100)}%</span></span>
+    `).join('');
+
+    const tooltip = makeTooltip(bodyEl);
+    bodyEl.querySelectorAll('.donut-hit').forEach(hit => {
+      const s = arcs[+hit.dataset.i];
+      hit.addEventListener('pointermove', (e) => {
+        const rect = bodyEl.getBoundingClientRect();
+        tooltip.show(e.clientX - rect.left, e.clientY - rect.top, `
+          <div class="tt-title">${escapeHtml(s.label)}</div>
+          <div class="tt-row"><span class="tt-key" style="background:${s.color}"></span><span class="tt-value">${escapeHtml(formatCount(s.value))}</span> (${Math.round(s.frac * 100)}%)</div>
+        `);
+      });
+      hit.addEventListener('pointerleave', () => tooltip.hide());
+    });
+  }
+
+  function renderLeadDonut(demons) {
+    let showcaseWins = 0, verifierWins = 0;
+    for (const d of demons) {
+      const entry = entryFor(d);
+      const v = entry?.verifier?.viewCount, s = entry?.showcase?.viewCount;
+      if (!Number.isFinite(v) || !Number.isFinite(s)) continue;
+      if (s > v) showcaseWins++;
+      else verifierWins++;
+    }
+    renderDonut(leadBody, leadLegend, [
+      { label: 'Showcase leads', value: showcaseWins, color: 'var(--primary)' },
+      { label: 'Verifier leads', value: verifierWins, color: 'var(--text-mid)' },
+    ], { centerLabel: 'Levels' });
+  }
+
+  // Three named hues (blue/yellow/aqua) rather than the site's own
+  // orange — "showcase" already means something specific in orange
+  // everywhere else on this page (see the file header), and reusing it
+  // here for "channel #2" specifically would read as if it meant that
+  // again. Validated all-pairs CVD-safe together (a donut is an
+  // all-pairs form — any two slices can end up adjacent depending on
+  // the data) via the project's dataviz skill's validator; past three
+  // series the skill's own default palette can't clear that bar either,
+  // which is why this folds the rest into one muted "Other" slice
+  // instead of adding a 4th/5th named hue.
+  const SHARE_COLORS = ['#3987e5', '#c98500', '#199e70'];
+  const SHARE_OTHER_COLOR = 'var(--text-dim)';
+
+  function renderShareDonut(demons) {
+    const counts = new Map();
+    for (const d of demons) {
+      const channel = entryFor(d)?.showcase?.channel;
+      if (!channel) continue;
+      counts.set(channel, (counts.get(channel) || 0) + 1);
+    }
+    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+    const top = sorted.slice(0, 3);
+    const rest = sorted.slice(3).reduce((a, [, n]) => a + n, 0);
+    const slices = top.map(([channel, n], i) => ({ label: channel, value: n, color: SHARE_COLORS[i] }));
+    if (rest > 0) slices.push({ label: 'Other', value: rest, color: SHARE_OTHER_COLOR });
+    renderDonut(shareBody, shareLegend, slices, { centerLabel: 'Levels' });
+  }
+
+  // --- chart 6: distribution of view counts (histogram) ---
+
+  const HIST_BUCKETS = [
+    { label: '<10K', max: 1e4 },
+    { label: '10K-100K', max: 1e5 },
+    { label: '100K-1M', max: 1e6 },
+    { label: '1M-10M', max: 1e7 },
+    { label: '10M+', max: Infinity },
+  ];
+  function histBucketIndex(v) {
+    for (let i = 0; i < HIST_BUCKETS.length; i++) if (v < HIST_BUCKETS[i].max) return i;
+    return HIST_BUCKETS.length - 1;
+  }
+
+  function renderHistogram(demons) {
+    const counts = HIST_BUCKETS.map(b => ({ label: b.label, v: 0, s: 0 }));
+    for (const d of demons) {
+      const entry = entryFor(d);
+      const v = entry?.verifier?.viewCount, s = entry?.showcase?.viewCount;
+      if (Number.isFinite(v)) counts[histBucketIndex(v)].v++;
+      if (Number.isFinite(s)) counts[histBucketIndex(s)].s++;
+    }
+    if (!counts.some(c => c.v || c.s)) {
+      histBody.innerHTML = `<div class="chart-empty">No data yet.</div>`;
+      histLegend.innerHTML = '';
+      return;
+    }
+    histLegend.innerHTML = `
+      <span class="legend-key"><span class="legend-line" style="background:var(--text-mid)"></span>Verifier</span>
+      <span class="legend-key"><span class="legend-line" style="background:var(--primary)"></span>Showcase</span>
+    `;
+
+    const W = 760, H = 320, M = { l: 46, r: 20, t: 16, b: 40 };
+    const plotW = W - M.l - M.r, plotH = H - M.t - M.b;
+    const maxCount = Math.max(1, ...counts.map(c => Math.max(c.v, c.s)));
+    const groupW = plotW / counts.length;
+    const colW = Math.min(28, groupW * 0.32);
+    const yAt = n => M.t + plotH - (n / maxCount) * plotH;
+
+    // y-axis: whole-number ticks only, thinned to avoid crowding when the range is small.
+    const rawStep = Math.ceil(maxCount / 5);
+    const yStep = Math.max(1, rawStep);
+    const yTicks = [];
+    for (let n = 0; n <= maxCount; n += yStep) yTicks.push(n);
+
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribution of verifier and showcase view counts">`;
+    yTicks.forEach(n => {
+      const yp = yAt(n);
+      svg += `<line class="chart-axis" x1="${M.l}" y1="${yp}" x2="${M.l + plotW}" y2="${yp}" />`;
+      svg += `<text class="chart-axis-text" x="${M.l - 8}" y="${yp + 3}" text-anchor="end">${n}</text>`;
+    });
+
+    counts.forEach((c, i) => {
+      const groupCx = M.l + groupW * (i + 0.5);
+      const vx = groupCx - colW - 2, sx = groupCx + 2;
+      const vTop = yAt(c.v), sTop = yAt(c.s);
+      svg += `<rect class="chart-hit" x="${groupCx - groupW / 2}" y="${M.t}" width="${groupW}" height="${plotH}" data-i="${i}" />`;
+      if (c.v > 0) svg += `<rect class="chart-col-verifier" x="${vx}" y="${vTop}" width="${colW}" height="${M.t + plotH - vTop}" rx="3" />`;
+      if (c.s > 0) svg += `<rect class="chart-col-showcase" x="${sx}" y="${sTop}" width="${colW}" height="${M.t + plotH - sTop}" rx="3" />`;
+      svg += `<text class="chart-axis-text" x="${groupCx}" y="${M.t + plotH + 16}" text-anchor="middle">${escapeHtml(c.label)}</text>`;
+    });
+    svg += `</svg>`;
+
+    const rows = counts.map(c => [c.label, String(c.v), String(c.s)]);
+    histBody.innerHTML = svg + tableToggleHtml('chart-hist-table', ['View-count range', 'Verifier count', 'Showcase count'], rows);
+
+    const tooltip = makeTooltip(histBody);
+    histBody.querySelectorAll('.chart-hit').forEach(hit => {
+      const c = counts[+hit.dataset.i];
+      hit.addEventListener('pointermove', (e) => {
+        const rect = histBody.getBoundingClientRect();
+        tooltip.show(e.clientX - rect.left, e.clientY - rect.top, `
+          <div class="tt-title">${escapeHtml(c.label)}</div>
+          <div class="tt-row"><span class="tt-key" style="background:var(--text-mid)"></span>Verifier <span class="tt-value">${c.v}</span></div>
+          <div class="tt-row"><span class="tt-key" style="background:var(--primary)"></span>Showcase <span class="tt-value">${c.s}</span></div>
+        `);
+      });
+      hit.addEventListener('pointerleave', () => tooltip.hide());
+    });
+  }
+
   // --- wiring ---
 
   function renderAll() {
     const demons = filteredDemons();
     renderKpis(computeStats(demons));
     renderScatter(demons);
+    renderLeadDonut(demons);
+    renderShareDonut(demons);
+    renderHistogram(demons);
     renderTrend(demons);
     renderChannels(demons);
   }
@@ -411,6 +765,7 @@
       allDemons = demons;
       cache = cacheData;
       hideBanner();
+      populateChannelFilter();
       renderAll();
     } catch (err) {
       console.error(err);

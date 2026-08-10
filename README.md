@@ -85,17 +85,31 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   refills (see [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no
   trigger lives here.
 - **Stats page (`stats.html`)** — linked from the header (bar-chart icon), unlike the queue page.
-  Averages, records, and three hand-built SVG charts (no charting library — this site has no build
+  Averages, records, and six hand-built SVG charts (no charting library — this site has no build
   step to bring one in through) aggregated across the tracked list from the same two sources every
-  other page already reads (AredlAPI's cached full list, SharedYtCache's whole-cache fetch): a
-  verifier-views-vs-showcase-views scatter (log/log, a `y=x` reference line so it's visible at a
-  glance which side of "showcase out-viewed the verification video" a level falls on), average
-  views by rank bucket (a two-line chart, 10 ranks per bucket), and total showcase views by
-  channel. One **All/Main/Extended** filter row scopes the KPI tiles and all three charts together.
-  Every chart has a hover tooltip (hit target larger than the mark, not just the painted pixels)
-  and a collapsed "View as table" fallback, so nothing on the page is chart-only. Color follows the
-  same gray-verifier/orange-showcase mapping the list page's legend and cards already use, not a
-  new convention (`js/stats.js`).
+  other page already reads (AredlAPI's cached full list, SharedYtCache's whole-cache fetch):
+  - A verifier-views-vs-showcase-views **scatter** (log/log, a `y=x` reference line so it's visible
+    at a glance which side of "showcase out-viewed the verification video" a level falls on).
+  - Two **donuts** — "Who leads" (share of levels where the showcase out-views the verifier, or
+    doesn't; same gray/orange mapping as everywhere else on the page) and "Showcase channel share"
+    (share of levels *won* by each channel, top 3 + an "Other" bucket, in three named hues — see
+    the "why not the site's orange" comment in `js/stats.js`, and note this is the one place on the
+    page using a real categorical palette, validated against the project's dataviz skill).
+  - A **histogram** of the distribution of view counts (grouped columns, verifier vs. showcase, by
+    log-scale bucket).
+  - Average views **by rank bucket** (a two-line chart, 10 ranks per bucket).
+  - **Total showcase views by channel** (horizontal bars).
+
+  Three filters — **All/Main/Extended** range chips, a **channel** select, and a **verifier/showcase
+  view-count range** panel (the same Filters UI as the list page, sharing its CSS, see
+  `css/base.css`) — combine to scope the KPI row and every chart together. KPI tiles cover count,
+  mean *and* median (the median is less skewed by the handful of outlier levels a mean isn't),
+  records, a showcase win rate, and a log-scale Pearson correlation between the two view counts.
+  Every chart has a hover tooltip (hit target larger than the mark, not just the painted pixels;
+  testing caught the painted marks intercepting their own hover instead of the hit layer beneath —
+  fixed with `pointer-events: none` on every decorative mark, see `js/stats.js`) and either a
+  collapsed "View as table" fallback or, for the two donuts, a legend that already shows the whole
+  (2-4 row) dataset directly — so nothing on the page is chart-only (`js/stats.js`).
 - **Keyboard shortcuts** (`js/shortcuts.js`, all four pages) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
   to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
   header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
