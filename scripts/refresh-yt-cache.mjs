@@ -148,6 +148,25 @@ function extractYouTubeId(url) {
   return m ? m[1] : null;
 }
 
+// Known-bad candidates that keep surfacing as false positives despite
+// passing ID/name matching — e.g. a "Top 10 hardest levels" compilation
+// mentions a dozen level names/IDs in passing without being a showcase
+// *of* any one of them. Hand-maintained in showcase-blacklist.json
+// rather than inline here, so adding one doesn't need touching this
+// script — checked in buildLevelIndex() below, before either matching
+// pass, so a blacklisted video contributes zero candidates for any
+// level rather than needing to be pruned back out by name/channel.
+const BLACKLIST_PATH = path.join(__dirname, 'showcase-blacklist.json');
+const blacklist = JSON.parse(await readFile(BLACKLIST_PATH, 'utf8'));
+const BLACKLISTED_VIDEO_IDS = new Set(blacklist.videos.map(extractYouTubeId).filter(Boolean));
+const BLACKLISTED_TITLE_PHRASES = (blacklist.titlePhrases || []).map(p => p.toLowerCase());
+
+function isBlacklisted(videoId, title) {
+  if (BLACKLISTED_VIDEO_IDS.has(videoId)) return true;
+  const t = (title || '').toLowerCase();
+  return BLACKLISTED_TITLE_PHRASES.some(phrase => t.includes(phrase));
+}
+
 /** Standalone 5-10 digit runs (candidate GD level IDs) — not adjacent to further digits, so a 6-digit ID can't falsely match inside a longer number. */
 function extractLevelIds(text) {
   return [...new Set((text || '').match(/(?<!\d)\d{5,10}(?!\d)/g) || [])];
@@ -442,6 +461,7 @@ function buildLevelIndex(cache, levels) {
     // channels is a trivial number of regex compiles, once per run.
     const matchers = nameMatchers(levels, nameMatchPatternFor(channel));
     for (const [videoId, v] of Object.entries(entry.videos)) {
+      if (isBlacklisted(videoId, v.title)) continue;
       for (const levelId of v.levelIds) addCandidate(levelId, videoId, v, channel.channelId);
       const nameMatchText = v[nameField] || '';
       for (const { levelId, regex } of matchers) {
