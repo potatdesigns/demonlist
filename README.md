@@ -22,7 +22,15 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
 
 ## What it does
 
-- **List page (`index.html`)** — pulls the top 150 of AREDL's live, currently-ranked list (AREDL
+- **Home page (`index.html`)** — the actual landing page: intro, a "View the list" CTA, two
+  spotlight cards (current #1, and a level "featured today" — a deterministic daily pick, seeded
+  by the calendar date so it's stable through the day rather than re-rolling on reload, see
+  `seededIndexForToday()` in `js/home.js`), a **recent changes** panel pulled live from AREDL's
+  own `/changelog` endpoint (filtered to changes that touched this site's own top 150 — AREDL's
+  full list runs to ~1600 levels, and its own `legacy` cutoff is much lower than 150, so this app
+  defines "legacy" as "outside the top 150" independent of AREDL's definition — see
+  `fetchChangelog()` in `js/api-aredl.js`), and a **Demonlist Roulette** teaser (see below).
+- **List page (`list.html`)** — pulls the top 150 of AREDL's live, currently-ranked list (AREDL
   itself has ~1600 rated extreme demons; see [Reducing to a top-150 list](#reducing-to-a-top-150-list))
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
   creator(s), publisher, verifier, and — side by side — the verifier video's view count vs. the
@@ -77,8 +85,9 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   (it silently serves a small gray placeholder with a real `200` status rather than a 404 for
   those, so this checks the loaded image's actual pixel width rather than trusting the response to
   fail).
-- **Queue page (`queue.html`)** — not linked from anywhere in the UI, deliberately (direct-URL-only,
-  an admin/curiosity view rather than something every visitor needs). A plain top-to-bottom list
+- **Queue page (`queue.html`)** — reachable from its header's Home button (and `Ctrl+Alt+Q`), but
+  still not linked from any *other* page's nav — an admin/curiosity view once you're there, rather
+  than something surfaced as a primary destination. A plain top-to-bottom list
   (no cards, closer to AREDL's own changelog styling) showing the *actual* persisted
   showcase-discovery queue in its real stored order — not a fresh client-side re-sort — so it
   visibly shrinks as the discover workflow works through it and jumps back to ~150 once it
@@ -110,7 +119,12 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   fixed with `pointer-events: none` on every decorative mark, see `js/stats.js`) and either a
   collapsed "View as table" fallback or, for the two donuts, a legend that already shows the whole
   (2-4 row) dataset directly — so nothing on the page is chart-only (`js/stats.js`).
-- **Keyboard shortcuts** (`js/shortcuts.js`, all four pages) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
+- **Demonlist Roulette** (`js/roulette.js`, dice icon in the header, every page) — a more
+  theatrical alternative to the plain "Random level" button: a slot-reel modal spins through random
+  ranks before landing on one, then reveals that level's name with a **View level** link. Same
+  underlying pick (a uniform random rank) as `NavActions.goToRandomLevel()`, just staged instead of
+  an instant redirect.
+- **Keyboard shortcuts** (`js/shortcuts.js`, every page) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
   to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
   header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
   the floating `?` button, bottom-right). `Ctrl+Alt` rather than a bare letter or a single-modifier
@@ -123,21 +137,26 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   incidentally. `?` stays bare regardless — not a letter, and "press ? for help" is too established
   a convention (GitHub, Gmail, Slack) to bury behind a modifier. Suspended while a text field is
   focused, and `M`/`E` update the current page in place via a hash change when already on
-  `index.html` rather than reloading. `level.html` also has its own `ArrowLeft`/`ArrowRight` for
+  `list.html` rather than reloading. `level.html` also has its own `ArrowLeft`/`ArrowRight` for
   Previous/Next (see above), not listed in this panel since it's page-specific rather than
   site-wide.
-- **Settings** (`js/settings.js`, gear icon, index/level/stats.html — no header-actions slot on
-  queue.html, same as the Random/Stats buttons, though its *effects* still apply there, see below)
-  — a slide-in side panel for four preferences, persisted to `localStorage`
-  (`CONFIG.STORAGE.SETTINGS`) and applied immediately, no reload needed: **default list on open**
-  (Main/Extended — only affects a bare `index.html` with no page in the URL, never an explicit
-  `#main`/`#extended` link), **open levels in a new tab**, **autoplay videos** (muted — browsers
-  block unmuted autoplay outright, so this always pairs `autoplay=1` with `mute=1`), and **reduce
-  motion** (the same effect `prefers-reduced-motion` already gets from the OS, opted into manually
-  here). Reduce-motion is also set by a tiny inline `<script>` in every page's `<head>`, before
-  `js/settings.js` itself loads, so a returning visitor's choice is already applied before first
-  paint. (A light-theme toggle briefly lived here too — cut, it didn't look good; see git history
-  if it's ever worth revisiting.) No "remove cooldown" toggle either — the per-level refresh
+- **Settings** (`js/settings.js`, gear icon, every page) — a slide-in side panel for six
+  preferences, persisted to `localStorage` (`CONFIG.STORAGE.SETTINGS`) and applied immediately, no
+  reload needed: **accent color** (six presets, orange by default — retints `--primary`/
+  `--primary-dark` sitewide plus the brand mark, applied as inline styles on `:root` so every
+  existing `var(--primary)` picks it up unchanged; `--primary-on` switches the on-accent text color
+  between near-black for the warm default and white for the rest, see `ACCENT_PRESETS` in
+  `js/settings.js`), **level display** (Cards or a denser AREDL-style List row layout on the list
+  page), **default list on open** (Main/Extended — only affects a bare `list.html` with no page in
+  the URL, never an explicit `#main`/`#extended` link), **open levels in a new tab**, **autoplay
+  videos** (muted — browsers block unmuted autoplay outright, so this always pairs `autoplay=1`
+  with `mute=1`), and **reduce motion** (the same effect `prefers-reduced-motion` already gets from
+  the OS, opted into manually here). Reduce-motion and accent color are also set by a tiny inline
+  `<script>` in every page's `<head>`, before `js/settings.js` itself loads, so a returning
+  visitor's choices are already applied before first paint (the accent presets are duplicated in
+  that inline script since it must run before `js/settings.js` does — keep both in sync). (A
+  light-theme toggle briefly lived here too — cut, it didn't look good; see git history if it's
+  ever worth revisiting.) No "remove cooldown" toggle either — the per-level refresh
   cooldown (`worker/src/index.js`, `COOLDOWN_SECONDS`, now 1 minute — see
   [One-click refresh trigger](#one-click-refresh-trigger)) is a single rate limit shared by every
   visitor, enforced server-side in Cloudflare KV specifically so no one visitor can trigger the
@@ -475,32 +494,44 @@ outright; harmless if never triggered, useful insurance if AREDL's CORS setup ev
 ## File layout
 
 ```
-index.html                  list page markup
-level.html                   detail page markup
-queue.html                    read-only priority-queue view markup, see "What it does" above
-stats.html                     averages/records/charts markup, see "What it does" above
+index.html                  home page markup — intro, spotlight cards, recent changes, roulette teaser
+list.html                    list page markup (formerly at index.html)
+level.html                    detail page markup
+queue.html                     read-only priority-queue view markup, see "What it does" above
+stats.html                      averages/records/charts markup, see "What it does" above
 assets/
-  logo.png                   site logo — header mark + PNG favicon source (256px, downsized from the original)
-  favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png
+  logo.png                   unused by any page now (the header mark is an inline recolorable SVG,
+                              see css/base.css's .brand-mark) — still the favicon source
+  favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png;
+                              static, doesn't follow the accent-color setting (see "Settings" above)
 css/
-  base.css                   design tokens, header, shared layout/states, range-chip group
-  list.css                    card grid, pager, search/jump/filter/sort controls
+  base.css                   design tokens, header (incl. the inline SVG brand mark), shared
+                              layout/states, range-chip group, roulette modal, settings panel
+  list.css                    card grid, pager, search/jump/filter/sort controls, list-mode rows;
+                               also loaded by index.html for the spotlight cards, see home.css below
+  home.css                     home-page-only layout: hero, spotlight row, changes panel, roulette teaser
   detail.css                   detail page layout + dual video panels + Previous/Next
   queue.css                     plain-list row styling for queue.html
   stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
-  utils.js                     formatting/parsing helpers + corsFetchJson + positionColor(), shared by all pages
-  api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache branch's aredl-cache.json first
+  utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
+                                dominantColor()/resolveThumbnailColor() (per-thumbnail accent color,
+                                localStorage-cached) + timeAgo(), shared by all pages
+  api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache
+                                 branch's aredl-cache.json first; also fetchChangelog() (top-150-filtered
+                                 recent changes, used by the home page)
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  nav-actions.js                   Copy link + Random level + Stats header buttons, index/level/stats.html, see "What it does" above
-  settings.js                       default-list/new-tab/autoplay/motion side panel, all four pages, see "What it does" above
+  roulette.js                      Demonlist Roulette slot-reel modal, every page, see "What it does" above
+  nav-actions.js                   Home + Roulette + Random level + Stats + Copy link header buttons, every page
+  settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion side panel, every page
+  home.js                           home page controller — spotlight cards + recent-changes panel
   list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
-  shortcuts.js                        Ctrl+Alt+M/E/Q/R/S + ? keyboard shortcuts and the shortcuts panel, all four pages, see "What it does" above
+  shortcuts.js                        Ctrl+Alt+M/E/Q/R/S + ? keyboard shortcuts and the shortcuts panel, every page
   stats.js                            stats page controller — averages/records/charts, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/

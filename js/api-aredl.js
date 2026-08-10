@@ -54,6 +54,7 @@ const AredlAPI = (() => {
     listed: () => `${CONFIG.AREDL_BASE}/levels`,
     detail: (id) => `${CONFIG.AREDL_BASE}/levels/${id}`,
     creators: (id) => `${CONFIG.AREDL_BASE}/levels/${id}/creators`,
+    changelog: (page) => `${CONFIG.AREDL_BASE}/changelog?page=${page}`,
   };
 
   /** AREDL players are { id, username, global_name } — global_name is the freely-set display name. */
@@ -273,5 +274,43 @@ const AredlAPI = (() => {
   // in-memory cache hit (see fetchDemon above) rather than a live call.
   const fetchExtras = fetchDemon;
 
-  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition };
+  /** Every numeric rank a changelog action references, whatever its shape (Placed only has new_position; Raised/Lowered/MovedToLegacy have both; Swapped nests its position under upper_position) — used below to decide whether an entry touched the tracked top CONFIG.LIST_SIZE at all. */
+  function changelogPositions(entry) {
+    const variant = Object.values(entry.action || {})[0] || {};
+    return [variant.new_position, variant.old_position, variant.upper_position].filter(Number.isFinite);
+  }
+
+  /**
+   * Recent list movement, filtered to changes that touched the top
+   * CONFIG.LIST_SIZE — AREDL's full list runs to ~1600 levels, and a
+   * change entirely below that cutoff isn't something this site shows a
+   * ranking for at all, so it'd just be noise in a "recent changes"
+   * panel here. Note AREDL's own `legacy` flag means something
+   * different (dropped off AREDL's list entirely, a much lower cutoff
+   * than 150) — this app defines "legacy" as anything outside its own
+   * top CONFIG.LIST_SIZE, not AREDL's definition.
+   *
+   * Pages the changelog (20 entries/page in AREDL's response) until
+   * either maxResults relevant entries are found or maxPages is
+   * exhausted, since most pages are entirely legacy-range noise once
+   * the list is calm — page 1 alone isn't a safe assumption.
+   */
+  async function fetchChangelog({ maxResults = 12, maxPages = 8 } = {}) {
+    const results = [];
+    for (let page = 1; page <= maxPages && results.length < maxResults; page++) {
+      const res = await corsFetchJson(ENDPOINTS.changelog(page));
+      if (!res.ok && !res.viaProxy) break;
+      const json = await res.json().catch(() => null);
+      const entries = Array.isArray(json?.data) ? json.data : [];
+      if (!entries.length) break;
+      for (const entry of entries) {
+        const positions = changelogPositions(entry);
+        if (positions.length && Math.min(...positions) <= CONFIG.LIST_SIZE) results.push(entry);
+        if (results.length >= maxResults) break;
+      }
+    }
+    return results;
+  }
+
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog };
 })();

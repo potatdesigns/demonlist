@@ -14,12 +14,12 @@
    it's not a letter, so none of the above applies, and "press ? for
    help" is an established enough convention (GitHub, Gmail, Slack) to
    keep as-is rather than burying it behind a modifier. Site-wide
-   (included on index/level/queue/stats.html) so the shortcuts work no
-   matter which page you're on; each one degrades to a full navigation
-   when it can't just update the current page in place (see go()
-   below). 'r' calls into js/nav-actions.js (NavActions.goToRandomLevel
-   — loaded on all four pages, ahead of this script), which also owns
-   the equivalent header button.
+   (included on every page) so the shortcuts work no matter which page
+   you're on; each one degrades to a full navigation when it can't just
+   update the current page in place (see go() below). 'r' calls into
+   js/nav-actions.js (NavActions.goToRandomLevel — loaded ahead of this
+   script wherever this script is), which also owns the equivalent
+   header button.
    ===================================================================== */
 
 (() => {
@@ -41,7 +41,7 @@
       // hashchange listener re-syncs in place, no reload.
       window.location.hash = hash;
     } else {
-      window.location.href = `index.html#${hash}`;
+      window.location.href = `list.html#${hash}`;
     }
   }
 

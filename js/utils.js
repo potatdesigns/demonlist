@@ -9,6 +9,21 @@ function formatCount(n) {
   return (n / 1_000_000).toFixed(n < 10_000_000 ? 1 : 0) + 'M';
 }
 
+/** "3h ago" / "2d ago" style relative time, for the home page's recent-changes panel. Falls back to a plain date past a month out — nobody needs "changelog" precision on something from three months ago. */
+function timeAgo(isoString) {
+  const then = new Date(isoString).getTime();
+  if (!Number.isFinite(then)) return '';
+  const seconds = Math.max(0, (Date.now() - then) / 1000);
+  if (seconds < 60) return 'just now';
+  const minutes = seconds / 60;
+  if (minutes < 60) return `${Math.floor(minutes)}m ago`;
+  const hours = minutes / 60;
+  if (hours < 24) return `${Math.floor(hours)}h ago`;
+  const days = hours / 24;
+  if (days < 30) return `${Math.floor(days)}d ago`;
+  return new Date(then).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
 function extractYouTubeId(url) {
   if (!url) return null;
   const patterns = [
@@ -116,17 +131,21 @@ function rgbToHsl(r, g, b) {
 }
 
 /**
- * "Vibrant" dominant color from a loaded, decoded <img> — downscales onto
- * a small canvas, quantizes pixels into coarse RGB buckets, and picks the
- * most common bucket after throwing out near-black/near-white/desaturated
- * pixels (GD gameplay thumbnails are mostly black background and white
- * UI, which would otherwise win almost every vote). The winning bucket is
- * then re-normalized to a fixed saturation/lightness band so a washed-out
- * or over-dark source frame still reads as a clear accent color, the same
- * job positionColor()'s fixed 74%/60% did for the fallback gradient.
- * Returns null (caller falls back to positionColor()) if the image has no
- * vivid pixels at all (rare — e.g. a pure grayscale thumbnail) or the
- * canvas read throws (untainted-canvas edge cases, decode failures).
+ * Dominant color from a loaded, decoded <img> — downscales onto a small
+ * canvas, quantizes pixels into coarse RGB buckets, and scores each
+ * bucket by population *and* saturation (a saturated bucket outweighs an
+ * equally-sized gray one, so real color still wins over background noise)
+ * rather than raw frequency alone. Only true near-black/near-white pixels
+ * are thrown out (background void / blown-out UI chrome, not "the
+ * level's color"); everything else — including genuinely gray or muted
+ * footage — stays a candidate, so a level that really is mostly gray
+ * comes back gray rather than an invented vivid color. The winner's own
+ * saturation/lightness are kept, just clamped into a band that stays
+ * legible against the site's dark surfaces (a near-black or near-white
+ * winner would otherwise vanish or blow out as a border/glow color).
+ * Returns null (caller falls back to positionColor()) only if every
+ * pixel was outside the near-black/near-white cutoffs, or the canvas
+ * read throws (untainted-canvas edge cases, decode failures).
  */
 function dominantColor(img) {
   try {
@@ -141,24 +160,31 @@ function dominantColor(img) {
     for (let i = 0; i < data.length; i += 4) {
       const r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
       if (a < 128) continue;
-      const [, s, l] = rgbToHsl(r, g, b);
-      if (l < 10 || l > 90 || s < 18) continue;
+      const [, , l] = rgbToHsl(r, g, b);
+      if (l < 8 || l > 92) continue;
       const key = `${r >> 4},${g >> 4},${b >> 4}`; // quantize to 16 steps/channel
       const cur = buckets.get(key) || { r: 0, g: 0, b: 0, n: 0 };
       cur.r += r; cur.g += g; cur.b += b; cur.n++;
       buckets.set(key, cur);
     }
     if (!buckets.size) return null;
-    let best = null;
-    for (const bucket of buckets.values()) if (!best || bucket.n > best.n) best = bucket;
-    const [hue] = rgbToHsl(best.r / best.n, best.g / best.n, best.b / best.n);
-    return `hsl(${hue.toFixed(1)}, 74%, 60%)`;
+
+    let best = null, bestScore = -1;
+    for (const bucket of buckets.values()) {
+      const [, s] = rgbToHsl(bucket.r / bucket.n, bucket.g / bucket.n, bucket.b / bucket.n);
+      const score = bucket.n * (0.35 + s / 100); // saturation weights the vote without letting a tiny saturated speck beat a huge population
+      if (score > bestScore) { bestScore = score; best = bucket; }
+    }
+    const [hue, sat, light] = rgbToHsl(best.r / best.n, best.g / best.n, best.b / best.n);
+    const clampedSat = Math.max(15, Math.min(85, sat));
+    const clampedLight = Math.max(30, Math.min(68, light));
+    return `hsl(${hue.toFixed(1)}, ${clampedSat.toFixed(0)}%, ${clampedLight.toFixed(0)}%)`;
   } catch {
     return null;
   }
 }
 
-const THUMB_COLOR_CACHE_KEY = 'gddl_thumb_colors_v1';
+const THUMB_COLOR_CACHE_KEY = 'gddl_thumb_colors_v2'; // v2: dominantColor() now keeps a bucket's real saturation/lightness instead of forcing a fixed 74%/60% — bumped so every level recalculates instead of serving stale v1 colors
 let thumbColorCache = null;
 function loadThumbColorCache() {
   if (thumbColorCache) return thumbColorCache;
@@ -172,27 +198,39 @@ function saveThumbColor(src, color) {
   try { localStorage.setItem(THUMB_COLOR_CACHE_KEY, JSON.stringify(cache)); } catch { /* storage full/disabled — extraction just re-runs next visit */ }
 }
 
+/** Synchronous cache read, for a first-paint color instead of waiting on the card to scroll into view and hydrate — a repeat visitor's already-cached levels should never flash the gradient fallback first. undefined means "not cached yet" (still worth trying resolveThumbnailColor); null means "tried, no vivid color found" (don't retry). */
+function getCachedThumbColor(src) {
+  if (!src) return undefined;
+  return loadThumbColorCache()[src];
+}
+
 /**
  * Resolves a level's accent color from its thumbnail's own dominant color
  * (see dominantColor() above) instead of always using the rank-based
  * gradient, so a card's glow actually matches what's in the frame.
- * Cached in localStorage by thumbnail URL — thumbnails don't change once
- * AREDL has a video on file, so repeat visits skip re-decoding every
- * image. Calls back with null (caller keeps its positionColor() value)
- * when there's no real thumbnail yet or extraction isn't possible.
+ * Cached in localStorage, keyed by cacheKey (falls back to img.src) —
+ * thumbnails don't change once AREDL has a video on file, so repeat
+ * visits skip re-decoding every image. Pass an explicit cacheKey when the
+ * actual <img> being sampled isn't the canonical thumbnail URL (e.g.
+ * detail.js samples a higher-res maxresdefault/hqdefault probe for its
+ * background, but caches under the same mqdefault URL js/list.js's cards
+ * use — see youTubeThumbnail() — so the two pages share one cache entry
+ * per level instead of each maintaining its own). Calls back with null
+ * (caller keeps its positionColor() value) when there's no real
+ * thumbnail yet or extraction isn't possible.
  */
-function resolveThumbnailColor(img, callback) {
-  const src = img?.src;
-  if (!src || src.startsWith('data:')) { callback(null); return; }
+function resolveThumbnailColor(img, callback, cacheKey) {
+  const key = cacheKey || img?.src;
+  if (!key || key.startsWith('data:')) { callback(null); return; }
   const cache = loadThumbColorCache();
-  if (src in cache) { callback(cache[src]); return; }
+  if (key in cache) { callback(cache[key]); return; }
   const applyAndCache = () => {
     const color = dominantColor(img);
-    saveThumbColor(src, color);
+    saveThumbColor(key, color);
     callback(color);
   };
   if (img.complete) { applyAndCache(); return; }
-  img.decode().then(applyAndCache).catch(() => { saveThumbColor(src, null); callback(null); });
+  img.decode().then(applyAndCache).catch(() => { saveThumbColor(key, null); callback(null); });
 }
 
 function escapeHtml(str) {

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Applies reduce-motion and the saved accent color before first paint, so a returning visitor's choices don't flash — see js/settings.js's file header. Accent preset values duplicated here (ACCENT_PRESETS lives in js/settings.js) since this must run before any script tag loads. -->
+<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={orange:['#ff6e00','#e66300','#1a0d00'],red:['#ef4444','#dc2626','#ffffff'],magenta:['#e0399b','#c22e85','#ffffff'],violet:['#8b5cf6','#7c3aed','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],green:['#22c55e','#16a34a','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonlist | Main</title>
+<meta name="description" content="An AREDL-powered Geometry Dash extreme demon list, with verifier vs. showcase view counts.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand" style="cursor:pointer;">
+    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Demonlist logo"><rect x="1" y="1" width="30" height="30" rx="8" fill="#141414" stroke="currentColor" stroke-width="2"/><path d="M16 6 L24 16 L16 26 L8 16 Z" fill="currentColor"/><path d="M16 6 L20 16 L16 26 L12 16 Z" fill="#141414" opacity="0.35"/></svg>
+    <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
+  </a>
+  <div class="header-actions" id="header-actions"></div>
+</header>
+
+<main class="page">
+  <section class="list-hero">
+    <h1>Extreme Demon Rankings</h1>
+    <p>
+      Ranked by AREDL's own list. For each level, we also track its verification video
+      against the highest-viewed showcase we can find on YouTube.
+    </p>
+
+    <div class="controls-row">
+      <label class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="search-input" placeholder="Search all levels by name…" aria-label="Search levels">
+      </label>
+      <form class="jump-box" id="jump-form">
+        <span class="jump-hash" aria-hidden="true">#</span>
+        <input type="number" id="jump-input" min="1" aria-label="Open level by rank">
+        <button type="submit" class="btn-ghost" aria-label="Open">&rarr;</button>
+      </form>
+      <div class="filter-box">
+        <button type="button" class="btn-ghost filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
+          Filters<span class="filter-badge" id="filter-badge" style="display:none;"></span>
+        </button>
+        <div class="filter-panel" id="filter-panel">
+          <div class="filter-range">
+            <span>Rank</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-rank-min" placeholder="min" min="1" max="150" inputmode="numeric" aria-label="Minimum rank">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-rank-max" placeholder="max" min="1" max="150" inputmode="numeric" aria-label="Maximum rank">
+            </div>
+          </div>
+          <div class="filter-range">
+            <span>Verifier views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-verifier-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum verifier views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-verifier-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum verifier views">
+            </div>
+          </div>
+          <div class="filter-range">
+            <span>Showcase views</span>
+            <div class="filter-range-inputs">
+              <input type="number" id="filter-showcase-min" placeholder="min" min="0" inputmode="numeric" aria-label="Minimum showcase views">
+              <span aria-hidden="true">&ndash;</span>
+              <input type="number" id="filter-showcase-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum showcase views">
+            </div>
+          </div>
+          <button type="button" class="btn-ghost filter-clear" id="filter-clear">Clear filters</button>
+        </div>
+      </div>
+      <select class="sort-select btn-ghost" id="sort-select" aria-label="Sort by">
+        <option value="">Sort: Position</option>
+        <option value="verifier-desc">Verifier views: High to Low</option>
+        <option value="verifier-asc">Verifier views: Low to High</option>
+        <option value="showcase-desc">Showcase views: High to Low</option>
+        <option value="showcase-asc">Showcase views: Low to High</option>
+      </select>
+    </div>
+
+    <div class="range-chips" id="list-filters" aria-label="List filters">
+      <button type="button" class="range-chip" id="filter-main">Main List <span class="mono">#1–75</span></button>
+      <button type="button" class="range-chip" id="filter-extended">Extended List <span class="mono">#76–150</span></button>
+    </div>
+
+    <div class="legend" aria-hidden="true">
+      <span><span class="swatch" style="background:var(--text-mid)"></span>Verifier video views</span>
+      <span><span class="swatch" style="background:var(--primary)"></span>Top showcase views</span>
+    </div>
+  </section>
+
+  <div class="state-banner" id="state-banner" style="display:none;"></div>
+
+  <div class="demon-grid" id="demon-grid"></div>
+
+  <div class="pager-row" id="pager-row" style="display:none;">
+    <button class="btn-ghost" id="pager-prev" aria-label="Previous page">&larr; Prev</button>
+    <form class="pager-status" id="pager-page-form">
+      Page <input type="number" id="pager-page-input" min="1" aria-label="Page number"> of <span id="pager-total-pages">—</span>
+    </form>
+    <button class="btn-ghost" id="pager-next" aria-label="Next page">Next &rarr;</button>
+  </div>
+</main>
+
+<p class="footer-note">
+  &copy; 2026 &middot; Not affiliated with RobTop Games, Geometry Dash, or AREDL.
+</p>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api-aredl.js"></script>
+<script src="js/data-source.js"></script>
+<script src="js/shared-cache.js"></script>
+<script src="js/cache-admin-ui.js"></script>
+<script src="js/roulette.js"></script>
+<script src="js/nav-actions.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/list.js"></script>
+<script src="js/shortcuts.js"></script>
+</body>
+</html>

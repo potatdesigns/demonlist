@@ -185,7 +185,7 @@
    * supports the same way, and which breaks plain `python -m
    * http.server` local dev entirely) — but a hash needs *no* server
    * involvement at all: the browser never sends it in the request, so
-   * `index.html#main` loads exactly like `index.html` on literally any
+   * `list.html#main` loads exactly like `list.html` on literally any
    * host, and JS just reads `location.hash` once it's there. That's also
    * why `level.html#42` (see cardTemplate()'s detailUrl) doesn't have a
    * question mark either, and why queue.html doesn't have a fragment at
@@ -216,7 +216,7 @@
     if (params.has('main')) return { page: 1, query: '' };
     const page = parseInt(params.get('page'), 10);
     if (Number.isFinite(page) && page > 0) return { page, query: '' };
-    // No page in the URL at all (a bare index.html) — Settings' "default
+    // No page in the URL at all (a bare list.html) — Settings' "default
     // list on open" only applies here, not to an explicit #main/#extended
     // link someone actually navigated to.
     return { page: Settings.get('defaultList') === 'extended' ? 2 : 1, query: '' };
@@ -297,7 +297,12 @@
   }
 
   function cardTemplate(demon, index) {
-    const tierColor = positionColor(demon.position, totalCount);
+    // A repeat visitor's already-cached dominant color (see resolveThumbnailColor()
+    // in js/utils.js) applies immediately here instead of waiting for the card to
+    // scroll into view and hydrate — undefined (never resolved) and null (resolved,
+    // no vivid color found) both correctly fall through to the gradient.
+    const cachedColor = demon.thumbnail ? getCachedThumbColor(demon.thumbnail) : null;
+    const tierColor = cachedColor || positionColor(demon.position, totalCount);
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
       `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
@@ -607,7 +612,7 @@
     currentPage = state.page;
     filterQuery = state.query;
     searchInput.value = filterQuery;
-    writeUrlState(false); // normalize e.g. a bare index.html into index.html#main, without an extra history entry
+    writeUrlState(false); // normalize e.g. a bare list.html into list.html#main, without an extra history entry
 
     gridEl.innerHTML = skeletonCards(CONFIG.PAGE_SIZE);
     hideBanner();
@@ -618,7 +623,7 @@
   // "open in new tab" changes mid-session — load() is cheap here since
   // AredlAPI/SharedYtCache are already in memory by this point, no
   // network round trip. defaultList only matters on the *next* bare
-  // index.html load, nothing to re-render for it now.
+  // list.html load, nothing to re-render for it now.
   let lastOpenInNewTab = Settings.get('openInNewTab');
   let lastDisplayMode = Settings.get('displayMode');
   Settings.subscribe((state) => {

@@ -27,7 +27,7 @@
   async function init() {
     const rankParam = getRankParam();
     if (!rankParam) {
-      root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="index.html">list</a> and click a card.</div>`;
+      root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="list.html">list</a> and click a card.</div>`;
       return;
     }
     root.innerHTML = skeletonDetail();
@@ -53,14 +53,14 @@
       console.error(err);
       root.innerHTML = `
         <div class="state-banner error">Couldn't load this level: ${escapeHtml(err.message)}</div>
-        <a class="back-link" href="index.html">&larr; Back to the list</a>
+        <a class="back-link" href="list.html">&larr; Back to the list</a>
       `;
     }
   }
 
   function skeletonDetail() {
     return `
-      <a class="back-link" href="index.html">&larr; Back to the list</a>
+      <a class="back-link" href="list.html">&larr; Back to the list</a>
       <div class="detail-head">
         <div class="skeleton" style="width:74px;height:44px;"></div>
         <div style="flex:1">
@@ -108,13 +108,19 @@
   }
 
   function renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel) {
-    const tierColor = positionColor(demon.position, totalCount);
+    // Shares its cache entry with js/list.js's cards (same key: youTubeThumbnail's
+    // mqdefault URL) even though mountDetailBackground() below samples a different,
+    // higher-res image for the actual extraction — see resolveThumbnailColor()'s
+    // comment in js/utils.js.
+    const thumbCacheKey = youTubeThumbnail(demon.videoUrl);
+    const cachedColor = thumbCacheKey ? getCachedThumbColor(thumbCacheKey) : null;
+    const tierColor = cachedColor || positionColor(demon.position, totalCount);
     document.title = `Demonlist | ${demon.name}`;
     prevPosition = prevLevel ? demon.position - 1 : null;
     nextPosition = nextLevel ? demon.position + 1 : null;
 
     root.innerHTML = `
-      <a class="back-link" href="index.html">&larr; Back to the list</a>
+      <a class="back-link" href="list.html">&larr; Back to the list</a>
 
       <div class="detail-head">
         <div class="detail-rank" style="--tier-color:${tierColor}">#${demon.position ?? '?'}<span>RANK</span></div>
@@ -201,7 +207,8 @@
     probe.crossOrigin = 'anonymous';
     const upgradeRankColor = () => {
       const rankEl = document.querySelector('.detail-rank');
-      if (rankEl) resolveThumbnailColor(probe, color => { if (color) rankEl.style.setProperty('--tier-color', color); });
+      const cacheKey = youTubeThumbnail(videoUrl); // shared with js/list.js's cards — see resolveThumbnailColor()'s comment
+      if (rankEl) resolveThumbnailColor(probe, color => { if (color) rankEl.style.setProperty('--tier-color', color); }, cacheKey);
     };
     probe.onload = () => {
       const url = probe.naturalWidth > 200 ? maxres : fallback;

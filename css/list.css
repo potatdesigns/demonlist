@@ -1,5 +1,6 @@
 /* =====================================================================
-   LIST PAGE
+   LIST PAGE (list.html) — also loaded by index.html for its card/
+   body-texture reuse, see css/home.css's own header comment.
    ===================================================================== */
 
 /* A faint diamond crosshatch across the whole viewport, fixed and pinned
@@ -10,8 +11,10 @@
    where nothing opaque sits on top of it, which in practice means the
    side gutters beyond the centered .page column and the gaps between
    cards — "the page has texture," not a pattern you consciously notice.
-   Scoped to this file (loaded only by index.html) rather than base.css
-   since it's specifically a Main/Extended-list touch, not sitewide. */
+   Scoped to this file (loaded by list.html, and by index.html for its
+   card-reusing spotlight section — see css/home.css) rather than
+   base.css since it's not meant sitewide (level/stats/queue.html don't
+   load list.css at all). */
 body::before {
   content: '';
   position: fixed;

@@ -92,7 +92,7 @@ input, select, textarea { font-family: inherit; }
 
 img { max-width: 100%; display: block; }
 
-::selection { background: var(--primary); color: #1a0d00; }
+::selection { background: var(--primary); color: var(--primary-on, #1a0d00); }
 
 :focus-visible {
   outline: 2px solid var(--primary);
@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
-.brand-mark { flex-shrink: 0; border-radius: 6px; transition: transform .25s cubic-bezier(.34,1.56,.64,1); }
+.brand-mark { flex-shrink: 0; display: block; color: var(--primary); transition: transform .25s cubic-bezier(.34,1.56,.64,1); }
 .brand:hover .brand-mark { transform: rotate(-8deg) scale(1.08); }
 
 .brand-text {
@@ -267,13 +267,11 @@ img { max-width: 100%; display: block; }
   border-style: dashed;
   color: var(--text-dim);
   cursor: help;
-  transition: color .15s, border-color .15s, letter-spacing .15s;
+  transition: color .15s, border-color .15s;
 }
 .chip-more:hover {
   color: var(--text-hi);
   border-color: var(--tier-color, var(--primary));
-  font-family: 'Chakra Petch', system-ui, sans-serif;
-  letter-spacing: 0.03em;
 }
 
 /* Range-toggle chip group — used by the list page's Main/Extended
@@ -301,8 +299,8 @@ img { max-width: 100%; display: block; }
 .range-chip .mono { font-size: 11px; color: var(--text-dim); }
 .range-chip:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
 .range-chip:active { transform: translateY(0) scale(.96); }
-.range-chip.active { color: #1a0d00; background: var(--primary); border-color: var(--primary); }
-.range-chip.active .mono { color: #1a0d00; opacity: 0.7; }
+.range-chip.active { color: var(--primary-on, #1a0d00); background: var(--primary); border-color: var(--primary); }
+.range-chip.active .mono { color: var(--primary-on, #1a0d00); opacity: 0.7; }
 
 /* Dropdown filter panel — the list page's Verifier/Showcase-views
    range filter and the stats page's matching filter (plus its channel
@@ -321,7 +319,7 @@ img { max-width: 100%; display: block; }
   padding: 0 4px;
   border-radius: 100px;
   background: var(--primary);
-  color: #1a0d00;
+  color: var(--primary-on, #1a0d00);
   font-size: 10px;
   font-weight: 700;
 }
@@ -407,6 +405,25 @@ img { max-width: 100%; display: block; }
 .btn-ghost:active:not(:disabled) { transform: translateY(0) scale(.96); }
 .btn-ghost:disabled { opacity: 0.4; cursor: default; }
 .btn-ghost:disabled:hover { color: var(--text-mid); }
+
+/* The one solid/filled button on the site — reserved for a page's single
+   clearest call to action (the home page's "View the list", the roulette
+   panel's "Spin") rather than every button, the same one-spot-color
+   discipline --primary already gets everywhere else. */
+.btn-primary {
+  padding: 11px 22px;
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--primary-on, #1a0d00);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  transition: filter .15s, transform .15s, box-shadow .15s;
+  box-shadow: 0 8px 24px -8px color-mix(in srgb, var(--primary) 60%, transparent);
+}
+.btn-primary:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
+.btn-primary:active:not(:disabled) { transform: translateY(0) scale(.97); }
+.btn-primary:disabled { opacity: 0.5; cursor: default; }
 
 .footer-note {
   position: relative;
@@ -534,6 +551,114 @@ img { max-width: 100%; display: block; }
 .shortcuts-plus { font-size: 11px; color: var(--text-dim); }
 
 /* =====================================================================
+   ROULETTE — centered modal (js/roulette.js), same overlay/panel
+   mechanics as .shortcuts-overlay/.shortcuts-panel above (backdrop
+   blur, scale+translateY entrance) rather than a new pattern.
+   ===================================================================== */
+.roulette-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease;
+}
+.roulette-overlay.open { opacity: 1; pointer-events: auto; }
+
+.roulette-panel {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  padding: 22px 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.94) translateY(8px);
+  transition: transform .2s cubic-bezier(.34, 1.56, .64, 1);
+}
+.roulette-overlay.open .roulette-panel { transform: scale(1) translateY(0); }
+
+.roulette-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.roulette-head h2 { font-size: 16px; }
+.roulette-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin: 4px 0 16px;
+}
+.roulette-close { font-size: 18px; line-height: 1; }
+
+.roulette-reel-wrap {
+  position: relative;
+  height: 56px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-void);
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+}
+.roulette-reel { will-change: transform; }
+.roulette-cell {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ui-monospace, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-hi);
+}
+/* A center-line highlight so the landing slot reads clearly once the reel settles. */
+.roulette-reel-wrap::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  transform: translateY(-0.5px);
+  background: var(--tier-color, var(--primary));
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.roulette-result {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  background: var(--bg-surface-2);
+  animation: roulette-pop .3s cubic-bezier(.34, 1.56, .64, 1);
+}
+@keyframes roulette-pop {
+  0%   { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.roulette-pick { display: flex; align-items: center; gap: 10px; }
+.roulette-pick-rank {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  color: var(--tier-color, var(--primary));
+}
+.roulette-pick-name { color: var(--text-hi); font-weight: 600; font-size: 13.5px; }
+
+.roulette-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.roulette-actions .btn-primary, .roulette-actions .btn-ghost { flex: 1; text-align: center; }
+
+/* =====================================================================
    SETTINGS — gear icon + slide-in side panel (js/settings.js)
    ===================================================================== */
 
@@ -630,7 +755,7 @@ img { max-width: 100%; display: block; }
   background: var(--text-hi);
   transition: transform .15s, background .15s;
 }
-.settings-switch.on .knob { transform: translateX(18px); background: #1a0d00; }
+.settings-switch.on .knob { transform: translateX(18px); background: var(--primary-on, #1a0d00); }
 
 /* Two/three-way choice, same visual language as .range-chip but a
    compact attached group rather than separate pill buttons — this is
@@ -651,5 +776,24 @@ img { max-width: 100%; display: block; }
   transition: background .15s, color .15s;
 }
 .settings-btn-opt:not(:last-child) { border-right: 1px solid var(--line); }
-.settings-btn-opt.active { background: var(--primary); color: #1a0d00; }
+.settings-btn-opt.active { background: var(--primary); color: var(--primary-on, #1a0d00); }
 .settings-btn-opt:hover:not(.active) { color: var(--text-hi); }
+
+/* Stacked variant (label above, control below, full width) — the accent
+   color swatches need more horizontal room than the settings panel's
+   usual side-by-side label+control row comfortably gives them. */
+.settings-row-stack { flex-direction: column; align-items: stretch; gap: 10px; }
+
+.settings-swatch-group { display: flex; flex-wrap: wrap; gap: 10px; }
+.settings-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--swatch-color);
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 1px var(--line-soft);
+  transition: transform .15s, box-shadow .15s;
+}
+.settings-swatch:hover { transform: scale(1.1); }
+.settings-swatch.active { box-shadow: 0 0 0 2px var(--bg-surface), 0 0 0 4px var(--swatch-color); }

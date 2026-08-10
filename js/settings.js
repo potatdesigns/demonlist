@@ -3,11 +3,19 @@
 
    Site-wide preferences, persisted to localStorage (CONFIG.STORAGE.SETTINGS),
    self-mounting a gear icon into #header-actions wherever it exists
-   (index/level/stats.html — queue.html has no such slot, same reason
-   the Random/Stats buttons skip it too, see js/nav-actions.js) plus a
-   slide-in side panel. Other scripts read the current value via
-   Settings.get(key) — list.js/detail.js do, see their own comments —
-   rather than this file reaching into their DOM directly.
+   (every page now has the slot) plus a slide-in side panel. Other
+   scripts read the current value via Settings.get(key) — list.js/
+   detail.js do, see their own comments — rather than this file reaching
+   into their DOM directly.
+
+   Accent color (ACCENT_PRESETS below) works the same way as
+   reduce-motion: applyEffects() writes --primary/--primary-dark/
+   --primary-on onto :root as inline styles, which beats the
+   stylesheet's own :root{--primary:...} by specificity — every existing
+   var(--primary) reference across css/*.css picks it up unchanged, no
+   per-component theming needed. --primary-on exists because dark text
+   only reads well on the *default* orange (bright/warm hue); the other
+   presets pair with white instead — see ACCENT_PRESETS' own `on` field.
 
    Reduce-motion is also applied by a tiny inline <script> in every
    page's <head> (before this file, before first paint) — this file's
@@ -29,9 +37,23 @@
    ===================================================================== */
 
 const Settings = (() => {
+  // Every hue here sits in roughly the same lightness/saturation band as
+  // the default orange so it stays legible as a border/glow/badge color
+  // wherever --primary is used decoratively — only the on-primary *text*
+  // pairing (buttons, active chips) needs to change per hue, hence `on`.
+  const ACCENT_PRESETS = {
+    orange:  { label: 'Orange',  primary: '#ff6e00', dark: '#e66300', on: '#1a0d00' },
+    red:     { label: 'Red',     primary: '#ef4444', dark: '#dc2626', on: '#ffffff' },
+    magenta: { label: 'Magenta', primary: '#e0399b', dark: '#c22e85', on: '#ffffff' },
+    violet:  { label: 'Violet',  primary: '#8b5cf6', dark: '#7c3aed', on: '#ffffff' },
+    blue:    { label: 'Blue',    primary: '#3b82f6', dark: '#2563eb', on: '#ffffff' },
+    green:   { label: 'Green',   primary: '#22c55e', dark: '#16a34a', on: '#ffffff' },
+  };
+
   const DEFAULTS = {
-    defaultList: 'main', // 'main' | 'extended' — which list index.html opens to with no page in the URL
+    defaultList: 'main', // 'main' | 'extended' — which list list.html opens to with no page in the URL
     displayMode: 'cards', // 'cards' | 'list' — how each level renders in the Main/Extended grid
+    accentColor: 'orange', // key into ACCENT_PRESETS above
     openInNewTab: false, // card links / Previous-Next open in a new tab
     autoplayVideos: false, // detail-page video embeds autoplay, muted (browsers block unmuted autoplay outright)
     reduceMotion: false, // same effect as prefers-reduced-motion, opted into manually
@@ -56,6 +78,11 @@ const Settings = (() => {
 
   function applyEffects() {
     document.documentElement.dataset.reduceMotion = state.reduceMotion ? 'true' : 'false';
+    const accent = ACCENT_PRESETS[state.accentColor] || ACCENT_PRESETS.orange;
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--primary', accent.primary);
+    rootStyle.setProperty('--primary-dark', accent.dark);
+    rootStyle.setProperty('--primary-on', accent.on);
   }
 
   function get(key) { return state[key]; }
@@ -74,8 +101,13 @@ const Settings = (() => {
 
   const SCHEMA = [
     {
+      key: 'accentColor', type: 'swatch', label: 'Accent color',
+      desc: 'Retints the whole site — buttons, tier glows, the brand mark.',
+      options: Object.entries(ACCENT_PRESETS).map(([key, p]) => [key, p.label, p.primary]),
+    },
+    {
       key: 'defaultList', type: 'choice', label: 'Default list on open',
-      desc: 'Which list index.html opens to when the URL has no page in it.',
+      desc: 'Which list list.html opens to when the URL has no page in it.',
       options: [['main', 'Main'], ['extended', 'Extended']],
     },
     {
@@ -113,6 +145,18 @@ const Settings = (() => {
           <button type="button" class="settings-switch${state[item.key] ? ' on' : ''}" data-key="${item.key}" role="switch" aria-checked="${state[item.key]}" aria-label="${escapeHtml(item.label)}">
             <span class="knob"></span>
           </button>
+        </div>
+      `;
+    }
+    if (item.type === 'swatch') {
+      return `
+        <div class="settings-row settings-row-stack">
+          ${label}
+          <div class="settings-swatch-group" data-key="${item.key}" role="group" aria-label="${escapeHtml(item.label)}">
+            ${item.options.map(([value, text, color]) => `
+              <button type="button" class="settings-swatch${state[item.key] === value ? ' active' : ''}" data-value="${value}" style="--swatch-color:${color}" aria-label="${escapeHtml(text)}" title="${escapeHtml(text)}"></button>
+            `).join('')}
+          </div>
         </div>
       `;
     }
@@ -176,6 +220,15 @@ const Settings = (() => {
           const key = group.dataset.key;
           set(key, btn.dataset.value);
           group.querySelectorAll('.settings-btn-opt').forEach(b => b.classList.toggle('active', b === btn));
+        });
+      });
+    });
+    overlay.querySelectorAll('.settings-swatch-group').forEach(group => {
+      group.querySelectorAll('.settings-swatch').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const key = group.dataset.key;
+          set(key, btn.dataset.value);
+          group.querySelectorAll('.settings-swatch').forEach(b => b.classList.toggle('active', b === btn));
         });
       });
     });
