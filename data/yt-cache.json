@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T05:02:48.537Z",
+  "generatedAt": "2026-08-10T05:10:43.832Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -1872,24 +1872,24 @@
     },
     "174221f2-19ab-48b4-8a81-50733db8bd3f": {
       "name": "Midnight",
-      "position": 90,
+      "position": 91,
       "verifier": {
         "id": "NhkN_a9cNi8",
         "url": "https://www.youtube.com/watch?v=NhkN_a9cNi8",
         "title": "Midnight by Yuko VERIFIED | Geometry Dash",
         "channel": "nei",
-        "viewCount": 75099,
-        "viewsCheckedAt": "2026-08-10T05:02:47.797Z"
+        "viewCount": 75110,
+        "viewsCheckedAt": "2026-08-10T05:10:43.831Z"
       },
       "showcase": {
-        "id": "YBm1xeQgz_M",
-        "url": "https://www.youtube.com/watch?v=YBm1xeQgz_M",
-        "title": "[2.2] In The Castle by Robotic24 | Geometry Dash",
-        "channel": "Nexus [GD]",
-        "viewCount": 654925,
-        "viewsCheckedAt": "2026-08-10T05:02:47.797Z"
+        "id": "61OqUiWe7Ck",
+        "url": "https://www.youtube.com/watch?v=61OqUiWe7Ck",
+        "title": "IMPOSSIBLE LEVEL WITH NO WAVE? | \"Cyan Midnight\" by Wuro",
+        "channel": "fnm04",
+        "viewCount": 100141,
+        "viewsCheckedAt": "2026-08-10T05:10:43.831Z"
       },
-      "discoveredAt": "2026-08-09T18:47:40.230Z"
+      "discoveredAt": "2026-08-10T05:10:43.831Z"
     },
     "e444695d-3fc6-4dc8-82f2-0da259ad6dc9": {
       "name": "Doppler (Solo)",
@@ -111810,7 +111810,6 @@
     "4fac9298-93ae-4553-abe9-72a562567318",
     "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
     "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-    "174221f2-19ab-48b4-8a81-50733db8bd3f",
     "52df535a-4674-4af7-8004-bcd5453883a9",
     "596c8672-afa6-43c3-83f2-2078756a0554",
     "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
