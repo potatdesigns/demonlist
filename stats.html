@@ -93,18 +93,27 @@
       <div class="chart-body donut-body" id="chart-lead"></div>
       <div class="chart-legend donut-legend" id="lead-legend"></div>
     </section>
-
-    <section class="chart-card donut-card" id="chart-share-card">
-      <div class="chart-head">
-        <div>
-          <h2>Showcase channel share</h2>
-          <p class="chart-sub">Share of levels *won* by each channel — the top pick by view count, not the total views behind it (see the bar chart below for that).</p>
-        </div>
-      </div>
-      <div class="chart-body donut-body" id="chart-share"></div>
-      <div class="chart-legend donut-legend" id="share-legend"></div>
-    </section>
   </div>
+
+  <section class="chart-card" id="chart-share-card">
+    <div class="chart-head">
+      <div>
+        <h2>Showcase channel share</h2>
+        <p class="chart-sub">Levels *won* by each channel — the top pick by view count, not the total views behind it (see the bar chart below for that). Ranked bar rather than a donut so every channel gets shown by name and color instead of the smaller ones getting lumped together; channels past the top 7 still fold into "Other".</p>
+      </div>
+    </div>
+    <div class="chart-body" id="chart-share"></div>
+  </section>
+
+  <section class="chart-card" id="chart-share-verifier-card">
+    <div class="chart-head">
+      <div>
+        <h2>Verifier channel share</h2>
+        <p class="chart-sub">Same, but by the verification video's channel. Verifiers are almost always a different person per level, so this is mostly "Other" — shown for completeness rather than as a leaderboard.</p>
+      </div>
+    </div>
+    <div class="chart-body" id="chart-share-verifier"></div>
+  </section>
 
   <section class="chart-card" id="chart-hist-card">
     <div class="chart-head">
@@ -136,6 +145,16 @@
       </div>
     </div>
     <div class="chart-body" id="chart-channels"></div>
+  </section>
+
+  <section class="chart-card" id="chart-channels-verifier-card">
+    <div class="chart-head">
+      <div>
+        <h2>Total verifier views by channel</h2>
+        <p class="chart-sub">Summed across every verification video from each channel. Top 12 by total, the rest folded into "Other".</p>
+      </div>
+    </div>
+    <div class="chart-body" id="chart-channels-verifier"></div>
   </section>
 </main>
 

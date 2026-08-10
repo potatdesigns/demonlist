@@ -40,10 +40,11 @@
   const trendBody = document.getElementById('chart-trend');
   const trendLegend = document.getElementById('trend-legend');
   const channelsBody = document.getElementById('chart-channels');
+  const channelsVerifierBody = document.getElementById('chart-channels-verifier');
   const leadBody = document.getElementById('chart-lead');
   const leadLegend = document.getElementById('lead-legend');
   const shareBody = document.getElementById('chart-share');
-  const shareLegend = document.getElementById('share-legend');
+  const shareVerifierBody = document.getElementById('chart-share-verifier');
   const histBody = document.getElementById('chart-hist');
   const histLegend = document.getElementById('hist-legend');
 
@@ -286,10 +287,8 @@
       kpiTile('Tracked levels', String(stats.count)),
       kpiTile('Avg. verifier views', stats.avgVerifier !== null ? formatCount(Math.round(stats.avgVerifier)) : '—'),
       kpiTile('Avg. showcase views', stats.avgShowcase !== null ? formatCount(Math.round(stats.avgShowcase)) : '—'),
-      kpiTile('Median verifier views', stats.medianVerifier !== null ? formatCount(Math.round(stats.medianVerifier)) : '—',
-        { sub: 'less skewed by outliers than the average' }),
-      kpiTile('Median showcase views', stats.medianShowcase !== null ? formatCount(Math.round(stats.medianShowcase)) : '—',
-        { sub: 'less skewed by outliers than the average' }),
+      kpiTile('Median verifier views', stats.medianVerifier !== null ? formatCount(Math.round(stats.medianVerifier)) : '—'),
+      kpiTile('Median showcase views', stats.medianShowcase !== null ? formatCount(Math.round(stats.medianShowcase)) : '—'),
     ];
     if (stats.topVerifier) {
       tiles.push(kpiTile('Most-viewed verification', formatCount(stats.topVerifier.views),
@@ -482,23 +481,29 @@
     });
   }
 
-  // --- chart 3: total showcase views by channel ---
+  // --- chart 3: total views by channel (showcase + verifier) ---
 
-  function renderChannels(demons) {
+  /** Generic "total views by channel" ranked bar, shared by the showcase and verifier variants. Caps at topN rows, folding the rest into one "Other" row — magnitude bars don't have the donut's color-identity ceiling, this cap is purely so a long tail (verifier channels run to 100+, almost all one level each) doesn't turn into a page-length chart. */
+  function renderChannelTotals(bodyEl, demons, videoKey, { barClass, topN = 12, ariaLabel, countLabel }) {
     const totals = new Map();
     for (const d of demons) {
-      const sc = entryFor(d)?.showcase;
-      if (!sc || !Number.isFinite(sc.viewCount)) continue;
-      const key = sc.channel || 'Unknown';
+      const v = entryFor(d)?.[videoKey];
+      if (!v || !Number.isFinite(v.viewCount)) continue;
+      const key = v.channel || 'Unknown';
       const cur = totals.get(key) || { channel: key, total: 0, count: 0 };
-      cur.total += sc.viewCount;
+      cur.total += v.viewCount;
       cur.count += 1;
       totals.set(key, cur);
     }
-    const rows = [...totals.values()].sort((a, b) => b.total - a.total);
+    let rows = [...totals.values()].sort((a, b) => b.total - a.total);
     if (!rows.length) {
-      channelsBody.innerHTML = `<div class="chart-empty">No showcase data yet.</div>`;
+      bodyEl.innerHTML = `<div class="chart-empty">No ${videoKey} data yet.</div>`;
       return;
+    }
+    if (rows.length > topN) {
+      const rest = rows.slice(topN);
+      const other = rest.reduce((a, r) => ({ channel: 'Other', total: a.total + r.total, count: a.count + r.count }), { channel: 'Other', total: 0, count: 0 });
+      rows = [...rows.slice(0, topN), other];
     }
 
     const rowH = 30, barH = 22, gap = 6;
@@ -508,31 +513,32 @@
     const max = Math.max(...rows.map(r => r.total));
     const xw = v => Math.max((v / max) * plotW, 2);
 
-    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Total showcase views by channel">`;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(ariaLabel)}">`;
     rows.forEach((r, i) => {
       const yTop = M.t + i * (rowH + gap);
       const barW = xw(r.total);
+      const cls = r.channel === 'Other' ? 'chart-bar-other' : barClass;
       svg += `<g class="chart-bar-row">`;
       svg += `<text class="chart-bar-name" x="${M.l - 10}" y="${yTop + rowH / 2 + 4}" text-anchor="end">${escapeHtml(r.channel)}</text>`;
       svg += `<rect class="chart-hit" x="0" y="${yTop}" width="${W}" height="${rowH}" data-i="${i}" />`;
-      svg += `<rect class="chart-bar-showcase" x="${M.l}" y="${yTop + (rowH - barH) / 2}" width="${barW}" height="${barH}" rx="4" />`;
+      svg += `<rect class="${cls}" x="${M.l}" y="${yTop + (rowH - barH) / 2}" width="${barW}" height="${barH}" rx="4" />`;
       svg += `<text class="chart-mark-label" x="${M.l + barW + 8}" y="${yTop + rowH / 2 + 4}">${formatCount(r.total)}</text>`;
       svg += `</g>`;
     });
     svg += `</svg>`;
 
     const tableRows = rows.map(r => [r.channel, formatCount(r.total), String(r.count)]);
-    channelsBody.innerHTML = svg + tableToggleHtml('chart-channels-table', ['Channel', 'Total showcase views', 'Levels'], tableRows);
+    bodyEl.innerHTML = svg + tableToggleHtml(`${bodyEl.id}-table`, ['Channel', 'Total views', 'Levels'], tableRows);
 
-    const tooltip = makeTooltip(channelsBody);
-    channelsBody.querySelectorAll('.chart-hit').forEach(hit => {
+    const tooltip = makeTooltip(bodyEl);
+    bodyEl.querySelectorAll('.chart-hit').forEach(hit => {
       const r = rows[+hit.dataset.i];
       hit.addEventListener('pointermove', (e) => {
-        const rect = channelsBody.getBoundingClientRect();
+        const rect = bodyEl.getBoundingClientRect();
         tooltip.show(e.clientX - rect.left, e.clientY - rect.top, `
           <div class="tt-title">${escapeHtml(r.channel)}</div>
           <div class="tt-row">Total <span class="tt-value">${formatCount(r.total)}</span></div>
-          <div class="tt-row">Top pick for <span class="tt-value">${r.count}</span> level${r.count === 1 ? '' : 's'}</div>
+          <div class="tt-row">${countLabel(r.count)}</div>
         `);
       });
       hit.addEventListener('pointerleave', () => tooltip.hide());
@@ -625,32 +631,94 @@
     ], { centerLabel: 'Levels' });
   }
 
-  // Three named hues (blue/yellow/aqua) rather than the site's own
-  // orange — "showcase" already means something specific in orange
-  // everywhere else on this page (see the file header), and reusing it
-  // here for "channel #2" specifically would read as if it meant that
-  // again. Validated all-pairs CVD-safe together (a donut is an
-  // all-pairs form — any two slices can end up adjacent depending on
-  // the data) via the project's dataviz skill's validator; past three
-  // series the skill's own default palette can't clear that bar either,
-  // which is why this folds the rest into one muted "Other" slice
-  // instead of adding a 4th/5th named hue.
-  const SHARE_COLORS = ['#3987e5', '#c98500', '#199e70'];
-  const SHARE_OTHER_COLOR = 'var(--text-dim)';
+  // A donut can't safely carry more than 3 named identity colors — any
+  // two slices can end up adjacent depending on the data (an "all-pairs"
+  // context), and this palette's all-pairs CVD safety only clears three
+  // slots — so channel share is a ranked bar instead: bars in a fixed
+  // order only need *adjacent*-pair safety, which the categorical set
+  // clears for all eight slots. Orange is skipped — "showcase" already
+  // means something specific in orange everywhere else on this page (see
+  // the file header), and reusing it for "channel #2" here would read as
+  // if it meant that again — leaving seven named colors before the rest
+  // fold into one muted "Other" row.
+  //
+  // Colors are assigned once against the *full* unfiltered dataset
+  // (allDemons), ranked by level count, and held fixed per channel from
+  // then on — a filter that changes which channels are visible must
+  // never repaint the ones that stay (dataviz skill: "color follows the
+  // entity, never its rank").
+  const IDENTITY_COLORS = ['#3987e5', '#199e70', '#c98500', '#d55181', '#008300', '#9085e9', '#e66767'];
+  const IDENTITY_OTHER_COLOR = 'var(--text-dim)';
 
-  function renderShareDonut(demons) {
+  function channelCounts(demons, videoKey) {
     const counts = new Map();
     for (const d of demons) {
-      const channel = entryFor(d)?.showcase?.channel;
+      const channel = entryFor(d)?.[videoKey]?.channel;
       if (!channel) continue;
       counts.set(channel, (counts.get(channel) || 0) + 1);
     }
-    const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
-    const top = sorted.slice(0, 3);
-    const rest = sorted.slice(3).reduce((a, [, n]) => a + n, 0);
-    const slices = top.map(([channel, n], i) => ({ label: channel, value: n, color: SHARE_COLORS[i] }));
-    if (rest > 0) slices.push({ label: 'Other', value: rest, color: SHARE_OTHER_COLOR });
-    renderDonut(shareBody, shareLegend, slices, { centerLabel: 'Levels' });
+    return counts;
+  }
+
+  function channelColorMap(videoKey) {
+    const ranked = [...channelCounts(allDemons, videoKey).entries()].sort((a, b) => b[1] - a[1]);
+    const map = new Map();
+    ranked.forEach(([channel], i) => { if (i < IDENTITY_COLORS.length) map.set(channel, IDENTITY_COLORS[i]); });
+    return map;
+  }
+
+  function renderChannelShareBar(bodyEl, demons, videoKey, ariaLabel) {
+    const colorMap = channelColorMap(videoKey);
+    const counts = channelCounts(demons, videoKey);
+    const rows = [];
+    let other = 0;
+    for (const [channel, n] of counts) {
+      if (colorMap.has(channel)) rows.push({ channel, n, color: colorMap.get(channel) });
+      else other += n;
+    }
+    rows.sort((a, b) => b.n - a.n);
+    if (other > 0) rows.push({ channel: 'Other', n: other, color: IDENTITY_OTHER_COLOR });
+
+    if (!rows.length) {
+      bodyEl.innerHTML = `<div class="chart-empty">No data yet.</div>`;
+      return;
+    }
+
+    const total = rows.reduce((a, r) => a + r.n, 0);
+    const rowH = 30, barH = 22, gap = 6;
+    const W = 760, M = { l: 150, r: 60, t: 10, b: 10 };
+    const plotW = W - M.l - M.r;
+    const H = M.t + M.b + rows.length * (rowH + gap) - gap;
+    const max = Math.max(...rows.map(r => r.n));
+    const xw = v => Math.max((v / max) * plotW, 2);
+
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(ariaLabel)}">`;
+    rows.forEach((r, i) => {
+      const yTop = M.t + i * (rowH + gap);
+      const barW = xw(r.n);
+      svg += `<g class="chart-bar-row">`;
+      svg += `<text class="chart-bar-name" x="${M.l - 10}" y="${yTop + rowH / 2 + 4}" text-anchor="end">${escapeHtml(r.channel)}</text>`;
+      svg += `<rect class="chart-hit" x="0" y="${yTop}" width="${W}" height="${rowH}" data-i="${i}" />`;
+      svg += `<rect class="chart-bar-identity" x="${M.l}" y="${yTop + (rowH - barH) / 2}" width="${barW}" height="${barH}" rx="4" fill="${r.color}" />`;
+      svg += `<text class="chart-mark-label" x="${M.l + barW + 8}" y="${yTop + rowH / 2 + 4}">${r.n} (${Math.round(r.n / total * 100)}%)</text>`;
+      svg += `</g>`;
+    });
+    svg += `</svg>`;
+
+    bodyEl.innerHTML = svg;
+
+    const tooltip = makeTooltip(bodyEl);
+    bodyEl.querySelectorAll('.chart-hit').forEach(hit => {
+      const r = rows[+hit.dataset.i];
+      hit.addEventListener('pointermove', (e) => {
+        const rect = bodyEl.getBoundingClientRect();
+        tooltip.show(e.clientX - rect.left, e.clientY - rect.top, `
+          <div class="tt-title">${escapeHtml(r.channel)}</div>
+          <div class="tt-row"><span class="tt-key" style="background:${r.color}"></span><span class="tt-value">${r.n}</span> level${r.n === 1 ? '' : 's'} (${Math.round(r.n / total * 100)}%)</div>
+        `);
+      });
+      hit.addEventListener('pointerleave', () => tooltip.hide());
+    });
   }
 
   // --- chart 6: distribution of view counts (histogram) ---
@@ -741,10 +809,20 @@
     renderKpis(computeStats(demons));
     renderScatter(demons);
     renderLeadDonut(demons);
-    renderShareDonut(demons);
+    renderChannelShareBar(shareBody, demons, 'showcase', 'Showcase channel share');
+    renderChannelShareBar(shareVerifierBody, demons, 'verifier', 'Verifier channel share');
     renderHistogram(demons);
     renderTrend(demons);
-    renderChannels(demons);
+    renderChannelTotals(channelsBody, demons, 'showcase', {
+      barClass: 'chart-bar-showcase',
+      ariaLabel: 'Total showcase views by channel',
+      countLabel: n => `Top pick for <span class="tt-value">${n}</span> level${n === 1 ? '' : 's'}`,
+    });
+    renderChannelTotals(channelsVerifierBody, demons, 'verifier', {
+      barClass: 'chart-bar-verifier',
+      ariaLabel: 'Total verifier views by channel',
+      countLabel: n => `Verified <span class="tt-value">${n}</span> level${n === 1 ? '' : 's'}`,
+    });
   }
 
   rangeChipsEl.querySelectorAll('.range-chip').forEach(chip => {
