@@ -1,27 +1,35 @@
 /* =====================================================================
    KEYBOARD SHORTCUTS
 
-   Plain, unmodified letter keys (m/e/q/r) rather than the Ctrl-combo the
-   idea started as — Ctrl+Q/M/E collide with real browser/OS bindings
-   (tab-close, window-minimize, address-bar search, ...) that JS can't
-   reliably override, and some are intercepted before a page ever sees
-   the keydown at all. A bare letter key is never reserved by the
-   browser and is the same pattern GitHub/Gmail/YouTube use for exactly
-   this reason. Site-wide (included on index/level/queue.html) so the
-   shortcuts work no matter which page you're on; each one degrades to
-   a full navigation when it can't just update the current page in
-   place (see go() below). 'r' calls into js/nav-actions.js
-   (NavActions.goToRandomLevel — loaded on all three pages, ahead of
-   this script), which also owns the equivalent header button.
+   Ctrl+Alt+<letter> for the navigation shortcuts (M/E/Q/R/S) — a combo
+   browsers/OSes essentially never reserve, unlike a bare letter (which
+   can misfire while just typing/browsing normally outside a tracked
+   text field) or a single-modifier Ctrl+letter (which collides with
+   real bindings — tab-close, window-minimize, address-bar search —
+   that JS can't reliably override, and some of which are intercepted
+   before a page ever sees the keydown at all; that was the first cut
+   of this feature). Alt alone is its own hazard on Windows (menu
+   access-key accelerators), but requiring Ctrl *together with* Alt
+   sidesteps that too. '?' stays a bare key on its own, deliberately —
+   it's not a letter, so none of the above applies, and "press ? for
+   help" is an established enough convention (GitHub, Gmail, Slack) to
+   keep as-is rather than burying it behind a modifier. Site-wide
+   (included on index/level/queue/stats.html) so the shortcuts work no
+   matter which page you're on; each one degrades to a full navigation
+   when it can't just update the current page in place (see go()
+   below). 'r' calls into js/nav-actions.js (NavActions.goToRandomLevel
+   — loaded on all four pages, ahead of this script), which also owns
+   the equivalent header button.
    ===================================================================== */
 
 (() => {
   const SHORTCUTS = [
-    { key: 'm', label: 'Main list' },
-    { key: 'e', label: 'Extended list' },
-    { key: 'q', label: 'Queue' },
-    { key: 'r', label: 'Random level' },
-    { key: '?', label: 'Toggle this panel' },
+    { keys: ['Ctrl', 'Alt', 'M'], label: 'Main list' },
+    { keys: ['Ctrl', 'Alt', 'E'], label: 'Extended list' },
+    { keys: ['Ctrl', 'Alt', 'Q'], label: 'Queue' },
+    { keys: ['Ctrl', 'Alt', 'R'], label: 'Random level' },
+    { keys: ['Ctrl', 'Alt', 'S'], label: 'Stats' },
+    { keys: ['?'], label: 'Toggle this panel' },
   ];
 
   const onIndex = !!document.getElementById('demon-grid');
@@ -41,6 +49,10 @@
     if (!onQueue) window.location.href = 'queue.html';
   }
 
+  function goStats() {
+    if (!window.location.pathname.endsWith('stats.html')) window.location.href = 'stats.html';
+  }
+
   // --- floating "?" button + panel, built here rather than duplicated
   // markup in every HTML file ---
   const fab = document.createElement('button');
@@ -57,7 +69,7 @@
       <h2>Keyboard shortcuts</h2>
       <p class="shortcuts-sub">Not active while typing in a text field.</p>
       <ul class="shortcuts-list">
-        ${SHORTCUTS.map(s => `<li><span>${s.label}</span><span class="shortcuts-key">${s.key === '?' ? '?' : s.key.toUpperCase()}</span></li>`).join('')}
+        ${SHORTCUTS.map(s => `<li><span>${s.label}</span><span class="shortcuts-combo">${s.keys.map(k => `<span class="shortcuts-key">${k}</span>`).join('<span class="shortcuts-plus">+</span>')}</span></li>`).join('')}
       </ul>
     </div>
   `;
@@ -77,18 +89,23 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey || e.altKey || e.metaKey) return;
-
     if (e.key === 'Escape' && overlay.classList.contains('open')) { closePanel(); return; }
     if (isTyping(e.target)) return;
 
-    switch (e.key) {
-      case '?': togglePanel(); break;
-      case 'm': case 'M': go('main'); break;
-      case 'e': case 'E': go('extended'); break;
-      case 'q': case 'Q': goQueue(); break;
-      case 'r': case 'R': NavActions.goToRandomLevel(); break;
+    // '?' alone — see the file header for why this one stays unmodified.
+    if (!e.ctrlKey && !e.altKey && !e.metaKey && e.key === '?') { togglePanel(); return; }
+
+    // Everything else needs Ctrl+Alt, and only Ctrl+Alt — Shift/Meta
+    // riding along would just be a different, unintended combo.
+    if (!e.ctrlKey || !e.altKey || e.shiftKey || e.metaKey) return;
+    switch (e.key.toLowerCase()) {
+      case 'm': go('main'); break;
+      case 'e': go('extended'); break;
+      case 'q': goQueue(); break;
+      case 'r': NavActions.goToRandomLevel(); break;
+      case 's': goStats(); break;
       default: return;
     }
+    e.preventDefault();
   });
 })();

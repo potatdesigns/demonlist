@@ -139,3 +139,9 @@ function joinNames(list, max = 3) {
   if (names.length <= max) return names.join(', ');
   return `${names.slice(0, max).join(', ')} +${names.length - max}`;
 }
+
+/** Companion to joinNames() — the full comma-joined list, but only when joinNames() would actually truncate it (empty string otherwise, so callers can skip setting a redundant title/tooltip). Meant for a `title` attribute on whatever joinNames()'s text renders into, so a "+N" is hoverable to see who's hidden rather than a dead end. */
+function namesTitle(list, max = 3) {
+  if (!list || list.length <= max) return '';
+  return list.map(c => (typeof c === 'string' ? c : c.name)).join(', ');
+}

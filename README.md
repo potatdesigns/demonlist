@@ -52,12 +52,7 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   search/filters already were). Unlike search/page, both are session-local only (not reflected in
   the URL or restored on back/forward) — a lens on top of whatever you're looking at rather than a
   view of its own worth bookmarking, and both are dropped whenever you navigate to a different
-  page/search so they can't linger invisibly underneath a view that looks unfiltered/unsorted. A
-  **Records** row (below the legend) surfaces three standout stats across the *whole* tracked
-  list — most-viewed verification, most-viewed showcase, biggest showcase-over-verifier lead —
-  each linking straight to that level; computed once from the same in-memory data hydration
-  already uses, unaffected by the current page/search/filter/sort (see `loadRecords()` in
-  `js/list.js`).
+  page/search so they can't linger invisibly underneath a view that looks unfiltered/unsorted.
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view
@@ -89,17 +84,34 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   visibly shrinks as the discover workflow works through it and jumps back to ~150 once it
   refills (see [the queue behavior below](#shared-showcaseview-count-cache)) — read-only, no
   trigger lives here.
-- **Keyboard shortcuts** (`js/shortcuts.js`, all three pages) — `M`/`E`/`Q` jump to Main list,
-  Extended list, and the queue page; `R` jumps to a random level (`js/nav-actions.js`, shared with
-  the header button); `?` opens a panel listing them all (also reachable via the floating `?`
-  button, bottom-right). Plain unmodified letters rather than a `Ctrl`-combo — some of the obvious
-  mnemonic combos (`Ctrl+Q`/`M`/`E`) collide with real, JS-unoverridable browser or OS bindings
-  (tab-close, window-minimize, address-bar search), where a bare letter key is never reserved by
-  the browser. Suspended while a text field is focused (so typing "extreme" in the search box
-  doesn't jump you to the extended list mid-word), and `M`/`E` update the current page in place via
-  a hash change when already on `index.html` rather than reloading. `level.html` also has its own
-  `ArrowLeft`/`ArrowRight` for Previous/Next (see above), not listed in this panel since it's
-  page-specific rather than site-wide.
+- **Stats page (`stats.html`)** — linked from the header (bar-chart icon), unlike the queue page.
+  Averages, records, and three hand-built SVG charts (no charting library — this site has no build
+  step to bring one in through) aggregated across the tracked list from the same two sources every
+  other page already reads (AredlAPI's cached full list, SharedYtCache's whole-cache fetch): a
+  verifier-views-vs-showcase-views scatter (log/log, a `y=x` reference line so it's visible at a
+  glance which side of "showcase out-viewed the verification video" a level falls on), average
+  views by rank bucket (a two-line chart, 10 ranks per bucket), and total showcase views by
+  channel. One **All/Main/Extended** filter row scopes the KPI tiles and all three charts together.
+  Every chart has a hover tooltip (hit target larger than the mark, not just the painted pixels)
+  and a collapsed "View as table" fallback, so nothing on the page is chart-only. Color follows the
+  same gray-verifier/orange-showcase mapping the list page's legend and cards already use, not a
+  new convention (`js/stats.js`).
+- **Keyboard shortcuts** (`js/shortcuts.js`, all four pages) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
+  to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
+  header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
+  the floating `?` button, bottom-right). `Ctrl+Alt` rather than a bare letter or a single-modifier
+  `Ctrl`-combo — the first cut of this feature used bare letters, which is the safe default for
+  most sites (never reserved by the browser, unlike `Ctrl+Q`/`M`/`E`, which collide with real,
+  JS-unoverridable browser/OS bindings — tab-close, window-minimize, address-bar search), but a
+  bare letter can still fire from normal typing/browsing outside a tracked text field; `Ctrl+Alt`
+  is essentially never reserved by anything (including Windows' own Alt-alone menu-accelerator
+  behavior, which requiring *both* modifiers together sidesteps) while also never misfiring
+  incidentally. `?` stays bare regardless — not a letter, and "press ? for help" is too established
+  a convention (GitHub, Gmail, Slack) to bury behind a modifier. Suspended while a text field is
+  focused, and `M`/`E` update the current page in place via a hash change when already on
+  `index.html` rather than reloading. `level.html` also has its own `ArrowLeft`/`ArrowRight` for
+  Previous/Next (see above), not listed in this panel since it's page-specific rather than
+  site-wide.
 
 ## Reducing to a top-150 list
 
@@ -337,9 +349,10 @@ above:
 
 1. The candidate pool is every video from a fixed allowlist of known showcase channels (see
    `SHOWCASE_CHANNELS` in the script) — there's no search step, so nothing outside the allowlist
-   is ever considered, and nothing is excluded by title keyword (earlier versions filtered out
-   titles containing "verification", but plenty of legitimate showcases use words like "verified"
-   too, so that's gone).
+   is ever considered. Nothing is excluded by a *blanket* title keyword (earlier versions filtered
+   out titles containing "verification", but plenty of legitimate showcases use words like
+   "verified" too, so that's gone) — the only exclusion is a short, hand-maintained blacklist (see
+   step 4) for specific videos/phrases confirmed to misbehave, not a guess at a keyword that might.
 2. **ID matching:** a video counts as a candidate for a level if that level's numeric ID appears
    as a standalone 5-10 digit run (not glued to other digits) anywhere in its title or
    description — extracted once per video when it's indexed, not re-scanned per level.
@@ -365,7 +378,16 @@ above:
    "UNKNOWN" showcase including the actual verification video. No length floor or word-boundary
    check rules that out generally; the "Level: `<name>`" anchor only fixes it for channels that
    happen to label things that consistently.
-4. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
+4. **Blacklist:** before either matching pass runs on a video, it's checked against
+   `scripts/showcase-blacklist.json` — a specific video (by URL, most recently
+   `7G0wRbf8usw`/`nhJlEVsR3vA`) or a title phrase (currently `"TOP 10 HARDEST"`) — and skipped
+   entirely if either matches (`isBlacklisted()` in the script), contributing zero candidates for
+   any level. For a "top 10 hardest" or similar compilation/listicle video, ID and name matching
+   both work exactly as designed — it really does mention a dozen levels' names/IDs — the video
+   just isn't a showcase *of* any single one of them, which no amount of tuning the matching regex
+   fixes; a hand-maintained blacklist is the honest tool for "this specific video is a known bad
+   match" rather than trying to generalize a rule from one bad case.
+5. Take the highest-viewed video *per channel* among whichever candidates a level ended up with,
    then the highest-viewed of those across channels is the winner.
 
 The allowlist is currently: Nexus, Neiro, Viprin, Just a GD Player, IcedCave, fnm04, zof,
@@ -424,14 +446,16 @@ outright; harmless if never triggered, useful insurance if AREDL's CORS setup ev
 index.html                  list page markup
 level.html                   detail page markup
 queue.html                    read-only priority-queue view markup, see "What it does" above
+stats.html                     averages/records/charts markup, see "What it does" above
 assets/
   logo.png                   site logo — header mark + PNG favicon source (256px, downsized from the original)
   favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png
 css/
-  base.css                   design tokens, header, shared layout/states
-  list.css                    card grid, pager, search/jump/list-filter controls
-  detail.css                   detail page layout + dual video panels
+  base.css                   design tokens, header, shared layout/states, range-chip group
+  list.css                    card grid, pager, search/jump/filter/sort controls
+  detail.css                   detail page layout + dual video panels + Previous/Next
   queue.css                     plain-list row styling for queue.html
+  stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor(), shared by all pages
@@ -439,16 +463,18 @@ js/
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  nav-actions.js                   Copy link + Random level header buttons, index.html + level.html, see "What it does" above
-  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync and the Records row
+  nav-actions.js                   Copy link + Random level + Stats header buttons, index/level/stats.html, see "What it does" above
+  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
-  shortcuts.js                        M/E/Q/R + ? keyboard shortcuts and the shortcuts panel, all three pages, see "What it does" above
+  shortcuts.js                        Ctrl+Alt+M/E/Q/R/S + ? keyboard shortcuts and the shortcuts panel, all four pages, see "What it does" above
+  stats.js                            stats page controller — averages/records/charts, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
   publish-cache-branch.sh     what both scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
+  showcase-blacklist.json     hand-maintained video/title-phrase blacklist, see "Showcase-matching algorithm" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)

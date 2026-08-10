@@ -1,0 +1,209 @@
+/* =====================================================================
+   STATS PAGE
+   ===================================================================== */
+
+.stats-hero {
+  padding: 34px 0 22px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: 26px;
+}
+.stats-hero h1 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 800;
+  color: var(--text-hi);
+  line-height: 1.15;
+}
+.stats-hero p {
+  margin-top: 10px;
+  max-width: 640px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+.stats-hero .range-chips { margin-top: 18px; }
+
+/* --- KPI row: averages + records, same tile for both --- */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.kpi-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+}
+a.kpi-tile { transition: border-color .15s, transform .15s; }
+a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
+.kpi-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.kpi-value {
+  font-family: ui-monospace, monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.kpi-sub {
+  font-size: 12.5px;
+  color: var(--text-mid);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- chart cards --- */
+.chart-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  padding: 20px 20px 8px;
+  margin-bottom: 22px;
+}
+.chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.chart-head h2 { font-size: 16px; font-weight: 700; color: var(--text-hi); }
+.chart-sub {
+  margin-top: 4px;
+  max-width: 560px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.chart-legend {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+  font-size: 11.5px;
+  color: var(--text-mid);
+}
+.chart-legend .legend-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.chart-legend .legend-line {
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  display: inline-block;
+}
+
+.chart-body { position: relative; width: 100%; }
+.chart-body svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+.chart-empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+/* SVG chart chrome — hairline axes/gridlines, never dashed, one step off the surface. */
+.chart-axis { stroke: var(--line-soft); stroke-width: 1; }
+.chart-axis-text {
+  fill: var(--text-dim);
+  font-size: 10px;
+  font-family: ui-monospace, monospace;
+}
+.chart-ref-line { stroke: var(--line); stroke-width: 1; }
+
+.chart-dot-verifier { fill: var(--text-mid); pointer-events: none; }
+.chart-dot-showcase { fill: var(--primary); pointer-events: none; }
+.chart-line-verifier { stroke: var(--text-mid); pointer-events: none; }
+.chart-line-showcase { stroke: var(--primary); pointer-events: none; }
+.chart-bar-showcase { fill: var(--primary); pointer-events: none; }
+
+.chart-mark-label {
+  fill: var(--text-hi);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: ui-monospace, monospace;
+  pointer-events: none;
+}
+.chart-bar-name {
+  fill: var(--text-mid);
+  font-size: 11.5px;
+  pointer-events: none;
+}
+
+/* Hover: a bigger transparent hit target than the painted mark, per
+   dataviz's "the hit target is bigger than the mark" rule — every
+   decorative mark above is pointer-events:none precisely so hover
+   always resolves to the .chart-hit layer beneath it, never to
+   whichever painted shape happens to be on top at that pixel. */
+.chart-hit { fill: transparent; cursor: pointer; }
+.chart-hit:hover + .chart-dot-showcase,
+.chart-hit:hover + .chart-dot-verifier { stroke: var(--bg-surface); stroke-width: 2; r: 6; }
+.chart-bar-row:hover .chart-bar-showcase { filter: brightness(1.15); }
+
+.chart-tooltip {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-surface-2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-mid);
+  opacity: 0;
+  transform: translate(-50%, -100%);
+  transition: opacity .1s;
+  white-space: nowrap;
+}
+.chart-tooltip.visible { opacity: 1; }
+.chart-tooltip .tt-title { color: var(--text-hi); font-weight: 600; margin-bottom: 2px; }
+.chart-tooltip .tt-row { display: flex; align-items: center; gap: 6px; }
+.chart-tooltip .tt-key { width: 10px; height: 2px; border-radius: 1px; display: inline-block; flex-shrink: 0; }
+.chart-tooltip .tt-value { color: var(--text-hi); font-weight: 600; font-family: ui-monospace, monospace; }
+
+/* --- table-view fallback, one per chart --- */
+.chart-table-toggle {
+  margin: 10px 0 16px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.chart-table-toggle summary {
+  cursor: pointer;
+  color: var(--text-mid);
+  width: fit-content;
+}
+.chart-table-toggle summary:hover { color: var(--text-hi); }
+.chart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 12.5px;
+}
+.chart-table th, .chart-table td {
+  text-align: left;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--line-soft);
+  font-family: ui-monospace, monospace;
+}
+.chart-table th {
+  color: var(--text-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+.chart-table td { color: var(--text-mid); }
+.chart-table td:first-child { color: var(--text-hi); font-family: inherit; }

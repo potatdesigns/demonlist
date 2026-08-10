@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonlist | Stats</title>
+<meta name="description" content="Averages, records, and charts across the tracked list — verifier vs. showcase view counts.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/stats.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand" style="cursor:pointer;">
+    <img class="brand-mark" src="assets/logo.png" width="32" height="32" alt="">
+    <span class="brand-text">DEMONLIST<span>AREDL live data</span></span>
+  </a>
+  <div class="header-actions" id="header-actions"></div>
+</header>
+
+<main class="page">
+  <a class="back-link" href="index.html">&larr; Back to the list</a>
+
+  <section class="stats-hero">
+    <h1>Stats</h1>
+    <p>
+      Averages, records, and trends across the tracked list's verifier-vs-showcase view counts —
+      the same numbers every card shows individually, aggregated. Everything below reacts to the
+      range chips.
+    </p>
+    <div class="range-chips" id="stats-range" aria-label="Range filter">
+      <button type="button" class="range-chip active" data-range="all">All <span class="mono">#1–150</span></button>
+      <button type="button" class="range-chip" data-range="main">Main List <span class="mono">#1–75</span></button>
+      <button type="button" class="range-chip" data-range="extended">Extended List <span class="mono">#76–150</span></button>
+    </div>
+  </section>
+
+  <div class="state-banner" id="state-banner" style="display:none;"></div>
+
+  <section class="kpi-row" id="kpi-row" aria-label="Summary stats"></section>
+
+  <section class="chart-card" id="chart-scatter-card">
+    <div class="chart-head">
+      <div>
+        <h2>Verifier views vs. showcase views</h2>
+        <p class="chart-sub">Each dot is one level. Above the line, its showcase out-viewed its own verification video; below, the verification video still leads. Log scale on both axes.</p>
+      </div>
+    </div>
+    <div class="chart-body" id="chart-scatter"></div>
+  </section>
+
+  <section class="chart-card" id="chart-trend-card">
+    <div class="chart-head">
+      <div>
+        <h2>Average views by rank</h2>
+        <p class="chart-sub">Levels bucketed 10 at a time by rank, averaged within each bucket. Log scale.</p>
+      </div>
+      <div class="chart-legend" id="trend-legend"></div>
+    </div>
+    <div class="chart-body" id="chart-trend"></div>
+  </section>
+
+  <section class="chart-card" id="chart-channels-card">
+    <div class="chart-head">
+      <div>
+        <h2>Total showcase views by channel</h2>
+        <p class="chart-sub">Summed across every showcase from each channel that's the top pick for at least one tracked level.</p>
+      </div>
+    </div>
+    <div class="chart-body" id="chart-channels"></div>
+  </section>
+</main>
+
+<p class="footer-note">
+  &copy; 2026 &middot; Not affiliated with RobTop Games, Geometry Dash, or AREDL.
+</p>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api-aredl.js"></script>
+<script src="js/data-source.js"></script>
+<script src="js/shared-cache.js"></script>
+<script src="js/nav-actions.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/shortcuts.js"></script>
+</body>
+</html>

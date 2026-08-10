@@ -162,31 +162,6 @@
 }
 .sort-select:hover { background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23e6e6e6' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
 
-.range-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
-}
-.range-chip {
-  padding: 8px 16px;
-  border-radius: 100px;
-  font-size: 12.5px;
-  font-weight: 600;
-  border: 1px solid var(--line);
-  background: var(--bg-surface);
-  color: var(--text-mid);
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  transition: color 0.15s, border-color 0.15s, background 0.15s, transform .15s;
-}
-.range-chip .mono { font-size: 11px; color: var(--text-dim); }
-.range-chip:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
-.range-chip:active { transform: translateY(0) scale(.96); }
-.range-chip.active { color: #1a0d00; background: var(--primary); border-color: var(--primary); }
-.range-chip.active .mono { color: #1a0d00; opacity: 0.7; }
-
 .view-toggle-row {
   display: flex;
   align-items: center;
@@ -206,47 +181,6 @@
 .legend b { color: var(--text-mid); font-weight: 600; }
 .legend .swatch {
   width: 9px; height: 9px; border-radius: 2px; display: inline-block; margin-right: 5px;
-}
-
-/* Standout single stats across the *entire* tracked list (not the
-   current page/filter/sort) — see loadRecords() in list.js. Empty and
-   invisible (no skeleton) until that resolves; low-priority chrome, not
-   worth a loading state of its own. */
-.records-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  margin-top: 18px;
-}
-.record-card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--bg-surface);
-  transition: border-color .15s, transform .15s;
-}
-.record-card:hover { border-color: var(--primary); transform: translateY(-2px); }
-.record-card .record-label {
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-}
-.record-card .record-value {
-  font-family: ui-monospace, monospace;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--gold);
-}
-.record-card .record-name {
-  font-size: 12.5px;
-  color: var(--text-mid);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* --- the card grid: one page = 75 levels, laid out 5 columns x 15 rows

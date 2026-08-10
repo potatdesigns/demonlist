@@ -96,6 +96,16 @@
     return `<a class="detail-nav-btn ${dir}" href="level.html#${position}">${dir === 'prev' ? arrow + info : info + arrow}</a>`;
   }
 
+  /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. */
+  function creatorsChipsHtml(list, max = 8) {
+    if (!list.length) return '';
+    const shown = list.slice(0, max).map(c => `<span class="chip">${escapeHtml(c.name)}</span>`).join('');
+    const rest = list.slice(max);
+    if (!rest.length) return shown;
+    const restNames = rest.map(c => c.name).join(', ');
+    return `${shown}<span class="chip chip-more" title="${escapeHtml(restNames)}">+${rest.length} more</span>`;
+  }
+
   function renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel) {
     const tierColor = positionColor(demon.position, totalCount);
     const points = demon.raw?.points;
@@ -129,8 +139,7 @@
         <div class="fact" style="grid-column: span 2;">
           <dt>Creator${demon.creators.length !== 1 ? 's' : ''}</dt>
           <dd class="creators-list">
-            ${(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean))
-              .map(c => `<span class="chip">${escapeHtml(c.name)}</span>`).join('') || '—'}
+            ${creatorsChipsHtml(demon.creators.length ? demon.creators : [demon.publisher].filter(Boolean)) || '—'}
           </dd>
         </div>
       </dl>

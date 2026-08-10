@@ -238,6 +238,41 @@ img { max-width: 100%; display: block; }
   background: var(--bg-surface-2);
 }
 
+/* A truncated-list overflow chip ("+N more") — dashed to read as "not a name, hover for the rest" at a glance, distinct from the solid chips around it. */
+.chip-more {
+  border-style: dashed;
+  color: var(--text-dim);
+  cursor: help;
+}
+
+/* Range-toggle chip group — used by the list page's Main/Extended
+   buttons and the stats page's All/Main/Extended filter, hence living
+   here rather than in either page's own stylesheet. */
+.range-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.range-chip {
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s, transform .15s;
+}
+.range-chip .mono { font-size: 11px; color: var(--text-dim); }
+.range-chip:hover { color: var(--text-hi); border-color: var(--text-dim); transform: translateY(-1px); }
+.range-chip:active { transform: translateY(0) scale(.96); }
+.range-chip.active { color: #1a0d00; background: var(--primary); border-color: var(--primary); }
+.range-chip.active .mono { color: #1a0d00; opacity: 0.7; }
+
 .btn-ghost {
   padding: 9px 16px;
   border-radius: var(--radius);
@@ -350,6 +385,13 @@ img { max-width: 100%; display: block; }
   color: var(--text-mid);
 }
 
+.shortcuts-combo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
 .shortcuts-key {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 11.5px;
@@ -362,3 +404,5 @@ img { max-width: 100%; display: block; }
   background: var(--bg-surface-2);
   color: var(--text-hi);
 }
+
+.shortcuts-plus { font-size: 11px; color: var(--text-dim); }
