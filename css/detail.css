@@ -179,6 +179,17 @@
   background: var(--bg-surface);
   display: flex;
   flex-direction: column;
+  transition: transform .2s cubic-bezier(.16,1,.3,1), border-color .2s, box-shadow .2s;
+}
+.video-panel.verifier:hover {
+  transform: translateY(-4px);
+  border-color: var(--text-mid);
+  box-shadow: 0 16px 32px -12px color-mix(in srgb, var(--text-mid) 35%, transparent), var(--shadow-card);
+}
+.video-panel.showcase:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 16px 32px -12px color-mix(in srgb, var(--primary) 45%, transparent), var(--shadow-card);
 }
 
 .video-panel .panel-tag {
