@@ -64,6 +64,15 @@
         SharedYtCache.getEntry(id).catch(() => undefined),
       ]);
       if (!demon) throw new Error(route.type === 'id' ? `No level with that id.` : `No level at that rank.`);
+
+      // An id: route did its job (immune to the position drift getRouteParam()'s doc comment
+      // above describes) the moment it resolved — once we know the level's actual position, swap
+      // the visible URL to the short, shareable #N form everything else on the site uses. replaceState
+      // doesn't fire hashchange/popstate, so this doesn't re-trigger init() in a loop.
+      if (route.type === 'id' && Number.isFinite(demon.position)) {
+        history.replaceState(null, '', `${window.location.pathname}#${demon.position}`);
+      }
+
       // Prev/Next always come from the level's own resolved position, never route.value —
       // for an id: route that's the only place a position exists at all, and for a #N route
       // it keeps prev/next correct even if position and demon disagreed somehow.
