@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T15:48:46.198Z",
+  "generatedAt": "2026-08-11T16:46:37.276Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -11354,7 +11354,7 @@
       "nlw_tier": null,
       "publisher": {
         "id": "379e46f0-5141-42c2-85fe-ee77bad26c6d",
-        "username": "syncroned",
+        "username": "sync.tm",
         "global_name": "Sync"
       },
       "verifications": [
@@ -11381,7 +11381,7 @@
         },
         {
           "id": "379e46f0-5141-42c2-85fe-ee77bad26c6d",
-          "username": "syncroned",
+          "username": "sync.tm",
           "global_name": "Sync"
         },
         {
