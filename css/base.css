@@ -241,6 +241,18 @@ img { max-width: 100%; display: block; }
 }
 @keyframes shimmer { to { background-position: -200% 0; } }
 
+/* Generic "nothing to show" state for any list/panel — moved here from
+   css/stats.css since js/home.js and js/roulette.js also use it (on
+   pages that don't load stats.css at all, which left it unstyled
+   there — a real bug, not by design; centralizing here instead of
+   copy-pasting the same rule into every page's own stylesheet). */
+.chart-empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
 .eyebrow {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-size: 11px;
@@ -476,6 +488,33 @@ img { max-width: 100%; display: block; }
 }
 .shortcuts-fab:hover { color: var(--text-hi); border-color: var(--primary); transform: translateY(-2px); }
 .shortcuts-fab:active { transform: translateY(0) scale(.92); }
+
+/* Same shape as .shortcuts-fab above, mirrored to the bottom-left so the
+   two don't collide (js/back-to-top.js). Faded + click-through until
+   scrolled down a bit, rather than display:none/flex, so it animates in
+   both directions. */
+.back-to-top-fab {
+  position: fixed;
+  left: clamp(16px, 4vw, 32px);
+  bottom: clamp(16px, 4vw, 32px);
+  z-index: 60;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease, color .15s, border-color .15s;
+}
+.back-to-top-fab.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.back-to-top-fab:hover { color: var(--text-hi); border-color: var(--primary); transform: translateY(-2px); }
+.back-to-top-fab.visible:active { transform: translateY(0) scale(.92); }
 
 /* Always in the DOM/layout, faded + click-through when closed — same
    opacity+pointer-events transition .filter-panel already uses, rather

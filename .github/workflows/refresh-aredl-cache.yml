@@ -3,8 +3,9 @@ name: Refresh AREDL level-list cache
 # Populates data/aredl-cache.json — a snapshot of the top 150 of AREDL's
 # level list so visitors read one shared, periodically-refreshed file
 # instead of every single page load hitting AREDL's live API for the
-# same list. See scripts/refresh-aredl-cache.mjs. Unauthenticated and
-# free (no API key, no quota), so this just runs hourly, comfortably
+# same list — and data/position-history.json, a per-level log of past
+# position changes (see scripts/refresh-aredl-cache.mjs). Unauthenticated
+# and free (no API key, no quota), so this just runs hourly, comfortably
 # ahead of how often levels actually get added/reordered.
 #
 # Published to the `cache` branch, not `main` — see README's "Cache
@@ -33,8 +34,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Fetch current data/position-history.json from the cache branch
+        run: |
+          git fetch origin cache
+          mkdir -p data
+          git show origin/cache:data/position-history.json > data/position-history.json 2>/dev/null || echo "No existing position history found — starting fresh."
+
       - name: Run refresh script
         run: node scripts/refresh-aredl-cache.mjs
 
-      - name: Publish data/aredl-cache.json to the cache branch
-        run: 'bash scripts/publish-cache-branch.sh "chore: refresh AREDL level-list cache" data/aredl-cache.json'
+      - name: Publish to the cache branch
+        run: 'bash scripts/publish-cache-branch.sh "chore: refresh AREDL level-list cache" data/aredl-cache.json data/position-history.json'

@@ -270,7 +270,7 @@
   AredlAPI.getTotalCount().then(total => {
     totalCount = total;
     totalPages = Math.max(1, Math.ceil(total / CONFIG.PAGE_SIZE));
-    searchInput.placeholder = `Search all ${total} levels by name…`;
+    searchInput.placeholder = `Search ${total} levels by name, creator, or verifier…`;
     updateControlsUI();
   }).catch(() => { /* the main load below will surface the real error */ });
 
@@ -379,7 +379,7 @@
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
-            ${isNew ? '<span class="new-badge">New</span>' : ''}
+            ${isNew ? '<span class="new-ribbon" aria-label="New">New</span>' : ''}
             ${demon.videoUrl ? `
             <span class="play-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>

@@ -72,7 +72,14 @@ Paginated 75-at-a-time
 - **Detail page (`level.html`)** — click any card (or use Open rank) for the full picture: list
   ID, GD level ID, points, verifier, publisher, all creators, an embedded player for the official
   verification video, and an embedded player for the auto-discovered top showcase, with both view
-  counts shown for direct comparison. Its URL is just the level's rank as a hash fragment
+  counts shown for direct comparison. Below that, a **position history** — every recorded position
+  change for this level, newest first, with a ↑/↓ against the *previous* entry (lower position
+  number is a rise, same direction the recent-changes panel's own "Raised"/"Lowered" use) and a
+  date; anything past CONFIG.LIST_SIZE reads as **Legacy** rather than a raw AREDL position number,
+  which wouldn't mean much on a site that only ranks the top CONFIG.LIST_SIZE itself. Data comes
+  from `data/position-history.json` (`js/position-history.js`), populated by
+  `scripts/refresh-aredl-cache.mjs` every time it runs — see
+  [Shared AREDL level-list cache](#shared-aredl-level-list-cache) below. Its URL is just the level's rank as a hash fragment
   (`level.html#42`, resolved to the actual AREDL id via `AredlAPI.getIdByPosition()` before
   fetching anything) rather than AREDL's 36-character id or a `?id=`-style query string.
   **Previous/Next** boxes (also `ArrowLeft`/`ArrowRight`) jump straight to the adjacent rank,
@@ -503,6 +510,19 @@ bare fields for that run; the client's live-fallback covers it individually rath
 refresh failing. A full run currently takes on the order of a minute — comfortably fine for an
 hourly job.
 
+**Position history.** The same run also updates `data/position-history.json` — a
+`{ levelId: [{ date, position }, ...] }` log, one entry appended per level *only when its position
+actually changed* since the last recorded entry, not once per run (most runs, most levels don't
+move — recording those as no-ops would just be noise). Tracks both the current top
+`LEVEL_LIST_SIZE` and any level that already has history but has since dropped out of it, so its
+record doesn't just stop the moment it leaves — the detail page is what turns a position past
+`LEVEL_LIST_SIZE` into "Legacy" for display, the stored data keeps the real AREDL position either
+way. Capped at `HISTORY_CAP_PER_LEVEL` (30) entries per level, oldest dropped first, as a safety
+net against a level that's genuinely thrashed that many times — not a normal ceiling. Like
+`data/aredl-cache.json`, the workflow pulls the prior copy from the `cache` branch before running
+(the script needs it to know what "changed since last time" means) and publishes the updated copy
+back alongside it.
+
 ### Watching for AREDL changes affecting the top 150
 
 A change touching the top 150 — a new placement, or a `Raised`/`Lowered`/`Swapped`/`MovedToLegacy`
@@ -572,6 +592,7 @@ js/
                                  recent changes, used by the home page)
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
+  position-history.js              reads the cache branch's position-history.json, used by the detail page
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
   roulette.js                      roulette.html's own controller — the percent-climb challenge,
                                     localStorage-persisted run state, see "What it does" above
@@ -588,7 +609,7 @@ js/
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
-  refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
+  refresh-aredl-cache.mjs     populates data/aredl-cache.json + data/position-history.json, see "Shared AREDL cache" above
   watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for any
                                change touching the top 150 and triggers the two scripts above when
                                it finds one, see "Watching for AREDL changes affecting the top 150" above

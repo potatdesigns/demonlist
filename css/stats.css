@@ -138,13 +138,6 @@ a.kpi-tile:hover { border-color: var(--primary); transform: translateY(-2px); }
 .chart-col-verifier { fill: var(--text-mid); pointer-events: none; }
 .chart-col-showcase { fill: var(--primary); pointer-events: none; }
 
-.chart-empty {
-  padding: 40px 0;
-  text-align: center;
-  color: var(--text-dim);
-  font-size: 13px;
-}
-
 /* SVG chart chrome — hairline axes/gridlines, never dashed, one step off the surface. */
 .chart-axis { stroke: var(--line-soft); stroke-width: 1; }
 .chart-axis-text {

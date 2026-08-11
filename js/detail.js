@@ -203,8 +203,17 @@
           <div class="video-info" id="showcase-info"></div>
         </div>
       </div>
+
+      <div class="video-section-head">
+        <h2>Position history</h2>
+        <span class="eyebrow">past #${CONFIG.LIST_SIZE} is legacy</span>
+      </div>
+      <ul class="position-history-list" id="position-history-list">
+        <li class="chart-empty">Loading…</li>
+      </ul>
     `;
 
+    mountPositionHistory(demon);
     mountVerifierVideo(demon, sharedEntry);
     mountShowcaseVideo(demon, sharedEntry);
     CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
@@ -262,6 +271,50 @@
       requestAnimationFrame(() => bgEl.classList.add('visible'));
     };
     probe.src = maxres;
+  }
+
+  /**
+   * Past AREDL position changes for this level — data/position-history.json
+   * (js/position-history.js), built by scripts/refresh-aredl-cache.mjs:
+   * one entry per actual change, not one per refresh, so this is a real
+   * "here's what happened" log rather than a daily snapshot. Rendered
+   * newest-first with a ↑/↓ against the *previous* (older) entry — lower
+   * position number is a rise, same direction the changelog's own
+   * "Raised"/"Lowered" use. Anything past CONFIG.LIST_SIZE reads as
+   * "Legacy" rather than a raw AREDL position number, which wouldn't
+   * mean much in a site that only ranks the top CONFIG.LIST_SIZE itself.
+   */
+  async function mountPositionHistory(demon) {
+    const listEl = document.getElementById('position-history-list');
+    if (!listEl || typeof PositionHistory === 'undefined') return;
+    try {
+      const entries = await PositionHistory.getEntries(demon.id);
+      if (!entries.length) {
+        listEl.innerHTML = `<li class="chart-empty">No recorded movement yet — history only tracks changes since this level was first cached.</li>`;
+        return;
+      }
+      const newestFirst = entries.slice().reverse();
+      listEl.innerHTML = newestFirst.map((entry, i) => {
+        const older = newestFirst[i + 1]; // one entry *older* than this one, since the array is newest-first
+        let deltaIcon = '–', deltaClass = 'first';
+        if (older) {
+          if (entry.position < older.position) { deltaIcon = '&uarr;'; deltaClass = 'up'; }
+          else if (entry.position > older.position) { deltaIcon = '&darr;'; deltaClass = 'down'; }
+          else { deltaIcon = '•'; deltaClass = 'same'; }
+        }
+        const label = entry.position <= CONFIG.LIST_SIZE ? `#${entry.position}` : 'Legacy';
+        const dateLabel = new Date(entry.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        return `
+          <li class="position-history-row">
+            <span class="position-history-delta ${deltaClass}">${deltaIcon}</span>
+            <span class="position-history-label">${escapeHtml(label)}</span>
+            <span class="position-history-date">${escapeHtml(dateLabel)}</span>
+          </li>
+        `;
+      }).join('');
+    } catch {
+      listEl.innerHTML = `<li class="chart-empty">Couldn't load position history.</li>`;
+    }
   }
 
   /** Autoplay is opt-in (Settings.get('autoplayVideos')) and always paired with mute=1 — browsers block unmuted autoplay outright regardless, so a silent "autoplay" that isn't muted just wouldn't play at all. */

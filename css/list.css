@@ -262,15 +262,30 @@ body::before {
   box-shadow: 0 0 10px -1px var(--tier-color, var(--primary));
 }
 
-/* .new-badge's shared look lives in css/base.css — positioning only
-   here: top-right in card mode, mirroring .card-rank's top-left; inline
-   next to the title in list mode, where there's no thumbnail corner to
-   overlay. */
-.card-thumb-wrap .new-badge {
+/* Card-mode "New" tag: a diagonal ribbon across the thumbnail's top-right
+   corner (classic "Sale" sticker look) rather than a plain badge — the
+   thumbnail's own overflow:hidden clips it to a clean diagonal edge on
+   both sides, no extra masking needed. Sized/rotated for this card's
+   fixed 16:9 thumb-wrap specifically; not reused as-is at other sizes,
+   see .new-badge (css/base.css) for the plain inline version used
+   everywhere a ribbon wouldn't fit (list mode, the detail page, the
+   home page's spotlight cards). */
+.new-ribbon {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  box-shadow: 0 0 10px -1px var(--primary);
+  top: 14px;
+  right: -34px;
+  width: 130px;
+  padding: 4px 0 3px;
+  background: var(--primary);
+  color: var(--primary-on, #1a0d00);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
 }
 .card-title .new-badge {
   display: inline-block;

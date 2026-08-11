@@ -25,9 +25,21 @@
   let newLevelIds = new Set();
   const newLevelIdsReady = AredlAPI.fetchNewLevelIds().then(ids => { newLevelIds = ids; }).catch(() => {});
 
-  /** Same calendar day (UTC) always picks the same level — a "featured today" that's actually stable through the day rather than re-rolling on every reload, without needing a server to coordinate it. */
+  /**
+   * Same calendar day always picks the same level — a "featured today"
+   * that's stable through the day rather than re-rolling on every
+   * reload, without needing a server to coordinate it. Seeded by the
+   * viewer's own *local* calendar date, not UTC — deliberately: two
+   * visitors in the same timezone always see the same pick (there's
+   * nothing personal in the seed, just the date), but the rollover
+   * itself happens at each visitor's own local midnight, so someone in
+   * a timezone that reaches midnight first sees the next pick before
+   * someone further west still mid-day. A UTC-based seed would instead
+   * roll everyone over in lockstep at one fixed moment worldwide.
+   */
   function seededIndexForToday(count) {
-    const dateStr = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const d = new Date();
+    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     let hash = 0;
     for (let i = 0; i < dateStr.length; i++) hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
     return hash % count;

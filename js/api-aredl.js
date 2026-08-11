@@ -212,17 +212,32 @@ const AredlAPI = (() => {
     return name.replace(/\([^)]*\)/g, ' ');
   }
 
+  /** True if an AREDL player (raw shape — a plain string, or an object with global_name/username, straight off raw.publisher / raw.verifications[0].submitted_by / a raw.creators entry) matches a lowercased query. */
+  function playerMatches(player, q) {
+    if (!player) return false;
+    const name = typeof player === 'string' ? player : (player.global_name || player.username || '');
+    return name.toLowerCase().includes(q);
+  }
+
   /**
-   * Search across the *entire* list by name, not just whatever page
-   * happens to be loaded — the full list is already cached in memory
-   * (see fetchFullList above) so this is a plain client-side filter, no
-   * extra network round trip beyond the one-time initial fetch.
+   * Search across the *entire* list, not just whatever page happens to
+   * be loaded — the full list is already cached in memory (see
+   * fetchFullList above) so this is a plain client-side filter, no
+   * extra network round trip beyond the one-time initial fetch. Matches
+   * the level name (see stripParens above) or any of publisher/
+   * verifier/creators — searching a person's name surfaces every level
+   * they're credited on, not just level names containing that text.
    */
   async function searchByName(query, { limit = 200 } = {}) {
     const all = await fetchFullList();
     const q = query.trim().toLowerCase();
     if (!q) return { demons: [], total: 0 };
-    const matches = all.filter(raw => stripParens(raw.name).toLowerCase().includes(q));
+    const matches = all.filter(raw =>
+      stripParens(raw.name).toLowerCase().includes(q)
+      || playerMatches(raw.publisher, q)
+      || playerMatches((raw.verifications || [])[0]?.submitted_by, q)
+      || (Array.isArray(raw.creators) && raw.creators.some(c => playerMatches(c, q)))
+    );
     return {
       demons: matches.slice(0, limit).map(normalizeLevel),
       total: matches.length,

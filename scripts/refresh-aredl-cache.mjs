@@ -41,16 +41,34 @@
    far more often than levels actually get reordered/added, but since it
    costs nothing there's no reason to be stingier than that.
 
+   Also populates data/position-history.json — one { date, position }
+   entry per level appended whenever its position actually changes since
+   the last recorded entry (not every run), read from and republished to
+   the cache branch same as data/aredl-cache.json (the workflow pulls
+   the prior copy before running, see .github/workflows/refresh-aredl-
+   cache.yml). Tracks both the current top LEVEL_LIST_SIZE and any level
+   that already has history but has since dropped out, so its record
+   doesn't just stop — js/detail.js renders anything past LEVEL_LIST_SIZE
+   as "Legacy" rather than a raw (and here, not otherwise meaningful)
+   AREDL position number.
+
    Usage: node scripts/refresh-aredl-cache.mjs
    ===================================================================== */
 
-import { writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CACHE_PATH = path.join(__dirname, '..', 'data', 'aredl-cache.json');
+const HISTORY_PATH = path.join(__dirname, '..', 'data', 'position-history.json');
 const AREDL_BASE = 'https://api.aredl.net/v2/api/aredl';
+
+// How many position-change entries to keep per level before dropping the
+// oldest — a level that's genuinely thrashed this many times has a long
+// enough history already; this is a safety cap, not a normal ceiling
+// (most levels will have far fewer entries than this).
+const HISTORY_CAP_PER_LEVEL = 30;
 
 // Keep in sync with CONFIG.LIST_SIZE in js/config.js — this app only
 // tracks the top this-many positions, not AREDL's full ~1600-level list.
@@ -115,6 +133,47 @@ async function mapWithConcurrency(items, limit, fn, pauseMs = 0) {
   return results;
 }
 
+async function loadExistingHistory() {
+  try {
+    const parsed = JSON.parse(await readFile(HISTORY_PATH, 'utf8'));
+    return parsed.history && typeof parsed.history === 'object' ? parsed.history : {};
+  } catch {
+    return {}; // first run, or the file's missing/unreadable — start fresh
+  }
+}
+
+/**
+ * Appends a { date, position } entry for every level that's either
+ * currently in the top LEVEL_LIST_SIZE or already has history (so a
+ * level that's since dropped out keeps getting tracked — its entries
+ * just read as "Legacy" once position > LEVEL_LIST_SIZE, see
+ * js/detail.js) — but only when its position actually changed since the
+ * last recorded entry, not on every run. A level absent from
+ * `positionById` entirely (removed from AREDL outright, not just
+ * demoted — rare) is left as-is rather than guessed at.
+ */
+function updatePositionHistory(existingHistory, positionById, trackedIds) {
+  const history = { ...existingHistory };
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD — daily granularity is plenty for a position history
+  let changed = 0;
+
+  for (const id of trackedIds) {
+    const currentPosition = positionById.get(id);
+    if (!Number.isFinite(currentPosition)) continue;
+
+    const entries = history[id] ? history[id].slice() : [];
+    const last = entries[entries.length - 1];
+    if (last && last.position === currentPosition) continue; // no change since last recorded entry
+
+    entries.push({ date: today, position: currentPosition });
+    if (entries.length > HISTORY_CAP_PER_LEVEL) entries.splice(0, entries.length - HISTORY_CAP_PER_LEVEL);
+    history[id] = entries;
+    changed++;
+  }
+
+  return { history, changed };
+}
+
 async function main() {
   const data = await fetchJson(`${AREDL_BASE}/levels`);
   const fullList = (Array.isArray(data) ? data : (data.data || data.levels || [])).sort((a, b) => a.position - b.position);
@@ -136,8 +195,14 @@ async function main() {
   const cache = { generatedAt: new Date().toISOString(), levels };
   await mkdir(path.dirname(CACHE_PATH), { recursive: true });
   await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2) + '\n');
-
   console.log(`Wrote ${levels.length} AREDL levels (${levels.length - failed} with full detail) to ${CACHE_PATH}.`);
+
+  const positionById = new Map(fullList.map(l => [String(l.id), l.position]));
+  const existingHistory = await loadExistingHistory();
+  const trackedIds = new Set([...bareLevels.map(l => String(l.id)), ...Object.keys(existingHistory)]);
+  const { history, changed } = updatePositionHistory(existingHistory, positionById, trackedIds);
+  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history }, null, 2) + '\n');
+  console.log(`Position history: ${changed} level(s) moved since the last check, ${Object.keys(history).length} tracked in total, wrote to ${HISTORY_PATH}.`);
 }
 
 main().catch(err => {

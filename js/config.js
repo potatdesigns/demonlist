@@ -75,6 +75,11 @@ const CONFIG = {
   // live AREDL call if the snapshot is missing or fails to load.
   AREDL_CACHE_URL: rawCacheUrl('data/aredl-cache.json'),
 
+  // Per-level position-change log, written by the same script/workflow
+  // as AREDL_CACHE_URL above — see PositionHistory in js/position-history.js,
+  // read by the detail page.
+  POSITION_HISTORY_URL: rawCacheUrl('data/position-history.json'),
+
   // Used to build a fallback link to the GitHub Actions "run workflow"
   // page (see js/cache-admin-ui.js) for whenever TRIGGER_WORKER_URL
   // below isn't set.
@@ -94,6 +99,7 @@ const CONFIG = {
   // localStorage keys
   STORAGE: {
     SHARED_YT_CACHE: 'gddl_shared_yt_cache_v1', // local mirror of data/yt-cache.json, { fetchedAt, data }
+    POSITION_HISTORY: 'gddl_position_history_v1', // local mirror of data/position-history.json, { fetchedAt, data }
     SETTINGS: 'gddl_settings_v1', // js/settings.js — theme, motion, etc.; see Settings.DEFAULTS there
     ROULETTE_RUN: 'gddl_roulette_run_v1', // js/roulette.js — the in-progress (or last-finished) Extreme Demon Roulette run, so a reload mid-run doesn't lose progress
   },
