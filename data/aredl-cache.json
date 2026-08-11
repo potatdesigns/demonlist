@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T00:50:43.177Z",
+  "generatedAt": "2026-08-11T02:59:38.949Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3830,7 +3830,7 @@
       "song": null,
       "edel_enjoyment": null,
       "is_edel_pending": false,
-      "gddl_tier": null,
+      "gddl_tier": 38,
       "nlw_tier": null,
       "publisher": {
         "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
@@ -3853,7 +3853,118 @@
           "updated_at": "2026-08-11T00:35:09.348805Z"
         }
       ],
-      "creators": []
+      "creators": [
+        {
+          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
+          "username": "0fb0d4b59",
+          "global_name": "robotchief"
+        },
+        {
+          "id": "06a3ee64-3582-481f-bc46-116ac1ff625a",
+          "username": "c7888e7bf",
+          "global_name": "bisbuuu"
+        },
+        {
+          "id": "071aa9b5-20b0-4857-9ac1-1ed809ca9f64",
+          "username": "f0e9383f8",
+          "global_name": "Kurai Yonaka"
+        },
+        {
+          "id": "08d49087-aa36-4277-8079-53d6b33e7caf",
+          "username": "ca83364cd",
+          "global_name": "Tassium"
+        },
+        {
+          "id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
+          "username": "0e7d90170",
+          "global_name": "Nisha"
+        },
+        {
+          "id": "1ba81bd5-6a1e-4caa-a329-fa860a43e26f",
+          "username": "764698ba3",
+          "global_name": "Rainstorm"
+        },
+        {
+          "id": "46179d19-a5ee-4f34-9eb0-31e2b7663855",
+          "username": "a45875641",
+          "global_name": "Xylitol"
+        },
+        {
+          "id": "5ed113f7-c26c-4f31-a55f-bd35f9d3d932",
+          "username": "2fc86d065",
+          "global_name": "HargChucu"
+        },
+        {
+          "id": "76870044-b9f7-43fc-87a8-5134a539b606",
+          "username": "ab5cd48d2",
+          "global_name": "NesiaL"
+        },
+        {
+          "id": "80a48537-682a-46ca-ac0c-14978155dec3",
+          "username": "464ad8e36",
+          "global_name": "Spacter"
+        },
+        {
+          "id": "8337f139-e06a-4588-82ee-f0f010a813db",
+          "username": "d37a96c2e",
+          "global_name": "VoTcHi"
+        },
+        {
+          "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
+          "username": "nexel",
+          "global_name": "Nexel"
+        },
+        {
+          "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
+          "username": "kazagd",
+          "global_name": "Kaza"
+        },
+        {
+          "id": "aa45eb19-d49d-4289-8b9b-b674de5ff77c",
+          "username": "b580583ea",
+          "global_name": "Neofar"
+        },
+        {
+          "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
+          "username": "flufflebag",
+          "global_name": "Zeronium"
+        },
+        {
+          "id": "c1921edf-0263-4ffc-b391-c84e14f066a9",
+          "username": "redcraft_bmc",
+          "global_name": "redcraft"
+        },
+        {
+          "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
+          "username": "f076f3539",
+          "global_name": "SnowEye"
+        },
+        {
+          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
+          "username": "ec5f043f5",
+          "global_name": "DreamTide"
+        },
+        {
+          "id": "f003c9ba-101d-49b8-a83e-a900cf43a2b3",
+          "username": "catiogd",
+          "global_name": "Catio"
+        },
+        {
+          "id": "fad5ba92-ca14-4334-bddb-3fa3ff48541d",
+          "username": "bigthunder556",
+          "global_name": "Bigthunder556 🏳️‍🌈"
+        },
+        {
+          "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+          "username": "997a90b54",
+          "global_name": "Laniakea"
+        },
+        {
+          "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
+          "username": "43b6ccb3a",
+          "global_name": "Lris"
+        }
+      ]
     },
     {
       "id": "51a1538a-b53a-4f31-9fed-715b4e9e5951",
