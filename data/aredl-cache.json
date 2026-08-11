@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T22:32:45.243Z",
+  "generatedAt": "2026-08-11T23:30:41.243Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -12825,7 +12825,35 @@
       "edel_enjoyment": 45.13333333,
       "is_edel_pending": false,
       "gddl_tier": 35,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
+        "username": "befc49509",
+        "global_name": "nikoberry"
+      },
+      "verifications": [
+        {
+          "id": "63ed215b-8cf7-4bfd-bb6d-460d943ef7ce",
+          "submitted_by": {
+            "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
+            "username": "whizkid05",
+            "global_name": "Whizkid05"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=kN1FUoucoSc",
+          "hide_video": false,
+          "achieved_at": "2024-02-17T18:23:30Z",
+          "created_at": "2025-08-13T17:47:10.358685Z",
+          "updated_at": "2025-08-13T17:47:10.358685Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
+          "username": "befc49509",
+          "global_name": "nikoberry"
+        }
+      ]
     },
     {
       "id": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
