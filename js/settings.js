@@ -41,13 +41,15 @@ const Settings = (() => {
   // the default orange so it stays legible as a border/glow/badge color
   // wherever --primary is used decoratively — only the on-primary *text*
   // pairing (buttons, active chips) needs to change per hue, hence `on`.
+  // Declared in R-O-Y-G-B-Pink order — Object.entries() below preserves
+  // insertion order, so this is also the order the swatches render in.
   const ACCENT_PRESETS = {
-    orange:  { label: 'Orange',  primary: '#ff6e00', dark: '#e66300', on: '#1a0d00' },
-    red:     { label: 'Red',     primary: '#ef4444', dark: '#dc2626', on: '#ffffff' },
-    magenta: { label: 'Magenta', primary: '#e0399b', dark: '#c22e85', on: '#ffffff' },
-    violet:  { label: 'Violet',  primary: '#8b5cf6', dark: '#7c3aed', on: '#ffffff' },
-    blue:    { label: 'Blue',    primary: '#3b82f6', dark: '#2563eb', on: '#ffffff' },
-    green:   { label: 'Green',   primary: '#22c55e', dark: '#16a34a', on: '#ffffff' },
+    red:    { label: 'Red',    primary: '#ef4444', dark: '#dc2626', on: '#ffffff' },
+    orange: { label: 'Orange', primary: '#ff6e00', dark: '#e66300', on: '#1a0d00' }, // default
+    yellow: { label: 'Yellow', primary: '#eab308', dark: '#ca8a04', on: '#1a1300' },
+    green:  { label: 'Green',  primary: '#22c55e', dark: '#16a34a', on: '#ffffff' },
+    blue:   { label: 'Blue',   primary: '#3b82f6', dark: '#2563eb', on: '#ffffff' },
+    pink:   { label: 'Pink',   primary: '#ec4899', dark: '#db2777', on: '#ffffff' },
   };
 
   const DEFAULTS = {
@@ -83,6 +85,8 @@ const Settings = (() => {
     rootStyle.setProperty('--primary', accent.primary);
     rootStyle.setProperty('--primary-dark', accent.dark);
     rootStyle.setProperty('--primary-on', accent.on);
+    const favicon = document.getElementById('dynamic-favicon');
+    if (favicon) favicon.href = mascotFaviconDataUri(accent.primary);
   }
 
   function get(key) { return state[key]; }

@@ -119,11 +119,14 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   fixed with `pointer-events: none` on every decorative mark, see `js/stats.js`) and either a
   collapsed "View as table" fallback or, for the two donuts, a legend that already shows the whole
   (2-4 row) dataset directly — so nothing on the page is chart-only (`js/stats.js`).
-- **Demonlist Roulette** (`js/roulette.js`, dice icon in the header, every page) — a more
-  theatrical alternative to the plain "Random level" button: a slot-reel modal spins through random
-  ranks before landing on one, then reveals that level's name with a **View level** link. Same
-  underlying pick (a uniform random rank) as `NavActions.goToRandomLevel()`, just staged instead of
-  an instant redirect.
+- **Demonlist Roulette** (`roulette.html`/`js/roulette.js`, dice icon in the header everywhere
+  else, linking here) — a weighted pick, not the plain "Random level" button's uniform one: each
+  rank's odds equal its own position number, so #150 is 150x as likely to come up as #1 and #75 is
+  75x as likely — a slot-reel animation spins through random ranks before landing on the actual
+  weighted pick, shows its odds (`target / (total*(total+1)/2)`, i.e. rank i's share of the sum
+  1+2+...+total), and every spin is saved to `localStorage`
+  (`CONFIG.STORAGE.ROULETTE_HISTORY`) as a "recent spins" list on the page, persisting across
+  visits.
 - **Keyboard shortcuts** (`js/shortcuts.js`, every page) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
   to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
   header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
@@ -499,17 +502,20 @@ list.html                    list page markup (formerly at index.html)
 level.html                    detail page markup
 queue.html                     read-only priority-queue view markup, see "What it does" above
 stats.html                      averages/records/charts markup, see "What it does" above
+roulette.html                    Demonlist Roulette's own page, see "What it does" above
 assets/
   logo.png                   unused by any page now (the header mark is an inline recolorable SVG,
-                              see css/base.css's .brand-mark) — still the favicon source
-  favicon.ico                multi-resolution (16/32/48) browser-tab icon, generated from logo.png;
-                              static, doesn't follow the accent-color setting (see "Settings" above)
+                              see css/base.css's .brand-mark) — the *static* favicon fallback only;
+                              the actual tab icon is set dynamically, see #dynamic-favicon below
+  favicon.ico                multi-resolution (16/32/48) static fallback favicon, generated from
+                              logo.png — used only until js/settings.js swaps in the SVG one
 css/
   base.css                   design tokens, header (incl. the inline SVG brand mark), shared
-                              layout/states, range-chip group, roulette modal, settings panel
+                              layout/states, range-chip group, settings panel
   list.css                    card grid, pager, search/jump/filter/sort controls, list-mode rows;
                                also loaded by index.html for the spotlight cards, see home.css below
   home.css                     home-page-only layout: hero, spotlight row, changes panel, roulette teaser
+  roulette.css                  roulette.html's own layout: reel, spin button, result, spin history
   detail.css                   detail page layout + dual video panels + Previous/Next
   queue.css                     plain-list row styling for queue.html
   stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
@@ -517,16 +523,21 @@ js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
                                 dominantColor()/resolveThumbnailColor() (per-thumbnail accent color,
-                                localStorage-cached) + timeAgo(), shared by all pages
+                                localStorage-cached) + timeAgo() + mascotFaviconDataUri() (rebuilds the
+                                header mark as a data: URI favicon, tinted per the accent setting),
+                                shared by all pages
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache
                                  branch's aredl-cache.json first; also fetchChangelog() (top-150-filtered
                                  recent changes, used by the home page)
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  roulette.js                      Demonlist Roulette slot-reel modal, every page, see "What it does" above
-  nav-actions.js                   Home + Roulette + Random level + Stats + Copy link header buttons, every page
-  settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion side panel, every page
+  roulette.js                      roulette.html's own controller — weighted pick, reel animation,
+                                    localStorage spin history, see "What it does" above
+  nav-actions.js                   Home + Roulette (links to roulette.html) + Random level + Stats +
+                                    Copy link header buttons, every page
+  settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion
+                                     side panel + dynamic favicon, every page
   home.js                           home page controller — spotlight cards + recent-changes panel
   list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
   detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render

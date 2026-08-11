@@ -14,10 +14,10 @@
   const changesCountEl = document.getElementById('home-stat-changes');
   const topBody = document.getElementById('spotlight-top-body');
   const featuredBody = document.getElementById('spotlight-featured-body');
+  const featuredDateEl = document.getElementById('spotlight-featured-date');
   const changesList = document.getElementById('home-changes-list');
-  const rouletteBtn = document.getElementById('home-roulette-btn');
 
-  rouletteBtn?.addEventListener('click', () => Roulette.open());
+  if (featuredDateEl) featuredDateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
 
   /** Same calendar day (UTC) always picks the same level — a "featured today" that's actually stable through the day rather than re-rolling on every reload, without needing a server to coordinate it. */
   function seededIndexForToday(count) {
@@ -35,18 +35,29 @@
 
   function spotlightCardHtml(demon, entry) {
     const tierColor = positionColor(demon.position, CONFIG.LIST_SIZE);
-    const cachedColor = demon.thumbnail ? getCachedThumbColor(demon.thumbnail) : null;
+    // Colors are cached by the *list* thumbnail URL (youTubeThumbnail(), mqdefault) even though
+    // the visible image here is the higher-res HQ one below — one shared cache entry per level
+    // across list.html/level.html/index.html, see resolveThumbnailColor()'s comment in utils.js.
+    const colorCacheKey = demon.videoUrl ? youTubeThumbnail(demon.videoUrl) : demon.thumbnail;
+    const cachedColor = colorCacheKey ? getCachedThumbColor(colorCacheKey) : null;
     const color = cachedColor || tierColor;
-    const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
-      `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
+    // HQ (480x360) instead of the list card's mqdefault (320x180) — these two cards are shown much
+    // larger than a grid card, where mqdefault visibly softens.
+    const thumb = (demon.videoUrl && youTubeThumbnailHQ(demon.videoUrl)) || demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
     const creatorsList = demon.creators?.length ? demon.creators : [demon.publisher].filter(Boolean);
     const v = entry?.verifier?.viewCount, s = entry?.showcase?.viewCount;
     const vLeads = Number.isFinite(v) && Number.isFinite(s) && v > s;
     const sLeads = Number.isFinite(v) && Number.isFinite(s) && s > v;
 
-    return `
-      <a class="demon-card" style="--tier-color:${color}" href="level.html#${demon.position}">
+    // --tier-color isn't set here — the caller sets it on the enclosing
+    // .home-spotlight article instead, so it inherits down to both this
+    // card *and* .home-spotlight::before's gradient ring (a CSS custom
+    // property set on a descendant can't be read by an ancestor's own
+    // pseudo-element, so it has to live on the shared ancestor).
+    const html = `
+      <a class="demon-card" href="level.html#${demon.position}">
         <div class="card-thumb-wrap">
           <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
           <span class="card-rank">#${demon.position ?? '?'}</span>
@@ -73,6 +84,7 @@
         </div>
       </a>
     `;
+    return { html, color };
   }
 
   async function loadSpotlights(demons) {
@@ -86,8 +98,25 @@
       SharedYtCache.getEntry(featuredFull.id).catch(() => undefined),
     ]);
 
-    if (topBody) topBody.innerHTML = spotlightCardHtml(topFull, topEntry);
-    if (featuredBody) featuredBody.innerHTML = spotlightCardHtml(featuredFull, featuredEntry);
+    if (topBody) {
+      const { html, color } = spotlightCardHtml(topFull, topEntry);
+      topBody.innerHTML = html;
+      topBody.parentElement.style.setProperty('--tier-color', color);
+      wireCardColor(topBody, topFull);
+    }
+    if (featuredBody) {
+      const { html, color } = spotlightCardHtml(featuredFull, featuredEntry);
+      featuredBody.innerHTML = html;
+      featuredBody.parentElement.style.setProperty('--tier-color', color);
+      wireCardColor(featuredBody, featuredFull);
+    }
+  }
+
+  /** Live dominant-color extraction for a spotlight card once its thumbnail decodes — spotlightCardHtml() above only applies an *already-cached* color synchronously; this is what populates that cache in the first place (or upgrades the gradient fallback once it resolves), same as js/list.js's hydrateCards() does per card. Set on the enclosing .home-spotlight (see loadSpotlights above), not the card itself. */
+  function wireCardColor(container, demon) {
+    const img = container.querySelector('img');
+    if (!img || !demon.videoUrl) return;
+    resolveThumbnailColor(img, color => { if (color) container.parentElement.style.setProperty('--tier-color', color); }, youTubeThumbnail(demon.videoUrl));
   }
 
   // --- recent changes (AREDL changelog, filtered to top-150-affecting entries — see AredlAPI.fetchChangelog) ---

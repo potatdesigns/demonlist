@@ -1,70 +1,86 @@
 /* =====================================================================
-   DEMONLIST ROULETTE
+   DEMONLIST ROULETTE (roulette.html)
 
-   A more theatrical alternative to js/nav-actions.js's instant "Random
-   level" button — same underlying pick (a uniform random rank), but
-   revealed through a slot-reel spin instead of an immediate redirect.
-   Self-mounting modal, built once on first open() and reused after
-   that (same lazy-build-then-toggle pattern as js/settings.js's panel).
-   Requires js/api-aredl.js and js/utils.js to already be loaded.
+   Weighted by rank, not uniform: level #150 is 150x more likely to come
+   up than level #1, level #75 is 75x more likely, and so on — each
+   position's weight is just its own rank number, so the odds climb
+   linearly from #1 up to #CONFIG.LIST_SIZE (see weightedPosition()).
+   Every spin is saved to localStorage (CONFIG.STORAGE.ROULETTE_HISTORY)
+   so the recent-spins list survives a reload.
    ===================================================================== */
 
-const Roulette = (() => {
-  let overlay, reelTrack, resultEl, spinBtn, viewLink, spinning = false;
+(() => {
+  const reelTrack = document.getElementById('roulette-reel');
+  const spinBtn = document.getElementById('roulette-spin');
+  const resultEl = document.getElementById('roulette-result');
+  const historyList = document.getElementById('roulette-history-list');
+  const totalWeightEl = document.getElementById('roulette-total-weight');
 
-  function build() {
-    overlay = document.createElement('div');
-    overlay.className = 'roulette-overlay';
-    overlay.innerHTML = `
-      <div class="roulette-panel" role="dialog" aria-modal="true" aria-label="Demonlist Roulette">
-        <div class="roulette-head">
-          <h2>Demonlist Roulette</h2>
-          <button type="button" class="roulette-close icon-btn" aria-label="Close">&times;</button>
-        </div>
-        <p class="roulette-sub">Spin for a random level, main list or extended.</p>
-        <div class="roulette-reel-wrap"><div class="roulette-reel" id="roulette-reel"></div></div>
-        <div class="roulette-result" id="roulette-result" style="display:none;"></div>
-        <div class="roulette-actions">
-          <button type="button" class="btn-primary" id="roulette-spin">Spin</button>
-          <a class="btn-ghost" id="roulette-view" style="display:none;" href="#">View level &rarr;</a>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(overlay);
+  let spinning = false;
 
-    reelTrack = overlay.querySelector('#roulette-reel');
-    resultEl = overlay.querySelector('#roulette-result');
-    spinBtn = overlay.querySelector('#roulette-spin');
-    viewLink = overlay.querySelector('#roulette-view');
+  /** Weight of position i is i itself — total weight is the sum 1+2+...+total, i.e. total*(total+1)/2 (Gauss's formula). */
+  function totalWeightFor(total) { return total * (total + 1) / 2; }
 
-    overlay.querySelector('.roulette-close').addEventListener('click', close);
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
-    spinBtn.addEventListener('click', spin);
+  function weightedPosition(total) {
+    const totalWeight = totalWeightFor(total);
+    let r = Math.random() * totalWeight;
+    for (let i = 1; i <= total; i++) {
+      r -= i;
+      if (r < 0) return i;
+    }
+    return total;
   }
 
-  function open() {
-    if (!overlay) build();
-    overlay.classList.add('open');
-    if (!reelTrack.children.length) spin(); // spin on first open rather than showing an empty reel
+  const HISTORY_KEY = CONFIG.STORAGE.ROULETTE_HISTORY;
+  const HISTORY_MAX = 15;
+  function loadHistory() {
+    try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); }
+    catch { return []; }
   }
-  function close() { overlay?.classList.remove('open'); }
+  function saveHistory(list) {
+    try { localStorage.setItem(HISTORY_KEY, JSON.stringify(list.slice(0, HISTORY_MAX))); }
+    catch { /* storage full/disabled — this spin just won't persist */ }
+  }
+  function pushHistory(entry) {
+    const list = loadHistory();
+    list.unshift(entry);
+    saveHistory(list);
+    renderHistory(list);
+  }
 
-  const CELL_H = 56;
-  const REEL_LEN = 30; // long enough that the slow-down reads as a real spin, short enough it doesn't feel laggy
+  function renderHistory(list) {
+    if (!historyList) return;
+    if (!list.length) {
+      historyList.innerHTML = `<li class="chart-empty">No spins yet.</li>`;
+      return;
+    }
+    historyList.innerHTML = list.map(h => `
+      <li>
+        <a class="roulette-history-row" href="level.html#${h.position}">
+          <span class="roulette-history-rank">#${h.position}</span>
+          <span class="roulette-history-name">${escapeHtml(h.name)}</span>
+          <span class="roulette-history-pct">${h.pct}%</span>
+          <span class="roulette-history-time">${escapeHtml(timeAgo(h.at))}</span>
+        </a>
+      </li>
+    `).join('');
+  }
+
+  const CELL_H = 64;
+  const REEL_LEN = 32;
 
   async function spin() {
     if (spinning) return;
     spinning = true;
     spinBtn.disabled = true;
     resultEl.style.display = 'none';
-    viewLink.style.display = 'none';
 
     const total = await AredlAPI.getTotalCount().catch(() => 0);
     if (!total) { spinning = false; spinBtn.disabled = false; return; }
-    const target = 1 + Math.floor(Math.random() * total);
+    const target = weightedPosition(total);
+    const pct = (target / totalWeightFor(total) * 100).toFixed(2);
 
-    const values = Array.from({ length: REEL_LEN - 1 }, () => 1 + Math.floor(Math.random() * total));
+    const values = Array.from({ length: REEL_LEN - 1 }, () => weightedPosition(total));
     values.push(target);
     reelTrack.innerHTML = values.map(v => `<div class="roulette-cell">#${v}</div>`).join('');
 
@@ -73,7 +89,7 @@ const Roulette = (() => {
     void reelTrack.offsetHeight; // force reflow so the reset above isn't itself animated
     const finalOffset = -(values.length - 1) * CELL_H;
     requestAnimationFrame(() => {
-      reelTrack.style.transition = 'transform 3s cubic-bezier(.1,.85,.15,1)';
+      reelTrack.style.transition = 'transform 3.4s cubic-bezier(.1,.85,.15,1)';
       reelTrack.style.transform = `translateY(${finalOffset}px)`;
     });
 
@@ -82,21 +98,30 @@ const Roulette = (() => {
       spinning = false;
       spinBtn.disabled = false;
       spinBtn.textContent = 'Spin again';
-      viewLink.href = `level.html#${target}`;
-      viewLink.style.display = '';
 
-      try {
-        const demon = await AredlAPI.getByPosition(target);
-        resultEl.innerHTML = demon ? `
-          <div class="roulette-pick">
-            <span class="roulette-pick-rank">#${demon.position ?? target}</span>
-            <span class="roulette-pick-name">${escapeHtml(demon.name)}</span>
-          </div>
-        ` : '';
-        resultEl.style.display = demon ? '' : 'none';
-      } catch { /* the reel's own #N and the View link both already work without this */ }
+      let demon = null;
+      try { demon = await AredlAPI.getByPosition(target); } catch { /* still show the rank below without a name */ }
+      const name = demon?.name || `Rank #${target}`;
+      const tierColor = positionColor(target, total);
+
+      resultEl.style.display = '';
+      resultEl.style.setProperty('--tier-color', tierColor);
+      resultEl.innerHTML = `
+        <div class="roulette-pick">
+          <span class="roulette-pick-rank">#${target}</span>
+          <span class="roulette-pick-name">${escapeHtml(name)}</span>
+          <span class="roulette-pick-pct">${pct}% odds</span>
+        </div>
+        <a class="btn-primary" href="level.html#${target}">View level &rarr;</a>
+      `;
+      pushHistory({ position: target, name, pct, at: new Date().toISOString() });
     }, { once: true });
   }
 
-  return { open, close };
+  spinBtn?.addEventListener('click', spin);
+  renderHistory(loadHistory());
+
+  AredlAPI.getTotalCount().then(total => {
+    if (totalWeightEl && total) totalWeightEl.textContent = `${total} levels tracked, ${totalWeightFor(total).toLocaleString()} total tickets in the drum.`;
+  }).catch(() => {});
 })();

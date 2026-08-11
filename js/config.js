@@ -95,5 +95,6 @@ const CONFIG = {
   STORAGE: {
     SHARED_YT_CACHE: 'gddl_shared_yt_cache_v1', // local mirror of data/yt-cache.json, { fetchedAt, data }
     SETTINGS: 'gddl_settings_v1', // js/settings.js — theme, motion, etc.; see Settings.DEFAULTS there
+    ROULETTE_HISTORY: 'gddl_roulette_history_v1', // js/roulette.js — recent spins, newest first, capped at 15
   },
 };

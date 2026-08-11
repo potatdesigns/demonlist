@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <!-- Applies reduce-motion and the saved accent color before first paint, so a returning visitor's choices don't flash — see js/settings.js's file header. Accent preset values duplicated here (ACCENT_PRESETS lives in js/settings.js) since this must run before any script tag loads. -->
-<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={orange:['#ff6e00','#e66300','#1a0d00'],red:['#ef4444','#dc2626','#ffffff'],magenta:['#e0399b','#c22e85','#ffffff'],violet:['#8b5cf6','#7c3aed','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],green:['#22c55e','#16a34a','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
+<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={red:['#ef4444','#dc2626','#ffffff'],orange:['#ff6e00','#e66300','#1a0d00'],yellow:['#eab308','#ca8a04','#1a1300'],green:['#22c55e','#16a34a','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],pink:['#ec4899','#db2777','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Demonlist | Stats</title>
 <meta name="description" content="Averages, records, and charts across the tracked list — verifier vs. showcase view counts.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="icon" type="image/svg+xml" id="dynamic-favicon">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/stats.css">
 </head>
@@ -16,7 +17,7 @@
 
 <header class="site-header">
   <a href="index.html" class="brand" style="cursor:pointer;">
-    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Demonlist logo"><rect x="1" y="1" width="30" height="30" rx="8" fill="#141414" stroke="currentColor" stroke-width="2"/><path d="M16 6 L24 16 L16 26 L8 16 Z" fill="currentColor"/><path d="M16 6 L20 16 L16 26 L12 16 Z" fill="#141414" opacity="0.35"/></svg>
+    <svg class="brand-mark" width="32" height="32" viewBox="0 0 64 64" role="img" aria-label="Demonlist logo"><defs><linearGradient id="dlBorder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb703"/><stop offset="1" stop-color="#ff6e00"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="#12222c"/><rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#dlBorder)" stroke-width="3"/><path d="M8 44 L15 34 L22 44" fill="none" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="44" x2="25" y2="44" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round"/><rect x="4" y="4" width="13" height="13" rx="3" fill="#0a0a0a"/><text x="10.5" y="14" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">R</text><rect x="10" y="9" width="36" height="11" rx="3" fill="currentColor" transform="rotate(-26 28 14)"/><g transform="rotate(16 34 36)"><rect x="19" y="21" width="30" height="34" rx="5" fill="#f0f0f0"/><path d="M27 47 Q34 42 41 47" stroke="#12222c" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><g transform="rotate(-13 34 30)"><rect x="15" y="26" width="15" height="11" rx="3.5" fill="#0a0a0a"/><rect x="34" y="24" width="15" height="11" rx="3.5" fill="#0a0a0a"/><line x1="30" y1="30" x2="34" y2="29" stroke="#0a0a0a" stroke-width="2.5"/></g></svg>
     <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
   </a>
   <div class="header-actions" id="header-actions"></div>
@@ -186,7 +187,6 @@
 <script src="js/api-aredl.js"></script>
 <script src="js/data-source.js"></script>
 <script src="js/shared-cache.js"></script>
-<script src="js/roulette.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
 <script src="js/stats.js"></script>

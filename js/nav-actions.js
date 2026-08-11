@@ -2,12 +2,13 @@
    NAV ACTIONS
 
    Small header-area icon buttons, self-mounting into #header-actions
-   wherever it exists (index/list/level/stats/queue.html — every page now
-   has the slot): "Home" everywhere except index.html itself (no point
-   linking a page to itself — see the body.home-page check below),
-   "Roulette" and "Random level" everywhere, "Copy link" on level.html
-   only (there's nothing level-specific to link to from the other pages),
-   "Stats" everywhere except stats.html itself. All reuse the .icon-btn /
+   wherever it exists (every page now has the slot): "Home" everywhere
+   except index.html itself (no point linking a page to itself — see the
+   body.home-page check below), "Roulette" everywhere except its own
+   roulette.html (#roulette-root check, same idea), "Random level"
+   everywhere, "Copy link" on level.html only (there's nothing
+   level-specific to link to from the other pages), "Stats" everywhere
+   except stats.html itself. All reuse the .icon-btn /
    .refresh-btn-wrap / .refresh-status popover styling already
    established by js/cache-admin-ui.js's refresh button rather than
    inventing new CSS for the same "small icon button with a temporary
@@ -40,14 +41,14 @@ const NavActions = (() => {
   }
 
   function mountRouletteButton(container) {
-    if (!container || typeof Roulette === 'undefined') return;
+    if (!container) return;
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'icon-btn';
     btn.setAttribute('aria-label', 'Demonlist Roulette');
     btn.title = 'Demonlist Roulette';
     btn.innerHTML = DICE;
-    btn.addEventListener('click', () => Roulette.open());
+    btn.addEventListener('click', () => { window.location.href = 'roulette.html'; });
     container.appendChild(btn);
   }
 
@@ -132,7 +133,7 @@ const NavActions = (() => {
     if (document.getElementById('detail-root')) mountCopyLinkButton(headerActions);
     if (!document.body.classList.contains('home-page')) mountHomeButton(headerActions);
     if (!document.getElementById('kpi-row')) mountStatsButton(headerActions);
-    mountRouletteButton(headerActions);
+    if (!document.getElementById('roulette-root')) mountRouletteButton(headerActions);
     mountRandomButton(headerActions);
   }
 

@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <!-- Applies reduce-motion and the saved accent color before first paint, so a returning visitor's choices don't flash — see js/settings.js's file header. Accent preset values duplicated here (ACCENT_PRESETS lives in js/settings.js) since this must run before any script tag loads. -->
-<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={orange:['#ff6e00','#e66300','#1a0d00'],red:['#ef4444','#dc2626','#ffffff'],magenta:['#e0399b','#c22e85','#ffffff'],violet:['#8b5cf6','#7c3aed','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],green:['#22c55e','#16a34a','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
+<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={red:['#ef4444','#dc2626','#ffffff'],orange:['#ff6e00','#e66300','#1a0d00'],yellow:['#eab308','#ca8a04','#1a1300'],green:['#22c55e','#16a34a','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],pink:['#ec4899','#db2777','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Demonlist | Home</title>
 <meta name="description" content="An AREDL-powered Geometry Dash extreme demon list, with verifier vs. showcase view counts.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="icon" type="image/svg+xml" id="dynamic-favicon">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/list.css">
 <link rel="stylesheet" href="css/home.css">
@@ -17,7 +18,7 @@
 
 <header class="site-header">
   <div class="brand">
-    <svg class="brand-mark" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Demonlist logo"><rect x="1" y="1" width="30" height="30" rx="8" fill="#141414" stroke="currentColor" stroke-width="2"/><path d="M16 6 L24 16 L16 26 L8 16 Z" fill="currentColor"/><path d="M16 6 L20 16 L16 26 L12 16 Z" fill="#141414" opacity="0.35"/></svg>
+    <svg class="brand-mark" width="32" height="32" viewBox="0 0 64 64" role="img" aria-label="Demonlist logo"><defs><linearGradient id="dlBorder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb703"/><stop offset="1" stop-color="#ff6e00"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="#12222c"/><rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#dlBorder)" stroke-width="3"/><path d="M8 44 L15 34 L22 44" fill="none" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="44" x2="25" y2="44" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round"/><rect x="4" y="4" width="13" height="13" rx="3" fill="#0a0a0a"/><text x="10.5" y="14" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">R</text><rect x="10" y="9" width="36" height="11" rx="3" fill="currentColor" transform="rotate(-26 28 14)"/><g transform="rotate(16 34 36)"><rect x="19" y="21" width="30" height="34" rx="5" fill="#f0f0f0"/><path d="M27 47 Q34 42 41 47" stroke="#12222c" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><g transform="rotate(-13 34 30)"><rect x="15" y="26" width="15" height="11" rx="3.5" fill="#0a0a0a"/><rect x="34" y="24" width="15" height="11" rx="3.5" fill="#0a0a0a"/><line x1="30" y1="30" x2="34" y2="29" stroke="#0a0a0a" stroke-width="2.5"/></g></svg>
     <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
   </div>
   <div class="header-actions" id="header-actions"></div>
@@ -25,11 +26,8 @@
 
 <main class="page">
   <section class="home-hero">
-    <h1>Every Extreme Demon, ranked — and watched.</h1>
-    <p>
-      AREDL's own list order, with each level's verification video tracked against the
-      highest-viewed showcase we can find for it on YouTube.
-    </p>
+    <h1>Demonlist</h1>
+    <p>An extreme demon list, with showcases tracked.</p>
     <div class="home-cta-row">
       <a class="btn-primary" href="list.html">View the list &rarr;</a>
       <a class="btn-ghost" href="stats.html">See the stats</a>
@@ -41,14 +39,25 @@
   </section>
 
   <section class="home-spotlight-row">
-    <article class="home-spotlight" aria-label="Current #1">
-      <span class="home-spotlight-label">Current #1</span>
+    <article class="home-spotlight home-spotlight-crown" aria-label="Current #1">
+      <div class="home-spotlight-head">
+        <span class="home-spotlight-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 8l4 3 5-6 5 6 4-3-2 11H5L3 8z"/></svg>
+        </span>
+        <span class="home-spotlight-label">Current #1</span>
+      </div>
       <div id="spotlight-top-body">
         <div class="demon-card skeleton-card" aria-hidden="true"><div class="skeleton card-thumb-wrap"></div></div>
       </div>
     </article>
-    <article class="home-spotlight" aria-label="Featured today">
-      <span class="home-spotlight-label">Featured today</span>
+    <article class="home-spotlight home-spotlight-featured" aria-label="Featured today">
+      <div class="home-spotlight-head">
+        <span class="home-spotlight-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.6-6.3 4.6 2.3-7.2-6-4.6h7.6z"/></svg>
+        </span>
+        <span class="home-spotlight-label">Featured today</span>
+        <span class="home-spotlight-date" id="spotlight-featured-date"></span>
+      </div>
       <div id="spotlight-featured-body">
         <div class="demon-card skeleton-card" aria-hidden="true"><div class="skeleton card-thumb-wrap"></div></div>
       </div>
@@ -70,7 +79,7 @@
       <h2>Feeling lucky?</h2>
       <p>Spin the Demonlist Roulette for a random pick.</p>
     </div>
-    <button type="button" class="btn-primary" id="home-roulette-btn">Spin the wheel</button>
+    <a class="btn-primary" href="roulette.html">Spin the wheel</a>
   </section>
 </main>
 
@@ -82,7 +91,6 @@
 <script src="js/utils.js"></script>
 <script src="js/api-aredl.js"></script>
 <script src="js/shared-cache.js"></script>
-<script src="js/roulette.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
 <script src="js/home.js"></script>

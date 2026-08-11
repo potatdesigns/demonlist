@@ -5,13 +5,13 @@
 <script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={red:['#ef4444','#dc2626','#ffffff'],orange:['#ff6e00','#e66300','#1a0d00'],yellow:['#eab308','#ca8a04','#1a1300'],green:['#22c55e','#16a34a','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],pink:['#ec4899','#db2777','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demonlist | Queue</title>
-<meta name="description" content="The current showcase-discovery priority queue — which levels get re-checked next, and why.">
+<title>Demonlist | Roulette</title>
+<meta name="description" content="Spin the Demonlist Roulette — weighted by rank, so easier levels come up more often than the very hardest.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="icon" type="image/svg+xml" id="dynamic-favicon">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/queue.css">
+<link rel="stylesheet" href="css/roulette.css">
 </head>
 <body>
 
@@ -23,22 +23,32 @@
   <div class="header-actions" id="header-actions"></div>
 </header>
 
-<main class="page">
-  <a class="back-link" href="list.html">&larr; Back to the list</a>
+<main class="page" id="roulette-root">
+  <a class="back-link" href="index.html">&larr; Back to home</a>
 
-  <section class="queue-hero">
-    <h1>Refresh Queue</h1>
+  <section class="roulette-hero">
+    <h1>Demonlist Roulette</h1>
     <p>
-      The order the next showcase-discovery run processes levels in — levels with no showcase
-      found on YouTube yet go first, then the rest ordered by ascending showcase view count.
-      The whole list fits in one run, so everything gets checked either way; this mainly matters
-      as a priority if a run ever gets cut short.
+      Weighted by rank, not a flat 1-in-150 — level #150's odds are 150x level #1's, level #75's
+      are 75x, and so on up the list. Every rank gets picked eventually; the harder the level, the
+      rarer the spin.
     </p>
+    <span class="mono" id="roulette-total-weight"></span>
   </section>
 
-  <div class="state-banner" id="state-banner" style="display:none;"></div>
+  <section class="roulette-stage">
+    <div class="roulette-reel-wrap-lg"><div id="roulette-reel"></div></div>
+    <button type="button" class="btn-primary roulette-spin-btn" id="roulette-spin">Spin</button>
+  </section>
 
-  <div class="queue-list" id="queue-list"></div>
+  <section class="roulette-result" id="roulette-result" style="display:none;"></section>
+
+  <section class="roulette-history-card">
+    <h2>Recent spins</h2>
+    <ul class="roulette-history-list" id="roulette-history-list">
+      <li class="chart-empty">No spins yet.</li>
+    </ul>
+  </section>
 </main>
 
 <p class="footer-note">
@@ -48,11 +58,10 @@
 <script src="js/config.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/api-aredl.js"></script>
-<script src="js/data-source.js"></script>
 <script src="js/shared-cache.js"></script>
-<script src="js/queue.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
+<script src="js/roulette.js"></script>
 <script src="js/shortcuts.js"></script>
 </body>
 </html>
