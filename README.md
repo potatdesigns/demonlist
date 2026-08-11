@@ -500,27 +500,31 @@ bare fields for that run; the client's live-fallback covers it individually rath
 refresh failing. A full run currently takes on the order of a minute — comfortably fine for an
 hourly job.
 
-### Watching for newly added levels
+### Watching for AREDL changes affecting the top 150
 
-A level newly placed into the top 150 would otherwise sit for up to an hour before
-`refresh-aredl-cache.yml`'s own schedule picks it up, and potentially days before the staggered
-`refresh-yt-cache.yml` discover queue reaches it (see
+A change touching the top 150 — a new placement, or a `Raised`/`Lowered`/`Swapped`/`MovedToLegacy`
+that lands in range — would otherwise leave `data/aredl-cache.json`'s positions stale for up to an
+hour until `refresh-aredl-cache.yml`'s own schedule catches up, and a genuinely new level would
+wait potentially days for the staggered `refresh-yt-cache.yml` discover queue to reach it (see
 [Showcase-matching algorithm](#showcase-matching-algorithm)). `scripts/watch-new-levels.mjs` /
-[`watch-new-levels.yml`](.github/workflows/watch-new-levels.yml) close that gap: every 15 minutes
-it polls AREDL's changelog (one page — cheap, not the full level list) for `Placed` events landing
-at position ≤ 150 since the last check (`data/new-level-watch.json`, published to the
-[`cache` branch](#cache-branch) the same way the other refresh scripts publish their own files).
-When it finds one, it triggers `refresh-aredl-cache.yml` once for the run (so the site picks up the
-new level itself immediately) and `refresh-yt-cache.yml` once per newly placed level, scoped to
-just that level (`target_level_id`, the same input the detail page's "refresh this level" button
-uses) — so its verifier/showcase gets discovered right away instead of waiting on the queue. Both
-dispatches fire via the GitHub REST API using the workflow's own ambient `GITHUB_TOKEN` (granted
-`actions: write` in the workflow's `permissions:` block) — dispatching a *different* workflow in
-the same repo from inside a GitHub Actions run doesn't need a separate PAT the way triggering one
-from outside GitHub Actions does (see [One-click refresh trigger](#one-click-refresh-trigger),
-which does need one — that caller is the Cloudflare Worker, a different trust boundary entirely). A
-first-ever run just records the current time and triggers nothing, so it doesn't replay AREDL's
-entire changelog history the first time it runs.
+[`watch-new-levels.yml`](.github/workflows/watch-new-levels.yml) close both gaps: every 15 minutes
+it polls AREDL's changelog (one page — cheap, not the full level list) for any change whose
+recorded position(s) land at ≤ 150, since the last check (`data/new-level-watch.json`, published to
+the [`cache` branch](#cache-branch) the same way the other refresh scripts publish their own
+files). Any such change triggers `refresh-aredl-cache.yml` once for the run, so the site's cached
+positions catch up immediately instead of waiting on the hourly schedule. A *new placement*
+specifically — a level entering the top 150 for the first time, not just moving within it — also
+triggers `refresh-yt-cache.yml`, scoped to just that level (`target_level_id`, the same input the
+detail page's "refresh this level" button uses), so its verifier/showcase gets discovered right
+away instead of waiting on the queue; a level that was already in the top 150 and just moved
+already has one on file, so it doesn't get this second trigger. All dispatches fire via the GitHub
+REST API using the workflow's own ambient `GITHUB_TOKEN` (granted `actions: write` in the
+workflow's `permissions:` block) — dispatching a *different* workflow in the same repo from inside
+a GitHub Actions run doesn't need a separate PAT the way triggering one from outside GitHub Actions
+does (see [One-click refresh trigger](#one-click-refresh-trigger), which does need one — that
+caller is the Cloudflare Worker, a different trust boundary entirely). A first-ever run just
+records the current time and triggers nothing, so it doesn't replay AREDL's entire changelog
+history the first time it runs.
 
 ## CORS
 
@@ -582,16 +586,16 @@ data/                        *.json gitignored on main — generated at runtime,
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
-  watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for new
-                               top-150 placements and triggers the two scripts above when it finds
-                               one, see "Watching for newly added levels" above
+  watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for any
+                               change touching the top 150 and triggers the two scripts above when
+                               it finds one, see "Watching for AREDL changes affecting the top 150" above
   publish-cache-branch.sh     what all three scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
   showcase-blacklist.json     hand-maintained video/title-phrase blacklist, see "Showcase-matching algorithm" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
   refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
-  watch-new-levels.yml        every 15 min — watches for newly added levels, see above
+  watch-new-levels.yml        every 15 min — watches for AREDL changes affecting the top 150, see above
 worker/                      Cloudflare Worker proxy so the refresh button works for every visitor, see "One-click refresh trigger" above
   src/index.js                 the Worker itself — rejects queue-wide requests, rate-limits, then calls GitHub's workflow_dispatch API
   wrangler.toml                 Cloudflare deploy config (KV binding, repo/workflow vars — no secrets)

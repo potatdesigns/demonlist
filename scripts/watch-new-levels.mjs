@@ -1,30 +1,40 @@
 #!/usr/bin/env node
 /* =====================================================================
-   WATCH FOR NEWLY ADDED LEVELS
+   WATCH FOR AREDL CHANGES AFFECTING THE TOP 150
 
    Polls AREDL's changelog (cheap — one page, not the full ~1600-level
-   list) for "Placed" events landing inside the tracked top
-   LEVEL_LIST_SIZE since the last run. For each one found:
+   list) for anything touching the tracked top LEVEL_LIST_SIZE since the
+   last run — not just new placements: a Raised/Lowered/Swapped/
+   MovedToLegacy affecting a position ≤ LEVEL_LIST_SIZE means
+   data/aredl-cache.json's positions are stale too, same as an addition
+   would. Any such change:
 
      1. Triggers refresh-aredl-cache.yml once per run (not once per
-        level) — so data/aredl-cache.json, and every card/detail page
-        reading it, picks up the new level right away instead of
+        change) — so data/aredl-cache.json, and every card/detail page
+        reading it, picks up the new positions right away instead of
         waiting up to an hour for that workflow's own schedule.
-     2. Triggers refresh-yt-cache.yml's discover mode scoped to just
-        that level (target_level_id) — so its verifier/showcase gets
-        found immediately instead of waiting for the staggered daily
-        queue to reach it, same as the detail page's "refresh this
-        level" button. Safe to fire in parallel with (1): that script
-        fetches its own live AREDL level list rather than reading
-        data/aredl-cache.json, so it doesn't need (1) to have finished
-        first — see fetchAredlLevels() in refresh-yt-cache.mjs.
+
+   And specifically for a new placement (a level entering the top 150
+   for the first time, not just moving within it):
+
+     2. Also triggers refresh-yt-cache.yml's discover mode scoped to
+        just that level (target_level_id) — so its verifier/showcase
+        gets found immediately instead of waiting for the staggered
+        daily queue to reach it, same as the detail page's "refresh
+        this level" button. Only placements get this one — a level
+        that was already in the top 150 and just moved already has a
+        verifier/showcase on file, nothing new to discover for it. Safe
+        to fire in parallel with (1): that script fetches its own live
+        AREDL level list rather than reading data/aredl-cache.json, so
+        it doesn't need (1) to have finished first — see
+        fetchAredlLevels() in refresh-yt-cache.mjs.
 
    State (data/new-level-watch.json: { lastCheckedAt }) is what "since
    the last run" is measured against, published to the cache branch the
    same way the other refresh scripts publish their own files. A first
    run (no prior state) just records "now" and triggers nothing — the
-   point is catching *new* placements going forward, not replaying
-   whatever's already in AREDL's changelog history.
+   point is catching new changes going forward, not replaying whatever's
+   already in AREDL's changelog history.
 
    Requires GITHUB_TOKEN with `actions: write` on this repo — the
    calling workflow's own ambient secrets.GITHUB_TOKEN is enough.
@@ -86,6 +96,12 @@ async function loadState() {
   }
 }
 
+/** Every numeric rank a changelog action references, whatever its shape (Placed only has new_position; Raised/Lowered/MovedToLegacy have both; Swapped nests its position under upper_position) — same helper as changelogPositions() in js/api-aredl.js, duplicated here since this runs standalone in Node, not the browser. */
+function changelogPositions(entry) {
+  const variant = Object.values(entry.action || {})[0] || {};
+  return [variant.new_position, variant.old_position, variant.upper_position].filter(Number.isFinite);
+}
+
 async function main() {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
     throw new Error('GITHUB_TOKEN and GITHUB_REPO must both be set.');
@@ -102,11 +118,16 @@ async function main() {
   const entries = Array.isArray(page.data) ? page.data : [];
 
   let newest = since;
+  const relevantChanges = [];
   const newPlacements = [];
   for (const entry of entries) {
     const createdAt = new Date(entry.created_at);
     if (!newest || createdAt > newest) newest = createdAt;
     if (since && createdAt <= since) continue; // already seen last run
+
+    const positions = changelogPositions(entry);
+    if (!positions.length || Math.min(...positions) > LEVEL_LIST_SIZE) continue; // didn't touch the top 150 at all
+    relevantChanges.push(entry);
 
     const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
     if (type === 'Placed' && Number.isFinite(action.new_position) && action.new_position <= LEVEL_LIST_SIZE) {
@@ -116,14 +137,18 @@ async function main() {
 
   if (isFirstRun) {
     console.log('First run — recording the current watermark without triggering anything (avoids replaying all of changelog history).');
-  } else if (!newPlacements.length) {
-    console.log('No new top-150 placements since the last check.');
+  } else if (!relevantChanges.length) {
+    console.log('No changes touching the top 150 since the last check.');
   } else {
-    console.log(`${newPlacements.length} new top-${LEVEL_LIST_SIZE} placement(s): ${newPlacements.map(p => `"${p.name}" at #${p.position}`).join(', ')}`);
+    console.log(`${relevantChanges.length} change(s) touching the top ${LEVEL_LIST_SIZE} — refreshing the AREDL cache.`);
     await dispatchWorkflow('refresh-aredl-cache.yml');
-    for (const p of newPlacements) {
-      if (p.id) await dispatchWorkflow('refresh-yt-cache.yml', { target_level_id: p.id });
-      else console.warn(`  skipping yt-cache trigger for "${p.name}" — changelog entry had no level id`);
+
+    if (newPlacements.length) {
+      console.log(`  ${newPlacements.length} of those were new placements: ${newPlacements.map(p => `"${p.name}" at #${p.position}`).join(', ')}`);
+      for (const p of newPlacements) {
+        if (p.id) await dispatchWorkflow('refresh-yt-cache.yml', { target_level_id: p.id });
+        else console.warn(`  skipping yt-cache trigger for "${p.name}" — changelog entry had no level id`);
+      }
     }
   }
 

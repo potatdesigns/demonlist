@@ -1,16 +1,19 @@
-name: Watch for newly added levels
+name: Watch for AREDL changes affecting the top 150
 
-# Polls AREDL's changelog for levels newly placed into the tracked top
-# 150 and, when one shows up, immediately triggers both
-# refresh-aredl-cache.yml (so the site picks up the new level itself
-# right away) and refresh-yt-cache.yml scoped to just that level (so its
-# verifier/showcase gets discovered right away too, instead of waiting
-# for the staggered daily queue to reach it). See scripts/watch-new-levels.mjs.
+# Polls AREDL's changelog for anything touching the tracked top 150 —
+# not just new placements, any Raised/Lowered/Swapped/MovedToLegacy in
+# range too, since all of those leave data/aredl-cache.json's cached
+# positions stale just as much as an addition would — and immediately
+# triggers refresh-aredl-cache.yml when it finds one. A *new placement*
+# specifically also triggers refresh-yt-cache.yml scoped to just that
+# level (so its verifier/showcase gets discovered right away instead of
+# waiting for the staggered daily queue to reach it) — a level that was
+# already in the top 150 and just moved doesn't need that, it already
+# has one on file. See scripts/watch-new-levels.mjs.
 #
 # Every 15 minutes rather than hourly like refresh-aredl-cache.yml — the
-# whole point is reacting quickly when a level actually gets added,
-# which is a much rarer event than "the list changed at all" and cheap
-# to check for (one changelog page, not the full level list).
+# whole point is reacting quickly to a change, and checking is cheap
+# (one changelog page, not the full level list).
 #
 # Published to the `cache` branch, not `main` — see README's "Cache
 # branch" section and scripts/publish-cache-branch.sh.
@@ -44,7 +47,7 @@ jobs:
           mkdir -p data
           git show origin/cache:data/new-level-watch.json > data/new-level-watch.json 2>/dev/null || echo "No existing watch state found — starting fresh."
 
-      - name: Check for new top-150 placements, trigger refreshes if found
+      - name: Check for top-150 changes, trigger refreshes if found
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
