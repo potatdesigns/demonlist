@@ -312,5 +312,40 @@ const AredlAPI = (() => {
     return results;
   }
 
-  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog };
+  /**
+   * Ids of levels *placed* into the top CONFIG.LIST_SIZE within the
+   * last `days` — used to show a "NEW" badge on cards/the detail page.
+   * A separate query from fetchChangelog() above rather than filtering
+   * its results, since that one caps at maxResults entries regardless
+   * of age (right for "recent changes," wrong here — a quiet week
+   * shouldn't make a two-week-old placement look new just because
+   * nothing else bumped it out of a fixed-size list). Walks the
+   * changelog newest-first and stops paging as soon as an entry falls
+   * outside the window, rather than a fixed page count, since how many
+   * changes happened in the last `days` varies with how active the
+   * list's been.
+   */
+  async function fetchNewLevelIds({ days = 7, maxPages = 10 } = {}) {
+    const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
+    const ids = new Set();
+    outer:
+    for (let page = 1; page <= maxPages; page++) {
+      const res = await corsFetchJson(ENDPOINTS.changelog(page));
+      if (!res.ok && !res.viaProxy) break;
+      const json = await res.json().catch(() => null);
+      const entries = Array.isArray(json?.data) ? json.data : [];
+      if (!entries.length) break;
+      for (const entry of entries) {
+        const createdAt = new Date(entry.created_at).getTime();
+        if (!Number.isFinite(createdAt) || createdAt < cutoff) break outer; // newest-first — nothing further back can still be in range
+        const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
+        if (type === 'Placed' && Number.isFinite(action.new_position) && action.new_position <= CONFIG.LIST_SIZE && entry.affected_level?.id) {
+          ids.add(entry.affected_level.id);
+        }
+      }
+    }
+    return ids;
+  }
+
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog, fetchNewLevelIds };
 })();

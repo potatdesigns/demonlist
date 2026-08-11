@@ -274,6 +274,17 @@
     updateControlsUI();
   }).catch(() => { /* the main load below will surface the real error */ });
 
+  // Purely decorative (a "NEW" badge, see cardTemplate() below) — fired
+  // in parallel with the main load rather than awaited by it, so a slow
+  // or failed changelog fetch never delays or breaks the actual list.
+  // cardTemplate() reads this Set by reference at render time, so it
+  // only affects renders that happen after this resolves; one already
+  // on screen when it resolves just won't have the badge until the next
+  // render (a filter/sort/page change, or a reload) — an acceptable
+  // trade for not needing to patch two different card layouts in place.
+  let newLevelIds = new Set();
+  AredlAPI.fetchNewLevelIds().then(ids => { newLevelIds = ids; }).catch(() => {});
+
   function showBanner(msg, isError = false) {
     stateBanner.innerHTML = msg;
     stateBanner.className = 'state-banner' + (isError ? ' error' : '');
@@ -320,6 +331,11 @@
         data-name="${escapeHtml(demon.name)}"
         data-level-id="${demon.levelId ?? ''}"`;
 
+    // Placed into the top CONFIG.LIST_SIZE within the last week — see
+    // AredlAPI.fetchNewLevelIds(). Purely a "this wasn't here recently"
+    // signal, unrelated to demon.needsExtras/hydration state.
+    const isNew = newLevelIds.has(demon.id);
+
     // Both stat blocks keep the same [data-role] hooks in either layout —
     // hydrateCards()/setStatValue()/updateLeader() below don't care which
     // template produced them, only that they're there.
@@ -344,7 +360,7 @@
               <img src="${thumb}" alt="" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
             </div>
             <div class="row-title">
-              <div class="card-title">${escapeHtml(demon.name)}</div>
+              <div class="card-title">${escapeHtml(demon.name)}${isNew ? '<span class="new-badge">New</span>' : ''}</div>
               <div class="card-meta row-meta">
                 <span><strong>By</strong> <span data-role="by-names"${byNamesTitle ? ` title="${escapeHtml(byNamesTitle)}"` : ''}>${escapeHtml(byNames)}</span></span>
                 <span><strong>Verified by</strong> <span data-role="verifier-name">${escapeHtml(demon.verifier?.name || (demon.needsExtras ? '…' : 'Unknown'))}</span></span>
@@ -363,6 +379,7 @@
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
+            ${isNew ? '<span class="new-badge">New</span>' : ''}
             ${demon.videoUrl ? `
             <span class="play-badge" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>

@@ -262,6 +262,22 @@ img { max-width: 100%; display: block; }
   background: var(--bg-surface-2);
 }
 
+/* A level placed into the tracked top 150 within the last week (see
+   AredlAPI.fetchNewLevelIds()) — shared look wherever it shows up
+   (list cards, the detail page); each context supplies its own
+   positioning (absolute over a thumbnail, inline next to a title, etc.)
+   rather than repeating this here. */
+.new-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px 2px;
+  background: var(--primary);
+  color: var(--primary-on, #1a0d00);
+  border-radius: 5px;
+}
+
 /* A truncated-list overflow chip ("+N more") — dashed to read as "not a name, hover for the rest" at a glance, distinct from the solid chips around it. */
 .chip-more {
   border-style: dashed;

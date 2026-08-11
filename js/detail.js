@@ -157,7 +157,7 @@
       <div class="detail-head">
         <div class="detail-rank" style="--tier-color:${tierColor}">#${demon.position ?? '?'}<span>RANK</span></div>
         <div class="detail-titles">
-          <h1>${escapeHtml(demon.name)}</h1>
+          <h1>${escapeHtml(demon.name)}<span id="detail-new-badge"></span></h1>
         </div>
       </div>
 
@@ -209,6 +209,15 @@
     mountShowcaseVideo(demon, sharedEntry);
     CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
     mountDetailBackground(demon.videoUrl);
+
+    // Placed into the top CONFIG.LIST_SIZE within the last week — see
+    // AredlAPI.fetchNewLevelIds(). Fired off rather than awaited, same
+    // as list.js's own use of this: purely decorative, never worth
+    // delaying or failing the rest of the page over.
+    AredlAPI.fetchNewLevelIds().then(ids => {
+      const badge = document.getElementById('detail-new-badge');
+      if (badge && ids.has(demon.id)) badge.innerHTML = '<span class="new-badge">New</span>';
+    }).catch(() => {});
   }
 
   /**

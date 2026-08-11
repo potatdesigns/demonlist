@@ -111,6 +111,18 @@
   word-break: break-word;
 }
 
+/* .new-badge's shared look lives in css/base.css — positioning only:
+   inline next to the title, filled in by js/detail.js once it knows
+   whether this level qualifies (empty span otherwise, so it takes up
+   no space). */
+.detail-titles h1 .new-badge {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  vertical-align: middle;
+  transform: translateY(-3px);
+}
+
 .detail-facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

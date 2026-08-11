@@ -19,6 +19,12 @@
 
   if (featuredDateEl) featuredDateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
 
+  // Purely decorative (a "NEW" badge, see spotlightCardHtml() below) —
+  // fired in parallel with everything else rather than awaited, so a
+  // slow or failed changelog fetch never delays the spotlights.
+  let newLevelIds = new Set();
+  const newLevelIdsReady = AredlAPI.fetchNewLevelIds().then(ids => { newLevelIds = ids; }).catch(() => {});
+
   /** Same calendar day (UTC) always picks the same level — a "featured today" that's actually stable through the day rather than re-rolling on every reload, without needing a server to coordinate it. */
   function seededIndexForToday(count) {
     const dateStr = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
@@ -67,7 +73,7 @@
           </span>` : ''}
         </div>
         <div class="card-body">
-          <div class="card-title">${escapeHtml(demon.name)}</div>
+          <div class="card-title">${escapeHtml(demon.name)}${newLevelIds.has(demon.id) ? '<span class="new-badge">New</span>' : ''}</div>
           <div class="card-meta"><span><strong>By</strong> ${escapeHtml(joinNames(creatorsList))}</span></div>
         </div>
         <div class="card-body" style="padding-top:0;">
@@ -202,6 +208,7 @@
       const [{ demons, total }] = await Promise.all([
         AredlAPI.fetchListed({ limit: CONFIG.LIST_SIZE, offset: 0 }),
         SharedYtCache.load().catch(() => null),
+        newLevelIdsReady, // spotlightCardHtml() reads newLevelIds synchronously — only rendered once, unlike list.js's cards, so this needs to actually be ready first rather than just eventually resolving
       ]);
       if (totalEl) totalEl.textContent = String(total ?? demons.length);
       await loadSpotlights(demons);
