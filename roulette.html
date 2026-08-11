@@ -6,18 +6,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Demonlist | Roulette</title>
-<meta name="description" content="Spin the Demonlist Roulette — weighted by rank, so easier levels come up more often than the very hardest.">
+<meta name="description" content="Extreme Demon Roulette — random levels from the list, 1% harder each time you clear one.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="icon" type="image/svg+xml" id="dynamic-favicon">
 <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/list.css">
 <link rel="stylesheet" href="css/roulette.css">
 </head>
 <body>
 
 <header class="site-header">
   <a href="index.html" class="brand" style="cursor:pointer;">
-    <svg class="brand-mark" width="32" height="32" viewBox="0 0 64 64" role="img" aria-label="Demonlist logo"><defs><linearGradient id="dlBorder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb703"/><stop offset="1" stop-color="#ff6e00"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="#12222c"/><rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#dlBorder)" stroke-width="3"/><path d="M8 44 L15 34 L22 44" fill="none" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="5" y1="44" x2="25" y2="44" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round"/><rect x="4" y="4" width="13" height="13" rx="3" fill="#0a0a0a"/><text x="10.5" y="14" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">R</text><rect x="10" y="9" width="36" height="11" rx="3" fill="currentColor" transform="rotate(-26 28 14)"/><g transform="rotate(16 34 36)"><rect x="19" y="21" width="30" height="34" rx="5" fill="#f0f0f0"/><path d="M27 47 Q34 42 41 47" stroke="#12222c" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><g transform="rotate(-13 34 30)"><rect x="15" y="26" width="15" height="11" rx="3.5" fill="#0a0a0a"/><rect x="34" y="24" width="15" height="11" rx="3.5" fill="#0a0a0a"/><line x1="30" y1="30" x2="34" y2="29" stroke="#0a0a0a" stroke-width="2.5"/></g></svg>
+    <img class="brand-mark" src="assets/logo.png" width="32" height="32" alt="">
     <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
   </a>
   <div class="header-actions" id="header-actions"></div>
@@ -27,27 +28,57 @@
   <a class="back-link" href="index.html">&larr; Back to home</a>
 
   <section class="roulette-hero">
-    <h1>Demonlist Roulette</h1>
+    <h1>Extreme Demon Roulette</h1>
     <p>
-      Weighted by rank, not a flat 1-in-150 — level #150's odds are 150x level #1's, level #75's
-      are 75x, and so on up the list. Every rank gets picked eventually; the harder the level, the
-      rarer the spin.
+      The real challenge, not a random-jump button: levels come up one at a time in random order.
+      Clear one and the next needs at least 1% more than you just got, starting from 1%. Miss the
+      requirement and the run's over — reach 100% and it's a win. This site can't see into an actual
+      Geometry Dash run, so play the level for real, then report back what you got.
     </p>
-    <span class="mono" id="roulette-total-weight"></span>
   </section>
 
-  <section class="roulette-stage">
-    <div class="roulette-reel-wrap-lg"><div id="roulette-reel"></div></div>
-    <button type="button" class="btn-primary roulette-spin-btn" id="roulette-spin">Spin</button>
+  <section class="roulette-setup" id="roulette-setup">
+    <div class="settings-row-label" style="margin-bottom:10px;">
+      <span class="settings-title">Pull from</span>
+      <span class="settings-desc">This site only tracks the top 150, so Legacy (AREDL #151+) isn't available here.</span>
+    </div>
+    <div class="settings-btn-group" id="roulette-range" role="group" aria-label="Level range">
+      <button type="button" class="settings-btn-opt active" data-value="main">Main <span class="mono">#1&ndash;75</span></button>
+      <button type="button" class="settings-btn-opt" data-value="extended">Extended <span class="mono">#76&ndash;150</span></button>
+      <button type="button" class="settings-btn-opt" data-value="all">Both <span class="mono">#1&ndash;150</span></button>
+    </div>
+    <button type="button" class="btn-primary roulette-start-btn" id="roulette-start">Start</button>
   </section>
 
-  <section class="roulette-result" id="roulette-result" style="display:none;"></section>
+  <section class="roulette-play" id="roulette-play" style="display:none;">
+    <div class="roulette-play-head">
+      <div class="roulette-stat-box">
+        <span class="roulette-stat-label">Required</span>
+        <span class="roulette-stat-value" id="roulette-required">1%</span>
+      </div>
+      <div class="roulette-stat-box">
+        <span class="roulette-stat-label">Cleared</span>
+        <span class="roulette-stat-value" id="roulette-score">0</span>
+      </div>
+    </div>
+    <div id="roulette-current-card"></div>
+    <div class="roulette-submit-row">
+      <label for="roulette-achieved-input">Your %</label>
+      <input type="number" id="roulette-achieved-input" min="0" max="100" inputmode="numeric" placeholder="0&ndash;100">
+      <button type="button" class="btn-primary" id="roulette-submit">Submit</button>
+      <button type="button" class="btn-ghost" id="roulette-giveup">Give up</button>
+    </div>
+  </section>
 
-  <section class="roulette-history-card">
-    <h2>Recent spins</h2>
-    <ul class="roulette-history-list" id="roulette-history-list">
-      <li class="chart-empty">No spins yet.</li>
-    </ul>
+  <section class="roulette-end" id="roulette-end" style="display:none;">
+    <h2 class="roulette-end-title" id="roulette-end-title"></h2>
+    <p id="roulette-end-score"></p>
+    <button type="button" class="btn-primary" id="roulette-play-again">Play again</button>
+  </section>
+
+  <section class="roulette-history-card" id="roulette-history-card" style="display:none;">
+    <h2>Levels played</h2>
+    <ul class="roulette-history-list" id="roulette-history-list"></ul>
   </section>
 </main>
 

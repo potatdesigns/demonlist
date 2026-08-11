@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 
-.brand-mark { flex-shrink: 0; display: block; color: var(--primary); transition: transform .25s cubic-bezier(.34,1.56,.64,1); }
+.brand-mark { flex-shrink: 0; display: block; border-radius: 6px; transition: transform .25s cubic-bezier(.34,1.56,.64,1); }
 .brand:hover .brand-mark { transform: rotate(-8deg) scale(1.08); }
 
 .brand-text {

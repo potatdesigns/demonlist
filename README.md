@@ -119,14 +119,19 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   fixed with `pointer-events: none` on every decorative mark, see `js/stats.js`) and either a
   collapsed "View as table" fallback or, for the two donuts, a legend that already shows the whole
   (2-4 row) dataset directly — so nothing on the page is chart-only (`js/stats.js`).
-- **Demonlist Roulette** (`roulette.html`/`js/roulette.js`, dice icon in the header everywhere
-  else, linking here) — a weighted pick, not the plain "Random level" button's uniform one: each
-  rank's odds equal its own position number, so #150 is 150x as likely to come up as #1 and #75 is
-  75x as likely — a slot-reel animation spins through random ranks before landing on the actual
-  weighted pick, shows its odds (`target / (total*(total+1)/2)`, i.e. rank i's share of the sum
-  1+2+...+total), and every spin is saved to `localStorage`
-  (`CONFIG.STORAGE.ROULETTE_HISTORY`) as a "recent spins" list on the page, persisting across
-  visits.
+- **Extreme Demon Roulette** (`roulette.html`/`js/roulette.js`, dice icon in the header everywhere
+  else, linking here) — the actual community challenge format (created by npesta in 2020; see
+  `aredl.net/games/roulette` and `matcool.github.io/extreme-demon-roulette` for the reference
+  implementations this follows), not a random-level picker. Pick a range (Main/Extended/Both —
+  Legacy isn't offered, since this site doesn't track anything past #150), then levels come up one
+  at a time in random order from an in-memory shuffled pool; the percent required to clear starts
+  at 1% and climbs to whatever you report clearing plus 1% each time (so overshooting the
+  requirement raises the bar further, same as the real challenge's rules) — miss the requirement
+  and the run ends, hit 100% and it's a win ("GG"). This site can't see into an actual Geometry
+  Dash run, so it's a picker + tracker: you play the level for real, then report back what percent
+  you got. The whole run (range, remaining pool, play-by-play history, current level and required
+  percent) is saved to `localStorage` (`CONFIG.STORAGE.ROULETTE_RUN`) after every step, so a reload
+  mid-run — these can span a long time — resumes exactly where it left off.
 - **Keyboard shortcuts** (`js/shortcuts.js`, every page) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
   to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
   header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
@@ -145,11 +150,14 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   site-wide.
 - **Settings** (`js/settings.js`, gear icon, every page) — a slide-in side panel for six
   preferences, persisted to `localStorage` (`CONFIG.STORAGE.SETTINGS`) and applied immediately, no
-  reload needed: **accent color** (six presets, orange by default — retints `--primary`/
-  `--primary-dark` sitewide plus the brand mark, applied as inline styles on `:root` so every
-  existing `var(--primary)` picks it up unchanged; `--primary-on` switches the on-accent text color
-  between near-black for the warm default and white for the rest, see `ACCENT_PRESETS` in
-  `js/settings.js`), **level display** (Cards or a denser AREDL-style List row layout on the list
+  reload needed: **accent color** (six presets — Red/Orange/Yellow/Green/Blue/Pink, orange by
+  default — retints `--primary`/`--primary-dark` sitewide, applied as inline styles on `:root` so
+  every existing `var(--primary)` picks it up unchanged, plus the browser-tab favicon specifically
+  (see `mascotFaviconDataUri()` in `js/utils.js` — a data: URI SVG rebuilt per accent change; the
+  header's own brand mark stays the static `assets/logo.png`, by design, not tied to the accent).
+  `--primary-on` switches the on-accent text color between near-black for the warm presets (orange,
+  yellow) and white for the rest, see `ACCENT_PRESETS` in `js/settings.js`), **level display**
+  (Cards or a denser AREDL-style List row layout on the list
   page), **default list on open** (Main/Extended — only affects a bare `list.html` with no page in
   the URL, never an explicit `#main`/`#extended` link), **open levels in a new tab**, **autoplay
   videos** (muted — browsers block unmuted autoplay outright, so this always pairs `autoplay=1`
@@ -502,20 +510,19 @@ list.html                    list page markup (formerly at index.html)
 level.html                    detail page markup
 queue.html                     read-only priority-queue view markup, see "What it does" above
 stats.html                      averages/records/charts markup, see "What it does" above
-roulette.html                    Demonlist Roulette's own page, see "What it does" above
+roulette.html                    Extreme Demon Roulette's own page, see "What it does" above
 assets/
-  logo.png                   unused by any page now (the header mark is an inline recolorable SVG,
-                              see css/base.css's .brand-mark) — the *static* favicon fallback only;
-                              the actual tab icon is set dynamically, see #dynamic-favicon below
+  logo.png                   the header brand mark (32px, every page) and the PNG favicon source
   favicon.ico                multi-resolution (16/32/48) static fallback favicon, generated from
-                              logo.png — used only until js/settings.js swaps in the SVG one
+                              logo.png — used until js/settings.js swaps in the accent-tinted SVG one
+                              (a hand-built recreation of the same mark, see mascotFaviconDataUri()
+                              below — the header mark itself stays the static logo.png either way)
 css/
-  base.css                   design tokens, header (incl. the inline SVG brand mark), shared
-                              layout/states, range-chip group, settings panel
+  base.css                   design tokens, header, shared layout/states, range-chip group, settings panel
   list.css                    card grid, pager, search/jump/filter/sort controls, list-mode rows;
                                also loaded by index.html for the spotlight cards, see home.css below
   home.css                     home-page-only layout: hero, spotlight row, changes panel, roulette teaser
-  roulette.css                  roulette.html's own layout: reel, spin button, result, spin history
+  roulette.css                  roulette.html's own layout: setup/play/end states, spin history
   detail.css                   detail page layout + dual video panels + Previous/Next
   queue.css                     plain-list row styling for queue.html
   stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
@@ -523,17 +530,17 @@ js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
                                 dominantColor()/resolveThumbnailColor() (per-thumbnail accent color,
-                                localStorage-cached) + timeAgo() + mascotFaviconDataUri() (rebuilds the
-                                header mark as a data: URI favicon, tinted per the accent setting),
-                                shared by all pages
+                                localStorage-cached) + timeAgo() + mascotFaviconDataUri() (a hand-built
+                                recreation of assets/logo.png as a data: URI favicon, tinted per the
+                                accent setting — see "Settings" above), shared by all pages
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache
                                  branch's aredl-cache.json first; also fetchChangelog() (top-150-filtered
                                  recent changes, used by the home page)
   data-source.js                 thin pass-through to the AREDL adapter, paginated by page number
   shared-cache.js                 reads the cache branch's yt-cache.json (see above) — the only source of view counts/showcases
   cache-admin-ui.js               per-level refresh button, see "Manual refresh" above
-  roulette.js                      roulette.html's own controller — weighted pick, reel animation,
-                                    localStorage spin history, see "What it does" above
+  roulette.js                      roulette.html's own controller — the percent-climb challenge,
+                                    localStorage-persisted run state, see "What it does" above
   nav-actions.js                   Home + Roulette (links to roulette.html) + Random level + Stats +
                                     Copy link header buttons, every page
   settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion
