@@ -106,12 +106,12 @@ const Settings = (() => {
   const SCHEMA = [
     {
       key: 'accentColor', type: 'swatch', label: 'Accent color',
-      desc: 'Retints the whole site — buttons, tier glows, the brand mark.',
+      desc: 'Retints the whole site — buttons, tier glows, the favicon.',
       options: Object.entries(ACCENT_PRESETS).map(([key, p]) => [key, p.label, p.primary]),
     },
     {
       key: 'defaultList', type: 'choice', label: 'Default list on open',
-      desc: 'Which list list.html opens to when the URL has no page in it.',
+      desc: 'Which list opens by default when there\'s no page in the URL.',
       options: [['main', 'Main'], ['extended', 'Extended']],
     },
     {

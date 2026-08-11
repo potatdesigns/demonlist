@@ -28,11 +28,7 @@
 
   <section class="stats-hero">
     <h1>Stats</h1>
-    <p>
-      Averages, records, and trends across the tracked list's verifier-vs-showcase view counts —
-      the same numbers every card shows individually, aggregated. Everything below reacts to the
-      filters in this row together.
-    </p>
+    <p>Averages, records, and trends across the list.</p>
     <div class="stats-controls">
       <div class="range-chips" id="stats-range" aria-label="Range filter">
         <button type="button" class="range-chip active" data-range="all">All <span class="mono">#1–150</span></button>
@@ -85,7 +81,7 @@
     <div class="chart-head">
       <div>
         <h2>Verifier views vs. showcase views</h2>
-        <p class="chart-sub">Each dot is one level. Above the line, its showcase out-viewed its own verification video; below, the verification video still leads. Log scale on both axes.</p>
+        <p class="chart-sub">Each dot is a level. Above the line, the showcase wins.</p>
       </div>
     </div>
     <div class="chart-body" id="chart-scatter"></div>
@@ -96,7 +92,7 @@
       <div class="chart-head">
         <div>
           <h2>Who leads</h2>
-          <p class="chart-sub">Share of levels where the showcase out-views the verification video, or doesn't.</p>
+          <p class="chart-sub">How often the showcase out-views the verifier.</p>
         </div>
       </div>
       <div class="chart-body donut-body" id="chart-lead"></div>
@@ -108,7 +104,7 @@
     <div class="chart-head">
       <div>
         <h2>Verifier channel share</h2>
-        <p class="chart-sub">Levels by the verification video's channel — verifiers are almost always a different person per level, so this is mostly "Other", shown for completeness rather than as a leaderboard.</p>
+        <p class="chart-sub">Which channels verified the most levels.</p>
       </div>
     </div>
     <div class="chart-body" id="chart-share-verifier"></div>
@@ -118,7 +114,7 @@
     <div class="chart-head">
       <div>
         <h2>Showcase channel share</h2>
-        <p class="chart-sub">Same, but by each showcase's channel — which one gets *picked* as the top view-count pick, not the total views behind it (see the bar chart below for that). Ranked bar rather than a donut so every channel gets shown by name and color instead of the smaller ones getting lumped together; channels past the top 7 still fold into "Other".</p>
+        <p class="chart-sub">Which channels' showcases get picked most.</p>
       </div>
     </div>
     <div class="chart-body" id="chart-share"></div>
@@ -128,7 +124,7 @@
     <div class="chart-head">
       <div>
         <h2>Distribution of view counts</h2>
-        <p class="chart-sub">How many levels' verifier/showcase views fall into each range. Log-scale buckets, since views span orders of magnitude.</p>
+        <p class="chart-sub">How view counts are spread across the list.</p>
       </div>
       <div class="chart-legend" id="hist-legend"></div>
     </div>
@@ -139,7 +135,7 @@
     <div class="chart-head">
       <div>
         <h2>Average views by rank</h2>
-        <p class="chart-sub">Levels bucketed 10 at a time by rank, averaged within each bucket. Log scale.</p>
+        <p class="chart-sub">Average views by rank, 10 levels at a time.</p>
       </div>
       <div class="chart-legend" id="trend-legend"></div>
     </div>
@@ -150,7 +146,7 @@
     <div class="chart-head">
       <div>
         <h2>Views by rank, per level</h2>
-        <p class="chart-sub">Same as the bucketed chart above, but unbucketed — one dot per level instead of averaged 10 at a time, so you can see a specific level or how noisy the trend actually is rank-to-rank. Log scale.</p>
+        <p class="chart-sub">Same, but every level shown on its own.</p>
       </div>
       <div class="chart-legend" id="perlevel-legend"></div>
     </div>
@@ -161,7 +157,7 @@
     <div class="chart-head">
       <div>
         <h2>Total verifier views by channel</h2>
-        <p class="chart-sub">Summed across every verification video from each channel. Top 12 by total, the rest folded into "Other".</p>
+        <p class="chart-sub">Total verifier views, by channel.</p>
       </div>
     </div>
     <div class="chart-body" id="chart-channels-verifier"></div>
@@ -171,7 +167,7 @@
     <div class="chart-head">
       <div>
         <h2>Total showcase views by channel</h2>
-        <p class="chart-sub">Summed across every showcase from each channel that's the top pick for at least one tracked level.</p>
+        <p class="chart-sub">Total showcase views, by channel.</p>
       </div>
     </div>
     <div class="chart-body" id="chart-channels"></div>
