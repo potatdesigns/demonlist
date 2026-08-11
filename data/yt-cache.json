@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T03:15:11.898Z",
+  "generatedAt": "2026-08-11T04:45:03.990Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3109,27 +3109,6 @@
       },
       "discoveredAt": "2026-08-10T09:28:25.682Z"
     },
-    "259b667f-ffc8-41cd-837d-e0627105d5aa": {
-      "name": "Hard Machine",
-      "position": 150,
-      "verifier": {
-        "id": "z3grmsqAaas",
-        "url": "https://www.youtube.com/watch?v=z3grmsqAaas",
-        "title": "Hard Machine - Original Audio",
-        "channel": "Varium",
-        "viewCount": 20557,
-        "viewsCheckedAt": "2026-08-11T03:15:11.091Z"
-      },
-      "showcase": {
-        "id": "o8Ek_IXkQPU",
-        "url": "https://www.youtube.com/watch?v=o8Ek_IXkQPU",
-        "title": "【4K】 \"Hard Machine\" [NEW TOP 3!] by komp (Extreme Demon) [41K SPECIAL] | Geometry Dash 2.11",
-        "channel": "Just a GD player",
-        "viewCount": 370898,
-        "viewsCheckedAt": "2026-08-11T03:15:11.091Z"
-      },
-      "discoveredAt": "2026-08-10T09:28:25.682Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 51,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-08-11T03:15:11.091Z"
       },
       "discoveredAt": "2026-08-10T01:22:17.581Z"
+    },
+    "7dd584da-369a-4bb8-86d3-68312926c102": {
+      "name": "Sacrifice",
+      "position": 37,
+      "verifier": {
+        "id": "Sth67PA8XBU",
+        "url": "https://www.youtube.com/watch?v=Sth67PA8XBU",
+        "title": "Sacrifice VERIFIED! (Extreme Demon) by Laniakea, @SN0WF0X & More [Geometry Dash]",
+        "channel": "Laniakea",
+        "viewCount": 19754,
+        "viewsCheckedAt": "2026-08-11T04:45:03.990Z"
+      },
+      "showcase": {
+        "id": "rBrshqp6U0I",
+        "url": "https://www.youtube.com/watch?v=rBrshqp6U0I",
+        "title": "【4K】 \"Sacrifice\" by iiLaniakea & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 2363,
+        "viewsCheckedAt": "2026-08-11T04:45:03.990Z"
+      },
+      "discoveredAt": "2026-08-11T04:45:03.990Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "3TOwA9DysLw",
+      "newestVideoId": "HI3UE-EcFy8",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31621,12 +31621,23 @@
           ],
           "description": "This used be a hard demon when it first came out, since then it has been nerfed to an easy demon\nLevel: Mk2 by Dolphe\nID: 146198284\nSong: cYsmix - Peer Gynt\nhttps://www.newgrounds.com/audio/listen/724710",
           "checkedAt": "2026-08-10T03:51:29.521Z"
+        },
+        "HI3UE-EcFy8": {
+          "title": "''The Master'' 100% (Demon) by StudioBois | Geometry Dash",
+          "channel": "Nexus [GD]",
+          "viewCount": 24043,
+          "levelIds": [
+            "146035236",
+            "1329610"
+          ],
+          "description": "Level: The Master by StudioBois\nID: 146035236\nSong: The Master by Teminite & BoomKitty\nhttps://www.newgrounds.com/audio/listen/1329610",
+          "checkedAt": "2026-08-11T04:45:00.831Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "XaaocRvaC5Q",
+      "newestVideoId": "0O45wLIoijI",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55202,6 +55213,24 @@
             "146538900"
           ],
           "checkedAt": "2026-08-09T17:29:44.462Z"
+        },
+        "0O45wLIoijI": {
+          "title": "ACHERON x KYOUKI x UNSOLVED",
+          "channel": "Neiro",
+          "viewCount": 9865,
+          "levelIds": [
+            "110575676"
+          ],
+          "checkedAt": "2026-08-11T04:45:01.266Z"
+        },
+        "SLP961hIMFc": {
+          "title": "The Hardest Birthday Level",
+          "channel": "Neiro",
+          "viewCount": 13515,
+          "levelIds": [
+            "144672736"
+          ],
+          "checkedAt": "2026-08-11T04:45:01.266Z"
         }
       }
     },
@@ -92463,7 +92492,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "wVzeSx2bhRs",
+      "newestVideoId": "YPsrI2WaD7U",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -102864,12 +102893,21 @@
             "4298147"
           ],
           "checkedAt": "2026-08-10T01:22:16.510Z"
+        },
+        "YPsrI2WaD7U": {
+          "title": "【4K】\"In the Generator\" by Gelforce (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 22,
+          "levelIds": [
+            "116053545"
+          ],
+          "checkedAt": "2026-08-11T04:45:02.815Z"
         }
       }
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "koHKCik_u7Q",
+      "newestVideoId": "-ge89eZ9_5M",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -110899,6 +110937,65 @@
             "546206"
           ],
           "checkedAt": "2026-08-08T23:32:43.356Z"
+        },
+        "-ge89eZ9_5M": {
+          "title": "【4K】 \"rauchkammer\" by Devilmine | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 225,
+          "levelIds": [
+            "146399247",
+            "433359"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
+        },
+        "iHFtigyLhfg": {
+          "title": "【4K】 \"OVERDRIVE\" by smango23 | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 199,
+          "levelIds": [
+            "133401995",
+            "982372"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
+        },
+        "3yKCaZZTcao": {
+          "title": "【4K】 \"SINK\" by OwOPink | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 192,
+          "levelIds": [
+            "130093630",
+            "1346456"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
+        },
+        "-n79lbferx0": {
+          "title": "【4K】 \"Extinction II\" by YouknowwhoGD & more | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 256,
+          "levelIds": [
+            "129289951",
+            "757640"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
+        },
+        "i89jK76Ng-w": {
+          "title": "【4K】 \"IH8\" by GDence & more | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 269,
+          "levelIds": [
+            "126077717"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
+        },
+        "Nq-y-JnkxBQ": {
+          "title": "【4K】 \"DIENERS CANVAS\" by androgyny & Paranoiac | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 250,
+          "levelIds": [
+            "121553971",
+            "996814"
+          ],
+          "checkedAt": "2026-08-11T04:45:03.099Z"
         }
       }
     },
