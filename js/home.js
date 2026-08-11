@@ -161,7 +161,7 @@
         text = `${name}: ${type}`;
         position = null;
     }
-    return { label: meta.label, text, position, createdAt: entry.created_at };
+    return { label: meta.label, text, position, id: entry.affected_level?.id, createdAt: entry.created_at };
   }
 
   function changeRowHtml(entry) {
@@ -171,8 +171,13 @@
       <span class="home-change-text">${escapeHtml(d.text)}</span>
       <span class="home-change-time">${escapeHtml(timeAgo(d.createdAt))}</span>
     `;
-    return Number.isFinite(d.position)
-      ? `<li><a class="home-change-row" href="level.html#${d.position}">${inner}</a></li>`
+    // Linked by id, not d.position: a changelog entry's position is a snapshot from
+    // whenever that change happened, and any insertion/removal above it since then
+    // shifts what's actually sitting at that rank *now* — level.html#N would land on
+    // whichever level has since slid into the slot, not the one this entry is about.
+    // See level.html#id=<uuid> routing in js/detail.js.
+    return d.id
+      ? `<li><a class="home-change-row" href="level.html#id=${encodeURIComponent(d.id)}">${inner}</a></li>`
       : `<li><span class="home-change-row">${inner}</span></li>`;
   }
 

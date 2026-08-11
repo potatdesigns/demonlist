@@ -5,14 +5,28 @@
 (() => {
   const root = document.getElementById('detail-root');
 
-  // The URL carries a level's rank (1-150) as a bare hash fragment —
+  // The URL is normally a level's rank as a bare hash fragment —
   // level.html#42, no question mark and no long AREDL id (see
   // cardTemplate()'s detailUrl in list.js, and writeUrlState()'s doc
   // comment in list.js for why hash over a query string). Resolved to
   // the actual AREDL id via AredlAPI.getIdByPosition() below before
   // fetching anything.
-  function getRankParam() {
-    return [...new URLSearchParams(window.location.hash.replace(/^#/, '')).keys()][0] || null;
+  //
+  // The other form, level.html#id=<uuid>, resolves straight to that id
+  // instead of going through a position at all — used anywhere a link is
+  // built from *historical* data whose recorded position can drift out
+  // from under it, namely js/home.js's recent-changes panel: a changelog
+  // entry's position is a snapshot from whenever that change happened,
+  // and every level insertion/removal above it since then shifts what's
+  // actually sitting at that rank *now*. A bare #N link there would send
+  // you to whichever level has since slid into that slot, not the one
+  // the entry was actually about. Ids don't drift.
+  function getRouteParam() {
+    const raw = window.location.hash.replace(/^#/, '');
+    if (!raw) return null;
+    if (raw.startsWith('id=')) return { type: 'id', value: decodeURIComponent(raw.slice(3)) };
+    const key = [...new URLSearchParams(raw).keys()][0];
+    return key ? { type: 'position', value: key } : null;
   }
 
   init();
@@ -25,28 +39,37 @@
   window.addEventListener('hashchange', init);
 
   async function init() {
-    const rankParam = getRankParam();
-    if (!rankParam) {
-      root.innerHTML = `<div class="state-banner error">No level rank given. Go back to the <a href="list.html">list</a> and click a card.</div>`;
+    const route = getRouteParam();
+    if (!route) {
+      root.innerHTML = `<div class="state-banner error">No level given. Go back to the <a href="list.html">list</a> and click a card.</div>`;
       return;
     }
     root.innerHTML = skeletonDetail();
     try {
-      const position = parseInt(rankParam, 10);
-      if (!Number.isFinite(position) || position <= 0) {
-        throw new Error(`"${rankParam}" isn't a valid rank.`);
-      }
-      const id = await AredlAPI.getIdByPosition(position);
-      if (!id) {
-        throw new Error(`No level at rank #${position}.`);
+      let id;
+      if (route.type === 'id') {
+        id = route.value;
+      } else {
+        const position = parseInt(route.value, 10);
+        if (!Number.isFinite(position) || position <= 0) {
+          throw new Error(`"${route.value}" isn't a valid rank.`);
+        }
+        id = await AredlAPI.getIdByPosition(position);
+        if (!id) throw new Error(`No level at rank #${position}.`);
       }
 
-      const [demon, totalCount, sharedEntry, prevLevel, nextLevel] = await Promise.all([
+      const [demon, totalCount, sharedEntry] = await Promise.all([
         DataSource.fetchOne(id),
         AredlAPI.getTotalCount().catch(() => 0),
         SharedYtCache.getEntry(id).catch(() => undefined),
-        AredlAPI.getByPosition(position - 1).catch(() => null),
-        AredlAPI.getByPosition(position + 1).catch(() => null),
+      ]);
+      if (!demon) throw new Error(route.type === 'id' ? `No level with that id.` : `No level at that rank.`);
+      // Prev/Next always come from the level's own resolved position, never route.value —
+      // for an id: route that's the only place a position exists at all, and for a #N route
+      // it keeps prev/next correct even if position and demon disagreed somehow.
+      const [prevLevel, nextLevel] = await Promise.all([
+        AredlAPI.getByPosition(demon.position - 1).catch(() => null),
+        AredlAPI.getByPosition(demon.position + 1).catch(() => null),
       ]);
       renderDetail(demon, totalCount, sharedEntry, prevLevel, nextLevel);
     } catch (err) {

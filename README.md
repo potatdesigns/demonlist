@@ -29,7 +29,12 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   own `/changelog` endpoint (filtered to changes that touched this site's own top 150 — AREDL's
   full list runs to ~1600 levels, and its own `legacy` cutoff is much lower than 150, so this app
   defines "legacy" as "outside the top 150" independent of AREDL's definition — see
-  `fetchChangelog()` in `js/api-aredl.js`), and a **Demonlist Roulette** teaser (see below).
+  `fetchChangelog()` in `js/api-aredl.js`). Each entry links by the level's own AREDL id
+  (`level.html#id=<uuid>`, not `level.html#<position>`) — a changelog entry's recorded position is
+  a snapshot from whenever that change happened, and any insertion/removal above it since then
+  shifts what's actually sitting at that rank *now*; a plain rank link would silently send you to
+  whichever level has since slid into that slot instead of the one the entry was actually about
+  (see `getRouteParam()` in `js/detail.js`). Also a **Demonlist Roulette** teaser (see below).
 - **List page (`list.html`)** — pulls the top 150 of AREDL's live, currently-ranked list (AREDL
   itself has ~1600 rated extreme demons; see [Reducing to a top-150 list](#reducing-to-a-top-150-list))
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
@@ -495,6 +500,28 @@ bare fields for that run; the client's live-fallback covers it individually rath
 refresh failing. A full run currently takes on the order of a minute — comfortably fine for an
 hourly job.
 
+### Watching for newly added levels
+
+A level newly placed into the top 150 would otherwise sit for up to an hour before
+`refresh-aredl-cache.yml`'s own schedule picks it up, and potentially days before the staggered
+`refresh-yt-cache.yml` discover queue reaches it (see
+[Showcase-matching algorithm](#showcase-matching-algorithm)). `scripts/watch-new-levels.mjs` /
+[`watch-new-levels.yml`](.github/workflows/watch-new-levels.yml) close that gap: every 15 minutes
+it polls AREDL's changelog (one page — cheap, not the full level list) for `Placed` events landing
+at position ≤ 150 since the last check (`data/new-level-watch.json`, published to the
+[`cache` branch](#cache-branch) the same way the other refresh scripts publish their own files).
+When it finds one, it triggers `refresh-aredl-cache.yml` once for the run (so the site picks up the
+new level itself immediately) and `refresh-yt-cache.yml` once per newly placed level, scoped to
+just that level (`target_level_id`, the same input the detail page's "refresh this level" button
+uses) — so its verifier/showcase gets discovered right away instead of waiting on the queue. Both
+dispatches fire via the GitHub REST API using the workflow's own ambient `GITHUB_TOKEN` (granted
+`actions: write` in the workflow's `permissions:` block) — dispatching a *different* workflow in
+the same repo from inside a GitHub Actions run doesn't need a separate PAT the way triggering one
+from outside GitHub Actions does (see [One-click refresh trigger](#one-click-refresh-trigger),
+which does need one — that caller is the Cloudflare Worker, a different trust boundary entirely). A
+first-ever run just records the current time and triggers nothing, so it doesn't replay AREDL's
+entire changelog history the first time it runs.
+
 ## CORS
 
 AREDL's API sends proper CORS headers, so it's fetched directly — no proxy needed. The one
@@ -555,12 +582,16 @@ data/                        *.json gitignored on main — generated at runtime,
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json, see "Shared AREDL cache" above
-  publish-cache-branch.sh     what both scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
+  watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for new
+                               top-150 placements and triggers the two scripts above when it finds
+                               one, see "Watching for newly added levels" above
+  publish-cache-branch.sh     what all three scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
   showcase-blacklist.json     hand-maintained video/title-phrase blacklist, see "Showcase-matching algorithm" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above
   refresh-yt-views.yml        every 30 min — views mode (refresh view counts)
   refresh-aredl-cache.yml     hourly — refreshes the AREDL level-list snapshot
+  watch-new-levels.yml        every 15 min — watches for newly added levels, see above
 worker/                      Cloudflare Worker proxy so the refresh button works for every visitor, see "One-click refresh trigger" above
   src/index.js                 the Worker itself — rejects queue-wide requests, rate-limits, then calls GitHub's workflow_dispatch API
   wrangler.toml                 Cloudflare deploy config (KV binding, repo/workflow vars — no secrets)
