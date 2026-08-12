@@ -32,10 +32,27 @@
     return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
   }
 
+  /** String -> 32-bit int, just to turn a date string into a PRNG seed below — not the source of randomness itself, so its own distribution quality doesn't matter. */
   function hashString(str) {
     let hash = 0;
     for (let i = 0; i < str.length; i++) hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
     return hash;
+  }
+
+  /** mulberry32 (public domain) — a small, fast PRNG with a genuinely uniform output distribution, unlike a raw hash%n which carries a little modulo bias. Same seed always produces the same first value, which is exactly what "deterministic but looks like real dice" needs. */
+  function mulberry32(seed) {
+    let t = seed >>> 0;
+    return function next() {
+      t = (t + 0x6D2B79F5) | 0;
+      let x = Math.imul(t ^ (t >>> 15), 1 | t);
+      x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x;
+      return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  /** A uniform [0, count) pick, deterministic for a given date string — every level in range has an equal 1/count shot, same as if it were freshly rolled that day. */
+  function randomIndexForDate(dateStr, count) {
+    return Math.floor(mulberry32(hashString(dateStr))() * count);
   }
 
   /**
@@ -50,18 +67,18 @@
    * someone further west still mid-day. A UTC-based seed would instead
    * roll everyone over in lockstep at one fixed moment worldwide.
    *
-   * Also deliberately never repeats yesterday's pick: a plain
-   * hash(date) % count has no memory of what came before, so two
-   * different dates landing on the same index is possible (rare, but a
-   * hash collision, not "random enough" the way a visitor would expect
-   * "today's feature" to feel) — checked against yesterday's would-be
-   * index (computed the same deterministic way, so this still needs no
-   * server state) and nudged forward by one if they'd collide.
+   * Deliberately never repeats yesterday's pick, though: two different
+   * dates independently rolling the same level is exactly what real 1-
+   * in-`count` odds would allow, but it reads as a stuck/broken feature
+   * rather than "random" to a visitor who checks two days running.
+   * Checked against yesterday's would-be pick (computed the same
+   * deterministic way, so this still needs no server state) and nudged
+   * forward by one if they'd collide.
    */
   function seededIndexForToday(count) {
     if (count <= 1) return 0;
-    const today = hashString(localDateString(0)) % count;
-    const yesterday = hashString(localDateString(-1)) % count;
+    const today = randomIndexForDate(localDateString(0), count);
+    const yesterday = randomIndexForDate(localDateString(-1), count);
     return today === yesterday ? (today + 1) % count : today;
   }
 
