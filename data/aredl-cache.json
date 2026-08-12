@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T18:47:13.866Z",
+  "generatedAt": "2026-08-12T19:57:10.131Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4300,7 +4300,458 @@
           "updated_at": "2026-06-17T21:17:45.461456Z"
         }
       ],
-      "creators": []
+      "creators": [
+        {
+          "id": "0368660e-5388-4333-b840-002f2558bc7b",
+          "username": "53146d6c0",
+          "global_name": "DreamLightGD"
+        },
+        {
+          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
+          "username": "mercurydt",
+          "global_name": "MercuryDT"
+        },
+        {
+          "id": "04c63427-5989-4f6c-ab75-8917934679cf",
+          "username": "aqualime272",
+          "global_name": "aqualime"
+        },
+        {
+          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
+          "username": "0fb0d4b59",
+          "global_name": "robotchief"
+        },
+        {
+          "id": "05ad4ef2-baa3-4d26-9181-4b70bfa47b91",
+          "username": "f47f247b8",
+          "global_name": "sink"
+        },
+        {
+          "id": "0bff0202-0719-4a59-a2b8-a2d3f74bcbda",
+          "username": "fa8cfe49f",
+          "global_name": "ZinkZeta"
+        },
+        {
+          "id": "0cc29e5e-1b5b-43f9-9329-76eb265899e8",
+          "username": "18178d6aa",
+          "global_name": "FrostBurn"
+        },
+        {
+          "id": "0d4ab186-ae2c-4b75-a62d-8fbb0b58c883",
+          "username": "28056a403",
+          "global_name": "Gizbro"
+        },
+        {
+          "id": "12d218a6-2fbc-4a31-acab-cccff5f6e445",
+          "username": "z3phlin",
+          "global_name": "Zephlin"
+        },
+        {
+          "id": "203fceae-7267-4a81-8d32-1659d5147454",
+          "username": "b21c2059d",
+          "global_name": "Pizazzy"
+        },
+        {
+          "id": "22170fc5-2d7d-454a-851d-e2fbd6cc5d5a",
+          "username": "3069a220a",
+          "global_name": "Graded"
+        },
+        {
+          "id": "2410143a-662c-4f9d-ad02-0de318376025",
+          "username": "devilmine",
+          "global_name": "Devilmine"
+        },
+        {
+          "id": "2478745f-1bbd-4f10-a0d9-693fe48d0ff8",
+          "username": "f2dc1e886",
+          "global_name": "HideousToaster"
+        },
+        {
+          "id": "2870bb9d-9894-49e7-837a-f610e23af12e",
+          "username": "ec993a2b8",
+          "global_name": "Yendis"
+        },
+        {
+          "id": "2e275e57-97d0-454c-869d-9ec564fc63be",
+          "username": "c54ce8441",
+          "global_name": "Stilluetto"
+        },
+        {
+          "id": "31bc2c50-072a-47f6-910e-444cbe07289d",
+          "username": "greencuber",
+          "global_name": "green"
+        },
+        {
+          "id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
+          "username": "at424",
+          "global_name": "At424"
+        },
+        {
+          "id": "33d57db7-852b-4f5d-8fda-2dc72ff1634d",
+          "username": "9f8e3d2ef",
+          "global_name": "IINimbusII"
+        },
+        {
+          "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
+          "username": "icerod",
+          "global_name": "Ice Rod"
+        },
+        {
+          "id": "3e2fd9c7-1a5c-44a1-bf0f-7ae47fe2573a",
+          "username": "runezvelt",
+          "global_name": "JOLLYzvelt ❄🎄"
+        },
+        {
+          "id": "42f95eec-0161-4ec2-ae0c-643d67fbdb82",
+          "username": "58148e7d3",
+          "global_name": "DarkCacti"
+        },
+        {
+          "id": "44b903eb-8d47-46ac-bb0b-95b97ddc52f8",
+          "username": "e73bc3794",
+          "global_name": "Moosh"
+        },
+        {
+          "id": "464f085c-054e-4d6e-b966-2f25038e91b7",
+          "username": "18f332f05",
+          "global_name": "nexeggy1"
+        },
+        {
+          "id": "4915d76f-0aa6-430d-8a76-9c54694bcb8b",
+          "username": "30717e755",
+          "global_name": "Puueds"
+        },
+        {
+          "id": "4cf74ed2-ec9a-4f87-badc-719aa8fed5bb",
+          "username": "abd17eb52",
+          "global_name": "Zeptrus"
+        },
+        {
+          "id": "4eb2b5ab-5170-4180-990e-829ffac43e53",
+          "username": "68472349e",
+          "global_name": "Yoonsrdynamix"
+        },
+        {
+          "id": "581e5f39-2e84-45b3-8d32-0902037aebfc",
+          "username": "c1a6bfd0c",
+          "global_name": "Silver"
+        },
+        {
+          "id": "583930b5-3e9d-4a40-9350-d868d8c866f3",
+          "username": "93c32c784",
+          "global_name": "jadedanlop"
+        },
+        {
+          "id": "5e216aa1-f410-4a4d-94db-572d3a386c4b",
+          "username": "1b7cc28a9",
+          "global_name": "Lobster"
+        },
+        {
+          "id": "5f46ea8d-76f4-46d4-993a-f706d0977138",
+          "username": "2489fba35",
+          "global_name": "Div"
+        },
+        {
+          "id": "6184cfa9-6919-4a71-9033-010eb25b2e50",
+          "username": "eb05d8c98",
+          "global_name": "Happy365"
+        },
+        {
+          "id": "6389720d-f3e1-462c-b317-ba9205de67d7",
+          "username": "1f76c0d4a",
+          "global_name": "ronlix"
+        },
+        {
+          "id": "641c4703-3fdf-46db-85cb-e11b7fa67b26",
+          "username": "9a72d4147",
+          "global_name": "TheZinkYT"
+        },
+        {
+          "id": "6841d34e-f58b-45d1-9c97-fab192c6fea9",
+          "username": "acute144",
+          "global_name": "Acute"
+        },
+        {
+          "id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
+          "username": "skzyl",
+          "global_name": "skzyl"
+        },
+        {
+          "id": "746ff7d8-d849-406c-895b-54f6214994db",
+          "username": "69894b23f",
+          "global_name": "Zeroya"
+        },
+        {
+          "id": "760124d8-4084-4051-aa16-f81f14622699",
+          "username": "zzbray",
+          "global_name": "zBray"
+        },
+        {
+          "id": "7a23467e-a069-4c77-b96f-1cca77caf68e",
+          "username": "c7b47cee4",
+          "global_name": "sprei"
+        },
+        {
+          "id": "7e097468-8e0b-4b6d-8488-66b6bbd6a789",
+          "username": "7f89fe1de",
+          "global_name": "augi"
+        },
+        {
+          "id": "7ee28b55-bd8e-4645-a59e-082a42d6a733",
+          "username": "89d794a12",
+          "global_name": "DataGhost"
+        },
+        {
+          "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
+          "username": "f0bdf532d",
+          "global_name": "Drakosa"
+        },
+        {
+          "id": "8233701c-6c8a-47ea-a8b2-69934d776807",
+          "username": "fdedf52e5",
+          "global_name": "MaxxoRMeN"
+        },
+        {
+          "id": "8297ce71-9fed-494d-b6eb-51e7e2ff33f9",
+          "username": "helbrein__",
+          "global_name": "𓆩ꨄ𓆪"
+        },
+        {
+          "id": "8511ff3a-e838-4e94-bbd1-90010851c5ed",
+          "username": "a4598604f",
+          "global_name": "Skrypto"
+        },
+        {
+          "id": "8bb94ffb-e5cc-4739-b9a9-01da11c73a8d",
+          "username": "9e4b86c46",
+          "global_name": "noxiom"
+        },
+        {
+          "id": "8e24a45b-84e1-42ff-aa0c-519425a59d73",
+          "username": "fbdd15004",
+          "global_name": "Narwall"
+        },
+        {
+          "id": "915da3d0-44b1-4073-8590-6dea270c9e34",
+          "username": "0fdd6157f",
+          "global_name": "robtobfreak"
+        },
+        {
+          "id": "9b885f45-64e5-4f9b-8fe6-87dfece2db06",
+          "username": "29587891f",
+          "global_name": "Jorse"
+        },
+        {
+          "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
+          "username": "mccoco1",
+          "global_name": "McCoco"
+        },
+        {
+          "id": "9bca38bc-543a-4e17-bd5d-708dba25eb46",
+          "username": "08180e1e4",
+          "global_name": "GaidenHertuny"
+        },
+        {
+          "id": "9f15508f-5947-40b5-9fc0-d63b6b4a3290",
+          "username": "ff423d639",
+          "global_name": "Catani"
+        },
+        {
+          "id": "a03addbe-414a-4814-a2ec-2cf3cbb38278",
+          "username": "e7d408ace",
+          "global_name": "GhostVandalf"
+        },
+        {
+          "id": "a0bdc701-e4f8-4627-a98e-2ab5845e5453",
+          "username": "c455bc57e",
+          "global_name": "Aimbotter2123"
+        },
+        {
+          "id": "a519b896-dd7b-4ff0-afef-5004ec79ca1f",
+          "username": "lbedrockl",
+          "global_name": "Bedrock"
+        },
+        {
+          "id": "a618163e-49e2-43ee-8618-5a58a24580cb",
+          "username": "sounex",
+          "global_name": "SouneX"
+        },
+        {
+          "id": "a6539dde-aa12-4ae3-aa27-8167600a888d",
+          "username": "876118438",
+          "global_name": "Hamato"
+        },
+        {
+          "id": "aa8adc75-6415-41b5-be2e-7549e5f406bf",
+          "username": "0d5efd597",
+          "global_name": "pokeGMD"
+        },
+        {
+          "id": "ab2e75b0-6130-4dce-b877-131890bfe4c8",
+          "username": "blazerol",
+          "global_name": "BlazeRol"
+        },
+        {
+          "id": "ae9975c5-47a6-4722-a00f-06a1ecc7e772",
+          "username": "03f0f1e29",
+          "global_name": "JoshTheB"
+        },
+        {
+          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+          "username": "f7183736b",
+          "global_name": "Renn241"
+        },
+        {
+          "id": "b330e13b-47bf-484c-a6a8-86a448c03c35",
+          "username": "d7aa10e3e",
+          "global_name": "Valentlne"
+        },
+        {
+          "id": "b346ac5e-5694-4ad1-97de-d085f889e202",
+          "username": "fbe1c6e9a",
+          "global_name": "Zeniux"
+        },
+        {
+          "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
+          "username": "flufflebag",
+          "global_name": "Zeronium"
+        },
+        {
+          "id": "b5bfd2e1-4d45-4815-b1fd-0602881a9aef",
+          "username": "bd383867e",
+          "global_name": "shman"
+        },
+        {
+          "id": "b8d3cbeb-520d-4c7b-9788-365a45de1e9c",
+          "username": "d6b1971c7",
+          "global_name": "GDikonic"
+        },
+        {
+          "id": "b938db0c-04b5-4f36-bfaf-ecfbb077bb36",
+          "username": "433fb393c",
+          "global_name": "Gzeee"
+        },
+        {
+          "id": "b9f2833c-2de7-4334-ae4c-eae4a8bf4a7b",
+          "username": "a1991f14e",
+          "global_name": "rRaddie"
+        },
+        {
+          "id": "bba19e0e-c16a-435b-96d8-2bbcf3244712",
+          "username": "9dc5e9a7f",
+          "global_name": "z0j"
+        },
+        {
+          "id": "bd79ea53-4bf5-44cc-bdf9-d8dd27c536ff",
+          "username": "481169c51",
+          "global_name": "Diris"
+        },
+        {
+          "id": "be46b402-fd21-4b68-bcfc-147b8ab908ab",
+          "username": "946cabab8",
+          "global_name": "Kutsu"
+        },
+        {
+          "id": "c5832088-573f-4d35-b43b-7bf2b0d41a2a",
+          "username": "014a20e52",
+          "global_name": "Average"
+        },
+        {
+          "id": "c8c6f8ca-6e5d-4d35-8b30-31ff9b8b75da",
+          "username": "059c8ef7f",
+          "global_name": "BibbyDib111"
+        },
+        {
+          "id": "cbd4eff1-62d5-4f07-af25-9f72eca591f2",
+          "username": "6ee96e703",
+          "global_name": "Arckalia"
+        },
+        {
+          "id": "ce95c2fe-0fdf-4afd-a358-d35e9ddcdfc4",
+          "username": "e2116aa03",
+          "global_name": "haidm"
+        },
+        {
+          "id": "cf6d41b6-81df-4b7b-b1dd-4a1fe24b6f7a",
+          "username": "a5563414f",
+          "global_name": "Goobfrudla"
+        },
+        {
+          "id": "d2dac604-3c26-40df-8cd5-e662f8fa94b5",
+          "username": "3fae1e396",
+          "global_name": "haizenberg"
+        },
+        {
+          "id": "e2594731-d1d6-459f-966e-bd790d24135f",
+          "username": "da4d64c52",
+          "global_name": "Yoppe"
+        },
+        {
+          "id": "e2f17e40-4aff-435b-a2d8-bec2c3d4fc9c",
+          "username": "b9a8f3145",
+          "global_name": "82wyatt"
+        },
+        {
+          "id": "e43bece6-c2d7-4056-8b66-8afa8c444730",
+          "username": "c90df6160",
+          "global_name": "Trunith"
+        },
+        {
+          "id": "e697e271-7392-4d2f-b6bc-0f01c4e5eb40",
+          "username": "duskermoon",
+          "global_name": "DuskerHu"
+        },
+        {
+          "id": "e7fce5d0-4a09-4e27-b19d-c4a7fc41bf14",
+          "username": "copc",
+          "global_name": "copc"
+        },
+        {
+          "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
+          "username": "awesomeme360",
+          "global_name": "AWESOMEME360"
+        },
+        {
+          "id": "ea57a23b-385c-49fc-856e-44b9c5f2ad4e",
+          "username": "f10c9f1f0",
+          "global_name": "Vinny"
+        },
+        {
+          "id": "eaf3a165-3b5e-436d-b3eb-366ae4e9ab0e",
+          "username": "_swib",
+          "global_name": "Swib"
+        },
+        {
+          "id": "edc0d2c4-afb0-45ce-9146-8c5860039b73",
+          "username": "431cff2d5",
+          "global_name": "JoeDaBruh"
+        },
+        {
+          "id": "ede29415-4882-42a2-b5c2-8d919b77fdc7",
+          "username": "natefh",
+          "global_name": "NateFH"
+        },
+        {
+          "id": "f1584d29-cfda-4d28-a92c-8c79d1c8b82a",
+          "username": "c192948ff",
+          "global_name": "tenzk"
+        },
+        {
+          "id": "f5e7fe7c-0b87-4dfe-8c24-6cc343f8c139",
+          "username": "669afe11e",
+          "global_name": "realwhata"
+        },
+        {
+          "id": "f7148489-4e91-4f0b-9992-e2ba69d3cbee",
+          "username": "d94ff8067",
+          "global_name": "Rocipher"
+        },
+        {
+          "id": "f9d85d3f-b9ca-4c72-a7a1-7c3627ac9b20",
+          "username": "0ee90eef5",
+          "global_name": "Bittersweet"
+        }
+      ]
     },
     {
       "id": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
