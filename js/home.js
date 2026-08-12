@@ -25,6 +25,19 @@
   let newLevelIds = new Set();
   const newLevelIdsReady = AredlAPI.fetchNewLevelIds().then(ids => { newLevelIds = ids; }).catch(() => {});
 
+  /** YYYY-M-D for the viewer's own local calendar date, offset by `offsetDays` (negative = past). */
+  function localDateString(offsetDays = 0) {
+    const d = new Date();
+    d.setDate(d.getDate() + offsetDays);
+    return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  }
+
+  function hashString(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
+    return hash;
+  }
+
   /**
    * Same calendar day always picks the same level — a "featured today"
    * that's stable through the day rather than re-rolling on every
@@ -36,13 +49,20 @@
    * a timezone that reaches midnight first sees the next pick before
    * someone further west still mid-day. A UTC-based seed would instead
    * roll everyone over in lockstep at one fixed moment worldwide.
+   *
+   * Also deliberately never repeats yesterday's pick: a plain
+   * hash(date) % count has no memory of what came before, so two
+   * different dates landing on the same index is possible (rare, but a
+   * hash collision, not "random enough" the way a visitor would expect
+   * "today's feature" to feel) — checked against yesterday's would-be
+   * index (computed the same deterministic way, so this still needs no
+   * server state) and nudged forward by one if they'd collide.
    */
   function seededIndexForToday(count) {
-    const d = new Date();
-    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-    let hash = 0;
-    for (let i = 0; i < dateStr.length; i++) hash = (hash * 31 + dateStr.charCodeAt(i)) >>> 0;
-    return hash % count;
+    if (count <= 1) return 0;
+    const today = hashString(localDateString(0)) % count;
+    const yesterday = hashString(localDateString(-1)) % count;
+    return today === yesterday ? (today + 1) % count : today;
   }
 
   async function hydrateIfNeeded(demon) {
