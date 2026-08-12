@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T23:30:41.243Z",
+  "generatedAt": "2026-08-12T00:58:30.467Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -593,11 +593,6 @@
           "global_name": "bosjoker"
         },
         {
-          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
-          "username": "ddd7bb669",
-          "global_name": "Xolarzz"
-        },
-        {
           "id": "736bf68b-cbdc-4726-b18d-f960cc9847a8",
           "username": "5ffdc9c7e",
           "global_name": "Laser"
@@ -886,6 +881,11 @@
           "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
           "username": "43b6ccb3a",
           "global_name": "Lris"
+        },
+        {
+          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
+          "username": "ddd7bb669",
+          "global_name": "Xolarzz"
         }
       ]
     },
@@ -3540,8 +3540,8 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 53,
+      "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
       "publisher": {
@@ -5696,7 +5696,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 77.6,
+      "edel_enjoyment": 77.81818182,
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
@@ -11497,7 +11497,7 @@
       ],
       "description": "Claustrophobic and colourful sequel to the equally claustrophobic Cognition. Loses the old fashioned style song for a more upbeat Creo song, similar to Carcano. Surprisingly one of the most dropped extreme verifications, going through 6 verifiers.",
       "song": 829777,
-      "edel_enjoyment": 66.43396226,
+      "edel_enjoyment": 67.05555556,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -11870,7 +11870,7 @@
       ],
       "description": "Redecoration of the 1.9 styled level of the same name. The completely greyscale decoration and unnerving song makes for a generally unsettling experience. Also one of the shorter extremes on the list, being less than 45 seconds.",
       "song": null,
-      "edel_enjoyment": 43.23809524,
+      "edel_enjoyment": 43.54545455,
       "is_edel_pending": false,
       "gddl_tier": 34.6,
       "nlw_tier": null,
@@ -12532,7 +12532,7 @@
       ],
       "description": null,
       "song": 1245745,
-      "edel_enjoyment": 59.05555556,
+      "edel_enjoyment": 61.21052632,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -13021,7 +13021,7 @@
       ],
       "description": "Memorable blue and pink SyQual extreme with extremely difficult ship, wave, and spam sections. Originally was top 3 (even technically being top 1) and features numerous iconic high-cps wave sections. Named after Trueffet Square from Maple Story.",
       "song": 805724,
-      "edel_enjoyment": 58.75757576,
+      "edel_enjoyment": 59.08823529,
       "is_edel_pending": false,
       "gddl_tier": 34.75,
       "nlw_tier": null,
@@ -13190,7 +13190,7 @@
       ],
       "description": "2019 buffed and extended remake of Sakupen Hell. Formerly top 2 and has some terrible hixboxes and 4+ verifiers. Recieved unparalled attention at the time for the verifier npesta's insane reaction became a meme across the internet. ",
       "song": 360804,
-      "edel_enjoyment": 49.88461538,
+      "edel_enjoyment": 50.18518519,
       "is_edel_pending": false,
       "gddl_tier": 34.375,
       "nlw_tier": null,
