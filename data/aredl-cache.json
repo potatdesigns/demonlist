@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T18:46:51.921Z",
+  "generatedAt": "2026-08-13T19:52:34.003Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -593,6 +593,11 @@
           "global_name": "bosjoker"
         },
         {
+          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
+          "username": "ddd7bb669",
+          "global_name": "Xolarzz"
+        },
+        {
           "id": "736bf68b-cbdc-4726-b18d-f960cc9847a8",
           "username": "5ffdc9c7e",
           "global_name": "Laser"
@@ -881,11 +886,6 @@
           "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
           "username": "43b6ccb3a",
           "global_name": "Lris"
-        },
-        {
-          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
-          "username": "ddd7bb669",
-          "global_name": "Xolarzz"
         }
       ]
     },
@@ -10822,7 +10822,155 @@
       "edel_enjoyment": 64.04347826,
       "is_edel_pending": false,
       "gddl_tier": 35.75,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
+        "username": "f0bdf532d",
+        "global_name": "Drakosa"
+      },
+      "verifications": [
+        {
+          "id": "da63c9b1-3450-4af3-a97d-f01c40500db4",
+          "submitted_by": {
+            "id": "07b9abc9-2273-47bf-b462-22c2b2b213ee",
+            "username": "doggiegd",
+            "global_name": "Doggie"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=_rr3J8DkIm4",
+          "hide_video": false,
+          "achieved_at": "2023-08-30T21:00:17Z",
+          "created_at": "2023-10-05T23:22:49Z",
+          "updated_at": "2023-10-05T23:22:49Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "031d6c51-6226-4b2a-931e-3de7f878343d",
+          "username": "8a765bc66",
+          "global_name": "Zanna83"
+        },
+        {
+          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
+          "username": "mercurydt",
+          "global_name": "MercuryDT"
+        },
+        {
+          "id": "07b9abc9-2273-47bf-b462-22c2b2b213ee",
+          "username": "doggiegd",
+          "global_name": "Doggie"
+        },
+        {
+          "id": "087be2f0-b7ab-4983-b65b-b20a390bf232",
+          "username": "390a55cbe",
+          "global_name": "crumche"
+        },
+        {
+          "id": "0d4ab186-ae2c-4b75-a62d-8fbb0b58c883",
+          "username": "28056a403",
+          "global_name": "Gizbro"
+        },
+        {
+          "id": "149495c3-c879-4a71-b45a-893fe1fb56f9",
+          "username": "artsiburn",
+          "global_name": "Artsi"
+        },
+        {
+          "id": "1bfda48b-3d3e-4d08-9686-292e504c689e",
+          "username": "1b0a3f187",
+          "global_name": "Ryder"
+        },
+        {
+          "id": "4ad8d90b-c33e-42ff-8301-a29d946ce214",
+          "username": "5f84f78a5",
+          "global_name": "Novaach"
+        },
+        {
+          "id": "4c5c46de-2bb8-4539-9479-cef1a1c9980b",
+          "username": "6c8e36a86",
+          "global_name": "Consuno"
+        },
+        {
+          "id": "617bbca9-7712-4299-839c-e98fdafd3905",
+          "username": "6a1bdb5b5",
+          "global_name": "enzollz"
+        },
+        {
+          "id": "738cc9f1-bdee-4763-b7e4-7d006cb90409",
+          "username": "41323f545",
+          "global_name": "UltraCharge"
+        },
+        {
+          "id": "79a2d5d1-3633-4d43-8460-372c66aab393",
+          "username": "ked4ri",
+          "global_name": "kedi"
+        },
+        {
+          "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
+          "username": "f0bdf532d",
+          "global_name": "Drakosa"
+        },
+        {
+          "id": "866850c2-f2e1-4436-b12e-774466cf41ce",
+          "username": "dreamzonegd",
+          "global_name": "DreamZoneGD"
+        },
+        {
+          "id": "b22b4f8f-868c-4bc7-a71f-c57c70bf4a61",
+          "username": "4e866b74f",
+          "global_name": "npesta"
+        },
+        {
+          "id": "c79a9a87-73e9-4b70-9b1e-5862070ca647",
+          "username": "a38fcc368",
+          "global_name": "Loogiah"
+        },
+        {
+          "id": "cb91e535-25de-44dc-8e77-fd417a660b14",
+          "username": "136676faa",
+          "global_name": "Blitzer"
+        },
+        {
+          "id": "cf6d41b6-81df-4b7b-b1dd-4a1fe24b6f7a",
+          "username": "a5563414f",
+          "global_name": "Goobfrudla"
+        },
+        {
+          "id": "d047f156-d5ac-43f7-9354-8c42763b1e2c",
+          "username": "78c1ec804",
+          "global_name": "DTDom"
+        },
+        {
+          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
+          "username": "rynoxiouss",
+          "global_name": "Rynoxious"
+        },
+        {
+          "id": "de4d8aac-b1a6-4364-b1a7-bdf92698a65e",
+          "username": "45e5ffa70",
+          "global_name": "AppleCr"
+        },
+        {
+          "id": "e4cb0877-0fb8-4913-97b2-dcbd24c74d55",
+          "username": "diamondsplash",
+          "global_name": "diamond"
+        },
+        {
+          "id": "eca13d9c-5e62-4657-b35b-769693e65dfe",
+          "username": "f7ed3c72f",
+          "global_name": "Tamori"
+        },
+        {
+          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
+          "username": "cdmusic",
+          "global_name": "CDMusic"
+        },
+        {
+          "id": "f9995e98-4705-4b19-9fe7-638ac8e52d5b",
+          "username": "5c19e0e15",
+          "global_name": "12Kelvin"
+        }
+      ]
     },
     {
       "id": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
