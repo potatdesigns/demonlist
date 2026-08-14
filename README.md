@@ -524,6 +524,15 @@ copy from the `cache` branch before running
 (the script needs it to know what "changed since last time" means) and publishes the updated copy
 back alongside it.
 
+Since this only started running whenever it was added, `scripts/backfill-position-history.mjs`
+(one-off, no workflow — see the file layout below) reconstructs everything *before* that straight
+from AREDL's own changelog, which currently runs back to August 2022: every `Placed`/`Raised`/
+`Lowered`/`MovedToLegacy` event carries the resulting position directly, merged into whatever's
+already on file rather than overwriting it. `Swapped` events are skipped whenever the changelog
+doesn't unambiguously say which side of the swap the affected level ended up on (AREDL's own
+`other_level` field has been observed to sometimes just duplicate `upper_level` instead of naming
+the real second participant) — better an occasional gap than a guessed, wrong data point.
+
 ### Watching for AREDL changes affecting the top 150
 
 A change touching the top 150 — a new placement, or a `Raised`/`Lowered`/`Swapped`/`MovedToLegacy`
@@ -611,6 +620,13 @@ data/                        *.json gitignored on main — generated at runtime,
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json + data/position-history.json, see "Shared AREDL cache" above
+  backfill-position-history.mjs  one-off/manual — reconstructs data/position-history.json from
+                                  AREDL's full changelog (back to Aug 2022) rather than only from
+                                  refresh-aredl-cache.mjs's own incremental diffing, which only has
+                                  data from whenever that started running; merges in, doesn't
+                                  overwrite. No workflow — run by hand (`node scripts/backfill-
+                                  position-history.mjs`) then publish-cache-branch.sh, same as any
+                                  other refresh script.
   watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for any
                                change touching the top 150 and triggers the two scripts above when
                                it finds one, see "Watching for AREDL changes affecting the top 150" above
