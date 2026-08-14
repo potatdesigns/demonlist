@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T08:58:38.011Z",
+  "generatedAt": "2026-08-14T09:54:43.104Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4312,6 +4312,11 @@
           "global_name": "MercuryDT"
         },
         {
+          "id": "04c63427-5989-4f6c-ab75-8917934679cf",
+          "username": "aqualime272",
+          "global_name": "aqualime"
+        },
+        {
           "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
           "username": "0fb0d4b59",
           "global_name": "robotchief"
@@ -4385,6 +4390,11 @@
           "id": "33d57db7-852b-4f5d-8fda-2dc72ff1634d",
           "username": "9f8e3d2ef",
           "global_name": "IINimbusII"
+        },
+        {
+          "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
+          "username": "icerod",
+          "global_name": "Ice Rod"
         },
         {
           "id": "3e2fd9c7-1a5c-44a1-bf0f-7ae47fe2573a",
@@ -4532,6 +4542,11 @@
           "global_name": "Jorse"
         },
         {
+          "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
+          "username": "mccoco1",
+          "global_name": "McCoco"
+        },
+        {
           "id": "9bca38bc-543a-4e17-bd5d-708dba25eb46",
           "username": "08180e1e4",
           "global_name": "GaidenHertuny"
@@ -4605,16 +4620,6 @@
           "id": "b5bfd2e1-4d45-4815-b1fd-0602881a9aef",
           "username": "bd383867e",
           "global_name": "shman"
-        },
-        {
-          "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
-          "username": "mccoco1",
-          "global_name": "McCoco"
-        },
-        {
-          "id": "04c63427-5989-4f6c-ab75-8917934679cf",
-          "username": "aqualime272",
-          "global_name": "aqualime"
         },
         {
           "id": "b8d3cbeb-520d-4c7b-9788-365a45de1e9c",
@@ -4745,11 +4750,6 @@
           "id": "f9d85d3f-b9ca-4c72-a7a1-7c3627ac9b20",
           "username": "0ee90eef5",
           "global_name": "Bittersweet"
-        },
-        {
-          "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
-          "username": "icerod",
-          "global_name": "Ice Rod"
         }
       ]
     },
@@ -9713,7 +9713,40 @@
       "edel_enjoyment": null,
       "is_edel_pending": false,
       "gddl_tier": null,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
+        "username": "at424",
+        "global_name": "At424"
+      },
+      "verifications": [
+        {
+          "id": "c3fde118-e3fd-407e-83b4-918c9a1d312c",
+          "submitted_by": {
+            "id": "143db31e-f3cf-48fa-89d5-63357af93e90",
+            "username": "568a99989",
+            "global_name": "Danieljgd"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=xSP43i61SLM",
+          "hide_video": false,
+          "achieved_at": "2026-03-12T19:53:37Z",
+          "created_at": "2026-07-24T20:01:50.181541Z",
+          "updated_at": "2026-07-24T20:01:50.181541Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
+          "username": "at424",
+          "global_name": "At424"
+        },
+        {
+          "id": "698776e7-64d2-4475-8bc5-0ccafa39810f",
+          "username": "d93845037",
+          "global_name": "l4tezk"
+        }
+      ]
     },
     {
       "id": "80533210-51be-417f-a492-22edff194d94",
