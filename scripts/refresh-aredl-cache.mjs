@@ -64,12 +64,6 @@ const CACHE_PATH = path.join(__dirname, '..', 'data', 'aredl-cache.json');
 const HISTORY_PATH = path.join(__dirname, '..', 'data', 'position-history.json');
 const AREDL_BASE = 'https://api.aredl.net/v2/api/aredl';
 
-// How many position-change entries to keep per level before dropping the
-// oldest — a level that's genuinely thrashed this many times has a long
-// enough history already; this is a safety cap, not a normal ceiling
-// (most levels will have far fewer entries than this).
-const HISTORY_CAP_PER_LEVEL = 30;
-
 // Keep in sync with CONFIG.LIST_SIZE in js/config.js — this app only
 // tracks the top this-many positions, not AREDL's full ~1600-level list.
 const LEVEL_LIST_SIZE = 150;
@@ -151,6 +145,11 @@ async function loadExistingHistory() {
  * last recorded entry, not on every run. A level absent from
  * `positionById` entirely (removed from AREDL outright, not just
  * demoted — rare) is left as-is rather than guessed at.
+ *
+ * Kept in full, all-time — never trimmed. A level only gets a new entry
+ * when it actually moves (not once per run), so even a level with years
+ * of history stays a small array; there's no volume problem an entry
+ * cap would actually be solving.
  */
 function updatePositionHistory(existingHistory, positionById, trackedIds) {
   const history = { ...existingHistory };
@@ -166,7 +165,6 @@ function updatePositionHistory(existingHistory, positionById, trackedIds) {
     if (last && last.position === currentPosition) continue; // no change since last recorded entry
 
     entries.push({ date: today, position: currentPosition });
-    if (entries.length > HISTORY_CAP_PER_LEVEL) entries.splice(0, entries.length - HISTORY_CAP_PER_LEVEL);
     history[id] = entries;
     changed++;
   }

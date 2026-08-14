@@ -517,9 +517,10 @@ move — recording those as no-ops would just be noise). Tracks both the current
 `LEVEL_LIST_SIZE` and any level that already has history but has since dropped out of it, so its
 record doesn't just stop the moment it leaves — the detail page is what turns a position past
 `LEVEL_LIST_SIZE` into "Legacy" for display, the stored data keeps the real AREDL position either
-way. Capped at `HISTORY_CAP_PER_LEVEL` (30) entries per level, oldest dropped first, as a safety
-net against a level that's genuinely thrashed that many times — not a normal ceiling. Like
-`data/aredl-cache.json`, the workflow pulls the prior copy from the `cache` branch before running
+way. Kept in full, all-time — never trimmed; a level only gets a new entry when it actually moves
+(not once per run), so even years of history stays a small array, and there's no volume problem an
+entry cap would actually be solving. Like `data/aredl-cache.json`, the workflow pulls the prior
+copy from the `cache` branch before running
 (the script needs it to know what "changed since last time" means) and publishes the updated copy
 back alongside it.
 
