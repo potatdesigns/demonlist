@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T09:54:43.104Z",
+  "generatedAt": "2026-08-14T10:48:39.587Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -593,11 +593,6 @@
           "global_name": "bosjoker"
         },
         {
-          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
-          "username": "ddd7bb669",
-          "global_name": "Xolarzz"
-        },
-        {
           "id": "736bf68b-cbdc-4726-b18d-f960cc9847a8",
           "username": "5ffdc9c7e",
           "global_name": "Laser"
@@ -886,6 +881,11 @@
           "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
           "username": "43b6ccb3a",
           "global_name": "Lris"
+        },
+        {
+          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
+          "username": "ddd7bb669",
+          "global_name": "Xolarzz"
         }
       ]
     },
