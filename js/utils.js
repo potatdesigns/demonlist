@@ -204,8 +204,18 @@ function dominantColor(img) {
 
     let best = null, bestScore = -1;
     for (const bucket of buckets.values()) {
-      const [, s] = rgbToHsl(bucket.r / bucket.n, bucket.g / bucket.n, bucket.b / bucket.n);
-      const score = bucket.n * (0.35 + s / 100); // saturation weights the vote without letting a tiny saturated speck beat a huge population
+      const [, s, l] = rgbToHsl(bucket.r / bucket.n, bucket.g / bucket.n, bucket.b / bucket.n);
+      // Strongly favor saturated, moderately bright buckets over merely-large
+      // ones — a small patch of vivid color should beat a big wash of dull
+      // background. Population is sqrt-damped rather than dropped entirely,
+      // so a single stray pixel still can't outscore a real area of color.
+      // This only ranks buckets that actually exist in the frame, so it
+      // never invents color: a level whose footage really is gray
+      // throughout still comes back gray — every candidate scores equally
+      // low on vividness, so brightness/population settle the tie instead.
+      const vividness = Math.pow(s / 100, 1.3);
+      const brightness = Math.max(0, 1 - Math.abs(l - 58) / 58); // peaks near l=58, tapers toward the (already-filtered) extremes
+      const score = Math.sqrt(bucket.n) * (0.15 + 0.85 * vividness) * (0.4 + 0.6 * brightness);
       if (score > bestScore) { bestScore = score; best = bucket; }
     }
     const [hue, sat, light] = rgbToHsl(best.r / best.n, best.g / best.n, best.b / best.n);
@@ -217,7 +227,7 @@ function dominantColor(img) {
   }
 }
 
-const THUMB_COLOR_CACHE_KEY = 'gddl_thumb_colors_v2'; // v2: dominantColor() now keeps a bucket's real saturation/lightness instead of forcing a fixed 74%/60% — bumped so every level recalculates instead of serving stale v1 colors
+const THUMB_COLOR_CACHE_KEY = 'gddl_thumb_colors_v3'; // v3: dominantColor() now weights vividness/brightness much more heavily in bucket scoring — bumped so every level recalculates instead of serving stale v2 colors
 let thumbColorCache = null;
 function loadThumbColorCache() {
   if (thumbColorCache) return thumbColorCache;
