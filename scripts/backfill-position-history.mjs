@@ -121,8 +121,14 @@ function simulate(entries) {
     const insertIdx = Math.max(0, Math.min(newPos - 1, order.length));
     order.splice(insertIdx, 0, id);
     if (isDirect) { recordIfChanged(id, date, insertIdx + 1); directCount++; }
+    // A brand-new insertion (oldIdx === -1, e.g. a fresh Placed event) pushes
+    // every level from insertIdx through the *current end* of the array down
+    // by one — there's no "old position" to bound the range against, unlike
+    // a move within the existing list. Bounding hi at insertIdx here was a
+    // bug: it meant new placements (the single most common event type) never
+    // cascaded a position change to anything below them at all.
     const lo = oldIdx === -1 ? insertIdx : Math.min(oldIdx, insertIdx);
-    const hi = oldIdx === -1 ? insertIdx : Math.max(oldIdx, insertIdx);
+    const hi = oldIdx === -1 ? order.length - 1 : Math.max(oldIdx, insertIdx);
     for (let i = lo; i <= hi; i++) {
       if (i === insertIdx) continue;
       recordIfChanged(order[i], date, i + 1);
