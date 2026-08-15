@@ -58,6 +58,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { directReason, cascadeReason } from './lib/changelog-reasons.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CACHE_PATH = path.join(__dirname, '..', 'data', 'aredl-cache.json');
@@ -137,9 +138,52 @@ async function loadExistingHistory() {
 }
 
 /**
- * Appends a { date, position } entry for every level that's either
- * currently in the top LEVEL_LIST_SIZE or already has history (so a
- * level that's since dropped out keeps getting tracked — its entries
+ * Fetches the changelog's most recent page (20 entries — cheap, one
+ * request) so position changes found by updatePositionHistory() below
+ * can carry a real `reason`, same vocabulary as the full changelog
+ * simulation in scripts/backfill-position-history.mjs — see that file's
+ * header for why AREDL's changelog only names the level an action was
+ * *directly* taken on, never everything that shifted as a side effect.
+ * This is a best-effort, non-simulated version of that same idea: any
+ * level in this page's own directReason() gets an exact reason; any
+ * *other* tracked level whose position moved this run (a cascade this
+ * cheap approach can't precisely attribute) instead gets a reason
+ * pointing at whichever direct event most recently ran, since between
+ * two hourly checks there's usually just the one.
+ */
+async function fetchRecentChangelogEntries() {
+  try {
+    const json = await fetchJson(`${AREDL_BASE}/changelog?page=1`);
+    return json.data || [];
+  } catch (e) {
+    console.warn(`  couldn't fetch changelog for position-history reasons: ${e.message}`);
+    return [];
+  }
+}
+
+/** Builds { directReasonById, latestCause } from a page of changelog entries (newest-first). */
+function buildReasonContext(recentEntries) {
+  const directReasonById = new Map();
+  let latestCause = null;
+  for (const entry of recentEntries) {
+    const id = entry.affected_level?.id;
+    if (!id) continue;
+    const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
+    const reason = type === 'Swapped'
+      ? `Swapped with ${(action.other_level?.name || action.upper_level?.name || 'another level').trim()}`
+      : directReason(type, action);
+    if (reason && !directReasonById.has(id)) directReasonById.set(id, reason);
+    if (!latestCause && type && type !== 'Swapped' && Number.isFinite(action.new_position)) {
+      latestCause = { type, name: entry.affected_level?.name, position: action.new_position };
+    }
+  }
+  return { directReasonById, latestCause };
+}
+
+/**
+ * Appends a { date, position, reason } entry for every level that's
+ * either currently in the top LEVEL_LIST_SIZE or already has history (so
+ * a level that's since dropped out keeps getting tracked — its entries
  * just read as "Legacy" once position > LEVEL_LIST_SIZE, see
  * js/detail.js) — but only when its position actually changed since the
  * last recorded entry, not on every run. A level absent from
@@ -151,7 +195,7 @@ async function loadExistingHistory() {
  * of history stays a small array; there's no volume problem an entry
  * cap would actually be solving.
  */
-function updatePositionHistory(existingHistory, positionById, trackedIds) {
+function updatePositionHistory(existingHistory, positionById, trackedIds, reasonContext) {
   const history = { ...existingHistory };
   const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD — daily granularity is plenty for a position history
   let changed = 0;
@@ -164,7 +208,14 @@ function updatePositionHistory(existingHistory, positionById, trackedIds) {
     const last = entries[entries.length - 1];
     if (last && last.position === currentPosition) continue; // no change since last recorded entry
 
-    entries.push({ date: today, position: currentPosition });
+    let reason = reasonContext.directReasonById.get(id);
+    if (!reason) {
+      const cause = reasonContext.latestCause;
+      const movedDown = last ? currentPosition > last.position : false;
+      reason = cause ? cascadeReason(cause.type, cause.name, cause.position, movedDown) : (movedDown ? 'Moved down' : 'Moved up');
+    }
+
+    entries.push({ date: today, position: currentPosition, reason });
     history[id] = entries;
     changed++;
   }
@@ -198,7 +249,9 @@ async function main() {
   const positionById = new Map(fullList.map(l => [String(l.id), l.position]));
   const existingHistory = await loadExistingHistory();
   const trackedIds = new Set([...bareLevels.map(l => String(l.id)), ...Object.keys(existingHistory)]);
-  const { history, changed } = updatePositionHistory(existingHistory, positionById, trackedIds);
+  const recentEntries = await fetchRecentChangelogEntries();
+  const reasonContext = buildReasonContext(recentEntries);
+  const { history, changed } = updatePositionHistory(existingHistory, positionById, trackedIds, reasonContext);
   await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history }, null, 2) + '\n');
   console.log(`Position history: ${changed} level(s) moved since the last check, ${Object.keys(history).length} tracked in total, wrote to ${HISTORY_PATH}.`);
 }

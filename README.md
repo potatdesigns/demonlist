@@ -511,9 +511,17 @@ refresh failing. A full run currently takes on the order of a minute — comfort
 hourly job.
 
 **Position history.** The same run also updates `data/position-history.json` — a
-`{ levelId: [{ date, position }, ...] }` log, one entry appended per level *only when its position
-actually changed* since the last recorded entry, not once per run (most runs, most levels don't
-move — recording those as no-ops would just be noise). Tracks both the current top
+`{ levelId: [{ date, position, reason }, ...] }` log, one entry appended per level *only when its
+position actually changed* since the last recorded entry, not once per run (most runs, most levels
+don't move — recording those as no-ops would just be noise). `reason` is a short human-readable
+string in AREDL's own changelog vocabulary (`Placed at #4`, `Raised from #12 to #4`, `Moved down —
+Society was placed at #1`, ...) — see `scripts/lib/changelog-reasons.mjs`, shared by this script and
+`backfill-position-history.mjs` so the phrasing is identical regardless of which one wrote a given
+entry. This hourly path only has the latest changelog page (20 entries, one cheap extra request) to
+work with, not a full simulation, so a level that moved only as an indirect side effect of some
+other change gets a best-effort reason pointing at whatever direct event most recently ran — usually
+right, since there's rarely more than one admin action between two hourly checks, but not exactly
+attributed the way the full backfill's simulation can. Tracks both the current top
 `LEVEL_LIST_SIZE` and any level that already has history but has since dropped out of it, so its
 record doesn't just stop the moment it leaves — the detail page is what turns a position past
 `LEVEL_LIST_SIZE` into "Legacy" for display, the stored data keeps the real AREDL position either
@@ -540,6 +548,12 @@ resolved by swapping the two array slots at the event's own recorded position �
 regardless of array contents — rather than trusting AREDL's `upper_level`/`other_level` fields,
 which have been observed to sometimes just duplicate each other. Validated by diffing the fully
 simulated final order against AREDL's live current list (exact match, all 150 tracked positions).
+Each recorded entry also gets a `reason` — for the level a changelog event directly named, that's
+built straight from the event's own action/positions; for everything else that shifted only as a
+side effect, it names whichever direct action caused it (`Moved down — Society was placed at #1`),
+using a levelId→name map built opportunistically from every event seen, since a level causing a
+cascade is often never itself the changelog's "affected level" and so wouldn't otherwise have a
+name available at that point in the replay.
 
 ### Watching for AREDL changes affecting the top 150
 
@@ -638,6 +652,9 @@ scripts/
                                change touching the top 150 and triggers the two scripts above when
                                it finds one, see "Watching for AREDL changes affecting the top 150" above
   publish-cache-branch.sh     what all three scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
+  lib/
+    changelog-reasons.mjs     shared reason-text formatters for position-history entries, used by both
+                               refresh-aredl-cache.mjs and backfill-position-history.mjs — see "Position history" above
   showcase-blacklist.json     hand-maintained video/title-phrase blacklist, see "Showcase-matching algorithm" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above

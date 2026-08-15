@@ -287,11 +287,24 @@
 }
 .position-history-delta.up { color: #4ade80; }
 .position-history-delta.down { color: #f87171; }
-.position-history-label {
+.position-history-main {
   flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.position-history-label {
   font-family: ui-monospace, monospace;
   font-weight: 600;
   color: var(--text-hi);
+}
+.position-history-reason {
+  font-size: 11px;
+  color: var(--text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .position-history-date {
   flex-shrink: 0;

@@ -304,10 +304,14 @@
         }
         const label = entry.position <= CONFIG.LIST_SIZE ? `#${entry.position}` : 'Legacy';
         const dateLabel = new Date(entry.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        const reasonHtml = entry.reason ? `<span class="position-history-reason">${escapeHtml(entry.reason)}</span>` : '';
         return `
           <li class="position-history-row">
             <span class="position-history-delta ${deltaClass}">${deltaIcon}</span>
-            <span class="position-history-label">${escapeHtml(label)}</span>
+            <div class="position-history-main">
+              <span class="position-history-label">${escapeHtml(label)}</span>
+              ${reasonHtml}
+            </div>
             <span class="position-history-date">${escapeHtml(dateLabel)}</span>
           </li>
         `;
