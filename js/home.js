@@ -275,13 +275,50 @@
   // above and for the same reason: works even for a level that's since
   // dropped out of the tracked top 150 entirely, which a bare #position
   // link couldn't reach.
+  //
+  // Every recorded position *change* would be a lot of noise for a daily
+  // "look back" widget (the cascade-tracking history has hundreds of
+  // thousands of entries — see scripts/backfill-position-history.mjs) —
+  // this only surfaces a change that crosses a meaningful threshold:
+  // reaching #1, entering the top 10, leaving the Main List (top 75),
+  // moving to/from legacy, or a single jump of 20+ spots. Tuned against
+  // the real published history to land on a *good majority* of calendar
+  // dates having at least one qualifying event, not just the flashiest
+  // handful of days (~61% of the year's 365 dates, vs. ~55% without the
+  // "big jump" catch-all) — the tradeoff explicitly asked for over just
+  // hand-picking the rarest, splashiest categories alone.
+  const OTD_MAIN_LIST_SIZE = 75; // matches the site's own Main List (#1-75) / Extended List (#76-150) split
+  const OTD_BIG_JUMP = 20; // spots moved in one recorded step, regardless of whether it crosses a named boundary
+  const OTD_META = {
+    'Reached #1':               { label: '#1',        className: 'crown' },
+    'Entered the top 10':       { label: 'Top 10',     className: 'up' },
+    'Left the Main List':       { label: 'Left Main',  className: 'down' },
+    'Moved to legacy':          { label: 'Legacy',     className: 'legacy' },
+    'Returned from legacy':     { label: 'Un-legacy',  className: 'up' },
+    'Big jump':                 { label: 'Big jump',   className: 'swap' },
+  };
+
+  /** null if this position change isn't significant enough for On This Day — see the comment above for why these particular thresholds. isFirst (this level's very first-ever recorded entry) only allows the two "arrived already this good" cases; every other rule needs a real prior position to compare against. */
+  function classifySignificance(prevPos, currPos, isFirst) {
+    if (currPos === 1 && (isFirst || prevPos !== 1)) return 'Reached #1';
+    if (currPos <= 10 && (isFirst || prevPos > 10)) return 'Entered the top 10';
+    if (isFirst) return null;
+    if (prevPos <= OTD_MAIN_LIST_SIZE && currPos > OTD_MAIN_LIST_SIZE && currPos <= CONFIG.LIST_SIZE) return 'Left the Main List';
+    if (prevPos <= CONFIG.LIST_SIZE && currPos > CONFIG.LIST_SIZE) return 'Moved to legacy';
+    if (prevPos > CONFIG.LIST_SIZE && currPos <= CONFIG.LIST_SIZE) return 'Returned from legacy';
+    if (Math.abs(prevPos - currPos) >= OTD_BIG_JUMP) return 'Big jump';
+    return null;
+  }
 
   function otdRowHtml(hit, index) {
+    const meta = OTD_META[hit.type];
+    const posLabel = hit.position <= CONFIG.LIST_SIZE ? `#${hit.position}` : 'Legacy';
     return `
       <li>
         <a class="home-otd-row" href="level.html#id=${encodeURIComponent(hit.id)}" style="--i:${index}">
           <span class="home-otd-years">${hit.yearsAgo}y ago</span>
-          <span class="home-otd-text"><strong>${escapeHtml(hit.name)}</strong> — ${escapeHtml(hit.reason || `now #${hit.position}`)}</span>
+          <span class="home-otd-badge home-otd-${meta.className}">${escapeHtml(meta.label)}</span>
+          <span class="home-otd-text"><strong>${escapeHtml(hit.name)}</strong> — ${escapeHtml(hit.reason || `now ${posLabel}`)}</span>
         </a>
       </li>
     `;
@@ -297,17 +334,21 @@
 
       const hits = [];
       for (const [id, entries] of Object.entries(history)) {
-        for (const entry of entries) {
+        for (let i = 0; i < entries.length; i++) {
+          const entry = entries[i];
           if (entry.date.slice(5, 10) !== todayMonthDay) continue;
           const year = parseInt(entry.date.slice(0, 4), 10);
           if (!Number.isFinite(year) || year === thisYear) continue; // "today" itself isn't "years ago"
-          hits.push({ id, name: names[id] || 'Unknown level', yearsAgo: thisYear - year, position: entry.position, reason: entry.reason });
+          const prevPos = i === 0 ? Infinity : entries[i - 1].position;
+          const type = classifySignificance(prevPos, entry.position, i === 0);
+          if (!type) continue;
+          hits.push({ id, type, name: names[id] || 'Unknown level', yearsAgo: thisYear - year, position: entry.position, reason: entry.reason });
         }
       }
       hits.sort((a, b) => a.yearsAgo - b.yearsAgo || a.position - b.position);
 
       if (!hits.length) {
-        otdList.innerHTML = `<li class="chart-empty">No recorded position changes on this date in past years — check back another day.</li>`;
+        otdList.innerHTML = `<li class="chart-empty">No major position changes on this date in past years — check back another day.</li>`;
         return;
       }
       otdList.innerHTML = hits.slice(0, 8).map(otdRowHtml).join('');

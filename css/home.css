@@ -171,15 +171,26 @@ a.home-change-row:hover { background: var(--bg-surface-2); }
 a.home-otd-row:hover { background: var(--bg-surface-2); }
 .home-otd-years {
   flex-shrink: 0;
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: ui-monospace, monospace;
+  white-space: nowrap;
+}
+.home-otd-badge {
+  flex-shrink: 0;
   font-size: 10px;
   font-weight: 700;
   padding: 3px 7px;
   border-radius: 4px;
-  background: color-mix(in srgb, var(--primary) 22%, transparent);
-  color: var(--primary);
-  font-family: ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   white-space: nowrap;
 }
+.home-otd-crown  { background: color-mix(in srgb, var(--gold) 22%, transparent); color: var(--gold); }
+.home-otd-up     { background: rgba(34,197,94,0.18); color: #4ade80; }
+.home-otd-down   { background: rgba(239,68,68,0.18); color: #f87171; }
+.home-otd-legacy { background: var(--bg-surface-2); color: var(--text-dim); }
+.home-otd-swap   { background: color-mix(in srgb, var(--primary) 22%, transparent); color: var(--primary); }
 .home-otd-text {
   flex: 1 1 auto;
   min-width: 0;
