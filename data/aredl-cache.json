@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T23:13:34.329Z",
+  "generatedAt": "2026-08-15T00:35:45.722Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -593,6 +593,11 @@
           "global_name": "bosjoker"
         },
         {
+          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
+          "username": "ddd7bb669",
+          "global_name": "Xolarzz"
+        },
+        {
           "id": "736bf68b-cbdc-4726-b18d-f960cc9847a8",
           "username": "5ffdc9c7e",
           "global_name": "Laser"
@@ -881,11 +886,6 @@
           "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
           "username": "43b6ccb3a",
           "global_name": "Lris"
-        },
-        {
-          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
-          "username": "ddd7bb669",
-          "global_name": "Xolarzz"
         }
       ]
     },
@@ -4312,6 +4312,11 @@
           "global_name": "MercuryDT"
         },
         {
+          "id": "04c63427-5989-4f6c-ab75-8917934679cf",
+          "username": "aqualime272",
+          "global_name": "aqualime"
+        },
+        {
           "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
           "username": "0fb0d4b59",
           "global_name": "robotchief"
@@ -4385,6 +4390,11 @@
           "id": "33d57db7-852b-4f5d-8fda-2dc72ff1634d",
           "username": "9f8e3d2ef",
           "global_name": "IINimbusII"
+        },
+        {
+          "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
+          "username": "icerod",
+          "global_name": "Ice Rod"
         },
         {
           "id": "3e2fd9c7-1a5c-44a1-bf0f-7ae47fe2573a",
@@ -4532,6 +4542,11 @@
           "global_name": "Jorse"
         },
         {
+          "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
+          "username": "mccoco1",
+          "global_name": "McCoco"
+        },
+        {
           "id": "9bca38bc-543a-4e17-bd5d-708dba25eb46",
           "username": "08180e1e4",
           "global_name": "GaidenHertuny"
@@ -4605,16 +4620,6 @@
           "id": "b5bfd2e1-4d45-4815-b1fd-0602881a9aef",
           "username": "bd383867e",
           "global_name": "shman"
-        },
-        {
-          "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
-          "username": "mccoco1",
-          "global_name": "McCoco"
-        },
-        {
-          "id": "04c63427-5989-4f6c-ab75-8917934679cf",
-          "username": "aqualime272",
-          "global_name": "aqualime"
         },
         {
           "id": "b8d3cbeb-520d-4c7b-9788-365a45de1e9c",
@@ -4745,11 +4750,6 @@
           "id": "f9d85d3f-b9ca-4c72-a7a1-7c3627ac9b20",
           "username": "0ee90eef5",
           "global_name": "Bittersweet"
-        },
-        {
-          "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
-          "username": "icerod",
-          "global_name": "Ice Rod"
         }
       ]
     },
@@ -6497,93 +6497,7 @@
           "updated_at": "2023-05-04T15:24:08Z"
         }
       ],
-      "creators": [
-        {
-          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
-          "username": "mercurydt",
-          "global_name": "MercuryDT"
-        },
-        {
-          "id": "0949468f-40e0-4ce8-89be-e83f8f384018",
-          "username": "827c3b264",
-          "global_name": "Viper Arctarus"
-        },
-        {
-          "id": "4eb2b5ab-5170-4180-990e-829ffac43e53",
-          "username": "68472349e",
-          "global_name": "Yoonsrdynamix"
-        },
-        {
-          "id": "500b2c92-32a5-423c-b742-17bb39586fe2",
-          "username": "4c43628f9",
-          "global_name": "Avati"
-        },
-        {
-          "id": "63f88baf-67e9-4e62-8461-311e7fca9cd6",
-          "username": "81dc8d808",
-          "global_name": "Uriun"
-        },
-        {
-          "id": "650faa17-0b43-4619-bed3-d2aed8a2ab54",
-          "username": "bc8a55b20",
-          "global_name": "GD Endy"
-        },
-        {
-          "id": "744bbcce-8fde-4eb6-b0f7-df537b035068",
-          "username": "2dd912df2",
-          "global_name": "Nickalopogas"
-        },
-        {
-          "id": "7d9efb4f-8259-40eb-b123-41785a461e58",
-          "username": "linear6055",
-          "global_name": "Lin"
-        },
-        {
-          "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
-          "username": "5a211773f",
-          "global_name": "Realvet"
-        },
-        {
-          "id": "a8f6e413-08e5-4ce3-adab-b65cf95fb357",
-          "username": "48b5a8050",
-          "global_name": "knobbelboy"
-        },
-        {
-          "id": "b206f9ab-6e46-4bfa-bc74-251e5acfef50",
-          "username": "20b7dfcc6",
-          "global_name": "CuLuC"
-        },
-        {
-          "id": "b638fdda-7c94-4b16-bffa-ff2ea13fa222",
-          "username": "c1e6228cd",
-          "global_name": "Salamander"
-        },
-        {
-          "id": "b73f134b-9996-4bfa-9aba-f09d4a33275f",
-          "username": "unerve",
-          "global_name": "Unerve"
-        },
-        {
-          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
-          "username": "rynoxiouss",
-          "global_name": "Rynoxious"
-        },
-        {
-          "id": "de4d8aac-b1a6-4364-b1a7-bdf92698a65e",
-          "username": "45e5ffa70",
-          "global_name": "AppleCr"
-        },
-        {
-          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-          "username": "cdmusic",
-          "global_name": "CDMusic"
-        },
-        {
-          "id": "f2eabe86-33a4-431a-b99e-960d80f31c88",
-          "username": "325a61bff",
-          "global_name": "Parallax"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "64b042d2-a084-4a84-83c6-fcc830e84a2e",
@@ -9620,7 +9534,7 @@
       ],
       "description": null,
       "song": 953530,
-      "edel_enjoyment": 66.78571429,
+      "edel_enjoyment": 68.8,
       "is_edel_pending": false,
       "gddl_tier": 35.5,
       "nlw_tier": null,
@@ -11233,7 +11147,7 @@
       ],
       "description": "Formerly impossible flashy green extreme with a vague nature/jungle theme. Features incredibly fast-paced wave sections and fast-paced gameplay. Stolen assets were found in the original version of the level, leading to the level getting unrated and getting a redecoration. Respect the Planet.",
       "song": 678780,
-      "edel_enjoyment": 71.11428571,
+      "edel_enjoyment": 70.52777778,
       "is_edel_pending": false,
       "gddl_tier": 35.4,
       "nlw_tier": null,
@@ -11497,7 +11411,7 @@
       ],
       "description": "Claustrophobic and colourful sequel to the equally claustrophobic Cognition. Loses the old fashioned style song for a more upbeat Creo song, similar to Carcano. Surprisingly one of the most dropped extreme verifications, going through 6 verifiers.",
       "song": 829777,
-      "edel_enjoyment": 67.05555556,
+      "edel_enjoyment": 66.92727273,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -12032,7 +11946,7 @@
       ],
       "description": "Learny Kowareta inspired \"art-core\" level with a groovy breakbeat song and colorful desaturated visuals. Features a slight garden theme and is flooded with community inside jokes and memes. The gameplay itself is clicksync and fast paced, with many chokepoints throughout the level. ",
       "song": null,
-      "edel_enjoyment": 63.45714286,
+      "edel_enjoyment": 63.77777778,
       "is_edel_pending": false,
       "gddl_tier": 34.81818181818182,
       "nlw_tier": null,
