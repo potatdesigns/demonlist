@@ -53,11 +53,23 @@
     return rows;
   }
 
-  function rowHtml(row, comparePositionById, compareLabel, index) {
+  /** A level's raw position as of `dateStr` (any position, not just <= CONFIG.LIST_SIZE — unlike snapshotAt() above), or null if it has no recorded entry on or before that date at all. Distinguishing "no entry yet" from "entry exists but it's past CONFIG.LIST_SIZE" is exactly the point: snapshotAt()'s own filtering collapses both into "not in the results", which previously showed "Legacy" for a level that actually just didn't exist yet as of the compare date. */
+  function positionAt(id, dateStr) {
+    let match = null;
+    for (const e of history[id] || []) {
+      if (e.date > dateStr) break;
+      match = e;
+    }
+    return match ? match.position : null;
+  }
+
+  function rowHtml(row, compareStr, compareLabel, index) {
     const name = names[row.id] || 'Unknown level';
-    const comparePos = comparePositionById.get(row.id);
+    const comparePos = positionAt(row.id, compareStr);
     let deltaHtml;
-    if (comparePos === undefined) {
+    if (comparePos === null) {
+      deltaHtml = `<span class="tm-delta dropped">Not placed yet</span>`;
+    } else if (comparePos > CONFIG.LIST_SIZE) {
       deltaHtml = `<span class="tm-delta dropped">Legacy</span>`;
     } else if (comparePos === row.position) {
       deltaHtml = `<span class="tm-delta same">still #${comparePos}</span>`;
@@ -88,10 +100,8 @@
       return;
     }
     const isToday = compareStr === todayStr();
-    const compareRows = dateStr === compareStr ? rows : snapshotAt(compareStr);
-    const comparePositionById = new Map(compareRows.map(r => [r.id, r.position]));
     const compareLabel = isToday ? 'now' : `on ${compareStr}`;
-    listEl.innerHTML = rows.map((r, i) => rowHtml(r, comparePositionById, compareLabel, i)).join('');
+    listEl.innerHTML = rows.map((r, i) => rowHtml(r, compareStr, compareLabel, i)).join('');
     showBanner(`Top ${rows.length} on ${escapeHtml(dateStr)}, vs. ${isToday ? 'today' : escapeHtml(compareStr)}.`);
   }
 
