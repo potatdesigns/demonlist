@@ -276,8 +276,8 @@ body::before {
   right: -34px;
   width: 130px;
   padding: 4px 0 3px;
-  background: var(--primary);
-  color: var(--primary-on, #1a0d00);
+  background: var(--badge-color, var(--primary));
+  color: var(--badge-color-on, var(--primary-on, #1a0d00));
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -285,6 +285,8 @@ body::before {
   text-align: center;
   transform: rotate(45deg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  outline: 1px solid rgba(255, 255, 255, 0.25);
+  outline-offset: -1px;
   pointer-events: none;
 }
 .card-title .new-badge {

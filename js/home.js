@@ -157,12 +157,18 @@
       const { html, color } = spotlightCardHtml(topFull, topEntry);
       topBody.innerHTML = html;
       topBody.parentElement.style.setProperty('--tier-color', color);
+      const topBadge = badgeColorFor(color);
+      topBody.parentElement.style.setProperty('--badge-color', topBadge);
+      topBody.parentElement.style.setProperty('--badge-color-on', contrastTextColor(topBadge));
       wireCardColor(topBody, topFull);
     }
     if (featuredBody) {
       const { html, color } = spotlightCardHtml(featuredFull, featuredEntry);
       featuredBody.innerHTML = html;
       featuredBody.parentElement.style.setProperty('--tier-color', color);
+      const featuredBadge = badgeColorFor(color);
+      featuredBody.parentElement.style.setProperty('--badge-color', featuredBadge);
+      featuredBody.parentElement.style.setProperty('--badge-color-on', contrastTextColor(featuredBadge));
       wireCardColor(featuredBody, featuredFull);
     }
   }
@@ -171,7 +177,13 @@
   function wireCardColor(container, demon) {
     const img = container.querySelector('img');
     if (!img || !demon.videoUrl) return;
-    resolveThumbnailColor(img, color => { if (color) container.parentElement.style.setProperty('--tier-color', color); }, youTubeThumbnail(demon.videoUrl));
+    resolveThumbnailColor(img, color => {
+      if (!color) return;
+      container.parentElement.style.setProperty('--tier-color', color);
+      const badge = badgeColorFor(color);
+      container.parentElement.style.setProperty('--badge-color', badge);
+      container.parentElement.style.setProperty('--badge-color-on', contrastTextColor(badge));
+    }, youTubeThumbnail(demon.videoUrl));
   }
 
   // --- recent changes (AREDL changelog, filtered to top-150-affecting entries — see AredlAPI.fetchChangelog) ---

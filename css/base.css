@@ -285,8 +285,9 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 3px 7px 2px;
-  background: var(--primary);
-  color: var(--primary-on, #1a0d00);
+  background: var(--badge-color, var(--primary));
+  color: var(--badge-color-on, var(--primary-on, #1a0d00));
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
 }
 

@@ -147,6 +147,8 @@
     const thumbCacheKey = youTubeThumbnail(demon.videoUrl);
     const cachedColor = thumbCacheKey ? getCachedThumbColor(thumbCacheKey) : null;
     const tierColor = cachedColor || positionColor(demon.position, totalCount);
+    const badgeColor = badgeColorFor(tierColor);
+    const badgeColorOn = contrastTextColor(badgeColor);
     document.title = `Demonlist | ${demon.name}`;
     prevPosition = prevLevel ? demon.position - 1 : null;
     nextPosition = nextLevel ? demon.position + 1 : null;
@@ -225,7 +227,7 @@
     // delaying or failing the rest of the page over.
     AredlAPI.fetchNewLevelIds().then(ids => {
       const badge = document.getElementById('detail-new-badge');
-      if (badge && ids.has(demon.id)) badge.innerHTML = '<span class="new-badge">New</span>';
+      if (badge && ids.has(demon.id)) badge.innerHTML = `<span class="new-badge" style="--badge-color:${badgeColor};--badge-color-on:${badgeColorOn}">New</span>`;
     }).catch(() => {});
   }
 
@@ -257,8 +259,17 @@
     probe.crossOrigin = 'anonymous';
     const upgradeRankColor = () => {
       const rankEl = document.querySelector('.detail-rank');
+      const badgeEl = document.querySelector('#detail-new-badge .new-badge');
       const cacheKey = youTubeThumbnail(videoUrl); // shared with js/list.js's cards — see resolveThumbnailColor()'s comment
-      if (rankEl) resolveThumbnailColor(probe, color => { if (color) rankEl.style.setProperty('--tier-color', color); }, cacheKey);
+      resolveThumbnailColor(probe, color => {
+        if (!color) return;
+        if (rankEl) rankEl.style.setProperty('--tier-color', color);
+        if (badgeEl) {
+          const badge = badgeColorFor(color);
+          badgeEl.style.setProperty('--badge-color', badge);
+          badgeEl.style.setProperty('--badge-color-on', contrastTextColor(badge));
+        }
+      }, cacheKey);
     };
     probe.onload = () => {
       const url = probe.naturalWidth > 200 ? maxres : fallback;

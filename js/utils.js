@@ -123,6 +123,58 @@ function positionColor(position, total) {
   return `hsl(${hue.toFixed(1)}, 74%, 60%)`;
 }
 
+/**
+ * Dark or white text, whichever reads better against an `hsl(...)` string
+ * (as produced by positionColor()/dominantColor() above) — used for the
+ * "New" badge/ribbon, whose background follows the level's own tier-color
+ * rather than the fixed site accent, so its text can't just reuse
+ * --primary-on's single hand-picked value the way ACCENT_PRESETS does.
+ * Converts to RGB and weighs channels by perceived brightness (green
+ * reads brighter than blue at the same numeric value) rather than raw
+ * HSL lightness alone, so e.g. a saturated yellow still gets dark text
+ * even though yellow and blue can share the same L%. Falls back to the
+ * site's own default dark-text color if the string isn't a plain hsl().
+ */
+function contrastTextColor(hslStr) {
+  const m = typeof hslStr === 'string' && hslStr.match(/hsl\(\s*([\d.]+)[, ]+([\d.]+)%[, ]+([\d.]+)%\s*\)/);
+  if (!m) return '#1a0d00';
+  const h = parseFloat(m[1]) / 360, s = parseFloat(m[2]) / 100, l = parseFloat(m[3]) / 100;
+  const hue2rgb = (p, q, t) => {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  };
+  let r, g, b;
+  if (s === 0) { r = g = b = l; }
+  else {
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1 / 3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1 / 3);
+  }
+  const perceivedBrightness = 0.299 * r + 0.587 * g + 0.114 * b; // 0-1
+  return perceivedBrightness > 0.6 ? '#1a0d00' : '#ffffff';
+}
+
+/**
+ * A badge/ribbon-safe variant of a level's tier-color — same hue, so it's
+ * still recognizably "this level's color", but forced into a fixed, deep,
+ * heavily saturated band instead of reusing tier-color's own (often
+ * pastel, thumbnail-derived) lightness. The "New" ribbon sits directly on
+ * top of the same thumbnail dominantColor() sometimes extracted that hue
+ * *from* — reusing it verbatim let the ribbon visually melt into the
+ * artwork behind it instead of reading as a badge.
+ */
+function badgeColorFor(hslStr) {
+  const m = typeof hslStr === 'string' && hslStr.match(/hsl\(\s*([\d.]+)/);
+  const hue = m ? parseFloat(m[1]) : 26; // falls back to the site's default orange hue
+  return `hsl(${hue.toFixed(1)}, 88%, 40%)`;
+}
+
 function rgbToHsl(r, g, b) {
   r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b), min = Math.min(r, g, b);

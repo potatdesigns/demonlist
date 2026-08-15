@@ -314,6 +314,8 @@
     // no vivid color found) both correctly fall through to the gradient.
     const cachedColor = demon.thumbnail ? getCachedThumbColor(demon.thumbnail) : null;
     const tierColor = cachedColor || positionColor(demon.position, totalCount);
+    const badgeColor = badgeColorFor(tierColor);
+    const badgeColorOn = contrastTextColor(badgeColor);
     const thumb = demon.thumbnail || 'data:image/svg+xml;utf8,' + encodeURIComponent(
       `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="100%" height="100%" fill="#12151f"/></svg>`
     );
@@ -353,7 +355,7 @@
     if (Settings.get('displayMode') === 'list') {
       return `
         <article class="demon-card demon-row"
-          style="--tier-color: ${tierColor}; --i: ${index}"${dataAttrs}>
+          style="--tier-color: ${tierColor}; --badge-color: ${badgeColor}; --badge-color-on: ${badgeColorOn}; --i: ${index}"${dataAttrs}>
           <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
             <span class="row-rank">#${demon.position ?? '?'}</span>
             <div class="row-thumb">
@@ -374,7 +376,7 @@
 
     return `
       <article class="demon-card"
-        style="--tier-color: ${tierColor}; --i: ${index}"${dataAttrs}>
+        style="--tier-color: ${tierColor}; --badge-color: ${badgeColor}; --badge-color-on: ${badgeColorOn}; --i: ${index}"${dataAttrs}>
         <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
@@ -498,7 +500,7 @@
     // blocking the view-count hydration below on.
     cards.forEach(card => {
       const img = card.querySelector('img');
-      if (img) resolveThumbnailColor(img, color => { if (color) card.style.setProperty('--tier-color', color); });
+      if (img) resolveThumbnailColor(img, color => { if (color) { card.style.setProperty('--tier-color', color); const bc = badgeColorFor(color); card.style.setProperty('--badge-color', bc); card.style.setProperty('--badge-color-on', contrastTextColor(bc)); } });
     });
 
     const sharedEntries = await Promise.all(cards.map(c => SharedYtCache.getEntry(c.dataset.id)));
