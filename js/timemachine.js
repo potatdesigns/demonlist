@@ -76,7 +76,7 @@
   function render(dateStr) {
     if (dateStr < earliestDate) {
       listEl.innerHTML = '';
-      showBanner(`No recorded history goes back that far — the earliest available date is ${escapeHtml(earliestDate)}.`, true);
+      showBanner(`Earliest available date is ${escapeHtml(earliestDate)}.`, true);
       return;
     }
     const rows = snapshotAt(dateStr);
@@ -88,7 +88,7 @@
     const currentRows = dateStr === todayStr() ? rows : snapshotAt(todayStr());
     const currentPositionById = new Map(currentRows.map(r => [r.id, r.position]));
     listEl.innerHTML = rows.map((r, i) => rowHtml(r, currentPositionById, i)).join('');
-    showBanner(`Showing the top ${rows.length} as reconstructed for ${escapeHtml(dateStr)}, compared against today.`);
+    showBanner(`Top ${rows.length} on ${escapeHtml(dateStr)}, vs. today.`);
   }
 
   function goTo(dateStr) {
@@ -123,7 +123,7 @@
 
       dateInput.min = earliestDate;
       dateInput.max = todayStr();
-      rangeNote.textContent = `History goes back to ${earliestDate} — that's AREDL's own changelog's limit, not this page's.`;
+      rangeNote.textContent = `Earliest available: ${earliestDate}`;
 
       quickJumps.append(
         quickJumpButton('Today', todayStr()),
