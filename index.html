@@ -34,6 +34,7 @@
     <div class="home-stat-strip">
       <div class="home-stat"><span class="num" id="home-stat-total">—</span><span>Tracked levels</span></div>
       <div class="home-stat"><span class="num" id="home-stat-changes">—</span><span>Recent changes</span></div>
+      <div class="home-stat"><span class="num" id="home-stat-completed">—</span><span>You've beaten</span></div>
     </div>
   </section>
 
@@ -73,6 +74,16 @@
     </ul>
   </section>
 
+  <section class="home-changes-card">
+    <div class="home-changes-head">
+      <h2>On this day</h2>
+      <p>Position changes that happened on today's date in past years.</p>
+    </div>
+    <ul class="home-otd-list" id="home-otd-list">
+      <li class="chart-empty">Loading…</li>
+    </ul>
+  </section>
+
   <section class="home-roulette-teaser">
     <div>
       <h2>Think you can climb the list?</h2>
@@ -90,8 +101,10 @@
 <script src="js/utils.js"></script>
 <script src="js/api-aredl.js"></script>
 <script src="js/shared-cache.js"></script>
+<script src="js/position-history.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
+<script src="js/completion.js"></script>
 <script src="js/home.js"></script>
 <script src="js/shortcuts.js"></script>
 </body>

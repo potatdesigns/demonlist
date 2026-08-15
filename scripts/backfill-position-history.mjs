@@ -189,7 +189,20 @@ function simulate(entries) {
   }
 
   console.log(`Simulated ${directCount} direct events + ${cascadeCount} cascading shifts (${swapResolved} swaps resolved, ${swapSkipped} skipped out-of-bounds).`);
-  return historyOut;
+
+  // Every tracked id started life via its own Placed/MovedFromLegacy event
+  // (the only way an id ever enters `order`), so levelNames always has a
+  // name for it by the time it shows up here — published alongside the
+  // history so a level that's since dropped out of the tracked top
+  // LEVEL_LIST_SIZE (and so isn't in data/aredl-cache.json anymore either)
+  // can still be named by On This Day / the Time Machine page.
+  const names = {};
+  for (const id of Object.keys(historyOut)) {
+    const name = levelNames.get(id);
+    if (name) names[id] = name;
+  }
+
+  return { history: historyOut, names };
 }
 
 async function main() {
@@ -201,11 +214,11 @@ async function main() {
   // header comment for why a timestamp sort corrupts the simulation.
   entries.reverse();
 
-  const history = simulate(entries);
+  const { history, names } = simulate(entries);
   console.log(`Reconstructed history for ${Object.keys(history).length} levels.`);
 
   await mkdir(path.dirname(HISTORY_PATH), { recursive: true });
-  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history }, null, 2) + '\n');
+  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history, names }, null, 2) + '\n');
   console.log(`Wrote ${HISTORY_PATH}.`);
 }
 

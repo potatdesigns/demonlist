@@ -29,11 +29,13 @@
     { keys: ['Ctrl', 'Alt', 'Q'], label: 'Queue' },
     { keys: ['Ctrl', 'Alt', 'R'], label: 'Random level' },
     { keys: ['Ctrl', 'Alt', 'S'], label: 'Stats' },
+    { keys: ['Ctrl', 'Alt', 'T'], label: 'Time Machine' },
     { keys: ['?'], label: 'Toggle this panel' },
   ];
 
   const onIndex = !!document.getElementById('demon-grid');
   const onQueue = !!document.getElementById('queue-list');
+  const onTimeMachine = !!document.getElementById('timemachine-root');
 
   function go(hash) {
     if (onIndex) {
@@ -51,6 +53,10 @@
 
   function goStats() {
     if (!window.location.pathname.endsWith('stats.html')) window.location.href = 'stats.html';
+  }
+
+  function goTimeMachine() {
+    if (!onTimeMachine) window.location.href = 'timemachine.html';
   }
 
   // --- floating "?" button + panel, built here rather than duplicated
@@ -104,6 +110,7 @@
       case 'q': goQueue(); break;
       case 'r': NavActions.goToRandomLevel(); break;
       case 's': goStats(); break;
+      case 't': goTimeMachine(); break;
       default: return;
     }
     e.preventDefault();

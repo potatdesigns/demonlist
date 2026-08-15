@@ -34,7 +34,12 @@ Any static host (GitHub Pages, Netlify, Vercel, etc.) works too — just upload 
   a snapshot from whenever that change happened, and any insertion/removal above it since then
   shifts what's actually sitting at that rank *now*; a plain rank link would silently send you to
   whichever level has since slid into that slot instead of the one the entry was actually about
-  (see `getRouteParam()` in `js/detail.js`). Also a **Demonlist Roulette** teaser (see below).
+  (see `getRouteParam()` in `js/detail.js`). Below that, an **On this day** panel scans every
+  tracked level's *full* position history (not just the current top 150 — see
+  [Position history](#shared-aredl-level-list-cache) below) for entries whose date lands on today's
+  month/day in a past year, e.g. "2 years ago: Society was placed at #1" — `loadOnThisDay()` in
+  `js/home.js`, also id-linked so it still resolves even for a level that's since dropped out of the
+  top 150 entirely. Also a **Demonlist Roulette** teaser (see below).
 - **List page (`list.html`)** — pulls the top 150 of AREDL's live, currently-ranked list (AREDL
   itself has ~1600 rated extreme demons; see [Reducing to a top-150 list](#reducing-to-a-top-150-list))
   and renders it as a grid of cards: thumbnail (of the verification video), rank, name,
@@ -100,6 +105,24 @@ Paginated 75-at-a-time
   (it silently serves a small gray placeholder with a real `200` status rather than a 404 for
   those, so this checks the loaded image's actual pixel width rather than trusting the response to
   fail).
+- **Time Machine page (`timemachine.html`)** — reconstructs the top 150 as of any past date,
+  reading purely from the already-loaded `data/position-history.json` (no extra network call): a
+  level's position on a given date is whatever its most recent history entry on or before that date
+  says (`snapshotAt()` in `js/timemachine.js`), same underlying data the detail page's position
+  history and the home page's On this day panel both read. Each row shows how that level's position
+  compares to today (risen, fallen, unchanged, or dropped out of the top 150 since), and links by id
+  so even a level that's since gone deep into legacy still resolves (`AredlAPI.fetchDemon()` falls
+  back to a live per-id AREDL fetch for anything outside the cached top 150 — see
+  `getRouteParam()`/`fetchDemonLive()`). The date range is bounded by the earliest date any recorded
+  history entry has — AREDL's changelog only goes back to August 2022, so that's this page's floor
+  too, not an arbitrary limit. Reachable from the header (clock icon) and `Ctrl+Alt+T`.
+- **Personal completion tracker** — a purely client-side, localStorage-only "have I beaten this?"
+  checklist (`js/completion.js`, `CONFIG.STORAGE.COMPLETION`) — no account, nothing leaves the
+  browser. A toggle button on every list card (bottom-right of the thumbnail in card mode, inline in
+  list mode) and on the detail page (`.detail-complete-toggle`) marks a level done; a small progress
+  bar in the list page's hero (`#completion-progress`) and a stat on the home page
+  (`#home-stat-completed`) show the running total against the tracked top 150. Keyed by AREDL level
+  id, not position, so a mark survives that level moving around the list.
 - **Queue page (`queue.html`)** — reachable from its header's Home button (and `Ctrl+Alt+Q`), but
   still not linked from any *other* page's nav — an admin/curiosity view once you're there, rather
   than something surfaced as a primary destination. A plain top-to-bottom list
@@ -167,10 +190,9 @@ Paginated 75-at-a-time
   preferences, persisted to `localStorage` (`CONFIG.STORAGE.SETTINGS`) and applied immediately, no
   reload needed: **accent color** (six presets — Red/Orange/Yellow/Green/Blue/Pink, orange by
   default — retints `--primary`/`--primary-dark` sitewide, applied as inline styles on `:root` so
-  every existing `var(--primary)` picks it up unchanged, plus the browser-tab favicon specifically
-  (see `mascotFaviconDataUri()` in `js/utils.js` — a data: URI SVG rebuilt per accent change; the
-  header's own brand mark stays the static `assets/logo.png`, by design, not tied to the accent).
-  `--primary-on` switches the on-accent text color between near-black for the warm presets (orange,
+  every existing `var(--primary)` picks it up unchanged (the browser-tab favicon is always the static
+  `assets/favicon.ico`/`assets/logo.png`, not tied to the accent — same as the header's own brand
+  mark). `--primary-on` switches the on-accent text color between near-black for the warm presets (orange,
   yellow) and white for the rest, see `ACCENT_PRESETS` in `js/settings.js`), **level display**
   (Cards or a denser AREDL-style List row layout on the list
   page), **default list on open** (Main/Extended — only affects a bare `list.html` with no page in
@@ -553,7 +575,12 @@ built straight from the event's own action/positions; for everything else that s
 side effect, it names whichever direct action caused it (`Moved down — Society was placed at #1`),
 using a levelId→name map built opportunistically from every event seen, since a level causing a
 cascade is often never itself the changelog's "affected level" and so wouldn't otherwise have a
-name available at that point in the replay.
+name available at that point in the replay. That same map is published alongside the history as
+`data/position-history.json`'s `names` field — needed because `data/aredl-cache.json` only carries
+detail for the *current* top `LEVEL_LIST_SIZE`, so a level that's since dropped out has no name
+available anywhere else in the site's caches; the Time Machine page and the home page's On this day
+panel (see "What it does" above) both depend on it to name a level regardless of whether it's still
+tracked today.
 
 ### Watching for AREDL changes affecting the top 150
 
@@ -597,12 +624,11 @@ level.html                    detail page markup
 queue.html                     read-only priority-queue view markup, see "What it does" above
 stats.html                      averages/records/charts markup, see "What it does" above
 roulette.html                    Extreme Demon Roulette's own page, see "What it does" above
+timemachine.html                  reconstructed-top-150-as-of-any-past-date page, see "What it does" above
 assets/
   logo.png                   the header brand mark (32px, every page) and the PNG favicon source
-  favicon.ico                multi-resolution (16/32/48) static fallback favicon, generated from
-                              logo.png — used until js/settings.js swaps in the accent-tinted SVG one
-                              (a hand-built recreation of the same mark, see mascotFaviconDataUri()
-                              below — the header mark itself stays the static logo.png either way)
+  favicon.ico                multi-resolution (16/32/48) static favicon, generated from logo.png —
+                              always the tab icon, regardless of the accent-color setting
 css/
   base.css                   design tokens, header, shared layout/states, range-chip group, settings panel
   list.css                    card grid, pager, search/jump/filter/sort controls, list-mode rows;
@@ -612,13 +638,14 @@ css/
   detail.css                   detail page layout + dual video panels + Previous/Next
   queue.css                     plain-list row styling for queue.html
   stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
+  timemachine.css                 plain-list row styling for timemachine.html, same shape as queue.css
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
                                 dominantColor()/resolveThumbnailColor() (per-thumbnail accent color,
-                                localStorage-cached) + timeAgo() + mascotFaviconDataUri() (a hand-built
-                                recreation of assets/logo.png as a data: URI favicon, tinted per the
-                                accent setting — see "Settings" above), shared by all pages
+                                localStorage-cached) + badgeColorFor()/contrastTextColor() (the "New"
+                                badge/ribbon's own color, derived from but distinct from the
+                                thumbnail's tier-color) + timeAgo(), shared by all pages
   api-aredl.js                  AREDL adapter (confirmed API shape, see note below) — reads the cache
                                  branch's aredl-cache.json first; also fetchChangelog() (top-150-filtered
                                  recent changes, used by the home page)
@@ -629,14 +656,22 @@ js/
   roulette.js                      roulette.html's own controller — the percent-climb challenge,
                                     localStorage-persisted run state, see "What it does" above
   nav-actions.js                   Home + Roulette (links to roulette.html) + Random level + Stats +
-                                    Copy link header buttons, every page
+                                    Time Machine + Copy link header buttons, every page
   settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion
-                                     side panel + dynamic favicon, every page
-  home.js                           home page controller — spotlight cards + recent-changes panel
-  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL sync
-  detail.js                          detail page controller — also owns Previous/Next and its own hashchange/popstate re-render
+                                     side panel, every page
+  completion.js                     personal, localStorage-only "have I beaten this?" tracker, see
+                                     "What it does" above — no account, nothing leaves the browser
+  home.js                           home page controller — spotlight cards + recent-changes panel +
+                                     on-this-day panel
+  list.js                           list page controller — also owns the #main/#extended/#q= hash-URL
+                                     sync and the completion-progress bar
+  detail.js                          detail page controller — also owns Previous/Next, its own
+                                      hashchange/popstate re-render, and the completion toggle
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
-  shortcuts.js                        Ctrl+Alt+M/E/Q/R/S + ? keyboard shortcuts and the shortcuts panel, every page
+  timemachine.js                      timemachine.html's own controller — reconstructs the top 150 as
+                                       of any past date, purely from position-history.json, see "What
+                                       it does" above
+  shortcuts.js                        Ctrl+Alt+M/E/Q/R/S/T + ? keyboard shortcuts and the shortcuts panel, every page
   stats.js                            stats page controller — averages/records/charts, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/

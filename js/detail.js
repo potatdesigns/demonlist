@@ -161,6 +161,10 @@
         <div class="detail-titles">
           <h1>${escapeHtml(demon.name)}<span id="detail-new-badge"></span></h1>
         </div>
+        <button type="button" class="detail-complete-toggle" id="detail-complete-toggle" aria-pressed="${Completion.isDone(demon.id)}">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>${Completion.isDone(demon.id) ? 'Beaten' : 'Mark as beaten'}</span>
+        </button>
       </div>
 
       <div class="detail-pagenav">
@@ -220,6 +224,7 @@
     mountShowcaseVideo(demon, sharedEntry);
     CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
     mountDetailBackground(demon.videoUrl);
+    mountCompletionToggle(demon.id);
 
     // Placed into the top CONFIG.LIST_SIZE within the last week — see
     // AredlAPI.fetchNewLevelIds(). Fired off rather than awaited, same
@@ -282,6 +287,18 @@
       requestAnimationFrame(() => bgEl.classList.add('visible'));
     };
     probe.src = maxres;
+  }
+
+  /** Wires up the "Mark as beaten" toggle in .detail-head — see js/completion.js. Its initial pressed state/label was already baked into renderDetail()'s template; this just handles the click. */
+  function mountCompletionToggle(levelId) {
+    const btn = document.getElementById('detail-complete-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      Completion.toggle(levelId);
+      const done = Completion.isDone(levelId);
+      btn.setAttribute('aria-pressed', String(done));
+      btn.querySelector('span').textContent = done ? 'Beaten' : 'Mark as beaten';
+    });
   }
 
   /**

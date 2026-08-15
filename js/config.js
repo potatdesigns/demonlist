@@ -102,5 +102,6 @@ const CONFIG = {
     POSITION_HISTORY: 'gddl_position_history_v1', // local mirror of data/position-history.json, { fetchedAt, data }
     SETTINGS: 'gddl_settings_v1', // js/settings.js — theme, motion, etc.; see Settings.DEFAULTS there
     ROULETTE_RUN: 'gddl_roulette_run_v1', // js/roulette.js — the in-progress (or last-finished) Extreme Demon Roulette run, so a reload mid-run doesn't lose progress
+    COMPLETION: 'gddl_completion_v1', // js/completion.js — { levelId: isoTimestamp } of levels marked beaten, purely local
   },
 };

@@ -131,10 +131,31 @@ async function mapWithConcurrency(items, limit, fn, pauseMs = 0) {
 async function loadExistingHistory() {
   try {
     const parsed = JSON.parse(await readFile(HISTORY_PATH, 'utf8'));
-    return parsed.history && typeof parsed.history === 'object' ? parsed.history : {};
+    return {
+      history: parsed.history && typeof parsed.history === 'object' ? parsed.history : {},
+      names: parsed.names && typeof parsed.names === 'object' ? parsed.names : {},
+    };
   } catch {
-    return {}; // first run, or the file's missing/unreadable — start fresh
+    return { history: {}, names: {} }; // first run, or the file's missing/unreadable — start fresh
   }
+}
+
+/**
+ * Merges in a name for every tracked id, from this run's own full AREDL
+ * fetch (which — unlike data/aredl-cache.json — covers AREDL's entire
+ * list, not just the tracked top LEVEL_LIST_SIZE, so it can name a level
+ * that dropped out of the top LEVEL_LIST_SIZE a while ago too). Existing
+ * names are kept as a base so a level AREDL's own /levels response no
+ * longer includes at all (actually removed, not just demoted — rare)
+ * doesn't lose its name just because this run can't re-confirm it.
+ */
+function updateNames(existingNames, namesById, trackedIds) {
+  const names = { ...existingNames };
+  for (const id of trackedIds) {
+    const name = namesById.get(id);
+    if (name) names[id] = name;
+  }
+  return names;
 }
 
 /**
@@ -247,12 +268,14 @@ async function main() {
   console.log(`Wrote ${levels.length} AREDL levels (${levels.length - failed} with full detail) to ${CACHE_PATH}.`);
 
   const positionById = new Map(fullList.map(l => [String(l.id), l.position]));
-  const existingHistory = await loadExistingHistory();
+  const namesById = new Map(fullList.map(l => [String(l.id), l.name]));
+  const { history: existingHistory, names: existingNames } = await loadExistingHistory();
   const trackedIds = new Set([...bareLevels.map(l => String(l.id)), ...Object.keys(existingHistory)]);
   const recentEntries = await fetchRecentChangelogEntries();
   const reasonContext = buildReasonContext(recentEntries);
   const { history, changed } = updatePositionHistory(existingHistory, positionById, trackedIds, reasonContext);
-  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history }, null, 2) + '\n');
+  const names = updateNames(existingNames, namesById, trackedIds);
+  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history, names }, null, 2) + '\n');
   console.log(`Position history: ${changed} level(s) moved since the last check, ${Object.keys(history).length} tracked in total, wrote to ${HISTORY_PATH}.`);
 }
 

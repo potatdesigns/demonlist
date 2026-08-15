@@ -44,11 +44,29 @@ const PositionHistory = (() => {
     return loadPromise;
   }
 
-  /** [{ date, position }, ...] oldest-first for this level, or [] if it has no recorded changes yet (new to the cache, or never moved since it started being tracked). */
+  /** [{ date, position, reason }, ...] oldest-first for this level, or [] if it has no recorded changes yet (new to the cache, or never moved since it started being tracked). */
   async function getEntries(levelId) {
     const data = await load();
     return (data.history && data.history[levelId]) || [];
   }
 
-  return { load, getEntries };
+  /** The full { levelId: [{date,position,reason}, ...] } map — used by features that scan across every tracked level at once (On This Day, the Time Machine page) rather than looking up one level at a time. */
+  async function getAllHistory() {
+    const data = await load();
+    return data.history || {};
+  }
+
+  /**
+   * { levelId: name } for every level that's ever had a history entry —
+   * see scripts/backfill-position-history.mjs / refresh-aredl-cache.mjs's
+   * `names` output. Needed because data/aredl-cache.json only carries
+   * detail for the *current* top LEVEL_LIST_SIZE; a level that has since
+   * dropped out has no name available anywhere else in the site's caches.
+   */
+  async function getNames() {
+    const data = await load();
+    return data.names || {};
+  }
+
+  return { load, getEntries, getAllHistory, getNames };
 })();

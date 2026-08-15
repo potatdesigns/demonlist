@@ -25,6 +25,7 @@ const NavActions = (() => {
   const SHUFFLE = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>`;
   const LINK = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
   const CHART = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>`;
+  const CLOCK = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>`;
   const CHECK = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
   const WARN = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><circle cx="12" cy="12" r="9"/><path d="M12 16h.01"/></svg>`;
 
@@ -83,6 +84,18 @@ const NavActions = (() => {
     container.appendChild(btn);
   }
 
+  function mountTimeMachineButton(container) {
+    if (!container) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'icon-btn';
+    btn.setAttribute('aria-label', 'Time Machine');
+    btn.title = 'Time Machine (Ctrl+Alt+T)';
+    btn.innerHTML = CLOCK;
+    btn.addEventListener('click', () => { window.location.href = 'timemachine.html'; });
+    container.appendChild(btn);
+  }
+
   function mountCopyLinkButton(container) {
     if (!container) return;
     const wrap = document.createElement('span');
@@ -134,6 +147,7 @@ const NavActions = (() => {
     if (!document.body.classList.contains('home-page')) mountHomeButton(headerActions);
     if (!document.getElementById('kpi-row')) mountStatsButton(headerActions);
     if (!document.getElementById('roulette-root')) mountRouletteButton(headerActions);
+    if (!document.getElementById('timemachine-root')) mountTimeMachineButton(headerActions);
     mountRandomButton(headerActions);
   }
 

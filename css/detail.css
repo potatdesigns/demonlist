@@ -104,6 +104,31 @@
 
 .detail-titles { flex: 1 1 320px; min-width: 0; }
 
+/* Personal "beaten this?" toggle (js/completion.js) — a third flex item
+   in .detail-head, alongside the rank and title. */
+.detail-complete-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  align-self: center;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-surface);
+  color: var(--text-mid);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s, transform .12s;
+}
+.detail-complete-toggle:hover { border-color: #4ade80; color: #4ade80; transform: translateY(-1px); }
+.detail-complete-toggle[aria-pressed="true"] {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #06210f;
+}
+
 .detail-titles h1 {
   font-size: clamp(22px, 3.6vw, 32px);
   font-weight: 700;

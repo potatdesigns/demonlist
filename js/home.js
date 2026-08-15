@@ -12,10 +12,12 @@
 (() => {
   const totalEl = document.getElementById('home-stat-total');
   const changesCountEl = document.getElementById('home-stat-changes');
+  const completedEl = document.getElementById('home-stat-completed');
   const topBody = document.getElementById('spotlight-top-body');
   const featuredBody = document.getElementById('spotlight-featured-body');
   const featuredDateEl = document.getElementById('spotlight-featured-date');
   const changesList = document.getElementById('home-changes-list');
+  const otdList = document.getElementById('home-otd-list');
 
   if (featuredDateEl) featuredDateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
 
@@ -264,6 +266,56 @@
     }
   }
 
+  // --- on this day (data/position-history.json, js/position-history.js) ---
+  // Scans *every* level's full history (not just the current top 150 —
+  // PositionHistory.getNames() covers anything that's ever been tracked,
+  // see scripts/backfill-position-history.mjs's `names` output) for
+  // entries whose date lands on today's month/day in some past year.
+  // Linked by id (level.html#id=<uuid>), same as the recent-changes panel
+  // above and for the same reason: works even for a level that's since
+  // dropped out of the tracked top 150 entirely, which a bare #position
+  // link couldn't reach.
+
+  function otdRowHtml(hit, index) {
+    return `
+      <li>
+        <a class="home-otd-row" href="level.html#id=${encodeURIComponent(hit.id)}" style="--i:${index}">
+          <span class="home-otd-years">${hit.yearsAgo}y ago</span>
+          <span class="home-otd-text"><strong>${escapeHtml(hit.name)}</strong> — ${escapeHtml(hit.reason || `now #${hit.position}`)}</span>
+        </a>
+      </li>
+    `;
+  }
+
+  async function loadOnThisDay() {
+    if (!otdList) return;
+    try {
+      const [history, names] = await Promise.all([PositionHistory.getAllHistory(), PositionHistory.getNames()]);
+      const now = new Date();
+      const todayMonthDay = `${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+      const thisYear = now.getFullYear();
+
+      const hits = [];
+      for (const [id, entries] of Object.entries(history)) {
+        for (const entry of entries) {
+          if (entry.date.slice(5, 10) !== todayMonthDay) continue;
+          const year = parseInt(entry.date.slice(0, 4), 10);
+          if (!Number.isFinite(year) || year === thisYear) continue; // "today" itself isn't "years ago"
+          hits.push({ id, name: names[id] || 'Unknown level', yearsAgo: thisYear - year, position: entry.position, reason: entry.reason });
+        }
+      }
+      hits.sort((a, b) => a.yearsAgo - b.yearsAgo || a.position - b.position);
+
+      if (!hits.length) {
+        otdList.innerHTML = `<li class="chart-empty">No recorded position changes on this date in past years — check back another day.</li>`;
+        return;
+      }
+      otdList.innerHTML = hits.slice(0, 8).map(otdRowHtml).join('');
+    } catch (err) {
+      otdList.innerHTML = `<li class="chart-empty">Couldn't load On This Day: ${escapeHtml(err.message)}</li>`;
+    }
+  }
+
   async function init() {
     try {
       const [{ demons, total }] = await Promise.all([
@@ -272,11 +324,13 @@
         newLevelIdsReady, // spotlightCardHtml() reads newLevelIds synchronously — only rendered once, unlike list.js's cards, so this needs to actually be ready first rather than just eventually resolving
       ]);
       if (totalEl) totalEl.textContent = String(total ?? demons.length);
+      if (completedEl) completedEl.textContent = `${Completion.count()}/${total ?? demons.length}`;
       await loadSpotlights(demons);
     } catch (err) {
       if (topBody) topBody.innerHTML = `<div class="chart-empty">Couldn't load: ${escapeHtml(err.message)}</div>`;
     }
     loadChanges();
+    loadOnThisDay();
   }
 
   init();

@@ -272,6 +272,7 @@
     totalPages = Math.max(1, Math.ceil(total / CONFIG.PAGE_SIZE));
     searchInput.placeholder = `Search ${total} levels by name, creator, or verifier…`;
     updateControlsUI();
+    updateCompletionProgress();
   }).catch(() => { /* the main load below will surface the real error */ });
 
   // Purely decorative (a "NEW" badge, see cardTemplate() below) — fired
@@ -333,6 +334,17 @@
         data-name="${escapeHtml(demon.name)}"
         data-level-id="${demon.levelId ?? ''}"`;
 
+    // Personal, localStorage-only "have I beaten this?" mark — see
+    // js/completion.js. Baked into the template synchronously (not
+    // patched in after render) since it never needs network data the way
+    // the stats blocks below do.
+    const isDone = Completion.isDone(demon.id);
+    const completeToggle = `
+      <button type="button" class="complete-toggle" data-id="${escapeHtml(String(demon.id))}" aria-label="${isDone ? 'Mark as not beaten' : 'Mark as beaten'}" aria-pressed="${isDone}">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </button>
+    `;
+
     // Placed into the top CONFIG.LIST_SIZE within the last week — see
     // AredlAPI.fetchNewLevelIds(). Purely a "this wasn't here recently"
     // signal, unrelated to demon.needsExtras/hydration state.
@@ -354,9 +366,10 @@
 
     if (Settings.get('displayMode') === 'list') {
       return `
-        <article class="demon-card demon-row"
+        <article class="demon-card demon-row${isDone ? ' completed' : ''}"
           style="--tier-color: ${tierColor}; --badge-color: ${badgeColor}; --badge-color-on: ${badgeColorOn}; --i: ${index}"${dataAttrs}>
           <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
+            ${completeToggle}
             <span class="row-rank">#${demon.position ?? '?'}</span>
             <div class="row-thumb">
               <img src="${thumb}" alt="" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
@@ -375,12 +388,13 @@
     }
 
     return `
-      <article class="demon-card"
+      <article class="demon-card${isDone ? ' completed' : ''}"
         style="--tier-color: ${tierColor}; --badge-color: ${badgeColor}; --badge-color-on: ${badgeColorOn}; --i: ${index}"${dataAttrs}>
         <a class="card-link" href="${detailUrl}"${levelLinkAttrs()}>
           <div class="card-thumb-wrap">
             <img src="${thumb}" alt="${escapeHtml(demon.name)} thumbnail" loading="lazy" crossorigin="anonymous" onerror="this.style.opacity=0">
             <span class="card-rank">#${demon.position ?? '?'}</span>
+            ${completeToggle}
             ${isNew ? '<span class="new-ribbon" aria-label="New">New</span>' : ''}
             ${demon.videoUrl ? `
             <span class="play-badge" aria-hidden="true">
@@ -408,6 +422,33 @@
     gridEl.innerHTML = demons.map((d, i) => cardTemplate(d, i)).join('');
     observeAllCards();
   }
+
+  // --- personal completion tracker (js/completion.js) ---
+  // Delegated rather than one listener per card — cheap either way, but
+  // this also keeps working after renderCards() replaces gridEl's
+  // innerHTML wholesale on every page/filter/sort change, with no
+  // re-wiring needed. preventDefault() stops the enclosing <a
+  // class="card-link"> from navigating even though the button lives
+  // inside it (a click's default action can be cancelled from anywhere
+  // in the bubble path, not just the element the browser would act on).
+  const completionProgressEl = document.getElementById('completion-progress');
+  function updateCompletionProgress() {
+    if (!completionProgressEl || !totalCount) return;
+    const done = Completion.count();
+    completionProgressEl.innerHTML = `<span class="completion-fill" style="width:${Math.min(100, (done / totalCount) * 100)}%"></span><span class="completion-label">${done}/${totalCount} beaten</span>`;
+  }
+  gridEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.complete-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    const id = btn.dataset.id;
+    Completion.toggle(id);
+    const done = Completion.isDone(id);
+    btn.setAttribute('aria-pressed', String(done));
+    btn.setAttribute('aria-label', done ? 'Mark as not beaten' : 'Mark as beaten');
+    btn.closest('.demon-card')?.classList.toggle('completed', done);
+    updateCompletionProgress();
+  });
 
   // --- lazy hydration, only for cards currently visible ---
   // Each IntersectionObserver callback can report several cards becoming
