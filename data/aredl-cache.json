@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T04:20:38.205Z",
+  "generatedAt": "2026-08-15T05:16:01.838Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -5833,7 +5833,48 @@
           "updated_at": "2023-05-26T17:02:08Z"
         }
       ],
-      "creators": []
+      "creators": [
+        {
+          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
+          "username": "mercurydt",
+          "global_name": "MercuryDT"
+        },
+        {
+          "id": "29808856-a897-4f71-992a-04d6d93cd3f1",
+          "username": "11878e1a8",
+          "global_name": "joojmiguel"
+        },
+        {
+          "id": "756e65a9-d6b7-4040-a781-c0b0011f35cc",
+          "username": "1b8689792",
+          "global_name": "NukeIIX"
+        },
+        {
+          "id": "a03addbe-414a-4814-a2ec-2cf3cbb38278",
+          "username": "e7d408ace",
+          "global_name": "GhostVandalf"
+        },
+        {
+          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+          "username": "f7183736b",
+          "global_name": "Renn241"
+        },
+        {
+          "id": "bb849c83-da29-402a-8473-e1e89eb0c556",
+          "username": "cd26ed694",
+          "global_name": "Loltad"
+        },
+        {
+          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
+          "username": "ec5f043f5",
+          "global_name": "DreamTide"
+        },
+        {
+          "id": "fba5e0f6-f0e1-4a05-930e-30b809440ec5",
+          "username": "9a683cb82",
+          "global_name": "QuacDuc"
+        }
+      ]
     },
     {
       "id": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
