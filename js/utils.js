@@ -2,32 +2,6 @@
    UTILS
    ===================================================================== */
 
-/**
- * Same mark as the header's inline .brand-mark SVG (kept in sync by
- * hand — see that markup in each HTML file's <head>), rebuilt as a
- * standalone data: URI so the browser-tab favicon can follow the
- * accent-color setting too. currentColor resolves against the `color`
- * set inline on the SVG root itself here, same as it would against
- * .brand-mark's CSS `color` in the header — SVG's currentColor cascades
- * the normal CSS way even inside a bare data: URI document. Called from
- * js/settings.js's applyEffects() whenever the accent changes.
- */
-function mascotFaviconDataUri(hex) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="color:${hex}">`
-    + `<defs><linearGradient id="dlBorder" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb703"/><stop offset="1" stop-color="#ff6e00"/></linearGradient></defs>`
-    + `<rect x="2" y="2" width="60" height="60" rx="16" fill="#12222c"/>`
-    + `<rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="url(#dlBorder)" stroke-width="3"/>`
-    + `<path d="M8 44 L15 34 L22 44" fill="none" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
-    + `<line x1="5" y1="44" x2="25" y2="44" stroke="#5ec8dc" stroke-width="2" stroke-linecap="round"/>`
-    + `<rect x="4" y="4" width="13" height="13" rx="3" fill="#0a0a0a"/>`
-    + `<text x="10.5" y="14" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">R</text>`
-    + `<rect x="10" y="9" width="36" height="11" rx="3" fill="currentColor" transform="rotate(-26 28 14)"/>`
-    + `<g transform="rotate(16 34 36)"><rect x="19" y="21" width="30" height="34" rx="5" fill="#f0f0f0"/><path d="M27 47 Q34 42 41 47" stroke="#12222c" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`
-    + `<g transform="rotate(-13 34 30)"><rect x="15" y="26" width="15" height="11" rx="3.5" fill="#0a0a0a"/><rect x="34" y="24" width="15" height="11" rx="3.5" fill="#0a0a0a"/><line x1="30" y1="30" x2="34" y2="29" stroke="#0a0a0a" stroke-width="2.5"/></g>`
-    + `</svg>`;
-  return 'data:image/svg+xml,' + encodeURIComponent(svg);
-}
-
 function formatCount(n) {
   if (n === null || n === undefined || Number.isNaN(n)) return '—';
   if (n < 1000) return String(n);

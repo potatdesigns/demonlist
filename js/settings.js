@@ -85,8 +85,6 @@ const Settings = (() => {
     rootStyle.setProperty('--primary', accent.primary);
     rootStyle.setProperty('--primary-dark', accent.dark);
     rootStyle.setProperty('--primary-on', accent.on);
-    const favicon = document.getElementById('dynamic-favicon');
-    if (favicon) favicon.href = mascotFaviconDataUri(accent.primary);
   }
 
   function get(key) { return state[key]; }
@@ -106,7 +104,7 @@ const Settings = (() => {
   const SCHEMA = [
     {
       key: 'accentColor', type: 'swatch', label: 'Accent color',
-      desc: 'Retints the whole site — buttons, tier glows, the favicon.',
+      desc: 'Retints the whole site — buttons, tier glows.',
       options: Object.entries(ACCENT_PRESETS).map(([key, p]) => [key, p.label, p.primary]),
     },
     {
