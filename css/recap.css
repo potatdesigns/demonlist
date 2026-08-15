@@ -1,0 +1,94 @@
+/* =====================================================================
+   RECAP PAGE
+   ===================================================================== */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  transition: color .15s;
+}
+.back-link:hover { color: var(--primary); }
+
+.recap-hero {
+  padding: 10px 0 22px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: 20px;
+}
+.recap-hero h1 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 700;
+  color: var(--text-hi);
+}
+.recap-hero p {
+  color: var(--text-mid);
+  font-size: 13.5px;
+  margin-top: 8px;
+}
+
+.recap-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.recap-year-btn { font-size: 12.5px; padding: 8px 14px; }
+.recap-year-btn.active {
+  color: var(--primary-on, #1a0d00);
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.recap-movers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.recap-mover-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-surface);
+  transition: border-color .15s, transform .15s;
+}
+.recap-mover-card:hover { transform: translateY(-2px); }
+.recap-mover-card.up     { border-color: color-mix(in srgb, #4ade80 40%, var(--line)); }
+.recap-mover-card.up:hover     { border-color: #4ade80; }
+.recap-mover-card.down   { border-color: color-mix(in srgb, #f87171 40%, var(--line)); }
+.recap-mover-card.down:hover   { border-color: #f87171; }
+.recap-mover-card.swap:hover   { border-color: var(--primary); }
+.recap-mover-card.debut:hover  { border-color: var(--primary); }
+.recap-mover-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.recap-mover-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-hi);
+}
+.recap-mover-delta {
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-mid);
+}
+.recap-mover-card.up .recap-mover-delta { color: #4ade80; }
+.recap-mover-card.down .recap-mover-delta { color: #f87171; }
+.recap-mover-range { color: var(--text-dim); font-weight: 400; }
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 13.5px;
+}

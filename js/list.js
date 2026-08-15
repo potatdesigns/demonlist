@@ -18,6 +18,7 @@
   const verifierMaxInput = document.getElementById('filter-verifier-max');
   const showcaseMinInput = document.getElementById('filter-showcase-min');
   const showcaseMaxInput = document.getElementById('filter-showcase-max');
+  const hideCompletedInput = document.getElementById('filter-hide-completed');
   const filterClearBtn = document.getElementById('filter-clear');
   const sortSelect = document.getElementById('sort-select');
   const stateBanner = document.getElementById('state-banner');
@@ -62,6 +63,18 @@
   };
   /** True whenever the grid shows something other than a plain Main/Extended page — search, a filter, or a sort — see load()'s branch on this. */
   function customViewActive() { return !!filterQuery || filtersActive() || sortActive(); }
+
+  // "Hide completed" (js/completion.js) is deliberately *not* part of
+  // `filters`/filtersActive() — it's a flat post-filter applied to
+  // whichever `demons` array load() already produced (paginated or the
+  // whole-list custom-view branch alike), not something that needs the
+  // whole-tracked-list branch on its own the way a rank/view-count range
+  // does. Persisted (unlike the session-local filters/sort above) since
+  // "don't show me levels I've already beaten" reads as a standing
+  // preference, not a one-off lens on the current view.
+  const HIDE_COMPLETED_KEY = 'gddl_hide_completed_v1';
+  let hideCompleted = false;
+  try { hideCompleted = localStorage.getItem(HIDE_COMPLETED_KEY) === '1'; } catch { /* storage unavailable — default to showing everything */ }
 
   searchInput.addEventListener('input', debounce((e) => {
     filterQuery = e.target.value.trim();
@@ -150,6 +163,17 @@
   showcaseMinInput.addEventListener('input', debouncedApplyFilters);
   showcaseMaxInput.addEventListener('input', debouncedApplyFilters);
   filterClearBtn.addEventListener('click', () => { clearFilters(); load(); });
+
+  hideCompletedInput.checked = hideCompleted;
+  hideCompletedInput.addEventListener('change', () => {
+    hideCompleted = hideCompletedInput.checked;
+    try { localStorage.setItem(HIDE_COMPLETED_KEY, hideCompleted ? '1' : '0'); } catch { /* storage full/disabled — still works for this page load */ }
+    load();
+  });
+  // Toggling completion elsewhere (a card's own check, the detail page)
+  // should immediately re-hide/re-show that card here too, not just on
+  // the next full reload.
+  Completion.subscribe(() => { if (hideCompleted) load(); });
 
   function clearSort() { sortMode = ''; sortSelect.value = ''; }
   sortSelect.addEventListener('change', () => { sortMode = sortSelect.value; load(); });
@@ -553,6 +577,41 @@
     });
   }
 
+  /**
+   * A lightweight "profile" strip for a name search — best rank, average
+   * rank, and a breakdown of which role(s) the query matched (verifier/
+   * publisher/creator) across the current results. Not a separate
+   * profile page/dataset: searchByName() already matches level name +
+   * publisher + verifier + creators (see js/api-aredl.js), so this is
+   * just a summary of whatever it already found, same reason
+   * profileLink() in js/utils.js sends a name click straight into this
+   * same search instead of a dedicated route.
+   */
+  function profileStatsHtml(demons, query) {
+    if (!demons.length) return '';
+    const q = query.trim().toLowerCase();
+    let asVerifier = 0, asPublisher = 0, asCreator = 0;
+    const positions = [];
+    for (const d of demons) {
+      positions.push(d.position);
+      if ((d.verifier?.name || '').toLowerCase().includes(q)) asVerifier++;
+      if ((d.publisher?.name || '').toLowerCase().includes(q)) asPublisher++;
+      if ((d.creators || []).some(c => (c.name || '').toLowerCase().includes(q))) asCreator++;
+    }
+    // Only worth showing once the query looks like it's actually matching
+    // a *person* somewhere, not just a level-name substring — otherwise
+    // this would show a hollow "0 verified, 0 created" line for every
+    // ordinary level-name search.
+    if (!asVerifier && !asPublisher && !asCreator) return '';
+    const best = Math.min(...positions);
+    const avg = Math.round(positions.reduce((a, b) => a + b, 0) / positions.length);
+    const roles = [];
+    if (asVerifier) roles.push(`verified ${asVerifier}`);
+    if (asCreator) roles.push(`created ${asCreator}`);
+    if (asPublisher) roles.push(`published ${asPublisher}`);
+    return ` Best #${best}, avg #${avg} · ${escapeHtml(roles.join(', '))}.`;
+  }
+
   /** Human-readable pieces of whatever's currently filled in the filter panel, for the banner and empty-state text. */
   function filterDescriptionParts() {
     const parts = [];
@@ -639,16 +698,19 @@
         }
       }
 
+      if (hideCompleted) demons = demons.filter(d => !Completion.isDone(d.id));
+
       if (demons.length === 0) {
         const desc = customViewDescription();
-        gridEl.innerHTML = `<div class="empty-state">No levels found${desc ? ` ${desc}` : ''}.</div>`;
+        gridEl.innerHTML = `<div class="empty-state">No levels found${desc ? ` ${desc}` : ''}${hideCompleted ? ' (some may be hidden as completed)' : ''}.</div>`;
       } else {
         renderCards(demons);
       }
 
       if (customViewActive()) {
         const desc = customViewDescription();
-        showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${desc ? ` ${desc}` : ''}.`);
+        const profile = filterQuery ? profileStatsHtml(demons, filterQuery) : '';
+        showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${desc ? ` ${desc}` : ''}.${profile}`);
       } else {
         hideBanner();
       }

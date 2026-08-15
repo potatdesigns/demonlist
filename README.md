@@ -115,14 +115,36 @@ Paginated 75-at-a-time
   back to a live per-id AREDL fetch for anything outside the cached top 150 — see
   `getRouteParam()`/`fetchDemonLive()`). The date range is bounded by the earliest date any recorded
   history entry has — AREDL's changelog only goes back to August 2022, so that's this page's floor
-  too, not an arbitrary limit. Reachable from the header (clock icon) and `Ctrl+Alt+T`.
+  too, not an arbitrary limit. Reachable from the header (clock icon) and `Ctrl+Alt+T`. The delta
+  column compares against a second date instead of today when the optional "compare to" input is
+  filled in — a one-date view and a two-date diff are the same `render(dateStr, compareStr)` code
+  path, not two separate features.
+- **Recap page (`recap.html`)** — a "wrapped"-style summary of one year in the list: total position
+  changes, new placements, swap count, which level(s) held #1, the biggest riser/faller (by net
+  position change from the day before the year started to the year's end, or today for the current
+  year), the most-swapped level, and the best debut (lowest position any new `Placed` event landed
+  at). All computed client-side from `data/position-history.json`, same as the Time Machine
+  (`js/recap.js`'s own `snapshotAt()`/`computeRecap()`) — scoped to changes where the recorded
+  position was actually within the tracked top 150, since `history` also carries entries for levels
+  well into legacy and those would otherwise swamp the recap with churn nobody watching the list
+  ever saw. Linked from the Stats and Time Machine pages rather than another header icon.
 - **Personal completion tracker** — a purely client-side, localStorage-only "have I beaten this?"
   checklist (`js/completion.js`, `CONFIG.STORAGE.COMPLETION`) — no account, nothing leaves the
   browser. A toggle button on every list card (bottom-right of the thumbnail in card mode, inline in
   list mode) and on the detail page (`.detail-complete-toggle`) marks a level done; a small progress
-  bar in the list page's hero (`#completion-progress`) and a stat on the home page
-  (`#home-stat-completed`) show the running total against the tracked top 150. Keyed by AREDL level
-  id, not position, so a mark survives that level moving around the list.
+  bar in the list page's filter panel and a stat on the home page (`#home-stat-completed`) show the
+  running total against the tracked top 150. Keyed by AREDL level id, not position, so a mark
+  survives that level moving around the list. Crossing a round-number milestone (5, 10, 25, 50, 75,
+  100, 125, 150 beaten) pops a `js/toast.js` celebration. The list page's filter panel also has a
+  **Hide completed** checkbox — a flat post-filter applied after whatever `load()` already produced
+  (paginated or the whole-tracked-list branch alike), persisted across visits since it reads as a
+  standing preference rather than a one-off lens on the current view the way search/sort/filters are.
+- **Verifier/creator "profile" links** — every verifier, publisher, and creator name on the detail
+  page links to `list.html#q=<name>` (`profileLink()` in `js/utils.js`) — search already matches
+  level name *and* publisher/verifier/creators (`searchByName()` in `js/api-aredl.js`), so a name
+  click is just that search pre-filled, no separate profile page or dataset. When a search matches a
+  person somewhere, the list page's results banner adds a one-line summary (best rank, average rank,
+  which role(s) matched) — see `profileStatsHtml()` in `js/list.js`.
 - **Queue page (`queue.html`)** — reachable from its header's Home button (and `Ctrl+Alt+Q`), but
   still not linked from any *other* page's nav — an admin/curiosity view once you're there, rather
   than something surfaced as a primary destination. A plain top-to-bottom list
@@ -170,9 +192,9 @@ Paginated 75-at-a-time
   you got. The whole run (range, remaining pool, play-by-play history, current level and required
   percent) is saved to `localStorage` (`CONFIG.STORAGE.ROULETTE_RUN`) after every step, so a reload
   mid-run — these can span a long time — resumes exactly where it left off.
-- **Keyboard shortcuts** (`js/shortcuts.js`, every page) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S` jump
+- **Keyboard shortcuts** (`js/shortcuts.js`, every page) — `Ctrl+Alt+M`/`E`/`Q`/`R`/`S`/`T` jump
   to Main list, Extended list, the queue page, a random level (`js/nav-actions.js`, shared with the
-  header button), and the stats page; `?` alone opens a panel listing them all (also reachable via
+  header button), the stats page, and the Time Machine; `?` alone opens a panel listing them all (also reachable via
   the floating `?` button, bottom-right). `Ctrl+Alt` rather than a bare letter or a single-modifier
   `Ctrl`-combo — the first cut of this feature used bare letters, which is the safe default for
   most sites (never reserved by the browser, unlike `Ctrl+Q`/`M`/`E`, which collide with real,
@@ -625,6 +647,7 @@ queue.html                     read-only priority-queue view markup, see "What i
 stats.html                      averages/records/charts markup, see "What it does" above
 roulette.html                    Extreme Demon Roulette's own page, see "What it does" above
 timemachine.html                  reconstructed-top-150-as-of-any-past-date page, see "What it does" above
+recap.html                        year-in-the-list wrapped-style summary page, see "What it does" above
 assets/
   logo.png                   the header brand mark (32px, every page) and the PNG favicon source
   favicon.ico                multi-resolution (16/32/48) static favicon, generated from logo.png —
@@ -639,6 +662,8 @@ css/
   queue.css                     plain-list row styling for queue.html
   stats.css                      KPI tiles, chart cards, SVG chart chrome, table-view fallback
   timemachine.css                 plain-list row styling for timemachine.html, same shape as queue.css
+  recap.css                       recap.html's own layout: year picker, "mover" highlight cards; also
+                                    loads stats.css for its KPI tile row
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
@@ -659,18 +684,24 @@ js/
                                     Time Machine + Copy link header buttons, every page
   settings.js                       accent-color/display-mode/default-list/new-tab/autoplay/motion
                                      side panel, every page
+  toast.js                           minimal stacking self-dismissing notification, every page —
+                                      currently only completion.js's milestone celebrations use it
   completion.js                     personal, localStorage-only "have I beaten this?" tracker, see
                                      "What it does" above — no account, nothing leaves the browser
   home.js                           home page controller — spotlight cards + recent-changes panel +
                                      on-this-day panel
   list.js                           list page controller — also owns the #main/#extended/#q= hash-URL
-                                     sync and the completion-progress bar
+                                     sync, the completion-progress bar/hide-completed filter, and the
+                                     name-search profile stats strip
   detail.js                          detail page controller — also owns Previous/Next, its own
-                                      hashchange/popstate re-render, and the completion toggle
+                                      hashchange/popstate re-render, the completion toggle, and the
+                                      verifier/publisher/creator profile links
   queue.js                           queue page controller — reads the real persisted queue (cache.queue), doesn't re-sort
   timemachine.js                      timemachine.html's own controller — reconstructs the top 150 as
-                                       of any past date, purely from position-history.json, see "What
-                                       it does" above
+                                       of any past date, purely from position-history.json, with an
+                                       optional second date for a two-date diff, see "What it does" above
+  recap.js                            recap.html's own controller — year-in-the-list summary, purely
+                                       from position-history.json, see "What it does" above
   shortcuts.js                        Ctrl+Alt+M/E/Q/R/S/T + ? keyboard shortcuts and the shortcuts panel, every page
   stats.js                            stats page controller — averages/records/charts, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below

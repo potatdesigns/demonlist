@@ -136,12 +136,13 @@ body::before {
 
 /* Personal completion progress (js/completion.js) — purely local, no
    account behind it, so this is just a visual gut-check of how much of
-   the tracked list a returning visitor has already marked beaten. */
+   the tracked list a returning visitor has already marked beaten. Lives
+   in the filter panel (next to "Hide completed") rather than the hero —
+   it's a niche, personal number that read as visual noise sitting up
+   front before you've marked anything. */
 .completion-progress {
   position: relative;
-  height: 22px;
-  max-width: 320px;
-  margin-top: 14px;
+  height: 20px;
   border-radius: 999px;
   background: var(--bg-surface-2);
   border: 1px solid var(--line);

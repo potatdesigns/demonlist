@@ -47,6 +47,13 @@
   font-size: 13px;
   font-family: inherit;
 }
+.tm-vs {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--text-dim);
+}
 .tm-quick-jumps {
   display: flex;
   flex-wrap: wrap;

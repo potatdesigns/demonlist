@@ -5,12 +5,13 @@
 <script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={red:['#ef4444','#dc2626','#ffffff'],orange:['#ff6e00','#e66300','#1a0d00'],yellow:['#eab308','#ca8a04','#1a1300'],green:['#22c55e','#16a34a','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],pink:['#ec4899','#db2777','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demonlist | Time Machine</title>
-<meta name="description" content="Reconstructed top 150 as of any past date, from AREDL's full position history.">
+<title>Demonlist | Recap</title>
+<meta name="description" content="A year in the list, recapped — biggest movers, most swaps, new #1s.">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/timemachine.css">
+<link rel="stylesheet" href="css/stats.css">
+<link rel="stylesheet" href="css/recap.css">
 </head>
 <body>
 
@@ -22,26 +23,18 @@
   <div class="header-actions" id="header-actions"></div>
 </header>
 
-<main class="page" id="timemachine-root">
+<main class="page" id="recap-root">
   <a class="back-link" href="list.html">&larr; Back to the list</a>
 
-  <section class="tm-hero">
-    <h1>Time Machine</h1>
-    <p>See what the top 150 looked like on any past date. <a href="recap.html">See the yearly recap &rarr;</a></p>
-
-    <form class="tm-controls" id="tm-form">
-      <input type="date" id="tm-date" aria-label="Date">
-      <span class="tm-vs">vs</span>
-      <input type="date" id="tm-compare-date" aria-label="Compare to (optional, defaults to today)">
-      <button type="submit" class="btn-primary">Go</button>
-      <div class="tm-quick-jumps" id="tm-quick-jumps"></div>
-    </form>
-    <p class="tm-range-note" id="tm-range-note"></p>
+  <section class="recap-hero">
+    <h1>Recap</h1>
+    <p>A year in the list.</p>
+    <div class="recap-years" id="recap-years"></div>
   </section>
 
   <div class="state-banner" id="state-banner" style="display:none;"></div>
 
-  <div class="tm-list" id="tm-list"></div>
+  <div id="recap-body"></div>
 </main>
 
 <p class="footer-note">
@@ -55,7 +48,7 @@
 <script src="js/position-history.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
-<script src="js/timemachine.js"></script>
+<script src="js/recap.js"></script>
 <script src="js/shortcuts.js"></script>
 </body>
 </html>

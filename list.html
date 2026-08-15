@@ -68,6 +68,11 @@
               <input type="number" id="filter-showcase-max" placeholder="max" min="0" inputmode="numeric" aria-label="Maximum showcase views">
             </div>
           </div>
+          <div class="completion-progress" id="completion-progress" title="Levels you've marked beaten"></div>
+          <label class="filter-checkbox">
+            <input type="checkbox" id="filter-hide-completed">
+            <span>Hide completed</span>
+          </label>
           <button type="button" class="btn-ghost filter-clear" id="filter-clear">Clear filters</button>
         </div>
       </div>
@@ -89,8 +94,6 @@
       <span><span class="swatch" style="background:var(--text-mid)"></span>Verifier video views</span>
       <span><span class="swatch" style="background:var(--primary)"></span>Top showcase views</span>
     </div>
-
-    <div class="completion-progress" id="completion-progress" title="Levels you've marked beaten"></div>
   </section>
 
   <div class="state-banner" id="state-banner" style="display:none;"></div>
@@ -118,6 +121,7 @@
 <script src="js/cache-admin-ui.js"></script>
 <script src="js/nav-actions.js"></script>
 <script src="js/settings.js"></script>
+<script src="js/toast.js"></script>
 <script src="js/completion.js"></script>
 <script src="js/list.js"></script>
 <script src="js/back-to-top.js"></script>

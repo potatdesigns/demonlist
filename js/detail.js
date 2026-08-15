@@ -129,10 +129,10 @@
     return `<a class="detail-nav-btn ${dir}" href="level.html#${position}"${targetAttrs}>${dir === 'prev' ? arrow + info : info + arrow}</a>`;
   }
 
-  /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. */
+  /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. Each chip links to that person's other levels (list.html#q=<name>, see profileLink() in js/utils.js) — the "+N more" overflow chip doesn't, since it isn't any one person. */
   function creatorsChipsHtml(list, max = 8) {
     if (!list.length) return '';
-    const shown = list.slice(0, max).map(c => `<span class="chip">${escapeHtml(c.name)}</span>`).join('');
+    const shown = list.slice(0, max).map(c => `<a class="chip profile-link" href="${profileLink(c.name)}">${escapeHtml(c.name)}</a>`).join('');
     const rest = list.slice(max);
     if (!rest.length) return shown;
     const restNames = rest.map(c => c.name).join(', ');
@@ -175,8 +175,8 @@
       <dl class="detail-facts">
         <div class="fact"><dt>List ID</dt><dd>${escapeHtml(String(demon.id))}</dd></div>
         <div class="fact"><dt>GD Level ID</dt><dd>${demon.levelId ? escapeHtml(String(demon.levelId)) : '—'}</dd></div>
-        <div class="fact"><dt>Verifier</dt><dd>${escapeHtml(demon.verifier?.name || 'Unknown')}</dd></div>
-        <div class="fact"><dt>Publisher</dt><dd>${escapeHtml(demon.publisher?.name || 'Unknown')}</dd></div>
+        <div class="fact"><dt>Verifier</dt><dd>${demon.verifier?.name ? `<a class="profile-link" href="${profileLink(demon.verifier.name)}">${escapeHtml(demon.verifier.name)}</a>` : 'Unknown'}</dd></div>
+        <div class="fact"><dt>Publisher</dt><dd>${demon.publisher?.name ? `<a class="profile-link" href="${profileLink(demon.publisher.name)}">${escapeHtml(demon.publisher.name)}</a>` : 'Unknown'}</dd></div>
         <div class="fact" style="grid-column: span 2;">
           <dt>Creator${demon.creators.length !== 1 ? 's' : ''}</dt>
           <dd class="creators-list">

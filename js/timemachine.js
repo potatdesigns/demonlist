@@ -11,13 +11,15 @@
    oldest-first per level, so this is a simple forward scan per level,
    stopping at the first entry past the target date.
 
-   "Current" (for the vs.-today delta column) reuses the exact same
-   snapshotAt() against today's date rather than a fresh AREDL fetch —
-   one code path for both, and no extra request.
+   The delta column compares against a second date — today by default,
+   or whatever's in the optional "compare to" input — using the exact
+   same snapshotAt() for both sides, so a one-date view and a two-date
+   diff are the same code path, not two separate features.
    ===================================================================== */
 
 (() => {
   const dateInput = document.getElementById('tm-date');
+  const compareInput = document.getElementById('tm-compare-date');
   const form = document.getElementById('tm-form');
   const quickJumps = document.getElementById('tm-quick-jumps');
   const rangeNote = document.getElementById('tm-range-note');
@@ -51,18 +53,18 @@
     return rows;
   }
 
-  function rowHtml(row, currentPositionById, index) {
+  function rowHtml(row, comparePositionById, compareLabel, index) {
     const name = names[row.id] || 'Unknown level';
-    const currentPos = currentPositionById.get(row.id);
+    const comparePos = comparePositionById.get(row.id);
     let deltaHtml;
-    if (currentPos === undefined) {
+    if (comparePos === undefined) {
       deltaHtml = `<span class="tm-delta dropped">Legacy</span>`;
-    } else if (currentPos === row.position) {
-      deltaHtml = `<span class="tm-delta same">still #${currentPos}</span>`;
-    } else if (currentPos < row.position) {
-      deltaHtml = `<span class="tm-delta up">&uarr; now #${currentPos}</span>`;
+    } else if (comparePos === row.position) {
+      deltaHtml = `<span class="tm-delta same">still #${comparePos}</span>`;
+    } else if (comparePos < row.position) {
+      deltaHtml = `<span class="tm-delta up">&uarr; ${compareLabel} #${comparePos}</span>`;
     } else {
-      deltaHtml = `<span class="tm-delta down">&darr; now #${currentPos}</span>`;
+      deltaHtml = `<span class="tm-delta down">&darr; ${compareLabel} #${comparePos}</span>`;
     }
     return `
       <a class="tm-row" href="level.html#id=${encodeURIComponent(row.id)}" style="--i:${index}">
@@ -73,7 +75,7 @@
     `;
   }
 
-  function render(dateStr) {
+  function render(dateStr, compareStr) {
     if (dateStr < earliestDate) {
       listEl.innerHTML = '';
       showBanner(`Earliest available date is ${escapeHtml(earliestDate)}.`, true);
@@ -85,15 +87,25 @@
       showBanner('');
       return;
     }
-    const currentRows = dateStr === todayStr() ? rows : snapshotAt(todayStr());
-    const currentPositionById = new Map(currentRows.map(r => [r.id, r.position]));
-    listEl.innerHTML = rows.map((r, i) => rowHtml(r, currentPositionById, i)).join('');
-    showBanner(`Top ${rows.length} on ${escapeHtml(dateStr)}, vs. today.`);
+    const isToday = compareStr === todayStr();
+    const compareRows = dateStr === compareStr ? rows : snapshotAt(compareStr);
+    const comparePositionById = new Map(compareRows.map(r => [r.id, r.position]));
+    const compareLabel = isToday ? 'now' : `on ${compareStr}`;
+    listEl.innerHTML = rows.map((r, i) => rowHtml(r, comparePositionById, compareLabel, i)).join('');
+    showBanner(`Top ${rows.length} on ${escapeHtml(dateStr)}, vs. ${isToday ? 'today' : escapeHtml(compareStr)}.`);
+  }
+
+  function currentRender() {
+    const dateStr = clampDate(dateInput.value || todayStr());
+    const compareStr = compareInput.value ? clampDate(compareInput.value) : todayStr();
+    dateInput.value = dateStr;
+    render(dateStr, compareStr);
   }
 
   function goTo(dateStr) {
     dateInput.value = dateStr;
-    render(dateStr);
+    compareInput.value = '';
+    render(dateStr, todayStr());
   }
 
   function quickJumpButton(label, dateStr) {
@@ -111,6 +123,12 @@
     return d.toISOString().slice(0, 10);
   }
 
+  function clampDate(dateStr) {
+    if (dateStr < earliestDate) return earliestDate;
+    if (dateStr > todayStr()) return todayStr();
+    return dateStr;
+  }
+
   async function init() {
     listEl.innerHTML = `<div class="empty-state">Loading position history…</div>`;
     try {
@@ -121,8 +139,8 @@
         if (entries.length && entries[0].date < earliestDate) earliestDate = entries[0].date;
       }
 
-      dateInput.min = earliestDate;
-      dateInput.max = todayStr();
+      dateInput.min = compareInput.min = earliestDate;
+      dateInput.max = compareInput.max = todayStr();
       rangeNote.textContent = `Earliest available: ${earliestDate}`;
 
       quickJumps.append(
@@ -132,24 +150,17 @@
         quickJumpButton('Earliest available', earliestDate),
       );
 
-      const initial = clampDate(daysAgo(365));
-      goTo(initial);
+      goTo(clampDate(daysAgo(365)));
     } catch (err) {
       listEl.innerHTML = '';
       showBanner(`Couldn't load position history: ${escapeHtml(err.message)}`, true);
     }
   }
 
-  function clampDate(dateStr) {
-    if (dateStr < earliestDate) return earliestDate;
-    if (dateStr > todayStr()) return todayStr();
-    return dateStr;
-  }
-
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!dateInput.value) return;
-    render(clampDate(dateInput.value));
+    currentRender();
   });
 
   init();

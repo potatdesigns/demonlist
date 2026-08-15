@@ -31,12 +31,25 @@ const Completion = (() => {
   function completedAt(id) { return state[id] || null; }
   function count() { return Object.keys(state).length; }
 
+  // Celebrated the moment a round number is crossed going *up* — never
+  // on the way back down, and never more than once per number even if
+  // toggled past it repeatedly (un-marking and re-marking a different
+  // level back up to the same count doesn't re-fire, since the check is
+  // purely "did count() just cross this threshold").
+  const MILESTONES = [5, 10, 25, 50, 75, 100, 125, 150];
+
   function set(id, done) {
     if (done === isDone(id)) return;
+    const before = count();
     if (done) state[id] = new Date().toISOString();
     else delete state[id];
     persist();
     listeners.forEach(fn => fn(id, done));
+    if (done && typeof Toast !== 'undefined') {
+      const after = count();
+      const crossed = MILESTONES.find(m => before < m && after >= m);
+      if (crossed) Toast.show(`${crossed} levels beaten!`);
+    }
   }
   function toggle(id) { set(id, !isDone(id)); }
 
