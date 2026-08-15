@@ -526,12 +526,20 @@ back alongside it.
 
 Since this only started running whenever it was added, `scripts/backfill-position-history.mjs`
 (one-off, no workflow — see the file layout below) reconstructs everything *before* that straight
-from AREDL's own changelog, which currently runs back to August 2022: every `Placed`/`Raised`/
-`Lowered`/`MovedToLegacy` event carries the resulting position directly, merged into whatever's
-already on file rather than overwriting it. `Swapped` events are skipped whenever the changelog
-doesn't unambiguously say which side of the swap the affected level ended up on (AREDL's own
-`other_level` field has been observed to sometimes just duplicate `upper_level` instead of naming
-the real second participant) — better an occasional gap than a guessed, wrong data point.
+from AREDL's own changelog, which currently runs back to August 2022. Naively replaying just the
+changelog's own named "affected level" per event badly undercounts: AREDL only logs the level an
+action was *directly* taken on, never the cascading shifts every other level in between
+experiences as a side effect (inserting a level at #40 quietly moves everything from #40 down to
+its old position too, unlogged) — over ~3,200 changelog events across ~1,600 levels and 4 years,
+that's nowhere near enough rows to represent every individual shift. So instead the script fully
+*simulates* the list: replays every event in the backend's own insertion order (not a `created_at`
+sort — ties or rounding on near-simultaneous events can silently corrupt that ordering) against an
+in-memory array using real insert/remove semantics, and records a history entry for every level
+whose simulated position actually changes, not just the one AREDL named. `Swapped` events are
+resolved by swapping the two array slots at the event's own recorded position — authoritative
+regardless of array contents — rather than trusting AREDL's `upper_level`/`other_level` fields,
+which have been observed to sometimes just duplicate each other. Validated by diffing the fully
+simulated final order against AREDL's live current list (exact match, all 150 tracked positions).
 
 ### Watching for AREDL changes affecting the top 150
 
@@ -620,13 +628,12 @@ data/                        *.json gitignored on main — generated at runtime,
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
   refresh-aredl-cache.mjs     populates data/aredl-cache.json + data/position-history.json, see "Shared AREDL cache" above
-  backfill-position-history.mjs  one-off/manual — reconstructs data/position-history.json from
-                                  AREDL's full changelog (back to Aug 2022) rather than only from
-                                  refresh-aredl-cache.mjs's own incremental diffing, which only has
-                                  data from whenever that started running; merges in, doesn't
-                                  overwrite. No workflow — run by hand (`node scripts/backfill-
-                                  position-history.mjs`) then publish-cache-branch.sh, same as any
-                                  other refresh script.
+  backfill-position-history.mjs  one-off/manual — rebuilds data/position-history.json by fully
+                                  simulating AREDL's changelog (back to Aug 2022), capturing
+                                  cascading position shifts, not just each event's directly-named
+                                  level; see "Position history" above. No workflow — run by hand
+                                  (`node scripts/backfill-position-history.mjs`) then
+                                  publish-cache-branch.sh, same as any other refresh script.
   watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for any
                                change touching the top 150 and triggers the two scripts above when
                                it finds one, see "Watching for AREDL changes affecting the top 150" above

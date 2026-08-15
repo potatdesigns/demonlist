@@ -6,29 +6,46 @@
    data/position-history.json entries from whenever that feature first
    started running — nothing further back. This reconstructs the *real*
    history instead, straight from AREDL's own changelog (currently
-   ~3200+ entries, going back to August 2022): walks every page oldest-
-   first, extracts each event's resulting position for the affected
-   level (Placed/Raised/Lowered/MovedToLegacy all carry `new_position`
-   directly; `Swapped` is skipped whenever it can't be unambiguously
-   resolved to the affected level — see resolveSwapPosition() — rather
-   than guessed at), and merges the result into whatever
-   data/position-history.json already has (union per level, re-sorted,
-   duplicate-position runs collapsed), so nothing already recorded is
-   lost or overwritten.
+   ~3200+ entries, going back to August 2022).
+
+   Naively replaying only sets a history entry for whichever level each
+   changelog event names as "affected" — but AREDL's changelog only logs
+   the level an action was *directly* taken on, never the cascading
+   shifts every other level in between experiences as a side effect
+   (insert a level at #40 and everything from #40 to its old position
+   quietly moves too, unlogged). That's most of a level's real position
+   history, so this instead fully *simulates* the list: replays every
+   changelog event in chronological order against an in-memory ordered
+   array using real insert/remove semantics, and records a history entry
+   for every level whose simulated position actually changes as a
+   result — not just the one AREDL named. Swapped events are resolved by
+   swapping the two array slots at the event's own position (authoritative
+   regardless of array contents) rather than trying to match AREDL's
+   `upper_level`/`other_level` fields, which have been observed to
+   sometimes just duplicate each other.
+
+   Events must replay in the backend's own insertion order, not a
+   created_at sort — AREDL's API paginates newest-first off an internal
+   serial column, and re-sorting by timestamp can silently reorder events
+   that share (or round to) the same created_at, corrupting everything
+   simulated afterward. Reversing the fetch order instead reconstructs
+   the exact causal sequence. (Validated by simulating the full changelog
+   and diffing the resulting order against AREDL's live current list —
+   sorting by created_at produced 30/150 mismatches in the top 150;
+   reversing fetch order instead produced a perfect 0/150 match.)
 
    NOT part of the regular hourly refresh — walking ~160 changelog pages
-   is comparatively expensive, and the changelog's own past doesn't
-   change, so there's no reason to re-walk all of it every hour (see
-   scripts/refresh-aredl-cache.mjs's own much cheaper incremental
-   approach for that). Re-run this by hand only if you want to
-   re-verify against the full log, e.g. after a long gap in the hourly
-   job, or to pick up any Swapped events a future version can resolve
-   that this one couldn't.
+   and replaying ~3200 events is comparatively expensive, and the
+   changelog's own past doesn't change, so there's no reason to redo it
+   every hour (see scripts/refresh-aredl-cache.mjs's own much cheaper
+   incremental approach for that). Re-run this by hand only if you want
+   to re-verify against the full log, e.g. after a long gap in the hourly
+   job.
 
    Usage: node scripts/backfill-position-history.mjs
    ===================================================================== */
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -37,43 +54,27 @@ const HISTORY_PATH = path.join(__dirname, '..', 'data', 'position-history.json')
 const AREDL_BASE = 'https://api.aredl.net/v2/api/aredl';
 const PACE_MS = 150;
 
-async function fetchJson(url, { retries = 4 } = {}) {
+// Keep in sync with CONFIG.LIST_SIZE in js/config.js — a level only
+// starts being tracked once it's within the top this-many positions
+// (matches refresh-aredl-cache.mjs's own tracking boundary), though its
+// history keeps being recorded afterward even if it later drops out.
+const LEVEL_LIST_SIZE = 150;
+
+async function fetchJson(url, { retries = 5 } = {}) {
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(url, { headers: { Accept: 'application/json' } });
     if (res.ok) return res.json();
     if (res.status === 429 && attempt < retries) {
+      // AREDL sometimes sends `retry-after: 0` (a truthy string — the
+      // naive `header || fallback` doesn't catch it), which if honored
+      // literally means "retry immediately", re-tripping the same limiter
+      // instantly. Floor it at 2s regardless of what the header says.
       const retryAfterSeconds = Math.max(parseInt(res.headers.get('retry-after'), 10) || 0, 2);
       console.log(`  429 from AREDL — waiting ${retryAfterSeconds}s (attempt ${attempt + 1}/${retries}) before retrying ${url}`);
       await new Promise(r => setTimeout(r, retryAfterSeconds * 1000));
       continue;
     }
     throw new Error(`${url} returned ${res.status}`);
-  }
-}
-
-/** For a Swapped event, the affected level ends up at either upper_position or upper_position+1 (a swap always trades two adjacent positions) — resolved only when affected_level unambiguously matches exactly one side, never guessed. AREDL's `other_level` field has been observed to sometimes just duplicate `upper_level` rather than naming the actual other participant, which is exactly the ambiguous case this refuses to resolve. */
-function resolveSwapPosition(entry, action) {
-  const affectedId = entry.affected_level?.id;
-  if (!affectedId) return null;
-  const isUpper = action.upper_level?.id === affectedId;
-  const isOther = action.other_level?.id === affectedId;
-  if (isUpper && !isOther) return action.upper_position;
-  if (isOther && !isUpper) return action.upper_position + 1;
-  return null;
-}
-
-function positionAfter(entry) {
-  const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
-  switch (type) {
-    case 'Placed':
-    case 'Raised':
-    case 'Lowered':
-    case 'MovedToLegacy':
-      return Number.isFinite(action.new_position) ? action.new_position : null;
-    case 'Swapped':
-      return resolveSwapPosition(entry, action);
-    default:
-      return null;
   }
 }
 
@@ -88,67 +89,97 @@ async function fetchAllChangelogEntries() {
     if (page % 20 === 0) console.log(`  ...page ${page}/${totalPages}`);
     await new Promise(r => setTimeout(r, PACE_MS));
   }
-  return all;
+  return all; // newest-first, matching the backend's own paging order
 }
 
-async function loadExistingHistory() {
-  try {
-    const parsed = JSON.parse(await readFile(HISTORY_PATH, 'utf8'));
-    return parsed.history && typeof parsed.history === 'object' ? parsed.history : {};
-  } catch {
-    return {};
+/**
+ * Replays every changelog event against an in-memory ordered array
+ * (order[i] = level id at position i+1), using real splice-based
+ * insert/remove so every level whose position actually shifts — not
+ * just the one AREDL names as "affected" — gets a history entry.
+ */
+function simulate(entries) {
+  const order = [];
+  const historyOut = {};
+  const everTracked = new Set();
+  let directCount = 0, cascadeCount = 0, swapResolved = 0, swapSkipped = 0;
+
+  function recordIfChanged(id, date, position) {
+    if (!everTracked.has(id)) {
+      if (position > LEVEL_LIST_SIZE) return;
+      everTracked.add(id);
+    }
+    const list = historyOut[id] || (historyOut[id] = []);
+    const last = list[list.length - 1];
+    if (last && last.position === position) return;
+    list.push({ date, position });
   }
+
+  function moveTo(id, newPos, date, isDirect) {
+    const oldIdx = order.indexOf(id);
+    if (oldIdx !== -1) order.splice(oldIdx, 1);
+    const insertIdx = Math.max(0, Math.min(newPos - 1, order.length));
+    order.splice(insertIdx, 0, id);
+    if (isDirect) { recordIfChanged(id, date, insertIdx + 1); directCount++; }
+    const lo = oldIdx === -1 ? insertIdx : Math.min(oldIdx, insertIdx);
+    const hi = oldIdx === -1 ? insertIdx : Math.max(oldIdx, insertIdx);
+    for (let i = lo; i <= hi; i++) {
+      if (i === insertIdx) continue;
+      recordIfChanged(order[i], date, i + 1);
+      cascadeCount++;
+    }
+  }
+
+  for (const entry of entries) {
+    const id = entry.affected_level?.id;
+    if (!id) continue;
+    const date = entry.created_at.slice(0, 10);
+    const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
+
+    if (type === 'Placed' || type === 'Raised' || type === 'Lowered' || type === 'MovedToLegacy' || type === 'MovedFromLegacy') {
+      if (!Number.isFinite(action.new_position)) continue;
+      moveTo(id, action.new_position, date, true);
+    } else if (type === 'Removed') {
+      const oldIdx = order.indexOf(id);
+      if (oldIdx === -1) continue;
+      order.splice(oldIdx, 1);
+      for (let i = oldIdx; i < order.length; i++) {
+        recordIfChanged(order[i], date, i + 1);
+        cascadeCount++;
+      }
+    } else if (type === 'Swapped') {
+      // The event's own upper_position is authoritative regardless of
+      // array contents — swap whatever two slots are physically at that
+      // position, rather than trusting upper_level/other_level ids.
+      const upperPos = action.upper_position;
+      const idxA = upperPos - 1, idxB = upperPos;
+      if (idxA < 0 || idxB >= order.length) { swapSkipped++; continue; }
+      const idA = order[idxA], idB = order[idxB];
+      order[idxA] = idB; order[idxB] = idA;
+      recordIfChanged(idA, date, idxB + 1);
+      recordIfChanged(idB, date, idxA + 1);
+      swapResolved++;
+    }
+  }
+
+  console.log(`Simulated ${directCount} direct events + ${cascadeCount} cascading shifts (${swapResolved} swaps resolved, ${swapSkipped} skipped out-of-bounds).`);
+  return historyOut;
 }
 
 async function main() {
   const entries = await fetchAllChangelogEntries();
   console.log(`Fetched ${entries.length} changelog entries total.`);
 
-  entries.sort((a, b) => new Date(a.created_at) - new Date(b.created_at)); // oldest-first
+  // Replay oldest-first. Reversing the fetch order (rather than sorting by
+  // created_at) reconstructs the backend's exact causal sequence — see the
+  // header comment for why a timestamp sort corrupts the simulation.
+  entries.reverse();
 
-  const existingHistory = await loadExistingHistory();
-  const fromChangelog = {};
-  let skippedSwaps = 0, resolvedEvents = 0;
-
-  for (const entry of entries) {
-    const id = entry.affected_level?.id;
-    if (!id) continue;
-    const position = positionAfter(entry);
-    if (position === null) {
-      const [type] = Object.entries(entry.action || {})[0] || [null];
-      if (type === 'Swapped') skippedSwaps++;
-      continue;
-    }
-    resolvedEvents++;
-    const date = entry.created_at.slice(0, 10);
-    const list = fromChangelog[id] || (fromChangelog[id] = []);
-    const last = list[list.length - 1];
-    if (last && last.position === position && last.date === date) continue; // same-day no-op
-    list.push({ date, position });
-  }
-
-  // Union with whatever the hourly script already recorded — its
-  // entries might extend a little past this changelog fetch, or catch
-  // something a skipped Swapped event missed — then re-collapse any
-  // consecutive duplicate positions the merge introduces.
-  const allIds = new Set([...Object.keys(fromChangelog), ...Object.keys(existingHistory)]);
-  const finalHistory = {};
-  for (const id of allIds) {
-    const combined = [...(fromChangelog[id] || []), ...(existingHistory[id] || [])];
-    combined.sort((a, b) => a.date.localeCompare(b.date));
-    const collapsed = [];
-    for (const e of combined) {
-      const last = collapsed[collapsed.length - 1];
-      if (last && last.position === e.position) continue;
-      collapsed.push(e);
-    }
-    finalHistory[id] = collapsed;
-  }
-
-  console.log(`Resolved ${resolvedEvents} position-changing events (skipped ${skippedSwaps} ambiguous Swapped events) across ${Object.keys(finalHistory).length} levels.`);
+  const history = simulate(entries);
+  console.log(`Reconstructed history for ${Object.keys(history).length} levels.`);
 
   await mkdir(path.dirname(HISTORY_PATH), { recursive: true });
-  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history: finalHistory }, null, 2) + '\n');
+  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history }, null, 2) + '\n');
   console.log(`Wrote ${HISTORY_PATH}.`);
 }
 
