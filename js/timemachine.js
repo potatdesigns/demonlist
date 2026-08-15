@@ -56,7 +56,7 @@
     const currentPos = currentPositionById.get(row.id);
     let deltaHtml;
     if (currentPos === undefined) {
-      deltaHtml = `<span class="tm-delta dropped">no longer top ${CONFIG.LIST_SIZE}</span>`;
+      deltaHtml = `<span class="tm-delta dropped">Legacy</span>`;
     } else if (currentPos === row.position) {
       deltaHtml = `<span class="tm-delta same">still #${currentPos}</span>`;
     } else if (currentPos < row.position) {
