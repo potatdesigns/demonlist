@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T03:40:20.057Z",
+  "generatedAt": "2026-08-16T04:25:47.312Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -5205,90 +5205,7 @@
       "edel_enjoyment": 68.05454545,
       "is_edel_pending": false,
       "gddl_tier": 37.36363636363637,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "08caa61e-712b-43ee-8072-7926a36253a9",
-        "username": "trickgmd",
-        "global_name": "Trick"
-      },
-      "verifications": [
-        {
-          "id": "0610c62d-ae96-4b4e-86e3-65ad1107ac01",
-          "submitted_by": {
-            "id": "08caa61e-712b-43ee-8072-7926a36253a9",
-            "username": "trickgmd",
-            "global_name": "Trick"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=QBe5x2o9v2w",
-          "hide_video": false,
-          "achieved_at": "2021-10-30T18:00:11Z",
-          "created_at": "2022-10-25T16:03:01Z",
-          "updated_at": "2022-10-25T16:03:01Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "193b4236-dbb6-48c6-adf8-9cc7cc39742e",
-          "username": "-",
-          "global_name": "-"
-        },
-        {
-          "id": "b2878148-d92c-4181-82a6-f32d2b1ddb4f",
-          "username": "e1281ebae",
-          "global_name": "lillium"
-        },
-        {
-          "id": "c12215fc-3e0a-4989-aecd-c59e0a554f54",
-          "username": "add6dd09c",
-          "global_name": "00Zero"
-        },
-        {
-          "id": "53fb546f-3724-4df1-9aa8-71c01e75634e",
-          "username": "d99a7abe5",
-          "global_name": "Konsi"
-        },
-        {
-          "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
-          "username": "5a211773f",
-          "global_name": "Realvet"
-        },
-        {
-          "id": "977e6ff0-197b-4ba8-841d-6b7b307f5a0c",
-          "username": "b36d5883a",
-          "global_name": "Desumari"
-        },
-        {
-          "id": "f454cd77-c454-4f5e-b45e-ef8f12a376e9",
-          "username": "c06bddda9",
-          "global_name": "Itami"
-        },
-        {
-          "id": "111b7860-2c8b-46ea-9215-455f332e42f6",
-          "username": "f0db2aebd",
-          "global_name": "Lekvid"
-        },
-        {
-          "id": "c57a9952-36b0-4b8c-b93c-f3646c04d7fd",
-          "username": "5bbae8cdb",
-          "global_name": "Buragoz"
-        },
-        {
-          "id": "aed9a6be-3565-4825-9d0f-4aeac21d40b2",
-          "username": "bd03ed26a",
-          "global_name": "Crouley"
-        },
-        {
-          "id": "4fbeff42-378a-4df1-9a9a-e62e01dcf701",
-          "username": "a5c9672c9",
-          "global_name": "Orte"
-        },
-        {
-          "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
-          "username": "d1219692d",
-          "global_name": "Hantein"
-        }
-      ]
+      "nlw_tier": null
     },
     {
       "id": "99bfbecd-4821-4914-85fd-dd0bb613510e",
@@ -5334,73 +5251,7 @@
           "updated_at": "2025-12-13T19:16:38.352665Z"
         }
       ],
-      "creators": [
-        {
-          "id": "0872d1db-b3d0-4ace-afe7-703848a90caa",
-          "username": "dafc70976",
-          "global_name": "Zeostar"
-        },
-        {
-          "id": "2c722221-bbc0-40e5-b24f-09982e5c1cc3",
-          "username": "5a12c209c",
-          "global_name": "TheTrueEclipse"
-        },
-        {
-          "id": "512a3ff1-c46c-42a6-a817-70aef6fd626d",
-          "username": "minix9",
-          "global_name": "Minix"
-        },
-        {
-          "id": "65a1b0df-795a-4d7c-914e-cdffb094c831",
-          "username": "a49fc1443",
-          "global_name": "Connot"
-        },
-        {
-          "id": "84b762f0-7288-476d-8e86-a81f1bd8bc1c",
-          "username": "4e7c807c6",
-          "global_name": "VERSU5"
-        },
-        {
-          "id": "a16ae073-0288-4d28-8382-1a35b958c584",
-          "username": "e4033ea88",
-          "global_name": "iRosie"
-        },
-        {
-          "id": "a7ca5a3a-978a-47db-87c3-4a5f81e420c0",
-          "username": "3cdc33a47",
-          "global_name": "Jakedog"
-        },
-        {
-          "id": "acc246f0-22c8-4e1e-af16-0f43b658e3d7",
-          "username": "6e9ca28b6",
-          "global_name": "CamsOverHere"
-        },
-        {
-          "id": "c9e9678a-9c93-4968-aa9b-4e2133d971ec",
-          "username": "83c658862",
-          "global_name": "ErisethSP"
-        },
-        {
-          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
-          "username": "rynoxiouss",
-          "global_name": "Rynoxious"
-        },
-        {
-          "id": "e8a6dcaa-e94e-4aa0-aadf-1f90283049ad",
-          "username": "d84edc8ee",
-          "global_name": "Megantwoo"
-        },
-        {
-          "id": "65953aad-0af0-4183-942e-183de66aa7b6",
-          "username": "zkazia",
-          "global_name": "Kazia"
-        },
-        {
-          "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-          "username": "gdskele",
-          "global_name": "Skele"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "56d52163-e3e2-4357-9843-29002b100e07",
