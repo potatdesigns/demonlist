@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T00:42:48.544Z",
+  "generatedAt": "2026-08-16T02:15:39.946Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -7,7 +7,8 @@
       "position": 1,
       "publisher_id": "9e66153c-3064-4628-b791-aa2a9c783abe",
       "points": 5000,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 127323087,
       "two_player": false,
       "tags": [
@@ -26,8 +27,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9e66153c-3064-4628-b791-aa2a9c783abe",
         "username": "ec99836c7",
@@ -103,7 +102,8 @@
       "position": 2,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
       "points": 4934,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 119544028,
       "two_player": false,
       "tags": [
@@ -261,7 +261,8 @@
       "position": 3,
       "publisher_id": "8e24a45b-84e1-42ff-aa0c-519425a59d73",
       "points": 4871,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 126242564,
       "two_player": false,
       "tags": [
@@ -897,7 +898,8 @@
       "position": 4,
       "publisher_id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
       "points": 4809,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 119550490,
       "two_player": false,
       "tags": [
@@ -913,8 +915,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
         "username": "9d1646bfb",
@@ -1010,7 +1010,8 @@
       "position": 5,
       "publisher_id": "e427c228-5eef-4fa1-b8bd-505a4fd94db3",
       "points": 4750,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 86407629,
       "two_player": false,
       "tags": [
@@ -1025,8 +1026,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "e427c228-5eef-4fa1-b8bd-505a4fd94db3",
         "username": "21f814e07",
@@ -1056,7 +1055,8 @@
       "position": 6,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 4692,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 142896409,
       "two_player": false,
       "tags": [
@@ -1070,8 +1070,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -1167,7 +1165,8 @@
       "position": 7,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
       "points": 4636,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 133175713,
       "two_player": false,
       "tags": [
@@ -1185,8 +1184,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
         "username": "e177890c9",
@@ -1362,7 +1359,8 @@
       "position": 8,
       "publisher_id": "e59b9ac9-adef-4024-a561-9b9bc5d00e6d",
       "points": 4581,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 109780665,
       "two_player": false,
       "tags": [
@@ -1378,8 +1376,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "e59b9ac9-adef-4024-a561-9b9bc5d00e6d",
         "username": "b8d639988",
@@ -1409,7 +1405,8 @@
       "position": 9,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
       "points": 4528,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 117692518,
       "two_player": false,
       "tags": [
@@ -1426,8 +1423,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
         "username": "f7183736b",
@@ -1468,7 +1463,8 @@
       "position": 10,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
       "points": 4477,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110816181,
       "two_player": false,
       "tags": [
@@ -1482,8 +1478,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
         "username": "akunakun",
@@ -1529,7 +1523,8 @@
       "position": 11,
       "publisher_id": "83de0098-8c9e-4a33-a06b-0e4ace3e2ae1",
       "points": 4427,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 135661111,
       "two_player": false,
       "tags": [
@@ -1546,8 +1541,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "83de0098-8c9e-4a33-a06b-0e4ace3e2ae1",
         "username": "cfaa5baed",
@@ -1673,7 +1666,8 @@
       "position": 12,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
       "points": 4378,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 116174063,
       "two_player": false,
       "tags": [
@@ -1690,8 +1684,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
         "username": "e177890c9",
@@ -1782,7 +1774,8 @@
       "position": 13,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 4331,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 134942736,
       "two_player": false,
       "tags": [
@@ -1798,8 +1791,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -1845,7 +1836,8 @@
       "position": 14,
       "publisher_id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
       "points": 4285,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 4125776,
       "two_player": false,
       "tags": [
@@ -1862,8 +1854,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
         "username": "bbaa0aa3a",
@@ -1893,7 +1883,8 @@
       "position": 15,
       "publisher_id": "b2e40073-c491-41f9-81e2-776802e2e3da",
       "points": 4240,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 62912799,
       "two_player": false,
       "tags": [
@@ -1909,8 +1900,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b2e40073-c491-41f9-81e2-776802e2e3da",
         "username": "f182cbf8c",
@@ -1940,7 +1929,8 @@
       "position": 16,
       "publisher_id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
       "points": 4196,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 138704906,
       "two_player": false,
       "tags": [
@@ -1954,8 +1944,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
         "username": "declan_lc",
@@ -1996,7 +1984,8 @@
       "position": 17,
       "publisher_id": "b379f08f-f08a-4562-8a7f-53237d4eb6fd",
       "points": 4153,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 114283297,
       "two_player": false,
       "tags": [
@@ -2015,8 +2004,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b379f08f-f08a-4562-8a7f-53237d4eb6fd",
         "username": "7017c8ee9",
@@ -2046,7 +2033,8 @@
       "position": 18,
       "publisher_id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
       "points": 4111,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 138781722,
       "two_player": false,
       "tags": [
@@ -2062,8 +2050,6 @@
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
         "username": "rynoxiouss",
@@ -2133,8 +2119,8 @@
         },
         {
           "id": "3b201d37-1d2c-429b-a5ce-4454d2fa9a31",
-          "username": "._asterion_.",
-          "global_name": "waltuh"
+          "username": "iiauroric",
+          "global_name": "ari"
         },
         {
           "id": "3b5566fd-62b1-4c10-a94e-2890eacb0cef",
@@ -2264,7 +2250,8 @@
       "position": 19,
       "publisher_id": "93553653-af79-456e-ba66-abc82becd2e5",
       "points": 4070,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 127997391,
       "two_player": false,
       "tags": [
@@ -2280,8 +2267,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "93553653-af79-456e-ba66-abc82becd2e5",
         "username": "3d3317f29",
@@ -2322,7 +2307,8 @@
       "position": 20,
       "publisher_id": "556cfea7-a887-4922-a143-9577c4ba3710",
       "points": 4031,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 112313819,
       "two_player": false,
       "tags": [
@@ -2337,8 +2323,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "556cfea7-a887-4922-a143-9577c4ba3710",
         "username": "32f5db2f9",
@@ -2362,14 +2346,19 @@
       ],
       "creators": [
         {
+          "id": "477f1b17-24c2-4c3b-aeaf-b084a7f6ff2a",
+          "username": "24e563060",
+          "global_name": "TMco"
+        },
+        {
           "id": "365aaf04-eee7-468d-a598-c0eb3bb4b9ec",
           "username": "a0551919b",
           "global_name": "GD Iris"
         },
         {
-          "id": "477f1b17-24c2-4c3b-aeaf-b084a7f6ff2a",
-          "username": "24e563060",
-          "global_name": "TMco"
+          "id": "ea36ea86-9220-406b-be81-6068b29605a1",
+          "username": "0736f0bde",
+          "global_name": "Zipixbox"
         },
         {
           "id": "556cfea7-a887-4922-a143-9577c4ba3710",
@@ -2377,19 +2366,14 @@
           "global_name": "nikroplays"
         },
         {
-          "id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
-          "username": "599bc909d",
-          "global_name": "ItsHybrid"
-        },
-        {
           "id": "b52d86dd-a940-42a2-b7f4-9da1d77fe5a0",
           "username": "9deb552e8",
           "global_name": "Eternaswip"
         },
         {
-          "id": "ea36ea86-9220-406b-be81-6068b29605a1",
-          "username": "0736f0bde",
-          "global_name": "Zipixbox"
+          "id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
+          "username": "599bc909d",
+          "global_name": "ItsHybrid"
         }
       ]
     },
@@ -2399,7 +2383,8 @@
       "position": 21,
       "publisher_id": "760b8673-c930-4f37-9fbd-e820fe477d85",
       "points": 3992,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 89496627,
       "two_player": false,
       "tags": [
@@ -2416,8 +2401,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "760b8673-c930-4f37-9fbd-e820fe477d85",
         "username": "5ba34905e",
@@ -2518,7 +2501,8 @@
       "position": 22,
       "publisher_id": "fa630147-2a41-4c56-aa1f-4b7a6649c955",
       "points": 3954,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 73667628,
       "two_player": false,
       "tags": [
@@ -2536,8 +2520,6 @@
       "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "fa630147-2a41-4c56-aa1f-4b7a6649c955",
         "username": "1b1667448",
@@ -2638,7 +2620,8 @@
       "position": 23,
       "publisher_id": "ea04240c-ddbb-43a3-a055-2084faddd743",
       "points": 3917,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110815379,
       "two_player": false,
       "tags": [
@@ -2655,8 +2638,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ea04240c-ddbb-43a3-a055-2084faddd743",
         "username": "d0f450e94",
@@ -2852,7 +2833,8 @@
       "position": 24,
       "publisher_id": "7cc1696c-e945-4b2d-882f-b78b38a61f22",
       "points": 3880,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 107805281,
       "two_player": false,
       "tags": [
@@ -2870,8 +2852,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "7cc1696c-e945-4b2d-882f-b78b38a61f22",
         "username": "f2e6fe7d6",
@@ -2901,7 +2881,8 @@
       "position": 25,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
       "points": 3845,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 49896559,
       "two_player": false,
       "tags": [
@@ -2919,8 +2900,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
         "username": "2b15dc523",
@@ -3031,7 +3010,8 @@
       "position": 26,
       "publisher_id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
       "points": 3810,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 120012581,
       "two_player": false,
       "tags": [
@@ -3048,8 +3028,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
         "username": "a02eecb21",
@@ -3125,7 +3103,8 @@
       "position": 27,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
       "points": 3776,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 91351939,
       "two_player": false,
       "tags": [
@@ -3141,8 +3120,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
         "username": "2b15dc523",
@@ -3183,7 +3160,8 @@
       "position": 28,
       "publisher_id": "893da248-1b80-4581-ad27-eb8cf0b3db3b",
       "points": 3743,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 86018142,
       "two_player": false,
       "tags": [
@@ -3200,8 +3178,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38.666666666666664,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "893da248-1b80-4581-ad27-eb8cf0b3db3b",
         "username": "103e95f77",
@@ -3231,7 +3207,8 @@
       "position": 29,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
       "points": 3710,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110534288,
       "two_player": false,
       "tags": [
@@ -3246,8 +3223,6 @@
       "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
         "username": "akunakun",
@@ -3313,7 +3288,8 @@
       "position": 30,
       "publisher_id": "648141fe-e34a-40a8-9231-e05e773602a2",
       "points": 3678,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93917076,
       "two_player": false,
       "tags": [
@@ -3328,8 +3304,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "648141fe-e34a-40a8-9231-e05e773602a2",
         "username": "2839a9d36",
@@ -3359,7 +3333,8 @@
       "position": 31,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
       "points": 3647,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 27690100,
       "two_player": false,
       "tags": [
@@ -3376,8 +3351,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37.9,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
         "username": "3f7122cb5",
@@ -3443,7 +3416,8 @@
       "position": 32,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
       "points": 3616,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113599729,
       "two_player": false,
       "tags": [
@@ -3460,8 +3434,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
         "username": "029747e6b",
@@ -3491,7 +3463,8 @@
       "position": 33,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 3586,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 87665224,
       "two_player": false,
       "tags": [
@@ -3507,8 +3480,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -3594,7 +3565,8 @@
       "position": 34,
       "publisher_id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
       "points": 3557,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 48991380,
       "two_player": false,
       "tags": [
@@ -3606,8 +3578,6 @@
       "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
         "username": "a54655b3a",
@@ -3637,7 +3607,8 @@
       "position": 35,
       "publisher_id": "4e7da527-f775-4ea2-b610-b33a06abf54b",
       "points": 3528,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 130327668,
       "two_player": false,
       "tags": [
@@ -3656,8 +3627,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "4e7da527-f775-4ea2-b610-b33a06abf54b",
         "username": "turtl123",
@@ -3698,7 +3667,8 @@
       "position": 36,
       "publisher_id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
       "points": 3499,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93091893,
       "two_player": false,
       "tags": [
@@ -3713,8 +3683,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
         "username": "599bc909d",
@@ -3890,7 +3858,8 @@
       "position": 37,
       "publisher_id": "fb0a184e-77c6-492b-abce-b91f531b7343",
       "points": 3471,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 141052363,
       "two_player": false,
       "tags": [],
@@ -3900,8 +3869,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
         "username": "997a90b54",
@@ -4042,7 +4009,8 @@
       "position": 38,
       "publisher_id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
       "points": 3444,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 114281093,
       "two_player": false,
       "tags": [
@@ -4059,8 +4027,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
         "username": "mccoco1",
@@ -4090,7 +4056,8 @@
       "position": 39,
       "publisher_id": "ca0f48b4-167c-4197-b563-a4e9175618da",
       "points": 3417,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 134541844,
       "two_player": false,
       "tags": [
@@ -4108,8 +4075,6 @@
       "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
         "username": "f076f3539",
@@ -4139,7 +4104,8 @@
       "position": 40,
       "publisher_id": "a286ea51-3df8-4d7f-af75-2c26fcf61335",
       "points": 3391,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 76962930,
       "two_player": false,
       "tags": [
@@ -4155,8 +4121,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37.714285714285715,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "a286ea51-3df8-4d7f-af75-2c26fcf61335",
         "username": "tdiamondp",
@@ -4232,7 +4196,8 @@
       "position": 41,
       "publisher_id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
       "points": 3365,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113045735,
       "two_player": false,
       "tags": [
@@ -4248,8 +4213,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
         "username": "dd45e642f",
@@ -4345,7 +4308,8 @@
       "position": 42,
       "publisher_id": "641c4703-3fdf-46db-85cb-e11b7fa67b26",
       "points": 3339,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 136396693,
       "two_player": false,
       "tags": [
@@ -4357,8 +4321,6 @@
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "641c4703-3fdf-46db-85cb-e11b7fa67b26",
         "username": "9a72d4147",
@@ -4839,7 +4801,8 @@
       "position": 43,
       "publisher_id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
       "points": 3314,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95851008,
       "two_player": false,
       "tags": [
@@ -4858,8 +4821,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
         "username": "d67dbbdbd",
@@ -4915,7 +4876,8 @@
       "position": 44,
       "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
       "points": 3290,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 131599104,
       "two_player": false,
       "tags": [
@@ -4930,8 +4892,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6e69711c-3e57-4683-960a-e656a6f61496",
         "username": "464d9bb2f",
@@ -5047,7 +5007,8 @@
       "position": 45,
       "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
       "points": 3266,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 109439644,
       "two_player": false,
       "tags": [
@@ -5065,8 +5026,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
         "username": "dfe1326bd",
@@ -5147,7 +5106,8 @@
       "position": 46,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
       "points": 3242,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 49072489,
       "two_player": false,
       "tags": [
@@ -5164,8 +5124,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "937fa816-514d-402b-82e7-6b2bac38f687",
         "username": "2e02d23df",
@@ -5231,7 +5189,8 @@
       "position": 47,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
       "points": 3219,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 75206202,
       "two_player": false,
       "tags": [
@@ -5247,8 +5206,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37.36363636363637,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "08caa61e-712b-43ee-8072-7926a36253a9",
         "username": "trickgmd",
@@ -5339,7 +5296,8 @@
       "position": 48,
       "publisher_id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
       "points": 3196,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113959291,
       "two_player": false,
       "tags": [
@@ -5355,8 +5313,6 @@
       "is_edel_pending": true,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
         "username": "gdskele",
@@ -5452,7 +5408,8 @@
       "position": 49,
       "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
       "points": 3173,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 115077305,
       "two_player": false,
       "tags": [
@@ -5470,8 +5427,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
         "username": "reesevt",
@@ -5512,7 +5467,8 @@
       "position": 50,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
       "points": 3151,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 120289520,
       "two_player": false,
       "tags": [
@@ -5528,8 +5484,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
         "username": "9041c2771",
@@ -5565,7 +5519,8 @@
       "position": 51,
       "publisher_id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
       "points": 3129,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113322063,
       "two_player": false,
       "tags": [
@@ -5584,8 +5539,6 @@
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
         "username": "c34b390ab",
@@ -5615,7 +5568,8 @@
       "position": 52,
       "publisher_id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
       "points": 3107,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 143718114,
       "two_player": false,
       "tags": [
@@ -5633,8 +5587,6 @@
       "is_edel_pending": true,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
         "username": "34aa83e5d",
@@ -5700,7 +5652,8 @@
       "position": 53,
       "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
       "points": 3086,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 85133223,
       "two_player": false,
       "tags": [
@@ -5717,8 +5670,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
         "username": "a59252232",
@@ -5784,7 +5735,8 @@
       "position": 54,
       "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
       "points": 3065,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 136981369,
       "two_player": false,
       "tags": [
@@ -5802,8 +5754,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
         "username": "bamvie",
@@ -5833,7 +5783,8 @@
       "position": 55,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
       "points": 3044,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 89414220,
       "two_player": false,
       "tags": [
@@ -5853,8 +5804,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
         "username": "cdmusic",
@@ -5900,7 +5849,8 @@
       "position": 56,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
       "points": 3024,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 90477539,
       "two_player": false,
       "tags": [
@@ -5918,8 +5868,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
         "username": "f7183736b",
@@ -5990,7 +5938,8 @@
       "position": 57,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
       "points": 3004,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113443235,
       "two_player": false,
       "tags": [
@@ -6005,8 +5954,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
         "username": "f2478ce0b",
@@ -6162,7 +6109,8 @@
       "position": 58,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 2984,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 120255728,
       "two_player": false,
       "tags": [
@@ -6178,8 +6126,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -6260,7 +6206,8 @@
       "position": 59,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
       "points": 2965,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 81139702,
       "two_player": false,
       "tags": [
@@ -6281,8 +6228,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36.666666666666664,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
         "username": "029747e6b",
@@ -6323,7 +6268,8 @@
       "position": 60,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
       "points": 2946,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 94359172,
       "two_player": false,
       "tags": [
@@ -6339,8 +6285,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
         "username": "132022d6e",
@@ -6381,7 +6325,8 @@
       "position": 61,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
       "points": 2927,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 126571887,
       "two_player": false,
       "tags": [
@@ -6389,6 +6334,7 @@
         "XL",
         "NONG",
         "Timings",
+        "New Swing",
         "Overall"
       ],
       "description": "Grayscale effect level that contains sections where the gameplay loops several times over (hence its name). Has a very chokeable ending.",
@@ -6397,8 +6343,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
         "username": "enfur",
@@ -6434,7 +6378,8 @@
       "position": 62,
       "publisher_id": "e3204e3a-aaaf-4a4c-a86d-d6353b4b01b8",
       "points": 2909,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 96314787,
       "two_player": false,
       "tags": [
@@ -6450,8 +6395,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "e3204e3a-aaaf-4a4c-a86d-d6353b4b01b8",
         "username": "a845b9994",
@@ -6532,7 +6475,8 @@
       "position": 63,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
       "points": 2890,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 83244159,
       "two_player": false,
       "tags": [
@@ -6549,8 +6493,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
         "username": "3f7122cb5",
@@ -6580,7 +6522,8 @@
       "position": 64,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
       "points": 2872,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 89187968,
       "two_player": false,
       "tags": [
@@ -6713,7 +6656,8 @@
       "position": 65,
       "publisher_id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
       "points": 2854,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 139508889,
       "two_player": false,
       "tags": [
@@ -6731,8 +6675,6 @@
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
         "username": "galaxygaming",
@@ -6762,7 +6704,8 @@
       "position": 66,
       "publisher_id": "7d9efb4f-8259-40eb-b123-41785a461e58",
       "points": 2837,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 90390075,
       "two_player": false,
       "tags": [
@@ -6778,8 +6721,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36.888888888888886,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "7d9efb4f-8259-40eb-b123-41785a461e58",
         "username": "linear6055",
@@ -6820,7 +6761,8 @@
       "position": 67,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
       "points": 2819,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 104232191,
       "two_player": false,
       "tags": [
@@ -6835,8 +6777,6 @@
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
         "username": "132022d6e",
@@ -6872,7 +6812,8 @@
       "position": 68,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
       "points": 2802,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 86084399,
       "two_player": false,
       "tags": [
@@ -6888,8 +6829,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36.90909090909091,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
         "username": "e177890c9",
@@ -7100,7 +7039,8 @@
       "position": 69,
       "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
       "points": 2786,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 114990369,
       "two_player": false,
       "tags": [
@@ -7118,8 +7058,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36.333333333333336,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
         "username": "0b27b56e7",
@@ -7149,7 +7087,8 @@
       "position": 70,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 2769,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 94969889,
       "two_player": false,
       "tags": [
@@ -7166,8 +7105,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -7208,7 +7145,8 @@
       "position": 71,
       "publisher_id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
       "points": 2752,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 62556400,
       "two_player": false,
       "tags": [
@@ -7226,8 +7164,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
         "username": "f8b0d22e2",
@@ -7408,7 +7344,8 @@
       "position": 72,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
       "points": 2736,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113256247,
       "two_player": false,
       "tags": [
@@ -7427,8 +7364,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
         "username": "nexel",
@@ -7458,7 +7393,8 @@
       "position": 73,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
       "points": 2720,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 82544060,
       "two_player": false,
       "tags": [
@@ -7475,8 +7411,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
         "username": "lordvadercraft",
@@ -7552,7 +7486,8 @@
       "position": 74,
       "publisher_id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
       "points": 2704,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 131497860,
       "two_player": false,
       "tags": [
@@ -7566,8 +7501,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
         "username": "happymoby",
@@ -7623,7 +7556,8 @@
       "position": 75,
       "publisher_id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
       "points": 2689,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113220284,
       "two_player": false,
       "tags": [
@@ -7639,8 +7573,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
         "username": "faa37b49c",
@@ -7706,7 +7638,8 @@
       "position": 76,
       "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
       "points": 2673,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 99703915,
       "two_player": false,
       "tags": [
@@ -7723,8 +7656,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
         "username": "arrowgazi",
@@ -7765,7 +7696,8 @@
       "position": 77,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
       "points": 2658,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 81011195,
       "two_player": false,
       "tags": [
@@ -7783,8 +7715,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
         "username": "f7183736b",
@@ -7825,7 +7755,8 @@
       "position": 78,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
       "points": 2643,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 119689515,
       "two_player": false,
       "tags": [
@@ -7841,8 +7772,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
         "username": "cairoxgd",
@@ -7983,7 +7912,8 @@
       "position": 79,
       "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
       "points": 2628,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 125317359,
       "two_player": false,
       "tags": [
@@ -8000,8 +7930,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
         "username": "wabasmeves",
@@ -8031,7 +7959,8 @@
       "position": 80,
       "publisher_id": "e531c894-36a5-4974-93b5-9f1211112c4c",
       "points": 2614,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 114999625,
       "two_player": false,
       "tags": [
@@ -8046,8 +7975,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "e531c894-36a5-4974-93b5-9f1211112c4c",
         "username": "0e9cb054b",
@@ -8203,7 +8130,8 @@
       "position": 81,
       "publisher_id": "54e04276-3c19-448a-b6a8-2cd9e32eb53f",
       "points": 2599,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93339534,
       "two_player": false,
       "tags": [
@@ -8220,8 +8148,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "54e04276-3c19-448a-b6a8-2cd9e32eb53f",
         "username": "cb82940cb",
@@ -8597,7 +8523,8 @@
       "position": 82,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
       "points": 2585,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95719795,
       "two_player": false,
       "tags": [
@@ -8615,8 +8542,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
         "username": "ef751dff2",
@@ -8652,7 +8577,8 @@
       "position": 83,
       "publisher_id": "03838d84-1883-4497-a978-4a768d5ad0e6",
       "points": 2571,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95998005,
       "two_player": false,
       "tags": [
@@ -8667,8 +8593,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "03838d84-1883-4497-a978-4a768d5ad0e6",
         "username": "dccbcf635",
@@ -8744,7 +8668,8 @@
       "position": 84,
       "publisher_id": "f3b9d61f-0f2a-494c-8c60-e3e7a940af48",
       "points": 2557,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110500920,
       "two_player": false,
       "tags": [
@@ -8759,8 +8684,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "f3b9d61f-0f2a-494c-8c60-e3e7a940af48",
         "username": "dooorami",
@@ -8911,7 +8834,8 @@
       "position": 85,
       "publisher_id": "5fa42946-e1eb-4e15-8d34-3aa39f70e8d7",
       "points": 2543,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95049815,
       "two_player": false,
       "tags": [
@@ -8929,8 +8853,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5fa42946-e1eb-4e15-8d34-3aa39f70e8d7",
         "username": "2ab6a60cf",
@@ -8971,7 +8893,8 @@
       "position": 86,
       "publisher_id": "6483b731-b07d-4d47-8846-8917005f59cc",
       "points": 2529,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 105593215,
       "two_player": false,
       "tags": [
@@ -8986,8 +8909,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6483b731-b07d-4d47-8846-8917005f59cc",
         "username": "532ceaf4c",
@@ -9033,7 +8954,8 @@
       "position": 87,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
       "points": 2516,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 125788781,
       "two_player": false,
       "tags": [
@@ -9047,8 +8969,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
         "username": "laranjoo",
@@ -9119,7 +9039,8 @@
       "position": 88,
       "publisher_id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
       "points": 2502,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 128093374,
       "two_player": false,
       "tags": [
@@ -9139,8 +9060,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
         "username": "skyavoxii",
@@ -9176,7 +9095,8 @@
       "position": 89,
       "publisher_id": "5e792331-4497-44eb-8b72-fead7411f535",
       "points": 2489,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 82249742,
       "two_player": false,
       "tags": [
@@ -9192,8 +9112,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5e792331-4497-44eb-8b72-fead7411f535",
         "username": "0e8e8d11c",
@@ -9734,7 +9652,8 @@
       "position": 90,
       "publisher_id": "94f74a2c-2671-494a-a230-df20e396d61a",
       "points": 2476,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 122941596,
       "two_player": false,
       "tags": [
@@ -9751,8 +9670,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "94f74a2c-2671-494a-a230-df20e396d61a",
         "username": "billzer_",
@@ -9782,7 +9699,8 @@
       "position": 91,
       "publisher_id": "21608db7-7015-4558-aa56-6ab08f0e1873",
       "points": 2463,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 136135870,
       "two_player": false,
       "tags": [
@@ -9798,8 +9716,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "21608db7-7015-4558-aa56-6ab08f0e1873",
         "username": "vonical6",
@@ -9829,7 +9745,8 @@
       "position": 92,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
       "points": 2451,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 96083028,
       "two_player": false,
       "tags": [
@@ -9847,8 +9764,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
         "username": "ef751dff2",
@@ -9878,7 +9793,8 @@
       "position": 93,
       "publisher_id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
       "points": 2438,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 133489881,
       "two_player": false,
       "tags": [
@@ -9892,8 +9808,6 @@
       "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
         "username": "at424",
@@ -9934,7 +9848,8 @@
       "position": 94,
       "publisher_id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
       "points": 2425,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93340783,
       "two_player": false,
       "tags": [
@@ -9950,8 +9865,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
         "username": "spcreat",
@@ -9992,7 +9905,8 @@
       "position": 95,
       "publisher_id": "9f3ac7f4-ee5c-4694-9104-9cb8f9b196b0",
       "points": 2413,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 103925676,
       "two_player": false,
       "tags": [
@@ -10013,8 +9927,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9f3ac7f4-ee5c-4694-9104-9cb8f9b196b0",
         "username": "25bc072e2",
@@ -10044,7 +9956,8 @@
       "position": 96,
       "publisher_id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
       "points": 2401,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 72315402,
       "two_player": false,
       "tags": [
@@ -10062,8 +9975,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.666666666666664,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
         "username": "4ced9fe4f",
@@ -10093,7 +10004,8 @@
       "position": 97,
       "publisher_id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
       "points": 2389,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 73214186,
       "two_player": false,
       "tags": [
@@ -10108,8 +10020,6 @@
       "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
         "username": "87adcadc6",
@@ -10145,7 +10055,8 @@
       "position": 98,
       "publisher_id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
       "points": 2377,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93792764,
       "two_player": false,
       "tags": [
@@ -10163,8 +10074,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
         "username": "33b04db43",
@@ -10220,7 +10129,8 @@
       "position": 99,
       "publisher_id": "ec24d705-358a-48cd-9e90-2fca0002ef97",
       "points": 2365,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 129235528,
       "two_player": false,
       "tags": [
@@ -10235,8 +10145,6 @@
       "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ec24d705-358a-48cd-9e90-2fca0002ef97",
         "username": "blastuh",
@@ -10282,7 +10190,8 @@
       "position": 100,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
       "points": 2353,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 69685815,
       "two_player": false,
       "tags": [
@@ -10298,8 +10207,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.07142857142857,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
         "username": "f2478ce0b",
@@ -10450,7 +10357,8 @@
       "position": 101,
       "publisher_id": "be18a588-6ac4-4368-aaef-2b98c6f046e8",
       "points": 2342,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 59075347,
       "two_player": false,
       "tags": [
@@ -10466,8 +10374,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.04,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "be18a588-6ac4-4368-aaef-2b98c6f046e8",
         "username": "-",
@@ -10553,7 +10459,8 @@
       "position": 102,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
       "points": 2330,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 108708033,
       "two_player": false,
       "tags": [
@@ -10571,8 +10478,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
         "username": "9041c2771",
@@ -10628,7 +10533,8 @@
       "position": 103,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
       "points": 2319,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110991117,
       "two_player": false,
       "tags": [
@@ -10645,8 +10551,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.857142857142854,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
         "username": "0993c47a5",
@@ -10817,7 +10721,8 @@
       "position": 104,
       "publisher_id": "1d316e4d-f0ca-4e3d-b00d-c0ca6db0be7d",
       "points": 2308,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95031870,
       "two_player": false,
       "tags": [
@@ -10836,8 +10741,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "1d316e4d-f0ca-4e3d-b00d-c0ca6db0be7d",
         "username": "005b790f0",
@@ -11008,7 +10911,8 @@
       "position": 105,
       "publisher_id": "81af659d-53da-4fad-9b49-bc2516413a4d",
       "points": 2297,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93917362,
       "two_player": false,
       "tags": [
@@ -11025,8 +10929,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.75,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
         "username": "f0bdf532d",
@@ -11182,7 +11084,8 @@
       "position": 106,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
       "points": 2286,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 137757402,
       "two_player": false,
       "tags": [
@@ -11195,8 +11098,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
         "username": "nexel",
@@ -11226,7 +11127,8 @@
       "position": 107,
       "publisher_id": "a321cb86-4754-4953-ab4b-8858e46bc243",
       "points": 2275,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 109947627,
       "two_player": false,
       "tags": [
@@ -11244,8 +11146,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.666666666666664,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "a321cb86-4754-4953-ab4b-8858e46bc243",
         "username": "62861d433",
@@ -11361,7 +11261,8 @@
       "position": 108,
       "publisher_id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
       "points": 2264,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 94858072,
       "two_player": false,
       "tags": [
@@ -11379,8 +11280,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
         "username": "11511bf62",
@@ -11431,7 +11330,8 @@
       "position": 109,
       "publisher_id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
       "points": 2253,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 107741051,
       "two_player": false,
       "tags": [
@@ -11447,8 +11347,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.4,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
         "username": "iiilaseriii",
@@ -11549,7 +11447,8 @@
       "position": 110,
       "publisher_id": "379e46f0-5141-42c2-85fe-ee77bad26c6d",
       "points": 2243,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 130464801,
       "two_player": false,
       "tags": [
@@ -11564,8 +11463,6 @@
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "379e46f0-5141-42c2-85fe-ee77bad26c6d",
         "username": "sync.tm",
@@ -11611,7 +11508,8 @@
       "position": 111,
       "publisher_id": "0d655908-d2ac-4144-946c-f8092620a51d",
       "points": 2232,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 60978746,
       "two_player": false,
       "tags": [
@@ -11627,8 +11525,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.96153846153846,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "0d655908-d2ac-4144-946c-f8092620a51d",
         "username": "-",
@@ -11699,7 +11595,8 @@
       "position": 112,
       "publisher_id": "c3a17a45-2581-4ebc-a46e-da89f60e75d8",
       "points": 2222,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 71025973,
       "two_player": false,
       "tags": [
@@ -11717,8 +11614,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "c3a17a45-2581-4ebc-a46e-da89f60e75d8",
         "username": "3c49b3205",
@@ -11769,7 +11664,8 @@
       "position": 113,
       "publisher_id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
       "points": 2211,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 107238250,
       "two_player": false,
       "tags": [
@@ -11786,8 +11682,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.8,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
         "username": "d67dbbdbd",
@@ -11868,7 +11762,8 @@
       "position": 114,
       "publisher_id": "7de91471-9010-48bd-8d14-f5b35b86b3d8",
       "points": 2201,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 95176417,
       "two_player": false,
       "tags": [
@@ -11887,8 +11782,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "7de91471-9010-48bd-8d14-f5b35b86b3d8",
         "username": "bd5a2d8f9",
@@ -11934,7 +11827,8 @@
       "position": 115,
       "publisher_id": "639b1c8d-b261-48a7-bf4e-acc808a02a04",
       "points": 2191,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 90057148,
       "two_player": false,
       "tags": [
@@ -11952,8 +11846,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "639b1c8d-b261-48a7-bf4e-acc808a02a04",
         "username": "54269f480",
@@ -11983,7 +11875,8 @@
       "position": 116,
       "publisher_id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
       "points": 2181,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 76543324,
       "two_player": false,
       "tags": [
@@ -12000,8 +11893,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
         "username": "0e7d90170",
@@ -12031,7 +11922,8 @@
       "position": 117,
       "publisher_id": "eaf3a165-3b5e-436d-b3eb-366ae4e9ab0e",
       "points": 2171,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 97086864,
       "two_player": false,
       "tags": [
@@ -12048,8 +11940,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "eaf3a165-3b5e-436d-b3eb-366ae4e9ab0e",
         "username": "_swib",
@@ -12085,7 +11975,8 @@
       "position": 118,
       "publisher_id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
       "points": 2161,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 88203501,
       "two_player": false,
       "tags": [
@@ -12102,8 +11993,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.6,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
         "username": "82050ae5e",
@@ -12179,7 +12068,8 @@
       "position": 119,
       "publisher_id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
       "points": 2152,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 104672501,
       "two_player": false,
       "tags": [
@@ -12196,8 +12086,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
         "username": "50af4664a",
@@ -12248,7 +12136,8 @@
       "position": 120,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
       "points": 2142,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 75286957,
       "two_player": false,
       "tags": [
@@ -12268,8 +12157,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.81818181818182,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
         "username": "ef751dff2",
@@ -12325,7 +12212,8 @@
       "position": 121,
       "publisher_id": "69394575-3534-49bf-8dab-f9c34be511e6",
       "points": 2133,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 137334994,
       "two_player": false,
       "tags": [
@@ -12338,8 +12226,6 @@
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "69394575-3534-49bf-8dab-f9c34be511e6",
         "username": "yelda_gd",
@@ -12375,7 +12261,8 @@
       "position": 122,
       "publisher_id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
       "points": 2123,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 105748155,
       "two_player": false,
       "tags": [
@@ -12393,8 +12280,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
         "username": "40f54eab6",
@@ -12424,7 +12309,8 @@
       "position": 123,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
       "points": 2114,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 88442157,
       "two_player": false,
       "tags": [
@@ -12440,8 +12326,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.833333333333336,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b346ac5e-5694-4ad1-97de-d085f889e202",
         "username": "fbe1c6e9a",
@@ -12482,7 +12366,8 @@
       "position": 124,
       "publisher_id": "f474ba2b-e0e1-4374-a4c2-ddebcebc2ec5",
       "points": 2104,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 87130877,
       "two_player": false,
       "tags": [
@@ -12499,8 +12384,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "f474ba2b-e0e1-4374-a4c2-ddebcebc2ec5",
         "username": "75194a7b1",
@@ -12536,7 +12419,8 @@
       "position": 125,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
       "points": 2095,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 93732702,
       "two_player": false,
       "tags": [
@@ -12553,8 +12437,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.5,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b346ac5e-5694-4ad1-97de-d085f889e202",
         "username": "fbe1c6e9a",
@@ -12595,7 +12477,8 @@
       "position": 126,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
       "points": 2086,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 110705712,
       "two_player": false,
       "tags": [
@@ -12612,8 +12495,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
         "username": "akunakun",
@@ -12649,7 +12530,8 @@
       "position": 127,
       "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
       "points": 2077,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 71885708,
       "two_player": false,
       "tags": [
@@ -12665,8 +12547,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
         "username": "cbe29e54f",
@@ -12767,7 +12647,8 @@
       "position": 128,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
       "points": 2068,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 113364415,
       "two_player": false,
       "tags": [
@@ -12784,8 +12665,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
         "username": "9041c2771",
@@ -12821,7 +12700,8 @@
       "position": 129,
       "publisher_id": "48bc2cab-81bb-4c63-a653-bf1c31ddacfb",
       "points": 2059,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 87071894,
       "two_player": false,
       "tags": [
@@ -12838,8 +12718,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "48bc2cab-81bb-4c63-a653-bf1c31ddacfb",
         "username": "3122242d0",
@@ -12880,7 +12758,8 @@
       "position": 130,
       "publisher_id": "69b31464-03ea-4543-8013-4020121bce2c",
       "points": 2050,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 112242564,
       "two_player": false,
       "tags": [
@@ -12896,8 +12775,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "69b31464-03ea-4543-8013-4020121bce2c",
         "username": "5b3bb1525",
@@ -12953,7 +12830,8 @@
       "position": 131,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
       "points": 2042,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 79771070,
       "two_player": false,
       "tags": [
@@ -12969,8 +12847,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35.142857142857146,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
         "username": "aa03cd685",
@@ -13021,7 +12897,8 @@
       "position": 132,
       "publisher_id": "249ca75a-8d0b-4c23-a57a-2185b62e35cd",
       "points": 2033,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 127023313,
       "two_player": false,
       "tags": [
@@ -13036,8 +12913,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "249ca75a-8d0b-4c23-a57a-2185b62e35cd",
         "username": "df78358d5",
@@ -13067,7 +12942,8 @@
       "position": 133,
       "publisher_id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
       "points": 2025,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 100990392,
       "two_player": false,
       "tags": [
@@ -13084,8 +12960,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
         "username": "befc49509",
@@ -13121,7 +12995,8 @@
       "position": 134,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
       "points": 2016,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 115380769,
       "two_player": false,
       "tags": [
@@ -13139,8 +13014,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
         "username": "enfur",
@@ -13181,7 +13054,8 @@
       "position": 135,
       "publisher_id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
       "points": 2008,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 80714349,
       "two_player": false,
       "tags": [
@@ -13199,8 +13073,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
         "username": "4f0001e14",
@@ -13271,7 +13143,8 @@
       "position": 136,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
       "points": 1999,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 71434979,
       "two_player": false,
       "tags": [
@@ -13289,8 +13162,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.75,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
         "username": "029747e6b",
@@ -13331,7 +13202,8 @@
       "position": 137,
       "publisher_id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
       "points": 1991,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 120060187,
       "two_player": false,
       "tags": [
@@ -13348,8 +13220,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
         "username": "6517cb72e",
@@ -13445,7 +13315,8 @@
       "position": 138,
       "publisher_id": "b22b4f8f-868c-4bc7-a71f-c57c70bf4a61",
       "points": 1983,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 58673581,
       "two_player": false,
       "tags": [
@@ -13462,8 +13333,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.375,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "b22b4f8f-868c-4bc7-a71f-c57c70bf4a61",
         "username": "4e866b74f",
@@ -13569,7 +13438,8 @@
       "position": 139,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
       "points": 1975,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 65588448,
       "two_player": false,
       "tags": [
@@ -13589,8 +13459,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
         "username": "aa03cd685",
@@ -13666,7 +13534,8 @@
       "position": 140,
       "publisher_id": "ebc9e80a-bd4f-4a9e-887c-1652d7f77563",
       "points": 1966,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 128385946,
       "two_player": false,
       "tags": [
@@ -13682,8 +13551,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ebc9e80a-bd4f-4a9e-887c-1652d7f77563",
         "username": "1c31701f0",
@@ -13719,7 +13586,8 @@
       "position": 141,
       "publisher_id": "5e42f5cb-e1de-478d-8305-2b4032767f01",
       "points": 1958,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 114530859,
       "two_player": false,
       "tags": [
@@ -13735,8 +13603,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.25,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "5e42f5cb-e1de-478d-8305-2b4032767f01",
         "username": "hazelmrow",
@@ -13766,7 +13632,8 @@
       "position": 142,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
       "points": 1950,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 78435955,
       "two_player": false,
       "tags": [
@@ -13784,8 +13651,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.333333333333336,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
         "username": "029747e6b",
@@ -13951,7 +13816,8 @@
       "position": 143,
       "publisher_id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
       "points": 1943,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 137586316,
       "two_player": false,
       "tags": [
@@ -13964,8 +13830,6 @@
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
         "username": "ec5f043f5",
@@ -14326,7 +14190,8 @@
       "position": 144,
       "publisher_id": "6eca29e0-f940-45e3-95b1-fa263abc30e3",
       "points": 1935,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 99495619,
       "two_player": false,
       "tags": [
@@ -14344,8 +14209,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.75,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6eca29e0-f940-45e3-95b1-fa263abc30e3",
         "username": "a45050aac",
@@ -14375,7 +14238,8 @@
       "position": 145,
       "publisher_id": "affbe953-0f7e-4f4b-bf21-86840bcdfb96",
       "points": 1927,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 122389640,
       "two_player": false,
       "tags": [
@@ -14393,8 +14257,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "affbe953-0f7e-4f4b-bf21-86840bcdfb96",
         "username": "1f15aa2e0",
@@ -14424,7 +14286,8 @@
       "position": 146,
       "publisher_id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
       "points": 1919,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 88611404,
       "two_player": false,
       "tags": [
@@ -14440,8 +14303,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34.333333333333336,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
         "username": "50d740ce9",
@@ -14487,7 +14348,8 @@
       "position": 147,
       "publisher_id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
       "points": 1912,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 122196131,
       "two_player": false,
       "tags": [
@@ -14503,8 +14365,6 @@
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
         "username": ".bims.",
@@ -14540,7 +14400,8 @@
       "position": 148,
       "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
       "points": 1904,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 125617849,
       "two_player": false,
       "tags": [
@@ -14556,8 +14417,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "6e69711c-3e57-4683-960a-e656a6f61496",
         "username": "464d9bb2f",
@@ -14728,7 +14587,8 @@
       "position": 149,
       "publisher_id": "966f2102-9511-47c0-b51b-b042aa4f50be",
       "points": 1896,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 112231282,
       "two_player": false,
       "tags": [
@@ -14742,8 +14602,6 @@
       "is_edel_pending": false,
       "gddl_tier": 34,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
         "username": "kazagd",
@@ -14859,7 +14717,8 @@
       "position": 150,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
       "points": 1889,
-      "legacy": false,
+      "status": "MainList",
+      "requires_raw_footage": false,
       "level_id": 105625871,
       "two_player": false,
       "tags": [
@@ -14874,8 +14733,6 @@
       "is_edel_pending": false,
       "gddl_tier": 33,
       "nlw_tier": null,
-      "status": "MainList",
-      "requires_raw_footage": false,
       "publisher": {
         "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
         "username": "enfur",
