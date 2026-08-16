@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T16:12:24.260Z",
+  "generatedAt": "2026-08-16T17:11:09.123Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4074,29 +4074,7 @@
       "edel_enjoyment": 79.16666667,
       "is_edel_pending": true,
       "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
-        "username": "f076f3539",
-        "global_name": "SnowEye"
-      },
-      "verifications": [
-        {
-          "id": "2b45c81b-187a-4ca6-a535-326de2813785",
-          "submitted_by": {
-            "id": "6964849a-ca06-4310-a1e7-f3e2fd4bf112",
-            "username": "9114226b2",
-            "global_name": "[개섹스] 구아이"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=U19vmpenb9g&t=2s",
-          "hide_video": false,
-          "achieved_at": "2026-02-28T03:46:23Z",
-          "created_at": "2026-04-09T16:56:01.038406Z",
-          "updated_at": "2026-04-09T16:56:01.038406Z"
-        }
-      ],
-      "creators": []
+      "nlw_tier": null
     },
     {
       "id": "b0f62595-314d-4648-b23e-12756382c126",
