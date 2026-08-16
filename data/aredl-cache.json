@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:10:20.293Z",
+  "generatedAt": "2026-08-16T22:09:57.750Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4796,11 +4796,123 @@
       ]
     },
     {
+      "id": "99bfbecd-4821-4914-85fd-dd0bb613510e",
+      "name": "Silentlocked",
+      "position": 43,
+      "publisher_id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
+      "points": 3314,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 113959291,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Wave",
+        "Ship",
+        "Memory"
+      ],
+      "description": "",
+      "song": null,
+      "edel_enjoyment": 47,
+      "is_edel_pending": true,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
+        "username": "gdskele",
+        "global_name": "Skele"
+      },
+      "verifications": [
+        {
+          "id": "67c8812b-a739-4171-a1c9-fa269aa21786",
+          "submitted_by": {
+            "id": "ad1c2125-0a17-4abd-a206-4dd029e6f6b8",
+            "username": "645c3f148",
+            "global_name": "TFIBB"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=O-IQeUdEGvI",
+          "hide_video": false,
+          "achieved_at": "2025-01-07T21:44:24Z",
+          "created_at": "2025-12-13T19:16:38.352665Z",
+          "updated_at": "2025-12-13T19:16:38.352665Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "0872d1db-b3d0-4ace-afe7-703848a90caa",
+          "username": "dafc70976",
+          "global_name": "Zeostar"
+        },
+        {
+          "id": "2c722221-bbc0-40e5-b24f-09982e5c1cc3",
+          "username": "5a12c209c",
+          "global_name": "TheTrueEclipse"
+        },
+        {
+          "id": "512a3ff1-c46c-42a6-a817-70aef6fd626d",
+          "username": "minix9",
+          "global_name": "Minix"
+        },
+        {
+          "id": "65a1b0df-795a-4d7c-914e-cdffb094c831",
+          "username": "a49fc1443",
+          "global_name": "Connot"
+        },
+        {
+          "id": "84b762f0-7288-476d-8e86-a81f1bd8bc1c",
+          "username": "4e7c807c6",
+          "global_name": "VERSU5"
+        },
+        {
+          "id": "a16ae073-0288-4d28-8382-1a35b958c584",
+          "username": "e4033ea88",
+          "global_name": "iRosie"
+        },
+        {
+          "id": "a7ca5a3a-978a-47db-87c3-4a5f81e420c0",
+          "username": "3cdc33a47",
+          "global_name": "Jakedog"
+        },
+        {
+          "id": "acc246f0-22c8-4e1e-af16-0f43b658e3d7",
+          "username": "6e9ca28b6",
+          "global_name": "CamsOverHere"
+        },
+        {
+          "id": "c9e9678a-9c93-4968-aa9b-4e2133d971ec",
+          "username": "83c658862",
+          "global_name": "ErisethSP"
+        },
+        {
+          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
+          "username": "rynoxiouss",
+          "global_name": "Rynoxious"
+        },
+        {
+          "id": "e8a6dcaa-e94e-4aa0-aadf-1f90283049ad",
+          "username": "d84edc8ee",
+          "global_name": "Megantwoo"
+        },
+        {
+          "id": "65953aad-0af0-4183-942e-183de66aa7b6",
+          "username": "zkazia",
+          "global_name": "Kazia"
+        },
+        {
+          "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
+          "username": "gdskele",
+          "global_name": "Skele"
+        }
+      ]
+    },
+    {
       "id": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
       "name": "Eyes in the Water",
-      "position": 43,
+      "position": 44,
       "publisher_id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
-      "points": 3314,
+      "points": 3290,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95851008,
@@ -4873,9 +4985,9 @@
     {
       "id": "210ae17a-e6bf-4851-91be-85501194dbf3",
       "name": "Voltage (ThePurgatory)",
-      "position": 44,
+      "position": 45,
       "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
-      "points": 3290,
+      "points": 3266,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131599104,
@@ -5004,9 +5116,9 @@
     {
       "id": "72bf2c18-1299-408b-bca2-3da986956632",
       "name": "KOSETSU",
-      "position": 45,
+      "position": 46,
       "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-      "points": 3266,
+      "points": 3242,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 109439644,
@@ -5103,9 +5215,9 @@
     {
       "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
       "name": "Through The Gates",
-      "position": 46,
+      "position": 47,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3242,
+      "points": 3219,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49072489,
@@ -5186,9 +5298,9 @@
     {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 47,
+      "position": 48,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3219,
+      "points": 3196,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5287,118 +5399,6 @@
           "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
           "username": "d1219692d",
           "global_name": "Hantein"
-        }
-      ]
-    },
-    {
-      "id": "99bfbecd-4821-4914-85fd-dd0bb613510e",
-      "name": "Silentlocked",
-      "position": 48,
-      "publisher_id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-      "points": 3196,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 113959291,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Wave",
-        "Ship",
-        "Memory"
-      ],
-      "description": "",
-      "song": null,
-      "edel_enjoyment": 47,
-      "is_edel_pending": true,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-        "username": "gdskele",
-        "global_name": "Skele"
-      },
-      "verifications": [
-        {
-          "id": "67c8812b-a739-4171-a1c9-fa269aa21786",
-          "submitted_by": {
-            "id": "ad1c2125-0a17-4abd-a206-4dd029e6f6b8",
-            "username": "645c3f148",
-            "global_name": "TFIBB"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=O-IQeUdEGvI",
-          "hide_video": false,
-          "achieved_at": "2025-01-07T21:44:24Z",
-          "created_at": "2025-12-13T19:16:38.352665Z",
-          "updated_at": "2025-12-13T19:16:38.352665Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "0872d1db-b3d0-4ace-afe7-703848a90caa",
-          "username": "dafc70976",
-          "global_name": "Zeostar"
-        },
-        {
-          "id": "2c722221-bbc0-40e5-b24f-09982e5c1cc3",
-          "username": "5a12c209c",
-          "global_name": "TheTrueEclipse"
-        },
-        {
-          "id": "512a3ff1-c46c-42a6-a817-70aef6fd626d",
-          "username": "minix9",
-          "global_name": "Minix"
-        },
-        {
-          "id": "65a1b0df-795a-4d7c-914e-cdffb094c831",
-          "username": "a49fc1443",
-          "global_name": "Connot"
-        },
-        {
-          "id": "84b762f0-7288-476d-8e86-a81f1bd8bc1c",
-          "username": "4e7c807c6",
-          "global_name": "VERSU5"
-        },
-        {
-          "id": "a16ae073-0288-4d28-8382-1a35b958c584",
-          "username": "e4033ea88",
-          "global_name": "iRosie"
-        },
-        {
-          "id": "a7ca5a3a-978a-47db-87c3-4a5f81e420c0",
-          "username": "3cdc33a47",
-          "global_name": "Jakedog"
-        },
-        {
-          "id": "acc246f0-22c8-4e1e-af16-0f43b658e3d7",
-          "username": "6e9ca28b6",
-          "global_name": "CamsOverHere"
-        },
-        {
-          "id": "c9e9678a-9c93-4968-aa9b-4e2133d971ec",
-          "username": "83c658862",
-          "global_name": "ErisethSP"
-        },
-        {
-          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
-          "username": "rynoxiouss",
-          "global_name": "Rynoxious"
-        },
-        {
-          "id": "e8a6dcaa-e94e-4aa0-aadf-1f90283049ad",
-          "username": "d84edc8ee",
-          "global_name": "Megantwoo"
-        },
-        {
-          "id": "65953aad-0af0-4183-942e-183de66aa7b6",
-          "username": "zkazia",
-          "global_name": "Kazia"
-        },
-        {
-          "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-          "username": "gdskele",
-          "global_name": "Skele"
         }
       ]
     },
