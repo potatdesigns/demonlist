@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T16:14:34.796Z",
+  "generatedAt": "2026-08-17T17:18:46.570Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3862,7 +3862,10 @@
       "requires_raw_footage": false,
       "level_id": 141052363,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "XL"
+      ],
       "description": null,
       "song": null,
       "edel_enjoyment": null,
