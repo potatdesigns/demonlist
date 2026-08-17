@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:18:46.570Z",
+  "generatedAt": "2026-08-17T18:22:07.703Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3570,6 +3570,7 @@
       "level_id": 48991380,
       "two_player": false,
       "tags": [
+        "2.1",
         "Long"
       ],
       "description": null,
@@ -4316,6 +4317,7 @@
       "level_id": 136396693,
       "two_player": false,
       "tags": [
+        "2.2",
         "XXL+"
       ],
       "description": null,
@@ -6720,7 +6722,7 @@
       ],
       "description": "A remake of Solar Circles, with warm colours and blue highlights. Consists of unique structuring and a lot of movements on the structures. Also features Janet, the sun at the halfway point.",
       "song": 493898,
-      "edel_enjoyment": 67.70454545,
+      "edel_enjoyment": 67.86666667,
       "is_edel_pending": false,
       "gddl_tier": 36.888888888888886,
       "nlw_tier": null,
