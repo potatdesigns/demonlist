@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T22:12:51.651Z",
+  "generatedAt": "2026-08-17T23:13:06.907Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -11095,7 +11095,14 @@
       "two_player": false,
       "tags": [
         "2.2",
-        "Long"
+        "Long",
+        "Clicksync",
+        "Timings",
+        "Slow-Paced",
+        "Nerve Control",
+        "Ship",
+        "Wave",
+        "Overall"
       ],
       "description": null,
       "song": null,
