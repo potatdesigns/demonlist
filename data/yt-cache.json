@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T04:05:00.372Z",
+  "generatedAt": "2026-08-20T04:36:12.942Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3067,48 +3067,6 @@
       },
       "discoveredAt": "2026-08-19T08:43:39.972Z"
     },
-    "1ead6aa0-ae53-40f6-939d-d073abb87d13": {
-      "name": "Swing Swing",
-      "position": 149,
-      "verifier": {
-        "id": "_hL9hFU3WI4",
-        "url": "https://www.youtube.com/watch?v=_hL9hFU3WI4",
-        "title": "(Verified!) Swing Swing 100%!",
-        "channel": "Whizkid05",
-        "viewCount": 121571,
-        "viewsCheckedAt": "2026-08-20T04:04:59.715Z"
-      },
-      "showcase": {
-        "id": "Pjj-R6bsGAg",
-        "url": "https://www.youtube.com/watch?v=Pjj-R6bsGAg",
-        "title": "(Extreme Demon) ''Swing Swing'' by KazaGD | Geometry Dash",
-        "channel": "Nexus [GD]",
-        "viewCount": 249422,
-        "viewsCheckedAt": "2026-08-20T04:04:59.715Z"
-      },
-      "discoveredAt": "2026-08-19T08:43:39.972Z"
-    },
-    "65ba56d3-b399-4adc-b120-aa8850436241": {
-      "name": "Guideless Goobering",
-      "position": 150,
-      "verifier": {
-        "id": "pFxdGKYQrcg",
-        "url": "https://www.youtube.com/watch?v=pFxdGKYQrcg",
-        "title": "Guideless Goobering 100% - Extreme Demon Verification",
-        "channel": "Zytrox",
-        "viewCount": 36257,
-        "viewsCheckedAt": "2026-08-20T04:04:59.715Z"
-      },
-      "showcase": {
-        "id": "bdYZpka1K4o",
-        "url": "https://www.youtube.com/watch?v=bdYZpka1K4o",
-        "title": "【4K】\"Guideless Goobering\" by Enfur & More (Extreme Demon) | GD 2.2",
-        "channel": "zof",
-        "viewCount": 1884,
-        "viewsCheckedAt": "2026-08-20T04:04:59.715Z"
-      },
-      "discoveredAt": "2026-08-19T08:43:39.972Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 52,
@@ -3150,12 +3108,33 @@
         "viewsCheckedAt": "2026-08-20T04:04:59.715Z"
       },
       "discoveredAt": "2026-08-19T08:43:39.972Z"
+    },
+    "01746dbe-64c3-486a-ba55-e2008bedaed1": {
+      "name": "Pinnacle of Life",
+      "position": 60,
+      "verifier": {
+        "id": "gQl5iY1ekyE",
+        "url": "https://www.youtube.com/watch?v=gQl5iY1ekyE",
+        "title": "(VERIFIED) Pinnacle of Life 100% (IMMORTAL DEMON by skzyl, seb, & more)",
+        "channel": "vonic",
+        "viewCount": 3272,
+        "viewsCheckedAt": "2026-08-20T04:36:12.942Z"
+      },
+      "showcase": {
+        "id": "aOdZwNy0su4",
+        "url": "https://www.youtube.com/watch?v=aOdZwNy0su4",
+        "title": "【4K】 \"Pinnacle of Life\" by skzyl & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 1281,
+        "viewsCheckedAt": "2026-08-20T04:36:12.942Z"
+      },
+      "discoveredAt": "2026-08-20T04:36:12.942Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "5oCeSYNLrDs",
+      "newestVideoId": "_Hxv-x0Cf1c",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31724,12 +31703,23 @@
           ],
           "description": "Enjoy\nLevel: Angelicide by MadisonYuko & lexycat\nID: 102135018\nSong: https://www.youtube.com/watch?v=KzyVI6463QY\n[Botted Showcase]",
           "checkedAt": "2026-08-19T08:43:00.308Z"
+        },
+        "_Hxv-x0Cf1c": {
+          "title": "Drawlocked",
+          "channel": "Nexus [GD]",
+          "viewCount": 74123,
+          "levelIds": [
+            "146385102",
+            "503731"
+          ],
+          "description": "Level: Drawlocked by ConfusedSeries\nID: 146385102\nSong: Deadlocked by F-777\nhttps://www.newgrounds.com/audio/listen/503731",
+          "checkedAt": "2026-08-20T04:36:09.755Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "-yw86p-yAx0",
+      "newestVideoId": "iQNBOEi-ziI",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55498,6 +55488,16 @@
             "24301797"
           ],
           "checkedAt": "2026-08-19T08:43:00.963Z"
+        },
+        "iQNBOEi-ziI": {
+          "title": "GRIEF x AETERNUS [IMPOSSIBLE.]",
+          "channel": "Neiro",
+          "viewCount": 42809,
+          "levelIds": [
+            "482872",
+            "145109287"
+          ],
+          "checkedAt": "2026-08-20T04:36:10.381Z"
         }
       }
     },
@@ -92759,7 +92759,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "aqjyGzV6ZgU",
+      "newestVideoId": "Agy9Uf6D1KY",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -103245,6 +103245,15 @@
             "144012996"
           ],
           "checkedAt": "2026-08-19T08:43:02.310Z"
+        },
+        "Agy9Uf6D1KY": {
+          "title": "【4K】\"Prismline\" by ItsHarryy & More (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 13,
+          "levelIds": [
+            "135148907"
+          ],
+          "checkedAt": "2026-08-20T04:36:11.848Z"
         }
       }
     },
@@ -112188,5 +112197,7 @@
       }
     }
   },
-  "queue": []
+  "queue": [
+    "a7dce4c2-1503-4a62-94b5-15afaf40e0dc"
+  ]
 }
