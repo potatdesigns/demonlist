@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T10:18:50.803Z",
+  "generatedAt": "2026-08-20T11:16:48.223Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3858,14 +3858,15 @@
       "name": "Sacrifice",
       "position": 37,
       "publisher_id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-      "points": 3473,
+      "points": 3474,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 141052363,
       "two_player": false,
       "tags": [
         "2.2",
-        "XL"
+        "XL",
+        "NONG"
       ],
       "description": null,
       "song": null,
