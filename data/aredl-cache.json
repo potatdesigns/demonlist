@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T19:23:09.823Z",
+  "generatedAt": "2026-08-20T20:16:54.286Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6283,7 +6283,7 @@
       "song": 467267,
       "edel_enjoyment": 15,
       "is_edel_pending": true,
-      "gddl_tier": null,
+      "gddl_tier": 37,
       "nlw_tier": null,
       "publisher": {
         "id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
@@ -11570,7 +11570,7 @@
       "song": 678780,
       "edel_enjoyment": 70.52777778,
       "is_edel_pending": false,
-      "gddl_tier": 35.4,
+      "gddl_tier": 35.333333333333336,
       "nlw_tier": null,
       "publisher": {
         "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
@@ -13075,7 +13075,7 @@
       "song": null,
       "edel_enjoyment": 45.37974684,
       "is_edel_pending": false,
-      "gddl_tier": 35.142857142857146,
+      "gddl_tier": 35.125,
       "nlw_tier": null,
       "publisher": {
         "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
@@ -13390,7 +13390,7 @@
       "song": 805724,
       "edel_enjoyment": 59.08823529,
       "is_edel_pending": false,
-      "gddl_tier": 34.75,
+      "gddl_tier": 34.76470588235294,
       "nlw_tier": null,
       "publisher": {
         "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
