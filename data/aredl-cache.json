@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T20:13:27.940Z",
+  "generatedAt": "2026-08-21T21:13:54.917Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -5462,7 +5462,7 @@
       "name": "NOMAD",
       "position": 50,
       "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-      "points": 3155,
+      "points": 3156,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115077305,
@@ -5470,6 +5470,7 @@
       "tags": [
         "2.2",
         "Medium",
+        "NONG",
         "Timings",
         "Chokepoints",
         "Cube",
@@ -11782,11 +11783,53 @@
       ]
     },
     {
+      "id": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+      "name": "Sanctity",
+      "position": 114,
+      "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+      "points": 2206,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 135547923,
+      "two_player": false,
+      "tags": [
+        "NONG"
+      ],
+      "description": null,
+      "song": 1559895,
+      "edel_enjoyment": 80.3,
+      "is_edel_pending": false,
+      "gddl_tier": null,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+        "username": "9041c2771",
+        "global_name": "Amplitron"
+      },
+      "verifications": [
+        {
+          "id": "967b50f9-8fe5-4f25-a254-bfaa7c0ccbac",
+          "submitted_by": {
+            "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+            "username": "9041c2771",
+            "global_name": "Amplitron"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=rtU2oDBz9X0",
+          "hide_video": false,
+          "achieved_at": "2026-03-13T19:30:35Z",
+          "created_at": "2026-08-16T00:23:44.895662Z",
+          "updated_at": "2026-08-16T00:23:44.895662Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
       "name": "The Golden",
-      "position": 114,
+      "position": 115,
       "publisher_id": "0d655908-d2ac-4144-946c-f8092620a51d",
-      "points": 2206,
+      "points": 2196,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 60978746,
@@ -11871,9 +11914,9 @@
     {
       "id": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
       "name": "Oblivion",
-      "position": 115,
+      "position": 116,
       "publisher_id": "c3a17a45-2581-4ebc-a46e-da89f60e75d8",
-      "points": 2196,
+      "points": 2186,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71025973,
@@ -11940,9 +11983,9 @@
     {
       "id": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
       "name": "Viprin UFO",
-      "position": 116,
+      "position": 117,
       "publisher_id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
-      "points": 2186,
+      "points": 2176,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 107238250,
@@ -12038,9 +12081,9 @@
     {
       "id": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
       "name": "NETWORK (Agat3)",
-      "position": 117,
+      "position": 118,
       "publisher_id": "7de91471-9010-48bd-8d14-f5b35b86b3d8",
-      "points": 2176,
+      "points": 2167,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95176417,
@@ -12103,9 +12146,9 @@
     {
       "id": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
       "name": "Terminal Rampancy",
-      "position": 118,
+      "position": 119,
       "publisher_id": "639b1c8d-b261-48a7-bf4e-acc808a02a04",
-      "points": 2166,
+      "points": 2157,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90057148,
@@ -12151,9 +12194,9 @@
     {
       "id": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
       "name": "Verdant Landscape",
-      "position": 119,
+      "position": 120,
       "publisher_id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
-      "points": 2156,
+      "points": 2147,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 76543324,
@@ -12198,9 +12241,9 @@
     {
       "id": "5476e168-1f14-4250-b7df-d01f2d029367",
       "name": "Levigo",
-      "position": 120,
+      "position": 121,
       "publisher_id": "eaf3a165-3b5e-436d-b3eb-366ae4e9ab0e",
-      "points": 2147,
+      "points": 2138,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 97086864,
@@ -12251,9 +12294,9 @@
     {
       "id": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
       "name": "UNKNOWN",
-      "position": 121,
+      "position": 122,
       "publisher_id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
-      "points": 2137,
+      "points": 2128,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88203501,
@@ -12344,9 +12387,9 @@
     {
       "id": "92ce0a98-11ae-4aca-9188-a8a56c5bb02d",
       "name": "ATOMIC CANNON Mk III",
-      "position": 122,
+      "position": 123,
       "publisher_id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
-      "points": 2128,
+      "points": 2119,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 104672501,
@@ -12412,9 +12455,9 @@
     {
       "id": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
       "name": "Shukketsu",
-      "position": 123,
+      "position": 124,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2118,
+      "points": 2110,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75286957,
@@ -12488,9 +12531,9 @@
     {
       "id": "b158e365-0f31-485e-816d-be35f8623bf2",
       "name": "idontknowwhatthisis",
-      "position": 124,
+      "position": 125,
       "publisher_id": "69394575-3534-49bf-8dab-f9c34be511e6",
-      "points": 2109,
+      "points": 2100,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 137334994,
@@ -12537,9 +12580,9 @@
     {
       "id": "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
       "name": "Checked Steam",
-      "position": 125,
+      "position": 126,
       "publisher_id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
-      "points": 2100,
+      "points": 2091,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 105748155,
@@ -12585,9 +12628,9 @@
     {
       "id": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
       "name": "Critical Heat",
-      "position": 126,
+      "position": 127,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2091,
+      "points": 2082,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88442157,
@@ -12642,9 +12685,9 @@
     {
       "id": "8d02375c-8c31-4352-af21-d4533f63e3af",
       "name": "WOBBLING MACHINE (Solo)",
-      "position": 127,
+      "position": 128,
       "publisher_id": "f474ba2b-e0e1-4374-a4c2-ddebcebc2ec5",
-      "points": 2082,
+      "points": 2073,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87130877,
@@ -12695,9 +12738,9 @@
     {
       "id": "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
       "name": "Crystal Crusher (Solo)",
-      "position": 128,
+      "position": 129,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2073,
+      "points": 2064,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93732702,
@@ -12753,9 +12796,9 @@
     {
       "id": "c43eb1e4-b38d-466a-8da5-987204999072",
       "name": "limbo but uwu ig idk",
-      "position": 129,
+      "position": 130,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 2064,
+      "points": 2056,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110705712,
@@ -12806,9 +12849,9 @@
     {
       "id": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
       "name": "Graceful",
-      "position": 130,
+      "position": 131,
       "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-      "points": 2055,
+      "points": 2047,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71885708,
@@ -12923,9 +12966,9 @@
     {
       "id": "e8324cab-fc88-47c0-993d-87ce9de64a00",
       "name": "paranoia (amplitron)",
-      "position": 131,
+      "position": 132,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 2046,
+      "points": 2038,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113364415,
@@ -12976,9 +13019,9 @@
     {
       "id": "68308581-f1b6-4c0f-8851-82449ab1977f",
       "name": "The Paroxysm of Rage",
-      "position": 132,
+      "position": 133,
       "publisher_id": "48bc2cab-81bb-4c63-a653-bf1c31ddacfb",
-      "points": 2037,
+      "points": 2030,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87071894,
@@ -13034,9 +13077,9 @@
     {
       "id": "5b183ded-437a-4a25-8c81-8341fca626db",
       "name": "Blood Echo",
-      "position": 133,
+      "position": 134,
       "publisher_id": "69b31464-03ea-4543-8013-4020121bce2c",
-      "points": 2029,
+      "points": 2021,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 112242564,
@@ -13106,9 +13149,9 @@
     {
       "id": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
       "name": "Aerial Gleam",
-      "position": 134,
+      "position": 135,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-      "points": 2020,
+      "points": 2013,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 79771070,
@@ -13173,9 +13216,9 @@
     {
       "id": "aa5788c8-80a2-4df1-a5a0-3f1b7533935e",
       "name": "DISCONNECT",
-      "position": 135,
+      "position": 136,
       "publisher_id": "249ca75a-8d0b-4c23-a57a-2185b62e35cd",
-      "points": 2012,
+      "points": 2004,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 127023313,
@@ -13218,9 +13261,9 @@
     {
       "id": "c2837416-7fb4-4866-ba91-e9c134a0a59a",
       "name": "VOID",
-      "position": 136,
+      "position": 137,
       "publisher_id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
-      "points": 2004,
+      "points": 1996,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 100990392,
@@ -13271,9 +13314,9 @@
     {
       "id": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
       "name": "Starlit Stroll",
-      "position": 137,
+      "position": 138,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 1995,
+      "points": 1988,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115380769,
@@ -13330,9 +13373,9 @@
     {
       "id": "53fb0da7-8845-4736-9832-c1f98bb388cc",
       "name": "Henken",
-      "position": 138,
+      "position": 139,
       "publisher_id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
-      "points": 1987,
+      "points": 1980,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 80714349,
@@ -13419,9 +13462,9 @@
     {
       "id": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
       "name": "Trueffet",
-      "position": 139,
+      "position": 140,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 1979,
+      "points": 1972,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71434979,
@@ -13478,9 +13521,9 @@
     {
       "id": "2f954949-01cb-4946-be55-a8cb76b04794",
       "name": "azure blast",
-      "position": 140,
+      "position": 141,
       "publisher_id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
-      "points": 1971,
+      "points": 1963,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120060187,
@@ -13591,9 +13634,9 @@
     {
       "id": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
       "name": "Kenos",
-      "position": 141,
+      "position": 142,
       "publisher_id": "b22b4f8f-868c-4bc7-a71f-c57c70bf4a61",
-      "points": 1963,
+      "points": 1956,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 58673581,
@@ -13714,9 +13757,9 @@
     {
       "id": "56aee27a-8b38-4a03-9baa-6d033211832a",
       "name": "Fragile",
-      "position": 142,
+      "position": 143,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-      "points": 1955,
+      "points": 1948,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 65588448,
@@ -13810,9 +13853,9 @@
     {
       "id": "94d2322d-b1f2-44cc-909d-6cf18cd644ee",
       "name": "chrome hearts",
-      "position": 143,
+      "position": 144,
       "publisher_id": "ebc9e80a-bd4f-4a9e-887c-1652d7f77563",
-      "points": 1947,
+      "points": 1940,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 128385946,
@@ -13862,9 +13905,9 @@
     {
       "id": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
       "name": "Starlight Summit",
-      "position": 144,
+      "position": 145,
       "publisher_id": "5e42f5cb-e1de-478d-8305-2b4032767f01",
-      "points": 1939,
+      "points": 1932,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114530859,
@@ -13908,9 +13951,9 @@
     {
       "id": "1d340102-5afd-4fdd-9b42-1567d5696090",
       "name": "Esfera",
-      "position": 145,
+      "position": 146,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 1931,
+      "points": 1924,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 78435955,
@@ -14092,9 +14135,9 @@
     {
       "id": "b3d27bc6-68ba-42b3-8643-dae93c88a66a",
       "name": "Silent Lunch",
-      "position": 146,
+      "position": 147,
       "publisher_id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
-      "points": 1924,
+      "points": 1917,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 137586316,
@@ -14466,9 +14509,9 @@
     {
       "id": "89695048-2cde-41d8-9692-0d5bd9ad4ff4",
       "name": "Destruction 19",
-      "position": 147,
+      "position": 148,
       "publisher_id": "6eca29e0-f940-45e3-95b1-fa263abc30e3",
-      "points": 1916,
+      "points": 1909,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 99495619,
@@ -14514,9 +14557,9 @@
     {
       "id": "ecabf47d-a7fb-4eaf-90fb-0737e5452e5a",
       "name": "in this",
-      "position": 148,
+      "position": 149,
       "publisher_id": "affbe953-0f7e-4f4b-bf21-86840bcdfb96",
-      "points": 1908,
+      "points": 1901,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 122389640,
@@ -14562,9 +14605,9 @@
     {
       "id": "7d85c8d2-18d9-4362-8d98-249f65cbe843",
       "name": "NEUTRA",
-      "position": 149,
+      "position": 150,
       "publisher_id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
-      "points": 1901,
+      "points": 1894,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88611404,
@@ -14618,58 +14661,6 @@
           "id": "d032e20c-02a9-4589-9a7a-0a1c8af1fa13",
           "username": "de4d254f3",
           "global_name": "ILRELL"
-        }
-      ]
-    },
-    {
-      "id": "b894d496-a12e-4ae7-8427-09bd1b0bb5b6",
-      "name": "ROCKBOTTOM",
-      "position": 150,
-      "publisher_id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
-      "points": 1893,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 122196131,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "High CPS",
-        "Ship",
-        "Wave"
-      ],
-      "description": null,
-      "song": 506605,
-      "edel_enjoyment": 41.75,
-      "is_edel_pending": false,
-      "gddl_tier": 35,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
-        "username": ".bims.",
-        "global_name": "bims"
-      },
-      "verifications": [
-        {
-          "id": "94368e4d-bd41-4314-8d2a-8819f90f9cef",
-          "submitted_by": {
-            "id": "1c97517c-0216-4124-9a64-00d649718af6",
-            "username": "zazagd",
-            "global_name": "ZaZa GD"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=HAyxOJ1XuBk",
-          "hide_video": false,
-          "achieved_at": "2025-07-08T18:45:05Z",
-          "created_at": "2026-06-03T23:19:50.374780Z",
-          "updated_at": "2026-06-03T23:19:50.374780Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
-          "username": ".bims.",
-          "global_name": "bims"
         }
       ]
     }
