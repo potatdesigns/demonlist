@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T08:03:16.750Z",
+  "generatedAt": "2026-08-21T08:47:34.403Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3046,27 +3046,6 @@
       },
       "discoveredAt": "2026-08-20T08:46:03.787Z"
     },
-    "c3cb42dc-b5de-4eb5-85e0-ef5f538a0efb": {
-      "name": "Dark Dimension",
-      "position": 150,
-      "verifier": {
-        "id": "g2DrT9bHjOI",
-        "url": "https://www.youtube.com/watch?v=g2DrT9bHjOI",
-        "title": "[ VERIFIED ] Dark Dimension by ThePurgatory",
-        "channel": "The Nixuz GD",
-        "viewCount": 52940,
-        "viewsCheckedAt": "2026-08-21T08:03:16.127Z"
-      },
-      "showcase": {
-        "id": "zRKWLYxcE14",
-        "url": "https://www.youtube.com/watch?v=zRKWLYxcE14",
-        "title": "(Extreme Demon) ''Dark Dimension'' by ThePurgatory | Geometry Dash",
-        "channel": "Nexus [GD]",
-        "viewCount": 414669,
-        "viewsCheckedAt": "2026-08-21T08:03:16.127Z"
-      },
-      "discoveredAt": "2026-08-20T08:46:03.787Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 52,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-08-21T08:03:16.127Z"
       },
       "discoveredAt": "2026-08-20T08:46:03.787Z"
+    },
+    "1085c65b-4d52-45d0-b7dd-f29e94266f4b": {
+      "name": "cognitohazard",
+      "position": 34,
+      "verifier": {
+        "id": "T5g0r16X_ZA",
+        "url": "https://www.youtube.com/watch?v=T5g0r16X_ZA",
+        "title": "(Verified!) cognitohazard 100%!",
+        "channel": "Whizkid05",
+        "viewCount": 107904,
+        "viewsCheckedAt": "2026-08-21T08:47:34.403Z"
+      },
+      "showcase": {
+        "id": "m1jvLHBy99M",
+        "url": "https://www.youtube.com/watch?v=m1jvLHBy99M",
+        "title": "\"cognitohazard\" (Extreme Demon) by MercuryDT, Whizkid05, Grax & more | Geometry Dash 2.2",
+        "channel": "Viprin",
+        "viewCount": 58626,
+        "viewsCheckedAt": "2026-08-21T08:47:34.403Z"
+      },
+      "discoveredAt": "2026-08-21T08:47:34.403Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "_Hxv-x0Cf1c",
+      "newestVideoId": "fi0QksMFyXo",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31735,12 +31735,22 @@
           ],
           "description": "Level: Drawlocked by ConfusedSeries\nID: 146385102\nSong: Deadlocked by F-777\nhttps://www.newgrounds.com/audio/listen/503731",
           "checkedAt": "2026-08-20T04:36:09.755Z"
+        },
+        "fi0QksMFyXo": {
+          "title": "Tidal Wave Nerfed",
+          "channel": "Nexus [GD]",
+          "viewCount": 97123,
+          "levelIds": [
+            "94555142"
+          ],
+          "description": "Level: Tidal Wave Easy by AciiGD, OniLinkGD\nID: 94555142\nSong: https://www.youtube.com/watch?v=G-9EEDWvg9E",
+          "checkedAt": "2026-08-21T08:47:31.396Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "iQNBOEi-ziI",
+      "newestVideoId": "xmGiUw3W27E",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55519,6 +55529,15 @@
             "145109287"
           ],
           "checkedAt": "2026-08-20T04:36:10.381Z"
+        },
+        "xmGiUw3W27E": {
+          "title": "Top 0 (Human Limit) - preview 4",
+          "channel": "Neiro",
+          "viewCount": 67380,
+          "levelIds": [
+            "489111"
+          ],
+          "checkedAt": "2026-08-21T08:47:31.650Z"
         }
       }
     },
@@ -92780,7 +92799,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "Agy9Uf6D1KY",
+      "newestVideoId": "bSUq37WFnOA",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -103275,12 +103294,21 @@
             "135148907"
           ],
           "checkedAt": "2026-08-20T04:36:11.848Z"
+        },
+        "bSUq37WFnOA": {
+          "title": "【4K】\"Sanctity\" by amplitron (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 26,
+          "levelIds": [
+            "135547923"
+          ],
+          "checkedAt": "2026-08-21T08:47:33.076Z"
         }
       }
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "P13TR6g6bjM",
+      "newestVideoId": "EoaSvx2nPrM",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -111409,6 +111437,16 @@
             "574601"
           ],
           "checkedAt": "2026-08-15T08:34:57.089Z"
+        },
+        "EoaSvx2nPrM": {
+          "title": "【4K】 \"ChloroPhyll\" by luhlamar | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 361,
+          "levelIds": [
+            "94767525",
+            "478283"
+          ],
+          "checkedAt": "2026-08-21T08:47:33.501Z"
         }
       }
     },
