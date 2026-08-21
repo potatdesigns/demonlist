@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T21:13:54.917Z",
+  "generatedAt": "2026-08-21T22:12:31.589Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -5838,7 +5838,7 @@
       "name": "MINUSdry",
       "position": 56,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 3028,
+      "points": 3029,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89414220,
@@ -5896,6 +5896,11 @@
           "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
           "username": "cdmusic",
           "global_name": "CDMusic"
+        },
+        {
+          "id": "e508d79b-9bdf-4a04-8548-78fff3a779cc",
+          "username": "blankb",
+          "global_name": "Blankb"
         }
       ]
     },
