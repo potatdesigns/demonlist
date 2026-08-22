@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:33:23.454Z",
+  "generatedAt": "2026-08-22T04:21:43.007Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -59257,6 +59257,11 @@
         "date": "2026-08-21",
         "position": 318,
         "reason": "Moved down — Sanctity was placed at #114"
+      },
+      {
+        "date": "2026-08-22",
+        "position": 319,
+        "reason": "Moved down — Aquatic Auroras was raised to #312"
       }
     ],
     "94191fab-518b-47ff-8a72-48b93f446914": [
@@ -60709,6 +60714,11 @@
         "date": "2026-08-21",
         "position": 319,
         "reason": "Moved down — Sanctity was placed at #114"
+      },
+      {
+        "date": "2026-08-22",
+        "position": 312,
+        "reason": "Raised from #319 to #312"
       }
     ],
     "1b33ed01-c776-441f-b27d-17a52a206eaa": [
@@ -81370,6 +81380,11 @@
         "date": "2026-08-21",
         "position": 316,
         "reason": "Moved down — Sanctity was placed at #114"
+      },
+      {
+        "date": "2026-08-22",
+        "position": 317,
+        "reason": "Moved down — Aquatic Auroras was raised to #312"
       }
     ],
     "c155cc0a-c74e-4ace-8439-979b4f2550ba": [
@@ -293019,6 +293034,11 @@
         "date": "2026-08-21",
         "position": 312,
         "reason": "Moved down — Sanctity was placed at #114"
+      },
+      {
+        "date": "2026-08-22",
+        "position": 313,
+        "reason": "Moved down — Aquatic Auroras was raised to #312"
       }
     ],
     "22f1cc9c-4af8-41ed-a2ce-d9edde3b0be9": [
@@ -309416,6 +309436,11 @@
         "date": "2026-08-21",
         "position": 315,
         "reason": "Moved down — Sanctity was placed at #114"
+      },
+      {
+        "date": "2026-08-22",
+        "position": 316,
+        "reason": "Moved down — Aquatic Auroras was raised to #312"
       }
     ],
     "cc3ef040-7aad-42f9-b70c-798e8cc4c623": [

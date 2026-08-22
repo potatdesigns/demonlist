@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:33:23.277Z",
+  "generatedAt": "2026-08-22T04:21:42.826Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -11798,7 +11798,18 @@
       "level_id": 135547923,
       "two_player": false,
       "tags": [
-        "NONG"
+        "2.2",
+        "Long",
+        "NONG",
+        "Clicksync",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "High CPS",
+        "Flow",
+        "Ship",
+        "Wave"
       ],
       "description": null,
       "song": 1559895,
