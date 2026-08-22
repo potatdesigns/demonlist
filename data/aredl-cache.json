@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T19:15:23.785Z",
+  "generatedAt": "2026-08-22T20:10:57.421Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1350,6 +1350,67 @@
           "id": "47b49833-00a2-4fc4-b2e7-ea653b8ec0ff",
           "username": "df1e456cb",
           "global_name": "AudieoVisual"
+        }
+      ]
+    },
+    {
+      "id": "b55de8a2-94d8-41c1-a933-17124e4461e9",
+      "name": "Antarctic Lights",
+      "position": 8,
+      "publisher_id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+      "points": 4587,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 144988390,
+      "two_player": false,
+      "tags": [],
+      "description": null,
+      "song": 428157,
+      "edel_enjoyment": 60,
+      "is_edel_pending": true,
+      "gddl_tier": 39,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+        "username": "declan_lc",
+        "global_name": "declanlc"
+      },
+      "verifications": [
+        {
+          "id": "218e3f61-0fa9-43cd-939a-4a1bc2be8bfe",
+          "submitted_by": {
+            "id": "36a7cb3a-0ba5-4395-b07f-39a8d4c02b73",
+            "username": "axinity",
+            "global_name": "Axinity"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=Uue4ZRhVf-I",
+          "hide_video": false,
+          "achieved_at": "2026-07-16T15:17:29Z",
+          "created_at": "2026-08-16T00:23:45.697944Z",
+          "updated_at": "2026-08-16T00:23:45.697944Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+          "username": "declan_lc",
+          "global_name": "declanlc"
+        },
+        {
+          "id": "e2c82940-4c72-48a2-8c55-faefc23c36c0",
+          "username": "skyjax",
+          "global_name": "SkyJax"
+        },
+        {
+          "id": "f8724ae8-aba0-4f30-915a-a4a40433a3bf",
+          "username": "b61c1747b",
+          "global_name": "tolstyh"
+        },
+        {
+          "id": "3b0920c3-1f68-4e78-936b-e1f9a1f7e1f3",
+          "username": "9ca4f871c",
+          "global_name": "Arcturus"
         }
       ]
     },
@@ -7460,6 +7521,11 @@
       ],
       "creators": [
         {
+          "id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
+          "username": "artos.",
+          "global_name": "artos"
+        },
+        {
           "id": "e0ff021a-e31b-4d3c-b199-80c79e4fae11",
           "username": "eridanigd",
           "global_name": "eridani"
@@ -7468,11 +7534,6 @@
           "id": "025a117f-15ad-47b1-93d1-1106e0a68a7a",
           "username": "382a95e21",
           "global_name": "Cultrix"
-        },
-        {
-          "id": "03838d84-1883-4497-a978-4a768d5ad0e6",
-          "username": "dccbcf635",
-          "global_name": "Artos"
         },
         {
           "id": "1d07f59e-bd13-42c8-bae6-6ba0d5ca885f",
@@ -8848,7 +8909,7 @@
       "id": "cfad0fb6-7ff9-4c8d-841b-d9cf2221443d",
       "name": "SARYYX NEVER CLEAR",
       "position": 87,
-      "publisher_id": "03838d84-1883-4497-a978-4a768d5ad0e6",
+      "publisher_id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
       "points": 2534,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -8867,9 +8928,9 @@
       "gddl_tier": 36,
       "nlw_tier": null,
       "publisher": {
-        "id": "03838d84-1883-4497-a978-4a768d5ad0e6",
-        "username": "dccbcf635",
-        "global_name": "Artos"
+        "id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
+        "username": "artos.",
+        "global_name": "artos"
       },
       "verifications": [
         {
@@ -8888,11 +8949,6 @@
         }
       ],
       "creators": [
-        {
-          "id": "03838d84-1883-4497-a978-4a768d5ad0e6",
-          "username": "dccbcf635",
-          "global_name": "Artos"
-        },
         {
           "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
           "username": "5a211773f",
@@ -8917,6 +8973,11 @@
           "id": "432c6e71-7106-4440-baee-a8531e750572",
           "username": "5d4604ec5",
           "global_name": "voltex"
+        },
+        {
+          "id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
+          "username": "artos.",
+          "global_name": "artos"
         },
         {
           "id": "0af89969-b9e7-45fc-9b17-1f17ae8c3bb7",
@@ -14617,68 +14678,6 @@
         }
       ],
       "creators": []
-    },
-    {
-      "id": "7d85c8d2-18d9-4362-8d98-249f65cbe843",
-      "name": "NEUTRA",
-      "position": 151,
-      "publisher_id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
-      "points": 1899,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 88611404,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Clicksync",
-        "Learny",
-        "Duals"
-      ],
-      "description": "Extremely bouncy and high-energy level with incredibly flashy effects and designs. Contains a memorable dual wave at 23% along with other quirky click-sync gameplay gimmicks and a very hard ending. The music collective 'siximpala' created the song and significantly helped plan the level's visuals.",
-      "song": 1058661,
-      "edel_enjoyment": 65.38297872,
-      "is_edel_pending": false,
-      "gddl_tier": 34.333333333333336,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
-        "username": "50d740ce9",
-        "global_name": "Jenkins"
-      },
-      "verifications": [
-        {
-          "id": "753f659f-51f0-45a1-b278-898662c88a66",
-          "submitted_by": {
-            "id": "1728ba49-161f-44da-b95b-b5e1cf0cb720",
-            "username": "aeonair",
-            "global_name": "aeonair"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=0fNBFwNS1qg&t=147s",
-          "hide_video": false,
-          "achieved_at": "2023-02-14T17:00:11Z",
-          "created_at": "2023-03-13T16:32:30Z",
-          "updated_at": "2023-03-13T16:32:30Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "328b6c50-4095-4b78-a1d2-e23df45f7017",
-          "username": "50d740ce9",
-          "global_name": "Jenkins"
-        },
-        {
-          "id": "c2981fe9-a515-454b-a8e8-1cee4efd14f4",
-          "username": "7dca4902c",
-          "global_name": "Marwec"
-        },
-        {
-          "id": "d032e20c-02a9-4589-9a7a-0a1c8af1fa13",
-          "username": "de4d254f3",
-          "global_name": "ILRELL"
-        }
-      ]
     }
   ]
 }
