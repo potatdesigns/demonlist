@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T02:19:08.490Z",
+  "generatedAt": "2026-08-23T03:19:20.680Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3004,27 +3004,6 @@
       },
       "discoveredAt": "2026-08-22T08:36:12.655Z"
     },
-    "7d85c8d2-18d9-4362-8d98-249f65cbe843": {
-      "name": "NEUTRA",
-      "position": 150,
-      "verifier": {
-        "id": "0fNBFwNS1qg",
-        "url": "https://www.youtube.com/watch?v=0fNBFwNS1qg",
-        "title": "NEUTRA VERIFIED (Extreme Demon) By Jenkins // Geometry Dash",
-        "channel": "AeonAir",
-        "viewCount": 417212,
-        "viewsCheckedAt": "2026-08-23T02:19:07.773Z"
-      },
-      "showcase": {
-        "id": "hzvlfUXe4Xw",
-        "url": "https://www.youtube.com/watch?v=hzvlfUXe4Xw",
-        "title": "\"NEUTRA\" (Extreme Demon) by Jenkins, ILRELL & Marwec | Geometry Dash 2.11",
-        "channel": "Viprin",
-        "viewCount": 420994,
-        "viewsCheckedAt": "2026-08-23T02:19:07.773Z"
-      },
-      "discoveredAt": "2026-08-22T08:36:12.655Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 53,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-08-23T02:19:07.773Z"
       },
       "discoveredAt": "2026-08-22T08:36:12.655Z"
+    },
+    "b55de8a2-94d8-41c1-a933-17124e4461e9": {
+      "name": "Antarctic Lights",
+      "position": 8,
+      "verifier": {
+        "id": "Uue4ZRhVf-I",
+        "url": "https://www.youtube.com/watch?v=Uue4ZRhVf-I",
+        "title": "ANTARCTIC LIGHTS 100% VERIFIED!",
+        "channel": "Axinity",
+        "viewCount": 179908,
+        "viewsCheckedAt": "2026-08-23T03:19:20.680Z"
+      },
+      "showcase": {
+        "id": "Ii25Ypw_Cjs",
+        "url": "https://www.youtube.com/watch?v=Ii25Ypw_Cjs",
+        "title": "【4K】 \"Antarctic Lights\" by declanlc & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 16073,
+        "viewsCheckedAt": "2026-08-23T03:19:20.680Z"
+      },
+      "discoveredAt": "2026-08-23T03:19:20.680Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "pEwX3UM1dvo",
+      "newestVideoId": "Y_RejQDh6p8",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31766,12 +31766,23 @@
           ],
           "description": "Level: GDversary by ChuchitoDomin, Joath156, iDrack, Fabruuuu, SebasuGD, Angela120, KoromiGD, SrJC23Tech, NARIEL, Stermind & ALEvac10\nID: 147319818\nSong: Geometrical Decade by Jezzel\nhttps://www.newgrounds.com/audio/listen/1235803",
           "checkedAt": "2026-08-21T23:51:45.402Z"
+        },
+        "Y_RejQDh6p8": {
+          "title": "GRIEF but it's Aeternus",
+          "channel": "Nexus [GD]",
+          "viewCount": 31063,
+          "levelIds": [
+            "145109287",
+            "482872"
+          ],
+          "description": "Level: Perdition by SylenPaws\nID: 145109287\nSong: https://www.newgrounds.com/audio/listen/482872\n[Botted Showcase]",
+          "checkedAt": "2026-08-23T03:19:17.011Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "oPsSbhWuOns",
+      "newestVideoId": "21dzZz1-SQI",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55569,6 +55580,15 @@
             "144905500"
           ],
           "checkedAt": "2026-08-21T23:51:46.088Z"
+        },
+        "21dzZz1-SQI": {
+          "title": "FULL VERSION! | Rampant CIRCLES FULL - Geometry Dash",
+          "channel": "Neiro",
+          "viewCount": 12419,
+          "levelIds": [
+            "144410816"
+          ],
+          "checkedAt": "2026-08-23T03:19:17.617Z"
         }
       }
     },
