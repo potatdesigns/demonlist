@@ -189,9 +189,15 @@ function buildReasonContext(recentEntries) {
   for (const entry of recentEntries) {
     const id = entry.affected_level?.id;
     if (!id) continue;
+    const name = entry.affected_level?.name;
     const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
+    // affected_level is always exactly one of upper_level/other_level for
+    // a Swapped event — pick whichever one *isn't* it, rather than
+    // defaulting to other_level unconditionally (which self-references
+    // back to the affected level itself whenever it's the "other" side).
+    const swapPartner = action.upper_level?.name === name ? action.other_level?.name : action.upper_level?.name;
     const reason = type === 'Swapped'
-      ? `Swapped with ${(action.other_level?.name || action.upper_level?.name || 'another level').trim()}`
+      ? `Swapped with ${(swapPartner || 'another level').trim()}`
       : directReason(type, action);
     if (reason && !directReasonById.has(id)) directReasonById.set(id, reason);
     if (!latestCause && type && type !== 'Swapped' && Number.isFinite(action.new_position)) {

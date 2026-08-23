@@ -217,7 +217,14 @@
         position = v.new_position;
         break;
       case 'Swapped': {
-        const otherName = entry.level_above?.name === name ? entry.level_below?.name : entry.level_above?.name;
+        // Resolved from the Swapped action's own two participants
+        // (upper_level/other_level — affected_level is always exactly
+        // one of them), not entry.level_above/level_below — those are
+        // just the affected level's post-swap spatial neighbors, which
+        // is a different pair of levels whenever the swap partner didn't
+        // land in the "up" direction (e.g. a swap at #2/#3 leaves
+        // whatever's at #1 as level_above, not the actual swap partner).
+        const otherName = v.upper_level?.name === name ? v.other_level?.name : v.upper_level?.name;
         text = `${name} swapped with ${otherName || 'another level'} around #${v.upper_position}`;
         position = v.upper_position;
         break;
