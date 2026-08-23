@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T04:27:00.312Z",
+  "generatedAt": "2026-08-23T05:19:38.239Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1367,6 +1367,7 @@
         "2.2",
         "Long",
         "Circles",
+        "High CPS",
         "Wave"
       ],
       "description": null,
