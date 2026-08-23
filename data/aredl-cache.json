@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T03:41:20.104Z",
+  "generatedAt": "2026-08-23T04:27:00.312Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1363,7 +1363,12 @@
       "requires_raw_footage": false,
       "level_id": 144988390,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "Long",
+        "Circles",
+        "Wave"
+      ],
       "description": null,
       "song": 428157,
       "edel_enjoyment": 60,
@@ -6395,7 +6400,12 @@
       "requires_raw_footage": false,
       "level_id": 144012996,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "Long",
+        "Nerve Control",
+        "Overall"
+      ],
       "description": null,
       "song": 467267,
       "edel_enjoyment": 15,
@@ -6760,7 +6770,10 @@
       "requires_raw_footage": false,
       "level_id": 135148907,
       "two_player": false,
-      "tags": [],
+      "tags": [
+        "2.2",
+        "Long"
+      ],
       "description": null,
       "song": 1006406,
       "edel_enjoyment": null,
