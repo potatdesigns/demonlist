@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:11:59.416Z",
+  "generatedAt": "2026-08-23T18:13:39.230Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -256,11 +256,123 @@
       ]
     },
     {
+      "id": "4ece95db-18aa-4dd2-9fba-9991e1cce1bc",
+      "name": "Amethyst",
+      "position": 3,
+      "publisher_id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
+      "points": 4873,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 119550490,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Wave"
+      ],
+      "description": "A former top 1, dethroning Tidal Wave after two years. It's inspired by the Golden, with cave decoration with rocks, geodes, and purple and pink crystals. The gameplay consists of a lot of extremely hard wave and ship gameplay.",
+      "song": 233860,
+      "edel_enjoyment": 0,
+      "is_edel_pending": true,
+      "gddl_tier": 39,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
+        "username": "9d1646bfb",
+        "global_name": "iMist"
+      },
+      "verifications": [
+        {
+          "id": "252e35c0-e494-4110-bf66-2abccb5568b6",
+          "submitted_by": {
+            "id": "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a",
+            "username": "7cbaa5a44",
+            "global_name": "wPopoff"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=4lfkzz1VCbA",
+          "hide_video": false,
+          "achieved_at": "2025-05-25T17:00:05Z",
+          "created_at": "2025-06-04T01:31:35.077470Z",
+          "updated_at": "2025-06-04T01:31:35.077470Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
+          "username": "9d1646bfb",
+          "global_name": "iMist"
+        },
+        {
+          "id": "c75bf723-99c0-4e85-87a0-d9f97dede8a8",
+          "username": "334f93ea1",
+          "global_name": "IvashkaUA"
+        },
+        {
+          "id": "052f4bc9-db76-4917-a8f1-d16561a5297c",
+          "username": "67db0e197",
+          "global_name": "NoobyPro27"
+        },
+        {
+          "id": "92fefe9d-3fd7-414d-824a-3388042566fd",
+          "username": "3545c884c",
+          "global_name": "iMinaY"
+        },
+        {
+          "id": "cbd22908-3eaf-4a82-b705-641d49952a02",
+          "username": "697033eba",
+          "global_name": "BeClaNin0"
+        },
+        {
+          "id": "d1099a40-740e-424d-99db-023ec9b18d29",
+          "username": "05646dac9",
+          "global_name": "Titoalper"
+        },
+        {
+          "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
+          "username": "8cc3f89f6",
+          "global_name": "Roselyne"
+        },
+        {
+          "id": "07b114fc-deac-4aee-9ccc-cd2af0f0086e",
+          "username": "fc11be365",
+          "global_name": "ItsxEcho"
+        },
+        {
+          "id": "04eaafe7-1134-4546-99cf-80b3d4e609e0",
+          "username": "1e4cff6d8",
+          "global_name": "Uriun112"
+        },
+        {
+          "id": "8012b23a-19e7-4058-b578-d59d0182c6ef",
+          "username": "955c2a824",
+          "global_name": "3DADronX"
+        },
+        {
+          "id": "4895df7c-1822-4dc3-8a41-0e1d134a8459",
+          "username": "d5e3036c4",
+          "global_name": "SnomGMD"
+        },
+        {
+          "id": "a519b896-dd7b-4ff0-afef-5004ec79ca1f",
+          "username": "lbedrockl",
+          "global_name": "Bedrock"
+        },
+        {
+          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
+          "username": "gamerknight750",
+          "global_name": "GamerKnight750"
+        }
+      ]
+    },
+    {
       "id": "795f5f4f-4b8b-4e65-9eb6-dc09a66e6fb5",
       "name": "Flamewall",
-      "position": 3,
+      "position": 4,
       "publisher_id": "8e24a45b-84e1-42ff-aa0c-519425a59d73",
-      "points": 4871,
+      "points": 4812,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 126242564,
@@ -889,118 +1001,6 @@
           "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
           "username": "ddd7bb669",
           "global_name": "Xolarzz"
-        }
-      ]
-    },
-    {
-      "id": "4ece95db-18aa-4dd2-9fba-9991e1cce1bc",
-      "name": "Amethyst",
-      "position": 4,
-      "publisher_id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
-      "points": 4810,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 119550490,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Wave"
-      ],
-      "description": "A former top 1, dethroning Tidal Wave after two years. It's inspired by the Golden, with cave decoration with rocks, geodes, and purple and pink crystals. The gameplay consists of a lot of extremely hard wave and ship gameplay.",
-      "song": 233860,
-      "edel_enjoyment": 0,
-      "is_edel_pending": true,
-      "gddl_tier": 39,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
-        "username": "9d1646bfb",
-        "global_name": "iMist"
-      },
-      "verifications": [
-        {
-          "id": "252e35c0-e494-4110-bf66-2abccb5568b6",
-          "submitted_by": {
-            "id": "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a",
-            "username": "7cbaa5a44",
-            "global_name": "wPopoff"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=4lfkzz1VCbA",
-          "hide_video": false,
-          "achieved_at": "2025-05-25T17:00:05Z",
-          "created_at": "2025-06-04T01:31:35.077470Z",
-          "updated_at": "2025-06-04T01:31:35.077470Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
-          "username": "9d1646bfb",
-          "global_name": "iMist"
-        },
-        {
-          "id": "c75bf723-99c0-4e85-87a0-d9f97dede8a8",
-          "username": "334f93ea1",
-          "global_name": "IvashkaUA"
-        },
-        {
-          "id": "052f4bc9-db76-4917-a8f1-d16561a5297c",
-          "username": "67db0e197",
-          "global_name": "NoobyPro27"
-        },
-        {
-          "id": "92fefe9d-3fd7-414d-824a-3388042566fd",
-          "username": "3545c884c",
-          "global_name": "iMinaY"
-        },
-        {
-          "id": "cbd22908-3eaf-4a82-b705-641d49952a02",
-          "username": "697033eba",
-          "global_name": "BeClaNin0"
-        },
-        {
-          "id": "d1099a40-740e-424d-99db-023ec9b18d29",
-          "username": "05646dac9",
-          "global_name": "Titoalper"
-        },
-        {
-          "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
-          "username": "8cc3f89f6",
-          "global_name": "Roselyne"
-        },
-        {
-          "id": "07b114fc-deac-4aee-9ccc-cd2af0f0086e",
-          "username": "fc11be365",
-          "global_name": "ItsxEcho"
-        },
-        {
-          "id": "04eaafe7-1134-4546-99cf-80b3d4e609e0",
-          "username": "1e4cff6d8",
-          "global_name": "Uriun112"
-        },
-        {
-          "id": "8012b23a-19e7-4058-b578-d59d0182c6ef",
-          "username": "955c2a824",
-          "global_name": "3DADronX"
-        },
-        {
-          "id": "4895df7c-1822-4dc3-8a41-0e1d134a8459",
-          "username": "d5e3036c4",
-          "global_name": "SnomGMD"
-        },
-        {
-          "id": "a519b896-dd7b-4ff0-afef-5004ec79ca1f",
-          "username": "lbedrockl",
-          "global_name": "Bedrock"
-        },
-        {
-          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
-          "username": "gamerknight750",
-          "global_name": "GamerKnight750"
         }
       ]
     },
@@ -6790,9 +6790,9 @@
         {
           "id": "b3419f40-d528-44dc-8116-d1525f8ff9e6",
           "submitted_by": {
-            "id": "29bdaeda-1aa5-4471-a504-86c8779d9014",
-            "username": "8449eb9d5",
-            "global_name": "Wain"
+            "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+            "username": "wwa_06",
+            "global_name": "Wa"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=pIHOHz3i0Rw",
@@ -6804,11 +6804,6 @@
       ],
       "creators": [
         {
-          "id": "29bdaeda-1aa5-4471-a504-86c8779d9014",
-          "username": "8449eb9d5",
-          "global_name": "Wain"
-        },
-        {
           "id": "b67ebec3-7bc3-4418-9737-0ee85efc0b1a",
           "username": "tekis01",
           "global_name": "Texic"
@@ -6817,6 +6812,11 @@
           "id": "327368d8-9ca7-4298-ac12-4701f0e567ff",
           "username": "0e6f5413b",
           "global_name": "puhyuu"
+        },
+        {
+          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+          "username": "wwa_06",
+          "global_name": "Wa"
         },
         {
           "id": "69394575-3534-49bf-8dab-f9c34be511e6",
@@ -9260,9 +9260,9 @@
         {
           "id": "c1461ab7-bcc6-4a31-8810-6cf562ba0407",
           "submitted_by": {
-            "id": "29bdaeda-1aa5-4471-a504-86c8779d9014",
-            "username": "8449eb9d5",
-            "global_name": "Wain"
+            "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+            "username": "wwa_06",
+            "global_name": "Wa"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=E4ppq2WeAAs",
@@ -9279,9 +9279,9 @@
           "global_name": "HushLC"
         },
         {
-          "id": "29bdaeda-1aa5-4471-a504-86c8779d9014",
-          "username": "8449eb9d5",
-          "global_name": "Wain"
+          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+          "username": "wwa_06",
+          "global_name": "Wa"
         }
       ]
     },
@@ -13706,6 +13706,11 @@
       ],
       "creators": [
         {
+          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+          "username": "wwa_06",
+          "global_name": "Wa"
+        },
+        {
           "id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
           "username": "6517cb72e",
           "global_name": "AlbinoSnail"
@@ -13729,11 +13734,6 @@
           "id": "3084ae9a-3356-4dcb-a749-35fbd14246c4",
           "username": "8327cc569",
           "global_name": "Cadooo"
-        },
-        {
-          "id": "29bdaeda-1aa5-4471-a504-86c8779d9014",
-          "username": "8449eb9d5",
-          "global_name": "Wain"
         },
         {
           "id": "3a6c77ec-a4d6-4fec-b27c-5ed5a4828c76",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:11:59.562Z",
+  "generatedAt": "2026-08-23T18:13:39.405Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -378880,6 +378880,11 @@
         "date": "2026-06-24",
         "position": 4,
         "reason": "Moved down — Society was placed at #1"
+      },
+      {
+        "date": "2026-08-23",
+        "position": 3,
+        "reason": "Swapped with Flamewall"
       }
     ],
     "230ae7f1-470f-4bd0-8c19-eb74781a56fe": [
@@ -383410,6 +383415,11 @@
         "date": "2026-06-24",
         "position": 3,
         "reason": "Moved down — Society was placed at #1"
+      },
+      {
+        "date": "2026-08-23",
+        "position": 4,
+        "reason": "Moved down — Make Paul Dance was placed at #74"
       }
     ],
     "9d96d090-5022-4cde-801d-72e03e0b1a1b": [
