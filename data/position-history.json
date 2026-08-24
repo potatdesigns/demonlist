@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T19:21:51.100Z",
+  "generatedAt": "2026-08-24T20:17:53.232Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -304138,6 +304138,11 @@
         "date": "2026-08-24",
         "position": 728,
         "reason": "Moved up — plunq was lowered to #979"
+      },
+      {
+        "date": "2026-08-24",
+        "position": 729,
+        "reason": "Moved down — Carnage Mode was raised to #682"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
