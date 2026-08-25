@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T16:24:04.924Z",
+  "generatedAt": "2026-08-25T17:22:49.991Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -2003,7 +2003,7 @@
       "name": "Ultra Paracosm",
       "position": 17,
       "publisher_id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
-      "points": 4163,
+      "points": 4164,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 138704906,
@@ -2011,7 +2011,12 @@
       "tags": [
         "2.2",
         "Long",
-        "Circles"
+        "Circles",
+        "Timings",
+        "Chokepoints",
+        "High CPS",
+        "Nerve Control",
+        "Wave"
       ],
       "description": "Superbuffed remake of Hyper Paracosm, decorated by declanlc. Sadly not the easy demon",
       "song": 469490,
@@ -9310,7 +9315,8 @@
         "2.2",
         "Long",
         "Timings",
-        "Chokepoints"
+        "Chokepoints",
+        "Cube"
       ],
       "description": "Bright and flashy early 2.2 extreme with a classic The Living Tombstone song that gets awkwardly pitched down at 59%. Generally very poorly received by victors. forgive no run please stop die haha",
       "song": 815245,
@@ -12458,6 +12464,7 @@
         "Medium",
         "NONG",
         "Fast-Paced",
+        "Chokepoints",
         "High CPS",
         "Wave"
       ],
