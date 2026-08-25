@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:33:02.966Z",
+  "generatedAt": "2026-08-25T16:24:04.924Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1010,7 +1010,7 @@
       "name": "Tidal Wave",
       "position": 5,
       "publisher_id": "e427c228-5eef-4fa1-b8bd-505a4fd94db3",
-      "points": 4751,
+      "points": 4753,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86407629,
@@ -1019,6 +1019,9 @@
         "2.1",
         "XXL",
         "NONG",
+        "Fast-Paced",
+        "Timings",
+        "Nerve Control",
         "Wave"
       ],
       "description": "A former Top 1 and Onilink's first rated level, featuring incredibly difficult wave sections spread over its 3 minute runtime. Unlike most other top 1s, this level takes a very different approach to its style, theming it around the ocean and the beach with its blue and yellow colour scheme.",
@@ -2387,6 +2390,9 @@
         "2.2",
         "XL",
         "Fast-Paced",
+        "Chokepoints",
+        "Nerve Control",
+        "Old Swing",
         "Overall"
       ],
       "description": "Legendary finale of the Dedication Series that took over 6 years to be finished and verified. Reminiscent of many different styles throughout 2.1.",
