@@ -182,25 +182,42 @@ async function fetchRecentChangelogEntries() {
   }
 }
 
-/** Builds { directReasonById, latestCause } from a page of changelog entries (newest-first). */
+/**
+ * Builds { directReasonById, latestCause } from a page of changelog
+ * entries (newest-first). A Swapped event has *two* known participants
+ * (action.upper_level / action.other_level) but AREDL's changelog only
+ * ever names one of them as entry.affected_level — registering just
+ * that one left the other participant to fall through to the generic
+ * "attribute it to whatever direct event most recently ran" cascade
+ * fallback below, which could point at a totally unrelated level
+ * elsewhere in the list (confirmed: a swap at #3/#4 got attributed to
+ * an unconnected level being Placed at #74, just because that happened
+ * to be the first entry on the page). Both participants are registered
+ * directly here instead, by their own ids, so neither one ever needs
+ * the fallback.
+ */
 function buildReasonContext(recentEntries) {
   const directReasonById = new Map();
   let latestCause = null;
   for (const entry of recentEntries) {
+    const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
+
+    if (type === 'Swapped') {
+      const upper = action.upper_level, other = action.other_level;
+      if (upper?.id && !directReasonById.has(upper.id)) {
+        directReasonById.set(upper.id, `Swapped with ${(other?.name || 'another level').trim()}`);
+      }
+      if (other?.id && !directReasonById.has(other.id)) {
+        directReasonById.set(other.id, `Swapped with ${(upper?.name || 'another level').trim()}`);
+      }
+      continue; // never a cascade `latestCause` — an unrelated level's shift shouldn't get attributed to a swap it wasn't part of
+    }
+
     const id = entry.affected_level?.id;
     if (!id) continue;
-    const name = entry.affected_level?.name;
-    const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
-    // affected_level is always exactly one of upper_level/other_level for
-    // a Swapped event — pick whichever one *isn't* it, rather than
-    // defaulting to other_level unconditionally (which self-references
-    // back to the affected level itself whenever it's the "other" side).
-    const swapPartner = action.upper_level?.name === name ? action.other_level?.name : action.upper_level?.name;
-    const reason = type === 'Swapped'
-      ? `Swapped with ${(swapPartner || 'another level').trim()}`
-      : directReason(type, action);
+    const reason = directReason(type, action);
     if (reason && !directReasonById.has(id)) directReasonById.set(id, reason);
-    if (!latestCause && type && type !== 'Swapped' && Number.isFinite(action.new_position)) {
+    if (!latestCause && type && Number.isFinite(action.new_position)) {
       latestCause = { type, name: entry.affected_level?.name, position: action.new_position };
     }
   }
