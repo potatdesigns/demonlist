@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T13:16:16.758Z",
+  "generatedAt": "2026-08-27T23:19:44.265Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1374,7 +1374,7 @@
         "High CPS",
         "Wave"
       ],
-      "description": null,
+      "description": "The current hardest Nine Circles level in the game. Remake of Arctic Lights with improved decoration and a gigantic increase in difficulty, which is why it took almost 3 years to get verified.",
       "song": 428157,
       "edel_enjoyment": 60,
       "is_edel_pending": true,
@@ -2329,7 +2329,7 @@
       "name": "Subsuming Vortex",
       "position": 20,
       "publisher_id": "93553653-af79-456e-ba66-abc82becd2e5",
-      "points": 4042,
+      "points": 4043,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 127997391,
@@ -2341,7 +2341,7 @@
         "Chokepoints",
         "Wave"
       ],
-      "description": "The hardest nine circles level currently on the list. It was created all the way in 2018 by SeptaGon7 and redecorated by Renn241. The name is a reference to a Calamity Mod spell tome with the same name.",
+      "description": "Created all the way in 2018 by SeptaGon7 and redecorated by Renn241. The name is a reference to a Calamity Mod spell tome with the same name.",
       "song": 512976,
       "edel_enjoyment": 34.44444444,
       "is_edel_pending": false,
@@ -6784,7 +6784,7 @@
       "name": "Prismline",
       "position": 67,
       "publisher_id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
-      "points": 2837,
+      "points": 2838,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 135148907,
@@ -6793,7 +6793,7 @@
         "2.2",
         "Long"
       ],
-      "description": null,
+      "description": "Colorful 2.2 glow level inspired by old glow levels. Also a semi-official sequel to Just DANCE with very similar gameplay and pacing, including the chokeable straight fly at the end.",
       "song": 1006406,
       "edel_enjoyment": null,
       "is_edel_pending": false,
@@ -7468,7 +7468,7 @@
         "Spider",
         "Duals"
       ],
-      "description": null,
+      "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
       "song": 10003020,
       "edel_enjoyment": 67.5,
       "is_edel_pending": true,
