@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T21:25:35.093Z",
+  "generatedAt": "2026-08-27T02:22:17.068Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -5439,7 +5439,7 @@
       "name": "Firework",
       "position": 50,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3167,
+      "points": 3168,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5448,6 +5448,7 @@
         "2.1",
         "XL",
         "Fast-Paced",
+        "Timings",
         "Nerve Control",
         "Overall"
       ],
