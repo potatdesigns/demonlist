@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T13:32:56.231Z",
+  "generatedAt": "2026-08-28T20:06:42.655Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2962,27 +2962,6 @@
       },
       "discoveredAt": "2026-08-27T18:59:52.467Z"
     },
-    "89695048-2cde-41d8-9692-0d5bd9ad4ff4": {
-      "name": "Destruction 19",
-      "position": 150,
-      "verifier": {
-        "id": "UUyzGg_4mqs",
-        "url": "https://www.youtube.com/watch?v=UUyzGg_4mqs",
-        "title": "Destruction 19 by bosjoker (VERIFICATION)",
-        "channel": "razsta4ax",
-        "viewCount": 33051,
-        "viewsCheckedAt": "2026-08-28T13:32:55.520Z"
-      },
-      "showcase": {
-        "id": "2q4f6CWXwwg",
-        "url": "https://www.youtube.com/watch?v=2q4f6CWXwwg",
-        "title": "【4K】\"Destruction 19\" by bosjoker (Extreme Demon) | GD 2.2",
-        "channel": "zof",
-        "viewCount": 3346,
-        "viewsCheckedAt": "2026-08-28T13:32:55.520Z"
-      },
-      "discoveredAt": "2026-08-27T18:59:52.467Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 54,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-08-28T13:32:55.520Z"
       },
       "discoveredAt": "2026-08-27T18:59:52.467Z"
+    },
+    "2471e1cc-ff59-471f-bc1c-eca3651a8591": {
+      "name": "Haunted Ship",
+      "position": 64,
+      "verifier": {
+        "id": "22l59QGmL48",
+        "url": "https://www.youtube.com/watch?v=22l59QGmL48",
+        "title": "VERIFIED! | Haunted Ship By awesomeme360 and Gnamolor (TOP 50?) EXTREME DEMON - Geometry Dash 2.2",
+        "channel": "Gnamolor",
+        "viewCount": 7116,
+        "viewsCheckedAt": "2026-08-28T20:06:42.654Z"
+      },
+      "showcase": {
+        "id": "9_3WwnXDx0A",
+        "url": "https://www.youtube.com/watch?v=9_3WwnXDx0A",
+        "title": "【4K】 \"Haunted Ship\" by awesomeme360 | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 1811,
+        "viewsCheckedAt": "2026-08-28T20:06:42.654Z"
+      },
+      "discoveredAt": "2026-08-28T20:06:42.654Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "TcYNPQsGFt0",
+      "newestVideoId": "HUEGoGIbJEQ",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31842,12 +31842,23 @@
           ],
           "description": "Level: Nine Circles by Texic\nID: 147596472\nSong: Nine Circles by Rukkus\nhttps://www.newgrounds.com/audio/listen/533927\n[Botted Showcase]",
           "checkedAt": "2026-08-27T18:59:19.203Z"
+        },
+        "HUEGoGIbJEQ": {
+          "title": "Sakupen Circles",
+          "channel": "Nexus [GD]",
+          "viewCount": 117306,
+          "levelIds": [
+            "79489460",
+            "360804"
+          ],
+          "description": "Level: Sakupen Circles Full by Kotovskuy\nID: 79489460\nSong: https://www.newgrounds.com/audio/listen/360804\n[Botted Showcase]",
+          "checkedAt": "2026-08-28T20:06:38.878Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "_nofARG8KRw",
+      "newestVideoId": "nMKKtBCB_-U",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55708,6 +55719,23 @@
             "110395104"
           ],
           "checkedAt": "2026-08-27T18:59:19.860Z"
+        },
+        "nMKKtBCB_-U": {
+          "title": "Deadlocked x Limbo",
+          "channel": "Neiro",
+          "viewCount": 8186,
+          "levelIds": [
+            "1432391",
+            "129261104"
+          ],
+          "checkedAt": "2026-08-28T20:06:39.634Z"
+        },
+        "ZFBbywyuawM": {
+          "title": "(NEW HARDEST) Acheron 50%",
+          "channel": "Neiro",
+          "viewCount": 33904,
+          "levelIds": [],
+          "checkedAt": "2026-08-28T20:06:39.634Z"
         }
       }
     },
@@ -92969,7 +92997,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "4H19bVVV7Eo",
+      "newestVideoId": "wA3Gg1Dt8j0",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -103521,6 +103549,15 @@
             "3046158"
           ],
           "checkedAt": "2026-08-27T18:59:21.547Z"
+        },
+        "wA3Gg1Dt8j0": {
+          "title": "【4K】\"midnight afterimage\" by JustYLC (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 91,
+          "levelIds": [
+            "139326879"
+          ],
+          "checkedAt": "2026-08-28T20:06:41.280Z"
         }
       }
     },
