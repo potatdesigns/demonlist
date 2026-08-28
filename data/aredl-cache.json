@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T07:25:56.366Z",
+  "generatedAt": "2026-08-28T19:43:52.229Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6469,11 +6469,6 @@
           "global_name": "Nexel"
         },
         {
-          "id": "3beff31c-b09c-4fb7-9b10-8fc7a70d6b49",
-          "username": "1d687cda9",
-          "global_name": "TwisterDude161"
-        },
-        {
           "id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
           "username": "skzyl",
           "global_name": "skzyl"
@@ -6522,6 +6517,11 @@
           "id": "cf6d41b6-81df-4b7b-b1dd-4a1fe24b6f7a",
           "username": "a5563414f",
           "global_name": "Goobfrudla"
+        },
+        {
+          "id": "9e62ae0f-4a48-4df4-a972-e0823b270ba5",
+          "username": "twisterdude161",
+          "global_name": "TwisterDude161"
         }
       ]
     },
@@ -14440,11 +14440,6 @@
           "global_name": "Devilmine"
         },
         {
-          "id": "2547be42-4307-474b-b8e7-b28022a18427",
-          "username": "49326fec5",
-          "global_name": "GiggsRH"
-        },
-        {
           "id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
           "username": "at424",
           "global_name": "At424"
@@ -14528,6 +14523,11 @@
           "id": "641c4703-3fdf-46db-85cb-e11b7fa67b26",
           "username": "9a72d4147",
           "global_name": "TheZinkYT"
+        },
+        {
+          "id": "d094dfc4-f5bd-4826-b69b-185709ae2e0c",
+          "username": "giggsrh",
+          "global_name": "GiggsRH"
         },
         {
           "id": "6c62ed59-3d04-415b-886b-947a417e0528",
