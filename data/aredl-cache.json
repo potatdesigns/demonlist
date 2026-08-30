@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T22:54:19.167Z",
+  "generatedAt": "2026-08-30T00:52:49.021Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1862,7 +1862,7 @@
       ],
       "description": null,
       "song": -9,
-      "edel_enjoyment": 78.75,
+      "edel_enjoyment": 81,
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
@@ -11571,7 +11571,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 77,
+      "edel_enjoyment": 76.125,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
