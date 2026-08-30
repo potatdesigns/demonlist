@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T08:26:34.820Z",
+  "generatedAt": "2026-08-30T13:42:07.453Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2941,27 +2941,6 @@
       },
       "discoveredAt": "2026-08-29T13:45:10.642Z"
     },
-    "b3d27bc6-68ba-42b3-8643-dae93c88a66a": {
-      "name": "Silent Lunch",
-      "position": 150,
-      "verifier": {
-        "id": "V8pu6Rrer8M",
-        "url": "https://www.youtube.com/watch?v=V8pu6Rrer8M",
-        "title": "Silent Lunch VERIFIED | DreamTide & more...",
-        "channel": "LordVadercraft",
-        "viewCount": 21164,
-        "viewsCheckedAt": "2026-08-30T08:26:34.009Z"
-      },
-      "showcase": {
-        "id": "oYORFIbFzc0",
-        "url": "https://www.youtube.com/watch?v=oYORFIbFzc0",
-        "title": "【4K】 \"Silent Lunch\" by DreamTide & more | Geometry Dash 2.2",
-        "channel": "Newly Rated Extremes",
-        "viewCount": 3517,
-        "viewsCheckedAt": "2026-08-30T08:26:34.009Z"
-      },
-      "discoveredAt": "2026-08-29T13:45:10.642Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 54,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-08-30T08:26:34.009Z"
       },
       "discoveredAt": "2026-08-29T13:45:10.642Z"
+    },
+    "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3": {
+      "name": "SPIRIT OVERCLOCK",
+      "position": 127,
+      "verifier": {
+        "id": "WECBlbM0LJk",
+        "url": "https://www.youtube.com/watch?v=WECBlbM0LJk",
+        "title": "[New hardest!] Spirit Overclock Verified!",
+        "channel": "Riley",
+        "viewCount": 4439,
+        "viewsCheckedAt": "2026-08-30T13:42:07.452Z"
+      },
+      "showcase": {
+        "id": "Sk5Nux9wNtc",
+        "url": "https://www.youtube.com/watch?v=Sk5Nux9wNtc",
+        "title": "SPIRIT OVERCLOCK by X Future",
+        "channel": "fnm04",
+        "viewCount": 4845,
+        "viewsCheckedAt": "2026-08-30T13:42:07.452Z"
+      },
+      "discoveredAt": "2026-08-30T13:42:07.452Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "e_hNoQWHApo",
+      "newestVideoId": "y0QYtUoqDq0",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31864,12 +31864,23 @@
           ],
           "description": "Level: Shockwave by SkylineRisingg\nID: 115689749\nSong: Sonic Blaster by F-777\nhttps://www.newgrounds.com/audio/listen/574484\n[Botted Showcase]",
           "checkedAt": "2026-08-29T13:44:30.013Z"
+        },
+        "y0QYtUoqDq0": {
+          "title": "SILENT DEADLOCKED",
+          "channel": "Nexus [GD]",
+          "viewCount": 77784,
+          "levelIds": [
+            "113959291",
+            "503731"
+          ],
+          "description": "Fixed Audio\nLevel: Silentlocked by GDSkele\nID: 113959291\nSong: Deadlocked by F-777\nhttps://www.newgrounds.com/audio/listen/503731\n[Botted Showcase]",
+          "checkedAt": "2026-08-30T13:42:03.712Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "t6jS_AXwYhs",
+      "newestVideoId": "qK0AElzZumQ",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55757,6 +55768,27 @@
             "141227512"
           ],
           "checkedAt": "2026-08-29T13:44:30.238Z"
+        },
+        "qK0AElzZumQ": {
+          "title": "(NEW HARDEST) Acheron 66%",
+          "channel": "Neiro",
+          "viewCount": 26860,
+          "levelIds": [],
+          "checkedAt": "2026-08-30T13:42:04.463Z"
+        },
+        "zGzaNo8XUyc": {
+          "title": "(NEW HARDEST) Acheron 58%",
+          "channel": "Neiro",
+          "viewCount": 14294,
+          "levelIds": [],
+          "checkedAt": "2026-08-30T13:42:04.463Z"
+        },
+        "rhi7NRLon-A": {
+          "title": "playing acheron (short stream)",
+          "channel": "Neiro",
+          "viewCount": 0,
+          "levelIds": [],
+          "checkedAt": "2026-08-30T13:42:04.463Z"
         }
       }
     },
