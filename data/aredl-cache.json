@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T21:11:19.633Z",
+  "generatedAt": "2026-09-01T00:52:48.304Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -23,8 +23,8 @@
       ],
       "description": "The sequel to Escalator and a nerfed impossible level. Featuring a dreamcore/weirdcore aesthetic, it is filled with references and explores themes of mental instability. Currently the hardest rated level in Geometry Dash.",
       "song": null,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 50,
+      "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
       "publisher": {
@@ -13484,7 +13484,7 @@
       ],
       "description": "Bright blue storm themed circles level that gradually gets more decorated and flashy as it continues. Known for spawning the \"CuLuC lightning\" trend and for its difficult wave sections. Official sequel to Aquatic Auroras and the third level in the Weather Trilogy with 4+ verifiers.",
       "song": null,
-      "edel_enjoyment": 45.37974684,
+      "edel_enjoyment": 45.2625,
       "is_edel_pending": false,
       "gddl_tier": 35.125,
       "nlw_tier": null,
