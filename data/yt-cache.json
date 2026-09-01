@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T09:30:50.869Z",
+  "generatedAt": "2026-09-01T13:20:20.102Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3054,18 +3054,18 @@
         "url": "https://www.youtube.com/watch?v=rtU2oDBz9X0",
         "title": "[Solo Top 90] Sanctity Verified | Geometry Dash",
         "channel": "Amplitron",
-        "viewCount": 15710,
-        "viewsCheckedAt": "2026-09-01T09:30:49.915Z"
+        "viewCount": 15751,
+        "viewsCheckedAt": "2026-09-01T13:20:20.102Z"
       },
       "showcase": {
         "id": "mTVjkFmMUnk",
         "url": "https://www.youtube.com/watch?v=mTVjkFmMUnk",
         "title": "【4K】 \"Sanctity\" by amplitron | Geometry Dash 2.2",
         "channel": "Newly Rated Extremes",
-        "viewCount": 1570,
-        "viewsCheckedAt": "2026-09-01T09:30:49.915Z"
+        "viewCount": 1176,
+        "viewsCheckedAt": "2026-09-01T13:20:20.102Z"
       },
-      "discoveredAt": "2026-08-29T13:45:10.642Z"
+      "discoveredAt": "2026-09-01T13:20:20.102Z"
     },
     "b55de8a2-94d8-41c1-a933-17124e4461e9": {
       "name": "Antarctic Lights",
@@ -3155,7 +3155,7 @@
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "kvUYjOBfbQ0",
+      "newestVideoId": "kTQyXocuiDA",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31885,12 +31885,23 @@
           ],
           "description": "Level: Io by HIROST\nID: 141700670\nSong: Part 9 by Douglas Holmquist\nhttps://www.youtube.com/watch?v=QYPcrlIIq6E\n[Botted Showcase]",
           "checkedAt": "2026-08-31T16:01:15.047Z"
+        },
+        "kTQyXocuiDA": {
+          "title": "Broken Gameboy by Voxicat",
+          "channel": "Nexus [GD]",
+          "viewCount": 99580,
+          "levelIds": [
+            "75387502",
+            "685185"
+          ],
+          "description": "Never uploaded this level when it came out for some reason\nID: 75387502\nSong: https://www.newgrounds.com/audio/listen/685185",
+          "checkedAt": "2026-09-01T13:20:16.414Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "M_aRBHN9w2k",
+      "newestVideoId": "v13GFu6OiQM",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55813,6 +55824,13 @@
           "viewCount": 28283,
           "levelIds": [],
           "checkedAt": "2026-08-31T16:01:15.319Z"
+        },
+        "v13GFu6OiQM": {
+          "title": "UPCOMING NEW TOP 5",
+          "channel": "Neiro",
+          "viewCount": 18382,
+          "levelIds": [],
+          "checkedAt": "2026-09-01T13:20:17.030Z"
         }
       }
     },
@@ -103660,7 +103678,7 @@
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "EoaSvx2nPrM",
+      "newestVideoId": "RB4T2XA3D7U",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -111799,6 +111817,16 @@
             "478283"
           ],
           "checkedAt": "2026-08-21T08:47:33.501Z"
+        },
+        "RB4T2XA3D7U": {
+          "title": "【4K】 \"Putrefaction\" by Fawxu & shmigels | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 1115,
+          "levelIds": [
+            "144540926",
+            "624990"
+          ],
+          "checkedAt": "2026-09-01T13:20:19.202Z"
         }
       }
     },
@@ -112608,7 +112636,5 @@
       }
     }
   },
-  "queue": [
-    "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a"
-  ]
+  "queue": []
 }
