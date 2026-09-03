@@ -11,7 +11,6 @@
 
 (() => {
   const totalEl = document.getElementById('home-stat-total');
-  const changesCountEl = document.getElementById('home-stat-changes');
   const completedEl = document.getElementById('home-stat-completed');
   const topBody = document.getElementById('spotlight-top-body');
   const featuredBody = document.getElementById('spotlight-featured-body');
@@ -263,11 +262,9 @@
       const entries = await AredlAPI.fetchChangelog({ maxResults: 8 });
       if (!entries.length) {
         changesList.innerHTML = `<li class="chart-empty">No recent changes in the top ${CONFIG.LIST_SIZE}.</li>`;
-        if (changesCountEl) changesCountEl.textContent = '0';
         return;
       }
       changesList.innerHTML = entries.map(changeRowHtml).join('');
-      if (changesCountEl) changesCountEl.textContent = String(entries.length);
     } catch (err) {
       changesList.innerHTML = `<li class="chart-empty">Couldn't load recent changes: ${escapeHtml(err.message)}</li>`;
     }

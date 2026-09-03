@@ -187,17 +187,58 @@ const AredlAPI = (() => {
     return all.length;
   }
 
-  /** Resolves a 1-indexed rank straight to that level's id — the full list is already cached in memory (see fetchFullList above), so this is a plain lookup, no extra round trip. Used by the "open rank" box to jump straight into a level's detail page instead of just the page containing it. */
-  async function getIdByPosition(position) {
+  // A rank beyond CONFIG.LIST_SIZE isn't in fetchFullList()'s cached/capped
+  // top-LIST_SIZE array at all — but level.html#N should still resolve for
+  // one (this app doesn't *track* deep legacy levels, but a direct link or
+  // Prev/Next stepping off the end of the tracked list shouldn't just dead-
+  // end either, the same way an id: route already works for any level via
+  // fetchDemonLive()). Lazily fetches AREDL's full, uncapped list — bare
+  // fields only, same shape as fetchFromLiveApi() — the *first* time a
+  // position past LIST_SIZE is actually requested, then caches it for the
+  // rest of the session; ordinary top-LIST_SIZE browsing never triggers
+  // this extra request at all.
+  let uncappedListCache = null;
+  let uncappedListPromise = null;
+  function fetchUncappedList() {
+    if (uncappedListCache) return Promise.resolve(uncappedListCache);
+    if (!uncappedListPromise) {
+      uncappedListPromise = (async () => {
+        const res = await corsFetchJson(ENDPOINTS.listed());
+        if (!res.ok && !res.viaProxy) {
+          throw new Error(`AREDL returned ${res.status} for the level list.`);
+        }
+        const data = await res.json();
+        const list = Array.isArray(data) ? data : (data.data || data.levels || []);
+        if (!Array.isArray(list)) throw new Error('AREDL returned an unexpected response shape for the level list.');
+        uncappedListCache = list.slice().sort((a, b) => a.position - b.position);
+        return uncappedListCache;
+      })().finally(() => { uncappedListPromise = null; });
+    }
+    return uncappedListPromise;
+  }
+
+  async function findByPosition(position) {
     const all = await fetchFullList();
     const found = all.find(l => l.position === position);
+    if (found) return found;
+    if (position <= CONFIG.LIST_SIZE) return null; // within the tracked range and genuinely not there — a real "no such rank", not a cap issue
+    try {
+      const uncapped = await fetchUncappedList();
+      return uncapped.find(l => l.position === position) || null;
+    } catch {
+      return null; // the extra deep-list fetch failing shouldn't break the (already-successful) tracked-range lookup path
+    }
+  }
+
+  /** Resolves a 1-indexed rank straight to that level's id — the full list is already cached in memory (see fetchFullList above), so this is a plain lookup, no extra round trip within the tracked top LIST_SIZE (see findByPosition() above for what happens past it). Used by the "open rank" box to jump straight into a level's detail page instead of just the page containing it. */
+  async function getIdByPosition(position) {
+    const found = await findByPosition(position);
     return found ? found.id : null;
   }
 
-  /** Same lookup as getIdByPosition, but returns {id, name} — used for the detail page's Previous/Next preview (js/detail.js), which wants to show what's actually at the adjacent rank, not just link to it blind. Returning null past either end of the tracked list is what tells the caller there's no previous/next to show — no separate bounds check needed. */
+  /** Same lookup as getIdByPosition, but returns {id, name} — used for the detail page's Previous/Next preview (js/detail.js), which wants to show what's actually at the adjacent rank, not just link to it blind. Returning null past either end of AREDL's *entire* list is what tells the caller there's no previous/next to show — no separate bounds check needed. */
   async function getByPosition(position) {
-    const all = await fetchFullList();
-    const found = all.find(l => l.position === position);
+    const found = await findByPosition(position);
     return found ? { id: found.id, name: found.name } : null;
   }
 
