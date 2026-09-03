@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T10:17:22.866Z",
+  "generatedAt": "2026-09-03T14:46:52.682Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -101,7 +101,7 @@
       "name": "Thinking Space II",
       "position": 2,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
-      "points": 4935,
+      "points": 4936,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 119544028,
@@ -302,6 +302,11 @@
       ],
       "creators": [
         {
+          "id": "6874aeec-5114-4e17-b844-aac60499809a",
+          "username": "titoalper",
+          "global_name": "Titoalper"
+        },
+        {
           "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
           "username": "9d1646bfb",
           "global_name": "iMist"
@@ -325,11 +330,6 @@
           "id": "cbd22908-3eaf-4a82-b705-641d49952a02",
           "username": "697033eba",
           "global_name": "BeClaNin0"
-        },
-        {
-          "id": "d1099a40-740e-424d-99db-023ec9b18d29",
-          "username": "05646dac9",
-          "global_name": "Titoalper"
         },
         {
           "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
@@ -373,7 +373,7 @@
       "name": "Flamewall",
       "position": 4,
       "publisher_id": "8e24a45b-84e1-42ff-aa0c-519425a59d73",
-      "points": 4812,
+      "points": 4813,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 126242564,
@@ -1533,7 +1533,7 @@
       "name": "BOOBAWAMBA",
       "position": 11,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 4435,
+      "points": 4436,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110816181,
@@ -1597,7 +1597,7 @@
       "name": "The Bloop",
       "position": 12,
       "publisher_id": "83de0098-8c9e-4a33-a06b-0e4ace3e2ae1",
-      "points": 4387,
+      "points": 4388,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 135661111,
@@ -1740,7 +1740,7 @@
       "name": "Every End",
       "position": 13,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 4340,
+      "points": 4341,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 116174063,
@@ -1910,7 +1910,7 @@
       "name": "Silent clubstep",
       "position": 15,
       "publisher_id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
-      "points": 4250,
+      "points": 4251,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 4125776,
@@ -2063,7 +2063,7 @@
       "name": "andromeda",
       "position": 18,
       "publisher_id": "b379f08f-f08a-4562-8a7f-53237d4eb6fd",
-      "points": 4123,
+      "points": 4124,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114283297,
@@ -2193,6 +2193,11 @@
           "global_name": "Lin"
         },
         {
+          "id": "866fe346-ce15-40bd-9bd4-66a745475078",
+          "username": "6c5e670cd",
+          "global_name": "Connected"
+        },
+        {
           "id": "1f78d483-0363-40e4-9efc-2bae2bc245e0",
           "username": "6a588f662",
           "global_name": "iBlue"
@@ -2266,11 +2271,6 @@
           "id": "8511ff3a-e838-4e94-bbd1-90010851c5ed",
           "username": "a4598604f",
           "global_name": "Skrypto"
-        },
-        {
-          "id": "8653c525-7e19-40ca-8093-30b59489f658",
-          "username": "b00cd4098",
-          "global_name": "ConnectedGD"
         },
         {
           "id": "9805f23f-76bf-4eec-aec6-63e243669c5d",
@@ -2386,7 +2386,7 @@
       "name": "Anathema",
       "position": 21,
       "publisher_id": "556cfea7-a887-4922-a143-9577c4ba3710",
-      "points": 4005,
+      "points": 4006,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 112313819,
@@ -2449,14 +2449,14 @@
           "global_name": "nikroplays"
         },
         {
-          "id": "b52d86dd-a940-42a2-b7f4-9da1d77fe5a0",
-          "username": "9deb552e8",
-          "global_name": "Eternaswip"
-        },
-        {
           "id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
           "username": "599bc909d",
           "global_name": "ItsHybrid"
+        },
+        {
+          "id": "5d511bfc-8d05-450e-b64a-194ead7ba575",
+          "username": "21f20b499",
+          "global_name": "Eternaswip"
         }
       ]
     },
@@ -2465,7 +2465,7 @@
       "name": "Avernus",
       "position": 22,
       "publisher_id": "760b8673-c930-4f37-9fbd-e820fe477d85",
-      "points": 3967,
+      "points": 3968,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89496627,
@@ -2915,7 +2915,7 @@
       "name": "Menace",
       "position": 25,
       "publisher_id": "7cc1696c-e945-4b2d-882f-b78b38a61f22",
-      "points": 3859,
+      "points": 3860,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 107805281,
@@ -2963,7 +2963,7 @@
       "name": "Abyss of Darkness",
       "position": 26,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
-      "points": 3825,
+      "points": 3826,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49896559,
@@ -3092,7 +3092,7 @@
       "name": "Defeated Circles",
       "position": 27,
       "publisher_id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
-      "points": 3791,
+      "points": 3792,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120012581,
@@ -3895,11 +3895,6 @@
           "global_name": "pocke"
         },
         {
-          "id": "14b021de-bc29-4ef6-be02-4f810c64c915",
-          "username": "9bfffca29",
-          "global_name": "Wespdx"
-        },
-        {
           "id": "9e463c72-fbc3-4d2f-96cd-b0df8004b18a",
           "username": "3ec08010b",
           "global_name": "Isane"
@@ -4033,6 +4028,11 @@
           "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
           "username": "gdskele",
           "global_name": "Skele"
+        },
+        {
+          "id": "0cafcfdd-a0d6-4335-b09a-6d7582eb205e",
+          "username": "54dd81536",
+          "global_name": "Wesp"
         }
       ]
     },
@@ -4973,14 +4973,14 @@
           "global_name": "Rocipher"
         },
         {
-          "id": "f9d85d3f-b9ca-4c72-a7a1-7c3627ac9b20",
-          "username": "0ee90eef5",
-          "global_name": "Bittersweet"
-        },
-        {
           "id": "3bb7984c-cea8-4f8a-b8bd-7aa17488b280",
           "username": "icerod",
           "global_name": "Ice Rod"
+        },
+        {
+          "id": "6ed02e60-aa2c-4722-9bdd-f58a8423c120",
+          "username": "milko212_59787",
+          "global_name": "Bittersweet"
         }
       ]
     },
@@ -7089,11 +7089,6 @@
           "global_name": "GD Endy"
         },
         {
-          "id": "de4d8aac-b1a6-4364-b1a7-bdf92698a65e",
-          "username": "45e5ffa70",
-          "global_name": "AppleCr"
-        },
-        {
           "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
           "username": "rynoxiouss",
           "global_name": "Rynoxious"
@@ -7102,6 +7097,11 @@
           "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
           "username": "mercurydt",
           "global_name": "MercuryDT"
+        },
+        {
+          "id": "531fa63f-498b-4f26-b59f-9329ac4e7028",
+          "username": "appledesuu",
+          "global_name": "AppleCr"
         },
         {
           "id": "b73f134b-9996-4bfa-9aba-f09d4a33275f",
@@ -11502,6 +11502,11 @@
           "global_name": "Novaach"
         },
         {
+          "id": "531fa63f-498b-4f26-b59f-9329ac4e7028",
+          "username": "appledesuu",
+          "global_name": "AppleCr"
+        },
+        {
           "id": "c79a9a87-73e9-4b70-9b1e-5862070ca647",
           "username": "a38fcc368",
           "global_name": "Loogiah"
@@ -11520,11 +11525,6 @@
           "id": "b22b4f8f-868c-4bc7-a71f-c57c70bf4a61",
           "username": "4e866b74f",
           "global_name": "npesta"
-        },
-        {
-          "id": "de4d8aac-b1a6-4364-b1a7-bdf92698a65e",
-          "username": "45e5ffa70",
-          "global_name": "AppleCr"
         },
         {
           "id": "d047f156-d5ac-43f7-9354-8c42763b1e2c",
