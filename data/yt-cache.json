@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T09:59:09.805Z",
+  "generatedAt": "2026-09-03T12:43:28.341Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2920,27 +2920,6 @@
       },
       "discoveredAt": "2026-09-02T12:41:12.734Z"
     },
-    "1d340102-5afd-4fdd-9b42-1567d5696090": {
-      "name": "Esfera",
-      "position": 150,
-      "verifier": {
-        "id": "GK0Z8rgziH4",
-        "url": "https://www.youtube.com/watch?v=GK0Z8rgziH4",
-        "title": "Esfera VERIFIED | by KeiAs and more (Top 30?)",
-        "channel": "Baeru",
-        "viewCount": 151294,
-        "viewsCheckedAt": "2026-09-03T09:59:09.132Z"
-      },
-      "showcase": {
-        "id": "13xVO059qkc",
-        "url": "https://www.youtube.com/watch?v=13xVO059qkc",
-        "title": "This NEW Extreme is AMAZING! | Playing \"Esfera\" by SyQual & More",
-        "channel": "fnm04",
-        "viewCount": 37541,
-        "viewsCheckedAt": "2026-09-03T09:59:09.132Z"
-      },
-      "discoveredAt": "2026-09-02T12:41:12.734Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 54,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-09-03T09:59:09.132Z"
       },
       "discoveredAt": "2026-09-02T12:41:12.734Z"
+    },
+    "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d": {
+      "name": "FOREST OF SPIKES",
+      "position": 28,
+      "verifier": {
+        "id": "WJYh3dW8Bfo",
+        "url": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
+        "title": "[VERIFIED!] FOREST OF SPIKES by Bims 100% // Top 25",
+        "channel": "Brian Cheese",
+        "viewCount": 37270,
+        "viewsCheckedAt": "2026-09-03T12:43:28.341Z"
+      },
+      "showcase": {
+        "id": "S6pTF_XulBQ",
+        "url": "https://www.youtube.com/watch?v=S6pTF_XulBQ",
+        "title": "【4K】 \"FOREST OF SPIKES\" by Bimms | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 1108,
+        "viewsCheckedAt": "2026-09-03T12:43:28.341Z"
+      },
+      "discoveredAt": "2026-09-03T12:43:28.341Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "AkSx1c9XQSw",
+      "newestVideoId": "7b1IWYOA4WU",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -31906,12 +31906,23 @@
           ],
           "description": "Level: Ciclos by KrazyGFX, AgusV, AsRen, EnzzGFX\nID: 146066119\nSong: https://youtu.be/2cPNqdeRoFU",
           "checkedAt": "2026-09-02T12:40:29.167Z"
+        },
+        "7b1IWYOA4WU": {
+          "title": "Every Wave",
+          "channel": "Nexus [GD]",
+          "viewCount": 73269,
+          "levelIds": [
+            "127656952",
+            "99477"
+          ],
+          "description": "Level: Every Wave by MrCheese13\nID: 127656952\nSong: Every End... by Dimrain47\nhttps://www.newgrounds.com/audio/listen/99477\n[Botted Showcase]",
+          "checkedAt": "2026-09-03T12:43:24.900Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "cVP9qwo03cI",
+      "newestVideoId": "i2MNWTVZdXY",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -55850,6 +55861,24 @@
             "146784815"
           ],
           "checkedAt": "2026-09-02T12:40:29.666Z"
+        },
+        "i2MNWTVZdXY": {
+          "title": "SHOW ME YOUR HEART REDECO",
+          "channel": "Neiro",
+          "viewCount": 15837,
+          "levelIds": [
+            "147926517"
+          ],
+          "checkedAt": "2026-09-03T12:43:25.372Z"
+        },
+        "BjHE2Q17So0": {
+          "title": "Troll Out",
+          "channel": "Neiro",
+          "viewCount": 17829,
+          "levelIds": [
+            "145200637"
+          ],
+          "checkedAt": "2026-09-03T12:43:25.372Z"
         }
       }
     },
@@ -93111,7 +93140,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "8RHXw2TTS5o",
+      "newestVideoId": "WeTcCPQ5NC8",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -103701,6 +103730,13 @@
             "90036102"
           ],
           "checkedAt": "2026-09-02T12:40:31.584Z"
+        },
+        "WeTcCPQ5NC8": {
+          "title": "【4K】UPCOMING TOP 20!!! \"BloodEngine\" by AlrexX (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 44,
+          "levelIds": [],
+          "checkedAt": "2026-09-03T12:43:27.165Z"
         }
       }
     },
