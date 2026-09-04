@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T21:08:14.551Z",
+  "generatedAt": "2026-09-04T23:31:25.267Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -564,11 +564,6 @@
           "global_name": "Intensa"
         },
         {
-          "id": "33bed4ff-b97b-43b2-9e2a-3ca4cd96896a",
-          "username": "98229d1df",
-          "global_name": "Zafkiel"
-        },
-        {
           "id": "344f9a5f-603b-41a1-8b3a-d513f3e8d153",
           "username": "_radical.",
           "global_name": "Radical."
@@ -1002,6 +997,11 @@
           "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
           "username": "ddd7bb669",
           "global_name": "Xolarzz"
+        },
+        {
+          "id": "ab5448d3-d60c-4c87-a186-5c51fa09278e",
+          "username": "8a0936f8d",
+          "global_name": "Zafkiel7"
         }
       ]
     },
@@ -3740,7 +3740,108 @@
           "updated_at": "2026-08-16T12:48:17.706979Z"
         }
       ],
-      "creators": []
+      "creators": [
+        {
+          "id": "4fa78652-58b3-471e-bf39-608981edf661",
+          "username": "ea25c2d89",
+          "global_name": "mbed"
+        },
+        {
+          "id": "b9551314-a9a2-48a1-8ab8-5918748068ca",
+          "username": "1c15536b6",
+          "global_name": "Disp"
+        },
+        {
+          "id": "1eead402-b0a5-4dc8-825c-d57ae327d061",
+          "username": "29eb7824b",
+          "global_name": "Lumpy"
+        },
+        {
+          "id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
+          "username": "spcreat",
+          "global_name": "spcreat"
+        },
+        {
+          "id": "ea36ea86-9220-406b-be81-6068b29605a1",
+          "username": "0736f0bde",
+          "global_name": "Zipixbox"
+        },
+        {
+          "id": "6b0dea8e-7b3d-4100-a909-3fd0d793e089",
+          "username": "3a40b92a3",
+          "global_name": "Jambees"
+        },
+        {
+          "id": "8718daf3-cd56-49a4-9dd9-f40219b2b1db",
+          "username": "ivyteal_",
+          "global_name": "ivyteal"
+        },
+        {
+          "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
+          "username": "whizkid05",
+          "global_name": "Whizkid05"
+        },
+        {
+          "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
+          "username": "ddd7bb669",
+          "global_name": "Xolarzz"
+        },
+        {
+          "id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
+          "username": "galaxxyss",
+          "global_name": "galaxxyss"
+        },
+        {
+          "id": "f218246d-52ad-4491-a9da-8f646d9140d3",
+          "username": "-",
+          "global_name": "-"
+        },
+        {
+          "id": "ebe0524a-dbbd-4a72-970b-e57e0558f57e",
+          "username": "stanstanmansan",
+          "global_name": "stanstanmansan"
+        },
+        {
+          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
+          "username": "mercurydt",
+          "global_name": "MercuryDT"
+        },
+        {
+          "id": "053fac47-e0f5-4500-ae75-e5671c57042f",
+          "username": "fc35f2d76",
+          "global_name": "7Rodo"
+        },
+        {
+          "id": "cbaf1b63-4a39-4a5a-8990-87c44e9bf8af",
+          "username": "eggyburstmagic",
+          "global_name": "egg"
+        },
+        {
+          "id": "05ad4ef2-baa3-4d26-9181-4b70bfa47b91",
+          "username": "f47f247b8",
+          "global_name": "sink"
+        },
+        {
+          "id": "317ec6e4-3309-4275-aa18-eb0a6fff98fd",
+          "username": "6de7a2580",
+          "global_name": "TheRealXFuture"
+        },
+        {
+          "id": "5f1acf39-642d-41d2-beff-db2048426f2d",
+          "username": "a39107bfe",
+          "global_name": "HDanke"
+        },
+        {
+          "id": "f83ef662-8bb3-4edd-848f-d4d48cacdd83",
+          "username": "0782a570d",
+          "global_name": "Subwoofer"
+        },
+        {
+          "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
+          "username": "akunakun",
+          "global_name": "akunakun"
+        }
+      ]
     },
     {
       "id": "68de8323-1894-46b9-9d39-cda105d81155",
