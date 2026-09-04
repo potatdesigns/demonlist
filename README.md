@@ -139,22 +139,24 @@ Paginated 75-at-a-time
   **Hide completed** checkbox — a flat post-filter applied after whatever `load()` already produced
   (paginated or the whole-tracked-list branch alike), persisted across visits since it reads as a
   standing preference rather than a one-off lens on the current view the way search/sort/filters are.
-- **Verifier/creator/completer "profile" links** — every verifier, publisher, and creator name on
-  the detail page links to `list.html#q=<name>` (`profileLink()` in `js/utils.js`) — search already
-  matches level name *and* publisher/verifier/creators (`searchByName()` in `js/api-aredl.js`), so a
-  name click is just that search pre-filled, no separate profile page or dataset. When a search
-  matches a person somewhere, the list page's results banner adds a one-line summary (best rank,
-  average rank, which role(s) matched, including how many tracked levels they've *completed* — see
-  `data/records-index.json` below) — see `profileStatsHtml()` in `js/list.js`.
+- **Profile page (`profile.html`)** — every verifier, publisher, creator, and completer name
+  anywhere on the site links here (`profileLink()` in `js/utils.js`, `profile.html#name=<name>`),
+  showing everything that name Verified, Completed, and Created across the tracked list, plus a
+  best-rank stat. Two independent sources feed it, since neither alone covers all three: `data/records-index.json`
+  (see below) — already split into verified vs. not — for Verified/Completed, and
+  `AredlAPI.searchByName()` (level name/publisher/verifier/creators) for Created. See `js/profile.js`.
 - **Completions** — a collapsible section on the detail page (`mountCompletions()` in
   `js/detail.js`) listing every accepted AREDL record for that level, oldest-first, each linking to
-  the player's own profile search and their completion video — read straight from AREDL's public
+  the player's own profile page and their completion video — read straight from AREDL's public
   per-level records endpoint (`AredlAPI.fetchLevelRecords()`), not from anything this site tracks
-  itself. Distinct from the personal completion tracker below: this is "who has AREDL verified beat
-  this," not a visitor's own marks. Both this and Position History are native `<details>`/`<summary>`
-  (`.collapsible-section` in `css/detail.css`), animated open/closed with the Web Animations API
-  (`animateDetailsToggle()` in `js/utils.js` — a real `.animate()` between measured heights, since a
-  plain CSS `height` transition doesn't work on `<details>`) rather than the native instant snap.
+  itself. The level's *verifier* is merged in too (tagged with a "Verifier" badge) — confirmed live
+  that AREDL tracks verification in a separate table from ordinary records, so the records endpoint
+  alone never includes it. Distinct from the personal completion tracker below: this is "who has
+  AREDL verified beat this," not a visitor's own marks. Both this and Position History are native
+  `<details>`/`<summary>` (`.collapsible-section` in `css/detail.css`), animated open/closed with the
+  Web Animations API (`animateDetailsToggle()` in `js/utils.js` — a real `.animate()` between
+  measured heights, since a plain CSS `height` transition doesn't work on `<details>`) rather than
+  the native instant snap.
 - **AREDL sync** — not a login: a text field in the Settings panel (`js/aredl-sync.js`) where a
   visitor types their own AREDL display name, matched case-insensitively against
   `data/records-index.json` (see below) and used to mark every tracked level that name has an
@@ -162,7 +164,11 @@ Paginated 75-at-a-time
   every toggle by hand, automatically. Only ever adds marks, never removes one (a level completed
   outside what AREDL's public records happen to show, or marked by hand, is never overridden).
   Nothing is sent anywhere; the only thing remembered locally is the plain name string, purely so
-  the panel can show "last synced as X" without asking again.
+  the panel can show "last synced as X" without asking again. A **Forget name** link clears just
+  that remembered string; a separate **Clear all** button (with a confirm prompt) unmarks every
+  beaten level — `Completion.clearAll()` fires one batched notification rather than one per level,
+  so the list page's hide-completed filter/progress stat don't thrash through however many were
+  cleared.
 - **Queue page (`queue.html`)** — reachable from its header's Home button (and `Ctrl+Alt+Q`), but
   still not linked from any *other* page's nav — an admin/curiosity view once you're there, rather
   than something surfaced as a primary destination. A plain top-to-bottom list
@@ -639,15 +645,18 @@ above) both depend on it to name a level regardless of whether it's still tracke
 **Records index.** `scripts/refresh-records-index.mjs` (`.github/workflows/refresh-records-index.yml`,
 every 6 hours) populates `data/records-index.json` — every accepted AREDL record (raw clear) across
 the tracked top `LEVEL_LIST_SIZE`, indexed by player id: `{ playerId: { name, levels:
-[{levelId, levelName, position, achievedAt, videoUrl}, ...] } }`. AREDL's public API only exposes
-records per-*level* (`GET /levels/{id}/records` — confirmed against the open-source backend, no auth
-needed), never per-*player*, so there's no way to ask "what has player X completed" directly; this
-walks every tracked level's own records once (concurrency-limited, same pattern as
+[{levelId, levelName, position, achievedAt, videoUrl, verified}, ...] } }`. AREDL's public API only
+exposes records per-*level* (`GET /levels/{id}/records` — confirmed against the open-source backend,
+no auth needed), never per-*player*, so there's no way to ask "what has player X completed" directly;
+this walks every tracked level's own records once (concurrency-limited, same pattern as
 `refresh-aredl-cache.mjs`'s own per-level detail fetch) and inverts the index server-side instead of
-every visitor re-doing that walk live. `js/records-index.js` is the client-side reader
-(`RecordsIndex.findPlayerByName()`, case-insensitive exact match — the only identifier a visitor can
-type in without an actual account); `js/aredl-sync.js` and the list page's name-search profile
-summary (see "What it does" above) are what actually read it.
+every visitor re-doing that walk live. Each level's own detail is fetched alongside its records
+specifically to also capture its *verifier* (`verified: true` on that entry) — confirmed live that
+AREDL tracks verification in a wholly separate table from ordinary records, so the records endpoint
+alone silently excludes every level's first completion. `js/records-index.js` is the client-side
+reader (`RecordsIndex.findPlayerByName()`, case-insensitive exact match — the only identifier a
+visitor can type in without an actual account); `js/aredl-sync.js`, `js/profile.js`, and the list
+page's name-search profile summary (see "What it does" above) are what actually read it.
 
 ### Watching for AREDL changes affecting the top 150
 
@@ -693,6 +702,7 @@ stats.html                      averages/records/charts markup, see "What it doe
 roulette.html                    Extreme Demon Roulette's own page, see "What it does" above
 timemachine.html                  reconstructed-top-150-as-of-any-past-date page, see "What it does" above
 recap.html                        year-in-the-list wrapped-style summary page, see "What it does" above
+profile.html                      one player's Verified/Completed/Created levels, see "What it does" above
 assets/
   logo.png                   the header brand mark (32px, every page) and the PNG favicon source
   favicon.ico                multi-resolution (16/32/48) static favicon, generated from logo.png —
@@ -709,6 +719,7 @@ css/
   timemachine.css                 plain-list row styling for timemachine.html, same shape as queue.css
   recap.css                       recap.html's own layout: year picker, "mover" highlight cards; also
                                     loads stats.css for its KPI tile row
+  profile.css                      profile.html's own layout: stat strip, Verified/Completed/Created lists
 js/
   config.js                  endpoints, storage keys, tunables — builds the cache branch's raw.githubusercontent.com URLs
   utils.js                     formatting/parsing helpers + corsFetchJson + positionColor() +
@@ -752,6 +763,8 @@ js/
                                        optional second date for a two-date diff, see "What it does" above
   recap.js                            recap.html's own controller — year-in-the-list summary, purely
                                        from position-history.json, see "What it does" above
+  profile.js                          profile.html's own controller — Verified/Completed/Created for
+                                       one player, from RecordsIndex + searchByName(), see "What it does" above
   shortcuts.js                        Ctrl+Alt+M/E/Q/R/S/T + ? keyboard shortcuts and the shortcuts panel, every page
   stats.js                            stats page controller — averages/records/charts, see "What it does" above
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below

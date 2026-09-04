@@ -1,0 +1,98 @@
+/* =====================================================================
+   PROFILE PAGE
+   ===================================================================== */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-bottom: 18px;
+  transition: color .15s;
+}
+.back-link:hover { color: var(--primary); }
+
+.profile-hero {
+  padding: 10px 0 24px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: 24px;
+}
+.profile-hero h1 {
+  font-size: clamp(24px, 3.6vw, 34px);
+  font-weight: 700;
+  color: var(--text-hi);
+  word-break: break-word;
+}
+
+.profile-stat-strip {
+  display: flex;
+  gap: 32px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.profile-stat { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.profile-stat .num { font-size: 22px; font-weight: 700; color: var(--primary); font-family: ui-monospace, monospace; }
+.profile-stat span:last-child { font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); }
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.profile-section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.profile-level-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.profile-level-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--bg-surface);
+  transition: background .12s, padding-left .12s;
+  animation: profile-row-in .3s cubic-bezier(.16,1,.3,1) both;
+  animation-delay: calc(min(var(--i, 0), 40) * 8ms);
+}
+.profile-level-row:last-child { border-bottom: none; }
+.profile-level-row:hover { background: var(--bg-surface-2); padding-left: 18px; }
+@keyframes profile-row-in {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.profile-level-pos {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--primary);
+  flex-shrink: 0;
+  min-width: 40px;
+}
+.profile-level-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile-level-date {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  color: var(--text-dim);
+}

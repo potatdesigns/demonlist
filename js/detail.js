@@ -129,7 +129,7 @@
     return `<a class="detail-nav-btn ${dir}" href="level.html#${position}"${targetAttrs}>${dir === 'prev' ? arrow + info : info + arrow}</a>`;
   }
 
-  /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. Each chip links to that person's other levels (list.html#q=<name>, see profileLink() in js/utils.js) — the "+N more" overflow chip doesn't, since it isn't any one person. */
+  /** Chips for every creator, unless there are a lot of them (some collabs run into the dozens) — past MAX, the rest collapse into one "+N more" chip with the full remaining names as its hover title, rather than every card wrapping into a wall of chips. Each chip links to that person's profile page (profileLink() in js/utils.js) — the "+N more" overflow chip doesn't, since it isn't any one person. */
   function creatorsChipsHtml(list, max = 8) {
     if (!list.length) return '';
     const shown = list.slice(0, max).map(c => `<a class="chip profile-link" href="${profileLink(c.name)}">${escapeHtml(c.name)}</a>`).join('');

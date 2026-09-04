@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Applies reduce-motion and the saved accent color before first paint, so a returning visitor's choices don't flash — see js/settings.js's file header. Accent preset values duplicated here (ACCENT_PRESETS lives in js/settings.js) since this must run before any script tag loads. -->
+<script>try{var s=JSON.parse(localStorage.getItem('gddl_settings_v1')||'{}');if(s.reduceMotion)document.documentElement.setAttribute('data-reduce-motion','true');var A={red:['#ef4444','#dc2626','#ffffff'],orange:['#ff6e00','#e66300','#1a0d00'],yellow:['#eab308','#ca8a04','#1a1300'],green:['#22c55e','#16a34a','#ffffff'],blue:['#3b82f6','#2563eb','#ffffff'],pink:['#ec4899','#db2777','#ffffff']};var a=A[s.accentColor]||A.orange;var rs=document.documentElement.style;rs.setProperty('--primary',a[0]);rs.setProperty('--primary-dark',a[1]);rs.setProperty('--primary-on',a[2]);}catch(e){}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonlist | Profile</title>
+<meta name="description" content="A player's verified, completed, and created levels.">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand" style="cursor:pointer;">
+    <img class="brand-mark" src="assets/logo.png" width="32" height="32" alt="">
+    <span class="brand-text">DEMONLIST<span>Verifier vs. showcase</span></span>
+  </a>
+  <div class="header-actions" id="header-actions"></div>
+</header>
+
+<main class="page" id="profile-root">
+  <a class="back-link" href="list.html">&larr; Back to the list</a>
+
+  <section class="profile-hero">
+    <h1 id="profile-name">&nbsp;</h1>
+    <div class="profile-stat-strip" id="profile-stats"></div>
+  </section>
+
+  <div class="state-banner" id="state-banner" style="display:none;"></div>
+
+  <div class="profile-body" id="profile-body">
+    <section class="profile-section" id="profile-verified-section">
+      <h2>Verified</h2>
+      <ul class="profile-level-list" id="profile-verified-list"></ul>
+    </section>
+
+    <section class="profile-section" id="profile-completed-section">
+      <h2>Completed</h2>
+      <ul class="profile-level-list" id="profile-completed-list"></ul>
+    </section>
+
+    <section class="profile-section" id="profile-created-section">
+      <h2>Created</h2>
+      <ul class="profile-level-list" id="profile-created-list"></ul>
+    </section>
+  </div>
+</main>
+
+<p class="footer-note">
+  &copy; 2026 &middot; Not affiliated with RobTop Games, Geometry Dash, or AREDL.
+</p>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api-aredl.js"></script>
+<script src="js/data-source.js"></script>
+<script src="js/shared-cache.js"></script>
+<script src="js/nav-actions.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/completion.js"></script>
+<script src="js/records-index.js"></script>
+<script src="js/aredl-sync.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/shortcuts.js"></script>
+</body>
+</html>

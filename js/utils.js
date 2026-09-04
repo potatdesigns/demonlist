@@ -311,9 +311,9 @@ function escapeHtml(str) {
     .replaceAll('"', '&quot;');
 }
 
-/** list.html's search already matches level name + publisher + verifier + creators (see searchByName() in js/api-aredl.js) — a "profile" link for a person is just that search pre-filled with their exact name, so every level they're credited on anywhere shows up, no separate profile page/data needed. */
+/** A person's dedicated profile page (profile.html) — verified/completed/created levels, see js/profile.js. */
 function profileLink(name) {
-  return `list.html#q=${encodeURIComponent(name)}`;
+  return `profile.html#name=${encodeURIComponent(name)}`;
 }
 
 /**
