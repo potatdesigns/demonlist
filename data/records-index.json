@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T00:49:13.704Z",
+  "generatedAt": "2026-09-04T10:24:21.304Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -20328,6 +20328,30 @@
           "achievedAt": "2023-10-14T18:01:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=pRUREppfhQc&t=39s",
           "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2022-02-25T02:33:17Z",
+          "videoUrl": "https://www.youtube.com/watch?v=TS6W3tHIvpo",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 126,
+          "achievedAt": "2023-02-19T21:10:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=CTSG4GLNDKY",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 145,
+          "achievedAt": "2021-11-08T04:47:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9j6SpuV04jA",
+          "verified": false
         }
       ]
     },
@@ -38976,6 +39000,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 118,
+          "achievedAt": "2026-08-30T18:04:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=pBaDe-CHYkU",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 119,
@@ -48400,7 +48432,7 @@
       ]
     },
     "4e4f28d4-69c6-44d1-9225-0ea7425b3fab": {
-      "name": "Chrisuhan",
+      "name": "Chris",
       "levels": [
         {
           "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
@@ -55229,6 +55261,19 @@
           "position": 120,
           "achievedAt": "2026-08-26T19:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=UM7YZSiHTiA",
+          "verified": false
+        }
+      ]
+    },
+    "8e1b2cbb-8120-46d7-94a9-1512db188236": {
+      "name": "Cricket",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-09-02T00:26:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=g73B36RCrfw",
           "verified": false
         }
       ]
