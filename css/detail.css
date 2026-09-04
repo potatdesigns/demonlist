@@ -281,6 +281,31 @@
 .video-info .v-stats b { color: var(--text-hi); font-weight: 600; }
 .video-info .v-stats .win { color: var(--gold); }
 
+/* --- collapsible sections (position history, completions) — native
+   <details>/<summary>, styled to match .video-section-head above rather
+   than introducing a second header shape. --- */
+.collapsible-section { margin: 0; }
+.collapsible-section summary {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 40px 0 14px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.collapsible-section summary::-webkit-details-marker { display: none; }
+.collapsible-section summary h2 { font-size: 19px; font-weight: 700; }
+.collapsible-section summary .eyebrow { margin-left: auto; }
+.collapsible-chevron {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--text-dim);
+  transition: transform .15s;
+  transform: rotate(0deg);
+}
+.collapsible-section[open] > summary .collapsible-chevron { transform: rotate(90deg); }
+
 /* --- position history (js/position-history.js) --- */
 .position-history-list {
   list-style: none;
@@ -337,6 +362,58 @@
   font-size: 11.5px;
 }
 .position-history-list .chart-empty { padding: 20px; }
+
+/* --- completions (js/api-aredl.js's fetchLevelRecords, mounted by mountCompletions() in js/detail.js) --- */
+.completions-list {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  overflow: hidden;
+  max-height: 420px;
+  overflow-y: auto;
+}
+.completion-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 12.5px;
+}
+.completion-row:last-child { border-bottom: none; }
+.completion-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.completion-main .profile-link { font-weight: 600; color: var(--text-hi); }
+.completion-video-link { font-size: 11.5px; color: var(--text-dim); flex-shrink: 0; }
+.completion-video-link:hover { color: var(--primary); }
+.completion-mobile {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-surface-2);
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.completion-date {
+  flex-shrink: 0;
+  color: var(--text-dim);
+  font-size: 11.5px;
+}
+.completions-list .chart-empty { padding: 20px; }
 
 .creators-list {
   display: flex;

@@ -55,6 +55,7 @@ const AredlAPI = (() => {
     detail: (id) => `${CONFIG.AREDL_BASE}/levels/${id}`,
     creators: (id) => `${CONFIG.AREDL_BASE}/levels/${id}/creators`,
     changelog: (page) => `${CONFIG.AREDL_BASE}/changelog?page=${page}`,
+    records: (id, page) => `${CONFIG.AREDL_BASE}/levels/${id}/records?page=${page}&per_page=100`,
   };
 
   /** AREDL players are { id, username, global_name } — global_name is the freely-set display name. */
@@ -403,5 +404,37 @@ const AredlAPI = (() => {
     return ids;
   }
 
-  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog, fetchNewLevelIds };
+  /**
+   * Every accepted record (raw clear) for a level, newest-first — same
+   * "most recent activity first" convention the detail page's own
+   * position history uses. Public, no auth (GET /levels/{id}/records),
+   * confirmed against the open-source backend. Paginated at 100/page;
+   * walks up to maxPages (a level with >500 clears is astronomically
+   * unlikely within this app's tracked top CONFIG.LIST_SIZE, but capped
+   * rather than unbounded regardless).
+   */
+  async function fetchLevelRecords(id, { maxPages = 5 } = {}) {
+    const all = [];
+    let page = 1, pages = 1;
+    do {
+      const res = await corsFetchJson(ENDPOINTS.records(id, page));
+      if (!res.ok && !res.viaProxy) throw new Error(`AREDL returned ${res.status} for level records.`);
+      const data = await res.json();
+      pages = data.pages || 1;
+      all.push(...(data.data || []));
+      page++;
+    } while (page <= pages && page <= maxPages);
+
+    return all
+      .map(r => ({
+        id: r.id,
+        player: normalizePlayer(r.submitted_by),
+        videoUrl: r.video_url,
+        achievedAt: r.achieved_at,
+        mobile: !!r.mobile,
+      }))
+      .sort((a, b) => new Date(b.achievedAt) - new Date(a.achievedAt));
+  }
+
+  return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog, fetchNewLevelIds, fetchLevelRecords };
 })();

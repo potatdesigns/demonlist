@@ -210,16 +210,31 @@
         </div>
       </div>
 
-      <div class="video-section-head">
-        <h2>Position history</h2>
-        <span class="eyebrow">past #${CONFIG.LIST_SIZE} is legacy</span>
-      </div>
-      <ul class="position-history-list" id="position-history-list">
-        <li class="chart-empty">Loading…</li>
-      </ul>
+      <details class="collapsible-section" open>
+        <summary>
+          <span class="collapsible-chevron" aria-hidden="true">&rsaquo;</span>
+          <h2>Position history</h2>
+          <span class="eyebrow">past #${CONFIG.LIST_SIZE} is legacy</span>
+        </summary>
+        <ul class="position-history-list" id="position-history-list">
+          <li class="chart-empty">Loading…</li>
+        </ul>
+      </details>
+
+      <details class="collapsible-section">
+        <summary>
+          <span class="collapsible-chevron" aria-hidden="true">&rsaquo;</span>
+          <h2>Completions</h2>
+          <span class="eyebrow" id="completions-eyebrow">who's beaten this</span>
+        </summary>
+        <ul class="completions-list" id="completions-list">
+          <li class="chart-empty">Loading…</li>
+        </ul>
+      </details>
     `;
 
     mountPositionHistory(demon);
+    mountCompletions(demon);
     mountVerifierVideo(demon, sharedEntry);
     mountShowcaseVideo(demon, sharedEntry);
     CacheAdminUI.mountLevelRefreshButton(document.getElementById('level-refresh-actions'), demon.id);
@@ -346,6 +361,49 @@
       }).join('');
     } catch {
       listEl.innerHTML = `<li class="chart-empty">Couldn't load position history.</li>`;
+    }
+  }
+
+  /**
+   * Every accepted record (raw clear) for this level, straight from
+   * AREDL's own public per-level records endpoint (AredlAPI.fetchLevelRecords) —
+   * not something js/completion.js's personal tracker has any part in,
+   * this is "who has AREDL verified beat this", not "did *you* mark it
+   * beaten". Each name links to that player's other levels
+   * (profileLink() in js/utils.js), same as the Verifier/Publisher/
+   * Creator fields above.
+   */
+  async function mountCompletions(demon) {
+    const listEl = document.getElementById('completions-list');
+    const eyebrowEl = document.getElementById('completions-eyebrow');
+    if (!listEl) return;
+    try {
+      const records = await AredlAPI.fetchLevelRecords(demon.id);
+      if (eyebrowEl) eyebrowEl.textContent = records.length ? `${records.length} clear${records.length === 1 ? '' : 's'}` : 'who\'s beaten this';
+      if (!records.length) {
+        listEl.innerHTML = `<li class="chart-empty">No accepted records on file yet.</li>`;
+        return;
+      }
+      listEl.innerHTML = records.map(r => {
+        const dateLabel = r.achievedAt ? new Date(r.achievedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+        const name = r.player?.name || 'Unknown player';
+        const nameHtml = r.player?.name
+          ? `<a class="profile-link" href="${profileLink(r.player.name)}">${escapeHtml(name)}</a>`
+          : `<span>${escapeHtml(name)}</span>`;
+        return `
+          <li class="completion-row">
+            <div class="completion-main">
+              ${nameHtml}
+              ${r.videoUrl ? `<a class="completion-video-link" href="${escapeHtml(r.videoUrl)}" target="_blank" rel="noopener">watch &rarr;</a>` : ''}
+              ${r.mobile ? '<span class="completion-mobile" title="Completed on mobile">Mobile</span>' : ''}
+            </div>
+            <span class="completion-date">${escapeHtml(dateLabel)}</span>
+          </li>
+        `;
+      }).join('');
+    } catch {
+      listEl.innerHTML = `<li class="chart-empty">Couldn't load completions.</li>`;
+      if (eyebrowEl) eyebrowEl.textContent = "who's beaten this";
     }
   }
 
