@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T15:37:32.502Z",
+  "generatedAt": "2026-09-04T20:10:14.325Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -48047,6 +48047,27 @@
         }
       ]
     },
+    "9b0b3104-1893-4ff6-910a-c482742360b3": {
+      "name": "c4qiqimain",
+      "levels": [
+        {
+          "levelId": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
+          "levelName": "arcturus",
+          "position": 103,
+          "achievedAt": "2026-09-04T11:00:25Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-9iie-PS0dk",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2025-12-20T09:47:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Ed0w0lML7nU",
+          "verified": false
+        }
+      ]
+    },
     "ba992255-5255-4b94-9bcb-c478f2bf6b8a": {
       "name": "Sevant",
       "levels": [
@@ -53028,19 +53049,6 @@
           "position": 145,
           "achievedAt": "2024-10-07T16:08:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=gS9aM44HLDg",
-          "verified": false
-        }
-      ]
-    },
-    "9b0b3104-1893-4ff6-910a-c482742360b3": {
-      "name": "c4qiqimain",
-      "levels": [
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 119,
-          "achievedAt": "2025-12-20T09:47:46Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Ed0w0lML7nU",
           "verified": false
         }
       ]
