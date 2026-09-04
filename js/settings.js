@@ -207,7 +207,7 @@ const Settings = (() => {
       <div class="settings-divider"></div>
       <div class="settings-sync">
         <span class="settings-title">Sync from AREDL</span>
-        <span class="settings-desc">Not a login — type your AREDL display name to auto-mark everything you've cleared as beaten, from AREDL's own public records.</span>
+        <span class="settings-desc">Type your AREDL name to mark your clears as beaten.</span>
         <form class="settings-sync-form" id="settings-sync-form">
           <input type="text" id="settings-sync-input" placeholder="Your AREDL name" autocomplete="off" value="${lastName ? escapeHtml(lastName) : ''}">
           <button type="submit" class="btn-ghost">Sync</button>
