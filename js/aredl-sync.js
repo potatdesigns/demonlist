@@ -39,5 +39,11 @@ const AredlSync = (() => {
     return { found: true, name: player.name, totalLevels: player.levels.length, newlyMarked };
   }
 
-  return { syncByName, lastSyncedName };
+  /** Forgets the remembered name only — doesn't touch any completion marks (see Completion.clearAll() in js/completion.js for that, a separate and more destructive action). */
+  function forgetName() {
+    try { localStorage.removeItem(CONFIG.STORAGE.AREDL_SYNC_NAME); }
+    catch { /* storage disabled — there was nothing persisted to begin with */ }
+  }
+
+  return { syncByName, lastSyncedName, forgetName };
 })();

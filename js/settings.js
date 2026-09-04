@@ -212,7 +212,15 @@ const Settings = (() => {
           <input type="text" id="settings-sync-input" placeholder="Your AREDL name" autocomplete="off" value="${lastName ? escapeHtml(lastName) : ''}">
           <button type="submit" class="btn-ghost">Sync</button>
         </form>
-        <p class="settings-sync-status" id="settings-sync-status">${lastName ? `Last synced as ${escapeHtml(lastName)}.` : ''}</p>
+        <div class="settings-sync-footer">
+          <p class="settings-sync-status" id="settings-sync-status">${lastName ? `Last synced as ${escapeHtml(lastName)}.` : ''}</p>
+          <button type="button" class="settings-link-btn" id="settings-forget-name">Forget name</button>
+        </div>
+      </div>
+      <div class="settings-sync">
+        <span class="settings-title">Clear beaten marks</span>
+        <span class="settings-desc">Unmarks every level as beaten. Can't be undone.</span>
+        <button type="button" class="btn-ghost settings-clear-btn" id="settings-clear-completion">Clear all</button>
       </div>
     `;
   }
@@ -277,7 +285,21 @@ const Settings = (() => {
           status.textContent = `Couldn't sync: ${err.message}`;
         }
       });
+
+      const forgetBtn = overlay.querySelector('#settings-forget-name');
+      forgetBtn?.addEventListener('click', () => {
+        AredlSync.forgetName();
+        input.value = '';
+        status.textContent = '';
+      });
     }
+
+    const clearBtn = overlay.querySelector('#settings-clear-completion');
+    clearBtn?.addEventListener('click', () => {
+      if (Completion.count() === 0) return;
+      if (!confirm(`Unmark all ${Completion.count()} beaten level(s)? This can't be undone.`)) return;
+      Completion.clearAll();
+    });
   }
 
   mount();

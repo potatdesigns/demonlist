@@ -13,6 +13,15 @@
    scripts/refresh-yt-cache.mjs precomputes view counts instead of every
    visitor re-fetching them live.
 
+   The records endpoint alone misses every level's *verifier* — confirmed
+   live: a level's own public records list and its GET /levels/{id}
+   `verifications[0]` named two entirely different players, so AREDL
+   tracks verification in a separate table, not as just another record.
+   Each level's own detail is fetched alongside its records so the
+   verifier gets indexed as a completion too (`verified: true` on that
+   entry), deduped against the records list by player id in case a
+   future AREDL response ever does double them up.
+
    This is what js/aredl-sync.js's "sync my completions from AREDL"
    button matches a typed username against (case-insensitive name match,
    since that's the only identifier a visitor can be expected to type in
@@ -77,43 +86,61 @@ async function fetchAllRecordsForLevel(id) {
   return all;
 }
 
+/** The level's own verification (GET /levels/{id}), confirmed live to be tracked in a wholly separate table from GET /levels/{id}/records — that endpoint never includes the verifier's own clear at all, so a records-only index silently missed every level's first completion. */
+async function fetchVerification(id) {
+  const data = await fetchJson(`${AREDL_BASE}/levels/${id}`);
+  const detail = data.data || data;
+  return (detail.verifications || [])[0] || null;
+}
+
 async function main() {
   const data = await fetchJson(`${AREDL_BASE}/levels`);
   const fullList = (Array.isArray(data) ? data : (data.data || data.levels || [])).sort((a, b) => a.position - b.position);
   const trackedLevels = fullList.slice(0, LEVEL_LIST_SIZE);
 
-  console.log(`Fetching records for ${trackedLevels.length} tracked levels (concurrency ${CONCURRENCY})...`);
+  console.log(`Fetching records + verification for ${trackedLevels.length} tracked levels (concurrency ${CONCURRENCY})...`);
   let failed = 0;
-  const perLevelRecords = await mapWithConcurrency(trackedLevels, CONCURRENCY, async (level) => {
+  const perLevelData = await mapWithConcurrency(trackedLevels, CONCURRENCY, async (level) => {
     try {
-      return await fetchAllRecordsForLevel(level.id);
+      const [records, verification] = await Promise.all([
+        fetchAllRecordsForLevel(level.id),
+        fetchVerification(level.id).catch(() => null), // a missing verification shouldn't drop this level's other records
+      ]);
+      return { records, verification };
     } catch (e) {
       failed++;
       console.warn(`  skipped records for "${level.name}": ${e.message}`);
-      return [];
+      return { records: [], verification: null };
     }
   }, PACE_MS);
 
-  // player id -> { name, levels: [{levelId, levelName, position, achievedAt, videoUrl}] }
+  // player id -> { name, levels: [{levelId, levelName, position, achievedAt, videoUrl, verified}] }
   const players = {};
   let totalRecords = 0;
+
+  function addLevel(user, level, achievedAt, videoUrl, verified) {
+    const name = user?.global_name || user?.username;
+    if (!user?.id || !name) return;
+    totalRecords++;
+    const entry = players[user.id] || (players[user.id] = { name, levels: [] });
+    entry.name = name; // always keep the most-recently-seen display name (a rename between runs shouldn't leave a stale one stuck)
+    entry.levels.push({ levelId: level.id, levelName: level.name, position: level.position, achievedAt, videoUrl, verified });
+  }
+
   for (let i = 0; i < trackedLevels.length; i++) {
     const level = trackedLevels[i];
-    for (const record of perLevelRecords[i]) {
+    const { records, verification } = perLevelData[i];
+    const addedForThisLevel = new Set();
+
+    if (verification?.submitted_by?.id) {
+      addLevel(verification.submitted_by, level, verification.achieved_at, verification.video_url, true);
+      addedForThisLevel.add(verification.submitted_by.id);
+    }
+    for (const record of records) {
       const user = record.submitted_by;
-      if (!user?.id) continue;
-      const name = user.global_name || user.username;
-      if (!name) continue;
-      totalRecords++;
-      const entry = players[user.id] || (players[user.id] = { name, levels: [] });
-      entry.name = name; // always keep the most-recently-seen display name (a rename between runs shouldn't leave a stale one stuck)
-      entry.levels.push({
-        levelId: level.id,
-        levelName: level.name,
-        position: level.position,
-        achievedAt: record.achieved_at,
-        videoUrl: record.video_url,
-      });
+      if (!user?.id || addedForThisLevel.has(user.id)) continue; // already added as this level's verifier above
+      addLevel(user, level, record.achieved_at, record.video_url, false);
+      addedForThisLevel.add(user.id);
     }
   }
   for (const entry of Object.values(players)) {

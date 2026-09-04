@@ -53,8 +53,15 @@ const Completion = (() => {
   }
   function toggle(id) { set(id, !isDone(id)); }
 
+  /** Unmarks every level at once — the Settings panel's "Clear all" button. Fires one (null, false) notification rather than one per level, so a listener (the list page's hide-completed filter, a progress stat) reloads/recomputes once instead of thrashing through however many were marked. */
+  function clearAll() {
+    state = {};
+    persist();
+    listeners.forEach(fn => fn(null, false));
+  }
+
   /** Called whenever a mark changes — (id, isDoneNow) — so e.g. a progress stat can re-render without polling. */
   function subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); }
 
-  return { isDone, completedAt, count, set, toggle, subscribe };
+  return { isDone, completedAt, count, set, toggle, clearAll, subscribe };
 })();

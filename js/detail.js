@@ -374,6 +374,14 @@
    * beaten". Each name links to that player's other levels
    * (profileLink() in js/utils.js), same as the Verifier/Publisher/
    * Creator fields above.
+   *
+   * The verifier's own clear is confirmed *not* included in that records
+   * endpoint at all — AREDL tracks verification in a separate table from
+   * ordinary records (checked live: a level's one public record and its
+   * `verifications[0]` named two different players entirely) — so it's
+   * merged in here from `demon` itself, which already has it (no extra
+   * request needed), deduped in case a future AREDL response ever does
+   * double up the two.
    */
   async function mountCompletions(demon) {
     const listEl = document.getElementById('completions-list');
@@ -381,6 +389,19 @@
     if (!listEl) return;
     try {
       const records = await AredlAPI.fetchLevelRecords(demon.id);
+      const verification = (demon.raw?.verifications || [])[0];
+      if (demon.verifier?.id && !records.some(r => r.player?.id === demon.verifier.id)) {
+        records.unshift({
+          id: verification?.id || `verifier-${demon.id}`,
+          player: demon.verifier,
+          videoUrl: demon.videoUrl,
+          achievedAt: verification?.achieved_at || null,
+          mobile: false,
+          verified: true,
+        });
+      }
+      records.sort((a, b) => new Date(a.achievedAt || 0) - new Date(b.achievedAt || 0));
+
       if (eyebrowEl) eyebrowEl.textContent = records.length ? `${records.length} clear${records.length === 1 ? '' : 's'}` : 'who\'s beaten this';
       if (!records.length) {
         listEl.innerHTML = `<li class="chart-empty">No accepted records on file yet.</li>`;
@@ -396,6 +417,7 @@
           <li class="completion-row">
             <div class="completion-main">
               ${nameHtml}
+              ${r.verified ? '<span class="completion-verified" title="First verification">Verifier</span>' : ''}
               ${r.videoUrl ? `<a class="completion-video-link" href="${escapeHtml(r.videoUrl)}" target="_blank" rel="noopener">watch &rarr;</a>` : ''}
               ${r.mobile ? '<span class="completion-mobile" title="Completed on mobile">Mobile</span>' : ''}
             </div>
