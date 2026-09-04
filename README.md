@@ -556,53 +556,67 @@ hourly job.
 
 **Position history.** The same run also updates `data/position-history.json` — a
 `{ levelId: [{ date, position, reason }, ...] }` log, one entry appended per level *only when its
-position actually changed* since the last recorded entry, not once per run (most runs, most levels
-don't move — recording those as no-ops would just be noise). `reason` is a short human-readable
-string in AREDL's own changelog vocabulary (`Placed at #4`, `Raised from #12 to #4`, `Moved down —
-Society was placed at #1`, ...) — see `scripts/lib/changelog-reasons.mjs`, shared by this script and
-`backfill-position-history.mjs` so the phrasing is identical regardless of which one wrote a given
-entry. This hourly path only has the latest changelog page (20 entries, one cheap extra request) to
-work with, not a full simulation, so a level that moved only as an indirect side effect of some
-other change gets a best-effort reason pointing at whatever direct event most recently ran — usually
-right, since there's rarely more than one admin action between two hourly checks, but not exactly
-attributed the way the full backfill's simulation can. Tracks both the current top
-`LEVEL_LIST_SIZE` and any level that already has history but has since dropped out of it, so its
-record doesn't just stop the moment it leaves — the detail page is what turns a position past
-`LEVEL_LIST_SIZE` into "Legacy" for display, the stored data keeps the real AREDL position either
-way. Kept in full, all-time — never trimmed; a level only gets a new entry when it actually moves
-(not once per run), so even years of history stays a small array, and there's no volume problem an
-entry cap would actually be solving. Like `data/aredl-cache.json`, the workflow pulls the prior
-copy from the `cache` branch before running
-(the script needs it to know what "changed since last time" means) and publishes the updated copy
-back alongside it.
+position actually changed*, not once per run. `reason` is a short human-readable string in AREDL's
+own changelog vocabulary (`Placed at #4`, `Raised from #12 to #4`, `Moved down — Society was placed
+at #1`, ...) — see `scripts/lib/changelog-reasons.mjs`. Every entry, whether the level a changelog
+event directly names or one that only shifted as a cascading side effect, is exactly attributed —
+there's no "best guess" path anymore (see below for why one used to exist and why it's gone).
+Tracks both the current top `LEVEL_LIST_SIZE` and any level that already has history but has since
+dropped out of it, so its record doesn't just stop the moment it leaves — the detail page is what
+turns a position past `LEVEL_LIST_SIZE` into "Legacy" for display, the stored data keeps the real
+AREDL position either way. Kept in full, all-time — never trimmed.
 
-Since this only started running whenever it was added, `scripts/backfill-position-history.mjs`
-(one-off, no workflow — see the file layout below) reconstructs everything *before* that straight
-from AREDL's own changelog, which currently runs back to August 2022. Naively replaying just the
-changelog's own named "affected level" per event badly undercounts: AREDL only logs the level an
-action was *directly* taken on, never the cascading shifts every other level in between
-experiences as a side effect (inserting a level at #40 quietly moves everything from #40 down to
-its old position too, unlogged) — over ~3,200 changelog events across ~1,600 levels and 4 years,
-that's nowhere near enough rows to represent every individual shift. So instead the script fully
-*simulates* the list: replays every event in the backend's own insertion order (not a `created_at`
-sort — ties or rounding on near-simultaneous events can silently corrupt that ordering) against an
-in-memory array using real insert/remove semantics, and records a history entry for every level
-whose simulated position actually changes, not just the one AREDL named. `Swapped` events are
-resolved by swapping the two array slots at the event's own recorded position — authoritative
-regardless of array contents — rather than trusting AREDL's `upper_level`/`other_level` fields,
-which have been observed to sometimes just duplicate each other. Validated by diffing the fully
-simulated final order against AREDL's live current list (exact match, all 150 tracked positions).
-Each recorded entry also gets a `reason` — for the level a changelog event directly named, that's
-built straight from the event's own action/positions; for everything else that shifted only as a
-side effect, it names whichever direct action caused it (`Moved down — Society was placed at #1`),
-using a levelId→name map built opportunistically from every event seen, since a level causing a
-cascade is often never itself the changelog's "affected level" and so wouldn't otherwise have a
-name available at that point in the replay. That same map is published alongside the history as
-`data/position-history.json`'s `names` field — needed because `data/aredl-cache.json` only carries
-detail for the *current* top `LEVEL_LIST_SIZE`, so a level that's since dropped out has no name
-available anywhere else in the site's caches; the Time Machine page and the home page's On this day
-panel (see "What it does" above) both depend on it to name a level regardless of whether it's still
-tracked today.
+Naively replaying just the changelog's own named "affected level" per event badly undercounts:
+AREDL only logs the level an action was *directly* taken on, never the cascading shifts every other
+level in between experiences as a side effect (inserting a level at #40 quietly moves everything
+from #40 down to its old position too, unlogged) — over ~3,300 changelog events across ~1,600
+levels and 4 years, that's nowhere near enough rows to represent every individual shift. So instead
+`scripts/lib/simulate-history.mjs` (shared by both scripts below) fully *simulates* the list:
+replays every event in the backend's own insertion order (not a `created_at` sort — ties or
+rounding on near-simultaneous events can silently corrupt that ordering) against an in-memory array
+using real insert/remove semantics, and records a history entry for every level whose simulated
+position actually changes, not just the one AREDL named. `Swapped` events register *both* known
+participants (`action.upper_level`/`other_level`) directly, each with its own "Swapped with X"
+reason, rather than trusting the pairing to whichever one happens to land on `entry.affected_level`
+— and are resolved by swapping the two array slots at the event's own recorded position, rather
+than trusting AREDL's `upper_level`/`other_level` fields for *which side* each participant landed
+on (that field pairing has been observed to sometimes duplicate itself).
+
+Walking the *entire* changelog (~3,300 events, ~170 pages) to simulate from scratch is comparatively
+expensive, so `refresh-aredl-cache.mjs`'s hourly run doesn't repeat that on every run. Instead the
+simulator's exact internal state — the full simulated order, everything ever tracked, every name
+seen — is published alongside the history as `data/position-history.json`'s `simState`, and each
+run seeds a fresh simulator from the *previous* run's `simState`, fetches only whatever changelog
+entries are newer than the last one it already processed (tracked via a fingerprint — created_at
+alone isn't a safe cursor, since entries can share a timestamp — almost always just page 1, one
+request), and replays only those. This used to instead diff live AREDL positions against the last
+recorded ones and, for any level that moved without itself being named in the single most-recently-
+fetched changelog page, guess the cause from whatever direct event happened to be most recent — a
+real bug, confirmed live: a swap's *other* participant (never itself `entry.affected_level`) got
+attributed to a totally unrelated level being placed elsewhere in the list, just because that
+happened to be first on the page. The incremental replay has no such gap — it's exactly as precise
+as a full backfill, just cheap enough to run every time. (Validated by construction: seeding a
+simulator from a deliberately-truncated state and replaying the held-back entries produces
+byte-identical `history`/`names`/`simState` to a full from-scratch replay of the same data.)
+
+If `simState` is missing entirely (a fresh cache branch, or a gap wider than the incremental
+script's `MAX_CATCHUP_PAGES` safety cap), the hourly run skips its position-history update rather
+than replaying against an empty or stale seed — `scripts/backfill-position-history.mjs` (one-off,
+no workflow — see the file layout below) exists for exactly that: a full rebuild straight from
+AREDL's own changelog, back to August 2022, which also re-establishes `simState` from scratch and
+is validated by diffing the simulated final order against AREDL's live current list (exact match,
+all 150 tracked positions) before it's trusted. Re-run it by hand any time the incremental script
+warns about a gap, or just to re-verify against the full log.
+
+Every recorded entry's `reason` — for the level a changelog event directly named, or for everything
+else that shifted only as a side effect — is built the same way regardless of which script wrote
+it, using a levelId→name map built opportunistically from every event seen (a level causing a
+cascade is often never itself the changelog's "affected level", so wouldn't otherwise have a name
+available at that point in the replay). That same map is published as `data/position-history.json`'s
+`names` field — needed because `data/aredl-cache.json` only carries detail for the *current* top
+`LEVEL_LIST_SIZE`, so a level that's since dropped out has no name available anywhere else in the
+site's caches; the Time Machine page and the home page's On this day panel (see "What it does"
+above) both depend on it to name a level regardless of whether it's still tracked today.
 
 ### Watching for AREDL changes affecting the top 150
 
@@ -707,20 +721,27 @@ js/
 data/                        *.json gitignored on main — generated at runtime, published to the `cache` branch, see below
 scripts/
   refresh-yt-cache.mjs        populates data/yt-cache.json — "discover" or "views" mode, see "Shared cache" above
-  refresh-aredl-cache.mjs     populates data/aredl-cache.json + data/position-history.json, see "Shared AREDL cache" above
-  backfill-position-history.mjs  one-off/manual — rebuilds data/position-history.json by fully
-                                  simulating AREDL's changelog (back to Aug 2022), capturing
-                                  cascading position shifts, not just each event's directly-named
-                                  level; see "Position history" above. No workflow — run by hand
+  refresh-aredl-cache.mjs     populates data/aredl-cache.json + incrementally updates
+                               data/position-history.json (seeded from its own previous run's
+                               simState, only replaying changelog entries newer than the last one
+                               already processed), see "Shared AREDL cache" above
+  backfill-position-history.mjs  one-off/manual — rebuilds data/position-history.json from scratch
+                                  by fully simulating AREDL's entire changelog (back to Aug 2022);
+                                  see "Position history" above. No workflow — run by hand
                                   (`node scripts/backfill-position-history.mjs`) then
-                                  publish-cache-branch.sh, same as any other refresh script.
+                                  publish-cache-branch.sh, same as any other refresh script. Also
+                                  what (re-)establishes simState for refresh-aredl-cache.mjs's own
+                                  incremental replay to seed from.
   watch-new-levels.mjs        populates data/new-level-watch.json — polls AREDL's changelog for any
                                change touching the top 150 and triggers the two scripts above when
                                it finds one, see "Watching for AREDL changes affecting the top 150" above
   publish-cache-branch.sh     what all three scripts' workflows call to publish to the `cache` branch, see "Cache branch" above
   lib/
-    changelog-reasons.mjs     shared reason-text formatters for position-history entries, used by both
-                               refresh-aredl-cache.mjs and backfill-position-history.mjs — see "Position history" above
+    simulate-history.mjs      the shared changelog-replay simulator behind data/position-history.json —
+                               used by both refresh-aredl-cache.mjs (incremental) and
+                               backfill-position-history.mjs (full rebuild), see "Position history" above
+    changelog-reasons.mjs     shared reason-text formatters for position-history entries, used by
+                               simulate-history.mjs — see "Position history" above
   showcase-blacklist.json     hand-maintained video/title-phrase blacklist, see "Showcase-matching algorithm" above
 .github/workflows/
   refresh-yt-cache.yml        daily — discover mode (find showcases); also accepts a manual per-level target, see "Manual refresh" above

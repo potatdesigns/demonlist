@@ -12,7 +12,9 @@
    verifier/publisher/creators, and the detail page. Every visitor was
    independently re-fetching all of this; this makes it one shared,
    scheduled fetch instead (see .github/workflows/refresh-aredl-cache.yml,
-   hourly).
+   hourly — and .github/workflows/watch-new-levels.yml, which triggers an
+   extra off-schedule run the moment a top-LEVEL_LIST_SIZE-affecting
+   change is detected, so a change doesn't sit stale for up to an hour).
 
    Caching per-level detail too used to not be worth it — pre-fetching
    detail for AREDL's full ~1600-level list on every run would've been a
@@ -37,20 +39,24 @@
 
    This is unauthenticated and free (no API key, no quota — AREDL's
    endpoints are public), so unlike the YouTube cache there's no unit
-   budget to manage, just the concurrency cap above. Hourly is already
-   far more often than levels actually get reordered/added, but since it
-   costs nothing there's no reason to be stingier than that.
+   budget to manage, just the concurrency cap above.
 
-   Also populates data/position-history.json — one { date, position }
-   entry per level appended whenever its position actually changes since
-   the last recorded entry (not every run), read from and republished to
-   the cache branch same as data/aredl-cache.json (the workflow pulls
-   the prior copy before running, see .github/workflows/refresh-aredl-
-   cache.yml). Tracks both the current top LEVEL_LIST_SIZE and any level
-   that already has history but has since dropped out, so its record
-   doesn't just stop — js/detail.js renders anything past LEVEL_LIST_SIZE
-   as "Legacy" rather than a raw (and here, not otherwise meaningful)
-   AREDL position number.
+   Also updates data/position-history.json — an *incremental* run of the
+   same changelog simulation scripts/backfill-position-history.mjs does a
+   full walk of (see scripts/lib/simulate-history.mjs for the shared
+   replay logic). Rather than re-walking the entire changelog every run,
+   this seeds the simulator from the previous run's own final state
+   (`simState`, published alongside `history`) and only fetches/replays
+   whatever changelog entries are newer than the last one it already
+   processed — cheap (almost always just page 1, one request) and, unlike
+   the old best-effort "guess the cause from whatever's most recent"
+   heuristic this replaced, exactly as precise as the full backfill: every
+   level whose position actually shifts, including as a cascade side
+   effect, gets a correctly-attributed entry, not just whichever one
+   AREDL's changelog happens to name directly. If `simState` is missing
+   (e.g. a fresh cache branch) this skips position-history for the run
+   rather than replaying against an empty, wrong seed — run
+   scripts/backfill-position-history.mjs by hand first to establish one.
 
    Usage: node scripts/refresh-aredl-cache.mjs
    ===================================================================== */
@@ -58,7 +64,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { directReason, cascadeReason } from './lib/changelog-reasons.mjs';
+import { createSimulator, entryFingerprint } from './lib/simulate-history.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CACHE_PATH = path.join(__dirname, '..', 'data', 'aredl-cache.json');
@@ -80,6 +86,15 @@ const LEVEL_LIST_SIZE = 150;
 // below is the safety net for whatever slips through anyway.
 const CONCURRENCY = 4;
 const PACE_MS = 250;
+
+// Safety cap on how many changelog pages an incremental run will walk
+// looking for its last-processed entry, before giving up and skipping
+// position-history for this run rather than guessing. 30 pages (~600
+// entries) comfortably covers even a multi-day gap between runs — a
+// bigger gap than that means something's actually wrong with the
+// schedule and deserves a fresh scripts/backfill-position-history.mjs
+// run, not a script silently doing something unreliable.
+const MAX_CATCHUP_PAGES = 30;
 
 async function fetchJson(url, { retries = 4 } = {}) {
   for (let attempt = 0; ; attempt++) {
@@ -128,143 +143,42 @@ async function mapWithConcurrency(items, limit, fn, pauseMs = 0) {
   return results;
 }
 
-async function loadExistingHistory() {
+async function loadExistingHistoryFile() {
   try {
     const parsed = JSON.parse(await readFile(HISTORY_PATH, 'utf8'));
     return {
       history: parsed.history && typeof parsed.history === 'object' ? parsed.history : {},
       names: parsed.names && typeof parsed.names === 'object' ? parsed.names : {},
+      simState: parsed.simState && typeof parsed.simState === 'object' ? parsed.simState : null,
     };
   } catch {
-    return { history: {}, names: {} }; // first run, or the file's missing/unreadable — start fresh
+    return { history: {}, names: {}, simState: null }; // first run, or the file's missing/unreadable
   }
 }
 
 /**
- * Merges in a name for every tracked id, from this run's own full AREDL
- * fetch (which — unlike data/aredl-cache.json — covers AREDL's entire
- * list, not just the tracked top LEVEL_LIST_SIZE, so it can name a level
- * that dropped out of the top LEVEL_LIST_SIZE a while ago too). Existing
- * names are kept as a base so a level AREDL's own /levels response no
- * longer includes at all (actually removed, not just demoted — rare)
- * doesn't lose its name just because this run can't re-confirm it.
+ * Walks the changelog from page 1 (newest-first) collecting entries until
+ * one matches `lastFingerprint` — everything from there back was already
+ * processed by a previous run. Returns them oldest-first, ready to
+ * replay. Returns null (rather than a possibly-incomplete list) if
+ * MAX_CATCHUP_PAGES is exhausted without finding the fingerprint, or if
+ * `lastFingerprint` is falsy (nothing to anchor an incremental walk to).
  */
-function updateNames(existingNames, namesById, trackedIds) {
-  const names = { ...existingNames };
-  for (const id of trackedIds) {
-    const name = namesById.get(id);
-    if (name) names[id] = name;
-  }
-  return names;
-}
-
-/**
- * Fetches the changelog's most recent page (20 entries — cheap, one
- * request) so position changes found by updatePositionHistory() below
- * can carry a real `reason`, same vocabulary as the full changelog
- * simulation in scripts/backfill-position-history.mjs — see that file's
- * header for why AREDL's changelog only names the level an action was
- * *directly* taken on, never everything that shifted as a side effect.
- * This is a best-effort, non-simulated version of that same idea: any
- * level in this page's own directReason() gets an exact reason; any
- * *other* tracked level whose position moved this run (a cascade this
- * cheap approach can't precisely attribute) instead gets a reason
- * pointing at whichever direct event most recently ran, since between
- * two hourly checks there's usually just the one.
- */
-async function fetchRecentChangelogEntries() {
-  try {
-    const json = await fetchJson(`${AREDL_BASE}/changelog?page=1`);
-    return json.data || [];
-  } catch (e) {
-    console.warn(`  couldn't fetch changelog for position-history reasons: ${e.message}`);
-    return [];
-  }
-}
-
-/**
- * Builds { directReasonById, latestCause } from a page of changelog
- * entries (newest-first). A Swapped event has *two* known participants
- * (action.upper_level / action.other_level) but AREDL's changelog only
- * ever names one of them as entry.affected_level — registering just
- * that one left the other participant to fall through to the generic
- * "attribute it to whatever direct event most recently ran" cascade
- * fallback below, which could point at a totally unrelated level
- * elsewhere in the list (confirmed: a swap at #3/#4 got attributed to
- * an unconnected level being Placed at #74, just because that happened
- * to be the first entry on the page). Both participants are registered
- * directly here instead, by their own ids, so neither one ever needs
- * the fallback.
- */
-function buildReasonContext(recentEntries) {
-  const directReasonById = new Map();
-  let latestCause = null;
-  for (const entry of recentEntries) {
-    const [type, action] = Object.entries(entry.action || {})[0] || [null, {}];
-
-    if (type === 'Swapped') {
-      const upper = action.upper_level, other = action.other_level;
-      if (upper?.id && !directReasonById.has(upper.id)) {
-        directReasonById.set(upper.id, `Swapped with ${(other?.name || 'another level').trim()}`);
+async function fetchNewChangelogEntries(lastFingerprint) {
+  if (!lastFingerprint) return null;
+  const collected = [];
+  for (let page = 1; page <= MAX_CATCHUP_PAGES; page++) {
+    const json = await fetchJson(`${AREDL_BASE}/changelog?page=${page}`);
+    const entries = json.data || [];
+    for (const entry of entries) {
+      if (entryFingerprint(entry) === lastFingerprint) {
+        return collected.reverse(); // oldest-first, ready for createSimulator().replay()
       }
-      if (other?.id && !directReasonById.has(other.id)) {
-        directReasonById.set(other.id, `Swapped with ${(upper?.name || 'another level').trim()}`);
-      }
-      continue; // never a cascade `latestCause` — an unrelated level's shift shouldn't get attributed to a swap it wasn't part of
+      collected.push(entry);
     }
-
-    const id = entry.affected_level?.id;
-    if (!id) continue;
-    const reason = directReason(type, action);
-    if (reason && !directReasonById.has(id)) directReasonById.set(id, reason);
-    if (!latestCause && type && Number.isFinite(action.new_position)) {
-      latestCause = { type, name: entry.affected_level?.name, position: action.new_position };
-    }
+    if (page >= (json.pages || 1)) break; // reached the end of the whole changelog without finding it — shouldn't happen, but don't loop past it
   }
-  return { directReasonById, latestCause };
-}
-
-/**
- * Appends a { date, position, reason } entry for every level that's
- * either currently in the top LEVEL_LIST_SIZE or already has history (so
- * a level that's since dropped out keeps getting tracked — its entries
- * just read as "Legacy" once position > LEVEL_LIST_SIZE, see
- * js/detail.js) — but only when its position actually changed since the
- * last recorded entry, not on every run. A level absent from
- * `positionById` entirely (removed from AREDL outright, not just
- * demoted — rare) is left as-is rather than guessed at.
- *
- * Kept in full, all-time — never trimmed. A level only gets a new entry
- * when it actually moves (not once per run), so even a level with years
- * of history stays a small array; there's no volume problem an entry
- * cap would actually be solving.
- */
-function updatePositionHistory(existingHistory, positionById, trackedIds, reasonContext) {
-  const history = { ...existingHistory };
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD — daily granularity is plenty for a position history
-  let changed = 0;
-
-  for (const id of trackedIds) {
-    const currentPosition = positionById.get(id);
-    if (!Number.isFinite(currentPosition)) continue;
-
-    const entries = history[id] ? history[id].slice() : [];
-    const last = entries[entries.length - 1];
-    if (last && last.position === currentPosition) continue; // no change since last recorded entry
-
-    let reason = reasonContext.directReasonById.get(id);
-    if (!reason) {
-      const cause = reasonContext.latestCause;
-      const movedDown = last ? currentPosition > last.position : false;
-      reason = cause ? cascadeReason(cause.type, cause.name, cause.position, movedDown) : (movedDown ? 'Moved down' : 'Moved up');
-    }
-
-    entries.push({ date: today, position: currentPosition, reason });
-    history[id] = entries;
-    changed++;
-  }
-
-  return { history, changed };
+  return null; // gap too large — see MAX_CATCHUP_PAGES
 }
 
 async function main() {
@@ -290,16 +204,71 @@ async function main() {
   await writeFile(CACHE_PATH, JSON.stringify(cache, null, 2) + '\n');
   console.log(`Wrote ${levels.length} AREDL levels (${levels.length - failed} with full detail) to ${CACHE_PATH}.`);
 
-  const positionById = new Map(fullList.map(l => [String(l.id), l.position]));
-  const namesById = new Map(fullList.map(l => [String(l.id), l.name]));
-  const { history: existingHistory, names: existingNames } = await loadExistingHistory();
-  const trackedIds = new Set([...bareLevels.map(l => String(l.id)), ...Object.keys(existingHistory)]);
-  const recentEntries = await fetchRecentChangelogEntries();
-  const reasonContext = buildReasonContext(recentEntries);
-  const { history, changed } = updatePositionHistory(existingHistory, positionById, trackedIds, reasonContext);
-  const names = updateNames(existingNames, namesById, trackedIds);
-  await writeFile(HISTORY_PATH, JSON.stringify({ generatedAt: new Date().toISOString(), history, names }, null, 2) + '\n');
-  console.log(`Position history: ${changed} level(s) moved since the last check, ${Object.keys(history).length} tracked in total, wrote to ${HISTORY_PATH}.`);
+  const { history: existingHistory, names: existingNames, simState } = await loadExistingHistoryFile();
+
+  if (!simState) {
+    console.warn(`No simState in ${HISTORY_PATH} — skipping position-history update this run. Run scripts/backfill-position-history.mjs by hand to establish one.`);
+    return;
+  }
+
+  const newEntries = await fetchNewChangelogEntries(simState.lastEventFingerprint);
+  if (newEntries === null) {
+    console.warn(`Couldn't find this run's starting point within the last ${MAX_CATCHUP_PAGES} changelog pages — skipping position-history update this run. Run scripts/backfill-position-history.mjs by hand to catch back up.`);
+    return;
+  }
+
+  if (newEntries.length === 0) {
+    console.log('Position history: no new changelog entries since the last run.');
+    return;
+  }
+
+  const sim = createSimulator({
+    order: simState.order,
+    everTracked: simState.everTracked,
+    levelNames: simState.levelNames,
+    historyByLevel: existingHistory,
+    listSize: LEVEL_LIST_SIZE,
+  });
+  sim.replay(newEntries);
+  const state = sim.getState();
+  const { directCount, cascadeCount, swapResolved, swapSkipped } = state.counters;
+  console.log(`Replayed ${newEntries.length} new changelog entries: ${directCount} direct + ${cascadeCount} cascading shifts (${swapResolved} swaps, ${swapSkipped} skipped out-of-bounds). ${state.touchedIds.length} level(s) got a new position-history entry.`);
+
+  // Cheap standing correctness check — fullList is already in memory from
+  // this run's own /levels fetch above, no extra request needed. A
+  // mismatch here means something's actually wrong with the incremental
+  // replay (or AREDL's changelog itself lagged the live position briefly);
+  // it doesn't block publishing, but it's worth a loud log line so it
+  // doesn't drift silently for weeks.
+  const livePositionById = new Map(fullList.map(l => [l.id, l.position]));
+  let mismatches = 0;
+  for (let i = 0; i < LEVEL_LIST_SIZE; i++) {
+    const simId = state.order[i];
+    if (livePositionById.get(simId) !== i + 1) mismatches++;
+  }
+  if (mismatches > 0) {
+    console.warn(`  WARNING: simulated order has ${mismatches}/${LEVEL_LIST_SIZE} mismatches vs. this run's live list — consider re-running scripts/backfill-position-history.mjs.`);
+  }
+
+  const names = { ...existingNames };
+  for (const id of state.touchedIds) {
+    const name = state.levelNames[id];
+    if (name) names[id] = name;
+  }
+
+  const out = {
+    generatedAt: new Date().toISOString(),
+    history: state.historyByLevel,
+    names,
+    simState: {
+      order: state.order,
+      everTracked: state.everTracked,
+      levelNames: state.levelNames,
+      lastEventFingerprint: entryFingerprint(newEntries[newEntries.length - 1]),
+    },
+  };
+  await writeFile(HISTORY_PATH, JSON.stringify(out, null, 2) + '\n');
+  console.log(`Position history: ${Object.keys(state.historyByLevel).length} levels tracked in total, wrote to ${HISTORY_PATH}.`);
 }
 
 main().catch(err => {
