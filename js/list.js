@@ -616,7 +616,7 @@
     if (asPublisher) roles.push(`published ${asPublisher}`);
     if (completedCount) roles.push(`completed ${completedCount}`);
     const rankBit = positions.length ? `Best #${best}, avg #${avg} · ` : '';
-    return ` ${rankBit}${escapeHtml(roles.join(', '))}.`;
+    return ` ${rankBit}${escapeHtml(roles.join(', '))}. <a href="${profileLink(query)}">View profile &rarr;</a>`;
   }
 
   /** Human-readable pieces of whatever's currently filled in the filter panel, for the banner and empty-state text. */
