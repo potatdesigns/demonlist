@@ -689,6 +689,38 @@ a.chip.profile-link:hover { color: var(--primary); border-color: var(--primary);
 .settings-row-label .settings-title { font-size: 13px; font-weight: 600; color: var(--text-hi); }
 .settings-row-label .settings-desc { font-size: 11.5px; color: var(--text-dim); line-height: 1.45; }
 
+.settings-divider { height: 1px; background: var(--line-soft); margin: -6px 0; }
+
+.settings-sync {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.settings-sync .settings-title { font-size: 13px; font-weight: 600; color: var(--text-hi); }
+.settings-sync .settings-desc { font-size: 11.5px; color: var(--text-dim); line-height: 1.45; }
+.settings-sync-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.settings-sync-form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg-surface-2);
+  color: var(--text-hi);
+  font-size: 12.5px;
+}
+.settings-sync-form input:focus { outline: none; border-color: var(--primary); }
+.settings-sync-form button { padding: 8px 14px; font-size: 12px; flex-shrink: 0; }
+.settings-sync-status {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  min-height: 1.2em;
+}
+
 .settings-note {
   font-size: 11.5px;
   color: var(--text-dim);

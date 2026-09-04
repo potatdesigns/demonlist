@@ -44,14 +44,20 @@ for attempt in 1 2 3 4 5; do
     cp "$REPO_ROOT/$f" "$WORKTREE/$f"
   done
 
-  if git -C "$WORKTREE" diff --quiet -- "${FILES[@]}"; then
+  # Stage before diffing, not after — `git diff` (unstaged, against the
+  # index) silently ignores untracked paths entirely, so a file being
+  # published for the very first time never showed up as a "change" and
+  # this exited early without ever publishing it. `git diff --cached`
+  # (against HEAD) correctly reports a brand-new staged file as an
+  # addition.
+  git -C "$WORKTREE" add "${FILES[@]}"
+  if git -C "$WORKTREE" diff --cached --quiet -- "${FILES[@]}"; then
     echo "No changes to publish."
     exit 0
   fi
 
   git -C "$WORKTREE" config user.name "github-actions[bot]"
   git -C "$WORKTREE" config user.email "github-actions[bot]@users.noreply.github.com"
-  git -C "$WORKTREE" add "${FILES[@]}"
   git -C "$WORKTREE" commit -q -m "$MSG"
 
   if git -C "$WORKTREE" push origin cache; then

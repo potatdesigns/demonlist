@@ -233,6 +233,8 @@
       </details>
     `;
 
+    root.querySelectorAll('.collapsible-section').forEach(animateDetailsToggle);
+
     mountPositionHistory(demon);
     mountCompletions(demon);
     mountVerifierVideo(demon, sharedEntry);

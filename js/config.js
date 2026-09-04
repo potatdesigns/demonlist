@@ -80,6 +80,12 @@ const CONFIG = {
   // read by the detail page.
   POSITION_HISTORY_URL: rawCacheUrl('data/position-history.json'),
 
+  // Every accepted record across the tracked top LIST_SIZE, indexed by
+  // player — see scripts/refresh-records-index.mjs for why this has to
+  // be precomputed (AREDL has no public "list this player's completions"
+  // endpoint) and RecordsIndex in js/records-index.js for the reader.
+  RECORDS_INDEX_URL: rawCacheUrl('data/records-index.json'),
+
   // Used to build a fallback link to the GitHub Actions "run workflow"
   // page (see js/cache-admin-ui.js) for whenever TRIGGER_WORKER_URL
   // below isn't set.
@@ -100,8 +106,10 @@ const CONFIG = {
   STORAGE: {
     SHARED_YT_CACHE: 'gddl_shared_yt_cache_v1', // local mirror of data/yt-cache.json, { fetchedAt, data }
     POSITION_HISTORY: 'gddl_position_history_v1', // local mirror of data/position-history.json, { fetchedAt, data }
+    RECORDS_INDEX: 'gddl_records_index_v1', // local mirror of data/records-index.json, { fetchedAt, data }
     SETTINGS: 'gddl_settings_v1', // js/settings.js — theme, motion, etc.; see Settings.DEFAULTS there
     ROULETTE_RUN: 'gddl_roulette_run_v1', // js/roulette.js — the in-progress (or last-finished) Extreme Demon Roulette run, so a reload mid-run doesn't lose progress
     COMPLETION: 'gddl_completion_v1', // js/completion.js — { levelId: isoTimestamp } of levels marked beaten, purely local
+    AREDL_SYNC_NAME: 'gddl_aredl_sync_name_v1', // js/aredl-sync.js — the last AREDL username synced from, purely local, just for display ("synced as X")
   },
 };

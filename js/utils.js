@@ -316,6 +316,70 @@ function profileLink(name) {
   return `list.html#q=${encodeURIComponent(name)}`;
 }
 
+/**
+ * Animates a <details> element's open/close instead of the native
+ * instant snap — the classic Web Animations API technique for it
+ * (animating a plain CSS `height` transition on <details> doesn't work,
+ * since the element's box only exists at its *final* open/closed height
+ * at any given moment; this instead measures both heights up front and
+ * runs a real .animate() between them, only flipping the actual `open`
+ * attribute once the animation finishes). Call once per <details> after
+ * it's in the DOM; does nothing special if the browser reduces motion
+ * (skips straight to the end state, respecting the site's own
+ * data-reduce-motion setting the same way CSS transitions elsewhere do).
+ */
+function animateDetailsToggle(details) {
+  const summary = details.querySelector(':scope > summary');
+  if (!summary) return;
+  let animation = null;
+  let closing = false, expanding = false;
+
+  summary.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (document.documentElement.dataset.reduceMotion === 'true') {
+      details.open = !details.open;
+      return;
+    }
+    details.style.overflow = 'hidden';
+    if (closing || !details.open) open();
+    else if (expanding || details.open) shrink();
+  });
+
+  function shrink() {
+    closing = true;
+    const startHeight = `${details.offsetHeight}px`;
+    const endHeight = `${summary.offsetHeight}px`;
+    if (animation) animation.cancel();
+    animation = details.animate({ height: [startHeight, endHeight] }, { duration: 220, easing: 'ease-out' });
+    animation.onfinish = () => finish(false);
+    animation.oncancel = () => { closing = false; };
+  }
+
+  function open() {
+    details.style.height = `${details.offsetHeight}px`;
+    details.open = true;
+    requestAnimationFrame(grow);
+  }
+
+  function grow() {
+    expanding = true;
+    const startHeight = `${details.offsetHeight}px`;
+    const endHeight = `${summary.offsetHeight + details.lastElementChild.offsetHeight}px`;
+    if (animation) animation.cancel();
+    animation = details.animate({ height: [startHeight, endHeight] }, { duration: 220, easing: 'ease-out' });
+    animation.onfinish = () => finish(true);
+    animation.oncancel = () => { expanding = false; };
+  }
+
+  function finish(isOpen) {
+    details.open = isOpen;
+    animation = null;
+    closing = false;
+    expanding = false;
+    details.style.height = details.style.overflow = '';
+  }
+}
+
 function debounce(fn, wait) {
   let t;
   return (...args) => {

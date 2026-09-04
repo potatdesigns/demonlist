@@ -189,9 +189,33 @@ const Settings = (() => {
       </div>
       <div class="settings-body">
         ${SCHEMA.map(rowHtml).join('')}
+        ${typeof AredlSync !== 'undefined' ? syncSectionHtml() : ''}
       </div>
     </div>
   `;
+
+  /**
+   * Not a schema row (a text input + button doesn't fit the toggle/
+   * choice/swatch shapes above) — see js/aredl-sync.js for what this
+   * actually does and why it isn't a real login. Only rendered when
+   * AredlSync is loaded (every page does, but stay defensive rather than
+   * assume script order never changes).
+   */
+  function syncSectionHtml() {
+    const lastName = AredlSync.lastSyncedName();
+    return `
+      <div class="settings-divider"></div>
+      <div class="settings-sync">
+        <span class="settings-title">Sync from AREDL</span>
+        <span class="settings-desc">Not a login — type your AREDL display name to auto-mark everything you've cleared as beaten, from AREDL's own public records.</span>
+        <form class="settings-sync-form" id="settings-sync-form">
+          <input type="text" id="settings-sync-input" placeholder="Your AREDL name" autocomplete="off" value="${lastName ? escapeHtml(lastName) : ''}">
+          <button type="submit" class="btn-ghost">Sync</button>
+        </form>
+        <p class="settings-sync-status" id="settings-sync-status">${lastName ? `Last synced as ${escapeHtml(lastName)}.` : ''}</p>
+      </div>
+    `;
+  }
 
   function mount() {
     const headerActions = document.getElementById('header-actions');
@@ -234,6 +258,26 @@ const Settings = (() => {
         });
       });
     });
+
+    const syncForm = overlay.querySelector('#settings-sync-form');
+    if (syncForm) {
+      const input = overlay.querySelector('#settings-sync-input');
+      const status = overlay.querySelector('#settings-sync-status');
+      syncForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = input.value.trim();
+        if (!name) return;
+        status.textContent = 'Syncing…';
+        try {
+          const result = await AredlSync.syncByName(name);
+          status.textContent = result.found
+            ? `Synced as ${result.name} — marked ${result.newlyMarked} new level${result.newlyMarked === 1 ? '' : 's'} beaten (${result.totalLevels} total on record).`
+            : `No AREDL player named "${name}" found in the tracked list's records.`;
+        } catch (err) {
+          status.textContent = `Couldn't sync: ${err.message}`;
+        }
+      });
+    }
   }
 
   mount();

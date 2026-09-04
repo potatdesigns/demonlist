@@ -580,14 +580,16 @@
   /**
    * A lightweight "profile" strip for a name search — best rank, average
    * rank, and a breakdown of which role(s) the query matched (verifier/
-   * publisher/creator) across the current results. Not a separate
-   * profile page/dataset: searchByName() already matches level name +
-   * publisher + verifier + creators (see js/api-aredl.js), so this is
-   * just a summary of whatever it already found, same reason
-   * profileLink() in js/utils.js sends a name click straight into this
-   * same search instead of a dedicated route.
+   * publisher/creator/completed) across the current results. Not a
+   * separate profile page/dataset: searchByName() already matches level
+   * name + publisher + verifier + creators (see js/api-aredl.js), and
+   * RecordsIndex covers completions (see js/records-index.js for why
+   * that has to be precomputed) — this is just a summary of whatever's
+   * already available, same reason profileLink() in js/utils.js sends a
+   * name click straight into this same search instead of a dedicated
+   * route.
    */
-  function profileStatsHtml(demons, query) {
+  async function profileStatsHtml(demons, query) {
     if (!demons.length) return '';
     const q = query.trim().toLowerCase();
     let asVerifier = 0, asPublisher = 0, asCreator = 0;
@@ -598,18 +600,23 @@
       if ((d.publisher?.name || '').toLowerCase().includes(q)) asPublisher++;
       if ((d.creators || []).some(c => (c.name || '').toLowerCase().includes(q))) asCreator++;
     }
+    const completedPlayer = (typeof RecordsIndex !== 'undefined') ? await RecordsIndex.findPlayerByName(query).catch(() => null) : null;
+    const completedCount = completedPlayer?.levels.length || 0;
+
     // Only worth showing once the query looks like it's actually matching
     // a *person* somewhere, not just a level-name substring — otherwise
     // this would show a hollow "0 verified, 0 created" line for every
     // ordinary level-name search.
-    if (!asVerifier && !asPublisher && !asCreator) return '';
+    if (!asVerifier && !asPublisher && !asCreator && !completedCount) return '';
     const best = Math.min(...positions);
     const avg = Math.round(positions.reduce((a, b) => a + b, 0) / positions.length);
     const roles = [];
     if (asVerifier) roles.push(`verified ${asVerifier}`);
     if (asCreator) roles.push(`created ${asCreator}`);
     if (asPublisher) roles.push(`published ${asPublisher}`);
-    return ` Best #${best}, avg #${avg} · ${escapeHtml(roles.join(', '))}.`;
+    if (completedCount) roles.push(`completed ${completedCount}`);
+    const rankBit = positions.length ? `Best #${best}, avg #${avg} · ` : '';
+    return ` ${rankBit}${escapeHtml(roles.join(', '))}.`;
   }
 
   /** Human-readable pieces of whatever's currently filled in the filter panel, for the banner and empty-state text. */
@@ -709,7 +716,7 @@
 
       if (customViewActive()) {
         const desc = customViewDescription();
-        const profile = filterQuery ? profileStatsHtml(demons, filterQuery) : '';
+        const profile = filterQuery ? await profileStatsHtml(demons, filterQuery) : '';
         showBanner(`${demons.length} level${demons.length === 1 ? '' : 's'}${desc ? ` ${desc}` : ''}.${profile}`);
       } else {
         hideBanner();

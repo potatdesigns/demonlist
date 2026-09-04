@@ -405,13 +405,13 @@ const AredlAPI = (() => {
   }
 
   /**
-   * Every accepted record (raw clear) for a level, newest-first — same
-   * "most recent activity first" convention the detail page's own
-   * position history uses. Public, no auth (GET /levels/{id}/records),
-   * confirmed against the open-source backend. Paginated at 100/page;
-   * walks up to maxPages (a level with >500 clears is astronomically
-   * unlikely within this app's tracked top CONFIG.LIST_SIZE, but capped
-   * rather than unbounded regardless).
+   * Every accepted record (raw clear) for a level, oldest-first — who
+   * cleared it first reads at the top, same as scrolling down through a
+   * history of the level rather than a "latest activity" feed. Public,
+   * no auth (GET /levels/{id}/records), confirmed against the open-source
+   * backend. Paginated at 100/page; walks up to maxPages (a level with
+   * >500 clears is astronomically unlikely within this app's tracked top
+   * CONFIG.LIST_SIZE, but capped rather than unbounded regardless).
    */
   async function fetchLevelRecords(id, { maxPages = 5 } = {}) {
     const all = [];
@@ -433,7 +433,7 @@ const AredlAPI = (() => {
         achievedAt: r.achieved_at,
         mobile: !!r.mobile,
       }))
-      .sort((a, b) => new Date(b.achievedAt) - new Date(a.achievedAt));
+      .sort((a, b) => new Date(a.achievedAt) - new Date(b.achievedAt));
   }
 
   return { fetchListed, fetchDemon, fetchExtras, searchByName, getTotalCount, getIdByPosition, getByPosition, fetchChangelog, fetchNewLevelIds, fetchLevelRecords };

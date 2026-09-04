@@ -1,0 +1,41 @@
+name: Refresh records index
+
+# Populates data/records-index.json — every accepted record across the
+# tracked top 150, indexed by player (see scripts/refresh-records-index.mjs
+# for why: AREDL only exposes records per-*level* publicly, never
+# per-*player*, so this precomputes the player-centric view server-side
+# instead of every visitor re-walking 150 levels' worth of records live).
+# Read by js/aredl-sync.js ("sync from AREDL" in Settings) and the list
+# page's name-search profile summary. A full rebuild every run — nothing
+# incremental to seed, unlike position-history.json.
+#
+# Published to the `cache` branch, not `main` — see README's "Cache
+# branch" section and scripts/publish-cache-branch.sh.
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours — completions don't need hourly freshness the way live positions do
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: records-index-write
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run refresh script
+        run: node scripts/refresh-records-index.mjs
+
+      - name: Publish to the cache branch
+        run: 'bash scripts/publish-cache-branch.sh "chore: refresh records index" data/records-index.json'
