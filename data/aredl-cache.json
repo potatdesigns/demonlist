@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T01:46:49.293Z",
+  "generatedAt": "2026-09-05T06:27:06.188Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -7677,7 +7677,29 @@
       "edel_enjoyment": 67.5,
       "is_edel_pending": true,
       "gddl_tier": null,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
+        "username": "8575f2803",
+        "global_name": "Bemq"
+      },
+      "verifications": [
+        {
+          "id": "c145ddde-538e-4c8f-97d9-540c268c5dbf",
+          "submitted_by": {
+            "id": "5bd415ab-c6be-49e6-9424-5b4368b6979c",
+            "username": "airicloud",
+            "global_name": "Airi~"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=XQoF35hNKpg",
+          "hide_video": false,
+          "achieved_at": "2025-10-07T17:50:13Z",
+          "created_at": "2026-08-16T00:23:46.272244Z",
+          "updated_at": "2026-08-16T00:23:46.272244Z"
+        }
+      ],
+      "creators": []
     },
     {
       "id": "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
@@ -7702,7 +7724,40 @@
       "edel_enjoyment": 47.91666667,
       "is_edel_pending": false,
       "gddl_tier": 36,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
+        "username": "0993c47a5",
+        "global_name": "CherryTeam"
+      },
+      "verifications": [
+        {
+          "id": "73bac214-2d12-431c-9e3a-7ce130327e08",
+          "submitted_by": {
+            "id": "79b54d1c-5bcb-440a-ab73-1ed66ade014a",
+            "username": "exsii",
+            "global_name": "exsii"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=saHSgoU1JQQ",
+          "hide_video": false,
+          "achieved_at": "2023-09-26T20:29:38Z",
+          "created_at": "2023-12-19T05:04:00Z",
+          "updated_at": "2023-12-19T05:04:00Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "193b4236-dbb6-48c6-adf8-9cc7cc39742e",
+          "username": "-",
+          "global_name": "-"
+        },
+        {
+          "id": "f454cd77-c454-4f5e-b45e-ef8f12a376e9",
+          "username": "c06bddda9",
+          "global_name": "Itami"
+        }
+      ]
     },
     {
       "id": "0029b449-c191-4a9b-91a2-40a3c96037f6",
@@ -7728,7 +7783,180 @@
       "edel_enjoyment": null,
       "is_edel_pending": false,
       "gddl_tier": 36,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
+        "username": "f8b0d22e2",
+        "global_name": "TCTeam"
+      },
+      "verifications": [
+        {
+          "id": "77cec04e-8eb8-4b93-b17b-2e6ecb5f2083",
+          "submitted_by": {
+            "id": "a4711249-5263-485f-988c-c9a089d4a7a3",
+            "username": "5c1749628",
+            "global_name": "Pukklez"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=IKGk41hSnDo",
+          "hide_video": false,
+          "achieved_at": "2023-06-04T23:48:45Z",
+          "created_at": "2023-07-31T22:06:21Z",
+          "updated_at": "2023-07-31T22:06:21Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
+          "username": "artos.",
+          "global_name": "artos"
+        },
+        {
+          "id": "e0ff021a-e31b-4d3c-b199-80c79e4fae11",
+          "username": "eridanigd",
+          "global_name": "eridani"
+        },
+        {
+          "id": "025a117f-15ad-47b1-93d1-1106e0a68a7a",
+          "username": "382a95e21",
+          "global_name": "Cultrix"
+        },
+        {
+          "id": "1d07f59e-bd13-42c8-bae6-6ba0d5ca885f",
+          "username": "a3de7234d",
+          "global_name": "Keyblade"
+        },
+        {
+          "id": "21d58235-76ce-4fc3-b8c9-d666ba3bb943",
+          "username": "8c80ff54c",
+          "global_name": "Jhreen"
+        },
+        {
+          "id": "3e66d7ea-2bec-4f84-b282-0b150684296f",
+          "username": "97b82746b",
+          "global_name": "Hko"
+        },
+        {
+          "id": "486f7b1e-68a1-4907-9bfc-2262753d8dd8",
+          "username": "9e644efd7",
+          "global_name": "Licen"
+        },
+        {
+          "id": "4eb2b5ab-5170-4180-990e-829ffac43e53",
+          "username": "68472349e",
+          "global_name": "Yoonsrdynamix"
+        },
+        {
+          "id": "53fb546f-3724-4df1-9aa8-71c01e75634e",
+          "username": "d99a7abe5",
+          "global_name": "Konsi"
+        },
+        {
+          "id": "626d1687-ab98-49e1-acc8-83f9181e5c6d",
+          "username": "1c55c462b",
+          "global_name": "Xaren"
+        },
+        {
+          "id": "72a230a3-b2d6-4517-a99a-cc98efb23225",
+          "username": "2edfcd777",
+          "global_name": "para"
+        },
+        {
+          "id": "74299420-a17a-4cd8-b0c1-ea7af11486be",
+          "username": "8dfcce849",
+          "global_name": "Pingui"
+        },
+        {
+          "id": "8503a9b5-71ea-48a9-a769-f50a6bce2415",
+          "username": "ad99b2ef7",
+          "global_name": "Xyl"
+        },
+        {
+          "id": "9750404e-0633-44d7-a3f4-00d5fde6332b",
+          "username": "40ed09ffb",
+          "global_name": "Astion"
+        },
+        {
+          "id": "97b94b31-a92e-46ab-a35c-414ed775de1b",
+          "username": "85002d976",
+          "global_name": "Brittank88"
+        },
+        {
+          "id": "9bca38bc-543a-4e17-bd5d-708dba25eb46",
+          "username": "08180e1e4",
+          "global_name": "GaidenHertuny"
+        },
+        {
+          "id": "9e463c72-fbc3-4d2f-96cd-b0df8004b18a",
+          "username": "3ec08010b",
+          "global_name": "Isane"
+        },
+        {
+          "id": "a323e641-96f2-462c-bd8b-97b9c793b178",
+          "username": "655a003dd",
+          "global_name": "Arceus"
+        },
+        {
+          "id": "abf7a018-13af-4113-a337-d364ae013ad7",
+          "username": "f4459dd2b",
+          "global_name": "Cotchy"
+        },
+        {
+          "id": "b1f0746f-2a85-41d6-a2f0-9c4685d757dc",
+          "username": "521f0b4bc",
+          "global_name": "Peroxide"
+        },
+        {
+          "id": "bb159a37-e672-4bcf-8fe1-caf65e6dc52b",
+          "username": "eb194a6c7",
+          "global_name": "Delta"
+        },
+        {
+          "id": "bb34a476-c982-4cda-ac5e-8453eef315e8",
+          "username": "770a97ef4",
+          "global_name": "Woom"
+        },
+        {
+          "id": "ccfe1c5f-b4b8-436c-a851-cd1a71935115",
+          "username": "de9781d3b",
+          "global_name": "Tom"
+        },
+        {
+          "id": "cf98f024-8de5-4af3-bd92-c34f9933357f",
+          "username": "051e65199",
+          "global_name": "ViralDL"
+        },
+        {
+          "id": "d0b087c9-98ae-4809-a25d-c49b87fb11b6",
+          "username": "19681ed4b",
+          "global_name": "CesDroid"
+        },
+        {
+          "id": "d0b6c9bf-a15d-4b9e-b4ff-7beec858f508",
+          "username": "bff96f5bb",
+          "global_name": "Carloz"
+        },
+        {
+          "id": "ddbeafed-5b37-425f-b64b-cea3a352e1e4",
+          "username": "3654534cb",
+          "global_name": "AutumnLotus"
+        },
+        {
+          "id": "e5bfc435-be52-4ec6-8a56-be430b0be787",
+          "username": "1dc9c4c6c",
+          "global_name": "Zent"
+        },
+        {
+          "id": "fc7c2e71-bba9-4427-8bb7-8be73e5a5966",
+          "username": "4f2a5a935",
+          "global_name": "StarkytheSalad"
+        },
+        {
+          "id": "cae5e90f-f1b8-4f96-810a-ac0cbcd1e908",
+          "username": "123ed6177",
+          "global_name": "Yuki"
+        }
+      ]
     },
     {
       "id": "33f22458-6142-45b2-a45e-9cc488be8304",
@@ -7755,7 +7983,29 @@
       "edel_enjoyment": 78.77777778,
       "is_edel_pending": false,
       "gddl_tier": 36,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
+        "username": "nexel",
+        "global_name": "Nexel"
+      },
+      "verifications": [
+        {
+          "id": "646766d3-046c-4641-b313-6e57bcaec4d7",
+          "submitted_by": {
+            "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
+            "username": "nexel",
+            "global_name": "Nexel"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=RCFpXyf6bn0",
+          "hide_video": false,
+          "achieved_at": "2024-12-20T07:10:22Z",
+          "created_at": "2025-01-22T23:23:27Z",
+          "updated_at": "2025-01-22T23:23:27Z"
+        }
+      ],
+      "creators": []
     },
     {
       "id": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
