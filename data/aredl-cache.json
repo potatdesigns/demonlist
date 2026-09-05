@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T16:22:19.796Z",
+  "generatedAt": "2026-09-05T18:40:12.450Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6295,11 +6295,6 @@
           "global_name": "Zimnior12"
         },
         {
-          "id": "59340af4-c987-4811-bbfe-d66b8d5a0c64",
-          "username": "84a3c3da4",
-          "global_name": "Apple"
-        },
-        {
           "id": "acdbc6e9-a844-4e2a-a901-167f34e745d5",
           "username": "f70397e05",
           "global_name": "Nahuel"
@@ -6398,6 +6393,11 @@
           "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
           "username": "cdmusic",
           "global_name": "CDMusic"
+        },
+        {
+          "id": "531fa63f-498b-4f26-b59f-9329ac4e7028",
+          "username": "appledesuu",
+          "global_name": "AppleCr"
         }
       ]
     },
