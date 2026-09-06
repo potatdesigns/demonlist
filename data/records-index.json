@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T02:29:06.844Z",
+  "generatedAt": "2026-09-06T10:07:50.289Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -2095,6 +2095,14 @@
           "achievedAt": "2024-10-18T23:15:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=LIntFoh3ukw&t=5s",
           "verified": false
+        },
+        {
+          "levelId": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
+          "levelName": "Starlight Summit",
+          "position": 150,
+          "achievedAt": "2026-08-24T02:53:17Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ifxgGp4gNpY",
+          "verified": false
         }
       ]
     },
@@ -2474,6 +2482,14 @@
           "position": 24,
           "achievedAt": "2026-04-06T18:34:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=6sHalmnwL80",
+          "verified": false
+        },
+        {
+          "levelId": "24d0f430-f42f-45b9-af35-b6eea34be7df",
+          "levelName": "The Lightning Rod",
+          "position": 32,
+          "achievedAt": "2026-09-03T20:35:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=UU3Ijr2lUSE",
           "verified": false
         },
         {
@@ -57505,6 +57521,19 @@
         }
       ]
     },
+    "9c56adee-2192-4e00-9378-2bb694f63e1f": {
+      "name": "blixia",
+      "levels": [
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 126,
+          "achievedAt": "2026-08-30T05:04:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1qBQR8wcjMs",
+          "verified": false
+        }
+      ]
+    },
     "fdf30062-85a0-49a7-91fa-104c395c735d": {
       "name": "Shyzuu",
       "levels": [
@@ -59006,6 +59035,14 @@
           "position": 139,
           "achievedAt": "2026-01-05T19:47:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=Sa7OvejWPnk",
+          "verified": false
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 141,
+          "achievedAt": "2026-09-03T14:08:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=nUiuyRjNiJo",
           "verified": false
         }
       ]
