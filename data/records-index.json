@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T14:48:08.299Z",
+  "generatedAt": "2026-09-06T19:54:03.432Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -3231,6 +3231,14 @@
           "position": 10,
           "achievedAt": "2026-08-17T15:03:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=WykKjOMhjMo",
+          "verified": false
+        },
+        {
+          "levelId": "e564dff8-304b-401d-9376-63528b7ba279",
+          "levelName": "Tunnel of Despair",
+          "position": 29,
+          "achievedAt": "2026-09-05T09:33:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3CtPHgLJjkM",
           "verified": false
         },
         {
@@ -20235,6 +20243,99 @@
         }
       ]
     },
+    "ce7b79f1-58dc-412f-b840-7f893a7a4501": {
+      "name": "Beastular",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 33,
+          "achievedAt": "2023-07-26T17:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=8BN8cIiYJJk",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 35,
+          "achievedAt": "2026-06-01T05:44:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=4qTI49IFKgE",
+          "verified": false
+        },
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 91,
+          "achievedAt": "2025-08-01T05:41:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0WjMPc7YoQ0",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 107,
+          "achievedAt": "2025-11-03T06:13:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=GcLDOtAsq1g",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2021-08-05T23:30:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=GZ7UPG8GYTg",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2020-11-30T19:00:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=oc8Q2HfqtR4",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2024-01-25T03:06:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=yBVioosGKME",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 126,
+          "achievedAt": "2023-09-10T22:37:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5SFFRqCwm58",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 129,
+          "achievedAt": "2025-10-14T04:30:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=qJtyw9dw4U0",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 145,
+          "achievedAt": "2024-12-01T05:36:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=m4GhXg2ag1E",
+          "verified": false
+        },
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 147,
+          "achievedAt": "2021-06-25T06:00:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5250fjgnHHM",
+          "verified": false
+        }
+      ]
+    },
     "ea15f6af-e830-45b2-b2fe-0faf5edd9d91": {
       "name": "Hipo",
       "levels": [
@@ -24879,6 +24980,43 @@
           "position": 141,
           "achievedAt": "2026-03-07T04:01:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=zpMavhDAZQ8",
+          "verified": false
+        }
+      ]
+    },
+    "f0b44457-8538-4fdb-8bdc-7f1f258ccbf0": {
+      "name": "bananaeatsjoe",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 33,
+          "achievedAt": "2026-08-30T04:12:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JqaUdjj4Ce8",
+          "verified": false
+        },
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 72,
+          "achievedAt": "2025-06-22T05:51:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kU53pl_MmxI",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-01-14T04:11:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EE5GMdrZe4g",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 126,
+          "achievedAt": "2026-04-16T03:21:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=G7w9ZDvblYI",
           "verified": false
         }
       ]
@@ -40849,35 +40987,6 @@
         }
       ]
     },
-    "f0b44457-8538-4fdb-8bdc-7f1f258ccbf0": {
-      "name": "bananaeatsjoe",
-      "levels": [
-        {
-          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
-          "levelName": "Solar Flare",
-          "position": 72,
-          "achievedAt": "2025-06-22T05:51:36Z",
-          "videoUrl": "https://www.youtube.com/watch?v=kU53pl_MmxI",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 119,
-          "achievedAt": "2026-01-14T04:11:53Z",
-          "videoUrl": "https://www.youtube.com/watch?v=EE5GMdrZe4g",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 126,
-          "achievedAt": "2026-04-16T03:21:15Z",
-          "videoUrl": "https://www.youtube.com/watch?v=G7w9ZDvblYI",
-          "verified": false
-        }
-      ]
-    },
     "a99f5af4-5c47-405c-92df-39dc24f5ad03": {
       "name": "CaveMelv",
       "levels": [
@@ -47886,6 +47995,59 @@
         }
       ]
     },
+    "27848375-0a2a-4caa-9ca4-6f80f3bd4aac": {
+      "name": "Rilso",
+      "levels": [
+        {
+          "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
+          "levelName": "Doppler (Solo)",
+          "position": 100,
+          "achievedAt": "2026-08-30T08:25:51Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sr_IzaYWkdg",
+          "verified": false
+        },
+        {
+          "levelId": "eae489bc-dbf9-47b3-9c23-9730f5343d06",
+          "levelName": "BEELINE (Solo)",
+          "position": 105,
+          "achievedAt": "2026-08-12T03:24:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=VCKiwRoMR_8",
+          "verified": false
+        },
+        {
+          "levelId": "8d02375c-8c31-4352-af21-d4533f63e3af",
+          "levelName": "WOBBLING MACHINE (Solo)",
+          "position": 133,
+          "achievedAt": "2025-09-11T11:01:47Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Nf-XlhUnVFI",
+          "verified": false
+        },
+        {
+          "levelId": "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
+          "levelName": "Crystal Crusher (Solo)",
+          "position": 134,
+          "achievedAt": "2026-01-28T11:38:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=MSHYwq0-tA0",
+          "verified": false
+        },
+        {
+          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
+          "levelName": "Starlit Stroll",
+          "position": 138,
+          "achievedAt": "2026-07-15T01:39:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=irEBSr3Tj8o",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 145,
+          "achievedAt": "2026-05-31T05:42:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sVoVeidfLYw",
+          "verified": false
+        }
+      ]
+    },
     "d509024f-64a7-4eb8-8d86-2b072ede6126": {
       "name": "toka",
       "levels": [
@@ -48367,51 +48529,6 @@
           "position": 105,
           "achievedAt": "2026-04-09T00:32:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=NwIfx2kwpyE",
-          "verified": false
-        }
-      ]
-    },
-    "27848375-0a2a-4caa-9ca4-6f80f3bd4aac": {
-      "name": "Rilso",
-      "levels": [
-        {
-          "levelId": "eae489bc-dbf9-47b3-9c23-9730f5343d06",
-          "levelName": "BEELINE (Solo)",
-          "position": 105,
-          "achievedAt": "2026-08-12T03:24:37Z",
-          "videoUrl": "https://www.youtube.com/watch?v=VCKiwRoMR_8",
-          "verified": false
-        },
-        {
-          "levelId": "8d02375c-8c31-4352-af21-d4533f63e3af",
-          "levelName": "WOBBLING MACHINE (Solo)",
-          "position": 133,
-          "achievedAt": "2025-09-11T11:01:47Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Nf-XlhUnVFI",
-          "verified": false
-        },
-        {
-          "levelId": "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
-          "levelName": "Crystal Crusher (Solo)",
-          "position": 134,
-          "achievedAt": "2026-01-28T11:38:59Z",
-          "videoUrl": "https://www.youtube.com/watch?v=MSHYwq0-tA0",
-          "verified": false
-        },
-        {
-          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
-          "levelName": "Starlit Stroll",
-          "position": 138,
-          "achievedAt": "2026-07-15T01:39:32Z",
-          "videoUrl": "https://www.youtube.com/watch?v=irEBSr3Tj8o",
-          "verified": false
-        },
-        {
-          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-          "levelName": "Trueffet",
-          "position": 145,
-          "achievedAt": "2026-05-31T05:42:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=sVoVeidfLYw",
           "verified": false
         }
       ]
@@ -54344,6 +54461,19 @@
           "position": 120,
           "achievedAt": "2024-03-15T00:00:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=qXvWOCEi888",
+          "verified": false
+        }
+      ]
+    },
+    "88f6abdf-d9b3-4f28-8f04-10e89f3d3e4f": {
+      "name": "VoidHaze",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2024-04-18T03:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=xaiyXVl2ixk",
           "verified": false
         }
       ]
