@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T20:56:14.304Z",
+  "generatedAt": "2026-09-07T05:24:31.996Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -400807,6 +400807,7 @@
       "822a9a23-b2ee-4a52-8d65-19f73f95df69",
       "7ba400c0-b9eb-4ced-a981-58f3addbf91b",
       "7d2968ac-9086-4137-a474-f5e351cd6747",
+      "ec870d2d-01d2-4916-adbf-2fc77a56b522",
       "ccda5757-0266-437a-9581-3136f333ae20",
       "7db1cf3a-addd-427a-9c29-c7a09043e7b9",
       "8b762814-729d-41b5-af54-313509830410",
@@ -400905,7 +400906,6 @@
       "c1c6ad7f-8514-4b7d-8246-59a9a017b50b",
       "27b7a86f-9329-41a1-8ca9-27a0489c9d3a",
       "8198f26d-fd16-4cbe-bf82-a2764e99f949",
-      "ec870d2d-01d2-4916-adbf-2fc77a56b522",
       "f9dfe1fe-8c9a-4946-b699-c5f23af19026",
       "be646f54-6aff-4d2d-90d8-0666a23c6886",
       "d0a57eb7-2694-4bce-b244-882471d4e356",
@@ -403053,6 +403053,6 @@
       "7ce0618c-7dc9-423d-92ec-f3665b0eaa29": "Putrefaction",
       "24c0102b-6475-41c9-a36f-e8fa4f58197e": "plane map (2P)"
     },
-    "lastEventFingerprint": "2026-09-06T20:00:17.342797Z|fedf5860-8cb3-44e0-976e-c8a46caa6fbc|{\"Placed\":{\"new_position\":1573,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-09-07T02:23:46.860749Z|ec870d2d-01d2-4916-adbf-2fc77a56b522|{\"Raised\":{\"new_position\":1449,\"old_position\":1547}}"
   }
 }
