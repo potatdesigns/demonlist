@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T17:05:29.766Z",
+  "generatedAt": "2026-09-07T21:01:35.467Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -42880,6 +42880,30 @@
           "achievedAt": "2026-06-06T15:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=5WXBPzAUnFI",
           "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-05-11T21:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=I-p3Bk0vYSU",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2025-07-11T19:56:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9rmwYbO-ySk",
+          "verified": false
+        },
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 147,
+          "achievedAt": "2025-06-15T13:58:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jZBw2PkPQGw",
+          "verified": false
         }
       ]
     },
@@ -58352,7 +58376,7 @@
           "levelName": "Shukketsu",
           "position": 129,
           "achievedAt": "2026-04-10T01:42:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=oNmO4DecbwY",
+          "videoUrl": "https://www.youtube.com/watch?v=1N_0_kRgobU",
           "verified": false
         }
       ]
