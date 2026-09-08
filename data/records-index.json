@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T15:51:34.160Z",
+  "generatedAt": "2026-09-08T20:35:54.067Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -15896,6 +15896,22 @@
           "position": 106,
           "achievedAt": "2026-08-11T00:22:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=y1B32iSHM2k",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2025-01-03T21:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Q0vvHLMErsk",
+          "verified": false
+        },
+        {
+          "levelId": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
+          "levelName": "Viprin UFO",
+          "position": 121,
+          "achievedAt": "2024-10-28T20:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=4WOzJudCIIk",
           "verified": false
         }
       ]
@@ -50253,27 +50269,6 @@
           "position": 129,
           "achievedAt": "2025-01-30T15:07:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=SyXGs_AnhXE",
-          "verified": false
-        }
-      ]
-    },
-    "b8a79327-5464-472c-976d-cecc31b8796a": {
-      "name": "Lfz",
-      "levels": [
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 108,
-          "achievedAt": "2025-01-03T21:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Q0vvHLMErsk",
-          "verified": false
-        },
-        {
-          "levelId": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
-          "levelName": "Viprin UFO",
-          "position": 121,
-          "achievedAt": "2024-10-28T20:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=4WOzJudCIIk",
           "verified": false
         }
       ]
