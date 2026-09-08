@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T21:01:35.467Z",
+  "generatedAt": "2026-09-08T02:39:22.291Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -41982,6 +41982,14 @@
           "position": 107,
           "achievedAt": "2025-11-12T06:29:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=10l5nEN-CmM",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-09-04T02:21:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=okKgRD_tx8Q",
           "verified": false
         },
         {
