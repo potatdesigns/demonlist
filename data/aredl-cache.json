@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T00:49:12.456Z",
+  "generatedAt": "2026-09-09T05:30:07.296Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1848,7 +1848,7 @@
       "name": "Penumbral",
       "position": 14,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 4295,
+      "points": 4296,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 134942736,
@@ -1860,7 +1860,7 @@
         "Ship",
         "Wave"
       ],
-      "description": null,
+      "description": "Currently the second-hardest CherryTeam level on the list, featuring an intense, flashy monochromatic palette and brutal ship and wave chokepoints. The first extreme demon to use xStep as its song.",
       "song": -9,
       "edel_enjoyment": 81,
       "is_edel_pending": true,
@@ -10159,7 +10159,7 @@
         {
           "id": "cc76d8af-b291-4ad8-9d12-28e9846932ce",
           "username": "minusdry_enjoyer",
-          "global_name": "Rᴇᴅ ↯"
+          "global_name": "Red ↯"
         },
         {
           "id": "cca0c498-c14d-4db5-bedd-0d8fa028711b",
