@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T05:30:07.296Z",
+  "generatedAt": "2026-09-09T10:17:35.332Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3420,7 +3420,7 @@
       "name": "The Lightning Rod",
       "position": 32,
       "publisher_id": "648141fe-e34a-40a8-9231-e05e773602a2",
-      "points": 3633,
+      "points": 3634,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93917076,
@@ -3429,7 +3429,8 @@
         "2.1",
         "Long",
         "Learny",
-        "High CPS"
+        "High CPS",
+        "Gimmicky"
       ],
       "description": "Distinct and incredibly creative extreme themed around traversing and escaping the inside of an electric tower/rod. Supposedly one of the learniest levels on the main-list with extremely high-cps and quirky gameplay.",
       "song": 935594,
@@ -6739,13 +6740,16 @@
       "name": "Haunted Ship",
       "position": 65,
       "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-      "points": 2875,
+      "points": 2876,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 143523624,
       "two_player": false,
       "tags": [
-        "NONG"
+        "2.2",
+        "Long",
+        "NONG",
+        "Timings"
       ],
       "description": null,
       "song": 1585216,
