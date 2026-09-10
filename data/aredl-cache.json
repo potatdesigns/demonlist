@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T01:51:38.595Z",
+  "generatedAt": "2026-09-10T06:47:38.449Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -13048,7 +13048,7 @@
       "name": "Critical Heat",
       "position": 132,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2053,
+      "points": 2055,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88442157,
@@ -13056,9 +13056,11 @@
       "tags": [
         "2.1",
         "Long",
+        "Clicksync",
         "Fast-Paced",
-        "Overall",
-        "Duals"
+        "Timings",
+        "Duals",
+        "Overall"
       ],
       "description": "Fast-paced extreme themed around escaping a burning facility. Contains a lot of scaled up animated fire objects and high octane gameplay, along with a difficult dual. The hardest PEACEFUL! level in the game.",
       "song": 792302,
