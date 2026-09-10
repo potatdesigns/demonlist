@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T23:38:23.342Z",
+  "generatedAt": "2026-09-10T01:51:38.595Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -7387,17 +7387,19 @@
       "name": "LIMBO",
       "position": 74,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 2725,
+      "points": 2727,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86084399,
       "two_player": false,
       "tags": [
         "2.1",
-        "Learny",
+        "XXL",
+        "Timings",
+        "Chokepoints",
         "Memory",
-        "Nerve Control",
-        "XXL"
+        "Gimmicky",
+        "Nerve Control"
       ],
       "description": "Legendary memory level hosted by MindCap. Built with the intention of providing a unique, different experience to players. The randomised key maze is perhaps most iconic ending in any extreme. One of the first extremes to have merch.",
       "song": 76743,
@@ -13384,7 +13386,7 @@
       "name": "paranoia (amplitron)",
       "position": 137,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 2011,
+      "points": 2013,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113364415,
@@ -13395,6 +13397,7 @@
         "Fast-Paced",
         "High CPS",
         "Flow",
+        "Ship",
         "Overall"
       ],
       "description": null,
@@ -13424,13 +13427,7 @@
           "updated_at": "2026-02-24T21:47:34.676266Z"
         }
       ],
-      "creators": [
-        {
-          "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-          "username": "9041c2771",
-          "global_name": "Amplitron"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
