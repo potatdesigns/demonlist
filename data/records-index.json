@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T10:25:59.301Z",
+  "generatedAt": "2026-09-10T15:42:00.316Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -40112,6 +40112,14 @@
           "position": 93,
           "achievedAt": "2025-08-08T15:16:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=aopnGOYTfR4",
+          "verified": false
+        },
+        {
+          "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
+          "levelName": "Doppler (Solo)",
+          "position": 100,
+          "achievedAt": "2026-09-05T01:55:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=21AucRgD3EQ",
           "verified": false
         },
         {
