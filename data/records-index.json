@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T15:42:00.316Z",
+  "generatedAt": "2026-09-10T20:21:01.532Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -7213,6 +7213,30 @@
           "position": 33,
           "achievedAt": "2025-04-30T22:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Cpi-rR4WJC8",
+          "verified": false
+        },
+        {
+          "levelId": "d79120ff-015e-457f-a164-52e98b40f411",
+          "levelName": "Subterminal Point",
+          "position": 34,
+          "achievedAt": "2026-09-09T22:39:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=W757hDZr7gc",
+          "verified": false
+        },
+        {
+          "levelId": "51a1538a-b53a-4f31-9fed-715b4e9e5951",
+          "levelName": "CHIL",
+          "position": 41,
+          "achievedAt": "2026-04-22T20:11:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QGjzU_Df1j0",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 43,
+          "achievedAt": "2026-09-09T22:40:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=j58Rc0lurHY",
           "verified": false
         },
         {
