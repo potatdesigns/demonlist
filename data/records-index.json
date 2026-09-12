@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T02:44:07.108Z",
+  "generatedAt": "2026-09-12T09:56:52.899Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -57485,6 +57485,19 @@
           "position": 124,
           "achievedAt": "2026-08-16T19:13:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=pZxWA_XbAbA",
+          "verified": false
+        }
+      ]
+    },
+    "6894dfee-6acb-4efe-be2e-7bd2f215e088": {
+      "name": "MAX",
+      "levels": [
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 124,
+          "achievedAt": "2026-09-11T19:28:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OgWeRjrEPVE",
           "verified": false
         }
       ]
