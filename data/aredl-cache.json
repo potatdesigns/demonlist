@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T17:31:07.254Z",
+  "generatedAt": "2026-09-12T19:48:44.232Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4665,11 +4665,6 @@
           "global_name": "ZinkZeta"
         },
         {
-          "id": "0cc29e5e-1b5b-43f9-9329-76eb265899e8",
-          "username": "18178d6aa",
-          "global_name": "FrostBurn"
-        },
-        {
           "id": "0d4ab186-ae2c-4b75-a62d-8fbb0b58c883",
           "username": "28056a403",
           "global_name": "Gizbro"
@@ -4840,11 +4835,6 @@
           "global_name": "DataGhost"
         },
         {
-          "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
-          "username": "f0bdf532d",
-          "global_name": "Drakosa"
-        },
-        {
           "id": "8233701c-6c8a-47ea-a8b2-69934d776807",
           "username": "fdedf52e5",
           "global_name": "MaxxoRMeN"
@@ -4980,6 +4970,11 @@
           "global_name": "z0j"
         },
         {
+          "id": "bcc79845-6031-4301-895b-5bf641dc9f04",
+          "username": ".frostburn.",
+          "global_name": "FrostBurn"
+        },
+        {
           "id": "bd79ea53-4bf5-44cc-bdf9-d8dd27c536ff",
           "username": "481169c51",
           "global_name": "Diris"
@@ -5083,6 +5078,11 @@
           "id": "f7148489-4e91-4f0b-9992-e2ba69d3cbee",
           "username": "d94ff8067",
           "global_name": "Rocipher"
+        },
+        {
+          "id": "fa35ea6b-81e5-42d6-ab78-dff77001df0b",
+          "username": "drakosa",
+          "global_name": "Drakosa"
         }
       ]
     },
@@ -11452,9 +11452,9 @@
           "global_name": "Cdpre"
         },
         {
-          "id": "6a96d919-38a7-40f3-a357-684f6c1db28a",
-          "username": "72b3f09bd",
-          "global_name": "Tito"
+          "id": "6874aeec-5114-4e17-b844-aac60499809a",
+          "username": "titoalper",
+          "global_name": "Titoalper"
         },
         {
           "id": "7cf01e57-c890-4f84-b4d4-74a94ae40b18",
@@ -11537,7 +11537,7 @@
       "id": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
       "name": "Delta",
       "position": 112,
-      "publisher_id": "81af659d-53da-4fad-9b49-bc2516413a4d",
+      "publisher_id": "fa35ea6b-81e5-42d6-ab78-dff77001df0b",
       "points": 2244,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -11558,8 +11558,8 @@
       "gddl_tier": 35.75,
       "nlw_tier": null,
       "publisher": {
-        "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
-        "username": "f0bdf532d",
+        "id": "fa35ea6b-81e5-42d6-ab78-dff77001df0b",
+        "username": "drakosa",
         "global_name": "Drakosa"
       },
       "verifications": [
@@ -11645,11 +11645,6 @@
           "global_name": "kedi"
         },
         {
-          "id": "81af659d-53da-4fad-9b49-bc2516413a4d",
-          "username": "f0bdf532d",
-          "global_name": "Drakosa"
-        },
-        {
           "id": "866850c2-f2e1-4436-b12e-774466cf41ce",
           "username": "dreamzonegd",
           "global_name": "DreamZoneGD"
@@ -11703,6 +11698,11 @@
           "id": "f9995e98-4705-4b19-9fe7-638ac8e52d5b",
           "username": "5c19e0e15",
           "global_name": "12Kelvin"
+        },
+        {
+          "id": "fa35ea6b-81e5-42d6-ab78-dff77001df0b",
+          "username": "drakosa",
+          "global_name": "Drakosa"
         }
       ]
     },
@@ -12804,11 +12804,6 @@
       ],
       "creators": [
         {
-          "id": "0cc29e5e-1b5b-43f9-9329-76eb265899e8",
-          "username": "18178d6aa",
-          "global_name": "FrostBurn"
-        },
-        {
           "id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
           "username": "50af4664a",
           "global_name": "LIEB"
@@ -12822,6 +12817,11 @@
           "id": "8f58dfe7-7b61-4924-85ae-767df1ebbdae",
           "username": "d62c67bb8",
           "global_name": "Giron"
+        },
+        {
+          "id": "bcc79845-6031-4301-895b-5bf641dc9f04",
+          "username": ".frostburn.",
+          "global_name": "FrostBurn"
         }
       ]
     },
