@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T23:07:47.683Z",
+  "generatedAt": "2026-09-12T23:12:54.109Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2899,27 +2899,6 @@
       },
       "discoveredAt": "2026-09-12T12:03:55.982Z"
     },
-    "6f5299ae-a62f-4701-b5a8-ace004b8f7ef": {
-      "name": "Starlight Summit",
-      "position": 150,
-      "verifier": {
-        "id": "LB9xx41M4Ns",
-        "url": "https://www.youtube.com/watch?v=LB9xx41M4Ns",
-        "title": "[NEW HARDEST!] \"Starlight Summit\" VERIFIED! (Extreme Demon) by hazelmrow (me)",
-        "channel": "hazelmrow",
-        "viewCount": 28120,
-        "viewsCheckedAt": "2026-09-12T23:07:46.989Z"
-      },
-      "showcase": {
-        "id": "G76zzxWOhQY",
-        "url": "https://www.youtube.com/watch?v=G76zzxWOhQY",
-        "title": "【4K】 \"Starlight Summit\" by Pengi1 | Geometry Dash 2.2",
-        "channel": "Newly Rated Extremes",
-        "viewCount": 23345,
-        "viewsCheckedAt": "2026-09-12T23:07:46.989Z"
-      },
-      "discoveredAt": "2026-09-12T12:03:55.982Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 55,
@@ -3150,6 +3129,27 @@
         "viewsCheckedAt": "2026-09-12T23:07:46.989Z"
       },
       "discoveredAt": "2026-09-12T12:03:55.982Z"
+    },
+    "aea0cadd-9429-4f79-9d6d-8179bb518d73": {
+      "name": "Heavenly Sakupen",
+      "position": 126,
+      "verifier": {
+        "id": "4uwSVZBrtfg",
+        "url": "https://www.youtube.com/watch?v=4uwSVZBrtfg",
+        "title": "[Verified] Heavenly Sakupen by Fwe and More (1.9 GDPS Top 5)",
+        "channel": "fusion425",
+        "viewCount": 19019,
+        "viewsCheckedAt": "2026-09-12T23:12:54.109Z"
+      },
+      "showcase": {
+        "id": "iLc-3ryKjpw",
+        "url": "https://www.youtube.com/watch?v=iLc-3ryKjpw",
+        "title": "【4K】 \"Heavenly Sakupen\" by YouknowwhoGD & more | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 722,
+        "viewsCheckedAt": "2026-09-12T23:12:54.109Z"
+      },
+      "discoveredAt": "2026-09-12T23:12:54.109Z"
     }
   },
   "channelIndex": {
