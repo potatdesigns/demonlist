@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T23:32:09.208Z",
+  "generatedAt": "2026-09-13T01:48:21.070Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3184,8 +3184,8 @@
       "id": "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
       "name": "FOREST OF SPIKES",
       "position": 28,
-      "publisher_id": "d59c0175-5b7d-4aec-a716-ba692a976c35",
-      "points": 3760,
+      "publisher_id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
+      "points": 3765,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 145709435,
@@ -3208,9 +3208,9 @@
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
-        "id": "d59c0175-5b7d-4aec-a716-ba692a976c35",
-        "username": "1e9a7faeb",
-        "global_name": "Bimms"
+        "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
+        "username": ".bims.",
+        "global_name": "bims"
       },
       "verifications": [
         {
@@ -12630,7 +12630,7 @@
       ],
       "description": null,
       "song": 844801,
-      "edel_enjoyment": 80.61538462,
+      "edel_enjoyment": 81.28571429,
       "is_edel_pending": false,
       "gddl_tier": 35.5,
       "nlw_tier": null,
@@ -13145,7 +13145,7 @@
       ],
       "description": "Fast-paced extreme themed around escaping a burning facility. Contains a lot of scaled up animated fire objects and high octane gameplay, along with a difficult dual. The hardest PEACEFUL! level in the game.",
       "song": 792302,
-      "edel_enjoyment": 57.78571429,
+      "edel_enjoyment": 58,
       "is_edel_pending": false,
       "gddl_tier": 34.833333333333336,
       "nlw_tier": null,
