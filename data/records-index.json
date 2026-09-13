@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T10:57:51.888Z",
+  "generatedAt": "2026-09-13T15:29:48.277Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -38012,11 +38012,27 @@
           "verified": false
         },
         {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-08-25T15:50:17Z",
+          "videoUrl": "https://www.youtube.com/watch?v=GS8ygLep9lc",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 119,
           "achievedAt": "2026-05-15T15:52:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=NpIBUJDaJKg",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-07-31T20:57:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0Hv4JBaKdvI",
           "verified": false
         },
         {
