@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T02:42:38.592Z",
+  "generatedAt": "2026-09-13T10:57:51.888Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -38718,6 +38718,19 @@
           "position": 61,
           "achievedAt": "2026-08-24T20:42:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=qrONLIe6xeM",
+          "verified": false
+        }
+      ]
+    },
+    "2c7905b4-4acc-4655-86ff-d2c88183872f": {
+      "name": "[NATE] Slymii",
+      "levels": [
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 61,
+          "achievedAt": "2026-08-30T12:30:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2nlTs5MOf1w",
           "verified": false
         }
       ]
