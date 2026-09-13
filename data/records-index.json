@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T15:29:48.277Z",
+  "generatedAt": "2026-09-13T20:10:11.357Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -17258,6 +17258,14 @@
           "verified": false
         },
         {
+          "levelId": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
+          "levelName": "arcturus",
+          "position": 103,
+          "achievedAt": "2026-09-11T22:02:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ruxQhx41ZeA",
+          "verified": false
+        },
+        {
           "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
           "levelName": "Sonic Wave Infinity",
           "position": 107,
@@ -18218,6 +18226,14 @@
           "position": 98,
           "achievedAt": "2026-07-03T00:24:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=DgA8lTKSxYI",
+          "verified": false
+        },
+        {
+          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
+          "levelName": "Midnight",
+          "position": 99,
+          "achievedAt": "2024-12-22T05:49:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1Ee4TW-3kOw",
           "verified": false
         },
         {
@@ -36381,6 +36397,27 @@
         }
       ]
     },
+    "c38c7096-0999-46c9-85ad-0f3171a44ff3": {
+      "name": "Tanner",
+      "levels": [
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 58,
+          "achievedAt": "2026-09-06T03:14:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OS_z8ABx_VI",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-06-10T20:55:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=p8yRgP6y6L0",
+          "verified": false
+        }
+      ]
+    },
     "955e8f60-f26a-4ba6-8d51-d5b98c073b4a": {
       "name": "bloom",
       "levels": [
@@ -45523,6 +45560,14 @@
           "position": 82,
           "achievedAt": "2026-02-16T01:14:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=s_QSbUl_49s",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 127,
+          "achievedAt": "2026-09-06T05:57:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dgIa8WwQDpk",
           "verified": false
         }
       ]
@@ -54781,19 +54826,6 @@
           "position": 119,
           "achievedAt": "2026-06-08T03:12:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=Q9Khh5deqtQ",
-          "verified": false
-        }
-      ]
-    },
-    "c38c7096-0999-46c9-85ad-0f3171a44ff3": {
-      "name": "Tanner",
-      "levels": [
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 119,
-          "achievedAt": "2026-06-10T20:55:37Z",
-          "videoUrl": "https://www.youtube.com/watch?v=p8yRgP6y6L0",
           "verified": false
         }
       ]
