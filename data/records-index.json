@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:32:00.892Z",
+  "generatedAt": "2026-09-14T17:27:56.250Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -18325,6 +18325,14 @@
           "verified": false
         },
         {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 138,
+          "achievedAt": "2026-01-30T02:03:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XXjfUnQ3nyU",
+          "verified": false
+        },
+        {
           "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
           "levelName": "Starlit Stroll",
           "position": 139,
@@ -18354,6 +18362,14 @@
           "position": 142,
           "achievedAt": "2024-03-05T02:35:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=BIx0CHiSCJc",
+          "verified": false
+        },
+        {
+          "levelId": "53fb0da7-8845-4736-9832-c1f98bb388cc",
+          "levelName": "Henken",
+          "position": 145,
+          "achievedAt": "2025-11-13T05:20:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=k1HWdjPzMVY",
           "verified": false
         },
         {
