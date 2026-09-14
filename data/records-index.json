@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T20:10:11.357Z",
+  "generatedAt": "2026-09-14T02:57:32.754Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -19878,6 +19878,14 @@
           "position": 76,
           "achievedAt": "2026-08-02T22:49:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=7di-obeG39s",
+          "verified": false
+        },
+        {
+          "levelId": "33f22458-6142-45b2-a45e-9cc488be8304",
+          "levelName": "Collapse (Nexel)",
+          "position": 79,
+          "achievedAt": "2026-09-08T23:44:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=AMK7rt6HLUc",
           "verified": false
         }
       ]
@@ -52566,7 +52574,7 @@
       ]
     },
     "0a796eac-31a0-45ec-9efc-14de865f9e1c": {
-      "name": "ZStoxK",
+      "name": "ZSiren",
       "levels": [
         {
           "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
