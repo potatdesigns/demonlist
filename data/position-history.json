@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T23:45:03.627Z",
+  "generatedAt": "2026-09-15T06:54:39.764Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -253734,6 +253734,11 @@
         "date": "2026-09-12",
         "position": 222,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-15",
+        "position": 224,
+        "reason": "Lowered from #222 to #224"
       }
     ],
     "95bd8586-f906-4bc5-be9d-7ca22bb637d2": [
@@ -388976,6 +388981,11 @@
         "date": "2026-09-12",
         "position": 224,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-15",
+        "position": 223,
+        "reason": "Moved up — SUPERHATEMEWORLD was lowered to #224"
       }
     ],
     "876b0b3b-0916-4764-94dc-2e433f8109c3": [
@@ -394329,6 +394339,11 @@
         "date": "2026-09-12",
         "position": 223,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-15",
+        "position": 222,
+        "reason": "Moved up — SUPERHATEMEWORLD was lowered to #224"
       }
     ],
     "53fb0da7-8845-4736-9832-c1f98bb388cc": [
@@ -402148,9 +402163,9 @@
       "43ea5df1-d4fc-46d8-9b2b-ca3603214637",
       "e8c10226-96df-4139-94cb-b09758444ce2",
       "69e600b5-1889-44dc-922b-fe4f66fca797",
-      "90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327",
       "93c30030-8c59-412f-8b3d-dcb280d2df55",
       "7cc25551-d5d3-40d3-b4f6-420e4c9110d0",
+      "90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327",
       "273cc0ae-4b73-4bac-9eb2-7d95f3e4fa08",
       "19ffe591-18d5-4544-98ac-181c1dea8338",
       "dca1d324-90a4-431d-9bc8-07a934835a5d",
@@ -405633,6 +405648,6 @@
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas Tech"
     },
-    "lastEventFingerprint": "2026-09-13T23:10:13.231830Z|8d895121-2d7c-4d1b-9a0d-4798659f8e7a|{\"Raised\":{\"new_position\":292,\"old_position\":302}}"
+    "lastEventFingerprint": "2026-09-15T04:34:33.042715Z|90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327|{\"Lowered\":{\"new_position\":224,\"old_position\":222}}"
   }
 }
