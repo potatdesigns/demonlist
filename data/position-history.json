@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T06:54:39.764Z",
+  "generatedAt": "2026-09-16T08:00:21.053Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -65993,6 +65993,11 @@
         "date": "2026-09-13",
         "position": 362,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 361,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "4ac5987f-e71d-4b87-8ab6-e778f8caff3e": [
@@ -79184,6 +79189,11 @@
         "date": "2026-09-13",
         "position": 370,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 369,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "93acc501-2587-45df-bc42-4e492df02e2b": [
@@ -85767,6 +85777,11 @@
         "date": "2026-09-13",
         "position": 364,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 363,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "263b1e38-1570-462b-99fa-8d9c582e4d51": [
@@ -90688,6 +90703,11 @@
         "date": "2026-09-13",
         "position": 366,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 365,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "168292b3-5d13-47d4-a348-0fb98785c9a8": [
@@ -102567,6 +102587,11 @@
         "date": "2026-09-13",
         "position": 374,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 373,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "0bd7e38a-152b-403d-81f6-39b019aada28": [
@@ -111097,6 +111122,11 @@
         "date": "2026-09-13",
         "position": 375,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 374,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "b35442b9-3ab4-410c-84d2-fd9748063cc4": [
@@ -120107,6 +120137,11 @@
         "date": "2026-09-13",
         "position": 376,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 375,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "25d8d395-de9a-4cd0-bf8d-5fe37458db17": [
@@ -249318,6 +249353,11 @@
         "date": "2026-09-13",
         "position": 367,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 366,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "3071446b-01ba-4487-842a-fd33c340a776": [
@@ -274603,6 +274643,11 @@
         "date": "2026-09-13",
         "position": 363,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-16",
+        "position": 362,
+        "reason": "Moved up — ADOMANIA was lowered to #376"
       }
     ],
     "c29c64f1-45d1-4a3d-b501-5595d7935f8e": [
@@ -402301,7 +402346,6 @@
       "f03cd264-c3f0-4620-a111-1cb28d8e99ea",
       "158fe0d0-a9b6-47ed-b78a-6a6c40db0b2d",
       "8143389c-9dab-4ac1-8839-75bc03aeb1dc",
-      "09444acf-de7f-4263-b00e-0b4c8c73c666",
       "8fcb9ea4-9f78-4856-bda3-c63d7f4132d1",
       "51bb43ad-455a-49aa-9dbc-9db92c260bb6",
       "9a02445c-33b7-4a2d-b7b3-a8c6a1390321",
@@ -402318,6 +402362,7 @@
       "fa30d80b-5949-46a7-86ca-92d24a7ce714",
       "3084d6d3-b9e5-4660-8113-8cde59957911",
       "7c5de059-d496-43c0-8078-5d924416d975",
+      "09444acf-de7f-4263-b00e-0b4c8c73c666",
       "5e08596b-eb38-4b55-bc7d-9018f8f4b6e6",
       "93acc501-2587-45df-bc42-4e492df02e2b",
       "2592d427-72d1-494a-a00c-ef98b26543d7",
@@ -405648,6 +405693,6 @@
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas Tech"
     },
-    "lastEventFingerprint": "2026-09-15T04:34:33.042715Z|90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327|{\"Lowered\":{\"new_position\":224,\"old_position\":222}}"
+    "lastEventFingerprint": "2026-09-16T05:15:06.184052Z|09444acf-de7f-4263-b00e-0b4c8c73c666|{\"Lowered\":{\"new_position\":376,\"old_position\":360}}"
   }
 }
