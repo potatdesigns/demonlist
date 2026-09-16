@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T15:58:02.299Z",
+  "generatedAt": "2026-09-16T20:46:42.143Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -47314,6 +47314,19 @@
           "position": 120,
           "achievedAt": "2026-05-18T03:15:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=FA7cEpuWLV0",
+          "verified": false
+        }
+      ]
+    },
+    "a89f8e0b-6c35-4b91-a867-f49f49c13469": {
+      "name": "SparkyConjure",
+      "levels": [
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 91,
+          "achievedAt": "2026-09-13T03:21:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=wZq3tzfNElM",
           "verified": false
         }
       ]
