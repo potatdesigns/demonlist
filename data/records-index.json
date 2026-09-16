@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T10:42:26.545Z",
+  "generatedAt": "2026-09-16T15:58:02.299Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -48696,6 +48696,19 @@
         }
       ]
     },
+    "538f4efb-fc83-4409-9b85-99ee5a21d6fb": {
+      "name": "[SDF] BETA ",
+      "levels": [
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-09-13T17:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=DzZV7A7mc_s&t=6s",
+          "verified": false
+        }
+      ]
+    },
     "15e6dad9-95ab-4992-ad4a-aaf362d2028e": {
       "name": "rowinile",
       "levels": [
@@ -61459,6 +61472,19 @@
           "position": 146,
           "achievedAt": "2026-08-31T14:58:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=SHqCtE6QAh4",
+          "verified": false
+        }
+      ]
+    },
+    "ae939698-4b37-4c56-a377-28058de0ff12": {
+      "name": "Jexel",
+      "levels": [
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 146,
+          "achievedAt": "2026-09-11T08:49:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ScYM9zDznKE",
           "verified": false
         }
       ]
