@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T20:41:39.657Z",
+  "generatedAt": "2026-09-17T23:12:47.096Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -9581,7 +9581,7 @@
       "name": "TrakineS",
       "position": 94,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2448,
+      "points": 2454,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125788781,
@@ -9589,7 +9589,8 @@
       "tags": [
         "2.2",
         "Long",
-        "Timings"
+        "Timings",
+        "Chokepoints"
       ],
       "description": null,
       "song": null,
@@ -9652,7 +9653,7 @@
         {
           "id": "72603093-c9a4-4003-b398-7c84550c8e62",
           "username": "reyotta.",
-          "global_name": "República Potiguar Countryballs"
+          "global_name": "Reyo"
         },
         {
           "id": "7a44f34d-ece9-4030-966c-7580fbf9f056",
