@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T10:50:40.312Z",
+  "generatedAt": "2026-09-17T16:04:10.555Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -4239,6 +4239,14 @@
           "position": 38,
           "achievedAt": "2026-08-09T22:27:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=c_WQZjGmv6E",
+          "verified": false
+        },
+        {
+          "levelId": "876b0b3b-0916-4764-94dc-2e433f8109c3",
+          "levelName": "Operation Evolution",
+          "position": 87,
+          "achievedAt": "2026-09-14T01:09:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RY959uBXt-Y",
           "verified": false
         },
         {
@@ -58050,6 +58058,19 @@
           "position": 125,
           "achievedAt": "2026-08-19T08:30:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=m_hE52uy9vs",
+          "verified": false
+        }
+      ]
+    },
+    "9c2cd76d-c471-4e4c-93cd-2aa1974e37d5": {
+      "name": "VeloStatue66",
+      "levels": [
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 126,
+          "achievedAt": "2026-09-14T02:15:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OvbzxgDAobM",
           "verified": false
         }
       ]
