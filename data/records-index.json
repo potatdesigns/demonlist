@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T20:46:42.143Z",
+  "generatedAt": "2026-09-17T03:00:12.144Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -39010,6 +39010,19 @@
           "position": 61,
           "achievedAt": "2026-09-01T21:16:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=--9ykZw1Bm8",
+          "verified": false
+        }
+      ]
+    },
+    "1f8bb7f6-7080-4261-84d0-206e3242a6dd": {
+      "name": "Dokidokidoki",
+      "levels": [
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 61,
+          "achievedAt": "2026-09-16T15:14:15.144Z",
+          "videoUrl": "https://medal.tv/clips/nxrbWkZz287zmRQ34",
           "verified": false
         }
       ]
