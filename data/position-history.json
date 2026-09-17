@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T17:48:38.425Z",
+  "generatedAt": "2026-09-17T02:09:04.440Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -310558,6 +310558,16 @@
         "date": "2026-09-13",
         "position": 738,
         "reason": "Moved down — Phobos was raised to #711"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 739,
+        "reason": "Moved down — Stereo Smasher was raised to #720"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 740,
+        "reason": "Moved down — Glitch Control was raised to #667"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
@@ -402718,6 +402728,7 @@
       "f34531f5-68d2-40a2-a55c-5ca6cf5a0828",
       "5f22ff1d-ed9e-4bec-b1e9-1671769963aa",
       "f554c003-5362-4a80-a309-f587afbfad1d",
+      "524e9344-ded9-46f2-b539-c09470be2ee3",
       "df622fd6-2393-4daa-8b4a-17af430224f8",
       "e80841b3-f6dc-4a8a-b04f-1ea408186925",
       "6654555f-bf08-46d6-bd6a-e51d82692422",
@@ -402771,6 +402782,7 @@
       "e6af1a25-4a56-4387-b9a0-dc1bc547a813",
       "666b7d13-15f3-4260-9be9-5f52e9bd0ee6",
       "7bb81cba-90e5-4b77-80af-538a762f3240",
+      "e3e83096-3296-4b5b-ad3e-cf14d1efb4ff",
       "cdba2ba4-d07e-44bf-bc85-d169bb6afe0e",
       "a6aa20db-7802-4695-8f5a-75e11f38c2c3",
       "db045ce3-d156-4777-96cc-d1a6689625d1",
@@ -402835,7 +402847,6 @@
       "f1facf08-99b9-41cf-bc55-d8db425e5a94",
       "817b6c65-4d61-4cfa-8c65-a82eeb79a603",
       "9614465e-bef7-4d75-9a00-08b6dbe879a2",
-      "524e9344-ded9-46f2-b539-c09470be2ee3",
       "221ac77b-b151-473a-aa0c-e9009acabf2f",
       "0de7766b-8830-40be-aba5-45323f6f110c",
       "0c80cfae-1117-448a-8263-c7b47da27bb3",
@@ -402885,7 +402896,6 @@
       "3fc576f0-5caf-49a9-9c34-b74bb3c06d38",
       "82f8f8b8-9ec2-4ebc-b55d-d0283aba7395",
       "8025f87b-dbab-4ad9-86b1-37ee7002fa7d",
-      "e3e83096-3296-4b5b-ad3e-cf14d1efb4ff",
       "0e6a13b5-3cf7-4750-9156-de516085146d",
       "7a68bd82-91d3-429b-933c-dbf58f49e5c4",
       "b99d4feb-34a7-43a4-99f7-55c767c368bb",
@@ -405758,6 +405768,6 @@
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas Tech"
     },
-    "lastEventFingerprint": "2026-09-16T14:04:54.985743Z|ce627a2f-ed3f-498a-ba3c-c808449107d7|{\"Lowered\":{\"new_position\":271,\"old_position\":258}}"
+    "lastEventFingerprint": "2026-09-17T01:29:33.784715Z|524e9344-ded9-46f2-b539-c09470be2ee3|{\"Raised\":{\"new_position\":667,\"old_position\":785}}"
   }
 }
