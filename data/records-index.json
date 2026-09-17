@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T16:04:10.555Z",
+  "generatedAt": "2026-09-17T20:52:19.832Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -46134,6 +46134,27 @@
         }
       ]
     },
+    "734c162d-766c-456b-a1b8-676b644aac1b": {
+      "name": "Scythe",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 82,
+          "achievedAt": "2026-09-13T15:26:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QXWHU9XCcYI",
+          "verified": false
+        },
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 110,
+          "achievedAt": "2026-06-19T23:43:41Z",
+          "videoUrl": "https://www.youtube.com/watch?v=98PI5u_AlPc",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
@@ -48447,6 +48468,14 @@
           "position": 113,
           "achievedAt": "2026-08-24T22:03:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=6GmgrmOz3QQ",
+          "verified": false
+        },
+        {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 118,
+          "achievedAt": "2026-09-14T01:47:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=TsbPuyoJDa8",
           "verified": false
         },
         {
@@ -53216,19 +53245,6 @@
           "position": 110,
           "achievedAt": "2026-04-01T22:16:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=3hetuqSl1-E",
-          "verified": false
-        }
-      ]
-    },
-    "734c162d-766c-456b-a1b8-676b644aac1b": {
-      "name": "Scythe",
-      "levels": [
-        {
-          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
-          "levelName": "Waterfall",
-          "position": 110,
-          "achievedAt": "2026-06-19T23:43:41Z",
-          "videoUrl": "https://www.youtube.com/watch?v=98PI5u_AlPc",
           "verified": false
         }
       ]
