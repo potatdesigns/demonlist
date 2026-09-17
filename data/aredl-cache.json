@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T02:09:04.199Z",
+  "generatedAt": "2026-09-17T05:29:53.537Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1844,11 +1844,164 @@
       ]
     },
     {
+      "id": "7b90f819-624d-461a-9987-f1b6a0a54ef2",
+      "name": "Ashley Wave Trials",
+      "position": 14,
+      "publisher_id": "b2e40073-c491-41f9-81e2-776802e2e3da",
+      "points": 4299,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 62912799,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "XL",
+        "Fast-Paced",
+        "High CPS",
+        "Wave"
+      ],
+      "description": "A level with a pink/red color scheme that is entirely wave, as the name suggests. The level remained unrated until CBF was added to the game and the level was eventually rated a while later.",
+      "song": 383158,
+      "edel_enjoyment": 40,
+      "is_edel_pending": true,
+      "gddl_tier": 39,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "b2e40073-c491-41f9-81e2-776802e2e3da",
+        "username": "f182cbf8c",
+        "global_name": "oddmod"
+      },
+      "verifications": [
+        {
+          "id": "0440dd96-9c71-4bea-9810-6415dcdce374",
+          "submitted_by": {
+            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
+            "username": "zoinkgd",
+            "global_name": "Zoink"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=aTxt76U3e2Q",
+          "hide_video": false,
+          "achieved_at": "2024-11-02T02:10:10Z",
+          "created_at": "2026-03-01T21:49:26.015775Z",
+          "updated_at": "2026-03-01T21:49:26.015775Z"
+        }
+      ],
+      "creators": []
+    },
+    {
+      "id": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
+      "name": "Silent clubstep",
+      "position": 15,
+      "publisher_id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
+      "points": 4255,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 4125776,
+      "two_player": false,
+      "tags": [
+        "1.8",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Mirror",
+        "Ship"
+      ],
+      "description": "One of the most legendary and recognizable levels in Geometry Dash. Formerly impossible and was initially hack-verified by Sailent in 1.8. Houses the \"8 Jumps of Hell\" and the infamous 6% ship part, among other classic sections.",
+      "song": -14,
+      "edel_enjoyment": 32.15,
+      "is_edel_pending": false,
+      "gddl_tier": 39,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
+        "username": "bbaa0aa3a",
+        "global_name": "TheRealSailent"
+      },
+      "verifications": [
+        {
+          "id": "3c653428-f53b-4815-8b7b-d783ec88dfdf",
+          "submitted_by": {
+            "id": "ef70493c-1712-4897-8ccf-1db1660bbe46",
+            "username": "1a575965a",
+            "global_name": "paqoe"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=GR4OMkS3SN8",
+          "hide_video": false,
+          "achieved_at": "2022-07-17T23:15:11Z",
+          "created_at": "2022-10-25T16:03:01Z",
+          "updated_at": "2022-10-25T16:03:01Z"
+        }
+      ],
+      "creators": []
+    },
+    {
+      "id": "4736d3e3-6166-44eb-941d-d94a5f2d6cc4",
+      "name": "Ultra Paracosm",
+      "position": 16,
+      "publisher_id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+      "points": 4212,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 138704906,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Circles",
+        "Timings",
+        "Chokepoints",
+        "High CPS",
+        "Nerve Control",
+        "Wave"
+      ],
+      "description": "Superbuffed remake of Hyper Paracosm, decorated by declanlc. Sadly not the easy demon",
+      "song": 469490,
+      "edel_enjoyment": 95,
+      "is_edel_pending": true,
+      "gddl_tier": 39,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+        "username": "declan_lc",
+        "global_name": "declanlc"
+      },
+      "verifications": [
+        {
+          "id": "58f252ad-e669-4548-8a78-126c158987c0",
+          "submitted_by": {
+            "id": "139b7c0a-4004-43dd-999e-0d7abe928a47",
+            "username": "wity26",
+            "global_name": "Wity"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/4V24spYQWuE?si=n4Fq0ruT3bSFK4M8",
+          "hide_video": false,
+          "achieved_at": "2026-04-21T12:44:04Z",
+          "created_at": "2026-08-05T22:21:43.526086Z",
+          "updated_at": "2026-08-05T22:21:43.526086Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+          "username": "f7183736b",
+          "global_name": "Renn241"
+        },
+        {
+          "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
+          "username": "declan_lc",
+          "global_name": "declanlc"
+        }
+      ]
+    },
+    {
       "id": "9ca78081-b7f1-4cd4-b5f8-c87ec4279a3c",
       "name": "Penumbral",
-      "position": 14,
+      "position": 17,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 4296,
+      "points": 4170,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 134942736,
@@ -1902,159 +2055,6 @@
           "id": "eec2160a-6e49-454f-9aa9-a77fa4f931ca",
           "username": "9b187e7f0",
           "global_name": "nxhtrise"
-        }
-      ]
-    },
-    {
-      "id": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
-      "name": "Silent clubstep",
-      "position": 15,
-      "publisher_id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
-      "points": 4251,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 4125776,
-      "two_player": false,
-      "tags": [
-        "1.8",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Mirror",
-        "Ship"
-      ],
-      "description": "One of the most legendary and recognizable levels in Geometry Dash. Formerly impossible and was initially hack-verified by Sailent in 1.8. Houses the \"8 Jumps of Hell\" and the infamous 6% ship part, among other classic sections.",
-      "song": -14,
-      "edel_enjoyment": 32.15,
-      "is_edel_pending": false,
-      "gddl_tier": 39,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "6d399cd6-916c-4b49-9dc9-14d1235e548d",
-        "username": "bbaa0aa3a",
-        "global_name": "TheRealSailent"
-      },
-      "verifications": [
-        {
-          "id": "3c653428-f53b-4815-8b7b-d783ec88dfdf",
-          "submitted_by": {
-            "id": "ef70493c-1712-4897-8ccf-1db1660bbe46",
-            "username": "1a575965a",
-            "global_name": "paqoe"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=GR4OMkS3SN8",
-          "hide_video": false,
-          "achieved_at": "2022-07-17T23:15:11Z",
-          "created_at": "2022-10-25T16:03:01Z",
-          "updated_at": "2022-10-25T16:03:01Z"
-        }
-      ],
-      "creators": []
-    },
-    {
-      "id": "7b90f819-624d-461a-9987-f1b6a0a54ef2",
-      "name": "Ashley Wave Trials",
-      "position": 16,
-      "publisher_id": "b2e40073-c491-41f9-81e2-776802e2e3da",
-      "points": 4208,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 62912799,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "XL",
-        "Fast-Paced",
-        "High CPS",
-        "Wave"
-      ],
-      "description": "A level with a pink/red color scheme that is entirely wave, as the name suggests. The level remained unrated until CBF was added to the game and the level was eventually rated a while later.",
-      "song": 383158,
-      "edel_enjoyment": 40,
-      "is_edel_pending": true,
-      "gddl_tier": 39,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "b2e40073-c491-41f9-81e2-776802e2e3da",
-        "username": "f182cbf8c",
-        "global_name": "oddmod"
-      },
-      "verifications": [
-        {
-          "id": "0440dd96-9c71-4bea-9810-6415dcdce374",
-          "submitted_by": {
-            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
-            "username": "zoinkgd",
-            "global_name": "Zoink"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=aTxt76U3e2Q",
-          "hide_video": false,
-          "achieved_at": "2024-11-02T02:10:10Z",
-          "created_at": "2026-03-01T21:49:26.015775Z",
-          "updated_at": "2026-03-01T21:49:26.015775Z"
-        }
-      ],
-      "creators": []
-    },
-    {
-      "id": "4736d3e3-6166-44eb-941d-d94a5f2d6cc4",
-      "name": "Ultra Paracosm",
-      "position": 17,
-      "publisher_id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
-      "points": 4166,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 138704906,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Circles",
-        "Timings",
-        "Chokepoints",
-        "High CPS",
-        "Nerve Control",
-        "Wave"
-      ],
-      "description": "Superbuffed remake of Hyper Paracosm, decorated by declanlc. Sadly not the easy demon",
-      "song": 469490,
-      "edel_enjoyment": 95,
-      "is_edel_pending": true,
-      "gddl_tier": 39,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
-        "username": "declan_lc",
-        "global_name": "declanlc"
-      },
-      "verifications": [
-        {
-          "id": "58f252ad-e669-4548-8a78-126c158987c0",
-          "submitted_by": {
-            "id": "139b7c0a-4004-43dd-999e-0d7abe928a47",
-            "username": "wity26",
-            "global_name": "Wity"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/4V24spYQWuE?si=n4Fq0ruT3bSFK4M8",
-          "hide_video": false,
-          "achieved_at": "2026-04-21T12:44:04Z",
-          "created_at": "2026-08-05T22:21:43.526086Z",
-          "updated_at": "2026-08-05T22:21:43.526086Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-          "username": "f7183736b",
-          "global_name": "Renn241"
-        },
-        {
-          "id": "c0a81a47-ef0f-46a4-9c1e-c8eda0412dc9",
-          "username": "declan_lc",
-          "global_name": "declanlc"
         }
       ]
     },

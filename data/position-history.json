@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T02:09:04.440Z",
+  "generatedAt": "2026-09-17T05:29:53.740Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -819,6 +819,16 @@
         "date": "2026-08-22",
         "position": 15,
         "reason": "Moved down — Antarctic Lights was placed at #8"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 14,
+        "reason": "Moved up — Penumbral was lowered to #17"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 15,
+        "reason": "Swapped with Ashley Wave Trials — moved from #14 to #15"
       }
     ],
     "007000f3-c6b4-440a-a4b3-af7e86e132e9": [
@@ -18899,6 +18909,11 @@
         "date": "2026-09-12",
         "position": 201,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 200,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "9c4db80a-953f-44cd-a772-5748d4b7e2e0": [
@@ -21700,6 +21715,11 @@
         "date": "2026-09-12",
         "position": 200,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 199,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "136367a8-9be1-404a-9e7b-f4ee848054a3": [
@@ -286289,6 +286309,11 @@
         "date": "2026-09-12",
         "position": 202,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 201,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "92fdec4b-cd5b-4610-aea8-30c24052574d": [
@@ -299058,6 +299083,11 @@
         "date": "2026-09-12",
         "position": 203,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 202,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "231fdd45-f2f7-40a0-bb86-3743eba20ec0": [
@@ -306517,6 +306547,11 @@
         "date": "2026-09-12",
         "position": 196,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 203,
+        "reason": "Lowered from #196 to #203"
       }
     ],
     "1ddbf99e-6320-4eaf-b425-f60210e40d7a": [
@@ -381242,6 +381277,11 @@
         "date": "2026-09-12",
         "position": 199,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 198,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "eae489bc-dbf9-47b3-9c23-9730f5343d06": [
@@ -384511,6 +384551,11 @@
         "date": "2026-09-12",
         "position": 197,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 196,
+        "reason": "Moved up — ATOMIC CANNON Mk II was lowered to #203"
       }
     ],
     "d79120ff-015e-457f-a164-52e98b40f411": [
@@ -398882,6 +398927,16 @@
         "date": "2026-08-22",
         "position": 16,
         "reason": "Moved down — Antarctic Lights was placed at #8"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 15,
+        "reason": "Moved up — Penumbral was lowered to #17"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 14,
+        "reason": "Swapped with Silent clubstep — moved from #15 to #14"
       }
     ],
     "822815ac-fcb8-40b3-b42d-bd692095129c": [
@@ -399919,6 +399974,11 @@
         "date": "2026-08-22",
         "position": 14,
         "reason": "Moved down — Antarctic Lights was placed at #8"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 17,
+        "reason": "Lowered from #14 to #17"
       }
     ],
     "68f7dca1-2735-431b-84f5-5fe940e27da8": [
@@ -401419,6 +401479,11 @@
         "date": "2026-08-22",
         "position": 17,
         "reason": "Moved down — Antarctic Lights was placed at #8"
+      },
+      {
+        "date": "2026-09-17",
+        "position": 16,
+        "reason": "Moved up — Penumbral was lowered to #17"
       }
     ],
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": [
@@ -402075,10 +402140,10 @@
       "2d363340-d8ae-4049-a729-a5cf50c0252b",
       "b986f5e6-2368-40df-9082-060d509d14f1",
       "458bbbdb-a121-4a8f-a7a4-5ea68be04484",
-      "9ca78081-b7f1-4cd4-b5f8-c87ec4279a3c",
-      "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
       "7b90f819-624d-461a-9987-f1b6a0a54ef2",
+      "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
       "4736d3e3-6166-44eb-941d-d94a5f2d6cc4",
+      "9ca78081-b7f1-4cd4-b5f8-c87ec4279a3c",
       "45036980-77db-4bb5-9720-59ef3001a12e",
       "7274331e-37b4-4e90-8711-dec7a5d0f00f",
       "596c8672-afa6-43c3-83f2-2078756a0554",
@@ -402257,7 +402322,6 @@
       "d9cd0f5a-595c-407b-9568-b7a0f287603b",
       "275c54a1-f74e-4258-a369-7dd65ddd9578",
       "bafd3d38-dc40-4103-ab06-a4ec26540679",
-      "a860a01b-2ba5-4da2-a943-3733486a044a",
       "9da659fa-af91-4fc8-8a14-085edb85f613",
       "011c92a6-3452-4cee-ac79-e451c4f74bb6",
       "3e47f031-58c7-46f2-adc0-14bb0cf8d5d4",
@@ -402265,6 +402329,7 @@
       "12bcb462-f6a6-4451-8f55-351888908b23",
       "2c0bca18-1451-4804-8035-39a5cf9183dc",
       "2b746203-5bb3-4f46-aed9-d0f6b8f1a1e2",
+      "a860a01b-2ba5-4da2-a943-3733486a044a",
       "c9062aa5-2ee5-4957-802e-fddfbd4f1182",
       "aff98aeb-1f8b-4ef0-9502-ddf9abdba2db",
       "05a1489d-b4fe-4c6a-882a-dd0d91a5f9a2",
@@ -405768,6 +405833,6 @@
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas Tech"
     },
-    "lastEventFingerprint": "2026-09-17T01:29:33.784715Z|524e9344-ded9-46f2-b539-c09470be2ee3|{\"Raised\":{\"new_position\":667,\"old_position\":785}}"
+    "lastEventFingerprint": "2026-09-17T03:55:34.768125Z|7b90f819-624d-461a-9987-f1b6a0a54ef2|{\"Swapped\":{\"upper_position\":14,\"upper_level\":{\"id\":\"7b90f819-624d-461a-9987-f1b6a0a54ef2\",\"name\":\"Ashley Wave Trials\",\"level_id\":62912799,\"two_player\":false},\"other_level\":{\"id\":\"d6f7ba38-9787-42a2-acf2-4585e69cbb91\",\"name\":\"Silent clubstep\",\"level_id\":4125776,\"two_player\":false}}}"
   }
 }
