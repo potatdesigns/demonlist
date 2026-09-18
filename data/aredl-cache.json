@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T23:12:47.096Z",
+  "generatedAt": "2026-09-18T01:56:42.506Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6753,8 +6753,8 @@
       ],
       "description": null,
       "song": 1585216,
-      "edel_enjoyment": 84.83333333,
-      "is_edel_pending": true,
+      "edel_enjoyment": 84.14285714,
+      "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
