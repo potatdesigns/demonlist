@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T20:52:19.832Z",
+  "generatedAt": "2026-09-18T02:46:48.545Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -31665,6 +31665,27 @@
         }
       ]
     },
+    "087d987d-8068-4ed5-bf5e-00653edc9888": {
+      "name": "Zidged aka Milo",
+      "levels": [
+        {
+          "levelId": "72bf2c18-1299-408b-bca2-3da986956632",
+          "levelName": "KOSETSU",
+          "position": 49,
+          "achievedAt": "2026-09-13T13:09:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WhYtu0_UM9I",
+          "verified": false
+        },
+        {
+          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
+          "levelName": "Natural Disaster",
+          "position": 116,
+          "achievedAt": "2026-04-13T14:41:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=it8gj3YtKoE",
+          "verified": false
+        }
+      ]
+    },
     "81944479-099d-464b-bb46-acb7ef1f0319": {
       "name": "animized",
       "levels": [
@@ -33856,6 +33877,14 @@
           "position": 51,
           "achievedAt": "2026-08-09T13:31:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=FxlaDLfeWpE",
+          "verified": false
+        },
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 52,
+          "achievedAt": "2026-09-13T12:01:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zTCLh8of5l8",
           "verified": false
         },
         {
@@ -43475,6 +43504,14 @@
           "verified": false
         },
         {
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 94,
+          "achievedAt": "2026-09-13T11:40:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=t1OdfXHS8ME",
+          "verified": false
+        },
+        {
           "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
           "levelName": "Natural Disaster",
           "position": 116,
@@ -52927,6 +52964,19 @@
         }
       ]
     },
+    "e5ec8be7-eecf-497e-8564-c742191b5465": {
+      "name": "MrTxcer",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-09-12T13:58:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Nf0J-UMbKUE",
+          "verified": false
+        }
+      ]
+    },
     "2ded910b-bf1c-4bdc-86a0-7f63982f7de8": {
       "name": "blobik",
       "levels": [
@@ -53878,19 +53928,6 @@
           "position": 116,
           "achievedAt": "2025-09-02T03:51:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=treQEdthGuc",
-          "verified": false
-        }
-      ]
-    },
-    "087d987d-8068-4ed5-bf5e-00653edc9888": {
-      "name": "Zidged aka Milo",
-      "levels": [
-        {
-          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
-          "levelName": "Natural Disaster",
-          "position": 116,
-          "achievedAt": "2026-04-13T14:41:29Z",
-          "videoUrl": "https://www.youtube.com/watch?v=it8gj3YtKoE",
           "verified": false
         }
       ]
