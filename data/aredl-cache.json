@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T06:51:29.443Z",
+  "generatedAt": "2026-09-18T11:58:58.195Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -649,11 +649,6 @@
           "global_name": "LordVadercraft"
         },
         {
-          "id": "5de63010-7e7c-4582-a270-a227b26c6ee5",
-          "username": "940ff6b8e",
-          "global_name": "wokecat"
-        },
-        {
           "id": "5f868091-85c0-455e-b555-7f74bac1718d",
           "username": "c5217ca9b",
           "global_name": "snib"
@@ -999,6 +994,11 @@
           "global_name": "Xolarzz"
         },
         {
+          "id": "1a496106-aa9c-4329-b6ba-e36ec07e7195",
+          "username": "ffsfsgh",
+          "global_name": "riley"
+        },
+        {
           "id": "ab5448d3-d60c-4c87-a186-5c51fa09278e",
           "username": "8a0936f8d",
           "global_name": "Zafkiel7"
@@ -1083,9 +1083,9 @@
         {
           "id": "865e4b6b-dea1-4438-aaa7-5cde81a6f2cf",
           "submitted_by": {
-            "id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
-            "username": "dd45e642f",
-            "global_name": "NiCkNaMe09"
+            "id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
+            "username": "7543c0410",
+            "global_name": "Nickname"
           },
           "mobile": false,
           "video_url": "https://youtu.be/JG-qcvVkZFw?si=K_P4MawR0G4u5mt0",
@@ -4484,7 +4484,7 @@
       "id": "61ade6ee-e274-45b9-9537-3362259f8625",
       "name": "The Salt Factory",
       "position": 44,
-      "publisher_id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
+      "publisher_id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
       "points": 3310,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -4504,17 +4504,17 @@
       "gddl_tier": 37,
       "nlw_tier": null,
       "publisher": {
-        "id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
-        "username": "dd45e642f",
-        "global_name": "NiCkNaMe09"
+        "id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
+        "username": "7543c0410",
+        "global_name": "Nickname"
       },
       "verifications": [
         {
           "id": "e053669d-ae33-4db3-a7b9-a5dc2f53068b",
           "submitted_by": {
-            "id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
-            "username": "dd45e642f",
-            "global_name": "NiCkNaMe09"
+            "id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
+            "username": "7543c0410",
+            "global_name": "Nickname"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=lQ7M-Sgov24",
@@ -4526,9 +4526,9 @@
       ],
       "creators": [
         {
-          "id": "38820416-57ea-4f75-b96e-5fb5a33631a5",
-          "username": "dd45e642f",
-          "global_name": "NiCkNaMe09"
+          "id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
+          "username": "7543c0410",
+          "global_name": "Nickname"
         },
         {
           "id": "e7584550-5717-4cde-bae6-9448f69586e9",
