@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T02:46:48.545Z",
+  "generatedAt": "2026-09-18T10:26:02.442Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -2396,8 +2396,8 @@
         }
       ]
     },
-    "38820416-57ea-4f75-b96e-5fb5a33631a5": {
-      "name": "NiCkNaMe09",
+    "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c": {
+      "name": "Nickname",
       "levels": [
         {
           "levelId": "c32b8cbb-ada5-456e-b1c9-a4e091fe3e72",
@@ -34198,6 +34198,27 @@
         }
       ]
     },
+    "f4791612-150c-4ef3-875c-4a2e3f68549a": {
+      "name": "Riot48572",
+      "levels": [
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 52,
+          "achievedAt": "2026-08-24T05:52:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=eTBW-_b8PDQ",
+          "verified": false
+        },
+        {
+          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
+          "levelName": "Climax",
+          "position": 92,
+          "achievedAt": "2025-08-31T07:01:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RcrfJhyKrak",
+          "verified": false
+        }
+      ]
+    },
     "a1ac4924-9f5d-416b-8a21-991aea45a2b4": {
       "name": "Amplitron",
       "levels": [
@@ -40711,6 +40732,19 @@
           "position": 119,
           "achievedAt": "2025-12-09T02:59:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=_ouDeCorNMo",
+          "verified": false
+        }
+      ]
+    },
+    "88bda792-0d3a-46c9-9c89-136f459ef438": {
+      "name": "HaloZombies",
+      "levels": [
+        {
+          "levelId": "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
+          "levelName": "Deadlier Clubstep",
+          "position": 67,
+          "achievedAt": "2026-02-28T19:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=25-rXwNKjtA",
           "verified": false
         }
       ]
@@ -47501,19 +47535,6 @@
           "position": 123,
           "achievedAt": "2025-12-18T18:02:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=Ph-P4RO7J0c",
-          "verified": false
-        }
-      ]
-    },
-    "f4791612-150c-4ef3-875c-4a2e3f68549a": {
-      "name": "Riot48572",
-      "levels": [
-        {
-          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
-          "levelName": "Climax",
-          "position": 92,
-          "achievedAt": "2025-08-31T07:01:53Z",
-          "videoUrl": "https://www.youtube.com/watch?v=RcrfJhyKrak",
           "verified": false
         }
       ]
@@ -55371,7 +55392,7 @@
       ]
     },
     "51785a49-b463-4b68-9abd-fe82a43d8518": {
-      "name": "nixarthereal",
+      "name": "st4rnixar",
       "levels": [
         {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
