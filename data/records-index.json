@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T15:40:08.176Z",
+  "generatedAt": "2026-09-18T20:18:07.200Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -27307,6 +27307,187 @@
           "position": 148,
           "achievedAt": "2025-07-21T04:14:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=3iPmzxp2r8I",
+          "verified": false
+        }
+      ]
+    },
+    "ef7ef4ac-38ae-4689-8b08-8d8463f4f255": {
+      "name": "Tyson",
+      "levels": [
+        {
+          "levelId": "92b9d057-f34a-4358-820e-f8bb0af88a43",
+          "levelName": "Deimos (ItsHybrid)",
+          "position": 39,
+          "achievedAt": "2025-07-14T11:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jvBBLhKE308",
+          "verified": false
+        },
+        {
+          "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
+          "levelName": "Gaggatrondra",
+          "position": 75,
+          "achievedAt": "2025-09-16T21:36:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=lbgd_4rE32U",
+          "verified": false
+        },
+        {
+          "levelId": "0029b449-c191-4a9b-91a2-40a3c96037f6",
+          "levelName": "Codependence (Solo)",
+          "position": 78,
+          "achievedAt": "2026-09-10T09:46:51Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JzdadF69EDY",
+          "verified": false
+        },
+        {
+          "levelId": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+          "levelName": "BRITNEY NO SCLEARS",
+          "position": 86,
+          "achievedAt": "2026-09-04T11:37:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2LAZIex0IgM",
+          "verified": false
+        },
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 91,
+          "achievedAt": "2025-03-15T16:44:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LilIYDTaors",
+          "verified": false
+        },
+        {
+          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
+          "levelName": "Climax",
+          "position": 92,
+          "achievedAt": "2026-02-17T01:46:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YnGQk9G1VmU",
+          "verified": false
+        },
+        {
+          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
+          "levelName": "Sinister Silence",
+          "position": 96,
+          "achievedAt": "2024-12-24T09:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=8L7rqUgHoig",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 107,
+          "achievedAt": "2025-09-27T19:53:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=L2kTJCKSsHs",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2024-10-02T14:52:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RemUDW1uCOE",
+          "verified": false
+        },
+        {
+          "levelId": "7e39c9be-cbcc-4aff-a23c-08add685a336",
+          "levelName": "BPATA MPAKA",
+          "position": 114,
+          "achievedAt": "2026-08-30T18:24:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=K8PeM0cnvl0",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2024-07-02T08:35:55Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kk7dtY7adx4",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2024-09-24T18:12:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=g8aN0m16Jpw",
+          "verified": false
+        },
+        {
+          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
+          "levelName": "NETWORK (Agat3)",
+          "position": 122,
+          "achievedAt": "2024-03-23T10:38:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=lBuOxU2X7E4",
+          "verified": false
+        },
+        {
+          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
+          "levelName": "Terminal Rampancy",
+          "position": 123,
+          "achievedAt": "2026-08-27T15:20:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6qDkorPpOfY",
+          "verified": false
+        },
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 124,
+          "achievedAt": "2025-02-28T14:20:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3KqKtsILHlw",
+          "verified": false
+        },
+        {
+          "levelId": "92ce0a98-11ae-4aca-9188-a8a56c5bb02d",
+          "levelName": "ATOMIC CANNON Mk III",
+          "position": 128,
+          "achievedAt": "2024-05-08T08:33:25Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QOzUakDpxX4",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 130,
+          "achievedAt": "2025-07-31T19:23:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RlNznwczSlw",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 133,
+          "achievedAt": "2025-02-27T18:14:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WqZQea39qw8",
+          "verified": false
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 142,
+          "achievedAt": "2025-02-09T12:33:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OtrRc86M-Wk",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 146,
+          "achievedAt": "2025-01-09T09:56:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iMmD9LxEJw0",
+          "verified": false
+        },
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 148,
+          "achievedAt": "2025-04-01T06:53:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=m7LXQYtVTPk",
+          "verified": false
+        },
+        {
+          "levelId": "56aee27a-8b38-4a03-9baa-6d033211832a",
+          "levelName": "Fragile",
+          "position": 149,
+          "achievedAt": "2024-12-22T13:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=arpJrZnoR_4",
           "verified": false
         }
       ]
@@ -56506,6 +56687,14 @@
           "achievedAt": "2026-05-07T04:11:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=8YsqwYNZDXk",
           "verified": false
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 142,
+          "achievedAt": "2026-08-18T19:44:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=913yB8DCkPA",
+          "verified": false
         }
       ]
     },
@@ -57584,6 +57773,19 @@
         }
       ]
     },
+    "6a8de23f-c625-43aa-83ca-6a1b93256e92": {
+      "name": "BlueTronnic",
+      "levels": [
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 124,
+          "achievedAt": "2024-07-07T17:26:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jue_9swKdz8&t=1s",
+          "verified": false
+        }
+      ]
+    },
     "867be7a3-2c51-4130-9ada-41c89ae7a143": {
       "name": "BlueTronnic",
       "levels": [
@@ -57601,19 +57803,6 @@
           "position": 149,
           "achievedAt": "2026-07-28T08:28:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=7kVYvSNHVmA&t=5s",
-          "verified": false
-        }
-      ]
-    },
-    "6a8de23f-c625-43aa-83ca-6a1b93256e92": {
-      "name": "BlueTronnic",
-      "levels": [
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 124,
-          "achievedAt": "2024-07-07T17:26:44Z",
-          "videoUrl": "https://www.youtube.com/watch?v=jue_9swKdz8&t=1s",
           "verified": false
         }
       ]
