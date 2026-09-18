@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T10:26:02.442Z",
+  "generatedAt": "2026-09-18T15:40:08.176Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -3766,6 +3766,14 @@
           "position": 121,
           "achievedAt": "2024-09-04T12:28:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=4tT-QScFqME",
+          "verified": false
+        },
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 126,
+          "achievedAt": "2026-08-14T18:16:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=hTeAG4E4Dfc",
           "verified": false
         },
         {
@@ -25342,6 +25350,14 @@
           "verified": false
         },
         {
+          "levelId": "1178244d-6482-4ef5-a299-c022eb193757",
+          "levelName": "CONVULSION",
+          "position": 54,
+          "achievedAt": "2026-09-18T10:46:19Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zrcc2k-SdUg",
+          "verified": false
+        },
+        {
           "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
           "levelName": "LIMBO",
           "position": 74,
@@ -39068,19 +39084,6 @@
           "position": 61,
           "achievedAt": "2026-09-01T21:16:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=--9ykZw1Bm8",
-          "verified": false
-        }
-      ]
-    },
-    "1f8bb7f6-7080-4261-84d0-206e3242a6dd": {
-      "name": "Dokidokidoki",
-      "levels": [
-        {
-          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-          "levelName": "Sevvend Clubstep",
-          "position": 61,
-          "achievedAt": "2026-09-16T15:14:15.144Z",
-          "videoUrl": "https://medal.tv/clips/nxrbWkZz287zmRQ34",
           "verified": false
         }
       ]
@@ -58132,6 +58135,19 @@
           "position": 125,
           "achievedAt": "2026-08-19T08:30:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=m_hE52uy9vs",
+          "verified": false
+        }
+      ]
+    },
+    "a4cd2fa8-675d-432e-a9ca-b98c747f5cb7": {
+      "name": "Evs_",
+      "levels": [
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 126,
+          "achievedAt": "2026-09-07T23:52:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=T0oAlEziU5U",
           "verified": false
         }
       ]
