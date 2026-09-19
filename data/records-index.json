@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T15:13:08.328Z",
+  "generatedAt": "2026-09-19T19:55:55.693Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -3564,6 +3564,14 @@
           "position": 56,
           "achievedAt": "2026-06-22T13:10:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=OeFAbL63KNQ",
+          "verified": false
+        },
+        {
+          "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
+          "levelName": "Calibrate",
+          "position": 57,
+          "achievedAt": "2026-09-19T10:11:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YuCEJHwGCsk",
           "verified": false
         },
         {
@@ -14345,6 +14353,14 @@
           "position": 51,
           "achievedAt": "2024-09-11T23:41:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=e-JKkQ8gG-Q",
+          "verified": false
+        },
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 52,
+          "achievedAt": "2026-09-19T09:02:17Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1YWlBeQyZi4",
           "verified": false
         },
         {
@@ -53267,6 +53283,27 @@
         }
       ]
     },
+    "2010342c-d718-42a4-9859-dc719facf528": {
+      "name": "Seadawg",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-09-18T01:43:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=DAqSlf1QOds",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 146,
+          "achievedAt": "2026-07-23T01:13:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=mFx2TetX25c",
+          "verified": false
+        }
+      ]
+    },
     "2ded910b-bf1c-4bdc-86a0-7f63982f7de8": {
       "name": "blobik",
       "levels": [
@@ -56005,6 +56042,27 @@
           "position": 119,
           "achievedAt": "2026-09-06T01:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=sD5jSPMNlsI",
+          "verified": false
+        }
+      ]
+    },
+    "98ec2e28-c55c-4a8c-9c78-c55d2525533b": {
+      "name": "thshaminushif",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-09-18T00:06:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7z0dFgFR4WM",
+          "verified": false
+        },
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 148,
+          "achievedAt": "2026-08-09T23:22:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IgRyMxLGwsk",
           "verified": false
         }
       ]
@@ -61744,19 +61802,6 @@
         }
       ]
     },
-    "2010342c-d718-42a4-9859-dc719facf528": {
-      "name": "Seadawg",
-      "levels": [
-        {
-          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-          "levelName": "Trueffet",
-          "position": 146,
-          "achievedAt": "2026-07-23T01:13:38Z",
-          "videoUrl": "https://www.youtube.com/watch?v=mFx2TetX25c",
-          "verified": false
-        }
-      ]
-    },
     "bffd9fcf-0386-4006-a834-3834bb3c8229": {
       "name": "chqcolate",
       "levels": [
@@ -62154,19 +62199,6 @@
           "position": 148,
           "achievedAt": "2026-08-05T23:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=hT0lMr135AE",
-          "verified": false
-        }
-      ]
-    },
-    "98ec2e28-c55c-4a8c-9c78-c55d2525533b": {
-      "name": "thshaminushif",
-      "levels": [
-        {
-          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
-          "levelName": "Kenos",
-          "position": 148,
-          "achievedAt": "2026-08-09T23:22:08Z",
-          "videoUrl": "https://www.youtube.com/watch?v=IgRyMxLGwsk",
           "verified": false
         }
       ]
