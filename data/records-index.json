@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T20:18:07.200Z",
+  "generatedAt": "2026-09-19T02:45:31.315Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -53182,6 +53182,27 @@
         }
       ]
     },
+    "4259f3c1-3d65-4b73-a361-9f3622f052fa": {
+      "name": "snorkel",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-09-16T23:29:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=FcPszUHhIlY",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 130,
+          "achievedAt": "2025-11-23T02:10:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=oUEbMtdOAwQ",
+          "verified": false
+        }
+      ]
+    },
     "2ded910b-bf1c-4bdc-86a0-7f63982f7de8": {
       "name": "blobik",
       "levels": [
@@ -59729,19 +59750,6 @@
           "position": 149,
           "achievedAt": "2025-09-16T01:51:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=z_nn6cAAecQ",
-          "verified": false
-        }
-      ]
-    },
-    "4259f3c1-3d65-4b73-a361-9f3622f052fa": {
-      "name": "snorkel",
-      "levels": [
-        {
-          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
-          "levelName": "Shukketsu",
-          "position": 130,
-          "achievedAt": "2025-11-23T02:10:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=oUEbMtdOAwQ",
           "verified": false
         }
       ]
