@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T02:45:31.315Z",
+  "generatedAt": "2026-09-19T10:10:02.711Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -16221,11 +16221,88 @@
           "verified": false
         },
         {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 126,
+          "achievedAt": "2026-08-27T18:30:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=39_Zpj8FRqk",
+          "verified": false
+        },
+        {
           "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
           "levelName": "UNKNOWN",
           "position": 127,
           "achievedAt": "2026-02-19T05:46:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=wTQF8BemggI",
+          "verified": false
+        }
+      ]
+    },
+    "9b914d24-4da6-4678-89d3-8530a481d946": {
+      "name": "monodynamics",
+      "levels": [
+        {
+          "levelId": "9d96d090-5022-4cde-801d-72e03e0b1a1b",
+          "levelName": "Defeated Circles",
+          "position": 27,
+          "achievedAt": "2026-09-04T21:12:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PdEiP7VN58E",
+          "verified": false
+        },
+        {
+          "levelId": "06898192-2f94-4b57-a18b-d95cc73c69e5",
+          "levelName": "Kyouki",
+          "position": 30,
+          "achievedAt": "2026-07-03T02:43:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=SgDuq7q3V-M",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 35,
+          "achievedAt": "2026-07-25T00:07:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=bk76sWu7VaU",
+          "verified": false
+        },
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 82,
+          "achievedAt": "2026-08-25T18:32:42Z",
+          "videoUrl": "https://www.youtube.com/watch?v=TMDk0d-XO40",
+          "verified": false
+        },
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 91,
+          "achievedAt": "2026-07-25T23:45:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rPKtLfIB6Qw",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-08-08T21:47:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JrUqeL4Lhsk",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 130,
+          "achievedAt": "2026-07-18T11:01:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Wo9RpBEA2BY",
+          "verified": false
+        },
+        {
+          "levelId": "68308581-f1b6-4c0f-8851-82449ab1977f",
+          "levelName": "The Paroxysm of Rage",
+          "position": 140,
+          "achievedAt": "2026-08-15T21:12:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=oJFMx4oyw70",
           "verified": false
         }
       ]
@@ -19186,19 +19263,6 @@
           "position": 148,
           "achievedAt": "2025-07-24T06:51:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=-cRCHVLxG7k",
-          "verified": false
-        }
-      ]
-    },
-    "9b914d24-4da6-4678-89d3-8530a481d946": {
-      "name": "monodynamics",
-      "levels": [
-        {
-          "levelId": "06898192-2f94-4b57-a18b-d95cc73c69e5",
-          "levelName": "Kyouki",
-          "position": 30,
-          "achievedAt": "2026-07-03T02:43:11Z",
-          "videoUrl": "https://www.youtube.com/watch?v=SgDuq7q3V-M",
           "verified": false
         }
       ]
