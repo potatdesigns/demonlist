@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T19:10:22.151Z",
+  "generatedAt": "2026-09-20T21:47:45.623Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4389,11 +4389,115 @@
       "creators": []
     },
     {
+      "id": "a7dce4c2-1503-4a62-94b5-15afaf40e0dc",
+      "name": "Prismline",
+      "position": 43,
+      "publisher_id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
+      "points": 3340,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 135148907,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long"
+      ],
+      "description": "Colorful 2.2 glow level inspired by old glow levels. Also a semi-official sequel to Just DANCE with very similar gameplay and pacing, including the chokeable straight fly at the end.",
+      "song": 1006406,
+      "edel_enjoyment": null,
+      "is_edel_pending": false,
+      "gddl_tier": null,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
+        "username": "177bd257d",
+        "global_name": "itsharryy"
+      },
+      "verifications": [
+        {
+          "id": "b3419f40-d528-44dc-8116-d1525f8ff9e6",
+          "submitted_by": {
+            "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+            "username": "wwa_06",
+            "global_name": "Wa"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=pIHOHz3i0Rw",
+          "hide_video": false,
+          "achieved_at": "2026-03-07T13:33:15Z",
+          "created_at": "2026-08-16T00:23:43.407216Z",
+          "updated_at": "2026-08-16T00:23:43.407216Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "b67ebec3-7bc3-4418-9737-0ee85efc0b1a",
+          "username": "tekis01",
+          "global_name": "Texic"
+        },
+        {
+          "id": "327368d8-9ca7-4298-ac12-4701f0e567ff",
+          "username": "0e6f5413b",
+          "global_name": "puhyuu"
+        },
+        {
+          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+          "username": "wwa_06",
+          "global_name": "Wa"
+        },
+        {
+          "id": "69394575-3534-49bf-8dab-f9c34be511e6",
+          "username": "yelda_gd",
+          "global_name": "YeldA"
+        },
+        {
+          "id": "861a0257-9af0-45c3-83c7-6788eb83e31d",
+          "username": "8de9f27a9",
+          "global_name": "TheGalaxyCat"
+        },
+        {
+          "id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
+          "username": "177bd257d",
+          "global_name": "itsharryy"
+        },
+        {
+          "id": "07845c58-aa8f-42da-9ebb-25cf19402783",
+          "username": "832519065",
+          "global_name": "Xenga"
+        },
+        {
+          "id": "e1c89a9e-01ac-44c6-aebf-a53b0974465c",
+          "username": "b8e32cdea",
+          "global_name": "zXera"
+        },
+        {
+          "id": "1193ba22-519b-4982-8564-2fecf3378cb3",
+          "username": "2c621da66",
+          "global_name": "RozzQ"
+        },
+        {
+          "id": "367dc00a-cac8-4b2f-ae54-f43ed2fbd12e",
+          "username": "40366a711",
+          "global_name": "Isospin"
+        },
+        {
+          "id": "5fa42946-e1eb-4e15-8d34-3aa39f70e8d7",
+          "username": "2ab6a60cf",
+          "global_name": "HushLC"
+        },
+        {
+          "id": "09fabf0b-d3ab-4127-a699-99c93844627b",
+          "username": "939f8957e",
+          "global_name": "Boratown"
+        }
+      ]
+    },
+    {
       "id": "b0f62595-314d-4648-b23e-12756382c126",
       "name": "Sakupen Circles",
-      "position": 43,
+      "position": 44,
       "publisher_id": "a286ea51-3df8-4d7f-af75-2c26fcf61335",
-      "points": 3340,
+      "points": 3316,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 76962930,
@@ -4483,9 +4587,9 @@
     {
       "id": "61ade6ee-e274-45b9-9537-3362259f8625",
       "name": "The Salt Factory",
-      "position": 44,
+      "position": 45,
       "publisher_id": "80f67a7e-d8b7-4ec9-b96f-cb2fc64bba1c",
-      "points": 3316,
+      "points": 3292,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113045735,
@@ -4595,9 +4699,9 @@
     {
       "id": "70810896-8147-445f-82d0-028cce2297da",
       "name": "Master of Puppets",
-      "position": 45,
+      "position": 46,
       "publisher_id": "641c4703-3fdf-46db-85cb-e11b7fa67b26",
-      "points": 3292,
+      "points": 3268,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136396693,
@@ -5089,9 +5193,9 @@
     {
       "id": "99bfbecd-4821-4914-85fd-dd0bb613510e",
       "name": "Silentlocked",
-      "position": 46,
+      "position": 47,
       "publisher_id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-      "points": 3268,
+      "points": 3245,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113959291,
@@ -5201,9 +5305,9 @@
     {
       "id": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
       "name": "Eyes in the Water",
-      "position": 47,
+      "position": 48,
       "publisher_id": "ef2070ea-9bfa-4239-a9c0-52820f50aefb",
-      "points": 3245,
+      "points": 3222,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95851008,
@@ -5276,9 +5380,9 @@
     {
       "id": "210ae17a-e6bf-4851-91be-85501194dbf3",
       "name": "Voltage (ThePurgatory)",
-      "position": 48,
+      "position": 49,
       "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
-      "points": 3222,
+      "points": 3200,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131599104,
@@ -5407,9 +5511,9 @@
     {
       "id": "72bf2c18-1299-408b-bca2-3da986956632",
       "name": "KOSETSU",
-      "position": 49,
+      "position": 50,
       "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-      "points": 3200,
+      "points": 3178,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 109439644,
@@ -5506,9 +5610,9 @@
     {
       "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
       "name": "Through The Gates",
-      "position": 50,
+      "position": 51,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3178,
+      "points": 3156,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49072489,
@@ -5589,9 +5693,9 @@
     {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 51,
+      "position": 52,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3156,
+      "points": 3134,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5697,9 +5801,9 @@
     {
       "id": "56d52163-e3e2-4357-9843-29002b100e07",
       "name": "NOMAD",
-      "position": 52,
+      "position": 53,
       "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-      "points": 3134,
+      "points": 3113,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115077305,
@@ -5757,9 +5861,9 @@
     {
       "id": "7081880b-fe8c-4d3f-8557-a895b7aee521",
       "name": "Snowbound",
-      "position": 53,
+      "position": 54,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 3113,
+      "points": 3092,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120289520,
@@ -5810,9 +5914,9 @@
     {
       "id": "1178244d-6482-4ef5-a299-c022eb193757",
       "name": "CONVULSION",
-      "position": 54,
+      "position": 55,
       "publisher_id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
-      "points": 3092,
+      "points": 3072,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113322063,
@@ -5859,9 +5963,9 @@
     {
       "id": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
       "name": "NervHell",
-      "position": 55,
+      "position": 56,
       "publisher_id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
-      "points": 3072,
+      "points": 3052,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 143718114,
@@ -5943,9 +6047,9 @@
     {
       "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
       "name": "poocubed",
-      "position": 56,
+      "position": 57,
       "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-      "points": 3052,
+      "points": 3032,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 85133223,
@@ -6026,9 +6130,9 @@
     {
       "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
       "name": "Calibrate",
-      "position": 57,
+      "position": 58,
       "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-      "points": 3032,
+      "points": 3012,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136981369,
@@ -6074,9 +6178,9 @@
     {
       "id": "4fac9298-93ae-4553-abe9-72a562567318",
       "name": "MINUSdry",
-      "position": 58,
+      "position": 59,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 3012,
+      "points": 2993,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89414220,
@@ -6145,9 +6249,9 @@
     {
       "id": "b2252317-dcf2-432d-ba36-59642218803c",
       "name": "Saul Goodman",
-      "position": 59,
+      "position": 60,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2993,
+      "points": 2974,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90477539,
@@ -6234,9 +6338,9 @@
     {
       "id": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
       "name": "Apocalyptic Trilogy",
-      "position": 60,
+      "position": 61,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2974,
+      "points": 2955,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113443235,
@@ -6405,9 +6509,9 @@
     {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 61,
+      "position": 62,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2955,
+      "points": 2937,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -6503,9 +6607,9 @@
     {
       "id": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
       "name": "The Hallucination",
-      "position": 62,
+      "position": 63,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 2937,
+      "points": 2918,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81139702,
@@ -6565,9 +6669,9 @@
     {
       "id": "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "name": "Pinnacle of Life",
-      "position": 63,
+      "position": 64,
       "publisher_id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
-      "points": 2918,
+      "points": 2900,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 144012996,
@@ -6681,9 +6785,9 @@
     {
       "id": "146c9eed-2b47-483c-93a2-6b336adea84a",
       "name": "COMBUSTION",
-      "position": 64,
+      "position": 65,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2900,
+      "points": 2883,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94359172,
@@ -6738,9 +6842,9 @@
     {
       "id": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
       "name": "Haunted Ship",
-      "position": 65,
+      "position": 66,
       "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-      "points": 2883,
+      "points": 2865,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 143523624,
@@ -6794,9 +6898,9 @@
     {
       "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "name": "Loops of Fury",
-      "position": 66,
+      "position": 67,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 2865,
+      "points": 2848,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 126571887,
@@ -6847,9 +6951,9 @@
     {
       "id": "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
       "name": "Deadlier Clubstep",
-      "position": 67,
+      "position": 68,
       "publisher_id": "e3204e3a-aaaf-4a4c-a86d-d6353b4b01b8",
-      "points": 2848,
+      "points": 2831,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96314787,
@@ -6944,9 +7048,9 @@
     {
       "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "name": "Stellar Night",
-      "position": 68,
+      "position": 69,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2831,
+      "points": 2814,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 83244159,
@@ -6987,110 +7091,6 @@
         }
       ],
       "creators": []
-    },
-    {
-      "id": "a7dce4c2-1503-4a62-94b5-15afaf40e0dc",
-      "name": "Prismline",
-      "position": 69,
-      "publisher_id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
-      "points": 2814,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 135148907,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long"
-      ],
-      "description": "Colorful 2.2 glow level inspired by old glow levels. Also a semi-official sequel to Just DANCE with very similar gameplay and pacing, including the chokeable straight fly at the end.",
-      "song": 1006406,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
-      "gddl_tier": null,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
-        "username": "177bd257d",
-        "global_name": "itsharryy"
-      },
-      "verifications": [
-        {
-          "id": "b3419f40-d528-44dc-8116-d1525f8ff9e6",
-          "submitted_by": {
-            "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
-            "username": "wwa_06",
-            "global_name": "Wa"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=pIHOHz3i0Rw",
-          "hide_video": false,
-          "achieved_at": "2026-03-07T13:33:15Z",
-          "created_at": "2026-08-16T00:23:43.407216Z",
-          "updated_at": "2026-08-16T00:23:43.407216Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "b67ebec3-7bc3-4418-9737-0ee85efc0b1a",
-          "username": "tekis01",
-          "global_name": "Texic"
-        },
-        {
-          "id": "327368d8-9ca7-4298-ac12-4701f0e567ff",
-          "username": "0e6f5413b",
-          "global_name": "puhyuu"
-        },
-        {
-          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
-          "username": "wwa_06",
-          "global_name": "Wa"
-        },
-        {
-          "id": "69394575-3534-49bf-8dab-f9c34be511e6",
-          "username": "yelda_gd",
-          "global_name": "YeldA"
-        },
-        {
-          "id": "861a0257-9af0-45c3-83c7-6788eb83e31d",
-          "username": "8de9f27a9",
-          "global_name": "TheGalaxyCat"
-        },
-        {
-          "id": "eed0f940-93e3-446f-a4a3-f1ae568b2c0e",
-          "username": "177bd257d",
-          "global_name": "itsharryy"
-        },
-        {
-          "id": "07845c58-aa8f-42da-9ebb-25cf19402783",
-          "username": "832519065",
-          "global_name": "Xenga"
-        },
-        {
-          "id": "e1c89a9e-01ac-44c6-aebf-a53b0974465c",
-          "username": "b8e32cdea",
-          "global_name": "zXera"
-        },
-        {
-          "id": "1193ba22-519b-4982-8564-2fecf3378cb3",
-          "username": "2c621da66",
-          "global_name": "RozzQ"
-        },
-        {
-          "id": "367dc00a-cac8-4b2f-ae54-f43ed2fbd12e",
-          "username": "40366a711",
-          "global_name": "Isospin"
-        },
-        {
-          "id": "5fa42946-e1eb-4e15-8d34-3aa39f70e8d7",
-          "username": "2ab6a60cf",
-          "global_name": "HushLC"
-        },
-        {
-          "id": "09fabf0b-d3ab-4127-a699-99c93844627b",
-          "username": "939f8957e",
-          "global_name": "Boratown"
-        }
-      ]
     },
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
@@ -7397,6 +7397,7 @@
         "XXL",
         "Timings",
         "Chokepoints",
+        "Unbalanced",
         "Memory",
         "Gimmicky",
         "Nerve Control",
