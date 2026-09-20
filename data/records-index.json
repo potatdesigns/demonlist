@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T19:55:55.693Z",
+  "generatedAt": "2026-09-20T02:57:41.040Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -46490,6 +46490,19 @@
         }
       ]
     },
+    "e4943384-b8c5-4c06-9b30-50e3da9bb403": {
+      "name": "laughy",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 82,
+          "achievedAt": "2026-09-19T03:46:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Gb8dOj0a0rw&t=7s",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
@@ -61884,7 +61897,7 @@
       ]
     },
     "efcb410d-f8b9-47b8-8b2e-95c7f348cf35": {
-      "name": "Darkad",
+      "name": "Adam Ech-Chahdi",
       "levels": [
         {
           "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
