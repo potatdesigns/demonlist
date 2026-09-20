@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T12:53:25.204Z",
+  "generatedAt": "2026-09-20T19:10:22.338Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -405980,6 +405980,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-20T10:26:50.028851Z|8a5fa6c2-dbba-47c4-b640-33dda1384354|{\"Raised\":{\"new_position\":375,\"old_position\":421}}"
+    "lastEventFingerprint": "2026-09-20T18:04:17.015680Z|d812139f-919f-41d0-b552-9edac3825ebf|{\"Removed\":{\"old_position\":null}}"
   }
 }
