@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T23:45:02.248Z",
+  "generatedAt": "2026-09-20T02:05:21.298Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3860,7 +3860,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 26.5,
+      "edel_enjoyment": 47.66666667,
       "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
@@ -4155,8 +4155,8 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 25,
+      "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
       "publisher": {
@@ -12767,7 +12767,7 @@
       ],
       "description": "Redecoration of the 1.9 styled level of the same name. The completely greyscale decoration and unnerving song makes for a generally unsettling experience. Also one of the shorter extremes on the list, being less than 45 seconds.",
       "song": null,
-      "edel_enjoyment": 41.58333333,
+      "edel_enjoyment": 42.72,
       "is_edel_pending": false,
       "gddl_tier": 34.6,
       "nlw_tier": null,
