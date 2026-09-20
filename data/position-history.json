@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T21:47:45.847Z",
+  "generatedAt": "2026-09-20T23:55:05.013Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -215998,6 +215998,11 @@
         "date": "2026-09-13",
         "position": 566,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 567,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "2e3ab25d-7517-48f4-a319-0dcaee9dd55e": [
@@ -251590,6 +251595,11 @@
         "date": "2026-09-13",
         "position": 583,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 584,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "40beee36-4cbd-47df-a936-f6513a2d9ed2": [
@@ -261771,6 +261781,16 @@
         "date": "2026-09-13",
         "position": 623,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 624,
+        "reason": "Moved down — no twilight was placed at #606"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 625,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "6e4aa435-2b39-44c4-9788-396a98487c4d": [
@@ -291275,6 +291295,11 @@
         "date": "2026-09-13",
         "position": 582,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 583,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "eb481554-c20d-4d2f-8465-054ce87a1a2d": [
@@ -310768,6 +310793,16 @@
         "date": "2026-09-17",
         "position": 740,
         "reason": "Moved down — Glitch Control was raised to #667"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 741,
+        "reason": "Moved down — no twilight was placed at #606"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 742,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
@@ -350756,6 +350791,31 @@
         "date": "2026-09-13",
         "position": 1343,
         "reason": "Moved down — BIRD MACHINE LANDS was placed at #247"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 1344,
+        "reason": "Moved down — Xas tech was placed at #1301"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 1345,
+        "reason": "Moved down — NANDMASTER was placed at #778"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 1346,
+        "reason": "Moved down — So Wrong To Life was placed at #774"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 1347,
+        "reason": "Moved down — no twilight was placed at #606"
+      },
+      {
+        "date": "2026-09-20",
+        "position": 1348,
+        "reason": "Moved down — Vantablack was placed at #563"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -402969,6 +403029,7 @@
       "51cdab85-6635-49c3-91c8-6c919bcf25d8",
       "f2977983-a830-4692-8e38-7eda5fad05f7",
       "7f61be0b-44f1-4c0e-a5b1-ed53fbd3a38a",
+      "f4535ed1-d971-455c-b6a6-7a6e84ba9254",
       "09a897f5-d355-405d-b110-915be914f406",
       "0699ae3e-703c-46f3-ab7c-835e14034561",
       "a8263edf-9774-476f-985c-060206c073a2",
@@ -403012,6 +403073,7 @@
       "f779a503-45f7-4aad-8eac-f31000282ca3",
       "13ef0d6f-0f46-480e-b406-9f7aa64e2b14",
       "36a86b86-ad19-4b2f-bf6d-141ee86c3e05",
+      "499fce6d-efcd-416a-8e72-3559f359287a",
       "3a86b3da-d69a-47a1-a7e3-0e262ec2667f",
       "feb130f1-e00a-4b79-b8c1-1aa2b17a73d2",
       "80391566-ab54-4f1b-89af-fd20efd38866",
@@ -403180,10 +403242,12 @@
       "c2b3b641-f39e-4235-bfff-16e37dfd3e7d",
       "c37cd51a-b329-4896-b366-1760d3ba5205",
       "b3a409b9-2e8c-415a-bdad-4c2e5bbd4f88",
+      "4dd48c90-a173-43e4-989c-bc5f61ae521e",
       "b129fb5d-b0a4-45d5-ae36-6af99b46d9de",
       "faa45c07-f74c-4672-bd05-ab25d5831563",
       "8c8d3627-e9ae-40eb-9251-a4e1f37f45d2",
       "8e07f816-a813-4db0-bb6f-c7023457d402",
+      "8b6214c6-a724-448a-b721-300736e1e467",
       "b5bdf315-b554-4ba3-998a-3102021c5de9",
       "adf11340-fac4-4472-9703-d5fa6bb1e469",
       "f8d30215-6082-4feb-b21b-d153f22e2b64",
@@ -403707,6 +403771,7 @@
       "3611a7d6-a6a5-43e3-a649-5dae5fa3a778",
       "213651be-b0c4-46ca-a3cf-157368772709",
       "5d25a1d6-b90d-4bf2-94d9-20cb3ad23cf1",
+      "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b",
       "c5f47bf3-8912-4116-a246-20a9893031bb",
       "bfa85c7c-2ed9-4085-bd3a-477de78b3051",
       "d7de399e-2f92-463a-8a15-3d2867d4d416",
@@ -403968,6 +404033,7 @@
       "be646f54-6aff-4d2d-90d8-0666a23c6886",
       "c5dc63c8-d4b6-453d-b40d-1b68c8311446",
       "7bf81f54-b6bf-4f1e-85d5-9081d2f2f8e8",
+      "3121f48a-b312-4d5e-9038-d75cd4790354",
       "6b5da1d3-0cfb-473a-bb4b-fea00e0e75a1",
       "eb00401b-8dbe-453b-975b-b0f8149a0851",
       "fd03bf6b-8972-4ade-b03d-e39b7130787c",
@@ -403995,7 +404061,6 @@
       "324c4ccc-f5fe-4751-8493-03c55fbca5ce",
       "b5c71876-ec9e-4605-b744-865e2798f815",
       "f46f65a7-d3a6-4355-a7a2-c7b93f81bf8f",
-      "3121f48a-b312-4d5e-9038-d75cd4790354",
       "028c1f47-6770-4d04-b46e-ebd2793afefa",
       "30bbd8c1-2b5b-4cdb-bd47-481797f45b2a",
       "7044fdaa-34bc-4f17-8f23-b9646eb36ad4",
@@ -406111,10 +406176,10 @@
       "7ce0618c-7dc9-423d-92ec-f3665b0eaa29": "Putrefaction",
       "24c0102b-6475-41c9-a36f-e8fa4f58197e": "plane map (2P)",
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
-      "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas Tech",
+      "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas tech",
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-20T20:59:34.172021Z|a7dce4c2-1503-4a62-94b5-15afaf40e0dc|{\"Raised\":{\"new_position\":43,\"old_position\":69}}"
+    "lastEventFingerprint": "2026-09-20T22:29:11.417599Z|f4535ed1-d971-455c-b6a6-7a6e84ba9254|{\"Placed\":{\"new_position\":563,\"status\":\"MainList\"}}"
   }
 }

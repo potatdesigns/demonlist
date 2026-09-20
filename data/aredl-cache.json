@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T22:00:51.544Z",
+  "generatedAt": "2026-09-20T23:54:54.791Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -564,6 +564,11 @@
           "global_name": "Intensa"
         },
         {
+          "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
+          "username": "iiilaseriii",
+          "global_name": "Laser"
+        },
+        {
           "id": "344f9a5f-603b-41a1-8b3a-d513f3e8d153",
           "username": "_radical.",
           "global_name": "Radical."
@@ -697,11 +702,6 @@
           "id": "6eca29e0-f940-45e3-95b1-fa263abc30e3",
           "username": "a45050aac",
           "global_name": "bosjoker"
-        },
-        {
-          "id": "736bf68b-cbdc-4726-b18d-f960cc9847a8",
-          "username": "5ffdc9c7e",
-          "global_name": "Laser"
         },
         {
           "id": "7619b544-53cd-4904-9033-24323f77c56f",
