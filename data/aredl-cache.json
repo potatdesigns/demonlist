@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T23:54:54.791Z",
+  "generatedAt": "2026-09-21T02:06:12.228Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -4404,8 +4404,8 @@
       ],
       "description": "Colorful 2.2 glow level inspired by old glow levels. Also a semi-official sequel to Just DANCE with very similar gameplay and pacing, including the chokeable straight fly at the end.",
       "song": 1006406,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 45.33333333,
+      "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
