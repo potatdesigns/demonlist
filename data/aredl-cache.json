@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T20:11:23.520Z",
+  "generatedAt": "2026-09-21T23:41:37.006Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3335,11 +3335,166 @@
       "creators": []
     },
     {
+      "id": "7dd584da-369a-4bb8-86d3-68312926c102",
+      "name": "Sacrifice",
+      "position": 31,
+      "publisher_id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+      "points": 3674,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 141052363,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "XL",
+        "NONG"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 25,
+      "is_edel_pending": true,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+        "username": "997a90b54",
+        "global_name": "Laniakea"
+      },
+      "verifications": [
+        {
+          "id": "b395d2b9-dd26-4728-a11c-9817cdc317df",
+          "submitted_by": {
+            "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+            "username": "997a90b54",
+            "global_name": "Laniakea"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=Sth67PA8XBU",
+          "hide_video": false,
+          "achieved_at": "2026-08-11T00:35:09.348805Z",
+          "created_at": "2026-08-11T00:35:09.348805Z",
+          "updated_at": "2026-08-11T00:35:09.348805Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+          "username": "997a90b54",
+          "global_name": "Laniakea"
+        },
+        {
+          "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
+          "username": "f076f3539",
+          "global_name": "SnowEye"
+        },
+        {
+          "id": "08d49087-aa36-4277-8079-53d6b33e7caf",
+          "username": "ca83364cd",
+          "global_name": "Tassium"
+        },
+        {
+          "id": "fad5ba92-ca14-4334-bddb-3fa3ff48541d",
+          "username": "bigthunder556",
+          "global_name": "Bigthunder556 🏳️‍🌈"
+        },
+        {
+          "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
+          "username": "flufflebag",
+          "global_name": "Zeronium"
+        },
+        {
+          "id": "1ba81bd5-6a1e-4caa-a329-fa860a43e26f",
+          "username": "764698ba3",
+          "global_name": "Rainstorm"
+        },
+        {
+          "id": "8337f139-e06a-4588-82ee-f0f010a813db",
+          "username": "d37a96c2e",
+          "global_name": "VoTcHi"
+        },
+        {
+          "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
+          "username": "43b6ccb3a",
+          "global_name": "Lris"
+        },
+        {
+          "id": "06a3ee64-3582-481f-bc46-116ac1ff625a",
+          "username": "c7888e7bf",
+          "global_name": "bisbuuu"
+        },
+        {
+          "id": "c1921edf-0263-4ffc-b391-c84e14f066a9",
+          "username": "redcraft_bmc",
+          "global_name": "redcraft"
+        },
+        {
+          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
+          "username": "0fb0d4b59",
+          "global_name": "robotchief"
+        },
+        {
+          "id": "76870044-b9f7-43fc-87a8-5134a539b606",
+          "username": "ab5cd48d2",
+          "global_name": "NesiaL"
+        },
+        {
+          "id": "f003c9ba-101d-49b8-a83e-a900cf43a2b3",
+          "username": "catiogd",
+          "global_name": "Catio"
+        },
+        {
+          "id": "46179d19-a5ee-4f34-9eb0-31e2b7663855",
+          "username": "a45875641",
+          "global_name": "Xylitol"
+        },
+        {
+          "id": "071aa9b5-20b0-4857-9ac1-1ed809ca9f64",
+          "username": "f0e9383f8",
+          "global_name": "Kurai Yonaka"
+        },
+        {
+          "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
+          "username": "kazagd",
+          "global_name": "Kaza"
+        },
+        {
+          "id": "80a48537-682a-46ca-ac0c-14978155dec3",
+          "username": "464ad8e36",
+          "global_name": "Spacter"
+        },
+        {
+          "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
+          "username": "nexel",
+          "global_name": "Nexel"
+        },
+        {
+          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
+          "username": "ec5f043f5",
+          "global_name": "DreamTide"
+        },
+        {
+          "id": "5ed113f7-c26c-4f31-a55f-bd35f9d3d932",
+          "username": "2fc86d065",
+          "global_name": "HargChucu"
+        },
+        {
+          "id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
+          "username": "0e7d90170",
+          "global_name": "Nisha"
+        },
+        {
+          "id": "aa45eb19-d49d-4289-8b9b-b674de5ff77c",
+          "username": "b580583ea",
+          "global_name": "Neofar"
+        }
+      ]
+    },
+    {
       "id": "ae0be266-2806-4af8-9cb1-d962a8a83010",
       "name": "Based After Based",
-      "position": 31,
+      "position": 32,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 3670,
+      "points": 3643,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110534288,
@@ -3418,9 +3573,9 @@
     {
       "id": "24d0f430-f42f-45b9-af35-b6eea34be7df",
       "name": "The Lightning Rod",
-      "position": 32,
+      "position": 33,
       "publisher_id": "648141fe-e34a-40a8-9231-e05e773602a2",
-      "points": 3640,
+      "points": 3613,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93917076,
@@ -3464,9 +3619,9 @@
     {
       "id": "67708587-274e-4de8-9be9-55385bbcbc9f",
       "name": "Slaughterhouse ",
-      "position": 33,
+      "position": 34,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 3610,
+      "points": 3584,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 27690100,
@@ -3547,9 +3702,9 @@
     {
       "id": "d79120ff-015e-457f-a164-52e98b40f411",
       "name": "Subterminal Point",
-      "position": 34,
+      "position": 35,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 3581,
+      "points": 3556,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113599729,
@@ -3594,9 +3749,9 @@
     {
       "id": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
       "name": "KOCMOC",
-      "position": 35,
+      "position": 36,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 3552,
+      "points": 3527,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87665224,
@@ -3697,9 +3852,9 @@
     {
       "id": "1085c65b-4d52-45d0-b7dd-f29e94266f4b",
       "name": "cognitohazard",
-      "position": 36,
+      "position": 37,
       "publisher_id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
-      "points": 3524,
+      "points": 3500,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 130891319,
@@ -3847,9 +4002,9 @@
     {
       "id": "68de8323-1894-46b9-9d39-cda105d81155",
       "name": "Maniacal Chains",
-      "position": 37,
+      "position": 38,
       "publisher_id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
-      "points": 3496,
+      "points": 3473,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 48991380,
@@ -3890,9 +4045,9 @@
     {
       "id": "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
       "name": "BEING HOME",
-      "position": 38,
+      "position": 39,
       "publisher_id": "4e7da527-f775-4ea2-b610-b33a06abf54b",
-      "points": 3473,
+      "points": 3446,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 130327668,
@@ -3951,9 +4106,9 @@
     {
       "id": "92b9d057-f34a-4358-820e-f8bb0af88a43",
       "name": "Deimos (ItsHybrid)",
-      "position": 39,
+      "position": 40,
       "publisher_id": "aee4daad-8c6e-45a6-8174-5748cbb8d4d0",
-      "points": 3442,
+      "points": 3420,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93091893,
@@ -4136,161 +4291,6 @@
           "id": "0cafcfdd-a0d6-4335-b09a-6d7582eb205e",
           "username": "54dd81536",
           "global_name": "Wesp"
-        }
-      ]
-    },
-    {
-      "id": "7dd584da-369a-4bb8-86d3-68312926c102",
-      "name": "Sacrifice",
-      "position": 40,
-      "publisher_id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-      "points": 3416,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 141052363,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "XL",
-        "NONG"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 25,
-      "is_edel_pending": true,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-        "username": "997a90b54",
-        "global_name": "Laniakea"
-      },
-      "verifications": [
-        {
-          "id": "b395d2b9-dd26-4728-a11c-9817cdc317df",
-          "submitted_by": {
-            "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-            "username": "997a90b54",
-            "global_name": "Laniakea"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=Sth67PA8XBU",
-          "hide_video": false,
-          "achieved_at": "2026-08-11T00:35:09.348805Z",
-          "created_at": "2026-08-11T00:35:09.348805Z",
-          "updated_at": "2026-08-11T00:35:09.348805Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-          "username": "997a90b54",
-          "global_name": "Laniakea"
-        },
-        {
-          "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
-          "username": "f076f3539",
-          "global_name": "SnowEye"
-        },
-        {
-          "id": "08d49087-aa36-4277-8079-53d6b33e7caf",
-          "username": "ca83364cd",
-          "global_name": "Tassium"
-        },
-        {
-          "id": "fad5ba92-ca14-4334-bddb-3fa3ff48541d",
-          "username": "bigthunder556",
-          "global_name": "Bigthunder556 🏳️‍🌈"
-        },
-        {
-          "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
-          "username": "flufflebag",
-          "global_name": "Zeronium"
-        },
-        {
-          "id": "1ba81bd5-6a1e-4caa-a329-fa860a43e26f",
-          "username": "764698ba3",
-          "global_name": "Rainstorm"
-        },
-        {
-          "id": "8337f139-e06a-4588-82ee-f0f010a813db",
-          "username": "d37a96c2e",
-          "global_name": "VoTcHi"
-        },
-        {
-          "id": "fd7da55d-ae36-4700-b2aa-699bf8d06da7",
-          "username": "43b6ccb3a",
-          "global_name": "Lris"
-        },
-        {
-          "id": "06a3ee64-3582-481f-bc46-116ac1ff625a",
-          "username": "c7888e7bf",
-          "global_name": "bisbuuu"
-        },
-        {
-          "id": "c1921edf-0263-4ffc-b391-c84e14f066a9",
-          "username": "redcraft_bmc",
-          "global_name": "redcraft"
-        },
-        {
-          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
-          "username": "0fb0d4b59",
-          "global_name": "robotchief"
-        },
-        {
-          "id": "76870044-b9f7-43fc-87a8-5134a539b606",
-          "username": "ab5cd48d2",
-          "global_name": "NesiaL"
-        },
-        {
-          "id": "f003c9ba-101d-49b8-a83e-a900cf43a2b3",
-          "username": "catiogd",
-          "global_name": "Catio"
-        },
-        {
-          "id": "46179d19-a5ee-4f34-9eb0-31e2b7663855",
-          "username": "a45875641",
-          "global_name": "Xylitol"
-        },
-        {
-          "id": "071aa9b5-20b0-4857-9ac1-1ed809ca9f64",
-          "username": "f0e9383f8",
-          "global_name": "Kurai Yonaka"
-        },
-        {
-          "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
-          "username": "kazagd",
-          "global_name": "Kaza"
-        },
-        {
-          "id": "80a48537-682a-46ca-ac0c-14978155dec3",
-          "username": "464ad8e36",
-          "global_name": "Spacter"
-        },
-        {
-          "id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-          "username": "nexel",
-          "global_name": "Nexel"
-        },
-        {
-          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
-          "username": "ec5f043f5",
-          "global_name": "DreamTide"
-        },
-        {
-          "id": "5ed113f7-c26c-4f31-a55f-bd35f9d3d932",
-          "username": "2fc86d065",
-          "global_name": "HargChucu"
-        },
-        {
-          "id": "1ba228c1-c2de-458a-a896-fdbb2f6f2060",
-          "username": "0e7d90170",
-          "global_name": "Nisha"
-        },
-        {
-          "id": "aa45eb19-d49d-4289-8b9b-b674de5ff77c",
-          "username": "b580583ea",
-          "global_name": "Neofar"
         }
       ]
     },

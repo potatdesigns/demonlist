@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T23:55:05.013Z",
+  "generatedAt": "2026-09-21T23:41:37.286Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -323,6 +323,11 @@
         "date": "2026-09-02",
         "position": 33,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 34,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "c9227a33-a5d4-47d3-a025-a07781f228e1": [
@@ -297212,6 +297217,11 @@
         "date": "2026-09-02",
         "position": 35,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 36,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "b2252317-dcf2-432d-ba36-59642218803c": [
@@ -320475,6 +320485,11 @@
         "date": "2026-09-02",
         "position": 39,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 40,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "c90c017b-e7f8-4055-98cb-08ac761d63ba": [
@@ -326411,6 +326426,11 @@
         "date": "2026-09-02",
         "position": 32,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 33,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "a1804362-36fc-40fb-b606-42f408b18b48": [
@@ -384928,6 +384948,11 @@
         "date": "2026-09-02",
         "position": 34,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 35,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "45036980-77db-4bb5-9720-59ef3001a12e": [
@@ -399185,6 +399210,11 @@
         "date": "2026-09-02",
         "position": 31,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 32,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "7b90f819-624d-461a-9987-f1b6a0a54ef2": [
@@ -400257,6 +400287,11 @@
         "date": "2026-09-02",
         "position": 38,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 39,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "9ca78081-b7f1-4cd4-b5f8-c87ec4279a3c": [
@@ -401560,6 +401595,11 @@
         "date": "2026-09-02",
         "position": 37,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 38,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": [
@@ -401858,6 +401898,11 @@
         "date": "2026-09-02",
         "position": 40,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 31,
+        "reason": "Raised from #40 to #31"
       }
     ],
     "01746dbe-64c3-486a-ba55-e2008bedaed1": [
@@ -401934,6 +401979,11 @@
         "date": "2026-09-02",
         "position": 36,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-21",
+        "position": 37,
+        "reason": "Moved down — Sacrifice was raised to #31"
       }
     ],
     "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a": [
@@ -402497,6 +402547,7 @@
       "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
       "e564dff8-304b-401d-9376-63528b7ba279",
       "06898192-2f94-4b57-a18b-d95cc73c69e5",
+      "7dd584da-369a-4bb8-86d3-68312926c102",
       "ae0be266-2806-4af8-9cb1-d962a8a83010",
       "24d0f430-f42f-45b9-af35-b6eea34be7df",
       "67708587-274e-4de8-9be9-55385bbcbc9f",
@@ -402506,7 +402557,6 @@
       "68de8323-1894-46b9-9d39-cda105d81155",
       "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
       "92b9d057-f34a-4358-820e-f8bb0af88a43",
-      "7dd584da-369a-4bb8-86d3-68312926c102",
       "51a1538a-b53a-4f31-9fed-715b4e9e5951",
       "ca07a223-dd23-437a-8aed-03a5df95f863",
       "a7dce4c2-1503-4a62-94b5-15afaf40e0dc",
@@ -406180,6 +406230,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-20T22:29:11.417599Z|f4535ed1-d971-455c-b6a6-7a6e84ba9254|{\"Placed\":{\"new_position\":563,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-09-21T20:42:00.234861Z|7dd584da-369a-4bb8-86d3-68312926c102|{\"Raised\":{\"new_position\":31,\"old_position\":40}}"
   }
 }
