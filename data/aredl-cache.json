@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T23:43:54.228Z",
+  "generatedAt": "2026-09-22T01:56:17.727Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1612,7 +1612,7 @@
       ],
       "description": null,
       "song": 890355,
-      "edel_enjoyment": 72.5,
+      "edel_enjoyment": 71.66666667,
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
@@ -2126,7 +2126,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 75,
+      "edel_enjoyment": 76.33333333,
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
@@ -3571,290 +3571,11 @@
       ]
     },
     {
-      "id": "24d0f430-f42f-45b9-af35-b6eea34be7df",
-      "name": "The Lightning Rod",
-      "position": 33,
-      "publisher_id": "648141fe-e34a-40a8-9231-e05e773602a2",
-      "points": 3613,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 93917076,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Learny",
-        "High CPS",
-        "Gimmicky"
-      ],
-      "description": "Distinct and incredibly creative extreme themed around traversing and escaping the inside of an electric tower/rod. Supposedly one of the learniest levels on the main-list with extremely high-cps and quirky gameplay.",
-      "song": 935594,
-      "edel_enjoyment": 57.5,
-      "is_edel_pending": false,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "648141fe-e34a-40a8-9231-e05e773602a2",
-        "username": "2839a9d36",
-        "global_name": "lavatrex"
-      },
-      "verifications": [
-        {
-          "id": "3a35759c-21b5-4606-8c10-3040317472f8",
-          "submitted_by": {
-            "id": "648141fe-e34a-40a8-9231-e05e773602a2",
-            "username": "2839a9d36",
-            "global_name": "lavatrex"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=nQDTi077O6M",
-          "hide_video": false,
-          "achieved_at": "2023-08-29T03:29:09Z",
-          "created_at": "2023-10-16T08:38:02Z",
-          "updated_at": "2023-10-16T08:38:02Z"
-        }
-      ],
-      "creators": []
-    },
-    {
-      "id": "67708587-274e-4de8-9be9-55385bbcbc9f",
-      "name": "Slaughterhouse ",
-      "position": 34,
-      "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 3584,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 27690100,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "NONG",
-        "Fast-Paced",
-        "Cube",
-        "Wave"
-      ],
-      "description": "Former top 1 with some of the most iconic wave sections in the game. Memorable for how incredibly intimidating the gameplay is, paired with an extremely washed out menacing song. Nowadays its been able to be completed 3 times in a row.",
-      "song": null,
-      "edel_enjoyment": 43.2962963,
-      "is_edel_pending": false,
-      "gddl_tier": 37.9,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-        "username": "3f7122cb5",
-        "global_name": "icedcave"
-      },
-      "verifications": [
-        {
-          "id": "3a338bc2-537c-4061-bc2f-9dbef1a3d310",
-          "submitted_by": {
-            "id": "07b9abc9-2273-47bf-b462-22c2b2b213ee",
-            "username": "doggiegd",
-            "global_name": "Doggie"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=kpcF1-QAHQc",
-          "hide_video": false,
-          "achieved_at": "2021-12-21T20:00:12Z",
-          "created_at": "2022-10-25T16:03:01Z",
-          "updated_at": "2022-10-25T16:03:01Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-          "username": "aa03cd685",
-          "global_name": "Endlevel"
-        },
-        {
-          "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-          "username": "3f7122cb5",
-          "global_name": "icedcave"
-        },
-        {
-          "id": "365aaf04-eee7-468d-a598-c0eb3bb4b9ec",
-          "username": "a0551919b",
-          "global_name": "GD Iris"
-        },
-        {
-          "id": "97b94b31-a92e-46ab-a35c-414ed775de1b",
-          "username": "85002d976",
-          "global_name": "Brittank88"
-        },
-        {
-          "id": "4f3780ce-152f-4595-b0f6-29352f07da04",
-          "username": "f8011e6f6",
-          "global_name": "DrCuber"
-        },
-        {
-          "id": "b2a67250-4f4e-486d-8413-c4d6ffefd92f",
-          "username": "977ee042f",
-          "global_name": "River"
-        },
-        {
-          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-          "username": "cdmusic",
-          "global_name": "CDMusic"
-        }
-      ]
-    },
-    {
-      "id": "d79120ff-015e-457f-a164-52e98b40f411",
-      "name": "Subterminal Point",
-      "position": 35,
-      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 3556,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 113599729,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Ship",
-        "Wave"
-      ],
-      "description": "Generally underwhelming Trueffet sequel with classic SyQual visuals. Has an incredibly low enjoyment rating with appalling chokepoints and hitboxes, paired with a bubbly song.",
-      "song": 783614,
-      "edel_enjoyment": 33.58823529,
-      "is_edel_pending": false,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-        "username": "029747e6b",
-        "global_name": "SyQual"
-      },
-      "verifications": [
-        {
-          "id": "9e5b1428-3986-45d6-9dce-26f41269300b",
-          "submitted_by": {
-            "id": "b8148617-2365-4ecc-91a9-7890965ba275",
-            "username": "pocle",
-            "global_name": "PoCle"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=h2wmRMgACH4",
-          "hide_video": false,
-          "achieved_at": "2024-12-29T10:00:40Z",
-          "created_at": "2025-02-23T18:39:15Z",
-          "updated_at": "2025-02-23T18:39:15Z"
-        }
-      ],
-      "creators": []
-    },
-    {
-      "id": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
-      "name": "KOCMOC",
-      "position": 36,
-      "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 3527,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 87665224,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Fast-Paced",
-        "High CPS",
-        "Cube",
-        "Wave"
-      ],
-      "description": "Formerly CherryTeam's hardest level. Although the level is mostly flashy pink and purple, it takes heavy inspiration from Slaughterhouse and mostly consists of tight wave spam and straight-fly. Pronounced as \"cosmos\".",
-      "song": 1163222,
-      "edel_enjoyment": 49.23529412,
-      "is_edel_pending": false,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-        "username": "0993c47a5",
-        "global_name": "CherryTeam"
-      },
-      "verifications": [
-        {
-          "id": "0850089d-0646-414c-86e5-986919292aca",
-          "submitted_by": {
-            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
-            "username": "zoinkgd",
-            "global_name": "Zoink"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=2CxE-UWCIG4",
-          "hide_video": false,
-          "achieved_at": "2023-05-13T01:14:22Z",
-          "created_at": "2023-05-26T17:02:08Z",
-          "updated_at": "2023-05-26T17:02:08Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "193b4236-dbb6-48c6-adf8-9cc7cc39742e",
-          "username": "-",
-          "global_name": "-"
-        },
-        {
-          "id": "1e80f36a-1e70-4d5b-bb62-73e0f41987a6",
-          "username": "1e85a3eb2",
-          "global_name": "Vinty"
-        },
-        {
-          "id": "4ac36c64-bd12-4a38-bb7c-dc0e34f6d59a",
-          "username": "971a0c9cb",
-          "global_name": "Xatz"
-        },
-        {
-          "id": "571e1f69-71c5-49fd-be82-f54ce51443a6",
-          "username": "f169379ab",
-          "global_name": "Deadlox"
-        },
-        {
-          "id": "60e49782-5020-42e7-a6e0-e8beba2aab01",
-          "username": "945a44484",
-          "global_name": "Sauzzeth"
-        },
-        {
-          "id": "82d0c54e-a427-4062-a385-f29ba41c6d97",
-          "username": "d21cdeca0",
-          "global_name": "spk"
-        },
-        {
-          "id": "861ec4b5-b003-4cca-b140-a96d910e3de3",
-          "username": "464207b41",
-          "global_name": "kivvvi"
-        },
-        {
-          "id": "8d27d288-4a12-44eb-9728-674d14adf717",
-          "username": "cf96ac5d9",
-          "global_name": "Cauer"
-        },
-        {
-          "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
-          "username": "d1219692d",
-          "global_name": "Hantein"
-        },
-        {
-          "id": "cc192c7a-5151-49fc-8f77-9354ae0b0803",
-          "username": "b8c44779c",
-          "global_name": "Synd"
-        },
-        {
-          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
-          "username": "f63318486",
-          "global_name": "Bli"
-        }
-      ]
-    },
-    {
       "id": "1085c65b-4d52-45d0-b7dd-f29e94266f4b",
       "name": "cognitohazard",
-      "position": 37,
+      "position": 33,
       "publisher_id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
-      "points": 3500,
+      "points": 3613,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 130891319,
@@ -3871,7 +3592,7 @@
       ],
       "description": null,
       "song": 10008831,
-      "edel_enjoyment": 70,
+      "edel_enjoyment": 69,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -3996,6 +3717,285 @@
           "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
           "username": "akunakun",
           "global_name": "akunakun"
+        }
+      ]
+    },
+    {
+      "id": "24d0f430-f42f-45b9-af35-b6eea34be7df",
+      "name": "The Lightning Rod",
+      "position": 34,
+      "publisher_id": "648141fe-e34a-40a8-9231-e05e773602a2",
+      "points": 3584,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 93917076,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Learny",
+        "High CPS",
+        "Gimmicky"
+      ],
+      "description": "Distinct and incredibly creative extreme themed around traversing and escaping the inside of an electric tower/rod. Supposedly one of the learniest levels on the main-list with extremely high-cps and quirky gameplay.",
+      "song": 935594,
+      "edel_enjoyment": 57.5,
+      "is_edel_pending": false,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "648141fe-e34a-40a8-9231-e05e773602a2",
+        "username": "2839a9d36",
+        "global_name": "lavatrex"
+      },
+      "verifications": [
+        {
+          "id": "3a35759c-21b5-4606-8c10-3040317472f8",
+          "submitted_by": {
+            "id": "648141fe-e34a-40a8-9231-e05e773602a2",
+            "username": "2839a9d36",
+            "global_name": "lavatrex"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=nQDTi077O6M",
+          "hide_video": false,
+          "achieved_at": "2023-08-29T03:29:09Z",
+          "created_at": "2023-10-16T08:38:02Z",
+          "updated_at": "2023-10-16T08:38:02Z"
+        }
+      ],
+      "creators": []
+    },
+    {
+      "id": "67708587-274e-4de8-9be9-55385bbcbc9f",
+      "name": "Slaughterhouse ",
+      "position": 35,
+      "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
+      "points": 3556,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 27690100,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "NONG",
+        "Fast-Paced",
+        "Cube",
+        "Wave"
+      ],
+      "description": "Former top 1 with some of the most iconic wave sections in the game. Memorable for how incredibly intimidating the gameplay is, paired with an extremely washed out menacing song. Nowadays its been able to be completed 3 times in a row.",
+      "song": null,
+      "edel_enjoyment": 43.2962963,
+      "is_edel_pending": false,
+      "gddl_tier": 37.9,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
+        "username": "3f7122cb5",
+        "global_name": "icedcave"
+      },
+      "verifications": [
+        {
+          "id": "3a338bc2-537c-4061-bc2f-9dbef1a3d310",
+          "submitted_by": {
+            "id": "07b9abc9-2273-47bf-b462-22c2b2b213ee",
+            "username": "doggiegd",
+            "global_name": "Doggie"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=kpcF1-QAHQc",
+          "hide_video": false,
+          "achieved_at": "2021-12-21T20:00:12Z",
+          "created_at": "2022-10-25T16:03:01Z",
+          "updated_at": "2022-10-25T16:03:01Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
+          "username": "aa03cd685",
+          "global_name": "Endlevel"
+        },
+        {
+          "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
+          "username": "3f7122cb5",
+          "global_name": "icedcave"
+        },
+        {
+          "id": "365aaf04-eee7-468d-a598-c0eb3bb4b9ec",
+          "username": "a0551919b",
+          "global_name": "GD Iris"
+        },
+        {
+          "id": "97b94b31-a92e-46ab-a35c-414ed775de1b",
+          "username": "85002d976",
+          "global_name": "Brittank88"
+        },
+        {
+          "id": "4f3780ce-152f-4595-b0f6-29352f07da04",
+          "username": "f8011e6f6",
+          "global_name": "DrCuber"
+        },
+        {
+          "id": "b2a67250-4f4e-486d-8413-c4d6ffefd92f",
+          "username": "977ee042f",
+          "global_name": "River"
+        },
+        {
+          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
+          "username": "cdmusic",
+          "global_name": "CDMusic"
+        }
+      ]
+    },
+    {
+      "id": "d79120ff-015e-457f-a164-52e98b40f411",
+      "name": "Subterminal Point",
+      "position": 36,
+      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+      "points": 3527,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 113599729,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Ship",
+        "Wave"
+      ],
+      "description": "Generally underwhelming Trueffet sequel with classic SyQual visuals. Has an incredibly low enjoyment rating with appalling chokepoints and hitboxes, paired with a bubbly song.",
+      "song": 783614,
+      "edel_enjoyment": 33.58823529,
+      "is_edel_pending": false,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+        "username": "029747e6b",
+        "global_name": "SyQual"
+      },
+      "verifications": [
+        {
+          "id": "9e5b1428-3986-45d6-9dce-26f41269300b",
+          "submitted_by": {
+            "id": "b8148617-2365-4ecc-91a9-7890965ba275",
+            "username": "pocle",
+            "global_name": "PoCle"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=h2wmRMgACH4",
+          "hide_video": false,
+          "achieved_at": "2024-12-29T10:00:40Z",
+          "created_at": "2025-02-23T18:39:15Z",
+          "updated_at": "2025-02-23T18:39:15Z"
+        }
+      ],
+      "creators": []
+    },
+    {
+      "id": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+      "name": "KOCMOC",
+      "position": 37,
+      "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
+      "points": 3500,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 87665224,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Fast-Paced",
+        "High CPS",
+        "Cube",
+        "Wave"
+      ],
+      "description": "Formerly CherryTeam's hardest level. Although the level is mostly flashy pink and purple, it takes heavy inspiration from Slaughterhouse and mostly consists of tight wave spam and straight-fly. Pronounced as \"cosmos\".",
+      "song": 1163222,
+      "edel_enjoyment": 49.23529412,
+      "is_edel_pending": false,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
+        "username": "0993c47a5",
+        "global_name": "CherryTeam"
+      },
+      "verifications": [
+        {
+          "id": "0850089d-0646-414c-86e5-986919292aca",
+          "submitted_by": {
+            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
+            "username": "zoinkgd",
+            "global_name": "Zoink"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=2CxE-UWCIG4",
+          "hide_video": false,
+          "achieved_at": "2023-05-13T01:14:22Z",
+          "created_at": "2023-05-26T17:02:08Z",
+          "updated_at": "2023-05-26T17:02:08Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "193b4236-dbb6-48c6-adf8-9cc7cc39742e",
+          "username": "-",
+          "global_name": "-"
+        },
+        {
+          "id": "1e80f36a-1e70-4d5b-bb62-73e0f41987a6",
+          "username": "1e85a3eb2",
+          "global_name": "Vinty"
+        },
+        {
+          "id": "4ac36c64-bd12-4a38-bb7c-dc0e34f6d59a",
+          "username": "971a0c9cb",
+          "global_name": "Xatz"
+        },
+        {
+          "id": "571e1f69-71c5-49fd-be82-f54ce51443a6",
+          "username": "f169379ab",
+          "global_name": "Deadlox"
+        },
+        {
+          "id": "60e49782-5020-42e7-a6e0-e8beba2aab01",
+          "username": "945a44484",
+          "global_name": "Sauzzeth"
+        },
+        {
+          "id": "82d0c54e-a427-4062-a385-f29ba41c6d97",
+          "username": "d21cdeca0",
+          "global_name": "spk"
+        },
+        {
+          "id": "861ec4b5-b003-4cca-b140-a96d910e3de3",
+          "username": "464207b41",
+          "global_name": "kivvvi"
+        },
+        {
+          "id": "8d27d288-4a12-44eb-9728-674d14adf717",
+          "username": "cf96ac5d9",
+          "global_name": "Cauer"
+        },
+        {
+          "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
+          "username": "d1219692d",
+          "global_name": "Hantein"
+        },
+        {
+          "id": "cc192c7a-5151-49fc-8f77-9354ae0b0803",
+          "username": "b8c44779c",
+          "global_name": "Synd"
+        },
+        {
+          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
+          "username": "f63318486",
+          "global_name": "Bli"
         }
       ]
     },
@@ -13149,7 +13149,7 @@
       ],
       "description": "Fast-paced extreme themed around escaping a burning facility. Contains a lot of scaled up animated fire objects and high octane gameplay, along with a difficult dual. The hardest PEACEFUL! level in the game.",
       "song": 792302,
-      "edel_enjoyment": 58,
+      "edel_enjoyment": 58.72413793,
       "is_edel_pending": false,
       "gddl_tier": 34.833333333333336,
       "nlw_tier": null,

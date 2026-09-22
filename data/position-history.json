@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T23:41:37.286Z",
+  "generatedAt": "2026-09-22T01:56:17.923Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -328,6 +328,11 @@
         "date": "2026-09-21",
         "position": 34,
         "reason": "Moved down — Sacrifice was raised to #31"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 35,
+        "reason": "Moved down — cognitohazard was raised to #33"
       }
     ],
     "c9227a33-a5d4-47d3-a025-a07781f228e1": [
@@ -297222,6 +297227,11 @@
         "date": "2026-09-21",
         "position": 36,
         "reason": "Moved down — Sacrifice was raised to #31"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 37,
+        "reason": "Moved down — cognitohazard was raised to #33"
       }
     ],
     "b2252317-dcf2-432d-ba36-59642218803c": [
@@ -326431,6 +326441,11 @@
         "date": "2026-09-21",
         "position": 33,
         "reason": "Moved down — Sacrifice was raised to #31"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 34,
+        "reason": "Moved down — cognitohazard was raised to #33"
       }
     ],
     "a1804362-36fc-40fb-b606-42f408b18b48": [
@@ -384953,6 +384968,11 @@
         "date": "2026-09-21",
         "position": 35,
         "reason": "Moved down — Sacrifice was raised to #31"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 36,
+        "reason": "Moved down — cognitohazard was raised to #33"
       }
     ],
     "45036980-77db-4bb5-9720-59ef3001a12e": [
@@ -401984,6 +402004,11 @@
         "date": "2026-09-21",
         "position": 37,
         "reason": "Moved down — Sacrifice was raised to #31"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 33,
+        "reason": "Raised from #37 to #33"
       }
     ],
     "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a": [
@@ -402549,11 +402574,11 @@
       "06898192-2f94-4b57-a18b-d95cc73c69e5",
       "7dd584da-369a-4bb8-86d3-68312926c102",
       "ae0be266-2806-4af8-9cb1-d962a8a83010",
+      "1085c65b-4d52-45d0-b7dd-f29e94266f4b",
       "24d0f430-f42f-45b9-af35-b6eea34be7df",
       "67708587-274e-4de8-9be9-55385bbcbc9f",
       "d79120ff-015e-457f-a164-52e98b40f411",
       "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
-      "1085c65b-4d52-45d0-b7dd-f29e94266f4b",
       "68de8323-1894-46b9-9d39-cda105d81155",
       "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
       "92b9d057-f34a-4358-820e-f8bb0af88a43",
@@ -403181,6 +403206,7 @@
       "de8b9672-8d42-430b-aaac-a697ce2c2cf2",
       "6c720c7c-a6c4-4265-9977-f29f0c5bbb70",
       "0dd46805-e8b5-4428-8159-8400f7a63446",
+      "6aaec3d6-a647-4133-b63a-26e8c19b19ed",
       "a2b799c2-a4fb-4cb4-9c0e-82985f9e88ec",
       "f34531f5-68d2-40a2-a55c-5ca6cf5a0828",
       "5f22ff1d-ed9e-4bec-b1e9-1671769963aa",
@@ -403245,7 +403271,6 @@
       "db045ce3-d156-4777-96cc-d1a6689625d1",
       "80c290e6-e3f0-4b3f-98d4-64022647be2a",
       "6691c894-66f2-4ec0-a956-6db89cd45352",
-      "6aaec3d6-a647-4133-b63a-26e8c19b19ed",
       "3cbf48a1-14c2-4886-b48c-1f040ea642b4",
       "d6f9115b-7d0a-40c3-a2ab-e58939e561a7",
       "3482d042-4023-4c5d-a2e0-8168c1bd5d4e",
@@ -406230,6 +406255,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-21T20:42:00.234861Z|7dd584da-369a-4bb8-86d3-68312926c102|{\"Raised\":{\"new_position\":31,\"old_position\":40}}"
+    "lastEventFingerprint": "2026-09-22T00:44:02.371382Z|1085c65b-4d52-45d0-b7dd-f29e94266f4b|{\"Raised\":{\"new_position\":33,\"old_position\":37}}"
   }
 }
