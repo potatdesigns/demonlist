@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T01:56:17.923Z",
+  "generatedAt": "2026-09-22T20:36:48.271Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -19931,6 +19931,11 @@
         "date": "2026-09-12",
         "position": 215,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 214,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "1d340102-5afd-4fdd-9b42-1567d5696090": [
@@ -34954,6 +34959,11 @@
         "date": "2026-09-12",
         "position": 213,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 224,
+        "reason": "Lowered from #213 to #224"
       }
     ],
     "d9c8b172-354a-4e72-8e7c-8df928ad05d8": [
@@ -253979,6 +253989,11 @@
         "date": "2026-09-15",
         "position": 224,
         "reason": "Lowered from #222 to #224"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 223,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "95bd8586-f906-4bc5-be9d-7ca22bb637d2": [
@@ -262793,6 +262808,11 @@
         "date": "2026-09-12",
         "position": 218,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 217,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "21bb5019-d59c-4f9b-94de-281cf4b0ced7": [
@@ -267898,6 +267918,11 @@
         "date": "2026-09-12",
         "position": 221,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 220,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "d9053d6d-822b-4dea-ba15-f8841f7f40f3": [
@@ -313132,6 +313157,11 @@
         "date": "2026-09-12",
         "position": 219,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 218,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "0029b449-c191-4a9b-91a2-40a3c96037f6": [
@@ -382778,6 +382808,11 @@
         "date": "2026-09-12",
         "position": 217,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 216,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "7db490b2-09c6-4d49-b056-53c7c82f6192": [
@@ -389456,6 +389491,11 @@
         "date": "2026-09-15",
         "position": 223,
         "reason": "Moved up — SUPERHATEMEWORLD was lowered to #224"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 222,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "876b0b3b-0916-4764-94dc-2e433f8109c3": [
@@ -394115,6 +394155,11 @@
         "date": "2026-09-12",
         "position": 214,
         "reason": "Moved down — Heavenly Sakupen was placed at #126"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 213,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "c3cb42dc-b5de-4eb5-85e0-ef5f538a0efb": [
@@ -394829,6 +394874,11 @@
         "date": "2026-09-15",
         "position": 222,
         "reason": "Moved up — SUPERHATEMEWORLD was lowered to #224"
+      },
+      {
+        "date": "2026-09-22",
+        "position": 221,
+        "reason": "Moved up — Akashic Records was lowered to #224"
       }
     ],
     "53fb0da7-8845-4736-9832-c1f98bb388cc": [
@@ -402754,7 +402804,6 @@
       "136367a8-9be1-404a-9e7b-f4ee848054a3",
       "e6647b0c-5578-47b1-a307-4c00a546d38d",
       "2c9128b2-e70b-4a04-ab9b-d0fd81b382fe",
-      "9cd69551-5af8-4ba2-bf38-36dab4a58ccc",
       "797c9539-70e6-45bb-bb29-20980d8a979b",
       "9c4db80a-953f-44cd-a772-5748d4b7e2e0",
       "eea97cd6-292a-4bae-af71-8d74797fe8f5",
@@ -402766,6 +402815,7 @@
       "93c30030-8c59-412f-8b3d-dcb280d2df55",
       "7cc25551-d5d3-40d3-b4f6-420e4c9110d0",
       "90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327",
+      "9cd69551-5af8-4ba2-bf38-36dab4a58ccc",
       "273cc0ae-4b73-4bac-9eb2-7d95f3e4fa08",
       "19ffe591-18d5-4544-98ac-181c1dea8338",
       "dca1d324-90a4-431d-9bc8-07a934835a5d",
@@ -403586,7 +403636,6 @@
       "8bfc025a-e1af-408a-ace1-af713dfa7f49",
       "065ab5f9-1cb9-4f1d-85bc-be160dbb5d19",
       "d78c7b98-7de4-4db6-98d0-e2d92e05647b",
-      "d403c085-4b5c-453f-af07-bf3b69ebe4dd",
       "620bc707-041e-4250-83c9-94c49e145a1c",
       "6f7c21f0-fb03-4419-961b-ddbccd54e1d6",
       "c275a76c-a19b-4c78-b5dc-f2f3766d38d0",
@@ -403675,6 +403724,7 @@
       "4a2f09a4-fe3d-4376-a784-315ff757e3dc",
       "57221997-a4e7-4c01-8cc5-db5976a93dd7",
       "f2e39c3d-964f-4948-a95d-399f8a3ae2b9",
+      "d403c085-4b5c-453f-af07-bf3b69ebe4dd",
       "cb144dbe-e338-4674-b186-399579b5c0e9",
       "84b1972a-d774-4ced-899d-d70316a8888b",
       "7a61e705-8154-4034-aad1-5a093a33475e",
@@ -406255,6 +406305,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-22T00:44:02.371382Z|1085c65b-4d52-45d0-b7dd-f29e94266f4b|{\"Raised\":{\"new_position\":33,\"old_position\":37}}"
+    "lastEventFingerprint": "2026-09-22T20:01:32.824529Z|9cd69551-5af8-4ba2-bf38-36dab4a58ccc|{\"Lowered\":{\"new_position\":224,\"old_position\":213}}"
   }
 }
