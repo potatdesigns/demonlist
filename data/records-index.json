@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T02:55:41.685Z",
+  "generatedAt": "2026-09-23T10:38:38.708Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -33304,6 +33304,14 @@
           "position": 74,
           "achievedAt": "2024-09-06T18:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=VP_zUl8u--k",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-09-07T18:30:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=fA1FWiWTeuY",
           "verified": false
         },
         {
