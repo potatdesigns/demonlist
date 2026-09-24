@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T19:35:35.464Z",
+  "generatedAt": "2026-09-24T22:49:01.433Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -50938,6 +50938,11 @@
         "date": "2026-09-13",
         "position": 298,
         "reason": "Moved down — kowareta was raised to #292"
+      },
+      {
+        "date": "2026-09-24",
+        "position": 297,
+        "reason": "Swapped with Ourwa — moved from #298 to #297"
       }
     ],
     "9a57f011-ec00-45d5-85ca-901b0c8253d8": [
@@ -292612,6 +292617,11 @@
         "date": "2026-09-13",
         "position": 297,
         "reason": "Moved down — kowareta was raised to #292"
+      },
+      {
+        "date": "2026-09-24",
+        "position": 298,
+        "reason": "Swapped with Visible Ray — moved from #297 to #298"
       }
     ],
     "62c4602e-cc08-4f91-bbe2-31443d749475": [
@@ -402898,8 +402908,8 @@
       "cf04b126-d92e-4950-955f-43b697230e82",
       "c0aa9860-3ef9-41c7-8dd5-8a67dd695026",
       "5ede18f3-e4e7-41a1-a912-7ecb6601bd94",
-      "eb481554-c20d-4d2f-8465-054ce87a1a2d",
       "ceddd123-8cf9-4887-8db9-ade52d3d7d1e",
+      "eb481554-c20d-4d2f-8465-054ce87a1a2d",
       "c83e895b-5e7d-4536-99c7-bf9324458cf2",
       "710f1e5c-bb69-4a3b-9d91-a18c46f02756",
       "8142f6d9-4cf6-4f17-8a77-b71428e0452f",
@@ -406315,6 +406325,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-24T17:58:37.682096Z|c84c78f9-3265-4e5d-b855-b8b19f685f9d|{\"Raised\":{\"new_position\":1238,\"old_position\":1364}}"
+    "lastEventFingerprint": "2026-09-24T19:52:56.203665Z|ceddd123-8cf9-4887-8db9-ade52d3d7d1e|{\"Swapped\":{\"upper_position\":297,\"upper_level\":{\"id\":\"ceddd123-8cf9-4887-8db9-ade52d3d7d1e\",\"name\":\"Visible Ray\",\"level_id\":48267315,\"two_player\":false},\"other_level\":{\"id\":\"eb481554-c20d-4d2f-8465-054ce87a1a2d\",\"name\":\"Ourwa\",\"level_id\":61598653,\"two_player\":false}}}"
   }
 }
