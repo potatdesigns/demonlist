@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:41:13.863Z",
+  "generatedAt": "2026-09-24T15:35:41.669Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -2198,6 +2198,11 @@
           "global_name": "Connected"
         },
         {
+          "id": "5e089252-197b-4621-a88c-2c4a94d069a6",
+          "username": "andhika5991",
+          "global_name": "Andhika"
+        },
+        {
           "id": "1f78d483-0363-40e4-9efc-2bae2bc245e0",
           "username": "6a588f662",
           "global_name": "iBlue"
@@ -2316,11 +2321,6 @@
           "id": "ee573ac7-65ec-4b2a-9899-b9d9a3e60bcd",
           "username": "72005c2b8",
           "global_name": "Crowley"
-        },
-        {
-          "id": "fc529b4b-9a81-415b-a1b1-b6033a82d814",
-          "username": "4bdaa8e84",
-          "global_name": "Andhika"
         }
       ]
     },
@@ -10760,13 +10760,13 @@
       "name": "DreamStep",
       "position": 106,
       "publisher_id": "ec24d705-358a-48cd-9e90-2fca0002ef97",
-      "points": 2314,
+      "points": 2319,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 129235528,
       "two_player": false,
       "tags": [
-        "2.2",
+        "2.0",
         "Long",
         "Wave",
         "Duals"
