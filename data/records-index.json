@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T20:58:47.939Z",
+  "generatedAt": "2026-09-24T02:45:41.696Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -3532,6 +3532,14 @@
           "position": 37,
           "achievedAt": "2026-04-09T12:05:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=U54S-AnZt0U&list=PLdfNZWhf-82fv9x56cvEJ2YArS95Fy4Q4",
+          "verified": false
+        },
+        {
+          "levelId": "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
+          "levelName": "BEING HOME",
+          "position": 39,
+          "achievedAt": "2026-09-23T03:24:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PzitsNPeeU0",
           "verified": false
         },
         {
@@ -30473,6 +30481,43 @@
         }
       ]
     },
+    "2ded910b-bf1c-4bdc-86a0-7f63982f7de8": {
+      "name": "blobik",
+      "levels": [
+        {
+          "levelId": "51a1538a-b53a-4f31-9fed-715b4e9e5951",
+          "levelName": "CHIL",
+          "position": 41,
+          "achievedAt": "2026-09-22T18:00:25Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WXCuG5Y8hxk",
+          "verified": false
+        },
+        {
+          "levelId": "9c12bb17-9512-4771-b6e9-9e51c819ed01",
+          "levelName": "Coalescence",
+          "position": 109,
+          "achievedAt": "2025-09-20T17:15:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JjoEd5neqQI",
+          "verified": false
+        },
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 110,
+          "achievedAt": "2025-11-27T17:10:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=nd66dqIOQnw",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 133,
+          "achievedAt": "2026-04-12T12:30:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EBjuRSu6Vn8",
+          "verified": false
+        }
+      ]
+    },
     "6964849a-ca06-4310-a1e7-f3e2fd4bf112": {
       "name": "[개섹스] 구아이",
       "levels": [
@@ -54089,35 +54134,6 @@
           "position": 146,
           "achievedAt": "2026-07-23T01:13:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=mFx2TetX25c",
-          "verified": false
-        }
-      ]
-    },
-    "2ded910b-bf1c-4bdc-86a0-7f63982f7de8": {
-      "name": "blobik",
-      "levels": [
-        {
-          "levelId": "9c12bb17-9512-4771-b6e9-9e51c819ed01",
-          "levelName": "Coalescence",
-          "position": 109,
-          "achievedAt": "2025-09-20T17:15:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=JjoEd5neqQI",
-          "verified": false
-        },
-        {
-          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
-          "levelName": "Waterfall",
-          "position": 110,
-          "achievedAt": "2025-11-27T17:10:45Z",
-          "videoUrl": "https://www.youtube.com/watch?v=nd66dqIOQnw",
-          "verified": false
-        },
-        {
-          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
-          "levelName": "Critical Heat",
-          "position": 133,
-          "achievedAt": "2026-04-12T12:30:15Z",
-          "videoUrl": "https://www.youtube.com/watch?v=EBjuRSu6Vn8",
           "verified": false
         }
       ]
