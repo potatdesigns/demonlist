@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T05:37:53.221Z",
+  "generatedAt": "2026-09-24T19:35:35.464Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -350886,6 +350886,11 @@
         "date": "2026-09-20",
         "position": 1348,
         "reason": "Moved down — Vantablack was placed at #563"
+      },
+      {
+        "date": "2026-09-24",
+        "position": 1349,
+        "reason": "Moved down — Aksion was raised to #1238"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -403834,6 +403839,7 @@
       "95d6a9f1-ab72-4fc2-9a3d-de750f20468c",
       "f1cb2ad3-b27a-4fc6-8cc7-80ea44696bf1",
       "e14a0028-9be0-4dc0-addf-9134f3b8d4e7",
+      "c84c78f9-3265-4e5d-b855-b8b19f685f9d",
       "13eecb2d-4781-4945-ba87-8c59f256db65",
       "153a9af8-7647-4685-8a6d-6834f842a800",
       "70fa8e01-d84f-4d22-9b11-99854d9ca89c",
@@ -403960,7 +403966,6 @@
       "f9704982-0812-4f5c-893a-8d6958429eba",
       "1c7d1936-b691-4f82-864c-9208275205f5",
       "99adc592-b0f7-48a8-95a8-e05dbf548569",
-      "c84c78f9-3265-4e5d-b855-b8b19f685f9d",
       "abc8cd6d-78fe-4ee0-ae75-4ed1303895ec",
       "47d4ad13-1daa-4373-be31-b26c6c0b3c76",
       "e9668cf0-0938-406d-96e2-f2681eb3073a",
@@ -406310,6 +406315,6 @@
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
     },
-    "lastEventFingerprint": "2026-09-24T00:55:20.883372Z|cb144dbe-e338-4674-b186-399579b5c0e9|{\"Lowered\":{\"new_position\":1138,\"old_position\":1134}}"
+    "lastEventFingerprint": "2026-09-24T17:58:37.682096Z|c84c78f9-3265-4e5d-b855-b8b19f685f9d|{\"Raised\":{\"new_position\":1238,\"old_position\":1364}}"
   }
 }
