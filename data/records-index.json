@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T16:20:49.113Z",
+  "generatedAt": "2026-09-24T21:03:05.042Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -30781,6 +30781,14 @@
           "verified": false
         },
         {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-09-24T20:17:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=50SwhoHK8_Y",
+          "verified": false
+        },
+        {
           "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
           "levelName": "UNKNOWN",
           "position": 127,
@@ -35325,6 +35333,14 @@
           "position": 54,
           "achievedAt": "2026-08-31T01:20:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=nWjNUyGxJKY",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 138,
+          "achievedAt": "2026-09-19T22:26:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WwRwFLzQriQ",
           "verified": false
         }
       ]
@@ -54138,6 +54154,19 @@
         }
       ]
     },
+    "d3ce2970-61fd-4427-8b30-1a63204994f9": {
+      "name": "Dygitol!",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-09-22T03:43:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=AxYP2cZXjBA",
+          "verified": false
+        }
+      ]
+    },
     "dfe05da5-42cd-4f12-9dcd-c40a6b1cafbc": {
       "name": "Link120",
       "levels": [
@@ -61297,7 +61326,7 @@
       ]
     },
     "3c46716f-3293-4fc4-8d1d-cbebe4e357d0": {
-      "name": "spreadator",
+      "name": "kotori",
       "levels": [
         {
           "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
