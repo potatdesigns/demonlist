@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:55:21.795Z",
+  "generatedAt": "2026-09-25T07:38:44.007Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -9222,6 +9222,8 @@
         "Learny",
         "Gimmicky",
         "Slow-Paced",
+        "Ship",
+        "UFO",
         "Duals"
       ],
       "description": "",
@@ -10989,7 +10991,7 @@
       "name": "Tartarus",
       "position": 108,
       "publisher_id": "be18a588-6ac4-4368-aaef-2b98c6f046e8",
-      "points": 2293,
+      "points": 2297,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 59075347,
@@ -10999,7 +11001,8 @@
         "Long",
         "Timings",
         "Chokepoints",
-        "Ship"
+        "Ship",
+        "Old Swing"
       ],
       "description": "Infamous 1.9 styled megacollab with a long history of verifiers, a revamp, and controversies. A remake of the impossible level Silent Akbar. Reigned as an overwhelmingly intimidating top 1 for more than 17 months.",
       "song": -14,
@@ -12755,7 +12758,7 @@
       "name": "UNKNOWN",
       "position": 127,
       "publisher_id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
-      "points": 2105,
+      "points": 2110,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88203501,
@@ -12766,6 +12769,7 @@
         "NONG",
         "Fast-Paced",
         "Chokepoints",
+        "Unbalanced",
         "High CPS",
         "Wave"
       ],
@@ -13966,7 +13970,7 @@
       "name": "Trueffet",
       "position": 146,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 1947,
+      "points": 1951,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71434979,
@@ -13978,6 +13982,7 @@
         "Chokepoints",
         "Learny",
         "High CPS",
+        "Wave",
         "Overall"
       ],
       "description": "Memorable blue and pink SyQual extreme with extremely difficult ship, wave, and spam sections. Originally was top 3 (even technically being top 1) and features numerous iconic high-cps wave sections. Named after Trueffet Square from Maple Story.",
@@ -14270,11 +14275,12 @@
         "2.1",
         "Long",
         "NONG",
-        "Learny",
-        "Nerve Control",
         "Fast-Paced",
         "Timings",
-        "High CPS"
+        "Unbalanced",
+        "Learny",
+        "High CPS",
+        "Nerve Control"
       ],
       "description": "Megacollab and superbuffed combination of kowareta and unrated extreme Shibireta. Many community members on Twitter were advocating for Fragile to get rated, starting the popular #RateFragile hashtag.",
       "song": null,
@@ -14305,21 +14311,6 @@
       ],
       "creators": [
         {
-          "id": "c9280745-12db-46e5-8602-eb6f2e51b756",
-          "username": "76e90d69d",
-          "global_name": "Gablor"
-        },
-        {
-          "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-          "username": "ef751dff2",
-          "global_name": "MadisonYuko"
-        },
-        {
-          "id": "187ae625-2a26-403c-adbe-9de97c3f685a",
-          "username": "6cbe1fc0c",
-          "global_name": "XLSpiral"
-        },
-        {
           "id": "571e1f69-71c5-49fd-be82-f54ce51443a6",
           "username": "f169379ab",
           "global_name": "Deadlox"
@@ -14348,6 +14339,21 @@
           "id": "a18b6d52-4806-4563-802e-2ec070285301",
           "username": "e707898d8",
           "global_name": "Zentraa"
+        },
+        {
+          "id": "c9280745-12db-46e5-8602-eb6f2e51b756",
+          "username": "76e90d69d",
+          "global_name": "Gablor"
+        },
+        {
+          "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
+          "username": "ef751dff2",
+          "global_name": "MadisonYuko"
+        },
+        {
+          "id": "187ae625-2a26-403c-adbe-9de97c3f685a",
+          "username": "6cbe1fc0c",
+          "global_name": "XLSpiral"
         }
       ]
     },
