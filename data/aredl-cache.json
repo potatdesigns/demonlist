@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T22:49:01.164Z",
+  "generatedAt": "2026-09-25T01:00:56.228Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3351,7 +3351,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 25,
+      "edel_enjoyment": 32.5,
       "is_edel_pending": true,
       "gddl_tier": 38,
       "nlw_tier": null,
@@ -7990,7 +7990,7 @@
       ],
       "description": "Colorful XL click-sync solo design level using the second half of Dimrain47's Infernoplex. Memorable for its flashy rainbow effects and song representation. Contains an entire 10 second dash-orb at 76% to optimize the amount of nerves. 🐟",
       "song": 64842,
-      "edel_enjoyment": 78.77777778,
+      "edel_enjoyment": 76.7,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
@@ -12090,7 +12090,7 @@
       "name": "Dualist (Solo)",
       "position": 117,
       "publisher_id": "379e46f0-5141-42c2-85fe-ee77bad26c6d",
-      "points": 2200,
+      "points": 2204,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 130464801,
@@ -12099,6 +12099,7 @@
         "2.2",
         "Long",
         "2P",
+        "Timings",
         "Overall"
       ],
       "description": null,
@@ -14260,7 +14261,7 @@
       "name": "Fragile",
       "position": 149,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-      "points": 1924,
+      "points": 1928,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 65588448,
@@ -14273,8 +14274,7 @@
         "Nerve Control",
         "Fast-Paced",
         "Timings",
-        "High CPS",
-        "Mirror"
+        "High CPS"
       ],
       "description": "Megacollab and superbuffed combination of kowareta and unrated extreme Shibireta. Many community members on Twitter were advocating for Fragile to get rated, starting the popular #RateFragile hashtag.",
       "song": null,
