@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T01:00:56.228Z",
+  "generatedAt": "2026-09-25T05:55:21.795Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3767,11 +3767,54 @@
       "creators": []
     },
     {
+      "id": "68de8323-1894-46b9-9d39-cda105d81155",
+      "name": "Maniacal Chains",
+      "position": 35,
+      "publisher_id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
+      "points": 3556,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 48991380,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 47.66666667,
+      "is_edel_pending": true,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
+        "username": "a54655b3a",
+        "global_name": "LordDivinity"
+      },
+      "verifications": [
+        {
+          "id": "38181448-4efe-42fe-b93a-2e28b1c9ca45",
+          "submitted_by": {
+            "id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
+            "username": "spcreat",
+            "global_name": "spcreat"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/TzeMJeIu6bY?si=ow6V_u4f-QC82dR1",
+          "hide_video": false,
+          "achieved_at": "2026-04-09T20:30:06Z",
+          "created_at": "2026-06-21T00:23:45.611819Z",
+          "updated_at": "2026-06-21T00:23:45.611819Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "67708587-274e-4de8-9be9-55385bbcbc9f",
       "name": "Slaughterhouse ",
-      "position": 35,
+      "position": 36,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 3556,
+      "points": 3527,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 27690100,
@@ -3852,9 +3895,9 @@
     {
       "id": "d79120ff-015e-457f-a164-52e98b40f411",
       "name": "Subterminal Point",
-      "position": 36,
+      "position": 37,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 3527,
+      "points": 3500,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113599729,
@@ -3899,9 +3942,9 @@
     {
       "id": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
       "name": "KOCMOC",
-      "position": 37,
+      "position": 38,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 3500,
+      "points": 3473,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87665224,
@@ -3998,49 +4041,6 @@
           "global_name": "Bli"
         }
       ]
-    },
-    {
-      "id": "68de8323-1894-46b9-9d39-cda105d81155",
-      "name": "Maniacal Chains",
-      "position": 38,
-      "publisher_id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
-      "points": 3473,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 48991380,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 47.66666667,
-      "is_edel_pending": true,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
-        "username": "a54655b3a",
-        "global_name": "LordDivinity"
-      },
-      "verifications": [
-        {
-          "id": "38181448-4efe-42fe-b93a-2e28b1c9ca45",
-          "submitted_by": {
-            "id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
-            "username": "spcreat",
-            "global_name": "spcreat"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/TzeMJeIu6bY?si=ow6V_u4f-QC82dR1",
-          "hide_video": false,
-          "achieved_at": "2026-04-09T20:30:06Z",
-          "created_at": "2026-06-21T00:23:45.611819Z",
-          "updated_at": "2026-06-21T00:23:45.611819Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
@@ -7973,7 +7973,7 @@
       "name": "Collapse (Nexel)",
       "position": 79,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2657,
+      "points": 2661,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113256247,
@@ -7986,6 +7986,8 @@
         "Timings",
         "High CPS",
         "Nerve Control",
+        "Wave",
+        "New Swing",
         "Overall"
       ],
       "description": "Colorful XL click-sync solo design level using the second half of Dimrain47's Infernoplex. Memorable for its flashy rainbow effects and song representation. Contains an entire 10 second dash-orb at 76% to optimize the amount of nerves. 🐟",
@@ -8321,11 +8323,67 @@
       ]
     },
     {
+      "id": "5dd207e6-8773-471c-a153-4fae56250ad4",
+      "name": "Wavterminal",
+      "position": 84,
+      "publisher_id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
+      "points": 2590,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 128093374,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Clicksync",
+        "Fast-Paced",
+        "Timings",
+        "High CPS",
+        "Ball",
+        "Wave",
+        "Spider"
+      ],
+      "description": "Vibrant & hyper-saturated level that takes full advantage of shaders and gradient triggers. Includes spirals of swirling colors pairing well with its energetic song. One of most enjoyed extremes in the top 150!",
+      "song": 1135559,
+      "edel_enjoyment": 89.25,
+      "is_edel_pending": false,
+      "gddl_tier": 35,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
+        "username": "skyavoxii",
+        "global_name": "Skyavoxii ✧"
+      },
+      "verifications": [
+        {
+          "id": "10be0f8b-0ab9-439b-9717-67fac61c3e94",
+          "submitted_by": {
+            "id": "c5d6b841-9e9a-4840-9e20-cf60b6271b8d",
+            "username": "fricegd",
+            "global_name": "Frice"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=dlvsCE3xYkQ",
+          "hide_video": false,
+          "achieved_at": "2025-11-13T22:30:06Z",
+          "created_at": "2025-12-19T18:02:21.953969Z",
+          "updated_at": "2025-12-19T18:02:21.953969Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
+          "username": "skyavoxii",
+          "global_name": "Skyavoxii ✧"
+        }
+      ]
+    },
+    {
       "id": "345a0d2d-b272-4f17-9264-4ef3407f5314",
       "name": "walter white",
-      "position": 84,
+      "position": 85,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2586,
+      "points": 2576,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81011195,
@@ -8382,9 +8440,9 @@
     {
       "id": "2c273751-18cc-4871-87e4-5a1a9879e05e",
       "name": "Infinite Chaos",
-      "position": 85,
+      "position": 86,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
-      "points": 2572,
+      "points": 2562,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 119689515,
@@ -8539,9 +8597,9 @@
     {
       "id": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
       "name": "BRITNEY NO SCLEARS",
-      "position": 86,
+      "position": 87,
       "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
-      "points": 2558,
+      "points": 2549,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125317359,
@@ -8586,9 +8644,9 @@
     {
       "id": "876b0b3b-0916-4764-94dc-2e433f8109c3",
       "name": "Operation Evolution",
-      "position": 87,
+      "position": 88,
       "publisher_id": "e531c894-36a5-4974-93b5-9f1211112c4c",
-      "points": 2545,
+      "points": 2536,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114999625,
@@ -8757,9 +8815,9 @@
     {
       "id": "59a49d83-77fd-4890-a04d-689f1947ad16",
       "name": "Damascus",
-      "position": 88,
+      "position": 89,
       "publisher_id": "54e04276-3c19-448a-b6a8-2cd9e32eb53f",
-      "points": 2531,
+      "points": 2522,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93339534,
@@ -9150,9 +9208,9 @@
     {
       "id": "9e4fe89f-e634-41f6-a1d7-c388d426856b",
       "name": "Decks Dark",
-      "position": 89,
+      "position": 90,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2518,
+      "points": 2509,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95719795,
@@ -9204,9 +9262,9 @@
     {
       "id": "cfad0fb6-7ff9-4c8d-841b-d9cf2221443d",
       "name": "SARYYX NEVER CLEAR",
-      "position": 90,
+      "position": 91,
       "publisher_id": "e621a2ff-50fa-418b-a9d5-da6146d2d0ce",
-      "points": 2505,
+      "points": 2497,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95998005,
@@ -9295,9 +9353,9 @@
     {
       "id": "52df535a-4674-4af7-8004-bcd5453883a9",
       "name": "The Yangire",
-      "position": 91,
+      "position": 92,
       "publisher_id": "f3b9d61f-0f2a-494c-8c60-e3e7a940af48",
-      "points": 2492,
+      "points": 2484,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110500920,
@@ -9461,9 +9519,9 @@
     {
       "id": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
       "name": "Climax",
-      "position": 92,
+      "position": 93,
       "publisher_id": "5fa42946-e1eb-4e15-8d34-3aa39f70e8d7",
-      "points": 2479,
+      "points": 2471,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95049815,
@@ -9520,9 +9578,9 @@
     {
       "id": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
       "name": "ORDINARY",
-      "position": 93,
+      "position": 94,
       "publisher_id": "6483b731-b07d-4d47-8846-8917005f59cc",
-      "points": 2467,
+      "points": 2459,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 105593215,
@@ -9582,9 +9640,9 @@
     {
       "id": "1a093f68-cff4-48bc-9b95-02e2aed07104",
       "name": "TrakineS",
-      "position": 94,
+      "position": 95,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2454,
+      "points": 2446,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125788781,
@@ -9662,62 +9720,6 @@
           "id": "7a44f34d-ece9-4030-966c-7580fbf9f056",
           "username": "clarinhah.",
           "global_name": "Clara"
-        }
-      ]
-    },
-    {
-      "id": "5dd207e6-8773-471c-a153-4fae56250ad4",
-      "name": "Wavterminal",
-      "position": 95,
-      "publisher_id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
-      "points": 2442,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 128093374,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Clicksync",
-        "Fast-Paced",
-        "Timings",
-        "High CPS",
-        "Ball",
-        "Wave",
-        "Spider"
-      ],
-      "description": "Vibrant & hyper-saturated level that takes full advantage of shaders and gradient triggers. Includes spirals of swirling colors pairing well with its energetic song. One of most enjoyed extremes in the top 150!",
-      "song": 1135559,
-      "edel_enjoyment": 89.25,
-      "is_edel_pending": false,
-      "gddl_tier": 35,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
-        "username": "skyavoxii",
-        "global_name": "Skyavoxii ✧"
-      },
-      "verifications": [
-        {
-          "id": "10be0f8b-0ab9-439b-9717-67fac61c3e94",
-          "submitted_by": {
-            "id": "c5d6b841-9e9a-4840-9e20-cf60b6271b8d",
-            "username": "fricegd",
-            "global_name": "Frice"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=dlvsCE3xYkQ",
-          "hide_video": false,
-          "achieved_at": "2025-11-13T22:30:06Z",
-          "created_at": "2025-12-19T18:02:21.953969Z",
-          "updated_at": "2025-12-19T18:02:21.953969Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
-          "username": "skyavoxii",
-          "global_name": "Skyavoxii ✧"
         }
       ]
     },
@@ -10686,7 +10688,7 @@
       "name": "BEELINE (Solo)",
       "position": 105,
       "publisher_id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
-      "points": 2325,
+      "points": 2330,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93792764,
@@ -10697,8 +10699,7 @@
         "2P",
         "Clicksync",
         "Fast-Paced",
-        "High CPS",
-        "Duals"
+        "High CPS"
       ],
       "description": "Very vibrant splitscreen 2 player level with the parts being references to various games. Includes some tricky and fast-paced gameplay, with the beginning being the hardest one.",
       "song": 1230804,
@@ -13246,7 +13247,7 @@
       "name": "Crystal Crusher (Solo)",
       "position": 135,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2036,
+      "points": 2040,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93732702,
@@ -13256,8 +13257,7 @@
         "Long",
         "2P",
         "Gimmicky",
-        "Wave",
-        "Duals"
+        "Wave"
       ],
       "description": "Simplistic crystal cave themed extreme. Majority of the level features convoluted and long misaligned duals.",
       "song": 849916,
