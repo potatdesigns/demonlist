@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T10:40:27.890Z",
+  "generatedAt": "2026-09-26T15:35:28.601Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -18553,6 +18553,14 @@
           "position": 30,
           "achievedAt": "2026-03-03T01:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=4_-5s2-sSnQ",
+          "verified": false
+        },
+        {
+          "levelId": "70810896-8147-445f-82d0-028cce2297da",
+          "levelName": "Master of Puppets",
+          "position": 46,
+          "achievedAt": "2026-09-26T04:00:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=I8iLWAdFhkM",
           "verified": false
         },
         {
