@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T03:06:20.446Z",
+  "generatedAt": "2026-09-26T10:40:27.890Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -52129,6 +52129,14 @@
           "achievedAt": "2023-09-14T02:24:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=eS9zT_SY3sk&t=1s",
           "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 138,
+          "achievedAt": "2026-09-25T22:30:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WV6skEy0dCA",
+          "verified": false
         }
       ]
     },
@@ -57195,6 +57203,19 @@
           "position": 138,
           "achievedAt": "2026-09-02T17:50:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=NCyWeVIrO58",
+          "verified": false
+        }
+      ]
+    },
+    "16c10a6f-095f-4aef-a127-6452d2ea7670": {
+      "name": "chesborge",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-09-25T23:07:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7BYmmaVouRY",
           "verified": false
         }
       ]
@@ -63304,6 +63325,19 @@
         }
       ]
     },
+    "ffc721de-15f1-4638-81b7-6a6c6c86065f": {
+      "name": "Ninshu",
+      "levels": [
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 148,
+          "achievedAt": "2026-09-24T20:18:41Z",
+          "videoUrl": "https://www.youtube.com/watch?v=l8zRjs7zCkw",
+          "verified": false
+        }
+      ]
+    },
     "108b46be-a0b8-4c7e-8abd-f62706326387": {
       "name": "vaen",
       "levels": [
@@ -63521,6 +63555,19 @@
           "position": 150,
           "achievedAt": "2026-09-12T06:34:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=pBA4M16n4so&t=14s",
+          "verified": false
+        }
+      ]
+    },
+    "19408dbd-379e-445f-ba11-76f7ed084aec": {
+      "name": "Disvand",
+      "levels": [
+        {
+          "levelId": "94d2322d-b1f2-44cc-909d-6cf18cd644ee",
+          "levelName": "chrome hearts",
+          "position": 150,
+          "achievedAt": "2026-09-25T18:09:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=z6_NpHc0faY",
           "verified": false
         }
       ]
