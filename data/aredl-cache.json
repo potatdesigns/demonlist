@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T18:45:34.751Z",
+  "generatedAt": "2026-09-27T21:43:58.799Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3378,6 +3378,11 @@
       ],
       "creators": [
         {
+          "id": "291d10b9-2d52-4b27-a489-494ddfda85c0",
+          "username": "robotchief2",
+          "global_name": "robotchief"
+        },
+        {
           "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
           "username": "997a90b54",
           "global_name": "Laniakea"
@@ -3426,11 +3431,6 @@
           "id": "c1921edf-0263-4ffc-b391-c84e14f066a9",
           "username": "redcraft_bmc",
           "global_name": "redcraft"
-        },
-        {
-          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
-          "username": "0fb0d4b59",
-          "global_name": "robotchief"
         },
         {
           "id": "76870044-b9f7-43fc-87a8-5134a539b606",
@@ -4755,14 +4755,14 @@
           "global_name": "aqualime"
         },
         {
-          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
-          "username": "0fb0d4b59",
-          "global_name": "robotchief"
-        },
-        {
           "id": "05ad4ef2-baa3-4d26-9181-4b70bfa47b91",
           "username": "f47f247b8",
           "global_name": "sink"
+        },
+        {
+          "id": "291d10b9-2d52-4b27-a489-494ddfda85c0",
+          "username": "robotchief2",
+          "global_name": "robotchief"
         },
         {
           "id": "0bff0202-0719-4a59-a2b8-a2d3f74bcbda",
@@ -5609,11 +5609,60 @@
       ]
     },
     {
+      "id": "1178244d-6482-4ef5-a299-c022eb193757",
+      "name": "CONVULSION",
+      "position": 51,
+      "publisher_id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
+      "points": 3160,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 113322063,
+      "two_player": false,
+      "tags": [
+        "1.9PS",
+        "Long",
+        "Timings",
+        "Learny",
+        "Memory",
+        "High CPS",
+        "Ship",
+        "UFO"
+      ],
+      "description": "The hardest 1.9GDPS level, taking on a red, black and blue colour scheme with very flashy visuals and a menacing atmosphere. Its gameplay is very learny with many fakes and structures blending in with the decoration, and features a difficult ship section halfway through.",
+      "song": null,
+      "edel_enjoyment": 68.57142857,
+      "is_edel_pending": false,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
+        "username": "c34b390ab",
+        "global_name": "Stellar"
+      },
+      "verifications": [
+        {
+          "id": "838f3722-1496-4207-921a-3cc9ed87c349",
+          "submitted_by": {
+            "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
+            "username": "whizkid05",
+            "global_name": "Whizkid05"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=qeRKuyU3eGI",
+          "hide_video": false,
+          "achieved_at": "2024-12-23T23:25:14Z",
+          "created_at": "2025-10-28T15:45:02.144875Z",
+          "updated_at": "2025-10-28T15:45:02.144875Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
       "name": "Through The Gates",
-      "position": 51,
+      "position": 52,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3160,
+      "points": 3138,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49072489,
@@ -5694,9 +5743,9 @@
     {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 52,
+      "position": 53,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3138,
+      "points": 3117,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5802,9 +5851,9 @@
     {
       "id": "56d52163-e3e2-4357-9843-29002b100e07",
       "name": "NOMAD",
-      "position": 53,
+      "position": 54,
       "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-      "points": 3117,
+      "points": 3097,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115077305,
@@ -5862,9 +5911,9 @@
     {
       "id": "7081880b-fe8c-4d3f-8557-a895b7aee521",
       "name": "Snowbound",
-      "position": 54,
+      "position": 55,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 3097,
+      "points": 3076,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120289520,
@@ -5911,55 +5960,6 @@
           "global_name": "Amplitron"
         }
       ]
-    },
-    {
-      "id": "1178244d-6482-4ef5-a299-c022eb193757",
-      "name": "CONVULSION",
-      "position": 55,
-      "publisher_id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
-      "points": 3076,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 113322063,
-      "two_player": false,
-      "tags": [
-        "1.9PS",
-        "Long",
-        "Timings",
-        "Learny",
-        "Memory",
-        "High CPS",
-        "Ship",
-        "UFO"
-      ],
-      "description": "The hardest 1.9GDPS level, taking on a red, black and blue colour scheme with very flashy visuals and a menacing atmosphere. Its gameplay is very learny with many fakes and structures blending in with the decoration, and features a difficult ship section halfway through.",
-      "song": null,
-      "edel_enjoyment": 68.57142857,
-      "is_edel_pending": false,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
-        "username": "c34b390ab",
-        "global_name": "Stellar"
-      },
-      "verifications": [
-        {
-          "id": "838f3722-1496-4207-921a-3cc9ed87c349",
-          "submitted_by": {
-            "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
-            "username": "whizkid05",
-            "global_name": "Whizkid05"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=qeRKuyU3eGI",
-          "hide_video": false,
-          "achieved_at": "2024-12-23T23:25:14Z",
-          "created_at": "2025-10-28T15:45:02.144875Z",
-          "updated_at": "2025-10-28T15:45:02.144875Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
@@ -13404,8 +13404,8 @@
       ],
       "creators": [
         {
-          "id": "05a8175a-8a25-42d1-9f1f-b4fb97071184",
-          "username": "0fb0d4b59",
+          "id": "291d10b9-2d52-4b27-a489-494ddfda85c0",
+          "username": "robotchief2",
           "global_name": "robotchief"
         },
         {
