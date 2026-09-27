@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T11:13:51.705Z",
+  "generatedAt": "2026-09-27T16:15:01.422Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -40352,8 +40352,8 @@
         }
       ]
     },
-    "10c93798-ed69-4a33-b652-18f381628ea1": {
-      "name": "LOMANE",
+    "72074673-c2d6-4d30-8103-1ede859d08e1": {
+      "name": "Lomane",
       "levels": [
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
@@ -44124,6 +44124,19 @@
           "position": 72,
           "achievedAt": "2026-09-09T18:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=jFATh28n_UA",
+          "verified": false
+        }
+      ]
+    },
+    "6d32fbed-39b7-4157-988f-4822f7ffbb81": {
+      "name": "MindCant",
+      "levels": [
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 72,
+          "achievedAt": "2026-09-26T23:51:02Z",
+          "videoUrl": "https://www.youtube.com/watch?v=e6vbZw2benw",
           "verified": false
         }
       ]
