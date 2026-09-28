@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:40:53.077Z",
+  "generatedAt": "2026-09-28T20:55:25.904Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -263220,6 +263220,11 @@
         "date": "2026-09-02",
         "position": 74,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 75,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "8ce64ed4-2cc2-4440-9a46-e1696c67e791": [
@@ -285397,6 +285402,11 @@
         "date": "2026-09-02",
         "position": 70,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 71,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "2c0bca18-1451-4804-8035-39a5cf9183dc": [
@@ -297130,6 +297140,11 @@
         "date": "2026-09-02",
         "position": 72,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 73,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a": [
@@ -385487,6 +385502,11 @@
         "date": "2026-09-02",
         "position": 75,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 68,
+        "reason": "Raised from #75 to #68"
       }
     ],
     "f79695b9-ddb2-46ab-bef6-a231917db6d5": [
@@ -390909,6 +390929,11 @@
         "date": "2026-09-27",
         "position": 68,
         "reason": "Lowered from #62 to #68"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 69,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "c2837416-7fb4-4866-ba91-e9c134a0a59a": [
@@ -399684,6 +399709,11 @@
         "date": "2026-09-02",
         "position": 73,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 74,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "84080532-a440-4069-882c-88a286aabee1": [
@@ -400032,6 +400062,11 @@
         "date": "2026-09-20",
         "position": 69,
         "reason": "Moved down — Prismline was raised to #43"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 70,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "2a8c1979-8f50-4652-8ff0-223471a9a7b5": [
@@ -401979,6 +402014,11 @@
         "date": "2026-09-02",
         "position": 71,
         "reason": "Moved down — FOREST OF SPIKES was placed at #28"
+      },
+      {
+        "date": "2026-09-28",
+        "position": 72,
+        "reason": "Moved down — Gaggatrondra was raised to #68"
       }
     ],
     "b986f5e6-2368-40df-9082-060d509d14f1": [
@@ -402914,6 +402954,7 @@
       "2471e1cc-ff59-471f-bc1c-eca3651a8591",
       "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
+      "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "94000633-1b00-4e52-ae77-48fab8aecf9d",
@@ -402921,7 +402962,6 @@
       "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "822815ac-fcb8-40b3-b42d-bd692095129c",
       "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
-      "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
       "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "0029b449-c191-4a9b-91a2-40a3c96037f6",
@@ -406559,8 +406599,12 @@
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas tech",
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
       "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu",
-      "1ee89a48-9498-4fa5-b9c9-198c861fc98f": "Bleed"
+      "1ee89a48-9498-4fa5-b9c9-198c861fc98f": "Bleed",
+      "68dbae85-88cb-4a65-ac8d-98243ff98abb": "Harmony",
+      "7fccf1ae-4c03-4433-9989-2a7c3eca31fb": "KISMET",
+      "793a980a-1bf3-4bbc-91cb-ae7c6639424a": "Necron",
+      "0d51b3d6-635b-4702-8207-e61ea6c2702f": "Never Afraid"
     },
-    "lastEventFingerprint": "2026-09-28T12:10:00.493438Z|1ee89a48-9498-4fa5-b9c9-198c861fc98f|\"Pending\""
+    "lastEventFingerprint": "2026-09-28T20:38:04.253527Z|7236da3d-a27b-4a7d-b3ac-aa2a6aff1119|{\"Raised\":{\"new_position\":68,\"old_position\":75}}"
   }
 }

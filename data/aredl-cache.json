@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T14:40:42.807Z",
+  "generatedAt": "2026-09-28T20:55:25.699Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6951,11 +6951,59 @@
       ]
     },
     {
+      "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
+      "name": "Gaggatrondra",
+      "position": 68,
+      "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
+      "points": 2835,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 114990369,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "NONG",
+        "Clicksync",
+        "Timings",
+        "Learny",
+        "High CPS"
+      ],
+      "description": "Bright and energetic level using Problem by Ariana Grande. Includes a memorable dual with intense and quirky high-cps gameplay. With the level containing a sign pointing to the \"Zunty Realm\", this extreme clearly is not meant to be taken too seriously. One of the most enjoyed levels in the top 150 according to EDEL.",
+      "song": null,
+      "edel_enjoyment": 88.81818182,
+      "is_edel_pending": false,
+      "gddl_tier": 36.333333333333336,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
+        "username": "0b27b56e7",
+        "global_name": "MoistyJc"
+      },
+      "verifications": [
+        {
+          "id": "671d25d5-30ef-4b50-a6ee-d892217a936f",
+          "submitted_by": {
+            "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
+            "username": "flufflebag",
+            "global_name": "Zeronium"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=A4G41vw6Cf0",
+          "hide_video": false,
+          "achieved_at": "2025-02-09T23:24:30Z",
+          "created_at": "2025-03-13T21:40:58Z",
+          "updated_at": "2025-03-13T21:40:58Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 68,
+      "position": 69,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2835,
+      "points": 2818,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -7051,9 +7099,9 @@
     {
       "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "name": "Stellar Night",
-      "position": 69,
+      "position": 70,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2818,
+      "points": 2802,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 83244159,
@@ -7098,9 +7146,9 @@
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "name": "Edge of Destiny",
-      "position": 70,
+      "position": 71,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2802,
+      "points": 2785,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89187968,
@@ -7232,9 +7280,9 @@
     {
       "id": "64b042d2-a084-4a84-83c6-fcc830e84a2e",
       "name": "Losing Your Mind",
-      "position": 71,
+      "position": 72,
       "publisher_id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
-      "points": 2785,
+      "points": 2769,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 139508889,
@@ -7280,9 +7328,9 @@
     {
       "id": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "name": "Solar Flare",
-      "position": 72,
+      "position": 73,
       "publisher_id": "7d9efb4f-8259-40eb-b123-41785a461e58",
-      "points": 2769,
+      "points": 2753,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90390075,
@@ -7337,9 +7385,9 @@
     {
       "id": "822815ac-fcb8-40b3-b42d-bd692095129c",
       "name": "The Catacombs",
-      "position": 73,
+      "position": 74,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2753,
+      "points": 2737,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 104232191,
@@ -7388,9 +7436,9 @@
     {
       "id": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
       "name": "LIMBO",
-      "position": 74,
+      "position": 75,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 2737,
+      "points": 2722,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86084399,
@@ -7615,54 +7663,6 @@
           "global_name": "flash"
         }
       ]
-    },
-    {
-      "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
-      "name": "Gaggatrondra",
-      "position": 75,
-      "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-      "points": 2722,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 114990369,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "NONG",
-        "Clicksync",
-        "Timings",
-        "Learny",
-        "High CPS"
-      ],
-      "description": "Bright and energetic level using Problem by Ariana Grande. Includes a memorable dual with intense and quirky high-cps gameplay. With the level containing a sign pointing to the \"Zunty Realm\", this extreme clearly is not meant to be taken too seriously. One of the most enjoyed levels in the top 150 according to EDEL.",
-      "song": null,
-      "edel_enjoyment": 88.81818182,
-      "is_edel_pending": false,
-      "gddl_tier": 36.333333333333336,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-        "username": "0b27b56e7",
-        "global_name": "MoistyJc"
-      },
-      "verifications": [
-        {
-          "id": "671d25d5-30ef-4b50-a6ee-d892217a936f",
-          "submitted_by": {
-            "id": "b3a8d110-d1c3-4bd1-b803-18fb8719231a",
-            "username": "flufflebag",
-            "global_name": "Zeronium"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=A4G41vw6Cf0",
-          "hide_video": false,
-          "achieved_at": "2025-02-09T23:24:30Z",
-          "created_at": "2025-03-13T21:40:58Z",
-          "updated_at": "2025-03-13T21:40:58Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
