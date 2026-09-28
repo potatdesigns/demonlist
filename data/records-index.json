@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T03:08:32.284Z",
+  "generatedAt": "2026-09-28T12:41:22.967Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -1518,6 +1518,14 @@
           "position": 4,
           "achievedAt": "2026-02-14T23:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=LCd1aljMPWs",
+          "verified": false
+        },
+        {
+          "levelId": "b986f5e6-2368-40df-9082-060d509d14f1",
+          "levelName": "The Bloop",
+          "position": 12,
+          "achievedAt": "2026-09-28T03:13:22.135165Z",
+          "videoUrl": "https://www.youtube.com/watch?v=D6me0bTK3LA",
           "verified": false
         },
         {
@@ -43174,6 +43182,14 @@
           "position": 72,
           "achievedAt": "2025-11-02T22:47:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=09Zfr2yKLDU",
+          "verified": false
+        },
+        {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 118,
+          "achievedAt": "2026-09-22T19:31:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dpPf0v9gBuI",
           "verified": false
         },
         {
