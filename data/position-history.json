@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T23:51:13.798Z",
+  "generatedAt": "2026-09-28T14:40:53.077Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -406558,8 +406558,9 @@
       "05c75b96-b138-47d7-847d-c13fb2650a41": "Breakcore",
       "d8e4fd8a-2678-4e99-b921-9c9bd778ee0b": "Xas tech",
       "034634f7-f216-4f34-82dd-003eebd2897e": "Artemis 13",
-      "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu"
+      "d812139f-919f-41d0-b552-9edac3825ebf": "Hakaitsu",
+      "1ee89a48-9498-4fa5-b9c9-198c861fc98f": "Bleed"
     },
-    "lastEventFingerprint": "2026-09-27T22:42:02.232373Z|210ae17a-e6bf-4851-91be-85501194dbf3|{\"Lowered\":{\"new_position\":53,\"old_position\":49}}"
+    "lastEventFingerprint": "2026-09-28T12:10:00.493438Z|1ee89a48-9498-4fa5-b9c9-198c861fc98f|\"Pending\""
   }
 }
