@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:55:25.699Z",
+  "generatedAt": "2026-09-28T23:34:39.361Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -6951,11 +6951,58 @@
       ]
     },
     {
+      "id": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+      "name": "BRITNEY NO SCLEARS",
+      "position": 68,
+      "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
+      "points": 2835,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 125317359,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Cube",
+        "Ship"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 63.75,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
+        "username": "wabasmeves",
+        "global_name": "wabas"
+      },
+      "verifications": [
+        {
+          "id": "c525abc2-a812-44ed-aba3-df212a38ecd7",
+          "submitted_by": {
+            "id": "9701c3f8-b525-4bed-b934-ad638ba89081",
+            "username": "sc0tchtape",
+            "global_name": "Scotchtape"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=ff_mQSXwjhU",
+          "hide_video": false,
+          "achieved_at": "2025-08-29T04:36:37Z",
+          "created_at": "2026-05-08T02:12:17.851446Z",
+          "updated_at": "2026-05-08T02:12:17.851446Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "name": "Gaggatrondra",
-      "position": 68,
+      "position": 69,
       "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-      "points": 2835,
+      "points": 2818,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114990369,
@@ -7001,9 +7048,9 @@
     {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 69,
+      "position": 70,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2818,
+      "points": 2802,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -7099,9 +7146,9 @@
     {
       "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "name": "Stellar Night",
-      "position": 70,
+      "position": 71,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2802,
+      "points": 2785,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 83244159,
@@ -7146,9 +7193,9 @@
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "name": "Edge of Destiny",
-      "position": 71,
+      "position": 72,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2785,
+      "points": 2769,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89187968,
@@ -7280,9 +7327,9 @@
     {
       "id": "64b042d2-a084-4a84-83c6-fcc830e84a2e",
       "name": "Losing Your Mind",
-      "position": 72,
+      "position": 73,
       "publisher_id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
-      "points": 2769,
+      "points": 2753,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 139508889,
@@ -7328,9 +7375,9 @@
     {
       "id": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "name": "Solar Flare",
-      "position": 73,
+      "position": 74,
       "publisher_id": "7d9efb4f-8259-40eb-b123-41785a461e58",
-      "points": 2753,
+      "points": 2737,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90390075,
@@ -7385,9 +7432,9 @@
     {
       "id": "822815ac-fcb8-40b3-b42d-bd692095129c",
       "name": "The Catacombs",
-      "position": 74,
+      "position": 75,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2737,
+      "points": 2722,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 104232191,
@@ -7436,9 +7483,9 @@
     {
       "id": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
       "name": "LIMBO",
-      "position": 75,
+      "position": 76,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 2722,
+      "points": 2706,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86084399,
@@ -7667,9 +7714,9 @@
     {
       "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
       "name": "Make Paul Dance",
-      "position": 76,
+      "position": 77,
       "publisher_id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
-      "points": 2706,
+      "points": 2691,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115860808,
@@ -7716,9 +7763,9 @@
     {
       "id": "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "name": "Belladonna",
-      "position": 77,
+      "position": 78,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2691,
+      "points": 2676,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94969889,
@@ -7774,9 +7821,9 @@
     {
       "id": "0029b449-c191-4a9b-91a2-40a3c96037f6",
       "name": "Codependence (Solo)",
-      "position": 78,
+      "position": 79,
       "publisher_id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
-      "points": 2676,
+      "points": 2661,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 62556400,
@@ -7973,9 +8020,9 @@
     {
       "id": "33f22458-6142-45b2-a45e-9cc488be8304",
       "name": "Collapse (Nexel)",
-      "position": 79,
+      "position": 80,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2661,
+      "points": 2647,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113256247,
@@ -8024,9 +8071,9 @@
     {
       "id": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
       "name": "Mayhem",
-      "position": 80,
+      "position": 81,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
-      "points": 2647,
+      "points": 2632,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82544060,
@@ -8117,9 +8164,9 @@
     {
       "id": "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
       "name": "CHROMACAVE",
-      "position": 81,
+      "position": 82,
       "publisher_id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
-      "points": 2632,
+      "points": 2618,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131497860,
@@ -8187,9 +8234,9 @@
     {
       "id": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
       "name": "The Plunge",
-      "position": 82,
+      "position": 83,
       "publisher_id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
-      "points": 2618,
+      "points": 2604,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113220284,
@@ -8269,9 +8316,9 @@
     {
       "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
       "name": "Fracture",
-      "position": 83,
+      "position": 84,
       "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-      "points": 2604,
+      "points": 2590,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 99703915,
@@ -8327,9 +8374,9 @@
     {
       "id": "5dd207e6-8773-471c-a153-4fae56250ad4",
       "name": "Wavterminal",
-      "position": 84,
+      "position": 85,
       "publisher_id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
-      "points": 2590,
+      "points": 2576,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 128093374,
@@ -8383,9 +8430,9 @@
     {
       "id": "345a0d2d-b272-4f17-9264-4ef3407f5314",
       "name": "walter white",
-      "position": 85,
+      "position": 86,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2576,
+      "points": 2562,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81011195,
@@ -8442,9 +8489,9 @@
     {
       "id": "2c273751-18cc-4871-87e4-5a1a9879e05e",
       "name": "Infinite Chaos",
-      "position": 86,
+      "position": 87,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
-      "points": 2562,
+      "points": 2549,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 119689515,
@@ -8595,53 +8642,6 @@
           "global_name": "fusion425"
         }
       ]
-    },
-    {
-      "id": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
-      "name": "BRITNEY NO SCLEARS",
-      "position": 87,
-      "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
-      "points": 2549,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 125317359,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Cube",
-        "Ship"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 63.75,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
-        "username": "wabasmeves",
-        "global_name": "wabas"
-      },
-      "verifications": [
-        {
-          "id": "c525abc2-a812-44ed-aba3-df212a38ecd7",
-          "submitted_by": {
-            "id": "9701c3f8-b525-4bed-b934-ad638ba89081",
-            "username": "sc0tchtape",
-            "global_name": "Scotchtape"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=ff_mQSXwjhU",
-          "hide_video": false,
-          "achieved_at": "2025-08-29T04:36:37Z",
-          "created_at": "2026-05-08T02:12:17.851446Z",
-          "updated_at": "2026-05-08T02:12:17.851446Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "876b0b3b-0916-4764-94dc-2e433f8109c3",
