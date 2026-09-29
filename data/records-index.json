@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T03:47:22.680Z",
+  "generatedAt": "2026-09-29T11:59:10.216Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -43668,6 +43668,59 @@
         }
       ]
     },
+    "c72926bb-fb7f-4db0-a519-8aef42b04ad3": {
+      "name": "N0ctaXI",
+      "levels": [
+        {
+          "levelId": "94000633-1b00-4e52-ae77-48fab8aecf9d",
+          "levelName": "Edge of Destiny",
+          "position": 72,
+          "achievedAt": "2026-09-29T06:21:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9i4uRXQmdaQ&t=3s",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 107,
+          "achievedAt": "2026-06-25T01:43:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=n3UknNNYFLI",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-06-28T07:14:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IEiN0-UwipA",
+          "verified": false
+        },
+        {
+          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
+          "levelName": "Starlit Stroll",
+          "position": 139,
+          "achievedAt": "2025-02-22T07:09:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=U7MM74dTXuI",
+          "verified": true
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 142,
+          "achievedAt": "2026-09-13T18:27:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=53uktbkQySQ",
+          "verified": false
+        },
+        {
+          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
+          "levelName": "Kenos",
+          "position": 148,
+          "achievedAt": "2025-06-10T03:05:51.298686Z",
+          "videoUrl": "https://drive.google.com/file/d/1FmLN3DEDZiIlu5n0P7l3MNfadfYT-hD9",
+          "verified": false
+        }
+      ]
+    },
     "e9459472-8054-4117-8e37-792e282e4036": {
       "name": "swiborg",
       "levels": [
@@ -46987,6 +47040,35 @@
           "position": 119,
           "achievedAt": "2026-07-08T15:01:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=QMgkB-mUyUs",
+          "verified": false
+        }
+      ]
+    },
+    "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2": {
+      "name": "Enfur",
+      "levels": [
+        {
+          "levelId": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
+          "levelName": "Mayhem",
+          "position": 81,
+          "achievedAt": "2026-09-29T06:38:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zuxO27u11wE",
+          "verified": false
+        },
+        {
+          "levelId": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
+          "levelName": "Viprin UFO",
+          "position": 121,
+          "achievedAt": "2026-08-01T05:14:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=MbaQYEtQUfk",
+          "verified": false
+        },
+        {
+          "levelId": "5476e168-1f14-4250-b7df-d01f2d029367",
+          "levelName": "Levigo",
+          "position": 126,
+          "achievedAt": "2026-05-09T01:19:58Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9oznLR2OWkw",
           "verified": false
         }
       ]
@@ -52196,51 +52278,6 @@
           "position": 128,
           "achievedAt": "2026-07-20T22:39:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=AdPjiC6kc58",
-          "verified": false
-        }
-      ]
-    },
-    "c72926bb-fb7f-4db0-a519-8aef42b04ad3": {
-      "name": "N0ctaXI",
-      "levels": [
-        {
-          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
-          "levelName": "Sonic Wave Infinity",
-          "position": 107,
-          "achievedAt": "2026-06-25T01:43:40Z",
-          "videoUrl": "https://www.youtube.com/watch?v=n3UknNNYFLI",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 120,
-          "achievedAt": "2026-06-28T07:14:34Z",
-          "videoUrl": "https://www.youtube.com/watch?v=IEiN0-UwipA",
-          "verified": false
-        },
-        {
-          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
-          "levelName": "Starlit Stroll",
-          "position": 139,
-          "achievedAt": "2025-02-22T07:09:11Z",
-          "videoUrl": "https://www.youtube.com/watch?v=U7MM74dTXuI",
-          "verified": true
-        },
-        {
-          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
-          "levelName": "Aerial Gleam",
-          "position": 142,
-          "achievedAt": "2026-09-13T18:27:37Z",
-          "videoUrl": "https://www.youtube.com/watch?v=53uktbkQySQ",
-          "verified": false
-        },
-        {
-          "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
-          "levelName": "Kenos",
-          "position": 148,
-          "achievedAt": "2025-06-10T03:05:51.298686Z",
-          "videoUrl": "https://drive.google.com/file/d/1FmLN3DEDZiIlu5n0P7l3MNfadfYT-hD9",
           "verified": false
         }
       ]
@@ -59112,27 +59149,6 @@
         }
       ]
     },
-    "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2": {
-      "name": "Enfur",
-      "levels": [
-        {
-          "levelId": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
-          "levelName": "Viprin UFO",
-          "position": 121,
-          "achievedAt": "2026-08-01T05:14:31Z",
-          "videoUrl": "https://www.youtube.com/watch?v=MbaQYEtQUfk",
-          "verified": false
-        },
-        {
-          "levelId": "5476e168-1f14-4250-b7df-d01f2d029367",
-          "levelName": "Levigo",
-          "position": 126,
-          "achievedAt": "2026-05-09T01:19:58Z",
-          "videoUrl": "https://www.youtube.com/watch?v=9oznLR2OWkw",
-          "verified": false
-        }
-      ]
-    },
     "97aa6b44-4fde-4d4a-838a-c1e828a6099f": {
       "name": "Eyeballin",
       "levels": [
@@ -62024,6 +62040,19 @@
           "position": 130,
           "achievedAt": "2026-09-15T00:53:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=1YgpaDkqrIU",
+          "verified": false
+        }
+      ]
+    },
+    "b9fc6066-efec-4546-b75b-22666a17e529": {
+      "name": "August ᡣ𐭩",
+      "levels": [
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 130,
+          "achievedAt": "2026-09-29T04:13:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dC5lpraEDuQ",
           "verified": false
         }
       ]
