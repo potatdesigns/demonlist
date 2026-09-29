@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T23:34:39.361Z",
+  "generatedAt": "2026-09-29T00:43:22.748Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -1862,7 +1862,7 @@
       ],
       "description": "A level with a pink/red color scheme that is entirely wave, as the name suggests. The level remained unrated until CBF was added to the game and the level was eventually rated a while later.",
       "song": 383158,
-      "edel_enjoyment": 40,
+      "edel_enjoyment": 46,
       "is_edel_pending": true,
       "gddl_tier": 39,
       "nlw_tier": null,
@@ -1956,7 +1956,7 @@
         "Nerve Control",
         "Wave"
       ],
-      "description": "Superbuffed remake of Hyper Paracosm, decorated by declanlc. Sadly not the easy demon",
+      "description": "Superbuffed remake of Hyper Paracosm, created by declanlc and Renn241. Notably extremely first half heavy, with most of the difficulty concentrated in the first wave parts. Sadly not the easy demon",
       "song": 469490,
       "edel_enjoyment": 66.66666667,
       "is_edel_pending": true,
@@ -4316,7 +4316,7 @@
       ],
       "description": "A pure solo project which started out in early 2.2 and took over a year to verify. To fit its Camellia song, the visuals are extremely trippy with relentless camera effect usage and rapid pulses, which are especially apparent in the second half.",
       "song": null,
-      "edel_enjoyment": 77.22222222,
+      "edel_enjoyment": 79.5,
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
