@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T11:47:06.958Z",
+  "generatedAt": "2026-09-30T17:27:49.687Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -37376,6 +37376,14 @@
           "verified": false
         },
         {
+          "levelId": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+          "levelName": "BRITNEY NO SCLEARS",
+          "position": 68,
+          "achievedAt": "2026-09-25T08:31:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=USHKgC3nmP4",
+          "verified": false
+        },
+        {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
           "position": 70,
@@ -37505,6 +37513,51 @@
           "position": 130,
           "achievedAt": "2026-03-27T21:51:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=w4zoffull6g",
+          "verified": false
+        }
+      ]
+    },
+    "4a314577-2757-4c89-a0d5-381e05b48dea": {
+      "name": "salv",
+      "levels": [
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 57,
+          "achievedAt": "2026-09-30T03:11:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=bQI1nblvigE",
+          "verified": false
+        },
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 74,
+          "achievedAt": "2026-08-15T06:46:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dfGb5pbJJTM",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 107,
+          "achievedAt": "2025-11-12T06:29:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=10l5nEN-CmM",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-09-04T02:21:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=okKgRD_tx8Q",
+          "verified": false
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 142,
+          "achievedAt": "2026-07-02T03:51:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=UD9VvljheAA",
           "verified": false
         }
       ]
@@ -44798,43 +44851,6 @@
           "position": 120,
           "achievedAt": "2025-04-18T04:11:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=xSEQ1pVPzao",
-          "verified": false
-        }
-      ]
-    },
-    "4a314577-2757-4c89-a0d5-381e05b48dea": {
-      "name": "salv",
-      "levels": [
-        {
-          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
-          "levelName": "Solar Flare",
-          "position": 74,
-          "achievedAt": "2026-08-15T06:46:54Z",
-          "videoUrl": "https://www.youtube.com/watch?v=dfGb5pbJJTM",
-          "verified": false
-        },
-        {
-          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
-          "levelName": "Sonic Wave Infinity",
-          "position": 107,
-          "achievedAt": "2025-11-12T06:29:43Z",
-          "videoUrl": "https://www.youtube.com/watch?v=10l5nEN-CmM",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 119,
-          "achievedAt": "2026-09-04T02:21:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=okKgRD_tx8Q",
-          "verified": false
-        },
-        {
-          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
-          "levelName": "Aerial Gleam",
-          "position": 142,
-          "achievedAt": "2026-07-02T03:51:44Z",
-          "videoUrl": "https://www.youtube.com/watch?v=UD9VvljheAA",
           "verified": false
         }
       ]
