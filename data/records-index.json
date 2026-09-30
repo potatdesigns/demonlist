@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T03:36:06.693Z",
+  "generatedAt": "2026-09-30T11:47:06.958Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -34160,7 +34160,7 @@
       ]
     },
     "c9ea430a-1e84-4de3-8808-43a1e20626b1": {
-      "name": "c",
+      "name": "Bennu",
       "levels": [
         {
           "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
@@ -58593,6 +58593,14 @@
           "position": 120,
           "achievedAt": "2026-06-15T02:52:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=FiTWlbcr3AI",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 133,
+          "achievedAt": "2026-09-30T04:24:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=SNGJjngI2jU",
           "verified": false
         }
       ]
