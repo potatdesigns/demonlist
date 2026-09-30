@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T21:46:35.915Z",
+  "generatedAt": "2026-09-30T03:36:06.693Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -37132,11 +37132,27 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 118,
+          "achievedAt": "2026-09-19T19:01:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=cRqkxpkK6-I",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 119,
           "achievedAt": "2024-09-22T19:21:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=g_AqolHq9OA",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-09-18T12:47:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=KgihadzTYBA",
           "verified": false
         },
         {
@@ -42017,6 +42033,27 @@
           "position": 69,
           "achievedAt": "2026-09-18T17:03:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=ImuxFZ47MCY",
+          "verified": false
+        }
+      ]
+    },
+    "f3f97518-649b-473e-91f5-726c9b412fe3": {
+      "name": "TGM05",
+      "levels": [
+        {
+          "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
+          "levelName": "Gaggatrondra",
+          "position": 69,
+          "achievedAt": "2026-09-29T21:26:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=heXuWalAtm4",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2021-08-10T16:45:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=waquLEcCxM4",
           "verified": false
         }
       ]
@@ -50786,6 +50823,14 @@
           "verified": false
         },
         {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 127,
+          "achievedAt": "2026-09-23T05:45:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=p-ZUMeIHZrk",
+          "verified": false
+        },
+        {
           "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
           "levelName": "UNKNOWN",
           "position": 128,
@@ -52465,19 +52510,6 @@
           "achievedAt": "2026-02-08T20:03:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=JptG7rwti1U",
           "verified": true
-        }
-      ]
-    },
-    "f3f97518-649b-473e-91f5-726c9b412fe3": {
-      "name": "TGM05",
-      "levels": [
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 108,
-          "achievedAt": "2021-08-10T16:45:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=waquLEcCxM4",
-          "verified": false
         }
       ]
     },
@@ -54542,6 +54574,14 @@
           "position": 108,
           "achievedAt": "2026-08-20T22:00:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=UHcm8LKWHO8",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 128,
+          "achievedAt": "2026-09-29T23:08:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=oFWSKEaVmws",
           "verified": false
         }
       ]
