@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:17:31.329Z",
+  "generatedAt": "2026-10-02T21:44:37.627Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -45484,6 +45484,35 @@
         }
       ]
     },
+    "5ff5a80e-17d2-4661-be68-c6e9e2bd7ce1": {
+      "name": "SlushEgd",
+      "levels": [
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 74,
+          "achievedAt": "2026-10-02T09:19:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7oqxi8xWm1I",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 119,
+          "achievedAt": "2026-08-13T09:14:42Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dcA-bAyv5ZU",
+          "verified": false
+        },
+        {
+          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
+          "levelName": "Graceful",
+          "position": 137,
+          "achievedAt": "2026-07-28T03:39:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=HbQkJ_sbHmg",
+          "verified": false
+        }
+      ]
+    },
     "7f4040b9-044e-4dcc-9090-ab235138a071": {
       "name": "Peanwean",
       "levels": [
@@ -58128,27 +58157,6 @@
           "position": 119,
           "achievedAt": "2026-08-08T21:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=GgsOEf7A3lM",
-          "verified": false
-        }
-      ]
-    },
-    "5ff5a80e-17d2-4661-be68-c6e9e2bd7ce1": {
-      "name": "SlushEgd",
-      "levels": [
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 119,
-          "achievedAt": "2026-08-13T09:14:42Z",
-          "videoUrl": "https://www.youtube.com/watch?v=dcA-bAyv5ZU",
-          "verified": false
-        },
-        {
-          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
-          "levelName": "Graceful",
-          "position": 137,
-          "achievedAt": "2026-07-28T03:39:29Z",
-          "videoUrl": "https://www.youtube.com/watch?v=HbQkJ_sbHmg",
           "verified": false
         }
       ]
