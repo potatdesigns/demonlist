@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:45:37.018Z",
+  "generatedAt": "2026-10-02T17:17:31.329Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -48361,6 +48361,35 @@
         }
       ]
     },
+    "25920935-573b-4400-9876-773a87ab9a88": {
+      "name": "Choko",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 83,
+          "achievedAt": "2026-09-24T12:39:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ASOlrA_F_P4",
+          "verified": false
+        },
+        {
+          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
+          "levelName": "Terminal Rampancy",
+          "position": 124,
+          "achievedAt": "2025-12-04T07:26:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-agIwM9Tm7s",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 128,
+          "achievedAt": "2025-09-08T08:39:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=KholRDY3gaM",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
@@ -60168,27 +60197,6 @@
           "position": 124,
           "achievedAt": "2025-11-20T02:14:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=LnmXw4xUc00",
-          "verified": false
-        }
-      ]
-    },
-    "25920935-573b-4400-9876-773a87ab9a88": {
-      "name": "Choko",
-      "levels": [
-        {
-          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
-          "levelName": "Terminal Rampancy",
-          "position": 124,
-          "achievedAt": "2025-12-04T07:26:01Z",
-          "videoUrl": "https://www.youtube.com/watch?v=-agIwM9Tm7s",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 128,
-          "achievedAt": "2025-09-08T08:39:16Z",
-          "videoUrl": "https://www.youtube.com/watch?v=KholRDY3gaM",
           "verified": false
         }
       ]
