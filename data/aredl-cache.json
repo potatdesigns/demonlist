@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T14:16:57.267Z",
+  "generatedAt": "2026-10-02T19:38:42.709Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -3783,7 +3783,10 @@
       "two_player": false,
       "tags": [
         "2.1",
-        "Long"
+        "Long",
+        "Unbalanced",
+        "Learny",
+        "Gimmicky"
       ],
       "description": null,
       "song": null,
