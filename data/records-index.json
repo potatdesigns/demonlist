@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T03:40:30.066Z",
+  "generatedAt": "2026-10-02T11:45:37.018Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -25925,6 +25925,14 @@
           "verified": false
         },
         {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 127,
+          "achievedAt": "2026-09-29T12:29:25Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-8_vlqJr048",
+          "verified": false
+        },
+        {
           "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
           "levelName": "Shukketsu",
           "position": 130,
@@ -42028,6 +42036,14 @@
           "position": 68,
           "achievedAt": "2026-07-05T03:26:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=_utShWePouY",
+          "verified": false
+        },
+        {
+          "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
+          "levelName": "Gaggatrondra",
+          "position": 69,
+          "achievedAt": "2026-09-26T03:44:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=CH7CvFnnh84",
           "verified": false
         }
       ]
