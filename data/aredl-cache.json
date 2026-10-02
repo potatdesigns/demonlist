@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T21:30:19.418Z",
+  "generatedAt": "2026-10-02T01:11:19.813Z",
   "levels": [
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -554,11 +554,6 @@
           "global_name": "At424"
         },
         {
-          "id": "33685e89-aa19-49ee-89ba-b9795fbb002d",
-          "username": "0038da04c",
-          "global_name": "Dorvict"
-        },
-        {
           "id": "338f88aa-ac96-43f4-9bbc-7d935d2b3613",
           "username": "f8e2d8f32",
           "global_name": "Intensa"
@@ -652,6 +647,11 @@
           "id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
           "username": "lordvadercraft",
           "global_name": "LordVadercraft"
+        },
+        {
+          "id": "ec62c885-31be-4e68-a66a-d016a7fe7b4c",
+          "username": "dorvict",
+          "global_name": "dorvict"
         },
         {
           "id": "5f868091-85c0-455e-b555-7f74bac1718d",
@@ -4071,7 +4071,7 @@
       ],
       "description": null,
       "song": 1225278,
-      "edel_enjoyment": 34.75,
+      "edel_enjoyment": 42,
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
@@ -4368,8 +4368,8 @@
       ],
       "description": null,
       "song": 1172938,
-      "edel_enjoyment": 79.16666667,
-      "is_edel_pending": true,
+      "edel_enjoyment": 76.42857143,
+      "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
       "publisher": {
@@ -6979,7 +6979,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 63.75,
+      "edel_enjoyment": 67.77777778,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
@@ -7745,7 +7745,7 @@
       ],
       "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
       "song": 10003020,
-      "edel_enjoyment": 83,
+      "edel_enjoyment": 85.83333333,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -9908,11 +9908,6 @@
           "global_name": "Stilluetto"
         },
         {
-          "id": "33685e89-aa19-49ee-89ba-b9795fbb002d",
-          "username": "0038da04c",
-          "global_name": "Dorvict"
-        },
-        {
           "id": "37b3d526-3692-4ee3-b469-526537785330",
           "username": "xsolarion",
           "global_name": "solarion"
@@ -10296,6 +10291,11 @@
           "id": "71913106-dba1-475a-97a9-f0029482ef59",
           "username": "tunaxgd",
           "global_name": "Tunax"
+        },
+        {
+          "id": "ec62c885-31be-4e68-a66a-d016a7fe7b4c",
+          "username": "dorvict",
+          "global_name": "dorvict"
         }
       ]
     },
@@ -12334,7 +12334,7 @@
       ],
       "description": "Claustrophobic and colourful sequel to the equally claustrophobic Cognition. Loses the old fashioned style song for a more upbeat Creo song, similar to Carcano. Surprisingly one of the most dropped extreme verifications, going through 6 verifiers.",
       "song": 829777,
-      "edel_enjoyment": 67.25862069,
+      "edel_enjoyment": 68.01666667,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -12402,7 +12402,7 @@
       ],
       "description": "Retro 1.9 styled extreme that only uses the UFO gamemode. Gameplay is much harder than it looks due to the unpredictable click-patterns and sketchy routes. Includes an upbeat Waterflame song and references to Pacman and Flappy Bird levels.",
       "song": 682504,
-      "edel_enjoyment": 76.08333333,
+      "edel_enjoyment": 77.69230769,
       "is_edel_pending": false,
       "gddl_tier": 34.8,
       "nlw_tier": null,
@@ -12781,7 +12781,7 @@
       ],
       "description": null,
       "song": 60919,
-      "edel_enjoyment": 67.66666667,
+      "edel_enjoyment": 67,
       "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -14315,7 +14315,7 @@
       ],
       "description": "Megacollab and superbuffed combination of kowareta and unrated extreme Shibireta. Many community members on Twitter were advocating for Fragile to get rated, starting the popular #RateFragile hashtag.",
       "song": null,
-      "edel_enjoyment": 45.3125,
+      "edel_enjoyment": 46.36363636,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -14407,7 +14407,7 @@
       ],
       "description": "Roadbose's sendoff to the ICE Carbon series; a core-styled level built in the 1.9GDPS with symmetrical structuring, abstract shapes and highly detailed designs. Its 2m 30s runtime consists of difficult ship and wave sections, separated in the middle by a minute-long guitar solo interlude with easier gameplay.",
       "song": null,
-      "edel_enjoyment": 57.25,
+      "edel_enjoyment": 60.15384615,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
