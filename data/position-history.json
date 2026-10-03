@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T08:41:15.038Z",
+  "generatedAt": "2026-10-03T18:25:44.720Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -404654,6 +404654,7 @@
       "6d992b03-c09d-465a-a7bc-ee80cfbc1e05",
       "a2ca31a7-b5fe-43c0-b11b-6017e088b16e",
       "585cd32a-4081-49d5-bcde-b8bd547b7821",
+      "565bf020-d050-4121-b77e-7e44c3cbd5f8",
       "7156560f-90c1-48f8-9559-6be13c2cd1fe",
       "7e53f4e9-58a7-4464-b673-0fdd4f02cd45",
       "f7c2244b-b7f4-409e-bb54-c4fd9034b4b7",
@@ -404701,7 +404702,6 @@
       "f43f4ee3-e9dd-4ece-a535-902196ba9ef5",
       "f4bcae5e-f4f2-4d61-8440-b7cc8b5ce623",
       "94c9a5d9-9ae0-48f1-8df6-88dd918d8f21",
-      "565bf020-d050-4121-b77e-7e44c3cbd5f8",
       "4cd4666e-180c-4d05-a041-8577e351984f",
       "8f4144f6-e55d-43ab-883a-cb08a67a6abb",
       "43fd072c-569c-407a-aca2-38d1248f7450",
@@ -406946,6 +406946,6 @@
       "793a980a-1bf3-4bbc-91cb-ae7c6639424a": "Necron",
       "0d51b3d6-635b-4702-8207-e61ea6c2702f": "Never Afraid"
     },
-    "lastEventFingerprint": "2026-10-03T05:30:11.252467Z|8c8d3627-e9ae-40eb-9251-a4e1f37f45d2|{\"Raised\":{\"new_position\":757,\"old_position\":781}}"
+    "lastEventFingerprint": "2026-10-03T16:37:57.566794Z|565bf020-d050-4121-b77e-7e44c3cbd5f8|{\"Raised\":{\"new_position\":1433,\"old_position\":1480}}"
   }
 }
