@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:35:47.515Z",
+  "generatedAt": "2026-10-03T20:29:23.265Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -14040,6 +14040,14 @@
           "position": 57,
           "achievedAt": "2026-07-19T23:53:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=y5X_fgaA7WU",
+          "verified": false
+        },
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 59,
+          "achievedAt": "2026-09-29T01:02:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=qZKYlIVhVy0",
           "verified": false
         },
         {
@@ -45963,7 +45971,7 @@
       ]
     },
     "85dcbaaf-7009-427f-bbeb-6be5a56caae5": {
-      "name": "piss cat of hope",
+      "name": "the sock of rage",
       "levels": [
         {
           "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
@@ -63283,6 +63291,19 @@
           "position": 137,
           "achievedAt": "2026-08-31T16:49:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=tGUA63hDLSQ",
+          "verified": false
+        }
+      ]
+    },
+    "5938faab-ed08-4d10-acd2-3e17cdda9b32": {
+      "name": "Xarvint",
+      "levels": [
+        {
+          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
+          "levelName": "Graceful",
+          "position": 137,
+          "achievedAt": "2026-10-03T17:33:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-xzsojBPwXQ",
           "verified": false
         }
       ]
