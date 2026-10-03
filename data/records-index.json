@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T21:44:37.627Z",
+  "generatedAt": "2026-10-03T03:25:00.698Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -16625,6 +16625,14 @@
           "position": 38,
           "achievedAt": "2026-03-28T20:27:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=tC7vAFXs3Vo",
+          "verified": false
+        },
+        {
+          "levelId": "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
+          "levelName": "BEING HOME",
+          "position": 39,
+          "achievedAt": "2026-09-19T06:36:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5cP5n1gPWZg",
           "verified": false
         },
         {
@@ -44157,6 +44165,14 @@
           "position": 72,
           "achievedAt": "2026-08-21T20:39:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=mRO_jMysSzk",
+          "verified": false
+        },
+        {
+          "levelId": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
+          "levelName": "Mayhem",
+          "position": 81,
+          "achievedAt": "2026-10-02T18:41:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0iPA0bNZmhQ",
           "verified": false
         },
         {
