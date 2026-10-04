@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T11:41:11.587Z",
+  "generatedAt": "2026-10-04T16:19:43.368Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -42970,7 +42970,7 @@
         }
       ]
     },
-    "389b9fbb-0262-48da-91fc-1be18d040562": {
+    "e7da6d1a-d6e1-43d3-85c0-5b304831f4f8": {
       "name": "CoJong",
       "levels": [
         {
@@ -56051,6 +56051,19 @@
           "position": 110,
           "achievedAt": "2026-09-12T18:11:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=sHYBIt_igjk",
+          "verified": false
+        }
+      ]
+    },
+    "8f708a7e-f71c-45cc-8aff-f8ae363273ca": {
+      "name": "Chef",
+      "levels": [
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 110,
+          "achievedAt": "2026-09-23T00:53:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=aegVI0UPJYo",
           "verified": false
         }
       ]
