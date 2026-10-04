@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T18:25:44.720Z",
+  "generatedAt": "2026-10-04T20:36:29.353Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -351271,6 +351271,11 @@
         "date": "2026-10-03",
         "position": 1352,
         "reason": "Moved down — Neophyte was placed at #458"
+      },
+      {
+        "date": "2026-10-04",
+        "position": 1353,
+        "reason": "Moved down — story 2 was raised to #1193"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -404414,6 +404419,7 @@
       "3ec2215a-7185-47e5-8cb7-cb14bf94f125",
       "c51019fb-d5ac-4455-9914-4da013bc5b06",
       "e0b4c444-e44f-461c-a802-d8438961ca77",
+      "a767481b-b4e5-446d-8c0d-63df0b6ac8db",
       "b79818b0-5de7-4051-a1b0-5db810044814",
       "3d75c1b8-0f6f-4f2d-bf46-6e17ccfc38e2",
       "29cc0df6-f665-442b-864a-ee990587e035",
@@ -404684,7 +404690,6 @@
       "c1260749-c41f-4a21-8940-6a90999c1c22",
       "042e302e-8af7-4a3c-a0ae-8cd9feea358c",
       "0ae8971f-4817-442d-b2d6-bfb22ffda5da",
-      "a767481b-b4e5-446d-8c0d-63df0b6ac8db",
       "822a9a23-b2ee-4a52-8d65-19f73f95df69",
       "7ba400c0-b9eb-4ced-a981-58f3addbf91b",
       "7d2968ac-9086-4137-a474-f5e351cd6747",
@@ -406946,6 +406951,6 @@
       "793a980a-1bf3-4bbc-91cb-ae7c6639424a": "Necron",
       "0d51b3d6-635b-4702-8207-e61ea6c2702f": "Never Afraid"
     },
-    "lastEventFingerprint": "2026-10-03T16:37:57.566794Z|565bf020-d050-4121-b77e-7e44c3cbd5f8|{\"Raised\":{\"new_position\":1433,\"old_position\":1480}}"
+    "lastEventFingerprint": "2026-10-04T18:10:38.035602Z|a767481b-b4e5-446d-8c0d-63df0b6ac8db|{\"Raised\":{\"new_position\":1193,\"old_position\":1463}}"
   }
 }
