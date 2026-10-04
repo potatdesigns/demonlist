@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T03:52:11.498Z",
+  "generatedAt": "2026-10-04T11:41:11.587Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -20560,6 +20560,14 @@
           "position": 30,
           "achievedAt": "2026-08-04T19:44:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=J0bM0E_fp0Q",
+          "verified": false
+        },
+        {
+          "levelId": "51a1538a-b53a-4f31-9fed-715b4e9e5951",
+          "levelName": "CHIL",
+          "position": 41,
+          "achievedAt": "2026-09-27T23:12:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XXINKZznyMQ",
           "verified": false
         },
         {
@@ -44068,6 +44076,14 @@
           "verified": false
         },
         {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 127,
+          "achievedAt": "2026-10-02T23:35:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YbWrZSFtuIM",
+          "verified": false
+        },
+        {
           "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
           "levelName": "Trueffet",
           "position": 146,
@@ -44939,6 +44955,27 @@
           "position": 83,
           "achievedAt": "2026-06-17T19:06:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=fG2uSgsenyA",
+          "verified": false
+        }
+      ]
+    },
+    "e84f978a-7c51-4860-beb4-e52c678f1701": {
+      "name": "Wave",
+      "levels": [
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 74,
+          "achievedAt": "2026-04-04T09:25:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LgMIKzgAJng",
+          "verified": false
+        },
+        {
+          "levelId": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
+          "levelName": "Between Duality",
+          "position": 113,
+          "achievedAt": "2026-09-30T01:58:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=659Y5XXeDqs",
           "verified": false
         }
       ]
@@ -55594,6 +55631,19 @@
         }
       ]
     },
+    "c374d1c0-f6f5-4752-a2f2-c1b450b0cd4a": {
+      "name": "Hyperex",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 108,
+          "achievedAt": "2026-09-30T06:02:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=DuxTd7Iq1bQ",
+          "verified": false
+        }
+      ]
+    },
     "dfe05da5-42cd-4f12-9dcd-c40a6b1cafbc": {
       "name": "Link120",
       "levels": [
@@ -60220,6 +60270,14 @@
           "achievedAt": "2026-08-05T03:19:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=xCzyslRhCzw",
           "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 130,
+          "achievedAt": "2026-09-29T22:54:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6bb5ylVe7JU",
+          "verified": false
         }
       ]
     },
@@ -61046,6 +61104,19 @@
           "position": 126,
           "achievedAt": "2026-08-19T08:30:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=m_hE52uy9vs",
+          "verified": false
+        }
+      ]
+    },
+    "a7fa2011-415c-4a8f-844b-b27e803c4f32": {
+      "name": "BlastYourSelf",
+      "levels": [
+        {
+          "levelId": "5476e168-1f14-4250-b7df-d01f2d029367",
+          "levelName": "Levigo",
+          "position": 126,
+          "achievedAt": "2026-09-10T13:07:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OnWWuF-Eu2I",
           "verified": false
         }
       ]
@@ -63531,6 +63602,19 @@
           "position": 138,
           "achievedAt": "2026-08-22T13:03:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=K5fLC9jMNkA",
+          "verified": false
+        }
+      ]
+    },
+    "2d68acaf-f8b2-4bbd-9a83-20eb99720cb6": {
+      "name": "andiMeroda",
+      "levels": [
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 138,
+          "achievedAt": "2026-09-09T12:45:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Bnia7U3W_d4",
           "verified": false
         }
       ]
