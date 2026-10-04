@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:29:23.265Z",
+  "generatedAt": "2026-10-04T03:52:11.498Z",
   "players": {
     "baca2bcc-c9b7-421a-aa5e-f02c08b3e74a": {
       "name": "wPopoff",
@@ -26419,6 +26419,14 @@
           "verified": false
         },
         {
+          "levelId": "b158e365-0f31-485e-816d-be35f8623bf2",
+          "levelName": "idontknowwhatthisis",
+          "position": 131,
+          "achievedAt": "2026-10-02T08:34:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=O35bfCHtW-0",
+          "verified": false
+        },
+        {
           "levelId": "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
           "levelName": "Kenos",
           "position": 148,
@@ -36156,6 +36164,27 @@
         }
       ]
     },
+    "34ff445d-464e-4c45-8e47-2808842670bd": {
+      "name": "Reaction",
+      "levels": [
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 54,
+          "achievedAt": "2026-10-03T20:12:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9dWFrlcw0MI",
+          "verified": false
+        },
+        {
+          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
+          "levelName": "COMBUSTION",
+          "position": 64,
+          "achievedAt": "2026-08-25T20:32:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=gPp1yuMUq7g",
+          "verified": false
+        }
+      ]
+    },
     "a1ac4924-9f5d-416b-8a21-991aea45a2b4": {
       "name": "Amplitron",
       "levels": [
@@ -37306,7 +37335,7 @@
       ]
     },
     "166846fc-d9eb-413d-829e-4061a6e852e6": {
-      "name": "Big B Berna Triple T Otis",
+      "name": "Staticon",
       "levels": [
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
@@ -41715,19 +41744,6 @@
         }
       ]
     },
-    "34ff445d-464e-4c45-8e47-2808842670bd": {
-      "name": "Reaction",
-      "levels": [
-        {
-          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
-          "levelName": "COMBUSTION",
-          "position": 64,
-          "achievedAt": "2026-08-25T20:32:56Z",
-          "videoUrl": "https://www.youtube.com/watch?v=gPp1yuMUq7g",
-          "verified": false
-        }
-      ]
-    },
     "decb742e-ae06-4867-bfde-e84ad2bb025f": {
       "name": "Gnamolor",
       "levels": [
@@ -43381,7 +43397,7 @@
       ]
     },
     "2c7905b4-4acc-4655-86ff-d2c88183872f": {
-      "name": "[NATE] Slymii",
+      "name": "Slymii",
       "levels": [
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
@@ -56758,6 +56774,19 @@
         }
       ]
     },
+    "8b78c1ce-e0e2-48fc-b96e-dc1ec025506f": {
+      "name": "bufet",
+      "levels": [
+        {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 118,
+          "achievedAt": "2026-10-03T09:56:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PEK1MrTYi_8",
+          "verified": false
+        }
+      ]
+    },
     "c08944ce-3d77-4630-91de-73cfbfda5585": {
       "name": "nSwish",
       "levels": [
@@ -59832,6 +59861,19 @@
           "position": 120,
           "achievedAt": "2026-09-27T20:30:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=cSzZvXmZbu0",
+          "verified": false
+        }
+      ]
+    },
+    "096b5bf2-b9bc-4e57-8900-2e143b6b8a9e": {
+      "name": "Christuh",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 120,
+          "achievedAt": "2026-10-03T11:44:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-BlUv8rg1To&t=8s",
           "verified": false
         }
       ]
