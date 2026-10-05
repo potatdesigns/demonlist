@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:08:57.461Z",
+  "generatedAt": "2026-10-05T09:09:34.738Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3108,6 +3108,27 @@
         "viewsCheckedAt": "2026-10-05T09:08:57.461Z"
       },
       "discoveredAt": "2026-10-05T09:08:57.461Z"
+    },
+    "1221db41-c878-4786-98df-10193205d54e": {
+      "name": "adjunto adnominal",
+      "position": 135,
+      "verifier": {
+        "id": "GDnfBeXo11A",
+        "url": "https://www.youtube.com/watch?v=GDnfBeXo11A",
+        "title": "adjunto adnominal (showcase and verification)",
+        "channel": "Sou um Peixe",
+        "viewCount": 3437,
+        "viewsCheckedAt": "2026-10-05T09:09:34.738Z"
+      },
+      "showcase": {
+        "id": "VuYWxK3-mUY",
+        "url": "https://www.youtube.com/watch?v=VuYWxK3-mUY",
+        "title": "【4K】 \"adjunto adnominal\" by soumpeixe | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 3215,
+        "viewsCheckedAt": "2026-10-05T09:09:34.738Z"
+      },
+      "discoveredAt": "2026-10-05T09:09:34.738Z"
     }
   },
   "channelIndex": {
@@ -113722,7 +113743,6 @@
     }
   },
   "queue": [
-    "1221db41-c878-4786-98df-10193205d54e",
     "6f5299ae-a62f-4701-b5a8-ace004b8f7ef"
   ]
 }
