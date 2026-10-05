@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:09:56.305Z",
+  "generatedAt": "2026-10-05T09:44:47.186Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -21,7 +21,7 @@
         "Ship",
         "Wave"
       ],
-      "description": "The End. The Beginning.",
+      "description": "The End.",
       "song": 482872,
       "edel_enjoyment": null,
       "is_edel_pending": false,
