@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T02:10:36.584Z",
+  "generatedAt": "2026-10-05T09:08:57.461Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2836,69 +2836,6 @@
       },
       "discoveredAt": "2026-10-04T13:51:31.107Z"
     },
-    "7103a26a-fb0e-4e4b-b3a6-716007df87c1": {
-      "name": "Kenos",
-      "position": 148,
-      "verifier": {
-        "id": "Bs1kVySdUtI",
-        "url": "https://www.youtube.com/watch?v=Bs1kVySdUtI",
-        "title": "KENOS VERIFIED (Extreme Demon) by Bianox & More!",
-        "channel": "npesta",
-        "viewCount": 7795634,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "showcase": {
-        "id": "TfwUCuC6Z2I",
-        "url": "https://www.youtube.com/watch?v=TfwUCuC6Z2I",
-        "title": "【4K】 \"Kenos\" by npesta (Extreme Demon) [11K SPECIAL] | Geometry Dash 2.11",
-        "channel": "Just a GD player",
-        "viewCount": 1095465,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "discoveredAt": "2026-10-04T13:51:31.107Z"
-    },
-    "56aee27a-8b38-4a03-9baa-6d033211832a": {
-      "name": "Fragile",
-      "position": 149,
-      "verifier": {
-        "id": "XfXzGv0oALw",
-        "url": "https://www.youtube.com/watch?v=XfXzGv0oALw",
-        "title": "Fragile Update VERIFIED",
-        "channel": "vaen",
-        "viewCount": 71309,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "showcase": {
-        "id": "vKGBWS04gK0",
-        "url": "https://www.youtube.com/watch?v=vKGBWS04gK0",
-        "title": "【4K】 \"Fragile\" by EndLevel & more (Extreme Demon) | Geometry Dash 2.11",
-        "channel": "Just a GD player",
-        "viewCount": 322394,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "discoveredAt": "2026-10-04T13:51:31.107Z"
-    },
-    "94d2322d-b1f2-44cc-909d-6cf18cd644ee": {
-      "name": "chrome hearts",
-      "position": 150,
-      "verifier": {
-        "id": "7o3I45B8-yY",
-        "url": "https://www.youtube.com/watch?v=7o3I45B8-yY",
-        "title": "[Verified] chrome hearts by Roadbose 100%",
-        "channel": "산갈치",
-        "viewCount": 41926,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "showcase": {
-        "id": "ZaDiR2pGOK8",
-        "url": "https://www.youtube.com/watch?v=ZaDiR2pGOK8",
-        "title": "【4K】 \"chrome hearts\" by roadkiller | Geometry Dash 2.2",
-        "channel": "Newly Rated Extremes",
-        "viewCount": 27580,
-        "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
-      },
-      "discoveredAt": "2026-10-04T13:51:31.107Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 56,
@@ -3150,12 +3087,33 @@
         "viewsCheckedAt": "2026-10-05T02:10:35.890Z"
       },
       "discoveredAt": "2026-10-04T13:51:31.107Z"
+    },
+    "f3dd5ead-dda4-415c-affb-2308dd09a0d4": {
+      "name": "GRIEF",
+      "position": 1,
+      "verifier": {
+        "id": "fV9rheIAddk",
+        "url": "https://www.youtube.com/watch?v=fV9rheIAddk",
+        "title": "GRIEF VERIFIED",
+        "channel": "Doggie",
+        "viewCount": 1932845,
+        "viewsCheckedAt": "2026-10-05T09:08:57.461Z"
+      },
+      "showcase": {
+        "id": "bQXnREyaO34",
+        "url": "https://www.youtube.com/watch?v=bQXnREyaO34",
+        "title": "GRIEF - FULL [UNNERFED]",
+        "channel": "icedcave",
+        "viewCount": 11728651,
+        "viewsCheckedAt": "2026-10-05T09:08:57.461Z"
+      },
+      "discoveredAt": "2026-10-05T09:08:57.461Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "6k_VRCBXJ0g",
+      "newestVideoId": "_RpCX0UZBt4",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32302,12 +32260,34 @@
           ],
           "description": "Level: AURORA by FunkYFries\nID: 149563606\nSong: Courage by Horsedmusic\nhttps://www.newgrounds.com/audio/listen/754994",
           "checkedAt": "2026-10-04T13:50:50.372Z"
+        },
+        "_RpCX0UZBt4": {
+          "title": "DOGGIE VERIFIED GRIEF | NEW TOP 1",
+          "channel": "Nexus [GD]",
+          "viewCount": 2881,
+          "levelIds": [
+            "149992717",
+            "482872"
+          ],
+          "description": "Fixed audio, the other one was messed up\nVERIFIED BY @DoggieDasher \nLevel: GRIEF by Icedcave\nID: 149992717\nSong: https://www.newgrounds.com/audio/listen/482872",
+          "checkedAt": "2026-10-05T09:08:53.998Z"
+        },
+        "ApdV7ZdVcAc": {
+          "title": "If iSpyWithMyLittleEye was made in 1.0",
+          "channel": "Nexus [GD]",
+          "viewCount": 28653,
+          "levelIds": [
+            "149819333",
+            "1292756"
+          ],
+          "description": "Level: OneSpyWithMyPointOh by VPJHuk\nID: 149819333\nSong: BIKE - Tangermusic (Nakatomi Remix)\nhttps://www.newgrounds.com/audio/listen/1292756",
+          "checkedAt": "2026-10-05T09:08:53.998Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "F3wd2XQsOnM",
+      "newestVideoId": "uB8wWl6MRNI",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -56610,6 +56590,16 @@
             "149563606"
           ],
           "checkedAt": "2026-10-04T13:50:50.951Z"
+        },
+        "uB8wWl6MRNI": {
+          "title": "IT'S VERIFIED!!! | GRIEF by icedcave & more [NEW TOP 1] | 4K60FPS",
+          "channel": "Neiro",
+          "viewCount": 53871,
+          "levelIds": [
+            "482872",
+            "149992717"
+          ],
+          "checkedAt": "2026-10-05T09:08:54.577Z"
         }
       }
     },
@@ -93881,7 +93871,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "z1ZRQkpdKxI",
+      "newestVideoId": "4kVwr6Dsfk8",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -104679,12 +104669,22 @@
             "129447575"
           ],
           "checkedAt": "2026-10-04T13:50:52.716Z"
+        },
+        "4kVwr6Dsfk8": {
+          "title": "【4K】\"GREFG\" by ReymundoTK & More (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 151,
+          "levelIds": [
+            "134430850",
+            "939194"
+          ],
+          "checkedAt": "2026-10-05T09:08:56.244Z"
         }
       }
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "sLf9Vc02i9k",
+      "newestVideoId": "8p6b-4LgMz0",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -112902,6 +112902,16 @@
             "478081"
           ],
           "checkedAt": "2026-09-29T14:44:36.477Z"
+        },
+        "8p6b-4LgMz0": {
+          "title": "【4K】 \"GRIEF\" by IcEDCave & more | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 2225,
+          "levelIds": [
+            "149992717",
+            "482872"
+          ],
+          "checkedAt": "2026-10-05T09:08:56.545Z"
         }
       }
     },
@@ -113711,5 +113721,8 @@
       }
     }
   },
-  "queue": []
+  "queue": [
+    "1221db41-c878-4786-98df-10193205d54e",
+    "6f5299ae-a62f-4701-b5a8-ace004b8f7ef"
+  ]
 }
