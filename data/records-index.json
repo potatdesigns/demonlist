@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T13:22:06.035Z",
+  "generatedAt": "2026-10-05T23:37:17.693Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -8,8 +8,8 @@
           "levelId": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
           "levelName": "GRIEF",
           "position": 1,
-          "achievedAt": "2026-10-05T03:32:15Z",
-          "videoUrl": "https://www.youtube.com/watch?v=fV9rheIAddk&t=1947s",
+          "achievedAt": "2026-10-05T19:00:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=gB8slBPlOjc",
           "verified": true
         },
         {
@@ -29363,6 +29363,14 @@
           "verified": false
         },
         {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 144,
+          "achievedAt": "2026-09-29T04:58:58Z",
+          "videoUrl": "https://www.youtube.com/watch?v=toM5C43vJ4I",
+          "verified": false
+        },
+        {
           "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
           "levelName": "Trueffet",
           "position": 149,
@@ -54056,6 +54064,19 @@
         }
       ]
     },
+    "34778533-bacb-470e-8483-a3ec75436115": {
+      "name": "jackson",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 109,
+          "achievedAt": "2026-10-02T17:18:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=O9uyzDX0pjM",
+          "verified": false
+        }
+      ]
+    },
     "d5073c8d-76a1-43ba-9a18-3becf602ed20": {
       "name": "Serenity",
       "levels": [
@@ -57123,6 +57144,19 @@
         }
       ]
     },
+    "c932fc18-cf70-498e-a48a-05ca6d59255c": {
+      "name": "Novayic",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 120,
+          "achievedAt": "2026-10-04T18:26:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9vIr1ywOkF4",
+          "verified": false
+        }
+      ]
+    },
     "c3a17a45-2581-4ebc-a46e-da89f60e75d8": {
       "name": "dice88",
       "levels": [
@@ -59657,6 +59691,19 @@
         }
       ]
     },
+    "468e316a-d472-45ad-846d-55561b9f5df2": {
+      "name": "lego_piece_32557",
+      "levels": [
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 128,
+          "achievedAt": "2026-10-04T12:42:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=tCzrugM0ftA",
+          "verified": false
+        }
+      ]
+    },
     "ac1e169f-3932-4780-9932-f3027b5def81": {
       "name": "Wolly Cay",
       "levels": [
@@ -61457,7 +61504,7 @@
       ]
     },
     "3c46716f-3293-4fc4-8d1d-cbebe4e357d0": {
-      "name": "GGDoggie",
+      "name": "Tordion",
       "levels": [
         {
           "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
