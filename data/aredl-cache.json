@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:44:47.186Z",
+  "generatedAt": "2026-10-05T18:56:49.159Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -41,9 +41,9 @@
             "global_name": "Doggie"
           },
           "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=fV9rheIAddk&t=1947s",
+          "video_url": "https://www.youtube.com/watch?v=gB8slBPlOjc",
           "hide_video": false,
-          "achieved_at": "2026-10-05T03:32:15Z",
+          "achieved_at": "2026-10-05T10:05:31Z",
           "created_at": "2026-10-05T02:59:57.327283Z",
           "updated_at": "2026-10-05T02:59:57.327283Z"
         }
@@ -3159,11 +3159,6 @@
           "global_name": "Fenrrig"
         },
         {
-          "id": "81e5185e-c1ec-4520-81f2-a54c0b201988",
-          "username": "c4aa65bf2",
-          "global_name": "ryonoxios"
-        },
-        {
           "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
           "username": "5a211773f",
           "global_name": "Realvet"
@@ -3202,6 +3197,11 @@
           "id": "3d6a380b-72e1-47c2-884c-80a10d7ab9fa",
           "username": "grenadeoftacos",
           "global_name": "GrenadeofTacos"
+        },
+        {
+          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
+          "username": "rynoxiouss",
+          "global_name": "Rynoxious"
         }
       ]
     },
