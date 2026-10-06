@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:56:49.159Z",
+  "generatedAt": "2026-10-06T00:29:23.869Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -43,7 +43,7 @@
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=gB8slBPlOjc",
           "hide_video": false,
-          "achieved_at": "2026-10-05T10:05:31Z",
+          "achieved_at": "2026-10-05T19:00:11Z",
           "created_at": "2026-10-05T02:59:57.327283Z",
           "updated_at": "2026-10-05T02:59:57.327283Z"
         }
@@ -7097,7 +7097,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 67.77777778,
+      "edel_enjoyment": 71,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
@@ -13130,7 +13130,7 @@
       ],
       "description": "Learny Kowareta inspired \"art-core\" level with a groovy breakbeat song and colorful desaturated visuals. Features a slight garden theme and is flooded with community inside jokes and memes. The gameplay itself is clicksync and fast paced, with many chokepoints throughout the level. ",
       "song": null,
-      "edel_enjoyment": 64.89473684,
+      "edel_enjoyment": 65.07692308,
       "is_edel_pending": false,
       "gddl_tier": 34.81818181818182,
       "nlw_tier": null,
