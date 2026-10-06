@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:59:54.810Z",
+  "generatedAt": "2026-10-06T23:25:57.304Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -410740,8 +410740,9 @@
       "7fccf1ae-4c03-4433-9989-2a7c3eca31fb": "KISMET",
       "793a980a-1bf3-4bbc-91cb-ae7c6639424a": "Necron",
       "0d51b3d6-635b-4702-8207-e61ea6c2702f": "Never Afraid",
-      "f3dd5ead-dda4-415c-affb-2308dd09a0d4": "GRIEF"
+      "f3dd5ead-dda4-415c-affb-2308dd09a0d4": "GRIEF",
+      "0dd51335-16bc-4538-9c19-4876a7588262": "Spider Waltz"
     },
-    "lastEventFingerprint": "2026-10-06T06:50:30.169492Z|f54cb1da-2675-4cf6-ba6c-a88035a35441|{\"Lowered\":{\"new_position\":1366,\"old_position\":1176}}"
+    "lastEventFingerprint": "2026-10-06T22:00:25.637163Z|0dd51335-16bc-4538-9c19-4876a7588262|\"Pending\""
   }
 }
