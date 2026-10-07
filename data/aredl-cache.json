@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T23:25:57.055Z",
+  "generatedAt": "2026-10-07T03:04:31.134Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -7863,8 +7863,8 @@
       ],
       "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
       "song": 10003020,
-      "edel_enjoyment": 85.83333333,
-      "is_edel_pending": true,
+      "edel_enjoyment": 83.57142857,
+      "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
@@ -13370,7 +13370,7 @@
             "global_name": "soumpeixe"
           },
           "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=GDnfBeXo11A",
+          "video_url": "https://youtu.be/3jeO-uTXI6c",
           "hide_video": false,
           "achieved_at": "2026-04-04T22:34:12Z",
           "created_at": "2026-08-16T00:23:28.660750Z",
