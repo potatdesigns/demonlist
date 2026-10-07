@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T03:50:54.023Z",
+  "generatedAt": "2026-10-07T12:30:23.110Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -20380,6 +20380,14 @@
           "achievedAt": "2026-08-11T00:35:09.348805Z",
           "videoUrl": "https://www.youtube.com/watch?v=Sth67PA8XBU",
           "verified": true
+        },
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 55,
+          "achievedAt": "2026-10-07T08:25:43.783297Z",
+          "videoUrl": "https://youtu.be/H2TkHbEX__A?is=cxYQOVuuCjA_yzus",
+          "verified": true
         }
       ]
     },
@@ -35269,7 +35277,7 @@
           "position": 55,
           "achievedAt": "2025-02-13T15:54:11Z",
           "videoUrl": "https://youtu.be/H2TkHbEX__A?is=cxYQOVuuCjA_yzus",
-          "verified": true
+          "verified": false
         }
       ]
     },
