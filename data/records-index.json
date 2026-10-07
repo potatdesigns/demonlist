@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T22:11:21.208Z",
+  "generatedAt": "2026-10-07T03:50:54.023Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -27600,6 +27600,43 @@
         }
       ]
     },
+    "d8cce575-d8ec-402f-bb5e-0b1f0a8955c2": {
+      "name": "Nonchalant Sigma 🐺🐺🐺",
+      "levels": [
+        {
+          "levelId": "8bc567c3-7110-499a-b4bf-d0c5a2d5ac7c",
+          "levelName": "BEING HOME",
+          "position": 40,
+          "achievedAt": "2026-09-29T22:22:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OnU-PZkCqGM",
+          "verified": false
+        },
+        {
+          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
+          "levelName": "ORDINARY",
+          "position": 95,
+          "achievedAt": "2024-10-25T23:30:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=f1iXV_u_YPE&t=13s",
+          "verified": false
+        },
+        {
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 96,
+          "achievedAt": "2026-06-28T06:40:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=xwMgvEfHbTQ",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 134,
+          "achievedAt": "2025-04-29T22:33:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=lE_z_7pSahc",
+          "verified": false
+        }
+      ]
+    },
     "48a32b67-a6cd-42dc-9434-e5c107142882": {
       "name": "Goanga",
       "levels": [
@@ -45715,6 +45752,14 @@
           "achievedAt": "2026-09-11T19:42:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=YPHxzfR_jEI",
           "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 120,
+          "achievedAt": "2026-10-07T01:19:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jexm1_pEP5k",
+          "verified": false
         }
       ]
     },
@@ -45814,6 +45859,51 @@
           "achievedAt": "2025-10-07T17:50:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=XQoF35hNKpg",
           "verified": true
+        }
+      ]
+    },
+    "35e30381-7071-4b49-ba97-d32187675a57": {
+      "name": "7",
+      "levels": [
+        {
+          "levelId": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
+          "levelName": "Make Paul Dance",
+          "position": 78,
+          "achievedAt": "2026-10-06T22:49:41Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7p_qeBrh7R0",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 99,
+          "achievedAt": "2026-09-12T14:39:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=28lX37m9zOE",
+          "verified": false
+        },
+        {
+          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
+          "levelName": "NETWORK (Agat3)",
+          "position": 123,
+          "achievedAt": "2026-04-30T21:30:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=L4_aQ5tbIGk",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 131,
+          "achievedAt": "2026-10-01T22:28:55Z",
+          "videoUrl": "https://www.youtube.com/watch?v=b6RRzTET4ak",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 149,
+          "achievedAt": "2026-09-04T16:41:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Q64fDNh8c2g",
+          "verified": false
         }
       ]
     },
@@ -49174,27 +49264,6 @@
         }
       ]
     },
-    "d8cce575-d8ec-402f-bb5e-0b1f0a8955c2": {
-      "name": "Nonchalant Sigma 🐺🐺🐺",
-      "levels": [
-        {
-          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
-          "levelName": "ORDINARY",
-          "position": 95,
-          "achievedAt": "2024-10-25T23:30:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=f1iXV_u_YPE&t=13s",
-          "verified": false
-        },
-        {
-          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
-          "levelName": "Critical Heat",
-          "position": 134,
-          "achievedAt": "2025-04-29T22:33:57Z",
-          "videoUrl": "https://www.youtube.com/watch?v=lE_z_7pSahc",
-          "verified": false
-        }
-      ]
-    },
     "5ebd3b0d-02ce-49cc-b2a1-8921b9f545d5": {
       "name": "Grifonzo",
       "levels": [
@@ -50094,43 +50163,6 @@
           "position": 99,
           "achievedAt": "2026-09-09T20:02:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=NefHDQeYCJ4",
-          "verified": false
-        }
-      ]
-    },
-    "35e30381-7071-4b49-ba97-d32187675a57": {
-      "name": "7",
-      "levels": [
-        {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 99,
-          "achievedAt": "2026-09-12T14:39:59Z",
-          "videoUrl": "https://www.youtube.com/watch?v=28lX37m9zOE",
-          "verified": false
-        },
-        {
-          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
-          "levelName": "NETWORK (Agat3)",
-          "position": 123,
-          "achievedAt": "2026-04-30T21:30:21Z",
-          "videoUrl": "https://www.youtube.com/watch?v=L4_aQ5tbIGk",
-          "verified": false
-        },
-        {
-          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
-          "levelName": "Shukketsu",
-          "position": 131,
-          "achievedAt": "2026-10-01T22:28:55Z",
-          "videoUrl": "https://www.youtube.com/watch?v=b6RRzTET4ak",
-          "verified": false
-        },
-        {
-          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-          "levelName": "Trueffet",
-          "position": 149,
-          "achievedAt": "2026-09-04T16:41:13Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Q64fDNh8c2g",
           "verified": false
         }
       ]
@@ -61899,7 +61931,7 @@
           "levelName": "adjunto adnominal",
           "position": 135,
           "achievedAt": "2026-04-04T22:34:12Z",
-          "videoUrl": "https://www.youtube.com/watch?v=GDnfBeXo11A",
+          "videoUrl": "https://youtu.be/3jeO-uTXI6c",
           "verified": true
         }
       ]
