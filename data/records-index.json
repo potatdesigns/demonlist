@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T22:33:41.643Z",
+  "generatedAt": "2026-10-08T04:04:55.548Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -53646,6 +53646,14 @@
           "achievedAt": "2026-06-17T12:00:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=txEdfzuw_Xs",
           "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 131,
+          "achievedAt": "2026-10-07T21:22:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=CTjWXjVVSt4",
+          "verified": false
         }
       ]
     },
@@ -57246,6 +57254,14 @@
           "achievedAt": "2026-09-18T00:06:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=7z0dFgFR4WM",
           "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2026-10-08T00:17:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7iQOb2oHbhc",
+          "verified": false
         }
       ]
     },
@@ -57279,6 +57295,14 @@
           "position": 120,
           "achievedAt": "2026-09-20T16:12:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=iyarQnxz3bs",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2026-09-30T21:09:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PCrYCg5a70E",
           "verified": false
         },
         {
@@ -58544,6 +58568,14 @@
           "position": 121,
           "achievedAt": "2026-08-11T02:58:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=Gkyfqm9JXuU",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 140,
+          "achievedAt": "2026-10-07T20:28:17Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-ciky5nhjwM",
           "verified": false
         }
       ]
