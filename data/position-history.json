@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T23:25:57.304Z",
+  "generatedAt": "2026-10-09T14:34:51.608Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -272352,6 +272352,11 @@
         "date": "2026-10-05",
         "position": 97,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 96,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "1c0e4eab-c699-4c3d-912b-8904e2da20ab": [
@@ -346611,6 +346616,11 @@
         "date": "2026-10-05",
         "position": 100,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 99,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "221e785a-afc1-4359-9a66-82c8233c7bc6": [
@@ -368246,6 +368256,11 @@
         "date": "2026-10-05",
         "position": 103,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 102,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "c83e895b-5e7d-4536-99c7-bf9324458cf2": [
@@ -391798,6 +391813,11 @@
         "date": "2026-10-05",
         "position": 102,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 101,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "4ece95db-18aa-4dd2-9fba-9991e1cce1bc": [
@@ -395580,6 +395600,11 @@
         "date": "2026-10-05",
         "position": 98,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 97,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "b0768edb-bbab-4546-af0e-701cb8c86a1a": [
@@ -404226,6 +404251,11 @@
         "date": "2026-10-05",
         "position": 96,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 103,
+        "reason": "Lowered from #96 to #103"
       }
     ],
     "ca07a223-dd23-437a-8aed-03a5df95f863": [
@@ -405383,6 +405413,11 @@
         "date": "2026-10-05",
         "position": 99,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 98,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "38c47eba-0694-4475-b6f5-8f8070cb0684": [
@@ -406123,6 +406158,11 @@
         "date": "2026-10-05",
         "position": 101,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-09",
+        "position": 100,
+        "reason": "Moved up — TrakineS was lowered to #103"
       }
     ],
     "c32b8cbb-ada5-456e-b1c9-a4e091fe3e72": [
@@ -407108,7 +407148,6 @@
       "52df535a-4674-4af7-8004-bcd5453883a9",
       "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
       "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
-      "1a093f68-cff4-48bc-9b95-02e2aed07104",
       "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
       "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
       "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
@@ -407116,6 +407155,7 @@
       "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
       "80533210-51be-417f-a492-22edff194d94",
       "46b88712-6024-4018-b526-7d103659bcb4",
+      "1a093f68-cff4-48bc-9b95-02e2aed07104",
       "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
       "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
       "eae489bc-dbf9-47b3-9c23-9730f5343d06",
@@ -410743,6 +410783,6 @@
       "f3dd5ead-dda4-415c-affb-2308dd09a0d4": "GRIEF",
       "0dd51335-16bc-4538-9c19-4876a7588262": "Spider Waltz"
     },
-    "lastEventFingerprint": "2026-10-06T22:00:25.637163Z|0dd51335-16bc-4538-9c19-4876a7588262|\"Pending\""
+    "lastEventFingerprint": "2026-10-09T12:40:36.021754Z|1a093f68-cff4-48bc-9b95-02e2aed07104|{\"Lowered\":{\"new_position\":103,\"old_position\":96}}"
   }
 }

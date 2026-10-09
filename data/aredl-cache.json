@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:46:08.037Z",
+  "generatedAt": "2026-10-09T14:34:51.365Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -9774,97 +9774,11 @@
       ]
     },
     {
-      "id": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-      "name": "TrakineS",
-      "position": 96,
-      "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2440,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 125788781,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 64.875,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-        "username": "laranjoo",
-        "global_name": "Laranjoo"
-      },
-      "verifications": [
-        {
-          "id": "d6cfc678-2db6-4a65-81f4-4dc8310dea85",
-          "submitted_by": {
-            "id": "91fc4688-a8f5-4529-8b00-a67545d97f02",
-            "username": "zmariner",
-            "global_name": "mariner"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/oKuoI-_JzKU?si=hd9Sug5T9B4bpDBh",
-          "hide_video": false,
-          "achieved_at": "2025-09-09T16:44:47Z",
-          "created_at": "2026-04-03T12:45:59.048877Z",
-          "updated_at": "2026-04-03T12:45:59.048878Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-          "username": "laranjoo",
-          "global_name": "Laranjoo"
-        },
-        {
-          "id": "9a91876f-8383-42f2-a429-14016773fac5",
-          "username": "kaapzz_",
-          "global_name": "𝑲𝒂𝒂𝒑𝒚𝑪𝒂𝒕𝒛"
-        },
-        {
-          "id": "5f21eb02-cc0a-4ca9-a676-0de81b2f3bc7",
-          "username": "a9624138a",
-          "global_name": "Bienamino"
-        },
-        {
-          "id": "c54678a3-aa55-4070-8292-424e55c8b06d",
-          "username": "b2c515d1a",
-          "global_name": "MacacoPerfect"
-        },
-        {
-          "id": "88b8b231-b995-47c2-b0f9-cd2fc58427cc",
-          "username": "brunexys",
-          "global_name": "brunexys"
-        },
-        {
-          "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-          "username": "dfe1326bd",
-          "global_name": "fwefwe"
-        },
-        {
-          "id": "72603093-c9a4-4003-b398-7c84550c8e62",
-          "username": "reyotta.",
-          "global_name": "Reyo"
-        },
-        {
-          "id": "7a44f34d-ece9-4030-966c-7580fbf9f056",
-          "username": "clarinhah.",
-          "global_name": "Clara"
-        }
-      ]
-    },
-    {
       "id": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
       "name": "Sinister Silence",
-      "position": 97,
+      "position": 96,
       "publisher_id": "5e792331-4497-44eb-8b72-fead7411f535",
-      "points": 2428,
+      "points": 2440,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82249742,
@@ -10419,9 +10333,9 @@
     {
       "id": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
       "name": "THE JET ENGINE",
-      "position": 98,
+      "position": 97,
       "publisher_id": "94f74a2c-2671-494a-a230-df20e396d61a",
-      "points": 2416,
+      "points": 2428,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 122941596,
@@ -10466,9 +10380,9 @@
     {
       "id": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
       "name": "Trickshot",
-      "position": 99,
+      "position": 98,
       "publisher_id": "21608db7-7015-4558-aa56-6ab08f0e1873",
-      "points": 2404,
+      "points": 2416,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136135870,
@@ -10512,9 +10426,9 @@
     {
       "id": "174221f2-19ab-48b4-8a81-50733db8bd3f",
       "name": "Midnight",
-      "position": 100,
+      "position": 99,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2392,
+      "points": 2404,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96083028,
@@ -10560,9 +10474,9 @@
     {
       "id": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
       "name": "Doppler (Solo)",
-      "position": 101,
+      "position": 100,
       "publisher_id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
-      "points": 2381,
+      "points": 2392,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 133489881,
@@ -10615,9 +10529,9 @@
     {
       "id": "80533210-51be-417f-a492-22edff194d94",
       "name": "Cimmerian Shade",
-      "position": 102,
+      "position": 101,
       "publisher_id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
-      "points": 2369,
+      "points": 2381,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93340783,
@@ -10672,9 +10586,9 @@
     {
       "id": "46b88712-6024-4018-b526-7d103659bcb4",
       "name": "PSYCHOPATH (DeniPol)",
-      "position": 103,
+      "position": 102,
       "publisher_id": "9f3ac7f4-ee5c-4694-9104-9cb8f9b196b0",
-      "points": 2358,
+      "points": 2369,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 103925676,
@@ -10719,6 +10633,92 @@
         }
       ],
       "creators": []
+    },
+    {
+      "id": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+      "name": "TrakineS",
+      "position": 103,
+      "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
+      "points": 2358,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 125788781,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 64.875,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
+        "username": "laranjoo",
+        "global_name": "Laranjoo"
+      },
+      "verifications": [
+        {
+          "id": "d6cfc678-2db6-4a65-81f4-4dc8310dea85",
+          "submitted_by": {
+            "id": "91fc4688-a8f5-4529-8b00-a67545d97f02",
+            "username": "zmariner",
+            "global_name": "mariner"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/oKuoI-_JzKU?si=hd9Sug5T9B4bpDBh",
+          "hide_video": false,
+          "achieved_at": "2025-09-09T16:44:47Z",
+          "created_at": "2026-04-03T12:45:59.048877Z",
+          "updated_at": "2026-04-03T12:45:59.048878Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
+          "username": "laranjoo",
+          "global_name": "Laranjoo"
+        },
+        {
+          "id": "9a91876f-8383-42f2-a429-14016773fac5",
+          "username": "kaapzz_",
+          "global_name": "𝑲𝒂𝒂𝒑𝒚𝑪𝒂𝒕𝒛"
+        },
+        {
+          "id": "5f21eb02-cc0a-4ca9-a676-0de81b2f3bc7",
+          "username": "a9624138a",
+          "global_name": "Bienamino"
+        },
+        {
+          "id": "c54678a3-aa55-4070-8292-424e55c8b06d",
+          "username": "b2c515d1a",
+          "global_name": "MacacoPerfect"
+        },
+        {
+          "id": "88b8b231-b995-47c2-b0f9-cd2fc58427cc",
+          "username": "brunexys",
+          "global_name": "brunexys"
+        },
+        {
+          "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
+          "username": "dfe1326bd",
+          "global_name": "fwefwe"
+        },
+        {
+          "id": "72603093-c9a4-4003-b398-7c84550c8e62",
+          "username": "reyotta.",
+          "global_name": "Reyo"
+        },
+        {
+          "id": "7a44f34d-ece9-4030-966c-7580fbf9f056",
+          "username": "clarinhah.",
+          "global_name": "Clara"
+        }
+      ]
     },
     {
       "id": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
