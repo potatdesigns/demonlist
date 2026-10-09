@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T22:36:05.248Z",
+  "generatedAt": "2026-10-09T02:38:42.153Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -6832,7 +6832,7 @@
       ],
       "description": "Claustrophobic 1.9 styled extreme with only about 50 seconds of gameplay. Created to be one of the hardest slow, timing based extremes at the time.",
       "song": 797578,
-      "edel_enjoyment": 67.2,
+      "edel_enjoyment": 67.77419355,
       "is_edel_pending": false,
       "gddl_tier": 37,
       "nlw_tier": null,
@@ -7862,7 +7862,7 @@
       ],
       "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
       "song": 10003020,
-      "edel_enjoyment": 83.57142857,
+      "edel_enjoyment": 84.375,
       "is_edel_pending": false,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -13351,7 +13351,7 @@
       "tags": [],
       "description": null,
       "song": 548713,
-      "edel_enjoyment": 89.33333333,
+      "edel_enjoyment": 86.5,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -13681,7 +13681,7 @@
       ],
       "description": null,
       "song": 1245745,
-      "edel_enjoyment": 62.28571429,
+      "edel_enjoyment": 61.72727273,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
