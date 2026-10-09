@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T12:27:34.332Z",
+  "generatedAt": "2026-10-09T22:08:52.322Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -625,7 +625,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-01-28T01:58:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=znM_G4Twg-4",
           "verified": false
@@ -633,7 +633,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-10-13T05:11:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=XzER6lB3MzY",
           "verified": false
@@ -641,7 +641,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-10-13T05:53:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=hLm8ZB15MZI",
           "verified": false
@@ -649,7 +649,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-06-26T20:42:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=EXJtwtOMxw4",
           "verified": false
@@ -1198,7 +1198,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-09-02T04:33:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=MghDJSnnuK4",
           "verified": false
@@ -1206,7 +1206,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-06-11T23:49:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=raC8DDRR7sY",
           "verified": false
@@ -1214,7 +1214,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-06-19T18:07:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=iSU5IC0ucn0",
           "verified": false
@@ -1459,7 +1459,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-05-11T20:37:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=VQDJ-wyxlLY",
           "verified": false
@@ -1880,7 +1880,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-08-18T08:10:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=6YzUN8OXE9w",
           "verified": false
@@ -1888,7 +1888,7 @@
         {
           "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
           "levelName": "THE JET ENGINE",
-          "position": 98,
+          "position": 97,
           "achievedAt": "2025-11-27T10:32:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=Dm5hs6pBjwg",
           "verified": false
@@ -1896,7 +1896,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-01-08T22:30:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=_WyT2TceXkU",
           "verified": false
@@ -1904,7 +1904,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-01-17T10:42:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=YSSt58fkqMw",
           "verified": false
@@ -2277,7 +2277,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-14T18:41:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=M8hjOf2ZWfg",
           "verified": false
@@ -2883,7 +2883,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-08-26T14:06:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=5dAFNhXVzkM",
           "verified": false
@@ -3293,7 +3293,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-04-27T17:23:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=IO_0yxaPRv8",
           "verified": false
@@ -3527,7 +3527,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-02-20T23:05:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=4umVE4QAZuI",
           "verified": false
@@ -3535,7 +3535,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-08-03T17:49:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=jfbYk967EXU",
           "verified": false
@@ -3893,7 +3893,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-02-01T10:04:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=f0B8DSsQ_vo",
           "verified": false
@@ -4111,7 +4111,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-06-24T06:01:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=0vogNoLOQBE",
           "verified": false
@@ -4119,7 +4119,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-02-17T02:33:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=dzYQcgqt7X8",
           "verified": false
@@ -4313,7 +4313,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-04-28T05:10:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=MQ6DzuiJETo",
           "verified": false
@@ -4536,7 +4536,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-09-29T20:50:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=1u9-dqjHVNg&t=430s",
           "verified": false
@@ -5564,7 +5564,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-04-01T16:01:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=uUndpz-sU40",
           "verified": false
@@ -5572,7 +5572,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-01-16T09:32:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=hukefJZiuW0",
           "verified": false
@@ -6309,7 +6309,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-24T02:21:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=3XBMLoXD96w",
           "verified": false
@@ -6958,19 +6958,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-07-25T01:16:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Hho_N-k5UUU",
+          "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
+          "levelName": "PSYCHOPATH (DeniPol)",
+          "position": 102,
+          "achievedAt": "2026-01-31T23:30:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=4fhpZWWMO9Q",
           "verified": false
         },
         {
-          "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
-          "levelName": "PSYCHOPATH (DeniPol)",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
           "position": 103,
-          "achievedAt": "2026-01-31T23:30:57Z",
-          "videoUrl": "https://www.youtube.com/watch?v=4fhpZWWMO9Q",
+          "achievedAt": "2026-07-25T01:16:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Hho_N-k5UUU",
           "verified": false
         },
         {
@@ -7359,7 +7359,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-11-23T06:31:43.729315Z",
           "videoUrl": "https://www.youtube.com/watch?v=vCiWjaPP3ig",
           "verified": false
@@ -8083,7 +8083,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-26T01:39:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=uBfofbUTGvY",
           "verified": false
@@ -8091,7 +8091,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-07-28T21:19:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=oxg0K6PQ4sY",
           "verified": false
@@ -8653,7 +8653,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-11-02T21:16:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=bxpS5WZpt40",
           "verified": false
@@ -8661,7 +8661,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-16T01:02:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=7hXKAAC-rG0",
           "verified": false
@@ -8669,7 +8669,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-05T01:02:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=_6Khy4wTv5I",
           "verified": false
@@ -9161,7 +9161,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-12T02:12:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=v1O2jxYPwqk&t=17s",
           "verified": false
@@ -9169,7 +9169,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-10-27T04:59:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=0j3g51eiRZM&t=4s",
           "verified": false
@@ -9390,7 +9390,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-08-29T21:39:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=CqUqaOHSE98",
           "verified": false
@@ -9539,7 +9539,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-02-06T19:47:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=UR1DpUGrW4o",
           "verified": false
@@ -9547,7 +9547,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-05-05T18:43:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=u1getHq6560",
           "verified": false
@@ -9810,7 +9810,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-01-05T23:19:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=rT2VPb_DevE",
           "verified": false
@@ -9818,7 +9818,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-08-29T01:59:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=NpRlbk3cb4o",
           "verified": false
@@ -10470,7 +10470,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-07-20T10:14:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=ozapgKE9LLU",
           "verified": false
@@ -10478,7 +10478,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-09-29T03:52:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=nxA8BH4p264",
           "verified": false
@@ -10948,7 +10948,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2026-02-02T22:48:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=C-r0SdiAXuo",
           "verified": false
@@ -11876,7 +11876,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-03-22T20:12:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=5Kq7UnBnfQ4",
           "verified": false
@@ -12259,7 +12259,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-06-14T20:35:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=pPBy7Avbbn4",
           "verified": false
@@ -12520,7 +12520,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-12-24T14:52:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=Tz8ft_HkVzo&t=114s",
           "verified": false
@@ -12788,7 +12788,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-03-21T01:58:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=zY-UvBILtPM",
           "verified": false
@@ -13033,7 +13033,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-02-25T23:17:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=_iARsD_6A5I",
           "verified": false
@@ -13408,7 +13408,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-01-16T06:47:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=1nssF4ZPkkI",
           "verified": false
@@ -14692,7 +14692,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-04T08:12:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=GT0X0E0i7bk",
           "verified": false
@@ -14921,7 +14921,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-02-10T04:45:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=k2DKDv_JFWU",
           "verified": false
@@ -15242,7 +15242,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-11-23T22:09:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=3h2n-95pjQw",
           "verified": false
@@ -15412,7 +15412,7 @@
         {
           "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
           "levelName": "TrakineS",
-          "position": 96,
+          "position": 103,
           "achievedAt": "2025-09-09T16:44:47Z",
           "videoUrl": "https://youtu.be/oKuoI-_JzKU?si=hd9Sug5T9B4bpDBh",
           "verified": true
@@ -15497,7 +15497,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-12-18T08:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=zzob0x92R_w",
           "verified": false
@@ -15627,7 +15627,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-01-28T04:38:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=aGFBvWOfmso",
           "verified": false
@@ -15736,7 +15736,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2023-02-02T21:54:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=Jqn9weEAXJw",
           "verified": false
@@ -16519,7 +16519,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-08T21:47:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=JrUqeL4Lhsk",
           "verified": false
@@ -16832,7 +16832,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-06-05T14:37:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=pMbV-cmbgjo",
           "verified": false
@@ -17187,7 +17187,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-23T06:47:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=qzWjWo3zSCo",
           "verified": false
@@ -17479,7 +17479,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-01-07T18:34:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=K1qyCUfVUDU",
           "verified": false
@@ -17588,7 +17588,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-17T02:04:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=CpdHBah-QAY",
           "verified": false
@@ -17798,7 +17798,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-04-08T19:37:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=S1Mw_Mf1bVw",
           "verified": false
@@ -17806,7 +17806,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-10T14:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=L3yTyci9HmI",
           "verified": false
@@ -17955,7 +17955,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-07-26T21:04:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=rJAwUz_35i0",
           "verified": false
@@ -18285,7 +18285,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-29T06:56:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=NQSk8y20_No",
           "verified": false
@@ -18458,7 +18458,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-09-26T23:00:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=lVDJigFzkp4",
           "verified": false
@@ -18559,7 +18559,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-03T00:24:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=DgA8lTKSxYI",
           "verified": false
@@ -18567,7 +18567,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-12-22T05:49:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=1Ee4TW-3kOw",
           "verified": false
@@ -18764,7 +18764,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-12T19:57:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=32bOKa9s8dg",
           "verified": false
@@ -18772,7 +18772,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-12-19T03:45:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=IYrVms8nCRw",
           "verified": false
@@ -18942,7 +18942,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-11-30T19:27:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=BuRnpv1pPds",
           "verified": false
@@ -19027,7 +19027,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-08T20:43:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=VIWEUA8JyRY",
           "verified": false
@@ -19540,7 +19540,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-05-31T14:43:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=L9BD-brkZew",
           "verified": false
@@ -19548,7 +19548,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-02-13T16:21:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=pe-e7cKUmr4",
           "verified": false
@@ -19787,7 +19787,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-09-26T18:32:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=-RUvrAQ80LM",
           "verified": false
@@ -20034,7 +20034,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-05T13:09:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=lGb8yfc8qLY",
           "verified": false
@@ -20302,7 +20302,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-08-16T10:06:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=FDpcIOH0A-0",
           "verified": false
@@ -20371,7 +20371,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-06-25T02:10:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=5xlmPi0GPPY",
           "verified": false
@@ -20708,7 +20708,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-03-24T17:45:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=XjyJ5G4Cybg",
           "verified": false
@@ -20716,7 +20716,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-10-21T14:41:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=QQMhUywIzkE",
           "verified": false
@@ -20825,7 +20825,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-25T06:58:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=gtaOQLM3Hag",
           "verified": false
@@ -20918,7 +20918,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2023-08-13T00:26:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=lUNvV1k19HA",
           "verified": true
@@ -21133,7 +21133,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2023-08-15T03:28:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=OCXRfqX5ITI",
           "verified": false
@@ -21966,7 +21966,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-11-24T12:08:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=FZSajMPVK5s",
           "verified": false
@@ -22737,7 +22737,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-01-20T06:08:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=zA9FD4WDSXk",
           "verified": false
@@ -23110,7 +23110,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-10T14:10:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=6F06iz-ePqc",
           "verified": false
@@ -24245,7 +24245,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-05-28T21:19:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=2uzMH7sx1gA",
           "verified": false
@@ -24452,7 +24452,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-07-13T23:00:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=eUUBtbTzsYM",
           "verified": false
@@ -24622,7 +24622,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-04-27T20:48:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=0o4IrIQ1d_Q",
           "verified": false
@@ -24804,7 +24804,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-09-01T09:15:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=C2a_m-mbFBA",
           "verified": false
@@ -24812,7 +24812,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-13T14:22:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=I3Hamyyrf5Y",
           "verified": false
@@ -24944,7 +24944,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-31T02:39:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZGE8aE7Qh0w",
           "verified": false
@@ -25050,7 +25050,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-02-04T01:31:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=_czewn6NnlY",
           "verified": false
@@ -25228,7 +25228,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-14T14:23:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=SsGXVA72Os0",
           "verified": false
@@ -25897,7 +25897,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-31T04:38:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=VhJVMk9vloE",
           "verified": false
@@ -26019,7 +26019,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-03-24T10:20:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=V58wJn2X7T4",
           "verified": false
@@ -26581,7 +26581,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-08-18T23:23:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=wX5K2fjVptc&t=254s",
           "verified": false
@@ -26852,7 +26852,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-04T04:07:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=EI1ek5Du-pY",
           "verified": false
@@ -27301,7 +27301,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-06-25T02:22:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=zna2hN6aZtY",
           "verified": false
@@ -27496,19 +27496,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-07-18T19:25:36Z",
-          "videoUrl": "https://www.youtube.com/watch?v=cm9SRFNu8EM",
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-06-19T12:16:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Wuo4zh3Dtpw",
           "verified": false
         },
         {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 99,
-          "achievedAt": "2026-06-19T12:16:54Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Wuo4zh3Dtpw",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-07-18T19:25:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=cm9SRFNu8EM",
           "verified": false
         },
         {
@@ -27662,7 +27662,7 @@
         {
           "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
           "levelName": "TrakineS",
-          "position": 96,
+          "position": 103,
           "achievedAt": "2026-06-28T06:40:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=xwMgvEfHbTQ",
           "verified": false
@@ -27996,7 +27996,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-12-24T09:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=8L7rqUgHoig",
           "verified": false
@@ -28161,7 +28161,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-03-01T18:54:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=Wg8zfaN8uIY",
           "verified": false
@@ -28169,7 +28169,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-05-06T21:16:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=_F90phAAmag",
           "verified": false
@@ -28177,7 +28177,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-08-12T20:02:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=COg2fL4XOEo",
           "verified": false
@@ -28299,7 +28299,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-07T12:01:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=Mn--8TkuLFE",
           "verified": false
@@ -28509,7 +28509,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-07-11T20:07:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=jEa7XKzp6OA",
           "verified": false
@@ -28626,7 +28626,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-08T19:10:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=aoTO_BoTKek",
           "verified": false
@@ -28695,7 +28695,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-03-12T20:14:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=Z8EN30sxGMo&list=PL2MNVLBf6ZI1DYDXdBrbU2DpKgyYTiHvq",
           "verified": false
@@ -28865,7 +28865,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-09T20:31:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=UhokKb5pbm0",
           "verified": false
@@ -29258,7 +29258,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-10T17:15:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=09EjfleTEDk",
           "verified": false
@@ -29399,7 +29399,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-31T07:16:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=UHIZBVRCNNk",
           "verified": false
@@ -29784,7 +29784,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-05T11:33:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=vI3kPbJakY0",
           "verified": false
@@ -29893,7 +29893,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-09-10T03:39:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=1-raHIDlhVU",
           "verified": false
@@ -29978,7 +29978,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-19T19:40:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=rIAZKufAGzs",
           "verified": false
@@ -30180,7 +30180,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-03-27T20:17:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=-dq83JyZvug",
           "verified": false
@@ -30188,7 +30188,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-04-16T21:20:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=IqZSCv_M-DQ",
           "verified": false
@@ -30469,7 +30469,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-04-01T21:24:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=xR-92WTd808",
           "verified": false
@@ -30522,7 +30522,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-25T15:50:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=GS8ygLep9lc",
           "verified": false
@@ -30662,7 +30662,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-01T12:36:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=VHYd9LlBr9s",
           "verified": false
@@ -30741,7 +30741,7 @@
         {
           "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
           "levelName": "THE JET ENGINE",
-          "position": 98,
+          "position": 97,
           "achievedAt": "2026-03-01T15:44:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=cHLTKGNhYok",
           "verified": false
@@ -30749,7 +30749,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-01-23T17:50:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=K6oTsR2sSJ0",
           "verified": false
@@ -31406,7 +31406,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-06-29T20:39:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=0W0fr2tOdf0",
           "verified": false
@@ -31702,7 +31702,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-03-20T23:03:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=IMLjnmnIWRc",
           "verified": true
@@ -31710,7 +31710,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-05-18T20:50:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=uteIo8tXeYg",
           "verified": false
@@ -32005,19 +32005,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-04-15T10:51:35Z",
-          "videoUrl": "https://www.youtube.com/watch?v=nrtbSEDrEjQ",
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-05-23T07:06:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=_QzPoeP09m8",
           "verified": false
         },
         {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 99,
-          "achievedAt": "2026-05-23T07:06:56Z",
-          "videoUrl": "https://www.youtube.com/watch?v=_QzPoeP09m8",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-04-15T10:51:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=nrtbSEDrEjQ",
           "verified": false
         },
         {
@@ -32733,7 +32733,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2026-04-17T00:35:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=0mJhGduuCFc",
           "verified": false
@@ -32802,7 +32802,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-30T23:51:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=EgmJbv-3cBM",
           "verified": false
@@ -33061,7 +33061,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-12-25T20:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=1_YAjJQUxJo",
           "verified": false
@@ -33122,7 +33122,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-02-02T01:01:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=BaGFEUEfReU",
           "verified": false
@@ -33399,7 +33399,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2022-11-26T17:51:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=dJCdTMQxHMo",
           "verified": true
@@ -33552,7 +33552,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-07T18:30:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=fA1FWiWTeuY",
           "verified": false
@@ -33629,7 +33629,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-13T14:09:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=Zc-WZ6LqkXY",
           "verified": false
@@ -34087,7 +34087,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-02-10T01:07:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=MPxaXQYqos8",
           "verified": false
@@ -34364,7 +34364,7 @@
         {
           "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
           "levelName": "THE JET ENGINE",
-          "position": 98,
+          "position": 97,
           "achievedAt": "2025-11-04T22:45:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=MDewn0ZqBGE",
           "verified": false
@@ -34372,7 +34372,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-03-31T19:21:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=Gl5wQ-jqMqA",
           "verified": false
@@ -34544,7 +34544,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-20T21:08:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=gmySF4abACs",
           "verified": false
@@ -34779,7 +34779,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-23T22:21:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=yyNPSFro9Ls",
           "verified": false
@@ -34906,7 +34906,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-15T05:29:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=J0OgNhDYuds",
           "verified": false
@@ -35102,7 +35102,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-19T13:48:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=dfhodDQVTW0",
           "verified": false
@@ -35110,7 +35110,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-09-23T15:24:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=evOijrEwyzY",
           "verified": false
@@ -35351,7 +35351,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-29T22:10:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=7l_1qNnVNqU",
           "verified": false
@@ -35633,7 +35633,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-12-10T02:04:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=TIMC_WayTW4&t=194s",
           "verified": false
@@ -35715,7 +35715,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-29T03:32:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=MW3NSpiiRx4",
           "verified": false
@@ -35752,7 +35752,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-12-23T15:32:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=DvsJoqAbAAU",
           "verified": false
@@ -35829,7 +35829,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-12-22T12:01:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=pgP6cCY-h0A&t=1s",
           "verified": false
@@ -35974,7 +35974,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-08-30T20:18:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=lAQCv_OEN8g",
           "verified": false
@@ -36043,7 +36043,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-09-19T23:02:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=4nT_COwrzIA",
           "verified": false
@@ -36160,7 +36160,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-02-02T22:20:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=wKcqMhBaROc",
           "verified": false
@@ -36901,7 +36901,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-06-17T16:40:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=8U1DCQrsFB0",
           "verified": false
@@ -37153,7 +37153,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-08-27T15:54:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=jkJmpEn3gJw",
           "verified": false
@@ -37589,7 +37589,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-05-18T13:14:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZQjZIRAWLGk",
           "verified": false
@@ -37597,7 +37597,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-13T22:39:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=3XahV5ckFko",
           "verified": false
@@ -38222,6 +38222,19 @@
         }
       ]
     },
+    "4f61c073-359c-400d-b3bf-8c60a4716055": {
+      "name": "Petalite",
+      "levels": [
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 60,
+          "achievedAt": "2026-10-09T20:25:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2s4aWdsT0x4",
+          "verified": false
+        }
+      ]
+    },
     "955e8f60-f26a-4ba6-8d51-d5b98c073b4a": {
       "name": "bloom",
       "levels": [
@@ -38565,7 +38578,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2023-11-02T18:01:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=NhkN_a9cNi8",
           "verified": true
@@ -38814,7 +38827,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-03-29T09:41:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=w8J7DHKUkiE",
           "verified": false
@@ -38920,7 +38933,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-31T13:21:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=-ayU3yTUQ7o",
           "verified": false
@@ -39245,7 +39258,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-12-30T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=lFC4hxzHfJM",
           "verified": false
@@ -39290,7 +39303,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-08-21T01:47:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=ieNWCXJUpOM",
           "verified": false
@@ -39298,7 +39311,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-12-03T03:07:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=8sKelaVvFRE",
           "verified": false
@@ -39367,7 +39380,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-16T16:55:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=gC0n7t6nHi4",
           "verified": false
@@ -39436,7 +39449,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-18T15:15:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=XsTPgk252d0",
           "verified": false
@@ -39515,7 +39528,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-06T23:18:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=mM4QhbwPH8A",
           "verified": false
@@ -39605,7 +39618,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-02T16:21:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=qhgnPmKEf5Y",
           "verified": false
@@ -40052,7 +40065,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-11-17T23:40:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=wSMAB5aiIoE",
           "verified": false
@@ -40060,7 +40073,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-10-24T22:42:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=cWdcBOT1ik8",
           "verified": false
@@ -40328,7 +40341,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-30T14:32:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=qqKRbSIs5vc&list=PLg_5OBTSp1xnZkFSGimij_TbPO_wpqT2W",
           "verified": false
@@ -40336,7 +40349,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-06-27T15:36:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=DS0gk3qtg6w&list=PLg_5OBTSp1xnZkFSGimij_TbPO_wpqT2W",
           "verified": false
@@ -40818,7 +40831,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-03-25T22:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=yoA3JFB_z7k",
           "verified": false
@@ -41014,7 +41027,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-12T18:06:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=HsABMivJYDk",
           "verified": false
@@ -41022,7 +41035,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-01-11T23:21:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=2amrhp6L7sw",
           "verified": false
@@ -41075,7 +41088,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-05T22:08:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=ElUdk1suk-A&t=121",
           "verified": false
@@ -41186,7 +41199,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-31T17:56:06.179619Z",
           "videoUrl": "https://www.youtube.com/watch?v=teeaLOYSDrQ",
           "verified": false
@@ -41332,7 +41345,7 @@
         {
           "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
           "levelName": "Doppler (Solo)",
-          "position": 101,
+          "position": 100,
           "achievedAt": "2026-09-05T01:55:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=21AucRgD3EQ",
           "verified": false
@@ -41844,7 +41857,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-04-15T01:49:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Z3Q2DMQcq_U&list=RDZ3Q2DMQcq_U",
           "verified": false
@@ -42046,6 +42059,19 @@
         }
       ]
     },
+    "2361feec-88c2-4d04-93c6-a5a6cbe4428b": {
+      "name": "KraLyt",
+      "levels": [
+        {
+          "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
+          "levelName": "Gaggatrondra",
+          "position": 70,
+          "achievedAt": "2026-09-01T20:16:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=UdhoHvqfteI",
+          "verified": false
+        }
+      ]
+    },
     "0f9faa45-161f-4946-850d-1db97e10d628": {
       "name": "vZenix",
       "levels": [
@@ -42194,7 +42220,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-30T21:26:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=pOiNPRCxuO4",
           "verified": false
@@ -42202,7 +42228,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-11-06T22:20:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=jRaZLZFPj6M",
           "verified": false
@@ -42378,7 +42404,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-23T04:46:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=6SR5lI4EYGo",
           "verified": false
@@ -42693,7 +42719,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2026-07-12T20:01:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=xiGv3CQA3R8",
           "verified": false
@@ -43025,7 +43051,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-02-01T06:59:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=cTYS5E8xR54",
           "verified": false
@@ -43839,7 +43865,7 @@
         {
           "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
           "levelName": "THE JET ENGINE",
-          "position": 98,
+          "position": 97,
           "achievedAt": "2026-08-09T19:21:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=uU8kp8-e5fs",
           "verified": false
@@ -44468,7 +44494,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-26T21:36:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=MVsE8vA5Mxs",
           "verified": false
@@ -45004,7 +45030,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-26T20:16:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=SgUHo0fi7Cw",
           "verified": false
@@ -45288,19 +45314,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-09-13T11:40:32Z",
-          "videoUrl": "https://www.youtube.com/watch?v=t1OdfXHS8ME",
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-09-30T20:25:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2Ot05nuUusI",
           "verified": false
         },
         {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 99,
-          "achievedAt": "2026-09-30T20:25:38Z",
-          "videoUrl": "https://www.youtube.com/watch?v=2Ot05nuUusI",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-09-13T11:40:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=t1OdfXHS8ME",
           "verified": false
         },
         {
@@ -45404,19 +45430,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-09-08T09:53:32Z",
-          "videoUrl": "https://www.youtube.com/watch?v=H1SIAIT_JiM",
+          "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
+          "levelName": "THE JET ENGINE",
+          "position": 97,
+          "achievedAt": "2026-09-19T17:06:55Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9iiHu3B4E-I",
           "verified": false
         },
         {
-          "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
-          "levelName": "THE JET ENGINE",
-          "position": 98,
-          "achievedAt": "2026-09-19T17:06:55Z",
-          "videoUrl": "https://www.youtube.com/watch?v=9iiHu3B4E-I",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-09-08T09:53:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=H1SIAIT_JiM",
           "verified": false
         },
         {
@@ -45624,7 +45650,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-01-18T01:13:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=VaQSjRsCKzw",
           "verified": false
@@ -45961,7 +45987,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-12T14:39:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=28lX37m9zOE",
           "verified": false
@@ -46035,7 +46061,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-09-20T19:07:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=FG5tXp7N1ZE",
           "verified": false
@@ -46112,7 +46138,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-08-25T10:30:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=4BAn-4ie9Cc",
           "verified": false
@@ -46139,6 +46165,14 @@
           "position": 123,
           "achievedAt": "2026-04-11T11:02:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=VX2SEE8DizM",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 134,
+          "achievedAt": "2026-09-27T18:13:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LWpE_dzXYrI",
           "verified": false
         },
         {
@@ -46318,7 +46352,7 @@
         {
           "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
           "levelName": "Doppler (Solo)",
-          "position": 101,
+          "position": 100,
           "achievedAt": "2026-08-13T21:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=QRgFy1swvj0",
           "verified": false
@@ -47861,7 +47895,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-05-25T23:51:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=4N-ZFp_gvo8",
           "verified": false
@@ -47948,7 +47982,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-03-15T20:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=FDobjhB_oZQ",
           "verified": false
@@ -48004,19 +48038,19 @@
           "verified": false
         },
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
+          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
+          "levelName": "Sinister Silence",
           "position": 96,
-          "achievedAt": "2026-07-14T09:14:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=rvmX-3gmF20",
+          "achievedAt": "2025-12-01T11:49:41Z",
+          "videoUrl": "https://www.youtube.com/watch?v=swQEsVSJJA0&t=183s",
           "verified": false
         },
         {
-          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
-          "levelName": "Sinister Silence",
-          "position": 97,
-          "achievedAt": "2025-12-01T11:49:41Z",
-          "videoUrl": "https://www.youtube.com/watch?v=swQEsVSJJA0&t=183s",
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-07-14T09:14:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rvmX-3gmF20",
           "verified": false
         },
         {
@@ -48111,7 +48145,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-07-24T12:25:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=lnrShqC8hC0",
           "verified": false
@@ -48697,7 +48731,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-11-04T00:20:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=JPoQCxGiS8M",
           "verified": false
@@ -49121,7 +49155,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-12-24T21:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=zO1tHpIWCr8",
           "verified": false
@@ -49637,68 +49671,15 @@
         }
       ]
     },
-    "3f9edb9b-f18c-4999-9458-3fc1fd1bc5f4": {
-      "name": "applocation",
+    "5be272b6-98e7-46e8-a8bb-71441617b703": {
+      "name": "nolli",
       "levels": [
         {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-05-30T12:47:31Z",
-          "videoUrl": "https://www.youtube.com/watch?v=gmcr1ksQY-M",
-          "verified": false
-        }
-      ]
-    },
-    "d63ec224-1dc5-4179-8459-5617a3df337f": {
-      "name": "CraZDemonX",
-      "levels": [
-        {
-          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
-          "levelName": "TrakineS",
-          "position": 96,
-          "achievedAt": "2026-05-31T05:10:09Z",
-          "videoUrl": "https://www.youtube.com/watch?v=b9aurC3La8Y",
-          "verified": false
-        },
-        {
-          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
-          "levelName": "Midnight",
-          "position": 100,
-          "achievedAt": "2024-09-29T06:12:50Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Qi6TvlSnVOA",
-          "verified": false
-        },
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 109,
-          "achievedAt": "2024-03-14T01:59:28Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ga9GxcRJYG4",
-          "verified": false
-        },
-        {
-          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
-          "levelName": "Waterfall",
-          "position": 111,
-          "achievedAt": "2026-05-24T23:57:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=vTsow3y-wOk",
-          "verified": false
-        },
-        {
-          "levelId": "7e39c9be-cbcc-4aff-a23c-08add685a336",
-          "levelName": "BPATA MPAKA",
-          "position": 115,
-          "achievedAt": "2025-01-04T06:47:13Z",
-          "videoUrl": "https://www.youtube.com/watch?v=khj2one0Mr0",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 121,
-          "achievedAt": "2023-12-03T19:23:48Z",
-          "videoUrl": "https://www.youtube.com/watch?v=kPGzNycVN7s",
+          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
+          "levelName": "ORDINARY",
+          "position": 95,
+          "achievedAt": "2026-10-05T18:21:51Z",
+          "videoUrl": "https://www.youtube.com/watch?v=xEtuZXltlfw",
           "verified": false
         }
       ]
@@ -49709,7 +49690,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-01-10T13:00:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=WK2mjdh1XUw",
           "verified": false
@@ -49754,7 +49735,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-05-16T22:22:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=R4pYWVdnwNA",
           "verified": false
@@ -49775,7 +49756,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2024-07-02T15:00:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=3Nhaulz4jYc",
           "verified": false
@@ -49788,7 +49769,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2025-08-05T15:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=ymBPPpoBd1o",
           "verified": false
@@ -49801,7 +49782,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-04-05T16:40:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=exGLLfcDou0",
           "verified": false
@@ -49814,7 +49795,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-05-10T21:07:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y_qqCGTJX9o",
           "verified": false
@@ -49835,7 +49816,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-06-23T01:03:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=z-4iMGAawiY",
           "verified": false
@@ -49848,7 +49829,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-07-03T00:45:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=Uy51P_gTyp4",
           "verified": false
@@ -49861,7 +49842,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-07-16T00:21:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=JYRiwtzrgYA",
           "verified": false
@@ -49874,7 +49855,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-08-16T21:42:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=zRrd2UYq1EY",
           "verified": false
@@ -49903,7 +49884,7 @@
         {
           "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
           "levelName": "Sinister Silence",
-          "position": 97,
+          "position": 96,
           "achievedAt": "2026-08-18T08:18:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZZJJ1vRsUzY",
           "verified": false
@@ -49932,7 +49913,7 @@
         {
           "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
           "levelName": "THE JET ENGINE",
-          "position": 98,
+          "position": 97,
           "achievedAt": "2025-07-15T01:45:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=8Q20XU__LoQ",
           "verified": true
@@ -49945,7 +49926,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-06-09T01:24:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=K1cMbrtWqvY",
           "verified": false
@@ -50006,7 +49987,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-16T05:24:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=JJLi58E2cJg",
           "verified": false
@@ -50035,7 +50016,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-22T17:30:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=WYJbyftjCVk",
           "verified": false
@@ -50048,7 +50029,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-26T04:06:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=EIXbd8w5vaA",
           "verified": false
@@ -50069,7 +50050,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-07-29T15:59:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=D7Xv7aF74A4",
           "verified": false
@@ -50082,7 +50063,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-09T15:32:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=GqGf92BsR84",
           "verified": false
@@ -50111,7 +50092,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-20T15:38:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=BjX49MJ8hSw",
           "verified": false
@@ -50148,7 +50129,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-24T23:31:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=U-hdB44CCJI",
           "verified": false
@@ -50169,7 +50150,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-25T10:28:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=rRHwatE-_a4",
           "verified": false
@@ -50190,7 +50171,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-28T14:48:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=x5gLfF0s9hk",
           "verified": false
@@ -50198,7 +50179,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-06-30T15:22:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=_p1_ILpt2iM",
           "verified": false
@@ -50211,7 +50192,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-08-28T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=DioPhOWUzQQ",
           "verified": false
@@ -50224,7 +50205,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-07T03:40:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=-ZV8XV3qK6o",
           "verified": false
@@ -50253,7 +50234,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-09T20:02:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=NefHDQeYCJ4",
           "verified": false
@@ -50266,7 +50247,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-13T17:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=DzZV7A7mc_s&t=6s",
           "verified": false
@@ -50279,7 +50260,7 @@
         {
           "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
           "levelName": "Trickshot",
-          "position": 99,
+          "position": 98,
           "achievedAt": "2026-09-15T22:09:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=oMzZKAF89x4",
           "verified": false
@@ -50294,13 +50275,66 @@
         }
       ]
     },
+    "d63ec224-1dc5-4179-8459-5617a3df337f": {
+      "name": "CraZDemonX",
+      "levels": [
+        {
+          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
+          "levelName": "Midnight",
+          "position": 99,
+          "achievedAt": "2024-09-29T06:12:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Qi6TvlSnVOA",
+          "verified": false
+        },
+        {
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-05-31T05:10:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=b9aurC3La8Y",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 109,
+          "achievedAt": "2024-03-14T01:59:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ga9GxcRJYG4",
+          "verified": false
+        },
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 111,
+          "achievedAt": "2026-05-24T23:57:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=vTsow3y-wOk",
+          "verified": false
+        },
+        {
+          "levelId": "7e39c9be-cbcc-4aff-a23c-08add685a336",
+          "levelName": "BPATA MPAKA",
+          "position": 115,
+          "achievedAt": "2025-01-04T06:47:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=khj2one0Mr0",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2023-12-03T19:23:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kPGzNycVN7s",
+          "verified": false
+        }
+      ]
+    },
     "15e6dad9-95ab-4992-ad4a-aaf362d2028e": {
       "name": "rowinile",
       "levels": [
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2024-10-16T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=vFh--H8HSJU",
           "verified": false
@@ -50313,7 +50347,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-04-19T10:42:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=GGUSktc21oI",
           "verified": false
@@ -50350,7 +50384,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-05-12T06:18:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=Dc89TL4dUO0",
           "verified": false
@@ -50371,7 +50405,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-10-07T22:45:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=PSMk6XJlsGk",
           "verified": false
@@ -50400,7 +50434,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2025-11-23T00:06:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=3AKYuG0x1-Y",
           "verified": false
@@ -50421,7 +50455,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-03-22T21:13:38.694Z",
           "videoUrl": "https://medal.tv/clips/mmgYgeHEZi9qBRT9n",
           "verified": false
@@ -50442,7 +50476,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-04-03T11:05:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=VDDtXQFNh9w",
           "verified": false
@@ -50455,7 +50489,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-04T20:16:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=uGLPdeH0uWQ&t=14s",
           "verified": false
@@ -50468,7 +50502,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-07T18:14:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=fVINqer6Z44",
           "verified": false
@@ -50481,7 +50515,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-07T19:35:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=_StxbGYmThg",
           "verified": false
@@ -50494,7 +50528,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-05-25T21:17:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=3OCG0c8x4L0",
           "verified": false
@@ -50531,7 +50565,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-14T10:22:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=wcrfm1jl0nw",
           "verified": false
@@ -50576,7 +50610,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-19T18:57:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=udtZh7WcYuM",
           "verified": false
@@ -50589,7 +50623,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-07-28T14:02:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=7EOAqmAwR9Q",
           "verified": false
@@ -50618,7 +50652,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-08-17T07:04:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=_zUhshSPlzw",
           "verified": false
@@ -50639,7 +50673,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-08-24T16:56:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=j3xjgTEvWFs",
           "verified": false
@@ -50660,7 +50694,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-09-20T01:39:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=85K_QZ9n00o",
           "verified": false
@@ -50681,7 +50715,7 @@
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
           "levelName": "Midnight",
-          "position": 100,
+          "position": 99,
           "achievedAt": "2026-10-01T21:30:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=ydgkgxz_tDE",
           "verified": false
@@ -50702,7 +50736,7 @@
         {
           "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
           "levelName": "Doppler (Solo)",
-          "position": 101,
+          "position": 100,
           "achievedAt": "2026-03-12T19:53:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=xSP43i61SLM",
           "verified": true
@@ -50715,7 +50749,7 @@
         {
           "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
           "levelName": "Doppler (Solo)",
-          "position": 101,
+          "position": 100,
           "achievedAt": "2026-08-30T08:25:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=sr_IzaYWkdg",
           "verified": false
@@ -50776,7 +50810,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2025-11-16T19:23:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=J-Etc2YVQew",
           "verified": false
@@ -50797,7 +50831,7 @@
         {
           "levelId": "80533210-51be-417f-a492-22edff194d94",
           "levelName": "Cimmerian Shade",
-          "position": 102,
+          "position": 101,
           "achievedAt": "2026-08-12T15:45:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=QZmDPKBUYTg",
           "verified": false
@@ -50850,7 +50884,7 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2024-05-16T14:01:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=1luL7tTE8p8",
           "verified": true
@@ -50863,9 +50897,22 @@
         {
           "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
           "levelName": "PSYCHOPATH (DeniPol)",
-          "position": 103,
+          "position": 102,
           "achievedAt": "2025-01-10T12:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=LviHjsnUlJU&t=8s",
+          "verified": false
+        }
+      ]
+    },
+    "3f9edb9b-f18c-4999-9458-3fc1fd1bc5f4": {
+      "name": "applocation",
+      "levels": [
+        {
+          "levelId": "1a093f68-cff4-48bc-9b95-02e2aed07104",
+          "levelName": "TrakineS",
+          "position": 103,
+          "achievedAt": "2026-05-30T12:47:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=gmcr1ksQY-M",
           "verified": false
         }
       ]
