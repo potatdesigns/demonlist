@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T16:49:14.676Z",
+  "generatedAt": "2026-10-10T21:02:28.130Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -41086,6 +41086,14 @@
           "verified": false
         },
         {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 128,
+          "achievedAt": "2026-10-04T09:44:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ZReH5kuB4H0",
+          "verified": false
+        },
+        {
           "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
           "levelName": "Critical Heat",
           "position": 135,
@@ -46791,6 +46799,14 @@
           "verified": false
         },
         {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 109,
+          "achievedAt": "2026-10-10T08:12:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QkWwugl7bws",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 120,
@@ -49613,6 +49629,14 @@
           "verified": false
         },
         {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 109,
+          "achievedAt": "2026-10-10T18:17:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=aOE04P5XOEI",
+          "verified": false
+        },
+        {
           "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
           "levelName": "paranoia (amplitron)",
           "position": 141,
@@ -50321,6 +50345,19 @@
           "position": 98,
           "achievedAt": "2026-10-10T02:18:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=31F4EEGTjhg",
+          "verified": false
+        }
+      ]
+    },
+    "689c43d3-6f27-4ce7-93ef-19be5ccf5fde": {
+      "name": "KPC",
+      "levels": [
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 98,
+          "achievedAt": "2026-10-10T14:27:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=nN_W60hUxH4",
           "verified": false
         }
       ]
