@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T03:55:30.294Z",
+  "generatedAt": "2026-10-10T11:46:43.525Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -20783,6 +20783,14 @@
           "verified": false
         },
         {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 55,
+          "achievedAt": "2026-10-06T03:56:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=CJXSEkiBh3s",
+          "verified": false
+        },
+        {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
           "position": 66,
@@ -34835,6 +34843,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 119,
+          "achievedAt": "2026-10-06T11:48:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=fCFL3FPC-cU",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 120,
@@ -35129,6 +35145,14 @@
           "position": 121,
           "achievedAt": "2025-01-03T21:00:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=E2WxZznVWjo",
+          "verified": false
+        },
+        {
+          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
+          "levelName": "Terminal Rampancy",
+          "position": 125,
+          "achievedAt": "2026-10-05T11:46:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jQSqm1DfDlc",
           "verified": false
         },
         {
@@ -41931,6 +41955,14 @@
           "position": 120,
           "achievedAt": "2025-09-03T20:05:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=gj2XPYcG_uE",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2026-10-05T18:20:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Hwfqnm0EpIE",
           "verified": false
         },
         {
@@ -50272,7 +50304,7 @@
           "levelName": "Trickshot",
           "position": 98,
           "achievedAt": "2026-10-10T02:18:02Z",
-          "videoUrl": "https://www.youtube.com/watch?v=mi0OSzD5E1w",
+          "videoUrl": "https://www.youtube.com/watch?v=31F4EEGTjhg",
           "verified": false
         }
       ]
