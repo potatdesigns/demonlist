@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T00:07:52.942Z",
+  "generatedAt": "2026-10-10T05:18:23.538Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2815,27 +2815,6 @@
       },
       "discoveredAt": "2026-10-09T15:09:13.252Z"
     },
-    "2f954949-01cb-4946-be55-a8cb76b04794": {
-      "name": "azure blast",
-      "position": 150,
-      "verifier": {
-        "id": "TN0FQ3KBv4w",
-        "url": "https://www.youtube.com/watch?v=TN0FQ3KBv4w",
-        "title": "[VERIFIED] Azure Blast by AlbinoSnail & More 100% / Extreme Demon / Geometry Dash 2.2",
-        "channel": "DNM121",
-        "viewCount": 39415,
-        "viewsCheckedAt": "2026-10-10T00:07:52.134Z"
-      },
-      "showcase": {
-        "id": "IWC5C8xmMUY",
-        "url": "https://www.youtube.com/watch?v=IWC5C8xmMUY",
-        "title": "Rate This! | \"Azure Blast\" by AlbinoSnail & More - Geometry Dash 2.2",
-        "channel": "Neiro",
-        "viewCount": 23384,
-        "viewsCheckedAt": "2026-10-10T00:07:52.134Z"
-      },
-      "discoveredAt": "2026-10-09T15:09:13.252Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 57,
@@ -3150,6 +3129,27 @@
         "viewsCheckedAt": "2026-10-10T00:07:52.134Z"
       },
       "discoveredAt": "2026-10-09T15:09:13.252Z"
+    },
+    "05c75b96-b138-47d7-847d-c13fb2650a41": {
+      "name": "Breakcore",
+      "position": 132,
+      "verifier": {
+        "id": "_H3KOVLE6gs",
+        "url": "https://www.youtube.com/watch?v=_H3KOVLE6gs",
+        "title": "[VERIFICATION] BREAKCORE by WoofelGD (MAIN LIST?) - Geometry Dash",
+        "channel": "breakcore11",
+        "viewCount": 10023,
+        "viewsCheckedAt": "2026-10-10T05:18:23.538Z"
+      },
+      "showcase": {
+        "id": "I8vx2fnIYqU",
+        "url": "https://www.youtube.com/watch?v=I8vx2fnIYqU",
+        "title": "breakcore",
+        "channel": "Neiro",
+        "viewCount": 13001,
+        "viewsCheckedAt": "2026-10-10T05:18:23.538Z"
+      },
+      "discoveredAt": "2026-10-10T05:18:23.538Z"
     }
   },
   "channelIndex": {
@@ -94014,7 +94014,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "neyBEC4QtmI",
+      "newestVideoId": "JWF_T7EnSXk",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -104849,6 +104849,15 @@
             "136107498"
           ],
           "checkedAt": "2026-10-09T15:08:33.338Z"
+        },
+        "JWF_T7EnSXk": {
+          "title": "【4K】\"Haircut\" by Metalface221 & More (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 20,
+          "levelIds": [
+            "134325077"
+          ],
+          "checkedAt": "2026-10-10T05:18:22.269Z"
         }
       }
     },
