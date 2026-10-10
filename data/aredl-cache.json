@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:04:11.213Z",
+  "generatedAt": "2026-10-10T19:02:57.771Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -3818,11 +3818,6 @@
           "global_name": "sink"
         },
         {
-          "id": "317ec6e4-3309-4275-aa18-eb0a6fff98fd",
-          "username": "6de7a2580",
-          "global_name": "TheRealXFuture"
-        },
-        {
           "id": "5f1acf39-642d-41d2-beff-db2048426f2d",
           "username": "a39107bfe",
           "global_name": "HDanke"
@@ -3836,6 +3831,11 @@
           "id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
           "username": "akunakun",
           "global_name": "akunakun"
+        },
+        {
+          "id": "d3aaff47-b841-450d-a5a4-2a7bcd56c6f8",
+          "username": "x.future",
+          "global_name": "X Future"
         }
       ]
     },
@@ -13065,7 +13065,7 @@
       "id": "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
       "name": "SPIRIT OVERCLOCK",
       "position": 130,
-      "publisher_id": "317ec6e4-3309-4275-aa18-eb0a6fff98fd",
+      "publisher_id": "d3aaff47-b841-450d-a5a4-2a7bcd56c6f8",
       "points": 2089,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -13084,9 +13084,9 @@
       "gddl_tier": 35,
       "nlw_tier": null,
       "publisher": {
-        "id": "317ec6e4-3309-4275-aa18-eb0a6fff98fd",
-        "username": "6de7a2580",
-        "global_name": "TheRealXFuture"
+        "id": "d3aaff47-b841-450d-a5a4-2a7bcd56c6f8",
+        "username": "x.future",
+        "global_name": "X Future"
       },
       "verifications": [
         {
