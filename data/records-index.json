@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:02:28.130Z",
+  "generatedAt": "2026-10-11T03:29:45.748Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -20796,6 +20796,14 @@
           "position": 66,
           "achievedAt": "2026-07-03T02:27:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=1aIdHSAQX94&t=1s",
+          "verified": false
+        },
+        {
+          "levelId": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
+          "levelName": "Make Paul Dance",
+          "position": 78,
+          "achievedAt": "2026-09-25T02:43:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0xv5wwOLjUQ",
           "verified": false
         },
         {
@@ -53843,7 +53851,7 @@
       ]
     },
     "a6519816-732a-4cee-bc24-6baf3170b3ee": {
-      "name": "Volkavera",
+      "name": "Luxury",
       "levels": [
         {
           "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
