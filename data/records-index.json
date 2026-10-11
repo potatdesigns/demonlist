@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T17:28:25.472Z",
+  "generatedAt": "2026-10-11T21:23:43.124Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -36014,6 +36014,27 @@
         }
       ]
     },
+    "b32a84d8-0684-4bf3-8d6f-8cd88f3641a8": {
+      "name": "zizo",
+      "levels": [
+        {
+          "levelId": "7081880b-fe8c-4d3f-8557-a895b7aee521",
+          "levelName": "Snowbound",
+          "position": 56,
+          "achievedAt": "2026-10-08T16:52:02Z",
+          "videoUrl": "https://www.youtube.com/watch?v=erPuswC3J50",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 131,
+          "achievedAt": "2026-09-04T11:55:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=uq9-hgWy8wM",
+          "verified": false
+        }
+      ]
+    },
     "2e136417-f896-4eae-8b4e-5d8f673df244": {
       "name": "kula",
       "levels": [
@@ -54322,6 +54343,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 119,
+          "achievedAt": "2026-10-11T14:23:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ZD5s3ImAb0M",
+          "verified": false
+        },
+        {
           "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
           "levelName": "Aerial Gleam",
           "position": 145,
@@ -62464,19 +62493,6 @@
           "position": 150,
           "achievedAt": "2026-08-10T21:25:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=-Hi0x5LZ6pg",
-          "verified": false
-        }
-      ]
-    },
-    "b32a84d8-0684-4bf3-8d6f-8cd88f3641a8": {
-      "name": "zizo",
-      "levels": [
-        {
-          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
-          "levelName": "Shukketsu",
-          "position": 131,
-          "achievedAt": "2026-09-04T11:55:27Z",
-          "videoUrl": "https://www.youtube.com/watch?v=uq9-hgWy8wM",
           "verified": false
         }
       ]
