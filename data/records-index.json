@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T13:23:06.429Z",
+  "generatedAt": "2026-10-13T22:12:24.858Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -46536,6 +46536,19 @@
           "position": 77,
           "achievedAt": "2026-10-04T07:32:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=Pp5jhgXazgc",
+          "verified": false
+        }
+      ]
+    },
+    "492f655c-1156-489a-b320-3e4427f123cf": {
+      "name": "Vergit",
+      "levels": [
+        {
+          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
+          "levelName": "LIMBO",
+          "position": 77,
+          "achievedAt": "2026-10-13T20:40:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XnG9zQK4cjY",
           "verified": false
         }
       ]
