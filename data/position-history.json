@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T01:40:02.396Z",
+  "generatedAt": "2026-10-13T16:24:45.360Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -230225,6 +230225,11 @@
         "date": "2026-10-05",
         "position": 131,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 132,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ],
     "10d01124-1b79-4360-968a-3364b4f80b52": [
@@ -284013,6 +284018,11 @@
         "date": "2026-10-05",
         "position": 129,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 130,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ],
     "275c54a1-f74e-4258-a369-7dd65ddd9578": [
@@ -377105,6 +377115,11 @@
         "date": "2026-10-10",
         "position": 134,
         "reason": "Moved down — Breakcore was placed at #132"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 128,
+        "reason": "Raised from #134 to #128"
       }
     ],
     "b90f9081-3474-4dfd-9a6a-4b36d535330b": [
@@ -408617,6 +408632,11 @@
         "date": "2026-10-10",
         "position": 133,
         "reason": "Moved down — Breakcore was placed at #132"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 134,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ],
     "4736d3e3-6166-44eb-941d-d94a5f2d6cc4": [
@@ -408934,6 +408954,11 @@
         "date": "2026-10-05",
         "position": 130,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 131,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ],
     "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d": [
@@ -408963,6 +408988,11 @@
         "date": "2026-10-05",
         "position": 128,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 129,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ],
     "1221db41-c878-4786-98df-10193205d54e": [
@@ -408994,6 +409024,11 @@
         "date": "2026-10-10",
         "position": 132,
         "reason": "Placed at #132"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 133,
+        "reason": "Moved down — Checked Steam was raised to #128"
       }
     ]
   },
@@ -409558,13 +409593,13 @@
       "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
       "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
       "5476e168-1f14-4250-b7df-d01f2d029367",
+      "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
       "aea0cadd-9429-4f79-9d6d-8179bb518d73",
       "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
       "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
       "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
       "05c75b96-b138-47d7-847d-c13fb2650a41",
       "b158e365-0f31-485e-816d-be35f8623bf2",
-      "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
       "da77ff62-f03a-40e5-a11c-4753ea7f568a",
       "1221db41-c878-4786-98df-10193205d54e",
       "8d02375c-8c31-4352-af21-d4533f63e3af",
@@ -413171,6 +413206,6 @@
       "cba6431e-c068-45e3-a3f3-1459cce2992a": "GRAPH PAPER",
       "db14f08e-b813-475f-8518-6cdcd7db20b9": "BLAZEIT"
     },
-    "lastEventFingerprint": "2026-10-13T01:12:30.477868Z|5531d67e-30cb-4cec-b42b-8b826830a7d7|{\"Swapped\":{\"upper_position\":116,\"upper_level\":{\"id\":\"5531d67e-30cb-4cec-b42b-8b826830a7d7\",\"name\":\"Natural Disaster\",\"level_id\":107741051,\"two_player\":false},\"other_level\":{\"id\":\"d022317b-32cc-462b-98a1-9aa37a6c8431\",\"name\":\"The Wonder of You\",\"level_id\":94858072,\"two_player\":false}}}"
+    "lastEventFingerprint": "2026-10-13T12:52:23.970878Z|d53edfd9-3a71-48f4-8c44-862cd83fccf3|{\"Raised\":{\"new_position\":128,\"old_position\":134}}"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:16:50.101Z",
+  "generatedAt": "2026-10-13T16:24:45.095Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -12877,11 +12877,59 @@
       ]
     },
     {
+      "id": "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
+      "name": "Checked Steam",
+      "position": 128,
+      "publisher_id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
+      "points": 2111,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 105748155,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Chokepoints",
+        "High CPS",
+        "Gimmicky",
+        "Slow-Paced",
+        "Wave"
+      ],
+      "description": "A Sequel to the level \"Check Steam\" by Gruzy, the level is known for its absolutely brutal spam sections specifically crafted for WhizKid05 to verify. Gameplay is generally hated by the community except for two victors who loved it.",
+      "song": 1258403,
+      "edel_enjoyment": 44.2,
+      "is_edel_pending": false,
+      "gddl_tier": 35,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
+        "username": "40f54eab6",
+        "global_name": "gruzy"
+      },
+      "verifications": [
+        {
+          "id": "3009de30-b601-4c37-bf1a-a524666f73e1",
+          "submitted_by": {
+            "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
+            "username": "whizkid05",
+            "global_name": "Whizkid05"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=cq6047eYGXs",
+          "hide_video": false,
+          "achieved_at": "2024-05-27T12:40:30Z",
+          "created_at": "2024-08-20T05:35:36Z",
+          "updated_at": "2024-08-20T05:35:36Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
       "name": "Heavenly Sakupen",
-      "position": 128,
+      "position": 129,
       "publisher_id": "f2c6daba-658c-4026-94b5-28c199dd93f7",
-      "points": 2111,
+      "points": 2102,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 123467310,
@@ -12969,9 +13017,9 @@
     {
       "id": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
       "name": "UNKNOWN",
-      "position": 129,
+      "position": 130,
       "publisher_id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
-      "points": 2102,
+      "points": 2093,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88203501,
@@ -13064,9 +13112,9 @@
     {
       "id": "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
       "name": "SPIRIT OVERCLOCK",
-      "position": 130,
+      "position": 131,
       "publisher_id": "d3aaff47-b841-450d-a5a4-2a7bcd56c6f8",
-      "points": 2093,
+      "points": 2084,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 132751236,
@@ -13109,9 +13157,9 @@
     {
       "id": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
       "name": "Shukketsu",
-      "position": 131,
+      "position": 132,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2084,
+      "points": 2076,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75286957,
@@ -13185,9 +13233,9 @@
     {
       "id": "05c75b96-b138-47d7-847d-c13fb2650a41",
       "name": "Breakcore",
-      "position": 132,
+      "position": 133,
       "publisher_id": "215abb59-451d-448e-8aef-0baf05e83c61",
-      "points": 2076,
+      "points": 2067,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 123674931,
@@ -13233,9 +13281,9 @@
     {
       "id": "b158e365-0f31-485e-816d-be35f8623bf2",
       "name": "idontknowwhatthisis",
-      "position": 133,
+      "position": 134,
       "publisher_id": "69394575-3534-49bf-8dab-f9c34be511e6",
-      "points": 2067,
+      "points": 2058,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 137334994,
@@ -13278,54 +13326,6 @@
           "global_name": "YeldA"
         }
       ]
-    },
-    {
-      "id": "d53edfd9-3a71-48f4-8c44-862cd83fccf3",
-      "name": "Checked Steam",
-      "position": 134,
-      "publisher_id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
-      "points": 2058,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 105748155,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Chokepoints",
-        "High CPS",
-        "Gimmicky",
-        "Slow-Paced",
-        "Wave"
-      ],
-      "description": "A Sequel to the level \"Check Steam\" by Gruzy, the level is known for its absolutely brutal spam sections specifically crafted for WhizKid05 to verify. Gameplay is generally hated by the community except for two victors who loved it.",
-      "song": 1258403,
-      "edel_enjoyment": 44.2,
-      "is_edel_pending": false,
-      "gddl_tier": 35,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "dfa2096a-79b1-432a-a5ac-21ae7e3414ad",
-        "username": "40f54eab6",
-        "global_name": "gruzy"
-      },
-      "verifications": [
-        {
-          "id": "3009de30-b601-4c37-bf1a-a524666f73e1",
-          "submitted_by": {
-            "id": "af57c25a-4877-4223-b8b6-b89b917e4359",
-            "username": "whizkid05",
-            "global_name": "Whizkid05"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=cq6047eYGXs",
-          "hide_video": false,
-          "achieved_at": "2024-05-27T12:40:30Z",
-          "created_at": "2024-08-20T05:35:36Z",
-          "updated_at": "2024-08-20T05:35:36Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
