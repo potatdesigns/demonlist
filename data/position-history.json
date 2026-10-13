@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T23:19:42.707Z",
+  "generatedAt": "2026-10-13T01:40:02.396Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -1643,6 +1643,11 @@
         "date": "2026-10-05",
         "position": 104,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 105,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376": [
@@ -3554,6 +3559,11 @@
         "date": "2026-10-05",
         "position": 109,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 110,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "994ebf0f-e54e-49e4-bb7d-24097535d19d": [
@@ -4096,6 +4106,11 @@
         "date": "2026-10-05",
         "position": 108,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 109,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "48ef05df-7d3d-4653-8fdd-8cc67917c3b2": [
@@ -348486,6 +348501,11 @@
         "date": "2026-10-09",
         "position": 99,
         "reason": "Moved up — TrakineS was lowered to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 100,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "221e785a-afc1-4359-9a66-82c8233c7bc6": [
@@ -370261,6 +370281,11 @@
         "date": "2026-10-09",
         "position": 102,
         "reason": "Moved up — TrakineS was lowered to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 103,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "c83e895b-5e7d-4536-99c7-bf9324458cf2": [
@@ -375539,6 +375564,11 @@
         "date": "2026-10-05",
         "position": 117,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 116,
+        "reason": "Swapped with The Wonder of You — moved from #117 to #116"
       }
     ],
     "65ba56d3-b399-4adc-b120-aa8850436241": [
@@ -379925,6 +379955,11 @@
         "date": "2026-10-05",
         "position": 110,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 98,
+        "reason": "Raised from #110 to #98"
       }
     ],
     "64f09701-c651-41ef-ab1b-96a1c4913bd3": [
@@ -387519,6 +387554,11 @@
         "date": "2026-10-05",
         "position": 106,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 107,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "33f22458-6142-45b2-a45e-9cc488be8304": [
@@ -393968,6 +394008,11 @@
         "date": "2026-10-09",
         "position": 101,
         "reason": "Moved up — TrakineS was lowered to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 102,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "4ece95db-18aa-4dd2-9fba-9991e1cce1bc": [
@@ -404603,6 +404648,11 @@
         "date": "2026-10-05",
         "position": 116,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 117,
+        "reason": "Swapped with Natural Disaster — moved from #116 to #117"
       }
     ],
     "213ff25e-eac6-47fb-baee-6180b436ec8d": [
@@ -406379,6 +406429,11 @@
         "date": "2026-10-05",
         "position": 105,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 106,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "1a093f68-cff4-48bc-9b95-02e2aed07104": [
@@ -406521,6 +406576,11 @@
         "date": "2026-10-09",
         "position": 103,
         "reason": "Lowered from #96 to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 104,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "ca07a223-dd23-437a-8aed-03a5df95f863": [
@@ -407103,6 +407163,11 @@
         "date": "2026-10-05",
         "position": 107,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 108,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "c59d6dce-489a-40b2-aa8e-e91ff760fc2e": [
@@ -407693,6 +407758,11 @@
         "date": "2026-10-09",
         "position": 98,
         "reason": "Moved up — TrakineS was lowered to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 99,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "38c47eba-0694-4475-b6f5-8f8070cb0684": [
@@ -408448,6 +408518,11 @@
         "date": "2026-10-09",
         "position": 100,
         "reason": "Moved up — TrakineS was lowered to #103"
+      },
+      {
+        "date": "2026-10-13",
+        "position": 101,
+        "reason": "Moved down — Coalescence was raised to #98"
       }
     ],
     "c32b8cbb-ada5-456e-b1c9-a4e091fe3e72": [
@@ -409453,6 +409528,7 @@
       "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
       "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
       "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
+      "9c12bb17-9512-4771-b6e9-9e51c819ed01",
       "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
       "174221f2-19ab-48b4-8a81-50733db8bd3f",
       "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
@@ -409465,14 +409541,13 @@
       "e6132f57-97c2-413e-82e2-bbdf2702ce83",
       "994ebf0f-e54e-49e4-bb7d-24097535d19d",
       "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-      "9c12bb17-9512-4771-b6e9-9e51c819ed01",
       "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
       "ab157b89-82de-436e-817a-24e4ad8a38ba",
       "f3416b47-4beb-48af-b248-5c12bc8f1d72",
       "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
       "7e39c9be-cbcc-4aff-a23c-08add685a336",
-      "d022317b-32cc-462b-98a1-9aa37a6c8431",
       "5531d67e-30cb-4cec-b42b-8b826830a7d7",
+      "d022317b-32cc-462b-98a1-9aa37a6c8431",
       "be331419-aac0-449a-aac3-b5bc78d3c2bd",
       "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
       "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
@@ -413096,6 +413171,6 @@
       "cba6431e-c068-45e3-a3f3-1459cce2992a": "GRAPH PAPER",
       "db14f08e-b813-475f-8518-6cdcd7db20b9": "BLAZEIT"
     },
-    "lastEventFingerprint": "2026-10-12T16:56:53.664602Z|db14f08e-b813-475f-8518-6cdcd7db20b9|\"Pending\""
+    "lastEventFingerprint": "2026-10-13T01:12:30.477868Z|5531d67e-30cb-4cec-b42b-8b826830a7d7|{\"Swapped\":{\"upper_position\":116,\"upper_level\":{\"id\":\"5531d67e-30cb-4cec-b42b-8b826830a7d7\",\"name\":\"Natural Disaster\",\"level_id\":107741051,\"two_player\":false},\"other_level\":{\"id\":\"d022317b-32cc-462b-98a1-9aa37a6c8431\",\"name\":\"The Wonder of You\",\"level_id\":94858072,\"two_player\":false}}}"
   }
 }

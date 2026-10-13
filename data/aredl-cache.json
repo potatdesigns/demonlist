@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T23:19:42.450Z",
+  "generatedAt": "2026-10-13T01:40:02.185Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -7144,7 +7144,7 @@
       ],
       "description": "Bright and energetic level using Problem by Ariana Grande. Includes a memorable dual with intense and quirky high-cps gameplay. With the level containing a sign pointing to the \"Zunty Realm\", this extreme clearly is not meant to be taken too seriously. One of the most enjoyed levels in the top 150 according to EDEL.",
       "song": null,
-      "edel_enjoyment": 88.81818182,
+      "edel_enjoyment": 88,
       "is_edel_pending": false,
       "gddl_tier": 36.333333333333336,
       "nlw_tier": null,
@@ -10378,11 +10378,85 @@
       "creators": []
     },
     {
+      "id": "9c12bb17-9512-4771-b6e9-9e51c819ed01",
+      "name": "Coalescence",
+      "position": 98,
+      "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+      "points": 2420,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 108708033,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Overall",
+        "Clicksync",
+        "Fast-Paced",
+        "High CPS",
+        "Wave"
+      ],
+      "description": "Fast-paced and intriguing fusion of extremes Fog and Shimmer. Consists of an entire minute of 4x speed gameplay. The song is also a collab by the artists involved in the two levels combined here. Features a randomised ending that is much more complex than the one found in Fog.",
+      "song": 1144842,
+      "edel_enjoyment": 83.5,
+      "is_edel_pending": false,
+      "gddl_tier": 35,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+        "username": "9041c2771",
+        "global_name": "Amplitron"
+      },
+      "verifications": [
+        {
+          "id": "50767998-f631-4371-b63f-bda871695f0b",
+          "submitted_by": {
+            "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+            "username": "9041c2771",
+            "global_name": "Amplitron"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=do-a2EzZ4R8",
+          "hide_video": false,
+          "achieved_at": "2024-08-06T00:59:26Z",
+          "created_at": "2024-10-02T22:18:30Z",
+          "updated_at": "2024-10-02T22:18:30Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+          "username": "9041c2771",
+          "global_name": "Amplitron"
+        },
+        {
+          "id": "f463da1a-f214-46d9-a1ce-ac2457d476d3",
+          "username": "fb754d1a9",
+          "global_name": "pixll1"
+        },
+        {
+          "id": "50960223-8b75-43e6-a383-166e89fd156b",
+          "username": "-",
+          "global_name": "-"
+        },
+        {
+          "id": "f5f76352-a5bc-4d5a-8d22-f9ed7a1890f1",
+          "username": "notesxd",
+          "global_name": "notes"
+        },
+        {
+          "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
+          "username": "kazagd",
+          "global_name": "Kaza"
+        }
+      ]
+    },
+    {
       "id": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
       "name": "Trickshot",
-      "position": 98,
+      "position": 99,
       "publisher_id": "21608db7-7015-4558-aa56-6ab08f0e1873",
-      "points": 2420,
+      "points": 2408,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136135870,
@@ -10426,9 +10500,9 @@
     {
       "id": "174221f2-19ab-48b4-8a81-50733db8bd3f",
       "name": "Midnight",
-      "position": 99,
+      "position": 100,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2408,
+      "points": 2397,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96083028,
@@ -10474,9 +10548,9 @@
     {
       "id": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
       "name": "Doppler (Solo)",
-      "position": 100,
+      "position": 101,
       "publisher_id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
-      "points": 2397,
+      "points": 2385,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 133489881,
@@ -10529,9 +10603,9 @@
     {
       "id": "80533210-51be-417f-a492-22edff194d94",
       "name": "Cimmerian Shade",
-      "position": 101,
+      "position": 102,
       "publisher_id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
-      "points": 2385,
+      "points": 2374,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93340783,
@@ -10586,9 +10660,9 @@
     {
       "id": "46b88712-6024-4018-b526-7d103659bcb4",
       "name": "PSYCHOPATH (DeniPol)",
-      "position": 102,
+      "position": 103,
       "publisher_id": "9f3ac7f4-ee5c-4694-9104-9cb8f9b196b0",
-      "points": 2374,
+      "points": 2362,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 103925676,
@@ -10637,9 +10711,9 @@
     {
       "id": "1a093f68-cff4-48bc-9b95-02e2aed07104",
       "name": "TrakineS",
-      "position": 103,
+      "position": 104,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2362,
+      "points": 2351,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125788781,
@@ -10723,9 +10797,9 @@
     {
       "id": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
       "name": "arcturus",
-      "position": 104,
+      "position": 105,
       "publisher_id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
-      "points": 2351,
+      "points": 2340,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 72315402,
@@ -10772,9 +10846,9 @@
     {
       "id": "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
       "name": "Diabolic ClubStep",
-      "position": 105,
+      "position": 106,
       "publisher_id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
-      "points": 2340,
+      "points": 2329,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 73214186,
@@ -10823,9 +10897,9 @@
     {
       "id": "eae489bc-dbf9-47b3-9c23-9730f5343d06",
       "name": "BEELINE (Solo)",
-      "position": 106,
+      "position": 107,
       "publisher_id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
-      "points": 2329,
+      "points": 2318,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93792764,
@@ -10896,9 +10970,9 @@
     {
       "id": "e6132f57-97c2-413e-82e2-bbdf2702ce83",
       "name": "DreamStep",
-      "position": 107,
+      "position": 108,
       "publisher_id": "ec24d705-358a-48cd-9e90-2fca0002ef97",
-      "points": 2318,
+      "points": 2307,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 129235528,
@@ -10957,9 +11031,9 @@
     {
       "id": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
       "name": "Sonic Wave Infinity",
-      "position": 108,
+      "position": 109,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2307,
+      "points": 2296,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 69685815,
@@ -11124,9 +11198,9 @@
     {
       "id": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
       "name": "Tartarus",
-      "position": 109,
+      "position": 110,
       "publisher_id": "be18a588-6ac4-4368-aaef-2b98c6f046e8",
-      "points": 2296,
+      "points": 2286,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 59075347,
@@ -11221,80 +11295,6 @@
           "id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
           "username": "aa03cd685",
           "global_name": "Endlevel"
-        }
-      ]
-    },
-    {
-      "id": "9c12bb17-9512-4771-b6e9-9e51c819ed01",
-      "name": "Coalescence",
-      "position": 110,
-      "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 2286,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 108708033,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Overall",
-        "Clicksync",
-        "Fast-Paced",
-        "High CPS",
-        "Wave"
-      ],
-      "description": "Fast-paced and intriguing fusion of extremes Fog and Shimmer. Consists of an entire minute of 4x speed gameplay. The song is also a collab by the artists involved in the two levels combined here. Features a randomised ending that is much more complex than the one found in Fog.",
-      "song": 1144842,
-      "edel_enjoyment": 83.5,
-      "is_edel_pending": false,
-      "gddl_tier": 35,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-        "username": "9041c2771",
-        "global_name": "Amplitron"
-      },
-      "verifications": [
-        {
-          "id": "50767998-f631-4371-b63f-bda871695f0b",
-          "submitted_by": {
-            "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-            "username": "9041c2771",
-            "global_name": "Amplitron"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=do-a2EzZ4R8",
-          "hide_video": false,
-          "achieved_at": "2024-08-06T00:59:26Z",
-          "created_at": "2024-10-02T22:18:30Z",
-          "updated_at": "2024-10-02T22:18:30Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-          "username": "9041c2771",
-          "global_name": "Amplitron"
-        },
-        {
-          "id": "f463da1a-f214-46d9-a1ce-ac2457d476d3",
-          "username": "fb754d1a9",
-          "global_name": "pixll1"
-        },
-        {
-          "id": "50960223-8b75-43e6-a383-166e89fd156b",
-          "username": "-",
-          "global_name": "-"
-        },
-        {
-          "id": "f5f76352-a5bc-4d5a-8d22-f9ed7a1890f1",
-          "username": "notesxd",
-          "global_name": "notes"
-        },
-        {
-          "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
-          "username": "kazagd",
-          "global_name": "Kaza"
         }
       ]
     },
@@ -12037,80 +12037,11 @@
       ]
     },
     {
-      "id": "d022317b-32cc-462b-98a1-9aa37a6c8431",
-      "name": "The Wonder of You",
-      "position": 116,
-      "publisher_id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
-      "points": 2224,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 94858072,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Clicksync",
-        "Fast-Paced",
-        "Learny",
-        "High CPS",
-        "Wave"
-      ],
-      "description": "Claustrophobic monochrome extreme with subtle blue/purple accents. Uses a memorably strange industrial song matching the unconventional name and detailed mechanical designs. Initially, it was supposed to be top 10, but was nerfed to roughly top 25 to prioritize playability. ",
-      "song": 299008,
-      "edel_enjoyment": 86.2,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
-        "username": "11511bf62",
-        "global_name": "HangerLord"
-      },
-      "verifications": [
-        {
-          "id": "24b14446-c27a-4760-9f35-fa676e13a23b",
-          "submitted_by": {
-            "id": "7248961d-373f-44d9-9a77-d129955a2902",
-            "username": "12f796000",
-            "global_name": "Helix (LGGD)"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/iQ3RzYCvLvA",
-          "hide_video": false,
-          "achieved_at": "2023-09-26T18:19:04Z",
-          "created_at": "2026-02-10T04:15:19.407003Z",
-          "updated_at": "2026-02-10T04:15:19.407003Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "38bd7ec4-2c0a-4b56-bb7a-81578417236f",
-          "username": "victurkey",
-          "global_name": "Victurkey"
-        },
-        {
-          "id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
-          "username": "11511bf62",
-          "global_name": "HangerLord"
-        },
-        {
-          "id": "74fe2a05-eea2-4f45-b333-9e9b0443376b",
-          "username": "fusion425",
-          "global_name": "fusion425"
-        },
-        {
-          "id": "7248961d-373f-44d9-9a77-d129955a2902",
-          "username": "12f796000",
-          "global_name": "Helix (LGGD)"
-        }
-      ]
-    },
-    {
       "id": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
       "name": "Natural Disaster",
-      "position": 117,
+      "position": 116,
       "publisher_id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-      "points": 2214,
+      "points": 2224,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 107741051,
@@ -12224,6 +12155,75 @@
           "id": "5b93c2c4-9f1b-4280-ae6b-859e91b0a2b8",
           "username": "-",
           "global_name": "-"
+        }
+      ]
+    },
+    {
+      "id": "d022317b-32cc-462b-98a1-9aa37a6c8431",
+      "name": "The Wonder of You",
+      "position": 117,
+      "publisher_id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
+      "points": 2214,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 94858072,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Clicksync",
+        "Fast-Paced",
+        "Learny",
+        "High CPS",
+        "Wave"
+      ],
+      "description": "Claustrophobic monochrome extreme with subtle blue/purple accents. Uses a memorably strange industrial song matching the unconventional name and detailed mechanical designs. Initially, it was supposed to be top 10, but was nerfed to roughly top 25 to prioritize playability. ",
+      "song": 299008,
+      "edel_enjoyment": 86.2,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
+        "username": "11511bf62",
+        "global_name": "HangerLord"
+      },
+      "verifications": [
+        {
+          "id": "24b14446-c27a-4760-9f35-fa676e13a23b",
+          "submitted_by": {
+            "id": "7248961d-373f-44d9-9a77-d129955a2902",
+            "username": "12f796000",
+            "global_name": "Helix (LGGD)"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/iQ3RzYCvLvA",
+          "hide_video": false,
+          "achieved_at": "2023-09-26T18:19:04Z",
+          "created_at": "2026-02-10T04:15:19.407003Z",
+          "updated_at": "2026-02-10T04:15:19.407003Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "38bd7ec4-2c0a-4b56-bb7a-81578417236f",
+          "username": "victurkey",
+          "global_name": "Victurkey"
+        },
+        {
+          "id": "6e429916-832e-4cc5-b0d3-1244e2f6d023",
+          "username": "11511bf62",
+          "global_name": "HangerLord"
+        },
+        {
+          "id": "74fe2a05-eea2-4f45-b333-9e9b0443376b",
+          "username": "fusion425",
+          "global_name": "fusion425"
+        },
+        {
+          "id": "7248961d-373f-44d9-9a77-d129955a2902",
+          "username": "12f796000",
+          "global_name": "Helix (LGGD)"
         }
       ]
     },
@@ -12749,7 +12749,7 @@
       ],
       "description": "Xyriak's magnum opus that was worked on for over 3 years. It is extremely frantic with its gameplay and consists complicated usage of the dual mode, making it difficult to approach and learn. Unfortunately does not use the robot game mode.",
       "song": 383729,
-      "edel_enjoyment": 73.08333333,
+      "edel_enjoyment": 74.04,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
