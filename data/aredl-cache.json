@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T04:17:50.785Z",
+  "generatedAt": "2026-10-13T12:16:50.101Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -4544,7 +4544,7 @@
           "submitted_by": {
             "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
             "username": "wwa_06",
-            "global_name": "Wa"
+            "global_name": "Wain"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=pIHOHz3i0Rw",
@@ -4603,7 +4603,7 @@
         {
           "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
           "username": "wwa_06",
-          "global_name": "Wa"
+          "global_name": "Wain"
         },
         {
           "id": "e1c89a9e-01ac-44c6-aebf-a53b0974465c",
@@ -9686,7 +9686,7 @@
           "submitted_by": {
             "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
             "username": "wwa_06",
-            "global_name": "Wa"
+            "global_name": "Wain"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=E4ppq2WeAAs",
@@ -9705,7 +9705,7 @@
         {
           "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
           "username": "wwa_06",
-          "global_name": "Wa"
+          "global_name": "Wain"
         }
       ]
     },
@@ -10943,12 +10943,7 @@
         {
           "id": "024bc52e-5194-45ba-aaed-e6fe6317137b",
           "username": "bfa8f56b2",
-          "global_name": "7AK"
-        },
-        {
-          "id": "1961a172-0196-4030-92d7-a21553f0ab60",
-          "username": "244b93f9f",
-          "global_name": "Waffl3x"
+          "global_name": "7ak"
         },
         {
           "id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
@@ -10964,6 +10959,11 @@
           "id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
           "username": "ef751dff2",
           "global_name": "MadisonYuko"
+        },
+        {
+          "id": "5f33827d-f29d-4f18-9af8-a2d28cf384d9",
+          "username": "waffybun",
+          "global_name": "waffybun"
         }
       ]
     },
