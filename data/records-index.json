@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T14:11:22.337Z",
+  "generatedAt": "2026-10-13T00:03:32.332Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -15573,6 +15573,19 @@
         }
       ]
     },
+    "33d0c965-0776-4a22-a242-a72683f3c892": {
+      "name": "James50c",
+      "levels": [
+        {
+          "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
+          "levelName": "Menace",
+          "position": 26,
+          "achievedAt": "2026-10-12T10:17:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LkgyuyVmO_4",
+          "verified": false
+        }
+      ]
+    },
     "10b2f846-fa66-43fa-8427-dc05cf20556c": {
       "name": "ViperVenom95",
       "levels": [
@@ -20040,7 +20053,7 @@
       ]
     },
     "29dffd31-36e2-483c-85fc-ac93c42e8fee": {
-      "name": "ZStaiXens",
+      "name": "Staixz",
       "levels": [
         {
           "levelId": "06898192-2f94-4b57-a18b-d95cc73c69e5",
@@ -32638,6 +32651,14 @@
           "position": 95,
           "achievedAt": "2026-04-24T17:12:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=m3CR-D9cDwI",
+          "verified": false
+        },
+        {
+          "levelId": "46b88712-6024-4018-b526-7d103659bcb4",
+          "levelName": "PSYCHOPATH (DeniPol)",
+          "position": 102,
+          "achievedAt": "2026-10-08T19:00:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=w4GsPmNXC64",
           "verified": false
         },
         {
@@ -48242,6 +48263,19 @@
         }
       ]
     },
+    "03190ca6-cabd-4012-8bf1-c710d99ea756": {
+      "name": "waterduckthethird",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 84,
+          "achievedAt": "2026-10-11T21:54:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=p8SmGKJ6YyQ",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
@@ -51076,7 +51110,7 @@
       ]
     },
     "da2e9183-9f3a-4b36-9858-2b09a464d0a2": {
-      "name": "veri",
+      "name": "verified",
       "levels": [
         {
           "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
