@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T16:21:10.068Z",
+  "generatedAt": "2026-10-14T21:14:00.353Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -60119,6 +60119,19 @@
           "position": 123,
           "achievedAt": "2026-09-05T13:29:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y4Y_XtT-f9k",
+          "verified": false
+        }
+      ]
+    },
+    "a75610b9-0d47-4141-8d12-95d28353f872": {
+      "name": "luno",
+      "levels": [
+        {
+          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
+          "levelName": "NETWORK (Agat3)",
+          "position": 123,
+          "achievedAt": "2026-10-13T19:21:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=H-EA1wfoFOA",
           "verified": false
         }
       ]
