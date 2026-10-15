@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T10:44:34.098Z",
+  "generatedAt": "2026-10-15T16:09:11.196Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -85,14 +85,6 @@
           "achievedAt": "2026-08-29T23:55:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=tb1LhBLrJks",
           "verified": false
-        },
-        {
-          "levelId": "f9158d5d-ecda-414c-a507-b8eb99d4d99f",
-          "levelName": "Thinking Space II",
-          "position": 3,
-          "achievedAt": "2025-05-24T22:30:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=CELNmHwln_c",
-          "verified": true
         },
         {
           "levelId": "4ece95db-18aa-4dd2-9fba-9991e1cce1bc",
@@ -40395,14 +40387,6 @@
           "achievedAt": "2025-02-17T22:30:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=JuAf495cjHc",
           "verified": false
-        },
-        {
-          "levelId": "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
-          "levelName": "Deadlier Clubstep",
-          "position": 68,
-          "achievedAt": "2023-10-20T19:30:43Z",
-          "videoUrl": "https://www.youtube.com/watch?v=eRhgaF0r5Q0",
-          "verified": true
         }
       ]
     },
