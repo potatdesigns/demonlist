@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T15:57:15.177Z",
+  "generatedAt": "2026-10-16T20:24:57.271Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -5904,6 +5904,14 @@
           "position": 16,
           "achievedAt": "2025-10-05T13:55:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=fa40thamU3Q",
+          "verified": false
+        },
+        {
+          "levelId": "210ae17a-e6bf-4851-91be-85501194dbf3",
+          "levelName": "Voltage (ThePurgatory)",
+          "position": 54,
+          "achievedAt": "2026-09-18T17:50:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PF6Uk1Iksxw",
           "verified": false
         }
       ]
@@ -15272,6 +15280,59 @@
           "position": 132,
           "achievedAt": "2026-07-21T06:24:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=YM0ZfBCMfN8",
+          "verified": false
+        }
+      ]
+    },
+    "cbaa8346-6ee8-429d-ab6f-06020a7c1b15": {
+      "name": "AvainPortti",
+      "levels": [
+        {
+          "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
+          "levelName": "Acheron",
+          "position": 25,
+          "achievedAt": "2026-10-11T19:00:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=8Ss_bayzqVU",
+          "verified": false
+        },
+        {
+          "levelId": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+          "levelName": "BRITNEY NO SCLEARS",
+          "position": 69,
+          "achievedAt": "2026-09-28T15:59:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2bVuT606ksw",
+          "verified": false
+        },
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 93,
+          "achievedAt": "2025-09-19T16:20:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7T3MOKh-0VU",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 110,
+          "achievedAt": "2026-10-01T16:13:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=lqnXs6LZRWY",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 120,
+          "achievedAt": "2025-12-24T21:29:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JdbdXNEmou8",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2025-03-15T19:53:23Z",
+          "videoUrl": "https://www.youtube.com/watch?v=KRrgSi2E6Ps",
           "verified": false
         }
       ]
@@ -27338,6 +27399,27 @@
           "position": 120,
           "achievedAt": "2026-09-13T13:28:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=uwjSSDBcUiM",
+          "verified": false
+        }
+      ]
+    },
+    "e3056a1d-76f1-4e4e-8d23-902a5f1364a7": {
+      "name": "Sangkan",
+      "levels": [
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 39,
+          "achievedAt": "2025-02-13T16:00:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iELR-t63p6k",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 45,
+          "achievedAt": "2025-02-21T08:56:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sUmXB4HR5N0",
           "verified": false
         }
       ]
@@ -42195,51 +42277,6 @@
           "position": 73,
           "achievedAt": "2026-08-18T04:56:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=oafN_yt0N2w",
-          "verified": false
-        }
-      ]
-    },
-    "cbaa8346-6ee8-429d-ab6f-06020a7c1b15": {
-      "name": "AvainPortti",
-      "levels": [
-        {
-          "levelId": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
-          "levelName": "BRITNEY NO SCLEARS",
-          "position": 69,
-          "achievedAt": "2026-09-28T15:59:00Z",
-          "videoUrl": "https://www.youtube.com/watch?v=2bVuT606ksw",
-          "verified": false
-        },
-        {
-          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
-          "levelName": "The Yangire",
-          "position": 93,
-          "achievedAt": "2025-09-19T16:20:22Z",
-          "videoUrl": "https://www.youtube.com/watch?v=7T3MOKh-0VU",
-          "verified": false
-        },
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 110,
-          "achievedAt": "2026-10-01T16:13:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=lqnXs6LZRWY",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 120,
-          "achievedAt": "2025-12-24T21:29:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=JdbdXNEmou8",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 121,
-          "achievedAt": "2025-03-15T19:53:23Z",
-          "videoUrl": "https://www.youtube.com/watch?v=KRrgSi2E6Ps",
           "verified": false
         }
       ]
