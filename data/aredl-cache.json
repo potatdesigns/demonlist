@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:47:44.665Z",
+  "generatedAt": "2026-10-16T10:09:43.164Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2577,11 +2577,104 @@
       ]
     },
     {
+      "id": "9d96d090-5022-4cde-801d-72e03e0b1a1b",
+      "name": "Defeated Circles",
+      "position": 23,
+      "publisher_id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
+      "points": 3947,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 120012581,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "NONG",
+        "Circles",
+        "Timings",
+        "Wave"
+      ],
+      "description": "A Nine Circles styled level which takes heavy inspiration from the \"You So Defeated\" challenges, being especially apparent in the level's timing-based segments and its song choice. The level is overall first-half heavy, though the difficulty does not step down much in the latter half, ending off on a dual wave and a spam corridor.",
+      "song": null,
+      "edel_enjoyment": 56.66666667,
+      "is_edel_pending": false,
+      "gddl_tier": 38,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
+        "username": "a02eecb21",
+        "global_name": "GXQ"
+      },
+      "verifications": [
+        {
+          "id": "e36587c5-0d84-40a0-a04f-2c806cd8703b",
+          "submitted_by": {
+            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
+            "username": "zoinkgd",
+            "global_name": "Zoink"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=nU5AQPzd2YA",
+          "hide_video": false,
+          "achieved_at": "2025-05-31T19:00:18Z",
+          "created_at": "2025-10-26T22:34:48.838957Z",
+          "updated_at": "2025-10-26T22:34:48.838957Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "c320f158-49f3-48a4-9667-f1063627e8b5",
+          "username": "skippy3277",
+          "global_name": "Slijee"
+        },
+        {
+          "id": "a83ce3ac-ebd4-453b-b3f2-07a916b4dc09",
+          "username": "fde261bcf",
+          "global_name": "GDFluxit"
+        },
+        {
+          "id": "0ba800e4-e2ca-4f12-9d68-69895f1eb3d9",
+          "username": "f871972a1",
+          "global_name": "SlendStone"
+        },
+        {
+          "id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
+          "username": "a02eecb21",
+          "global_name": "GXQ"
+        },
+        {
+          "id": "1ea946f2-8df1-46a8-b5f2-c420c5d65378",
+          "username": "e3a88907b",
+          "global_name": "notcyanide"
+        },
+        {
+          "id": "2a4ba2a6-f027-490a-af1e-c400bd8cfb29",
+          "username": "82325a4c0",
+          "global_name": "lupodzn"
+        },
+        {
+          "id": "641d974e-1cb1-40c2-b01b-f07f9b9079c1",
+          "username": "ac93106a8",
+          "global_name": "pootys1337"
+        },
+        {
+          "id": "ef208797-62e4-478b-be76-721f856b4d93",
+          "username": "10355b895",
+          "global_name": "muriday"
+        },
+        {
+          "id": "cbbb6875-8439-420f-bd5f-ce36d248e6f3",
+          "username": "w.silence",
+          "global_name": "silence"
+        }
+      ]
+    },
+    {
       "id": "dbafbb7d-f925-406c-95e1-7298733def71",
       "name": "Avernus",
-      "position": 23,
+      "position": 24,
       "publisher_id": "760b8673-c930-4f37-9fbd-e820fe477d85",
-      "points": 3947,
+      "points": 3911,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89496627,
@@ -2697,9 +2790,9 @@
     {
       "id": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
       "name": "Acheron",
-      "position": 24,
+      "position": 25,
       "publisher_id": "fa630147-2a41-4c56-aa1f-4b7a6649c955",
-      "points": 3911,
+      "points": 3876,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 73667628,
@@ -2816,9 +2909,9 @@
     {
       "id": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
       "name": "Spectre",
-      "position": 25,
+      "position": 26,
       "publisher_id": "ea04240c-ddbb-43a3-a055-2084faddd743",
-      "points": 3876,
+      "points": 3842,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110815379,
@@ -3029,9 +3122,9 @@
     {
       "id": "3d351b86-3762-4eee-95aa-8dbd16189531",
       "name": "Menace",
-      "position": 26,
+      "position": 27,
       "publisher_id": "7cc1696c-e945-4b2d-882f-b78b38a61f22",
-      "points": 3842,
+      "points": 3809,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 107805281,
@@ -3078,9 +3171,9 @@
     {
       "id": "c9227a33-a5d4-47d3-a025-a07781f228e1",
       "name": "Abyss of Darkness",
-      "position": 27,
+      "position": 28,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
-      "points": 3809,
+      "points": 3776,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49896559,
@@ -3201,99 +3294,6 @@
           "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
           "username": "rynoxiouss",
           "global_name": "Rynoxious"
-        }
-      ]
-    },
-    {
-      "id": "9d96d090-5022-4cde-801d-72e03e0b1a1b",
-      "name": "Defeated Circles",
-      "position": 28,
-      "publisher_id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
-      "points": 3776,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 120012581,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "NONG",
-        "Circles",
-        "Timings",
-        "Wave"
-      ],
-      "description": "A Nine Circles styled level which takes heavy inspiration from the \"You So Defeated\" challenges, being especially apparent in the level's timing-based segments and its song choice. The level is overall first-half heavy, though the difficulty does not step down much in the latter half, ending off on a dual wave and a spam corridor.",
-      "song": null,
-      "edel_enjoyment": 56.66666667,
-      "is_edel_pending": false,
-      "gddl_tier": 38,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
-        "username": "a02eecb21",
-        "global_name": "GXQ"
-      },
-      "verifications": [
-        {
-          "id": "e36587c5-0d84-40a0-a04f-2c806cd8703b",
-          "submitted_by": {
-            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
-            "username": "zoinkgd",
-            "global_name": "Zoink"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=nU5AQPzd2YA",
-          "hide_video": false,
-          "achieved_at": "2025-05-31T19:00:18Z",
-          "created_at": "2025-10-26T22:34:48.838957Z",
-          "updated_at": "2025-10-26T22:34:48.838957Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "c320f158-49f3-48a4-9667-f1063627e8b5",
-          "username": "skippy3277",
-          "global_name": "Slijee"
-        },
-        {
-          "id": "a83ce3ac-ebd4-453b-b3f2-07a916b4dc09",
-          "username": "fde261bcf",
-          "global_name": "GDFluxit"
-        },
-        {
-          "id": "0ba800e4-e2ca-4f12-9d68-69895f1eb3d9",
-          "username": "f871972a1",
-          "global_name": "SlendStone"
-        },
-        {
-          "id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
-          "username": "a02eecb21",
-          "global_name": "GXQ"
-        },
-        {
-          "id": "1ea946f2-8df1-46a8-b5f2-c420c5d65378",
-          "username": "e3a88907b",
-          "global_name": "notcyanide"
-        },
-        {
-          "id": "2a4ba2a6-f027-490a-af1e-c400bd8cfb29",
-          "username": "82325a4c0",
-          "global_name": "lupodzn"
-        },
-        {
-          "id": "641d974e-1cb1-40c2-b01b-f07f9b9079c1",
-          "username": "ac93106a8",
-          "global_name": "pootys1337"
-        },
-        {
-          "id": "ef208797-62e4-478b-be76-721f856b4d93",
-          "username": "10355b895",
-          "global_name": "muriday"
-        },
-        {
-          "id": "cbbb6875-8439-420f-bd5f-ce36d248e6f3",
-          "username": "w.silence",
-          "global_name": "silence"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T06:47:44.885Z",
+  "generatedAt": "2026-10-16T10:09:43.354Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -141,6 +141,11 @@
         "date": "2026-10-05",
         "position": 24,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 25,
+        "reason": "Moved down — Defeated Circles was raised to #23"
       }
     ],
     "67708587-274e-4de8-9be9-55385bbcbc9f": [
@@ -505,6 +510,11 @@
         "date": "2026-10-05",
         "position": 27,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 28,
+        "reason": "Moved down — Defeated Circles was raised to #23"
       }
     ],
     "b0f62595-314d-4648-b23e-12756382c126": [
@@ -288803,6 +288813,11 @@
         "date": "2026-10-05",
         "position": 23,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 24,
+        "reason": "Moved down — Defeated Circles was raised to #23"
       }
     ],
     "4fac9298-93ae-4553-abe9-72a562567318": [
@@ -373676,6 +373691,11 @@
         "date": "2026-10-05",
         "position": 26,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 27,
+        "reason": "Moved down — Defeated Circles was raised to #23"
       }
     ],
     "699e6b35-7f79-4413-b300-0b30c0cdb8d6": [
@@ -381828,6 +381848,11 @@
         "date": "2026-10-05",
         "position": 25,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 26,
+        "reason": "Moved down — Defeated Circles was raised to #23"
       }
     ],
     "2d363340-d8ae-4049-a729-a5cf50c0252b": [
@@ -399542,6 +399567,11 @@
         "date": "2026-10-05",
         "position": 28,
         "reason": "Moved down — GRIEF was placed at #1"
+      },
+      {
+        "date": "2026-10-16",
+        "position": 23,
+        "reason": "Raised from #28 to #23"
       }
     ],
     "1178244d-6482-4ef5-a299-c022eb193757": [
@@ -409893,12 +409923,12 @@
       "7274331e-37b4-4e90-8711-dec7a5d0f00f",
       "596c8672-afa6-43c3-83f2-2078756a0554",
       "298bb7f4-38e4-4376-b8b6-8659cf2d2c00",
+      "9d96d090-5022-4cde-801d-72e03e0b1a1b",
       "dbafbb7d-f925-406c-95e1-7298733def71",
       "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
       "8d117c28-8955-4cf9-9b72-4ca2e211534a",
       "3d351b86-3762-4eee-95aa-8dbd16189531",
       "c9227a33-a5d4-47d3-a025-a07781f228e1",
-      "9d96d090-5022-4cde-801d-72e03e0b1a1b",
       "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
       "e564dff8-304b-401d-9376-63528b7ba279",
       "06898192-2f94-4b57-a18b-d95cc73c69e5",
@@ -413615,6 +413645,6 @@
       "566541dc-d103-4e51-b378-a867817635a4": "bunnies i guess",
       "ee79ee7a-528e-4f52-a9bf-71e68be8ffbd": "Isolation"
     },
-    "lastEventFingerprint": "2026-10-16T02:55:49.240947Z|c1502d09-3426-4bb3-877e-4c0f237ae5e9|{\"Raised\":{\"new_position\":909,\"old_position\":1060}}"
+    "lastEventFingerprint": "2026-10-16T09:26:57.283598Z|9d96d090-5022-4cde-801d-72e03e0b1a1b|{\"Raised\":{\"new_position\":23,\"old_position\":28}}"
   }
 }
