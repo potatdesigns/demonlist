@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T20:50:50.963Z",
+  "generatedAt": "2026-10-16T02:46:52.392Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -49751,6 +49751,19 @@
           "position": 144,
           "achievedAt": "2026-08-02T10:28:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=d5F_aGTr6zk",
+          "verified": false
+        }
+      ]
+    },
+    "e3aa344d-732f-4856-9dc2-d3dfe80677e5": {
+      "name": "Chispii04",
+      "levels": [
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 93,
+          "achievedAt": "2026-10-14T18:27:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6CtcbxyBhvg",
           "verified": false
         }
       ]
