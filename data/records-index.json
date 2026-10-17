@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T02:38:19.351Z",
+  "generatedAt": "2026-10-17T10:02:21.071Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -29367,6 +29367,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 119,
+          "achievedAt": "2026-10-13T13:08:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=8jdcTIO0wWk",
+          "verified": false
+        },
+        {
           "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
           "levelName": "paranoia (amplitron)",
           "position": 141,
@@ -38066,6 +38074,14 @@
           "position": 58,
           "achievedAt": "2026-10-14T22:03:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=dmDLldMrPRo",
+          "verified": false
+        },
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 75,
+          "achievedAt": "2026-10-17T01:55:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=HcywBRQac8Y",
           "verified": false
         },
         {
