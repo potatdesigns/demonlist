@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T22:18:56.990Z",
+  "generatedAt": "2026-10-17T00:54:01.029Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -22,8 +22,8 @@
       ],
       "description": "One of the most anticipated top 1s in the game's history, with a verification process spanning 396 streams with a cumulative playtime of 922 hours; currently the hardest level in the game.",
       "song": 482872,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 85,
+      "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
