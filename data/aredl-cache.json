@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:44:41.345Z",
+  "generatedAt": "2026-10-17T18:57:07.740Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2239,7 +2239,7 @@
         "Nerve Control",
         "Overall"
       ],
-      "description": null,
+      "description": "An old XXL+ mega-collab that began way back in 2020 and was finished and verified more than half a decade later. The gameplay features many epic, but nerve-racking and learny parts, including the last ship closing in at the end. Despite its age, the gameplay is really well done and polished for its time, especially the decoration and song representation.",
       "song": null,
       "edel_enjoyment": 76.33333333,
       "is_edel_pending": true,
@@ -3468,7 +3468,7 @@
         "XL",
         "NONG"
       ],
-      "description": null,
+      "description": "Laniakea's XL megacollab themed after the Touhou series. Heavily inspired by Artifice, it features various different pink and purple coloured design styles referencing the game it's based on. Has fast paced overall gameplay with the difficulty leaning toward the second half.",
       "song": null,
       "edel_enjoyment": 32.5,
       "is_edel_pending": true,
@@ -3709,7 +3709,7 @@
         "Duals",
         "Overall"
       ],
-      "description": "One of the most unorthodox levels on the list, requiring a mastery of solo-intended 2 player, memory, spam control, and gimmicks.",
+      "description": "Created for MatMart’s second GD Civilization event, “cognitohazard” was created specifically to suit the skill set of the verifier, Whizkid05, with the intent of the level never being beaten. The gameplay consists of many unorthodox gameplay types such as spam, 2-player, memory, and randomized gameplay. Despite having to be rushed, cognitohazard recieved a legendary rating; however, it did not place on the demonlist until 6 months and 1 day after its verification, due to its lack of victors.",
       "song": 10008831,
       "edel_enjoyment": 69,
       "is_edel_pending": true,
@@ -3902,7 +3902,7 @@
         "Learny",
         "Gimmicky"
       ],
-      "description": null,
+      "description": "Originally meant to be a showcased impossible level built several years ago by LordDivinity, and eventually taken on and verified by spcreat. Using the same song as Killbot, the aesthetic is extremely flashy and intense, with the second and final drop comprising a large part of the level's difficulty.",
       "song": null,
       "edel_enjoyment": 47.66666667,
       "is_edel_pending": true,
@@ -4242,7 +4242,7 @@
         "Timings",
         "Overall"
       ],
-      "description": "Extremely large megacollab and remake of Phobos. Parts significantly vary in design and color similarly to Phobos, and the iconic final dual was kept nearly identical. ",
+      "description": "Extremely large megacollab and sequel to Phobos. Parts significantly vary in design and color similarly to Phobos, and the iconic final dual was kept nearly identical.",
       "song": 830628,
       "edel_enjoyment": 62.68181818,
       "is_edel_pending": false,
@@ -4483,7 +4483,7 @@
         "Nerve Control",
         "Cube"
       ],
-      "description": null,
+      "description": "A 3-minute-long XL extreme known for having no spikes from start to finish. It features a vibrant color palette and a carefree-styled art aesthetic, paired with an array of very gimmicky gameplay mechanics. This level is fairly well-received for its difficulty.",
       "song": 1172938,
       "edel_enjoyment": 76.42857143,
       "is_edel_pending": false,
@@ -5993,7 +5993,7 @@
         "Ship",
         "UFO"
       ],
-      "description": null,
+      "description": "Using \"Exit Music (For A Film)\" by Radiohead for the song, Nomad is an extremely short and dense precision test with a mild runtime of 57 seconds, containing primarily desert and blizzard themes for its aesthetic. Has an interesting choice of gameplay, utilizing only three gamemodes: cube, ship, and UFO.",
       "song": null,
       "edel_enjoyment": 62.18181818,
       "is_edel_pending": false,
@@ -6022,14 +6022,14 @@
       ],
       "creators": [
         {
-          "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-          "username": "reesevt",
-          "global_name": "reesevt"
-        },
-        {
           "id": "b4ab5d66-89bb-4ebc-9f43-a78e96f15bc7",
           "username": "cb13e7a30",
           "global_name": "danielsbadkarma"
+        },
+        {
+          "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
+          "username": "reesevt",
+          "global_name": "reesevt"
         }
       ]
     },
@@ -6051,7 +6051,7 @@
         "Flow",
         "Nerve Control"
       ],
-      "description": "",
+      "description": "Snow-themed XL solo extreme by amplitron, featuring an atmospheric art-design styled decoration. This level's pacing remains calm until the drop, where slow turns to flow, rapidly transitioning into fast-paced and High-CPS gameplay complementing its drum and bass track.",
       "song": 1208210,
       "edel_enjoyment": 60,
       "is_edel_pending": false,
@@ -7094,7 +7094,7 @@
         "Cube",
         "Ship"
       ],
-      "description": null,
+      "description": "A deceivingly difficult solo extreme that was inspired by SARY NEVER CLEAR and Hard Machine. Notable for its name and usage of a Britany Spears song. It took over a year to get rated.",
       "song": null,
       "edel_enjoyment": 71,
       "is_edel_pending": false,
@@ -7472,7 +7472,7 @@
         "Wave",
         "Duals"
       ],
-      "description": null,
+      "description": "2.2 remake of Mind Control, complete with a combination of extremely gimmicky and traditional gameplay, featuring a fake dual wave at the drop, a pick-a-path corridor(s) at 63%, and a randomised ending. Decorated with a range of different decoration styles to match the original level. ",
       "song": null,
       "edel_enjoyment": 90,
       "is_edel_pending": true,
@@ -8461,7 +8461,7 @@
         "Timings",
         "Wave"
       ],
-      "description": null,
+      "description": "A fast-paced indigo Nine Circles level that is a staple within the New Zealand Geometry Dash community. Features a sleek, polished design influenced by many of the creator's favorite creators at the time, with its structuring loosely inspired by Arctic Lights. Took over 2 years to be rated after its initial release.",
       "song": 433947,
       "edel_enjoyment": 50.71428571,
       "is_edel_pending": false,
@@ -8789,7 +8789,7 @@
         "Memory",
         "Nerve Control"
       ],
-      "description": "The third hardest 1.9 GDPS level which features 5 minutes of memory gameplay!",
+      "description": "A 5 minute long megacollab intended to be the hardest 1.9PS level of its time, starting in 2022 as a layout collab before growing to have a roster of 25 decorators. One of its most notable gameplay sections is the very end containing an extremely stressful and chokable combination of a ship control section and a wave spam corridor.",
       "song": 109650,
       "edel_enjoyment": 70.38461538,
       "is_edel_pending": false,
@@ -10468,7 +10468,7 @@
         "Flow",
         "Wave"
       ],
-      "description": null,
+      "description": "Vonic's participation for Twister's #DemonTime event, where participants each made a demon of any difficulty by a certain due date. A solo top 75 that took the creator 25 days to make start to finish and only 3 days to verify. Contains energetic and high-cps gameplay with difficulty spikes in its first half while resembling a decoration seemingly inspired by TamaN's style.",
       "song": 953530,
       "edel_enjoyment": 70.38888889,
       "is_edel_pending": false,
@@ -13727,7 +13727,7 @@
         "Ship",
         "Overall"
       ],
-      "description": null,
+      "description": "An Amplitron solo with a floral theme that features a PinkPantheress song. It focuses primarily on high CPS with an abundance of triple clicks and difficult wave bursts. Contains a notable ship at 16% and is widely considered to be second half heavy.",
       "song": 1245745,
       "edel_enjoyment": 61.72727273,
       "is_edel_pending": false,
