@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:02:21.071Z",
+  "generatedAt": "2026-10-17T14:50:15.638Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -42212,6 +42212,14 @@
           "verified": true
         },
         {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 120,
+          "achievedAt": "2026-10-16T15:54:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QiRzN4yLDaw",
+          "verified": false
+        },
+        {
           "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
           "levelName": "Oblivion",
           "position": 121,
@@ -51320,6 +51328,27 @@
           "position": 99,
           "achievedAt": "2026-10-10T14:27:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=nN_W60hUxH4",
+          "verified": false
+        }
+      ]
+    },
+    "6e303c88-0440-4d8a-97c8-cb0108bfebfc": {
+      "name": "styxx",
+      "levels": [
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 99,
+          "achievedAt": "2026-10-15T07:13:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sGnqzzYA7LM",
+          "verified": false
+        },
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 145,
+          "achievedAt": "2026-08-16T02:31:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zOHju5kd534",
           "verified": false
         }
       ]
@@ -64016,19 +64045,6 @@
           "position": 150,
           "achievedAt": "2026-09-13T22:21:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=lzHd3CYtghQ",
-          "verified": false
-        }
-      ]
-    },
-    "6e303c88-0440-4d8a-97c8-cb0108bfebfc": {
-      "name": "styxx",
-      "levels": [
-        {
-          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
-          "levelName": "Aerial Gleam",
-          "position": 145,
-          "achievedAt": "2026-08-16T02:31:39Z",
-          "videoUrl": "https://www.youtube.com/watch?v=zOHju5kd534",
           "verified": false
         }
       ]
