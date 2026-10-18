@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T02:40:00.412Z",
+  "generatedAt": "2026-10-18T10:14:57.041Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -49956,6 +49956,27 @@
         }
       ]
     },
+    "3be49c0e-6423-427b-a27f-8597da06b1bc": {
+      "name": "Deathrange",
+      "levels": [
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 93,
+          "achievedAt": "2026-10-17T19:08:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Sq_K2-yCM04",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 121,
+          "achievedAt": "2025-12-09T05:41:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=mlrP4P5rhAA",
+          "verified": false
+        }
+      ]
+    },
     "4b1272ac-09f1-4ead-b8ad-e78068ba553d": {
       "name": "HotNooB",
       "levels": [
@@ -59450,19 +59471,6 @@
           "position": 121,
           "achievedAt": "2025-11-29T17:00:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=_pAtcEmUaMc",
-          "verified": false
-        }
-      ]
-    },
-    "3be49c0e-6423-427b-a27f-8597da06b1bc": {
-      "name": "Deathrange",
-      "levels": [
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 121,
-          "achievedAt": "2025-12-09T05:41:48Z",
-          "videoUrl": "https://www.youtube.com/watch?v=mlrP4P5rhAA",
           "verified": false
         }
       ]
