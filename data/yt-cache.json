@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:51:25.356Z",
+  "generatedAt": "2026-10-18T21:55:54.446Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2794,27 +2794,6 @@
       },
       "discoveredAt": "2026-10-18T12:32:35.477Z"
     },
-    "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f": {
-      "name": "Trueffet",
-      "position": 150,
-      "verifier": {
-        "id": "yHESkazVD4Q",
-        "url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
-        "title": "[EXTREME DEMON] Trueffet VERIFIED by SyQual & Rainstorm (Top 10)",
-        "channel": "Baeru",
-        "viewCount": 389072,
-        "viewsCheckedAt": "2026-10-18T19:51:24.602Z"
-      },
-      "showcase": {
-        "id": "eOUJZPn8YuU",
-        "url": "https://www.youtube.com/watch?v=eOUJZPn8YuU",
-        "title": "【4K】 \"Trueffet\" [TOP 10?] by SyQual & Rainstorm (Extreme Demon) [38K SPECIAL] | Geometry Dash 2.11",
-        "channel": "Just a GD player",
-        "viewCount": 598866,
-        "viewsCheckedAt": "2026-10-18T19:51:24.602Z"
-      },
-      "discoveredAt": "2026-10-18T12:32:35.477Z"
-    },
     "51200df7-7a51-455c-b2c8-25cc6f6f0114": {
       "name": "NervHell",
       "position": 57,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-10-18T19:51:24.602Z"
       },
       "discoveredAt": "2026-10-18T12:32:35.477Z"
+    },
+    "034634f7-f216-4f34-82dd-003eebd2897e": {
+      "name": "Artemis 13",
+      "position": 2,
+      "verifier": {
+        "id": "FgjOM0ef1N8",
+        "url": "https://www.youtube.com/watch?v=FgjOM0ef1N8",
+        "title": "VERIFIED // ARTEMIS 13 100%",
+        "channel": "Zoink",
+        "viewCount": 1103744,
+        "viewsCheckedAt": "2026-10-18T21:55:54.446Z"
+      },
+      "showcase": {
+        "id": "Dg0WZY90X7w",
+        "url": "https://www.youtube.com/watch?v=Dg0WZY90X7w",
+        "title": "ARTEMIS 13 | TOP 1-3 | ZOINK VERIFICATION",
+        "channel": "Nexus [GD]",
+        "viewCount": 475946,
+        "viewsCheckedAt": "2026-10-18T21:55:54.446Z"
+      },
+      "discoveredAt": "2026-10-18T21:55:54.446Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "Hd3o7_6ZYFc",
+      "newestVideoId": "CyujEHgyxXU",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32461,6 +32461,14 @@
           ],
           "description": "Level: Shrimpire State by Debihan & Naevskai\nID: 150769793\nRemix: https://www.youtube.com/watch?v=is6SmUs9kbY",
           "checkedAt": "2026-10-18T12:31:54.501Z"
+        },
+        "CyujEHgyxXU": {
+          "title": "BAD PIGGIES VERIFIED",
+          "channel": "Nexus [GD]",
+          "viewCount": 3387,
+          "levelIds": [],
+          "description": "Awesome Bad Piggies themed level hosted by Atomic, this was really fun to verify\n\nLevel: Bad Piggies by ItsMeAtomic, Pooch, Echo, Haeparthis, SmitN, Ultrajesko, Xatz, Galofuf, Viper Arcturus, Eddy, Daxy, PloLek, GGglow, Mag, Notoria, Leaf, EtzeranTRK, Outbite, Galofuf, Nauticus\n\nID: \n\nSong: https://youtu.be/EgAOqt8I5ac",
+          "checkedAt": "2026-10-18T21:55:51.070Z"
         }
       }
     },
