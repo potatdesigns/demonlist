@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T21:08:53.057Z",
+  "generatedAt": "2026-10-19T20:51:33.672Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -393312,6 +393312,11 @@
         "date": "2026-10-18",
         "position": 71,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-19",
+        "position": 72,
+        "reason": "Moved down — Stellar Night was raised to #71"
       }
     ],
     "f79695b9-ddb2-46ab-bef6-a231917db6d5": [
@@ -399019,6 +399024,11 @@
         "date": "2026-10-18",
         "position": 72,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-19",
+        "position": 73,
+        "reason": "Moved down — Stellar Night was raised to #71"
       }
     ],
     "c2837416-7fb4-4866-ba91-e9c134a0a59a": [
@@ -408822,6 +408832,11 @@
         "date": "2026-10-18",
         "position": 73,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-19",
+        "position": 71,
+        "reason": "Raised from #73 to #71"
       }
     ],
     "2a8c1979-8f50-4652-8ff0-223471a9a7b5": [
@@ -412269,9 +412284,9 @@
       "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
       "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+      "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-      "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "64b042d2-a084-4a84-83c6-fcc830e84a2e",
       "d3a53d45-e7e1-4ec4-9395-441816eb8425",
@@ -415946,6 +415961,6 @@
       "ee79ee7a-528e-4f52-a9bf-71e68be8ffbd": "Isolation",
       "56b8c520-2821-4701-9df6-fbe94d44c15b": "i want ya"
     },
-    "lastEventFingerprint": "2026-10-18T20:12:58.927966Z|034634f7-f216-4f34-82dd-003eebd2897e|{\"Placed\":{\"new_position\":2,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-10-19T20:31:43.994967Z|c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47|{\"Raised\":{\"new_position\":71,\"old_position\":73}}"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T15:58:41.405Z",
+  "generatedAt": "2026-10-19T20:51:33.446Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -7263,11 +7263,65 @@
       "creators": []
     },
     {
+      "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+      "name": "Stellar Night",
+      "position": 71,
+      "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
+      "points": 2796,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 83244159,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "NONG",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "High CPS",
+        "Gimmicky",
+        "Flow",
+        "Ship",
+        "Wave",
+        "Overall"
+      ],
+      "description": "2.1 solo extreme by icedcave. Notable for its thorny obstacles and deep-blue gradient color scheme. Would've been top 10 if rated upon release, however it never got rated until 4 years later. As such, it was the top 1 on the UDL for a decent amount of time.",
+      "song": null,
+      "edel_enjoyment": 83,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
+        "username": "3f7122cb5",
+        "global_name": "icedcave"
+      },
+      "verifications": [
+        {
+          "id": "3b816b3f-5299-47c2-a675-78d74f45f5cf",
+          "submitted_by": {
+            "id": "5d270957-4399-42f6-891c-355fcb406867",
+            "username": "c979c1722",
+            "global_name": "Tuggy"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/XpBY-eMYZTE?is=B3tyElDHn5wS1Grm",
+          "hide_video": false,
+          "achieved_at": "2022-08-29T19:41:48Z",
+          "created_at": "2026-04-02T08:34:16.887628Z",
+          "updated_at": "2026-04-02T08:34:16.887628Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "name": "Gaggatrondra",
-      "position": 71,
+      "position": 72,
       "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-      "points": 2796,
+      "points": 2780,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114990369,
@@ -7318,9 +7372,9 @@
     {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 72,
+      "position": 73,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2780,
+      "points": 2764,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -7413,60 +7467,6 @@
           "global_name": "Quminy"
         }
       ]
-    },
-    {
-      "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-      "name": "Stellar Night",
-      "position": 73,
-      "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2764,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 83244159,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "NONG",
-        "Fast-Paced",
-        "Timings",
-        "Chokepoints",
-        "Learny",
-        "High CPS",
-        "Gimmicky",
-        "Flow",
-        "Ship",
-        "Wave",
-        "Overall"
-      ],
-      "description": "2.1 solo extreme by icedcave. Notable for its thorny obstacles and deep-blue gradient color scheme. Would've been top 10 if rated upon release, however it never got rated until 4 years later. As such, it was the top 1 on the UDL for a decent amount of time.",
-      "song": null,
-      "edel_enjoyment": 83,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-        "username": "3f7122cb5",
-        "global_name": "icedcave"
-      },
-      "verifications": [
-        {
-          "id": "3b816b3f-5299-47c2-a675-78d74f45f5cf",
-          "submitted_by": {
-            "id": "5d270957-4399-42f6-891c-355fcb406867",
-            "username": "c979c1722",
-            "global_name": "Tuggy"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/XpBY-eMYZTE?is=B3tyElDHn5wS1Grm",
-          "hide_video": false,
-          "achieved_at": "2022-08-29T19:41:48Z",
-          "created_at": "2026-04-02T08:34:16.887628Z",
-          "updated_at": "2026-04-02T08:34:16.887628Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
