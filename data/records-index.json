@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T11:52:45.526Z",
+  "generatedAt": "2026-10-19T18:11:53.979Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -26093,6 +26093,19 @@
         }
       ]
     },
+    "3ae7808d-1875-47a7-bc54-9bb28b1004d6": {
+      "name": "Uri7Dont",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-10-17T07:06:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=guHZxpE65kM",
+          "verified": false
+        }
+      ]
+    },
     "548b5b84-5c21-48bc-badc-9b95b2f4f664": {
       "name": "GGonop",
       "levels": [
@@ -49779,6 +49792,14 @@
           "achievedAt": "2026-07-22T17:30:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=WYJbyftjCVk",
           "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 142,
+          "achievedAt": "2026-10-17T19:35:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=R7jonA87lkg",
+          "verified": false
         }
       ]
     },
@@ -58842,7 +58863,7 @@
           "levelName": "NETWORK (Agat3)",
           "position": 124,
           "achievedAt": "2026-10-13T19:21:20Z",
-          "videoUrl": "https://www.youtube.com/watch?v=H-EA1wfoFOA",
+          "videoUrl": "https://www.youtube.com/watch?v=y7RAHGyLnkk",
           "verified": false
         }
       ]
