@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T23:47:34.362Z",
+  "generatedAt": "2026-10-19T02:11:01.758Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -1378,7 +1378,7 @@
         "Nerve Control",
         "Cube"
       ],
-      "description": "Another satisfying MindCap project tackling the theme of orbs. According to MindCap, this is the toughest project he and his roster have ever worked on with multiple creators dropping the level. Don't fall into The Ball Pit™.",
+      "description": "One of Mindcap's most ambitious projects to date, filled with over 2 minutes of fast-paced timings, all of which are orb clicks. Due to these limitations the vast majority of the level is cube gameplay, with a brief ship and ball interlude just over halfway through. The decoration is themed around space and gravity with depictions of celestial objects, black holes, and a ship part where you travel through a wormhole. It was built to such a high standard that the decoration process took nearly 3 years with countless dropped and replaced parts from even the most experienced creators. Don't fall into The Ball Pit™.",
       "song": 80273,
       "edel_enjoyment": 83.33333333,
       "is_edel_pending": true,
@@ -4283,7 +4283,7 @@
       ],
       "description": null,
       "song": 1225278,
-      "edel_enjoyment": 42,
+      "edel_enjoyment": 52.53846154,
       "is_edel_pending": false,
       "gddl_tier": 38,
       "nlw_tier": null,
@@ -5866,7 +5866,7 @@
       ],
       "description": "Iconic greyscale former top 1 by CherryTeam. Loaded with classic sections like the red-orb ship and the difficult wave burst at 49%. Surprisingly not wave and ship carried.",
       "song": 502268,
-      "edel_enjoyment": 68.05454545,
+      "edel_enjoyment": 67.01785714,
       "is_edel_pending": false,
       "gddl_tier": 37.36363636363637,
       "nlw_tier": null,
@@ -6302,10 +6302,15 @@
       "tags": [
         "2.1",
         "Long",
+        "Clicksync",
+        "Fast-Paced",
         "Timings",
         "Chokepoints",
         "Unbalanced",
+        "Learny",
         "High CPS",
+        "Gimmicky",
+        "Flow",
         "Wave"
       ],
       "description": "The 3rd level in the poocu series, consisting of some of the most colorful and innocent decoration on the list. Known for its high-cps off-the-grid gameplay, as well as overall maximum bubbliness.",
@@ -8526,7 +8531,7 @@
       ],
       "description": "Atmospheric and floaty vortex themed extreme with a washed out song that takes loose White Space inspiration. Very memorable endscreen with a realistic hand.",
       "song": 1135786,
-      "edel_enjoyment": 60,
+      "edel_enjoyment": 59.41176471,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
@@ -9505,7 +9510,7 @@
         "UFO",
         "Duals"
       ],
-      "description": "",
+      "description": "An atmospheric Lotus Flower inspired level that uses only UFO, ship, duals, and a Radiohead song of the same name. The gameplay features many double clicks in the UFO, tight release timings in the ship, and a complicated dual with a confusing dual ship ending. Took 2 years to get rated and it was still nearly top 50 by the time it was placed.",
       "song": null,
       "edel_enjoyment": 67.5,
       "is_edel_pending": false,
@@ -11861,7 +11866,7 @@
       ],
       "description": "Intensely colorful and very sleek design megacollab hosted by Drakosa and Artsiburn. High-cps spinoff of the greek letter series (Gamma, Sigma & Omega) and memorable for its flashy effects and incredible colors. Also features a very satisfying drop-down out of the section at 67% into a new one to the song's key change.",
       "song": 39464,
-      "edel_enjoyment": 64.04347826,
+      "edel_enjoyment": 63.95744681,
       "is_edel_pending": false,
       "gddl_tier": 35.75,
       "nlw_tier": null,
