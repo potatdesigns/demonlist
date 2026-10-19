@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T08:13:16.879Z",
+  "generatedAt": "2026-10-19T15:58:41.405Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -15,9 +15,11 @@
         "2.2",
         "XL",
         "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Learny",
         "High CPS",
         "Nerve Control",
-        "Ship",
         "Wave"
       ],
       "description": "One of the most anticipated top 1s in the game's history, with a verification process spanning 396 streams with a cumulative playtime of 922 hours; currently the hardest level in the game.",
@@ -2352,6 +2354,11 @@
       ],
       "creators": [
         {
+          "id": "46bddf7a-c423-483d-af53-bb6d836354be",
+          "username": "iiauroric_",
+          "global_name": "hyperlinked"
+        },
+        {
           "id": "00af7090-7846-4cbf-9862-d04fbe96e14a",
           "username": "f67e08d7c",
           "global_name": "5ske"
@@ -2410,11 +2417,6 @@
           "id": "2a33f3e2-06e5-45d5-bc49-11abe779797d",
           "username": "a66e255c8",
           "global_name": "Underpipse"
-        },
-        {
-          "id": "3b201d37-1d2c-429b-a5ce-4454d2fa9a31",
-          "username": "iiauroric",
-          "global_name": "zhyperlinked"
         },
         {
           "id": "3b5566fd-62b1-4c10-a94e-2890eacb0cef",
@@ -11958,11 +11960,6 @@
           "global_name": "DTDom"
         },
         {
-          "id": "f9995e98-4705-4b19-9fe7-638ac8e52d5b",
-          "username": "5c19e0e15",
-          "global_name": "12Kelvin"
-        },
-        {
           "id": "1bfda48b-3d3e-4d08-9686-292e504c689e",
           "username": "1b0a3f187",
           "global_name": "Ryder"
@@ -12016,6 +12013,11 @@
           "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
           "username": "cdmusic",
           "global_name": "CDMusic"
+        },
+        {
+          "id": "4c21ee99-f85e-4da8-b7b0-d21e50eba9b9",
+          "username": "12_kelvin",
+          "global_name": "12_Kelvin"
         }
       ]
     },
@@ -13499,6 +13501,11 @@
           "id": "69394575-3534-49bf-8dab-f9c34be511e6",
           "username": "yelda_gd",
           "global_name": "YeldA"
+        },
+        {
+          "id": "327368d8-9ca7-4298-ac12-4701f0e567ff",
+          "username": "0e6f5413b",
+          "global_name": "puhyuu"
         }
       ]
     },
