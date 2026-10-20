@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T18:11:53.979Z",
+  "generatedAt": "2026-10-20T03:03:01.145Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -220,7 +220,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2022-08-23T01:19:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=sBKR6aUorzA",
           "verified": true
@@ -228,7 +228,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-12-31T21:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZAMEwACtmn4",
           "verified": false
@@ -236,7 +236,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2024-09-09T03:26:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=W8gCO5boRnI",
           "verified": false
@@ -244,7 +244,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2022-08-29T23:31:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=LtAN49zhoPQ",
           "verified": false
@@ -444,7 +444,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-10-12T23:19:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=tRKZRwfQgpE",
           "verified": false
@@ -452,7 +452,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-12T23:03:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=2nXbUdjhjF4",
           "verified": false
@@ -926,7 +926,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2023-02-25T19:41:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=ttsK0KYHJb8",
           "verified": false
@@ -934,7 +934,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-10-12T16:28:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=D0tp4U1sUWs",
           "verified": false
@@ -942,7 +942,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2022-08-13T17:00:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=wZwCXjVdqz0",
           "verified": false
@@ -1094,7 +1094,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-17T20:20:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=jYQxcRd6Eh4",
           "verified": false
@@ -1536,7 +1536,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-05-05T20:15:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=pc_IIfFkJD0",
           "verified": false
@@ -1544,7 +1544,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2025-02-22T08:00:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=u92uVeXj03o",
           "verified": false
@@ -1718,9 +1718,17 @@
           "verified": false
         },
         {
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-09-28T23:10:20.760572Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2-J0PVYdMxE&t=432",
+          "verified": false
+        },
+        {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-12-01T23:43:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=-_VmMNTlMVw",
           "verified": false
@@ -1728,17 +1736,9 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-25T05:10:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=TiVqWCgW8wE",
-          "verified": false
-        },
-        {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
-          "position": 73,
-          "achievedAt": "2026-09-28T23:10:20.760572Z",
-          "videoUrl": "https://www.youtube.com/watch?v=2-J0PVYdMxE&t=432",
           "verified": false
         },
         {
@@ -2125,7 +2125,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2023-07-19T21:30:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=xtpDCz4ubG0",
           "verified": false
@@ -2431,7 +2431,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-02T22:31:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=ERULHfSnaYQ",
           "verified": false
@@ -2593,7 +2593,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2026-04-06T18:34:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=6sHalmnwL80",
           "verified": false
@@ -2633,7 +2633,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-22T14:51:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=jyBAeu3rjm0",
           "verified": false
@@ -2718,7 +2718,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-13T21:55:15Z",
           "videoUrl": "https://drive.google.com/drive/folders/1MycJJVaXLOXMAcTQ6EN2mYSIhSli_i3z",
           "verified": false
@@ -2726,7 +2726,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-01-21T03:30:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=RR0Eunx4620&t=4s",
           "verified": false
@@ -2779,7 +2779,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-11-29T22:53:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=LgGRfBKtP7s",
           "verified": false
@@ -2944,7 +2944,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-04-28T19:23:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=RtkCY01Kf9g",
           "verified": false
@@ -2952,7 +2952,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2026-01-27T19:15:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=1ozophj8epk",
           "verified": false
@@ -3157,7 +3157,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2023-10-07T16:05:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=bG8JFVK5gUA",
           "verified": false
@@ -3383,7 +3383,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-08-22T22:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=ij3sCwr9zFw",
           "verified": false
@@ -3521,7 +3521,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-11-19T22:10:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=8022pYjUcuk",
           "verified": false
@@ -3651,7 +3651,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-19T11:28:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=YIqcWUl_drk",
           "verified": false
@@ -3906,7 +3906,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-03-03T17:55:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=wgkXovGhTaw",
           "verified": false
@@ -3959,7 +3959,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-02-09T07:23:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=1LiB3r35a6U",
           "verified": false
@@ -4137,7 +4137,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-02-04T19:18:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=jubtZDiyztI",
           "verified": false
@@ -4145,7 +4145,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-03-26T13:09:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=D3OdI4yPQU8",
           "verified": false
@@ -4575,7 +4575,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-12-25T21:11:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=SjeBTbpwMxY",
           "verified": false
@@ -4820,7 +4820,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-09-20T19:08:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=vDiq0502kK0",
           "verified": false
@@ -4977,7 +4977,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-08T17:30:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=XZbny5RibDI",
           "verified": false
@@ -5120,7 +5120,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-01-13T17:37:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=GQxNNxPahZQ",
           "verified": false
@@ -5380,7 +5380,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-06-14T21:41:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=CIHgOMmzzMY",
           "verified": false
@@ -5388,7 +5388,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2025-01-06T06:30:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=EKtLQ48Qz6s",
           "verified": false
@@ -5561,7 +5561,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-07-16T17:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Qu5R-SI8TuM",
           "verified": false
@@ -5593,7 +5593,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-07T07:32:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=0ocUqxNaH4w&t=64s",
           "verified": false
@@ -5712,7 +5712,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-10-18T10:11:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=QLxVOIzFCO4",
           "verified": false
@@ -5720,7 +5720,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-02-08T19:39:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=p8ryBdZRpCo",
           "verified": false
@@ -6189,7 +6189,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-06-04T03:11:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=58e0Zt97dUY",
           "verified": false
@@ -6282,7 +6282,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-26T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Oaop6-ans7g",
           "verified": false
@@ -6362,7 +6362,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-09T18:18:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=XG4IQ2w5vn4",
           "verified": false
@@ -6500,7 +6500,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-10-07T17:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=58uokXBX35Y",
           "verified": false
@@ -6566,7 +6566,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-01-28T01:41:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=fshxASUcdxM",
           "verified": false
@@ -6611,7 +6611,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-04T04:36:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=NAMMOJI6mDU",
           "verified": false
@@ -6712,7 +6712,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-09-08T02:02:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=ytoz_jxB-qc",
           "verified": false
@@ -6816,7 +6816,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-19T01:32:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=MTKUyfHLYqw",
           "verified": false
@@ -7015,7 +7015,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-03-25T17:38:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=-86PbtsEWv8",
           "verified": false
@@ -7167,7 +7167,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-03T00:52:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=Q9K3I5Kb0lM",
           "verified": false
@@ -7446,7 +7446,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-06-06T19:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Pw7Ifr6o6_E",
           "verified": false
@@ -7454,7 +7454,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-09-28T14:24:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=GdsvG-u3M_Y",
           "verified": false
@@ -7556,19 +7556,19 @@
           "verified": false
         },
         {
-          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-          "levelName": "Sevvend Clubstep",
-          "position": 72,
-          "achievedAt": "2025-08-27T02:35:35Z",
-          "videoUrl": "https://www.youtube.com/watch?v=f9_fChhQfXQ",
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-05-09T23:44:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RSqFxB3K_CY",
           "verified": false
         },
         {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
           "position": 73,
-          "achievedAt": "2026-05-09T23:44:57Z",
-          "videoUrl": "https://www.youtube.com/watch?v=RSqFxB3K_CY",
+          "achievedAt": "2025-08-27T02:35:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=f9_fChhQfXQ",
           "verified": false
         },
         {
@@ -7739,7 +7739,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-06-09T23:06:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=CBll9r1mtK0",
           "verified": false
@@ -7873,19 +7873,19 @@
           "verified": false
         },
         {
-          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-          "levelName": "Sevvend Clubstep",
-          "position": 72,
-          "achievedAt": "2025-09-15T17:22:08Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ismzFfFIy4M",
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-06-11T23:15:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XiADNcgueO8",
           "verified": false
         },
         {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
           "position": 73,
-          "achievedAt": "2026-06-11T23:15:21Z",
-          "videoUrl": "https://www.youtube.com/watch?v=XiADNcgueO8",
+          "achievedAt": "2025-09-15T17:22:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ismzFfFIy4M",
           "verified": false
         },
         {
@@ -8144,7 +8144,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-21T23:20:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=sSPxzdGBiqs",
           "verified": false
@@ -8397,7 +8397,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-09-19T03:45:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=Bua14f9ozcs",
           "verified": false
@@ -8828,7 +8828,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-06T19:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=_ec1UztPW6g",
           "verified": false
@@ -8892,7 +8892,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-09-09T19:06:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=YYwPOLTNfU0",
           "verified": false
@@ -8985,7 +8985,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-24T16:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=6DnNoayY2HY&t=8s",
           "verified": false
@@ -9094,7 +9094,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-05-03T08:58:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=7V49X2CE7FY",
           "verified": false
@@ -9166,7 +9166,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-07-28T14:26:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=OKkhc1DY7MA",
           "verified": false
@@ -9347,7 +9347,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-08T01:44:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=iFCrZMTI9HI",
           "verified": false
@@ -9488,7 +9488,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-14T16:00:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=hBMIewMcQSg",
           "verified": false
@@ -9738,7 +9738,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2022-04-03T19:15:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=ejJkpqcMMCY",
           "verified": true
@@ -9820,7 +9820,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-16T17:46:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=BBniryG0tM4",
           "verified": false
@@ -10006,7 +10006,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2024-07-14T20:15:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=nnkgghxxsEE",
           "verified": true
@@ -10187,7 +10187,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-01-11T12:39:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=lWMV9Ixg2G4",
           "verified": false
@@ -10336,7 +10336,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-02-11T09:01:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=erAA29O2zpE",
           "verified": false
@@ -10344,7 +10344,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-11-03T08:14:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=M2XpQBy081E",
           "verified": false
@@ -10352,7 +10352,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2024-09-10T22:06:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=-kOsBAjd-LU",
           "verified": false
@@ -10360,7 +10360,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-07-15T01:37:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=K1loCuzSwEI",
           "verified": false
@@ -10921,7 +10921,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-10-16T02:10:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=e6v9hSPKqvM",
           "verified": false
@@ -11165,7 +11165,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-13T01:00:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=HDhjtvakLT0",
           "verified": false
@@ -11234,7 +11234,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-05-07T01:10:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=nmOaPNUbKvg",
           "verified": false
@@ -11335,7 +11335,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2023-11-21T21:30:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=obDiKsr24vo",
           "verified": false
@@ -11343,7 +11343,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-06-05T21:10:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=pD61WNgpKYI",
           "verified": false
@@ -11452,7 +11452,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-01-31T15:32:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=bzsCtDYX7Po",
           "verified": false
@@ -11500,7 +11500,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-07T04:57:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=TkhcgB9uxMs",
           "verified": false
@@ -11577,7 +11577,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-03-30T06:55:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=RgqJ1INFZps&t=5s",
           "verified": false
@@ -11710,7 +11710,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-01-19T02:40:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=YsSrdiH-1rw",
           "verified": false
@@ -11782,7 +11782,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-24T01:07:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=WM0MOBCEs7c",
           "verified": false
@@ -12172,13 +12172,90 @@
         }
       ]
     },
+    "99d53816-1a55-4faf-a7c2-22e2f189e9bd": {
+      "name": "Brian_Cheese 🧀",
+      "levels": [
+        {
+          "levelId": "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
+          "levelName": "FOREST OF SPIKES",
+          "position": 26,
+          "achievedAt": "2026-07-26T20:00:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
+          "verified": true
+        },
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2025-06-22T11:27:20.895062Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rSlHEIGwnxk",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 40,
+          "achievedAt": "2025-10-18T21:53:25Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9WJHxLoLDcc",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 46,
+          "achievedAt": "2025-05-03T23:47:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=4LDgfwQY6TM",
+          "verified": false
+        },
+        {
+          "levelId": "94000633-1b00-4e52-ae77-48fab8aecf9d",
+          "levelName": "Edge of Destiny",
+          "position": 74,
+          "achievedAt": "2025-09-16T06:25:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=HJhuiG5oOj0&t=1s",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 110,
+          "achievedAt": "2025-09-27T23:12:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3rCVceppnIg",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2025-05-18T02:19:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EnNrk1NXLJY",
+          "verified": false
+        },
+        {
+          "levelId": "b158e365-0f31-485e-816d-be35f8623bf2",
+          "levelName": "idontknowwhatthisis",
+          "position": 135,
+          "achievedAt": "2026-10-14T07:00:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3JQT1uJrQPk",
+          "verified": false
+        },
+        {
+          "levelId": "c43eb1e4-b38d-466a-8da5-987204999072",
+          "levelName": "limbo but uwu ig idk",
+          "position": 140,
+          "achievedAt": "2026-02-24T05:53:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Rl9U60uDmME",
+          "verified": false
+        }
+      ]
+    },
     "fdb0aa42-eeca-4302-9e89-2b867479ad33": {
       "name": "zeroxy",
       "levels": [
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2023-05-21T20:00:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=bHG-L8_aOQg",
           "verified": false
@@ -12247,7 +12324,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2024-11-29T22:53:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=LgGRfBKtP7s",
           "verified": false
@@ -12260,7 +12337,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-01-02T05:25:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=hcNpkVnGSKE",
           "verified": false
@@ -12268,7 +12345,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-10-11T23:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=fe_iGpNJ7Kw",
           "verified": false
@@ -12276,7 +12353,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2024-08-27T02:15:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=1CQXk6nuLmk",
           "verified": false
@@ -12284,7 +12361,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2023-04-14T03:09:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=w_5IVN5orOA",
           "verified": false
@@ -12388,7 +12465,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-02-25T03:13:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=SwBU_OX17_w",
           "verified": false
@@ -12617,7 +12694,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-02-12T18:04:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=avOcyba1BAQ",
           "verified": false
@@ -12806,7 +12883,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-02-19T22:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Pk69BKin17E&t=1s",
           "verified": false
@@ -12819,7 +12896,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-03-10T20:29:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=KdBrD6Ps78Y",
           "verified": false
@@ -12859,7 +12936,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-02-11T21:31:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=bASi8KXJgBI",
           "verified": false
@@ -12896,7 +12973,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-02T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=s79u5znl_YI",
           "verified": false
@@ -12917,7 +12994,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-11T01:56:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=a7xZtawIHbY",
           "verified": false
@@ -13082,7 +13159,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-13T00:08:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y1qEo6wp1x0",
           "verified": false
@@ -13162,7 +13239,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-07-31T02:15:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=kmNalYkgCG8",
           "verified": false
@@ -13343,7 +13420,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-16T05:30:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=P1lpmowngIg",
           "verified": false
@@ -13351,7 +13428,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2025-12-26T00:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=BuB65ASFu2w",
           "verified": false
@@ -13388,7 +13465,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-04-19T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=1eM1gXrxGKo",
           "verified": false
@@ -13396,7 +13473,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-10-09T19:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=thVbnhNU4pM",
           "verified": false
@@ -13505,7 +13582,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-05-15T20:15:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=iLkOYLbRNHQ",
           "verified": false
@@ -13513,7 +13590,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2024-05-27T22:36:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=Dj5WbdlC6go",
           "verified": false
@@ -13561,7 +13638,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-07-20T01:42:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=dbZZRh2SXic",
           "verified": false
@@ -13662,7 +13739,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-07-30T03:20:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=DJJ7aTgtk0Y",
           "verified": false
@@ -13819,7 +13896,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-11-02T22:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Njmrj0npTAk",
           "verified": false
@@ -13912,7 +13989,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2025-12-06T19:35:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=fhKuyGesxSU",
           "verified": false
@@ -14077,7 +14154,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-01-22T23:52:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=lbN0ic9aXIc",
           "verified": false
@@ -14170,7 +14247,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-01-30T15:37:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=NuNL7rMdto4",
           "verified": false
@@ -14255,7 +14332,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-02-25T17:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=HiMBdsEyDEU",
           "verified": false
@@ -14319,7 +14396,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-17T20:14:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=AcUglqD8Cxo",
           "verified": false
@@ -14452,7 +14529,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-03-26T21:51:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=D2yynQgEmfQ",
           "verified": false
@@ -14521,7 +14598,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-05-14T19:19:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=STQoyvEKltU",
           "verified": false
@@ -14566,7 +14643,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-05-24T20:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=9lFTJniSAOs",
           "verified": false
@@ -14659,7 +14736,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-05-28T17:01:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=9sD19X9AilU",
           "verified": false
@@ -14752,7 +14829,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-07-11T14:51:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=O8lUV98rewk",
           "verified": false
@@ -14768,7 +14845,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-06T17:33:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=nWaG9_lW4LA",
           "verified": false
@@ -14797,7 +14874,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-08-23T19:15:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=mvtSYA77cRY&t=4s",
           "verified": false
@@ -14813,7 +14890,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-04-21T02:27:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=EnD7x5yUiMw",
           "verified": false
@@ -14906,7 +14983,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-08-26T11:44:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=dKgLCdE3WbQ&t=2s",
           "verified": false
@@ -14914,7 +14991,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-12-30T02:14:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=tjEta75_HDo",
           "verified": false
@@ -15207,7 +15284,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-09-15T04:24:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=2mxPhMrphW8",
           "verified": false
@@ -15244,7 +15321,7 @@
         {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
-          "position": 26,
+          "position": 27,
           "achievedAt": "2026-10-11T19:00:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=8Ss_bayzqVU",
           "verified": false
@@ -15297,7 +15374,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2024-10-05T09:39:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=MzsSLKJrLSI",
           "verified": true
@@ -15310,7 +15387,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2026-04-24T20:40:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=qqknoJ0JVro&t=4s",
           "verified": false
@@ -15363,7 +15440,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2026-04-25T17:49:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=Ici_iYkGsSg&t=1s",
           "verified": false
@@ -15384,7 +15461,7 @@
         {
           "levelId": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
           "levelName": "Spectre",
-          "position": 27,
+          "position": 28,
           "achievedAt": "2026-07-23T22:25:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZdrhQRsQBsM",
           "verified": false
@@ -15477,7 +15554,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2025-03-28T06:06:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=5zioLmv86xQ",
           "verified": false
@@ -15522,7 +15599,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2025-09-01T21:30:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=ProNF02JXsk",
           "verified": false
@@ -15530,7 +15607,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-05-03T20:00:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=6l3xPsRzEpk",
           "verified": false
@@ -15655,7 +15732,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2026-02-11T05:41:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=jx35eIYEp1o&list=PLnvu499YjZJioGYHx9-MRpJL8FMQ1G4o8",
           "verified": false
@@ -15732,7 +15809,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2026-04-30T23:45:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=-H8lgpV95Hg",
           "verified": false
@@ -15745,7 +15822,7 @@
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
           "levelName": "Menace",
-          "position": 28,
+          "position": 29,
           "achievedAt": "2026-10-12T10:17:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=LkgyuyVmO_4",
           "verified": false
@@ -15758,7 +15835,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2023-04-09T03:00:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=6Ffi7BjP37U",
           "verified": false
@@ -15915,7 +15992,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2023-06-26T21:11:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=mfYnpIkEvP8",
           "verified": false
@@ -15976,7 +16053,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-01-18T18:27:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=-vae7aNSt8Q",
           "verified": false
@@ -16037,7 +16114,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-08-26T01:44:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=lIUlLeEC7h0",
           "verified": false
@@ -16162,7 +16239,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-10-16T17:23:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=9ox-CCwwR24",
           "verified": false
@@ -16194,7 +16271,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-02-09T23:24:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=A4G41vw6Cf0",
           "verified": true
@@ -16303,7 +16380,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2025-10-26T16:26:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=kJKK_gvQ170",
           "verified": false
@@ -16364,7 +16441,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-02-16T21:57:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=qNtK8x7xTvo",
           "verified": false
@@ -16425,7 +16502,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-04-30T18:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=6ORBKE1Stew",
           "verified": false
@@ -16446,7 +16523,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-08-05T00:36:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=E5lc-TxZP6o",
           "verified": false
@@ -16515,7 +16592,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-08-06T02:34:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=aNZnfMRt-k4",
           "verified": false
@@ -16568,7 +16645,7 @@
         {
           "levelId": "c9227a33-a5d4-47d3-a025-a07781f228e1",
           "levelName": "Abyss of Darkness",
-          "position": 29,
+          "position": 30,
           "achievedAt": "2026-08-31T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=-29qCe_lFuw",
           "verified": false
@@ -16595,83 +16672,6 @@
           "position": 123,
           "achievedAt": "2024-10-28T20:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=4WOzJudCIIk",
-          "verified": false
-        }
-      ]
-    },
-    "99d53816-1a55-4faf-a7c2-22e2f189e9bd": {
-      "name": "Brian_Cheese 🧀",
-      "levels": [
-        {
-          "levelId": "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
-          "levelName": "FOREST OF SPIKES",
-          "position": 30,
-          "achievedAt": "2026-07-26T20:00:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
-          "verified": true
-        },
-        {
-          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
-          "levelName": "Slaughterhouse ",
-          "position": 38,
-          "achievedAt": "2025-06-22T11:27:20.895062Z",
-          "videoUrl": "https://www.youtube.com/watch?v=rSlHEIGwnxk",
-          "verified": false
-        },
-        {
-          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
-          "levelName": "KOCMOC",
-          "position": 40,
-          "achievedAt": "2025-10-18T21:53:25Z",
-          "videoUrl": "https://www.youtube.com/watch?v=9WJHxLoLDcc",
-          "verified": false
-        },
-        {
-          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
-          "levelName": "Sakupen Circles",
-          "position": 46,
-          "achievedAt": "2025-05-03T23:47:39Z",
-          "videoUrl": "https://www.youtube.com/watch?v=4LDgfwQY6TM",
-          "verified": false
-        },
-        {
-          "levelId": "94000633-1b00-4e52-ae77-48fab8aecf9d",
-          "levelName": "Edge of Destiny",
-          "position": 74,
-          "achievedAt": "2025-09-16T06:25:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=HJhuiG5oOj0&t=1s",
-          "verified": false
-        },
-        {
-          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
-          "levelName": "Sonic Wave Infinity",
-          "position": 110,
-          "achievedAt": "2025-09-27T23:12:40Z",
-          "videoUrl": "https://www.youtube.com/watch?v=3rCVceppnIg",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 131,
-          "achievedAt": "2025-05-18T02:19:59Z",
-          "videoUrl": "https://www.youtube.com/watch?v=EnNrk1NXLJY",
-          "verified": false
-        },
-        {
-          "levelId": "b158e365-0f31-485e-816d-be35f8623bf2",
-          "levelName": "idontknowwhatthisis",
-          "position": 135,
-          "achievedAt": "2026-10-14T07:00:54Z",
-          "videoUrl": "https://www.youtube.com/watch?v=3JQT1uJrQPk",
-          "verified": false
-        },
-        {
-          "levelId": "c43eb1e4-b38d-466a-8da5-987204999072",
-          "levelName": "limbo but uwu ig idk",
-          "position": 140,
-          "achievedAt": "2026-02-24T05:53:45Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Rl9U60uDmME",
           "verified": false
         }
       ]
@@ -17624,19 +17624,19 @@
           "verified": false
         },
         {
-          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-          "levelName": "Sevvend Clubstep",
-          "position": 72,
-          "achievedAt": "2025-10-22T18:11:45Z",
-          "videoUrl": "https://www.youtube.com/watch?v=NGtMaA9IpM8",
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-08-19T23:56:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Idm3bfterK0",
           "verified": false
         },
         {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
           "position": 73,
-          "achievedAt": "2026-08-19T23:56:12Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Idm3bfterK0",
+          "achievedAt": "2025-10-22T18:11:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=NGtMaA9IpM8",
           "verified": false
         },
         {
@@ -17751,7 +17751,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-09-10T16:08:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=fXbTFtA5Ysw",
           "verified": false
@@ -18089,7 +18089,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-14T23:38:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=UNw26VBTp1I",
           "verified": false
@@ -18262,7 +18262,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-04T23:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=uvPBDb58Ers",
           "verified": false
@@ -18552,7 +18552,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-24T17:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=7ZSUhIh7Utc",
           "verified": false
@@ -18693,7 +18693,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-01-19T16:03:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=ViYFNHZPlKU",
           "verified": false
@@ -18746,7 +18746,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-01T16:45:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=MMpQAqmMvsA",
           "verified": false
@@ -19062,7 +19062,7 @@
         {
           "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
           "levelName": "Stellar Night",
-          "position": 73,
+          "position": 71,
           "achievedAt": "2026-07-31T17:20:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=d2Ez3AOG9f0",
           "verified": false
@@ -19235,7 +19235,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-25T10:29:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=3iecG5_suco",
           "verified": false
@@ -19554,7 +19554,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-01-31T13:13:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=eey_YktGk_4",
           "verified": false
@@ -19809,7 +19809,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-10-08T17:16:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=8oFw5bl5iUM",
           "verified": false
@@ -19902,7 +19902,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-25T13:40:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=ejRGIAawmsw",
           "verified": false
@@ -20024,7 +20024,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-05T16:50:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=FaoGt8mv85w",
           "verified": false
@@ -20313,7 +20313,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-03-19T23:01:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=wHMBIMWZJIk",
           "verified": false
@@ -22340,7 +22340,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-02-14T18:53:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=8N2C9OZceQk",
           "verified": false
@@ -22789,7 +22789,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-10T18:59:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=FPA19B_hRtI",
           "verified": false
@@ -23301,7 +23301,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-19T23:01:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=bmLgHMVQ_OY",
           "verified": false
@@ -23582,7 +23582,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-29T01:49:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=8PJxWrhll2Q",
           "verified": false
@@ -23889,7 +23889,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-31T03:46:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=fNVEVc-n9-Q",
           "verified": false
@@ -23990,7 +23990,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-10T17:56:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=ktHkHwoSiaU",
           "verified": false
@@ -24128,7 +24128,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-17T12:36:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=YQKtMBcdmpQ",
           "verified": false
@@ -24481,7 +24481,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-11T22:52:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZKTT7q3sb4w",
           "verified": false
@@ -24676,7 +24676,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-12-07T20:16:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=GZAgIO3ID5E",
           "verified": false
@@ -24787,7 +24787,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-22T22:50:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=zDLI2uWhLWw",
           "verified": false
@@ -24795,7 +24795,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-12T19:14:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=5jwkTwzjFYs",
           "verified": false
@@ -24965,7 +24965,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-11-02T10:44:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=dB8WHNSMirg",
           "verified": false
@@ -25557,7 +25557,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-09-09T02:43:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=9UomfjIstFM",
           "verified": false
@@ -25764,7 +25764,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-10-05T20:13:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=tnX7ah2POvY",
           "verified": false
@@ -26694,7 +26694,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-02-15T22:11:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=r50nYznwN5g",
           "verified": false
@@ -26983,7 +26983,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-17T08:04:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=9pO-TDOvSrI",
           "verified": false
@@ -26991,7 +26991,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-22T07:48:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=U5v707MFHrM",
           "verified": false
@@ -27228,7 +27228,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-16T22:03:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=zlz8QsETAtM",
           "verified": false
@@ -27694,7 +27694,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-09-16T21:36:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=lbgd_4rE32U",
           "verified": false
@@ -28106,7 +28106,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-01T13:35:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=hfrX99I3714",
           "verified": false
@@ -28175,7 +28175,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-05-09T17:49:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=xfnl_qbMXyY",
           "verified": false
@@ -28183,7 +28183,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-01-25T21:02:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=2ylakpzog9M",
           "verified": false
@@ -28531,7 +28531,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-29T23:40:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=G0Mr5CNoFFQ",
           "verified": false
@@ -28685,7 +28685,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-06T03:15:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=N2Ojp44My1Q",
           "verified": false
@@ -28892,7 +28892,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-26T19:52:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=IDRsbXwkc60",
           "verified": false
@@ -29471,7 +29471,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-02-26T17:56:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=8gLnqyDDFYg",
           "verified": false
@@ -29479,7 +29479,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-27T20:43:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=4nt6mNO50Nw",
           "verified": false
@@ -29859,7 +29859,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-04T23:05:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=KP-GJoIolR0",
           "verified": false
@@ -30209,7 +30209,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-11T14:04:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=-rwFyT5Sk-U",
           "verified": false
@@ -30389,7 +30389,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-12-18T18:17:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=M6XhuAhdI90",
           "verified": false
@@ -30397,7 +30397,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-15T19:52:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=c88w-zegDsM",
           "verified": false
@@ -30458,7 +30458,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-27T19:49:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=UcS5lx90v-U",
           "verified": false
@@ -31728,7 +31728,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-06-03T14:38:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=nU-dVTkpe60",
           "verified": false
@@ -32678,7 +32678,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-12T23:37:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=3bBqbz4-e7c",
           "verified": false
@@ -33856,7 +33856,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-23T19:56:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=YtgWUNudiIk",
           "verified": false
@@ -34554,7 +34554,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-11-30T12:33:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=fXYn4o-SiBw",
           "verified": false
@@ -34660,7 +34660,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-24T11:31:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=U3JDqF9d61Q",
           "verified": false
@@ -34668,7 +34668,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-12-24T16:00:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=HIEZ09tQ_nM",
           "verified": false
@@ -35310,7 +35310,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-29T00:58:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=izX5g5tm3JM",
           "verified": false
@@ -35445,7 +35445,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-24T21:55:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=jr9t54Pq50A",
           "verified": false
@@ -35768,7 +35768,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-12-20T20:57:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=2NlnzNMDxe0",
           "verified": false
@@ -35776,7 +35776,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-01-07T12:54:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=SmWOsW5l274",
           "verified": false
@@ -35950,7 +35950,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-04-22T15:44:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=TwngwEkWX9w",
           "verified": false
@@ -36104,7 +36104,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-17T01:34:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=zOvgSjZTQZE",
           "verified": false
@@ -36133,7 +36133,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-02-15T23:52:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=bxL0erwF2r4",
           "verified": false
@@ -36141,7 +36141,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-18T06:09:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=dhO01D-NjFQ",
           "verified": false
@@ -36509,7 +36509,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-19T11:24:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=umtGPt1q0eY",
           "verified": false
@@ -36623,7 +36623,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-10-24T20:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=SOAYxrDYjGM",
           "verified": false
@@ -36676,7 +36676,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-06-02T23:58:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=b30J4GVckDA",
           "verified": false
@@ -36806,7 +36806,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-02-07T16:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=GXPo5F3DH-A",
           "verified": false
@@ -37157,7 +37157,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-10-02T01:24:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=XgjE3L5TKIM",
           "verified": false
@@ -37215,7 +37215,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-17T10:16:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=gCLrXfITs-s",
           "verified": false
@@ -38249,7 +38249,7 @@
         {
           "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
           "levelName": "Stellar Night",
-          "position": 73,
+          "position": 71,
           "achievedAt": "2026-06-25T17:13:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=NeSjEp64u-A",
           "verified": false
@@ -38469,7 +38469,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-27T21:09:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=80y3P6uqEnI&t=92s",
           "verified": false
@@ -38604,7 +38604,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-24T16:29:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=o_ER2gFei2c",
           "verified": false
@@ -39027,7 +39027,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-30T17:14:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=H0iwSPB1Pew",
           "verified": false
@@ -39286,7 +39286,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-24T14:21:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=Yavjv_G1ICc",
           "verified": false
@@ -40684,7 +40684,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-04T21:43:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=QPqleGBsM3c",
           "verified": false
@@ -41142,7 +41142,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-09-26T03:44:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=CH7CvFnnh84",
           "verified": false
@@ -41183,13 +41183,105 @@
         }
       ]
     },
+    "5d270957-4399-42f6-891c-355fcb406867": {
+      "name": "Tuggy",
+      "levels": [
+        {
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2022-08-29T19:41:48Z",
+          "videoUrl": "https://youtu.be/XpBY-eMYZTE?is=B3tyElDHn5wS1Grm",
+          "verified": true
+        }
+      ]
+    },
+    "2e3a3e60-949d-44fa-a279-f712c3910502": {
+      "name": "zSquidKnight",
+      "levels": [
+        {
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2023-08-13T22:13:51Z",
+          "videoUrl": "https://www.youtube.com/watch?v=j_3luQZLJSI&list=PLk33hsYT6emOSLJ5sPY2TtuskqoiLWlB3",
+          "verified": false
+        }
+      ]
+    },
+    "227f4eb3-cbf9-483d-b187-d37ad74c3ab1": {
+      "name": "lowercasebeef",
+      "levels": [
+        {
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-06-20T00:30:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Wfix1Q7mF6E",
+          "verified": false
+        },
+        {
+          "levelId": "80533210-51be-417f-a492-22edff194d94",
+          "levelName": "Cimmerian Shade",
+          "position": 103,
+          "achievedAt": "2026-07-12T20:01:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=xiGv3CQA3R8",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 111,
+          "achievedAt": "2025-06-01T19:56:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=pvvhvWaC0XI",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2024-06-24T22:14:19Z",
+          "videoUrl": "https://www.youtube.com/watch?v=cuvNVL8BdH0",
+          "verified": false
+        }
+      ]
+    },
+    "8c6b8b39-0446-4bd7-8149-e6cf5df67ade": {
+      "name": "pacsalinta",
+      "levels": [
+        {
+          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
+          "levelName": "Stellar Night",
+          "position": 71,
+          "achievedAt": "2026-09-08T21:19:52Z",
+          "videoUrl": "https://www.youtube.com/watch?v=_yXOSz_jyQY&t=1s",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 100,
+          "achievedAt": "2026-09-15T22:09:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=oMzZKAF89x4",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 142,
+          "achievedAt": "2026-04-30T18:25:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=HLuzPkdWVLY",
+          "verified": false
+        }
+      ]
+    },
     "b0ddc95b-9424-47a5-91e0-72b0da70b4df": {
       "name": "DijonGD",
       "levels": [
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-03-22T20:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=O65K5NF_58E",
           "verified": false
@@ -41218,7 +41310,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-05-11T11:39:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=Ex7QJSDoHis",
           "verified": false
@@ -41239,7 +41331,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-08-11T10:32:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZFMb0ctkSMI",
           "verified": false
@@ -41300,7 +41392,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-08-27T22:52:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=ihDp2NJbm08",
           "verified": false
@@ -41345,7 +41437,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-09-07T22:17:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=ngmffGuShR4",
           "verified": false
@@ -41358,7 +41450,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-11-18T15:43:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=pImgUFo8xMo",
           "verified": false
@@ -41379,7 +41471,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2025-11-24T04:51:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=zrsFmGqNQs8",
           "verified": false
@@ -41392,7 +41484,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-01-26T08:59:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=7QK4KK70780",
           "verified": false
@@ -41413,7 +41505,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-02-28T23:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=D93OgWbcu6E",
           "verified": false
@@ -41458,7 +41550,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-03-11T02:34:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=O1UT_17B42U",
           "verified": false
@@ -41466,7 +41558,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-06T08:36:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=u5Wz2vJbozU&t=50s",
           "verified": false
@@ -41511,7 +41603,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-03-16T14:05:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=4-OL3eoztQY",
           "verified": false
@@ -41532,7 +41624,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-04-12T08:54:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=cseFvXurUAE",
           "verified": false
@@ -41577,7 +41669,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-05-15T21:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=UIbSOIJPOlo",
           "verified": false
@@ -41630,7 +41722,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-05-27T17:55:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=wjZNxa34-P4",
           "verified": false
@@ -41643,7 +41735,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-06-30T09:38:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=S_dJ1mmeN8Q",
           "verified": false
@@ -41656,7 +41748,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-07-26T21:33:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=CHKAkwG8Jlk",
           "verified": false
@@ -41693,7 +41785,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-07-30T20:30:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=bE8ZdetNpvQ",
           "verified": false
@@ -41706,7 +41798,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-09-01T20:16:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=UdhoHvqfteI",
           "verified": false
@@ -41719,7 +41811,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-09-02T10:03:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=TgIdcXQq71Y",
           "verified": false
@@ -41732,7 +41824,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-09-18T17:03:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=ImuxFZ47MCY",
           "verified": false
@@ -41745,7 +41837,7 @@
         {
           "levelId": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
           "levelName": "Gaggatrondra",
-          "position": 71,
+          "position": 72,
           "achievedAt": "2026-09-29T21:26:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=heXuWalAtm4",
           "verified": false
@@ -41766,7 +41858,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-06-04T11:12:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=TvA8EJTJFCc",
           "verified": true
@@ -41779,7 +41871,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-08-25T15:47:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=yxdmG78WxB0",
           "verified": false
@@ -41816,7 +41908,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2025-09-01T15:45:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=urMoWkGFbVA",
           "verified": false
@@ -41845,7 +41937,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-01-23T23:50:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=yxel_PT5q90",
           "verified": false
@@ -41882,7 +41974,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-12T22:51:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=uzPZmlgam7A",
           "verified": false
@@ -41911,7 +42003,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-03-21T14:35:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZSc_zo9c3yo",
           "verified": false
@@ -41924,7 +42016,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-01T02:45:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=b5pzjJn3pro",
           "verified": false
@@ -41937,7 +42029,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-18T03:32:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=X9ZvXIAgQ2I",
           "verified": false
@@ -41966,7 +42058,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-04-28T21:39:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=SucAP3IgVXU",
           "verified": false
@@ -41979,7 +42071,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-17T12:43:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=XIrQ5IeAG5M",
           "verified": false
@@ -42000,7 +42092,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-05-18T23:44:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=7DLeZYRbD-I",
           "verified": false
@@ -42013,7 +42105,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-13T23:25:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=UA8wXUCI7IA",
           "verified": false
@@ -42058,7 +42150,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-07-15T23:34:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=0kju8hUnx1A",
           "verified": false
@@ -42087,7 +42179,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-12T15:13:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=r_xmORl8jw8",
           "verified": false
@@ -42100,7 +42192,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-13T08:56:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZbLy1wx2O38",
           "verified": false
@@ -42113,7 +42205,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-17T22:08:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=dpHrb1ThFKw",
           "verified": false
@@ -42134,7 +42226,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-17T23:00:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=6y1pk50xj4k",
           "verified": false
@@ -42155,7 +42247,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-20T08:07:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=PU6gtWoDWKQ",
           "verified": false
@@ -42168,7 +42260,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-24T20:42:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=qrONLIe6xeM",
           "verified": false
@@ -42181,7 +42273,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-30T12:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=2nlTs5MOf1w",
           "verified": false
@@ -42194,7 +42286,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-08-31T15:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=HuQhw4Idw6k",
           "verified": false
@@ -42239,7 +42331,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-09-01T21:16:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=--9ykZw1Bm8",
           "verified": false
@@ -42260,7 +42352,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-10-01T14:47:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=XbBJSN_5jWA",
           "verified": false
@@ -42281,7 +42373,7 @@
         {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
-          "position": 72,
+          "position": 73,
           "achievedAt": "2026-10-04T10:36:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=7XOdLezp5ps",
           "verified": false
@@ -42292,98 +42384,6 @@
           "position": 146,
           "achievedAt": "2026-09-06T10:51:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=azEPs6GMlS0",
-          "verified": false
-        }
-      ]
-    },
-    "5d270957-4399-42f6-891c-355fcb406867": {
-      "name": "Tuggy",
-      "levels": [
-        {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
-          "position": 73,
-          "achievedAt": "2022-08-29T19:41:48Z",
-          "videoUrl": "https://youtu.be/XpBY-eMYZTE?is=B3tyElDHn5wS1Grm",
-          "verified": true
-        }
-      ]
-    },
-    "2e3a3e60-949d-44fa-a279-f712c3910502": {
-      "name": "zSquidKnight",
-      "levels": [
-        {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
-          "position": 73,
-          "achievedAt": "2023-08-13T22:13:51Z",
-          "videoUrl": "https://www.youtube.com/watch?v=j_3luQZLJSI&list=PLk33hsYT6emOSLJ5sPY2TtuskqoiLWlB3",
-          "verified": false
-        }
-      ]
-    },
-    "227f4eb3-cbf9-483d-b187-d37ad74c3ab1": {
-      "name": "lowercasebeef",
-      "levels": [
-        {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
-          "position": 73,
-          "achievedAt": "2026-06-20T00:30:59Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Wfix1Q7mF6E",
-          "verified": false
-        },
-        {
-          "levelId": "80533210-51be-417f-a492-22edff194d94",
-          "levelName": "Cimmerian Shade",
-          "position": 103,
-          "achievedAt": "2026-07-12T20:01:08Z",
-          "videoUrl": "https://www.youtube.com/watch?v=xiGv3CQA3R8",
-          "verified": false
-        },
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 111,
-          "achievedAt": "2025-06-01T19:56:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=pvvhvWaC0XI",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2024-06-24T22:14:19Z",
-          "videoUrl": "https://www.youtube.com/watch?v=cuvNVL8BdH0",
-          "verified": false
-        }
-      ]
-    },
-    "8c6b8b39-0446-4bd7-8149-e6cf5df67ade": {
-      "name": "pacsalinta",
-      "levels": [
-        {
-          "levelId": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
-          "levelName": "Stellar Night",
-          "position": 73,
-          "achievedAt": "2026-09-08T21:19:52Z",
-          "videoUrl": "https://www.youtube.com/watch?v=_yXOSz_jyQY&t=1s",
-          "verified": false
-        },
-        {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 100,
-          "achievedAt": "2026-09-15T22:09:22Z",
-          "videoUrl": "https://www.youtube.com/watch?v=oMzZKAF89x4",
-          "verified": false
-        },
-        {
-          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
-          "levelName": "paranoia (amplitron)",
-          "position": 142,
-          "achievedAt": "2026-04-30T18:25:21Z",
-          "videoUrl": "https://www.youtube.com/watch?v=HLuzPkdWVLY",
           "verified": false
         }
       ]
@@ -44353,6 +44353,27 @@
           "position": 76,
           "achievedAt": "2026-10-13T20:14:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=NMf7_FZm2S4",
+          "verified": false
+        }
+      ]
+    },
+    "dc8a59d3-f4e0-4ec2-9e1d-7b35452a89c0": {
+      "name": "Don Viyo ひ",
+      "levels": [
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 76,
+          "achievedAt": "2026-10-15T04:37:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=NXcDN3YhQNI",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-04-10T03:03:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-ofqBjQxWfc",
           "verified": false
         }
       ]
@@ -56272,19 +56293,6 @@
           "position": 121,
           "achievedAt": "2026-04-05T12:35:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=x7MItQ_4nrA",
-          "verified": false
-        }
-      ]
-    },
-    "dc8a59d3-f4e0-4ec2-9e1d-7b35452a89c0": {
-      "name": "Don Viyo ひ",
-      "levels": [
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2026-04-10T03:03:30Z",
-          "videoUrl": "https://www.youtube.com/watch?v=-ofqBjQxWfc",
           "verified": false
         }
       ]
