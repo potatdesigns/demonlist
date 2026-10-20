@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T20:51:33.672Z",
+  "generatedAt": "2026-10-20T05:25:04.700Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -151,6 +151,11 @@
         "date": "2026-10-18",
         "position": 26,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 27,
+        "reason": "Moved down — FOREST OF SPIKES was raised to #26"
       }
     ],
     "67708587-274e-4de8-9be9-55385bbcbc9f": [
@@ -530,6 +535,11 @@
         "date": "2026-10-18",
         "position": 29,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 30,
+        "reason": "Moved down — FOREST OF SPIKES was raised to #26"
       }
     ],
     "b0f62595-314d-4648-b23e-12756382c126": [
@@ -266561,6 +266571,11 @@
         "date": "2026-10-18",
         "position": 632,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 631,
+        "reason": "Moved up — Rate Demon was lowered to #684"
       }
     ],
     "6e4aa435-2b39-44c4-9788-396a98487c4d": [
@@ -375291,6 +375306,11 @@
         "date": "2026-10-18",
         "position": 28,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 29,
+        "reason": "Moved down — FOREST OF SPIKES was raised to #26"
       }
     ],
     "699e6b35-7f79-4413-b300-0b30c0cdb8d6": [
@@ -383533,6 +383553,11 @@
         "date": "2026-10-18",
         "position": 27,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 28,
+        "reason": "Moved down — FOREST OF SPIKES was raised to #26"
       }
     ],
     "2d363340-d8ae-4049-a729-a5cf50c0252b": [
@@ -411696,6 +411721,11 @@
         "date": "2026-10-18",
         "position": 30,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-20",
+        "position": 26,
+        "reason": "Raised from #30 to #26"
       }
     ],
     "aea0cadd-9429-4f79-9d6d-8179bb518d73": [
@@ -412239,11 +412269,11 @@
       "298bb7f4-38e4-4376-b8b6-8659cf2d2c00",
       "9d96d090-5022-4cde-801d-72e03e0b1a1b",
       "dbafbb7d-f925-406c-95e1-7298733def71",
+      "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
       "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
       "8d117c28-8955-4cf9-9b72-4ca2e211534a",
       "3d351b86-3762-4eee-95aa-8dbd16189531",
       "c9227a33-a5d4-47d3-a025-a07781f228e1",
-      "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
       "e564dff8-304b-401d-9376-63528b7ba279",
       "06898192-2f94-4b57-a18b-d95cc73c69e5",
       "7dd584da-369a-4bb8-86d3-68312926c102",
@@ -412806,7 +412836,6 @@
       "3cccf8e1-91a1-46ee-bfd9-849449164d5b",
       "3071446b-01ba-4487-842a-fd33c340a776",
       "0be0add2-c6a2-4c4b-80df-8609d8741d20",
-      "94885e16-ca8a-4d1e-b62c-b14334a0f8ed",
       "163a30e9-21a9-4337-9ba5-d9343e81bc0a",
       "a9f311ce-9513-43cc-93b5-1f79e88fa4ad",
       "c79b14fa-0d5c-4c2d-8e3a-08d60c35b4a2",
@@ -412898,6 +412927,7 @@
       "1a1e70f3-2927-4f73-935a-5f480cf171ce",
       "15ef06d6-cb2a-4e65-8d4e-5c2172ebea78",
       "606b7447-d4d3-4835-ac97-52255d997c2c",
+      "94885e16-ca8a-4d1e-b62c-b14334a0f8ed",
       "dc9bfee3-fb1d-4c89-a988-dc4f70287406",
       "b27eef44-b4f5-4d61-9341-4166ecc3acde",
       "9d2b42a3-3720-4578-9c0c-601bbb1b2bc0",
@@ -415961,6 +415991,6 @@
       "ee79ee7a-528e-4f52-a9bf-71e68be8ffbd": "Isolation",
       "56b8c520-2821-4701-9df6-fbe94d44c15b": "i want ya"
     },
-    "lastEventFingerprint": "2026-10-19T20:31:43.994967Z|c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47|{\"Raised\":{\"new_position\":71,\"old_position\":73}}"
+    "lastEventFingerprint": "2026-10-20T00:31:04.565977Z|94885e16-ca8a-4d1e-b62c-b14334a0f8ed|{\"Lowered\":{\"new_position\":684,\"old_position\":593}}"
   }
 }

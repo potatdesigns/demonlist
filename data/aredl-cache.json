@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T00:02:03.204Z",
+  "generatedAt": "2026-10-20T05:25:04.435Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -22,7 +22,7 @@
         "Nerve Control",
         "Wave"
       ],
-      "description": "One of the most anticipated top 1s in the game's history, with a verification process spanning 396 streams with a cumulative playtime of 922 hours; currently the hardest level in the game.",
+      "description": "One of the most anticipated top 1s in the game's history, with a verification process spanning 396 streams and a cumulative playtime of 922 hours; currently the hardest level in the game.",
       "song": 482872,
       "edel_enjoyment": 85,
       "is_edel_pending": true,
@@ -2875,11 +2875,57 @@
       ]
     },
     {
+      "id": "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
+      "name": "FOREST OF SPIKES",
+      "position": 26,
+      "publisher_id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
+      "points": 3843,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 145709435,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Gimmicky",
+        "Overall"
+      ],
+      "description": null,
+      "song": 1485273,
+      "edel_enjoyment": null,
+      "is_edel_pending": false,
+      "gddl_tier": null,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
+        "username": ".bims.",
+        "global_name": "bims"
+      },
+      "verifications": [
+        {
+          "id": "c3ca93ed-4247-4006-94ab-bef18bd3f200",
+          "submitted_by": {
+            "id": "99d53816-1a55-4faf-a7c2-22e2f189e9bd",
+            "username": "brian_cheese",
+            "global_name": "Brian_Cheese 🧀"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
+          "hide_video": false,
+          "achieved_at": "2026-07-26T20:00:05Z",
+          "created_at": "2026-08-16T00:23:52.401778Z",
+          "updated_at": "2026-08-16T00:23:52.401778Z"
+        }
+      ],
+      "creators": []
+    },
+    {
       "id": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
       "name": "Acheron",
-      "position": 26,
+      "position": 27,
       "publisher_id": "fa630147-2a41-4c56-aa1f-4b7a6649c955",
-      "points": 3843,
+      "points": 3809,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 73667628,
@@ -2996,9 +3042,9 @@
     {
       "id": "8d117c28-8955-4cf9-9b72-4ca2e211534a",
       "name": "Spectre",
-      "position": 27,
+      "position": 28,
       "publisher_id": "ea04240c-ddbb-43a3-a055-2084faddd743",
-      "points": 3809,
+      "points": 3776,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110815379,
@@ -3209,9 +3255,9 @@
     {
       "id": "3d351b86-3762-4eee-95aa-8dbd16189531",
       "name": "Menace",
-      "position": 28,
+      "position": 29,
       "publisher_id": "7cc1696c-e945-4b2d-882f-b78b38a61f22",
-      "points": 3776,
+      "points": 3744,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 107805281,
@@ -3258,9 +3304,9 @@
     {
       "id": "c9227a33-a5d4-47d3-a025-a07781f228e1",
       "name": "Abyss of Darkness",
-      "position": 29,
+      "position": 30,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
-      "points": 3744,
+      "points": 3713,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49896559,
@@ -3384,52 +3430,6 @@
           "global_name": "CDMusic"
         }
       ]
-    },
-    {
-      "id": "a94a4e9e-c3e6-4d65-a77d-1533b33cd05d",
-      "name": "FOREST OF SPIKES",
-      "position": 30,
-      "publisher_id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
-      "points": 3713,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 145709435,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Gimmicky",
-        "Overall"
-      ],
-      "description": null,
-      "song": 1485273,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
-      "gddl_tier": null,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "ffba97e8-fb0b-4ee8-887a-d258141b0e89",
-        "username": ".bims.",
-        "global_name": "bims"
-      },
-      "verifications": [
-        {
-          "id": "c3ca93ed-4247-4006-94ab-bef18bd3f200",
-          "submitted_by": {
-            "id": "99d53816-1a55-4faf-a7c2-22e2f189e9bd",
-            "username": "brian_cheese",
-            "global_name": "Brian_Cheese 🧀"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
-          "hide_video": false,
-          "achieved_at": "2026-07-26T20:00:05Z",
-          "created_at": "2026-08-16T00:23:52.401778Z",
-          "updated_at": "2026-08-16T00:23:52.401778Z"
-        }
-      ],
-      "creators": []
     },
     {
       "id": "e564dff8-304b-401d-9376-63528b7ba279",
