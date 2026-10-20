@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T03:03:01.145Z",
+  "generatedAt": "2026-10-20T10:49:37.181Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -9470,6 +9470,35 @@
           "position": 142,
           "achievedAt": "2026-03-28T00:42:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=MS3HAFKQGbs",
+          "verified": false
+        }
+      ]
+    },
+    "a1e15750-98c1-4a13-b884-10a4fc85715a": {
+      "name": "moosoose",
+      "levels": [
+        {
+          "levelId": "45036980-77db-4bb5-9720-59ef3001a12e",
+          "levelName": "andromeda",
+          "position": 20,
+          "achievedAt": "2026-10-14T20:56:42Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ihPldiKuvg4",
+          "verified": false
+        },
+        {
+          "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
+          "levelName": "Firework",
+          "position": 54,
+          "achievedAt": "2023-11-16T23:37:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=mxDATLWuzpc",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2023-07-11T00:49:19Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-2O_z2LcsrI",
           "verified": false
         }
       ]
@@ -28497,6 +28526,14 @@
           "verified": false
         },
         {
+          "levelId": "99bfbecd-4821-4914-85fd-dd0bb613510e",
+          "levelName": "Silentlocked",
+          "position": 49,
+          "achievedAt": "2026-10-13T22:18:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Uaxg80kj4Mc",
+          "verified": false
+        },
+        {
           "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
           "levelName": "NOMAD",
           "position": 56,
@@ -32775,27 +32812,6 @@
         }
       ]
     },
-    "a1e15750-98c1-4a13-b884-10a4fc85715a": {
-      "name": "moosoose",
-      "levels": [
-        {
-          "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
-          "levelName": "Firework",
-          "position": 54,
-          "achievedAt": "2023-11-16T23:37:29Z",
-          "videoUrl": "https://www.youtube.com/watch?v=mxDATLWuzpc",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 122,
-          "achievedAt": "2023-07-11T00:49:19Z",
-          "videoUrl": "https://www.youtube.com/watch?v=-2O_z2LcsrI",
-          "verified": false
-        }
-      ]
-    },
     "5e8a20da-a234-4602-8cdd-6fa9ee6ed792": {
       "name": "FaDoLog",
       "levels": [
@@ -37036,6 +37052,27 @@
           "position": 112,
           "achievedAt": "2026-02-17T17:20:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=1fUdJh845y0",
+          "verified": false
+        }
+      ]
+    },
+    "b05d5966-a91c-44ba-b430-62b48e58dcb3": {
+      "name": "nines",
+      "levels": [
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 59,
+          "achievedAt": "2026-10-12T23:50:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=niwW_ss2tt0",
+          "verified": false
+        },
+        {
+          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
+          "levelName": "Midnight",
+          "position": 101,
+          "achievedAt": "2026-08-17T07:04:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=_zUhshSPlzw",
           "verified": false
         }
       ]
@@ -42487,6 +42524,14 @@
           "verified": false
         },
         {
+          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
+          "levelName": "Sinister Silence",
+          "position": 97,
+          "achievedAt": "2026-10-13T16:48:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=mgp6EPKyxx0",
+          "verified": false
+        },
+        {
           "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
           "levelName": "Sonic Wave Infinity",
           "position": 110,
@@ -42500,6 +42545,22 @@
           "position": 112,
           "achievedAt": "2025-07-20T16:21:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=UCW9ei2zHiU",
+          "verified": false
+        },
+        {
+          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
+          "levelName": "Natural Disaster",
+          "position": 117,
+          "achievedAt": "2026-04-03T11:04:23Z",
+          "videoUrl": "https://www.youtube.com/watch?v=C4PEObJcGts",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-09-30T17:28:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=z7P1XAGTf4I",
           "verified": false
         }
       ]
@@ -50416,19 +50477,6 @@
           "position": 131,
           "achievedAt": "2026-05-31T16:17:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=5GFTu6snRZQ",
-          "verified": false
-        }
-      ]
-    },
-    "b05d5966-a91c-44ba-b430-62b48e58dcb3": {
-      "name": "nines",
-      "levels": [
-        {
-          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
-          "levelName": "Midnight",
-          "position": 101,
-          "achievedAt": "2026-08-17T07:04:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=_zUhshSPlzw",
           "verified": false
         }
       ]
@@ -58748,6 +58796,27 @@
         }
       ]
     },
+    "8b75b310-135f-4873-9fe6-033b2a28875b": {
+      "name": "ForzaCasteddu",
+      "levels": [
+        {
+          "levelId": "03bbc794-51e3-4ad7-8c13-28070b97c9e9",
+          "levelName": "Viprin UFO",
+          "position": 123,
+          "achievedAt": "2026-10-14T16:55:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=58do3lYudE0",
+          "verified": false
+        },
+        {
+          "levelId": "53fb0da7-8845-4736-9832-c1f98bb388cc",
+          "levelName": "Henken",
+          "position": 149,
+          "achievedAt": "2026-08-05T11:54:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Q6jEvBdX9q4",
+          "verified": false
+        }
+      ]
+    },
     "6e05ed8b-e011-41d8-87c0-95326960b9a6": {
       "name": "vulcanium4",
       "levels": [
@@ -62441,19 +62510,6 @@
           "position": 149,
           "achievedAt": "2026-05-02T16:08:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=Wuy_mRA8b58",
-          "verified": false
-        }
-      ]
-    },
-    "8b75b310-135f-4873-9fe6-033b2a28875b": {
-      "name": "ForzaCasteddu",
-      "levels": [
-        {
-          "levelId": "53fb0da7-8845-4736-9832-c1f98bb388cc",
-          "levelName": "Henken",
-          "position": 149,
-          "achievedAt": "2026-08-05T11:54:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Q6jEvBdX9q4",
           "verified": false
         }
       ]
