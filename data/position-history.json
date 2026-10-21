@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:26:26.836Z",
+  "generatedAt": "2026-10-21T20:59:18.056Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -413788,6 +413788,7 @@
       "43d74b5d-091a-4f51-9a5e-fe3ad0876208",
       "10823e11-b376-4b40-af9c-f1a59b40ea15",
       "2920d9ad-70aa-45b0-a6ec-b0259f2f2440",
+      "566541dc-d103-4e51-b378-a867817635a4",
       "a7ef9129-8710-4df7-9fc8-8fe4e650ceb8",
       "ff19f637-5dd4-438a-b233-5440de9c79fe",
       "09383ccb-df6e-4095-b2ac-ab6fa1942a42",
@@ -415992,6 +415993,6 @@
       "56b8c520-2821-4701-9df6-fbe94d44c15b": "i want ya",
       "9c08a6f9-ae57-44e5-8be4-a9d77bdfa418": "MACHINEGUN"
     },
-    "lastEventFingerprint": "2026-10-20T11:45:47.102683Z|981217ce-69a0-44ce-9776-f6306ef1ef64|{\"Raised\":{\"new_position\":1453,\"old_position\":1462}}"
+    "lastEventFingerprint": "2026-10-21T20:32:38.688752Z|566541dc-d103-4e51-b378-a867817635a4|{\"Placed\":{\"new_position\":1545,\"status\":\"MainList\"}}"
   }
 }
