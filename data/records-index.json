@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T02:57:54.051Z",
+  "generatedAt": "2026-10-21T11:02:08.684Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -49831,6 +49831,14 @@
           "position": 99,
           "achievedAt": "2026-01-18T19:00:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=gn3pt1FJkqA",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 111,
+          "achievedAt": "2026-10-15T23:16:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Yc4E8tQdVkc",
           "verified": false
         },
         {
