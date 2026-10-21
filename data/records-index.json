@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T11:02:08.684Z",
+  "generatedAt": "2026-10-21T16:28:44.122Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -56630,6 +56630,19 @@
           "position": 121,
           "achievedAt": "2026-05-15T00:05:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=fFZDZl4ZFpg&t=1s",
+          "verified": false
+        }
+      ]
+    },
+    "907ef357-2a6b-4960-88d4-50a67eef1c16": {
+      "name": "dectwi",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-05-16T15:29:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=BrjCJ96yj7A",
           "verified": false
         }
       ]
