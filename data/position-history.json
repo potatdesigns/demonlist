@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T20:59:18.056Z",
+  "generatedAt": "2026-10-22T08:03:41.200Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -120805,6 +120805,11 @@
         "date": "2026-10-18",
         "position": 425,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 426,
+        "reason": "Moved down — Freedom08 was raised to #425"
       }
     ],
     "7c5de059-d496-43c0-8078-5d924416d975": [
@@ -131897,6 +131902,11 @@
         "date": "2026-10-18",
         "position": 429,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 430,
+        "reason": "Moved down — Freedom08 was raised to #425"
       }
     ],
     "9ca91d0c-4b96-444b-b230-2b208441af50": [
@@ -166943,6 +166953,11 @@
         "date": "2026-10-18",
         "position": 433,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 425,
+        "reason": "Raised from #433 to #425"
       }
     ],
     "1d807a74-a295-4741-acbf-1fd4d4ef86f8": [
@@ -239352,6 +239367,11 @@
         "date": "2026-10-18",
         "position": 426,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 427,
+        "reason": "Moved down — Freedom08 was raised to #425"
       }
     ],
     "c64c9af7-6e60-42c2-a354-b089a3622f3f": [
@@ -360534,6 +360554,11 @@
         "date": "2026-10-18",
         "position": 428,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 429,
+        "reason": "Moved down — Freedom08 was raised to #425"
       }
     ],
     "5e08596b-eb38-4b55-bc7d-9018f8f4b6e6": [
@@ -412668,6 +412693,7 @@
       "b35442b9-3ab4-410c-84d2-fd9748063cc4",
       "9ea1148c-9dbd-4639-976e-5cac67af6a72",
       "3276241d-aa27-49d4-9a43-d75f90d67437",
+      "97972dc3-f907-47be-8024-94bd0360d22f",
       "5ce0c960-11c5-4fe2-86a3-6927806c2d87",
       "b8d2cc98-495c-45e1-8eaf-52733342fa31",
       "aa0732ed-56b5-42c6-939c-5616e968213b",
@@ -412676,7 +412702,6 @@
       "3a7daa24-4d86-4e68-8973-570be2aefa72",
       "27a436ef-fe76-41d8-a89f-4b5cdf7e8444",
       "6d06c70b-be66-4642-a11b-9f14fb186e8b",
-      "97972dc3-f907-47be-8024-94bd0360d22f",
       "c0d26a87-2fa7-4e18-a101-dafce3ba2364",
       "97acf236-a447-4c21-b416-f5f324958e5f",
       "69845467-862c-4f2a-84c9-531b79728e00",
@@ -415993,6 +416018,6 @@
       "56b8c520-2821-4701-9df6-fbe94d44c15b": "i want ya",
       "9c08a6f9-ae57-44e5-8be4-a9d77bdfa418": "MACHINEGUN"
     },
-    "lastEventFingerprint": "2026-10-21T20:32:38.688752Z|566541dc-d103-4e51-b378-a867817635a4|{\"Placed\":{\"new_position\":1545,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-10-22T06:35:12.326856Z|97972dc3-f907-47be-8024-94bd0360d22f|{\"Raised\":{\"new_position\":425,\"old_position\":433}}"
   }
 }
