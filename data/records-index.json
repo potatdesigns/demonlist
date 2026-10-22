@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T16:28:41.675Z",
+  "generatedAt": "2026-10-22T21:07:00.487Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -6139,6 +6139,14 @@
           "verified": false
         },
         {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-10-13T06:25:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=TlJqwQxekok",
+          "verified": false
+        },
+        {
           "levelId": "b0f62595-314d-4648-b23e-12756382c126",
           "levelName": "Sakupen Circles",
           "position": 46,
@@ -6168,6 +6176,14 @@
           "position": 57,
           "achievedAt": "2026-03-21T19:43:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=2VOx6kzuBbQ",
+          "verified": false
+        },
+        {
+          "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
+          "levelName": "Calibrate",
+          "position": 60,
+          "achievedAt": "2026-10-20T04:06:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zi6NVVwYyuw",
           "verified": false
         },
         {
@@ -59015,6 +59031,19 @@
           "position": 122,
           "achievedAt": "2026-10-11T22:51:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=Tm7oEYIlPyQ",
+          "verified": false
+        }
+      ]
+    },
+    "c53d768b-74d3-4e2a-aea4-87aa3db0a8f6": {
+      "name": "Cyrox",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2026-10-17T03:11:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zlhU5P3Xfq0",
           "verified": false
         }
       ]
