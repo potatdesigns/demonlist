@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T14:11:50.474Z",
+  "generatedAt": "2026-10-22T18:56:38.286Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -266596,6 +266596,11 @@
         "date": "2026-10-20",
         "position": 631,
         "reason": "Moved up — Rate Demon was lowered to #684"
+      },
+      {
+        "date": "2026-10-22",
+        "position": 630,
+        "reason": "Moved up — CHROMA II was lowered to #652"
       }
     ],
     "6e4aa435-2b39-44c4-9788-396a98487c4d": [
@@ -412885,7 +412890,6 @@
       "3a86b3da-d69a-47a1-a7e3-0e262ec2667f",
       "feb130f1-e00a-4b79-b8c1-1aa2b17a73d2",
       "80391566-ab54-4f1b-89af-fd20efd38866",
-      "e6bf6a67-f3a6-4c44-914a-707fb2b0c835",
       "80596e2d-fa6c-433a-9bda-46afed5d836c",
       "d4800172-a44a-42e1-875a-7bfd0f0c7753",
       "f00207e5-0286-4ff2-aedc-6e9be970ccd5",
@@ -412914,7 +412918,6 @@
       "e4ae9108-8624-4735-bc20-70226cdf7f91",
       "036af534-a2f0-48e7-bb3d-9ae971add991",
       "ec8492bd-332f-4724-8fdf-7cf82ca74942",
-      "26b64bfe-d59a-4cd4-96f5-0510ccae283a",
       "665af606-0b8e-46c9-9292-3264bf1a8361",
       "d0d81936-2610-4408-b4ed-371497907c4d",
       "e4cdae29-5845-47bd-a29b-ade296097056",
@@ -412922,6 +412925,7 @@
       "786b9833-adf2-4b1c-827c-98dacb3740bc",
       "1dd512c3-9fe4-46f8-9a8c-9a0aed97eaad",
       "6d98c9ce-2df1-45cc-aaf7-ad85098916d0",
+      "e6bf6a67-f3a6-4c44-914a-707fb2b0c835",
       "4d9a39b3-707e-4ca6-b93b-529021320f46",
       "18d5251f-5dc7-47e4-bd52-4fe8991f1435",
       "b5241bbb-8e3d-4e25-8275-3ee92d517875",
@@ -412946,6 +412950,7 @@
       "5f22ff1d-ed9e-4bec-b1e9-1671769963aa",
       "f554c003-5362-4a80-a309-f587afbfad1d",
       "524e9344-ded9-46f2-b539-c09470be2ee3",
+      "26b64bfe-d59a-4cd4-96f5-0510ccae283a",
       "df622fd6-2393-4daa-8b4a-17af430224f8",
       "e80841b3-f6dc-4a8a-b04f-1ea408186925",
       "6654555f-bf08-46d6-bd6a-e51d82692422",
@@ -416018,6 +416023,6 @@
       "56b8c520-2821-4701-9df6-fbe94d44c15b": "i want ya",
       "9c08a6f9-ae57-44e5-8be4-a9d77bdfa418": "MACHINEGUN"
     },
-    "lastEventFingerprint": "2026-10-22T11:31:52.778241Z|ddb6db07-660d-4d32-8f67-e7c2bb75c5c4|{\"Raised\":{\"new_position\":690,\"old_position\":715}}"
+    "lastEventFingerprint": "2026-10-22T18:01:03.747395Z|e6bf6a67-f3a6-4c44-914a-707fb2b0c835|{\"Lowered\":{\"new_position\":652,\"old_position\":617}}"
   }
 }
