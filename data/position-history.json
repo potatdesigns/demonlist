@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T21:59:25.291Z",
+  "generatedAt": "2026-10-23T05:32:41.979Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -257682,6 +257682,11 @@
         "date": "2026-10-18",
         "position": 310,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-23",
+        "position": 309,
+        "reason": "Moved up — Dump was lowered to #311"
       }
     ],
     "90ff0da8-1c4b-4ae0-8cb0-41b78cbc3327": [
@@ -300751,6 +300756,11 @@
         "date": "2026-10-18",
         "position": 309,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-23",
+        "position": 311,
+        "reason": "Lowered from #309 to #311"
       }
     ],
     "4445b850-b323-414e-9c9b-958197e29569": [
@@ -354319,6 +354329,11 @@
         "date": "2026-10-18",
         "position": 311,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-23",
+        "position": 310,
+        "reason": "Moved up — Dump was lowered to #311"
       }
     ],
     "3199593d-9a2d-409c-b6c1-266ef8e054ba": [
@@ -357686,6 +357701,11 @@
         "date": "2026-10-18",
         "position": 1361,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-23",
+        "position": 1362,
+        "reason": "Moved down — SHINE was raised to #1295"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -412582,9 +412602,9 @@
       "7d5a3010-1bbe-402d-991c-5b6469b476a4",
       "01e17fa2-f8e4-4639-b2db-3bac3101846a",
       "4c550c3e-9a4c-4b35-8ddc-692d4aae0024",
-      "2ed92495-45d0-4825-91ad-f333ab5eb72b",
       "40beee36-4cbd-47df-a936-f6513a2d9ed2",
       "9f68ca24-5d53-4038-9c7f-cce12ab1f648",
+      "2ed92495-45d0-4825-91ad-f333ab5eb72b",
       "cf7add86-95c2-48c7-a69c-bdc289744d14",
       "e800f0f3-ce64-46d1-bd0a-85d08bb41cda",
       "268d1543-1f3d-4b90-80e5-63b217817546",
@@ -413568,6 +413588,7 @@
       "0d2740cd-8689-4022-9b77-8ad28d36d4f9",
       "4ad554a6-133f-4ed4-b396-be53dc00fe63",
       "bb867d32-7ca1-45eb-b019-cdda286a6801",
+      "6aab7439-0ccf-4fa6-ae1e-c61b599004b7",
       "6895090e-1a4a-42e4-845f-6a5442b3408c",
       "bfc18246-45f3-48e7-9b74-f39592e6f388",
       "7bdb9a74-3e0d-4dc3-9f55-cb2bcfc6a979",
@@ -413639,7 +413660,6 @@
       "ef2be62d-fade-4390-85f6-d736bb4bcb27",
       "39162ccf-96b3-4556-a957-e2c75492eeec",
       "cb8a871b-db33-47f4-aff5-c89de490a4db",
-      "6aab7439-0ccf-4fa6-ae1e-c61b599004b7",
       "a56d5c3d-9f73-406c-819d-85cc9acda8eb",
       "91ce5afc-3e90-450d-8c4b-cbd389550f47",
       "83f93910-deca-4a54-8e7b-65815a4504c0",
@@ -416028,6 +416048,6 @@
       "1da7e494-960b-4d17-ace1-e87540357928": "Autumn Season",
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone"
     },
-    "lastEventFingerprint": "2026-10-22T19:52:28.272551Z|bc9d4984-6fa4-4f61-9bf8-10b57b198ef9|\"Pending\""
+    "lastEventFingerprint": "2026-10-23T02:04:15.162190Z|2ed92495-45d0-4825-91ad-f333ab5eb72b|{\"Lowered\":{\"new_position\":311,\"old_position\":309}}"
   }
 }
