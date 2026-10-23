@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T21:07:00.487Z",
+  "generatedAt": "2026-10-23T03:00:06.060Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -47791,6 +47791,19 @@
         }
       ]
     },
+    "110d54fc-0bd2-42b3-a97d-a57f255a33c9": {
+      "name": "kaemi",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 85,
+          "achievedAt": "2026-10-17T19:57:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XIqGXnlD1zQ",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
@@ -62628,6 +62641,19 @@
           "position": 142,
           "achievedAt": "2026-10-16T13:19:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=TK8Hh75K4zE",
+          "verified": false
+        }
+      ]
+    },
+    "bddadbd9-7ec3-406a-a4d2-d5d0b0fa2886": {
+      "name": "iandore",
+      "levels": [
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 142,
+          "achievedAt": "2026-10-17T18:16:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EBuSsepOgVA",
           "verified": false
         }
       ]
