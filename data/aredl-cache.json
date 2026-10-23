@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T15:31:52.361Z",
+  "generatedAt": "2026-10-23T19:00:37.205Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -13569,58 +13569,11 @@
       ]
     },
     {
-      "id": "1221db41-c878-4786-98df-10193205d54e",
-      "name": "adjunto adnominal",
-      "position": 137,
-      "publisher_id": "7cc85ee9-cb1c-462c-91d6-4d5d51c3ece4",
-      "points": 2035,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 137400971,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Fast-Paced",
-        "Mirror",
-        "Wave",
-        "Duals"
-      ],
-      "description": null,
-      "song": 548713,
-      "edel_enjoyment": 86.5,
-      "is_edel_pending": true,
-      "gddl_tier": null,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "7cc85ee9-cb1c-462c-91d6-4d5d51c3ece4",
-        "username": "ad58da787",
-        "global_name": "soumpeixe"
-      },
-      "verifications": [
-        {
-          "id": "60ef62c4-bfca-4b3b-b1bc-3bdb832d4604",
-          "submitted_by": {
-            "id": "7cc85ee9-cb1c-462c-91d6-4d5d51c3ece4",
-            "username": "ad58da787",
-            "global_name": "soumpeixe"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/3jeO-uTXI6c",
-          "hide_video": false,
-          "achieved_at": "2026-04-04T22:34:12Z",
-          "created_at": "2026-08-16T00:23:28.660750Z",
-          "updated_at": "2026-08-16T00:23:28.660750Z"
-        }
-      ],
-      "creators": []
-    },
-    {
       "id": "8d02375c-8c31-4352-af21-d4533f63e3af",
       "name": "WOBBLING MACHINE (Solo)",
-      "position": 138,
+      "position": 137,
       "publisher_id": "f474ba2b-e0e1-4374-a4c2-ddebcebc2ec5",
-      "points": 2026,
+      "points": 2035,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87130877,
@@ -13673,9 +13626,9 @@
     {
       "id": "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
       "name": "Crystal Crusher (Solo)",
-      "position": 139,
+      "position": 138,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2018,
+      "points": 2026,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93732702,
@@ -13730,9 +13683,9 @@
     {
       "id": "c43eb1e4-b38d-466a-8da5-987204999072",
       "name": "limbo but uwu ig idk",
-      "position": 140,
+      "position": 139,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 2010,
+      "points": 2018,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110705712,
@@ -13783,9 +13736,9 @@
     {
       "id": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
       "name": "Graceful",
-      "position": 141,
+      "position": 140,
       "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-      "points": 2002,
+      "points": 2010,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71885708,
@@ -13900,9 +13853,9 @@
     {
       "id": "e8324cab-fc88-47c0-993d-87ce9de64a00",
       "name": "paranoia (amplitron)",
-      "position": 142,
+      "position": 141,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 1994,
+      "points": 2002,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113364415,
@@ -13952,9 +13905,9 @@
     {
       "id": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
       "name": "Starlit Stroll",
-      "position": 143,
+      "position": 142,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 1986,
+      "points": 1994,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115380769,
@@ -14011,9 +13964,9 @@
     {
       "id": "68308581-f1b6-4c0f-8851-82449ab1977f",
       "name": "The Paroxysm of Rage",
-      "position": 144,
+      "position": 143,
       "publisher_id": "48bc2cab-81bb-4c63-a653-bf1c31ddacfb",
-      "points": 1978,
+      "points": 1986,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87071894,
@@ -14069,9 +14022,9 @@
     {
       "id": "5b183ded-437a-4a25-8c81-8341fca626db",
       "name": "Blood Echo",
-      "position": 145,
+      "position": 144,
       "publisher_id": "69b31464-03ea-4543-8013-4020121bce2c",
-      "points": 1970,
+      "points": 1978,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 112242564,
@@ -14141,9 +14094,9 @@
     {
       "id": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
       "name": "Aerial Gleam",
-      "position": 146,
+      "position": 145,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-      "points": 1963,
+      "points": 1970,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 79771070,
@@ -14209,9 +14162,9 @@
     {
       "id": "aa5788c8-80a2-4df1-a5a0-3f1b7533935e",
       "name": "DISCONNECT",
-      "position": 147,
+      "position": 146,
       "publisher_id": "249ca75a-8d0b-4c23-a57a-2185b62e35cd",
-      "points": 1955,
+      "points": 1963,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 127023313,
@@ -14255,9 +14208,9 @@
     {
       "id": "c2837416-7fb4-4866-ba91-e9c134a0a59a",
       "name": "VOID",
-      "position": 148,
+      "position": 147,
       "publisher_id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
-      "points": 1947,
+      "points": 1955,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 100990392,
@@ -14309,9 +14262,9 @@
     {
       "id": "53fb0da7-8845-4736-9832-c1f98bb388cc",
       "name": "Henken",
-      "position": 149,
+      "position": 148,
       "publisher_id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
-      "points": 1940,
+      "points": 1947,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 80714349,
@@ -14398,9 +14351,9 @@
     {
       "id": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
       "name": "Starlight Summit",
-      "position": 150,
+      "position": 149,
       "publisher_id": "5e42f5cb-e1de-478d-8305-2b4032767f01",
-      "points": 1932,
+      "points": 1940,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114530859,
@@ -14440,6 +14393,66 @@
         }
       ],
       "creators": []
+    },
+    {
+      "id": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+      "name": "Trueffet",
+      "position": 150,
+      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+      "points": 1932,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 71434979,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "High CPS",
+        "Wave",
+        "Overall"
+      ],
+      "description": "Memorable blue and pink SyQual extreme with extremely difficult ship, wave, and spam sections. Originally was top 3 (even technically being top 1) and features numerous iconic high-cps wave sections. Named after Trueffet Square from Maple Story.",
+      "song": 805724,
+      "edel_enjoyment": 59.47619048,
+      "is_edel_pending": false,
+      "gddl_tier": 34.76470588235294,
+      "nlw_tier": "Merciless",
+      "publisher": {
+        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+        "username": "029747e6b",
+        "global_name": "SyQual"
+      },
+      "verifications": [
+        {
+          "id": "bd2af8de-7850-4e09-a8d5-59507f3e8c41",
+          "submitted_by": {
+            "id": "1b2f8a70-5d1a-44f0-875a-3a51999fcc7b",
+            "username": "467967fb2",
+            "global_name": "Baeru"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
+          "hide_video": false,
+          "achieved_at": "2021-07-16T10:48:09Z",
+          "created_at": "2022-10-26T17:06:50Z",
+          "updated_at": "2022-10-26T17:06:50Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+          "username": "029747e6b",
+          "global_name": "SyQual"
+        },
+        {
+          "id": "1ba81bd5-6a1e-4caa-a329-fa860a43e26f",
+          "username": "764698ba3",
+          "global_name": "Rainstorm"
+        }
+      ]
     }
   ]
 }
