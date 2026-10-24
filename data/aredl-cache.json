@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T22:43:48.199Z",
+  "generatedAt": "2026-10-24T01:14:17.512Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2893,8 +2893,8 @@
       ],
       "description": null,
       "song": 1485273,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 0,
+      "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
@@ -14367,7 +14367,7 @@
       ],
       "description": "A pure solo extreme using only the robot gamemode where the player traverses through treacherous alpine terrain. It combines traditional pixel style decoration, editor particles and a C418 song to create a cozy atmosphere. Don't let its short length fool you, it is filled to the brim with brutal robot timings, spike corner jumps and double clicks, especially in its middle section.",
       "song": null,
-      "edel_enjoyment": 77.58823529,
+      "edel_enjoyment": 78.38888889,
       "is_edel_pending": false,
       "gddl_tier": 34.25,
       "nlw_tier": "Merciless",
