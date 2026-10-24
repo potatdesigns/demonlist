@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:39:23.988Z",
+  "generatedAt": "2026-10-24T12:31:53.425Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3067,27 +3067,6 @@
       },
       "discoveredAt": "2026-10-23T13:15:15.473Z"
     },
-    "1221db41-c878-4786-98df-10193205d54e": {
-      "name": "adjunto adnominal",
-      "position": 137,
-      "verifier": {
-        "id": "3jeO-uTXI6c",
-        "url": "https://www.youtube.com/watch?v=3jeO-uTXI6c",
-        "title": "adjunto adnominal Showcase",
-        "channel": "All Rated Extreme Demons List",
-        "viewCount": 1574,
-        "viewsCheckedAt": "2026-10-24T09:39:23.244Z"
-      },
-      "showcase": {
-        "id": "VuYWxK3-mUY",
-        "url": "https://www.youtube.com/watch?v=VuYWxK3-mUY",
-        "title": "【4K】 \"adjunto adnominal\" by soumpeixe | Geometry Dash 2.2",
-        "channel": "Newly Rated Extremes",
-        "viewCount": 7701,
-        "viewsCheckedAt": "2026-10-24T09:39:23.244Z"
-      },
-      "discoveredAt": "2026-10-23T13:15:15.473Z"
-    },
     "6f5299ae-a62f-4701-b5a8-ace004b8f7ef": {
       "name": "Starlight Summit",
       "position": 150,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-10-24T09:39:23.244Z"
       },
       "discoveredAt": "2026-10-23T13:15:15.473Z"
+    },
+    "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f": {
+      "name": "Trueffet",
+      "position": 150,
+      "verifier": {
+        "id": "yHESkazVD4Q",
+        "url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
+        "title": "[EXTREME DEMON] Trueffet VERIFIED by SyQual & Rainstorm (Top 10)",
+        "channel": "Baeru",
+        "viewCount": 391034,
+        "viewsCheckedAt": "2026-10-24T12:31:53.425Z"
+      },
+      "showcase": {
+        "id": "eOUJZPn8YuU",
+        "url": "https://www.youtube.com/watch?v=eOUJZPn8YuU",
+        "title": "【4K】 \"Trueffet\" [TOP 10?] by SyQual & Rainstorm (Extreme Demon) [38K SPECIAL] | Geometry Dash 2.11",
+        "channel": "Just a GD player",
+        "viewCount": 582561,
+        "viewsCheckedAt": "2026-10-24T12:31:53.425Z"
+      },
+      "discoveredAt": "2026-10-24T12:31:53.425Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "8om4Vv_xXlk",
+      "newestVideoId": "e2lZwnsHVas",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32510,12 +32510,22 @@
           ],
           "description": "Level: Pictures I Took by UniverseDevon\nID: 150884914\nSong: Hello November Ladybug by UniverseDevon\nhttps://www.newgrounds.com/audio/listen/1391778",
           "checkedAt": "2026-10-23T13:14:33.794Z"
+        },
+        "e2lZwnsHVas": {
+          "title": "ONLY 300 DOWNLOADS?",
+          "channel": "Nexus [GD]",
+          "viewCount": 128597,
+          "levelIds": [
+            "145023010"
+          ],
+          "description": "Came across this level that came out 3 months ago and only has 300 downloads\n\nLevel: Fukkireta II by Commentary\nID: 145023010\nSong: Ochame Kinou by Lamaze-P (feat. Kasane Teto)",
+          "checkedAt": "2026-10-24T12:31:50.169Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "XTkjXTMlvHI",
+      "newestVideoId": "QMBJlJnEqX8",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -57031,6 +57041,16 @@
           "viewCount": 4282,
           "levelIds": [],
           "checkedAt": "2026-10-23T13:14:34.544Z"
+        },
+        "QMBJlJnEqX8": {
+          "title": "AfterCataBath by Robtop",
+          "channel": "Neiro",
+          "viewCount": 4354,
+          "levelIds": [
+            "467339",
+            "150118811"
+          ],
+          "checkedAt": "2026-10-24T12:31:50.894Z"
         }
       }
     },
@@ -94332,7 +94352,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "ps4TpOrLM_M",
+      "newestVideoId": "nQMUx0HIAKc",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -105223,6 +105243,15 @@
             "134499333"
           ],
           "checkedAt": "2026-10-23T13:14:36.617Z"
+        },
+        "nQMUx0HIAKc": {
+          "title": "【4K】\"Nautilus\" by Tabgnid (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 97,
+          "levelIds": [
+            "134727211"
+          ],
+          "checkedAt": "2026-10-24T12:31:52.273Z"
         }
       }
     },
