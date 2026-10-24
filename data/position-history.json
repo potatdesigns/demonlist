@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:00:37.378Z",
+  "generatedAt": "2026-10-24T13:38:35.427Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -1703,6 +1703,11 @@
         "date": "2026-10-18",
         "position": 106,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 107,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376": [
@@ -3634,6 +3639,11 @@
         "date": "2026-10-18",
         "position": 111,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 112,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "994ebf0f-e54e-49e4-bb7d-24097535d19d": [
@@ -4186,6 +4196,11 @@
         "date": "2026-10-18",
         "position": 110,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 111,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "48ef05df-7d3d-4653-8fdd-8cc67917c3b2": [
@@ -329728,6 +329743,11 @@
         "date": "2026-10-18",
         "position": 114,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 115,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "f4a5c70e-fe96-48e9-9ff1-448805bd4541": [
@@ -353297,6 +353317,11 @@
         "date": "2026-10-18",
         "position": 113,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 114,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "9f68ca24-5d53-4038-9c7f-cce12ab1f648": [
@@ -384784,6 +384809,11 @@
         "date": "2026-10-18",
         "position": 112,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 113,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "ce45f65a-d144-4613-9c81-f67aefd5fffb": [
@@ -389854,6 +389884,11 @@
         "date": "2026-10-18",
         "position": 108,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 109,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "33f22458-6142-45b2-a45e-9cc488be8304": [
@@ -409164,6 +409199,11 @@
         "date": "2026-10-18",
         "position": 107,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 108,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "1a093f68-cff4-48bc-9b95-02e2aed07104": [
@@ -409933,6 +409973,11 @@
         "date": "2026-10-18",
         "position": 109,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 110,
+        "reason": "Moved down — Between Duality was raised to #106"
       }
     ],
     "c59d6dce-489a-40b2-aa8e-e91ff760fc2e": [
@@ -410969,6 +411014,11 @@
         "date": "2026-10-18",
         "position": 115,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-24",
+        "position": 106,
+        "reason": "Raised from #115 to #106"
       }
     ],
     "70810896-8147-445f-82d0-028cce2297da": [
@@ -412504,6 +412554,7 @@
       "80533210-51be-417f-a492-22edff194d94",
       "46b88712-6024-4018-b526-7d103659bcb4",
       "1a093f68-cff4-48bc-9b95-02e2aed07104",
+      "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
       "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
       "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
       "eae489bc-dbf9-47b3-9c23-9730f5343d06",
@@ -412513,7 +412564,6 @@
       "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
       "ab157b89-82de-436e-817a-24e4ad8a38ba",
       "f3416b47-4beb-48af-b248-5c12bc8f1d72",
-      "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
       "7e39c9be-cbcc-4aff-a23c-08add685a336",
       "5531d67e-30cb-4cec-b42b-8b826830a7d7",
       "d022317b-32cc-462b-98a1-9aa37a6c8431",
@@ -416153,6 +416203,6 @@
       "1da7e494-960b-4d17-ace1-e87540357928": "Autumn Season",
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone"
     },
-    "lastEventFingerprint": "2026-10-23T15:45:42.413514Z|1221db41-c878-4786-98df-10193205d54e|{\"Lowered\":{\"new_position\":157,\"old_position\":137}}"
+    "lastEventFingerprint": "2026-10-24T13:18:38.762726Z|414afb01-7ce8-4237-ba08-5da2ed4ee3ef|{\"Raised\":{\"new_position\":106,\"old_position\":115}}"
   }
 }
