@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T17:51:05.292Z",
+  "generatedAt": "2026-10-25T10:19:21.048Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -414122,7 +414122,6 @@
       "34c7cd03-a711-4445-aa64-550c271d0bd7",
       "e4262593-1e53-4406-8d26-941b4fe0f905",
       "50dc826e-b3fd-4464-95fe-fab4d5137f77",
-      "78d2148c-d0eb-468e-979a-aee250514f02",
       "f0607fff-ca7e-440f-9e15-3dae7a140615",
       "5225397b-ba97-40e0-b2c0-c7ff3cffd543",
       "789d6695-8f55-40cc-9200-8c5662295b90",
@@ -414133,6 +414132,7 @@
       "66ceb77d-900b-4fbb-95ea-cd567250eb0c",
       "d2dd87f6-7b00-44ae-bf8f-ca610e08df48",
       "fedf5860-8cb3-44e0-976e-c8a46caa6fbc",
+      "78d2148c-d0eb-468e-979a-aee250514f02",
       "1c6a1073-e2f2-401c-ad64-8622d519a342",
       "ece5449a-d9c9-4237-82b5-4c34fc229eb9",
       "bf73a9cd-dba6-4384-8269-6fe0440e0416",
@@ -416284,6 +416284,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-24T16:41:32.825835Z|53b3bbf4-38d0-465f-bdfc-38710e8840a5|{\"Lowered\":{\"new_position\":548,\"old_position\":501}}"
+    "lastEventFingerprint": "2026-10-25T09:07:03.986635Z|78d2148c-d0eb-468e-979a-aee250514f02|{\"MovedToLegacy\":{\"new_position\":1604,\"old_position\":1594}}"
   }
 }
