@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T14:39:39.690Z",
+  "generatedAt": "2026-10-25T17:57:31.972Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -182,11 +182,6 @@
           "global_name": "cerrunogmd"
         },
         {
-          "id": "348220d5-7ad6-4cec-89a7-b22f1516b5d8",
-          "username": "77ebea998",
-          "global_name": "Hexy"
-        },
-        {
           "id": "5b1e3f03-5d72-48a6-8cf1-de1119293fe0",
           "username": "2ed0ee80f",
           "global_name": "suffixpoint"
@@ -195,6 +190,11 @@
           "id": "554cd2fc-486a-4d22-be2f-e101ee6bcc41",
           "username": "baba_gd",
           "global_name": "BABA"
+        },
+        {
+          "id": "71b61dff-9954-40a8-83c9-832d3db240e2",
+          "username": "realkalih",
+          "global_name": "Hexy"
         }
       ]
     },
@@ -4425,11 +4425,6 @@
           "global_name": "Yonaka"
         },
         {
-          "id": "5a2817f2-e54c-451b-9add-e0dd13a2b2d3",
-          "username": "86afd66f4",
-          "global_name": "Smokes"
-        },
-        {
           "id": "49f7216c-5f81-4d5f-a703-5beb432d68aa",
           "username": "2d851d7dd",
           "global_name": "Tygrysek"
@@ -4448,6 +4443,11 @@
           "id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
           "username": "50af4664a",
           "global_name": "LIEB"
+        },
+        {
+          "id": "ce8b2a68-4fb0-4f85-8a1c-1a0ddc46cae4",
+          "username": "xsmokes71",
+          "global_name": "Smokes"
         },
         {
           "id": "6d53f1f6-2006-4394-8527-ea20fbb3e670",
