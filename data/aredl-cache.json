@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T11:45:37.877Z",
+  "generatedAt": "2026-10-26T17:35:20.356Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -6292,11 +6292,69 @@
       ]
     },
     {
+      "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
+      "name": "Fracture",
+      "position": 59,
+      "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+      "points": 3012,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 99703915,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Circles",
+        "Fast-Paced",
+        "Timings",
+        "Wave"
+      ],
+      "description": "A fast-paced indigo Nine Circles level that is a staple within the New Zealand Geometry Dash community. Features a sleek, polished design influenced by many of the creator's favorite creators at the time, with its structuring loosely inspired by Arctic Lights. Took over 2 years to be rated after its initial release.",
+      "song": 433947,
+      "edel_enjoyment": 50.71428571,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+        "username": "arrowgazi",
+        "global_name": "Arrow"
+      },
+      "verifications": [
+        {
+          "id": "b489a52d-ff5d-4701-b1e3-53c81f2cdb7c",
+          "submitted_by": {
+            "id": "54fca182-f83a-45e8-8978-55dc32978973",
+            "username": "5nr",
+            "global_name": "Dezstro"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
+          "hide_video": false,
+          "achieved_at": "2025-06-02T19:20:00Z",
+          "created_at": "2026-04-30T19:20:56.244427Z",
+          "updated_at": "2026-04-30T19:20:56.244427Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "54fca182-f83a-45e8-8978-55dc32978973",
+          "username": "5nr",
+          "global_name": "Dezstro"
+        },
+        {
+          "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+          "username": "arrowgazi",
+          "global_name": "Arrow"
+        }
+      ]
+    },
+    {
       "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
       "name": "poocubed",
-      "position": 59,
+      "position": 60,
       "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-      "points": 3008,
+      "points": 2993,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 85133223,
@@ -6383,9 +6441,9 @@
     {
       "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
       "name": "Calibrate",
-      "position": 60,
+      "position": 61,
       "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-      "points": 2989,
+      "points": 2974,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136981369,
@@ -6432,9 +6490,9 @@
     {
       "id": "4fac9298-93ae-4553-abe9-72a562567318",
       "name": "MINUSdry",
-      "position": 61,
+      "position": 62,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2971,
+      "points": 2956,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89414220,
@@ -6504,9 +6562,9 @@
     {
       "id": "b2252317-dcf2-432d-ba36-59642218803c",
       "name": "Saul Goodman",
-      "position": 62,
+      "position": 63,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2952,
+      "points": 2937,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90477539,
@@ -6593,9 +6651,9 @@
     {
       "id": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
       "name": "Apocalyptic Trilogy",
-      "position": 63,
+      "position": 64,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2934,
+      "points": 2919,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113443235,
@@ -6768,9 +6826,9 @@
     {
       "id": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
       "name": "The Hallucination",
-      "position": 64,
+      "position": 65,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 2916,
+      "points": 2902,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81139702,
@@ -6830,9 +6888,9 @@
     {
       "id": "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "name": "Pinnacle of Life",
-      "position": 65,
+      "position": 66,
       "publisher_id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
-      "points": 2898,
+      "points": 2884,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 144012996,
@@ -6946,9 +7004,9 @@
     {
       "id": "146c9eed-2b47-483c-93a2-6b336adea84a",
       "name": "COMBUSTION",
-      "position": 66,
+      "position": 67,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2881,
+      "points": 2867,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94359172,
@@ -7005,9 +7063,9 @@
     {
       "id": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
       "name": "Haunted Ship",
-      "position": 67,
+      "position": 68,
       "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-      "points": 2863,
+      "points": 2850,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 143523624,
@@ -7065,9 +7123,9 @@
     {
       "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "name": "Loops of Fury",
-      "position": 68,
+      "position": 69,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 2846,
+      "points": 2833,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 126571887,
@@ -7119,9 +7177,9 @@
     {
       "id": "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
       "name": "Deadlier Clubstep",
-      "position": 69,
+      "position": 70,
       "publisher_id": "e3204e3a-aaaf-4a4c-a86d-d6353b4b01b8",
-      "points": 2830,
+      "points": 2817,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96314787,
@@ -7216,9 +7274,9 @@
     {
       "id": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
       "name": "BRITNEY NO SCLEARS",
-      "position": 70,
+      "position": 71,
       "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
-      "points": 2813,
+      "points": 2800,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125317359,
@@ -7265,9 +7323,9 @@
     {
       "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "name": "Stellar Night",
-      "position": 71,
+      "position": 72,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2797,
+      "points": 2784,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 83244159,
@@ -7319,9 +7377,9 @@
     {
       "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "name": "Gaggatrondra",
-      "position": 72,
+      "position": 73,
       "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-      "points": 2781,
+      "points": 2768,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114990369,
@@ -7372,9 +7430,9 @@
     {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 73,
+      "position": 74,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2765,
+      "points": 2752,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -7471,9 +7529,9 @@
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "name": "Edge of Destiny",
-      "position": 74,
+      "position": 75,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2749,
+      "points": 2737,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89187968,
@@ -7608,9 +7666,9 @@
     {
       "id": "64b042d2-a084-4a84-83c6-fcc830e84a2e",
       "name": "Losing Your Mind",
-      "position": 75,
+      "position": 76,
       "publisher_id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
-      "points": 2733,
+      "points": 2721,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 139508889,
@@ -7656,9 +7714,9 @@
     {
       "id": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "name": "Solar Flare",
-      "position": 76,
+      "position": 77,
       "publisher_id": "7d9efb4f-8259-40eb-b123-41785a461e58",
-      "points": 2718,
+      "points": 2706,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90390075,
@@ -7714,9 +7772,9 @@
     {
       "id": "822815ac-fcb8-40b3-b42d-bd692095129c",
       "name": "The Catacombs",
-      "position": 77,
+      "position": 78,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2703,
+      "points": 2691,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 104232191,
@@ -7765,9 +7823,9 @@
     {
       "id": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
       "name": "LIMBO",
-      "position": 78,
+      "position": 79,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 2688,
+      "points": 2677,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86084399,
@@ -7996,9 +8054,9 @@
     {
       "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
       "name": "Make Paul Dance",
-      "position": 79,
+      "position": 80,
       "publisher_id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
-      "points": 2673,
+      "points": 2662,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115860808,
@@ -8045,9 +8103,9 @@
     {
       "id": "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "name": "Belladonna",
-      "position": 80,
+      "position": 81,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2658,
+      "points": 2647,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94969889,
@@ -8103,9 +8161,9 @@
     {
       "id": "0029b449-c191-4a9b-91a2-40a3c96037f6",
       "name": "Codependence (Solo)",
-      "position": 81,
+      "position": 82,
       "publisher_id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
-      "points": 2644,
+      "points": 2633,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 62556400,
@@ -8302,9 +8360,9 @@
     {
       "id": "33f22458-6142-45b2-a45e-9cc488be8304",
       "name": "Collapse (Nexel)",
-      "position": 82,
+      "position": 83,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2630,
+      "points": 2619,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113256247,
@@ -8353,9 +8411,9 @@
     {
       "id": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
       "name": "Mayhem",
-      "position": 83,
+      "position": 84,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
-      "points": 2615,
+      "points": 2605,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82544060,
@@ -8446,9 +8504,9 @@
     {
       "id": "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
       "name": "CHROMACAVE",
-      "position": 84,
+      "position": 85,
       "publisher_id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
-      "points": 2601,
+      "points": 2591,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131497860,
@@ -8516,9 +8574,9 @@
     {
       "id": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
       "name": "The Plunge",
-      "position": 85,
+      "position": 86,
       "publisher_id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
-      "points": 2588,
+      "points": 2578,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113220284,
@@ -8593,64 +8651,6 @@
           "id": "f60cad47-ed8d-40b8-8225-47c0610e930b",
           "username": "1d99a3331",
           "global_name": "G4lvatron"
-        }
-      ]
-    },
-    {
-      "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
-      "name": "Fracture",
-      "position": 86,
-      "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-      "points": 2574,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 99703915,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Circles",
-        "Fast-Paced",
-        "Timings",
-        "Wave"
-      ],
-      "description": "A fast-paced indigo Nine Circles level that is a staple within the New Zealand Geometry Dash community. Features a sleek, polished design influenced by many of the creator's favorite creators at the time, with its structuring loosely inspired by Arctic Lights. Took over 2 years to be rated after its initial release.",
-      "song": 433947,
-      "edel_enjoyment": 50.71428571,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-        "username": "arrowgazi",
-        "global_name": "Arrow"
-      },
-      "verifications": [
-        {
-          "id": "b489a52d-ff5d-4701-b1e3-53c81f2cdb7c",
-          "submitted_by": {
-            "id": "54fca182-f83a-45e8-8978-55dc32978973",
-            "username": "5nr",
-            "global_name": "Dezstro"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
-          "hide_video": false,
-          "achieved_at": "2025-06-02T19:20:00Z",
-          "created_at": "2026-04-30T19:20:56.244427Z",
-          "updated_at": "2026-04-30T19:20:56.244427Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "54fca182-f83a-45e8-8978-55dc32978973",
-          "username": "5nr",
-          "global_name": "Dezstro"
-        },
-        {
-          "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-          "username": "arrowgazi",
-          "global_name": "Arrow"
         }
       ]
     },
