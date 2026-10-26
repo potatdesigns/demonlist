@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:18:11.014Z",
+  "generatedAt": "2026-10-26T02:48:02.217Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7151,19 +7151,6 @@
         }
       ]
     },
-    "515ace64-4d0b-46d0-abef-9acf2814c04f": {
-      "name": "Java",
-      "levels": [
-        {
-          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
-          "levelName": "Silent clubstep",
-          "position": 17,
-          "achievedAt": "2026-10-21T03:26:24Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Rn8wA0LBpbw",
-          "verified": false
-        }
-      ]
-    },
     "139b7c0a-4004-43dd-999e-0d7abe928a47": {
       "name": "Wity",
       "levels": [
@@ -11527,6 +11514,14 @@
           "position": 38,
           "achievedAt": "2026-08-29T22:00:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=K30Vi0LEdhM",
+          "verified": false
+        },
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 59,
+          "achievedAt": "2026-10-20T20:55:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7R7B8uBBGXQ",
           "verified": false
         },
         {
@@ -26354,6 +26349,14 @@
           "achievedAt": "2026-09-28T19:38:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=mMXMEW8gACU",
           "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2026-10-06T18:55:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EyyHAsH7394",
+          "verified": false
         }
       ]
     },
@@ -39363,6 +39366,14 @@
           "verified": false
         },
         {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2026-10-19T23:00:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=wplpL4GXZNA",
+          "verified": false
+        },
+        {
           "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
           "levelName": "NETWORK (Agat3)",
           "position": 124,
@@ -46180,7 +46191,7 @@
       ]
     },
     "43452a7d-c7cf-49b3-81a7-d5b153a73963": {
-      "name": "Ricardo J. Alfaro",
+      "name": "Lasiwa",
       "levels": [
         {
           "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
@@ -51043,11 +51054,27 @@
           "verified": false
         },
         {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 100,
+          "achievedAt": "2026-10-16T15:57:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1t-x-gbnPZY",
+          "verified": false
+        },
+        {
           "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
           "levelName": "Oblivion",
           "position": 122,
           "achievedAt": "2025-11-26T22:34:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=AJO--kGcwXY",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 141,
+          "achievedAt": "2026-04-17T20:46:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jUJvMVij8F8",
           "verified": false
         }
       ]
@@ -56840,6 +56867,19 @@
         }
       ]
     },
+    "f8aa5b41-3bb6-40c8-b7eb-d9c3435857ee": {
+      "name": "nicolai",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 112,
+          "achievedAt": "2026-10-25T18:26:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iMSi9eZvKDk",
+          "verified": false
+        }
+      ]
+    },
     "79481d71-73b7-44b4-87e8-ab68d8f6df8f": {
       "name": "Polixe",
       "levels": [
@@ -57178,6 +57218,27 @@
           "position": 133,
           "achievedAt": "2026-09-29T19:05:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=jkJBvbr3jII",
+          "verified": false
+        }
+      ]
+    },
+    "6220e1ff-0bd6-460e-a321-a38df02b93b6": {
+      "name": "Jeff Besos Prime",
+      "levels": [
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 113,
+          "achievedAt": "2026-10-25T12:42:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=f8sFOmfr-Xc",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 133,
+          "achievedAt": "2026-02-23T22:27:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ziIyzSUg5WA",
           "verified": false
         }
       ]
@@ -64134,19 +64195,6 @@
         }
       ]
     },
-    "6220e1ff-0bd6-460e-a321-a38df02b93b6": {
-      "name": "Jeff Besos Prime",
-      "levels": [
-        {
-          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
-          "levelName": "Shukketsu",
-          "position": 133,
-          "achievedAt": "2026-02-23T22:27:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ziIyzSUg5WA",
-          "verified": false
-        }
-      ]
-    },
     "7f561574-23b7-4ff4-beb0-21fdd4dadbf4": {
       "name": "person",
       "levels": [
@@ -65425,6 +65473,19 @@
           "position": 145,
           "achievedAt": "2026-10-15T01:12:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=z-Vgu_VkL0Y",
+          "verified": false
+        }
+      ]
+    },
+    "330ec660-cdc7-463c-9346-f3d45c7b53ae": {
+      "name": "Blue Heaven 567",
+      "levels": [
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 145,
+          "achievedAt": "2026-10-22T18:45:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Yg_A0pijKSs",
           "verified": false
         }
       ]
