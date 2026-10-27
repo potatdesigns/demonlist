@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T06:58:38.772Z",
+  "generatedAt": "2026-10-27T12:56:09.522Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -9106,7 +9106,7 @@
       "name": "Damascus",
       "position": 91,
       "publisher_id": "54e04276-3c19-448a-b6a8-2cd9e32eb53f",
-      "points": 2508,
+      "points": 2512,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93339534,
@@ -9116,6 +9116,7 @@
         "XXL+",
         "Fast-Paced",
         "Chokepoints",
+        "Unbalanced",
         "Nerve Control",
         "Overall"
       ],
