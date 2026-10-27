@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T22:12:10.744Z",
+  "generatedAt": "2026-10-27T03:21:32.323Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -388,7 +388,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2022-11-30T04:59:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=NPvKxItz5Io",
           "verified": false
@@ -396,7 +396,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-04-21T21:51:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=sKGrmJV9xdA",
           "verified": false
@@ -404,7 +404,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-05-24T19:03:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=7vvcfnfpm4s",
           "verified": false
@@ -412,7 +412,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-03-15T22:15:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=NqUnUHPU1kU",
           "verified": false
@@ -420,7 +420,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2022-10-01T00:19:22Z",
           "videoUrl": "https://www.youtube.com/watch?v=L-TCgxJAETM",
           "verified": false
@@ -428,7 +428,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2023-09-26T23:53:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=UsfNCarKnTY",
           "verified": false
@@ -1046,7 +1046,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2022-12-05T19:30:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=dbuOPaOhVPo",
           "verified": false
@@ -1054,7 +1054,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-11-03T23:01:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=cN8Ex1d0Th0",
           "verified": false
@@ -1062,7 +1062,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-11-11T21:40:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=kqPcBit4urs",
           "verified": false
@@ -1070,7 +1070,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-01-02T19:07:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=_RPtoR41jJ4",
           "verified": false
@@ -1078,7 +1078,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-02-07T19:29:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=ccqkzpnpaEQ",
           "verified": false
@@ -1086,7 +1086,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-06-11T23:40:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=Qey_b5S3W8E",
           "verified": false
@@ -1688,7 +1688,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-02-26T23:29:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=qBLt78clzvs",
           "verified": false
@@ -1696,7 +1696,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-12-09T02:29:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=chXB7LXNIoc",
           "verified": false
@@ -1704,7 +1704,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-01-10T06:39:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=PYZrC_WtrhU",
           "verified": false
@@ -1712,7 +1712,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-02-27T06:39:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=qnvtfWMC3xY",
           "verified": false
@@ -1720,7 +1720,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-07-26T08:45:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=LDnnocFvLoo",
           "verified": false
@@ -1728,7 +1728,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-03-22T10:55:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=qYZKNXlfwR8",
           "verified": false
@@ -2205,7 +2205,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-02-22T00:13:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=WU6ntlugMpM",
           "verified": false
@@ -2213,7 +2213,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-10-12T19:52:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=-_omUcQl5fA",
           "verified": false
@@ -2221,7 +2221,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-02-13T19:37:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=J_10AAqG5Vw",
           "verified": false
@@ -2431,7 +2431,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2023-08-09T14:59:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=aUyOB2sTry4",
           "verified": false
@@ -2439,7 +2439,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-03-14T15:43:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=9xKR6um18ug",
           "verified": false
@@ -2447,7 +2447,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-03-14T15:44:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=C2APPEfrAUg",
           "verified": false
@@ -2455,7 +2455,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-03-14T15:45:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=Iel3ULcNYO4",
           "verified": false
@@ -2668,7 +2668,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-05T19:24:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=Hq_c4d-1VrE",
           "verified": false
@@ -2676,7 +2676,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-04-17T16:03:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=8mtglT2VB6c",
           "verified": false
@@ -2684,7 +2684,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-01-14T23:51:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=mbE4C6Ms2iM",
           "verified": false
@@ -2692,7 +2692,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-09-20T17:48:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=PLuJhmUoo8Q",
           "verified": false
@@ -2700,7 +2700,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-03-11T01:30:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=buCQ7BJxEYI",
           "verified": false
@@ -2902,7 +2902,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-07-16T20:32:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=eqTWCNDDP-k",
           "verified": false
@@ -2910,7 +2910,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-06-07T16:45:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=u0vQz0A8jpg",
           "verified": false
@@ -3096,7 +3096,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2023-06-16T23:40:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=v7VvY7PbKqU",
           "verified": false
@@ -3253,7 +3253,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-09-05T18:05:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=5GjbPVGYXGw",
           "verified": false
@@ -3261,7 +3261,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-02-12T19:05:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=hAV4gVwyPe4",
           "verified": false
@@ -3269,7 +3269,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-04-20T17:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=_053dZQw08Y",
           "verified": false
@@ -3277,7 +3277,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2023-04-04T19:00:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=nQMDCge5q0Q",
           "verified": false
@@ -3418,7 +3418,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-03-25T03:20:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Bcwvd2LWN2A",
           "verified": false
@@ -3426,7 +3426,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-03-10T23:13:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=tDNyxKt03jE",
           "verified": false
@@ -3503,7 +3503,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-09T21:34:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=mtWqt-CB3-0",
           "verified": false
@@ -3707,7 +3707,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-07-04T02:00:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=k2Nt_Ge5X_c",
           "verified": false
@@ -3715,7 +3715,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-06-22T13:10:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=OeFAbL63KNQ",
           "verified": false
@@ -3723,7 +3723,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-19T10:11:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=YuCEJHwGCsk",
           "verified": false
@@ -3970,7 +3970,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-23T19:42:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=YjglfxlnpEU",
           "verified": false
@@ -4071,7 +4071,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-12-29T17:00:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=MR7wowK2OLQ",
           "verified": false
@@ -4079,7 +4079,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-12-13T01:42:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=fywtWKIrBpo",
           "verified": false
@@ -4087,7 +4087,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-11-03T08:11:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=BAeYbGLZ5Bo",
           "verified": false
@@ -4233,7 +4233,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-11-22T16:20:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=t-JcenWQHwQ",
           "verified": false
@@ -4241,7 +4241,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-05-27T12:27:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=RAe03eeP_nk",
           "verified": false
@@ -4249,7 +4249,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-10-05T16:40:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=7ZYmAYDdjvg",
           "verified": false
@@ -4451,7 +4451,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-09-04T16:14:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=bnl5n3LHHPM",
           "verified": false
@@ -4459,7 +4459,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-05-20T19:12:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=-5UM_vGeLKE&t=59s",
           "verified": false
@@ -4727,7 +4727,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-02-20T02:31:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=XGKJ_emcK-A",
           "verified": false
@@ -4735,7 +4735,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-09-05T02:55:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=9Ea1AOQcGw8",
           "verified": false
@@ -4743,7 +4743,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-05-03T07:25:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=Pld4bArMS7k",
           "verified": false
@@ -4751,7 +4751,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-09-29T04:24:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=X3cY64HQ9S4",
           "verified": false
@@ -4759,7 +4759,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-05-09T04:37:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZoIPKP3vaQQ",
           "verified": false
@@ -5057,7 +5057,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-18T23:10:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=aCgOTBE7l_E",
           "verified": false
@@ -5065,7 +5065,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-06-04T17:00:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=2Cab5--5k-I",
           "verified": false
@@ -5224,7 +5224,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-05-18T16:32:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=Ou7TfeG0nIU",
           "verified": false
@@ -5346,7 +5346,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-05-05T13:03:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=7dwcPrwYdIY",
           "verified": false
@@ -5524,7 +5524,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-12-24T20:00:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=eHc-Xz59SnM",
           "verified": false
@@ -5532,7 +5532,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-05-04T09:14:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=rHqxjxGMQps",
           "verified": false
@@ -5681,7 +5681,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-04T04:32:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=_oGcQA8adwk",
           "verified": false
@@ -5856,7 +5856,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-09-23T12:42:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=KtKSYlYov98",
           "verified": false
@@ -5864,7 +5864,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-11-17T16:42:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=JVENQ0gj1BU",
           "verified": false
@@ -5954,7 +5954,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-25T14:34:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=8kWIjRhqHzY",
           "verified": false
@@ -6285,7 +6285,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-10-20T04:06:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=zi6NVVwYyuw",
           "verified": false
@@ -6293,7 +6293,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-18T00:50:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=fYFJSPMGGuQ",
           "verified": false
@@ -6301,7 +6301,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-08-02T02:43:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=8825g6DzRRQ",
           "verified": false
@@ -6763,7 +6763,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-04T05:33:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=18TB57C56Zk",
           "verified": false
@@ -6771,7 +6771,7 @@
         {
           "levelId": "01746dbe-64c3-486a-ba55-e2008bedaed1",
           "levelName": "Pinnacle of Life",
-          "position": 66,
+          "position": 67,
           "achievedAt": "2026-08-24T05:11:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=ruUpT264lfE",
           "verified": false
@@ -6779,7 +6779,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-10-09T00:29:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=bHIb1vdsR_4",
           "verified": false
@@ -6960,7 +6960,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-09-14T03:39:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=B2mWkhCK9Z0",
           "verified": false
@@ -6968,7 +6968,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-05-22T05:19:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=B6znfYHWjy8",
           "verified": false
@@ -6976,7 +6976,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-05-02T03:02:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=QGBtMlUwUJA",
           "verified": false
@@ -6984,7 +6984,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-29T21:34:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=A2DdtVBcImQ",
           "verified": false
@@ -6992,7 +6992,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-04-03T03:48:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=5J-kZ9XOJ1s",
           "verified": false
@@ -7356,7 +7356,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-06-05T05:22:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=sijkwcrVd1I",
           "verified": false
@@ -7364,7 +7364,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-06-18T13:08:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=of5J5x1u8Wo",
           "verified": false
@@ -7372,7 +7372,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-17T19:22:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=K7-BPu8Bwdw",
           "verified": false
@@ -7380,7 +7380,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-06-24T22:12:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=xIjDz2TJ8JQ",
           "verified": false
@@ -7388,7 +7388,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-04-23T04:07:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=TOfLkLoXosk",
           "verified": false
@@ -7396,7 +7396,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-01-28T21:05:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=mspz3HkmO8g",
           "verified": false
@@ -7404,7 +7404,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-12-02T02:01:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=HDJKC1S_4rM",
           "verified": false
@@ -7633,7 +7633,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-11-13T22:30:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=FvV7RqbBrh4",
           "verified": false
@@ -7745,9 +7745,17 @@
           "verified": false
         },
         {
+          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+          "levelName": "Loops of Fury",
+          "position": 59,
+          "achievedAt": "2026-06-08T17:57:52Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3wgLLuEbEVA",
+          "verified": false
+        },
+        {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-11-02T21:10:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=sJnjSIB0uhU",
           "verified": false
@@ -7755,7 +7763,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-11-08T22:30:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=bxN_j9a8emo",
           "verified": false
@@ -7763,7 +7771,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-08-07T00:59:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=_ZJdjnurTCk",
           "verified": false
@@ -7771,7 +7779,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-12-18T22:05:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=bdUPGxBRLD8",
           "verified": false
@@ -7779,17 +7787,9 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-08-10T16:47:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=lwcqQuQxcxg",
-          "verified": false
-        },
-        {
-          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-          "levelName": "Loops of Fury",
-          "position": 69,
-          "achievedAt": "2026-06-08T17:57:52Z",
-          "videoUrl": "https://www.youtube.com/watch?v=3wgLLuEbEVA",
           "verified": false
         },
         {
@@ -8080,7 +8080,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-02-06T16:41:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=8F5_XQA0ZLA",
           "verified": false
@@ -8088,7 +8088,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-10T23:32:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=YgIOWNZTg4g",
           "verified": false
@@ -8096,7 +8096,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-03-28T17:48:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZUUJ4C0lbhk",
           "verified": false
@@ -8104,7 +8104,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-09-20T22:57:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=ywW9KrTH7kc",
           "verified": false
@@ -8112,7 +8112,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-01-22T22:49:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=CDR439Kw_Ak",
           "verified": false
@@ -8120,7 +8120,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-01-04T01:09:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=uDqI7SsGlLg",
           "verified": false
@@ -8373,7 +8373,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-07-09T01:43:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=cl_34hj8L5g",
           "verified": false
@@ -8381,7 +8381,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-05-30T02:31:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=YCHdsH2_VF0",
           "verified": false
@@ -8389,7 +8389,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-06-04T01:28:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=SE3iiv3vi8k",
           "verified": false
@@ -8397,7 +8397,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-08-13T07:06:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=Mpw4ynUSK1o",
           "verified": false
@@ -8618,7 +8618,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-29T05:30:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=_H3AvriHRT8",
           "verified": false
@@ -8626,7 +8626,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-10T00:31:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=WxEb2Xj3IVY",
           "verified": false
@@ -8634,7 +8634,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-01-06T03:08:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=MH0YVRpCKAc",
           "verified": false
@@ -8642,7 +8642,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-05-24T18:29:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=HalqUFemkQk",
           "verified": false
@@ -8650,7 +8650,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-10-28T01:16:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=GAAqLSMaPMw",
           "verified": false
@@ -8658,7 +8658,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-11-19T01:32:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=rFR_8izuSB4",
           "verified": false
@@ -9020,7 +9020,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-12T19:16:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=uc_5D1r5aGE",
           "verified": false
@@ -9145,7 +9145,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-07-07T10:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=0YwdEluuvZ4",
           "verified": false
@@ -9153,7 +9153,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-03-30T16:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=zgQutfo33U8",
           "verified": false
@@ -9161,7 +9161,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-05-18T09:41:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=Am_qxFneuIE",
           "verified": false
@@ -9169,7 +9169,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-04-14T07:28:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=UST8Ge6qR4A",
           "verified": false
@@ -9262,7 +9262,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-06-15T19:33:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=IAeJbHdO1mQ",
           "verified": false
@@ -9270,7 +9270,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-08-02T00:44:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=hYl_Bud-MQE",
           "verified": false
@@ -9443,7 +9443,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-03-08T01:18:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=VBhcpBFadQw",
           "verified": false
@@ -9451,7 +9451,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-06-23T18:03:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=2T8RbBo5Rdc",
           "verified": false
@@ -9459,7 +9459,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-06-17T11:40:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=stDgloPJozk",
           "verified": false
@@ -9640,7 +9640,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-26T02:19:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=oUIRf1kPD5c",
           "verified": false
@@ -9858,7 +9858,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-01-27T20:10:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=3_adREFVDUg",
           "verified": false
@@ -9866,7 +9866,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-01-28T19:43:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=yXB2mvj7CsQ",
           "verified": false
@@ -10134,7 +10134,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-05-10T21:01:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=t_0J-lf-l7E",
           "verified": false
@@ -10142,7 +10142,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-05-09T00:55:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=mKjnkbsPcDk",
           "verified": false
@@ -10150,7 +10150,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-03-28T21:01:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=BRwZ3uprXek",
           "verified": false
@@ -10158,7 +10158,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-12-03T03:25:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=AP-HeKQjuIg",
           "verified": false
@@ -10331,7 +10331,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-10-06T06:07:24.873963Z",
           "videoUrl": "https://www.youtube.com/watch?v=dx68Ipv5Q0E",
           "verified": false
@@ -10384,7 +10384,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-03-24T22:43:03Z",
           "videoUrl": "https://www.twitch.tv/videos/2099323748",
           "verified": false
@@ -10786,7 +10786,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-11-07T01:30:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=t33MlT4VoEw",
           "verified": false
@@ -10794,7 +10794,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-11-12T02:39:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=BiHbl6KIQtY",
           "verified": false
@@ -10802,7 +10802,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-10T01:19:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=sri75EutiWI",
           "verified": false
@@ -10810,7 +10810,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-09-11T19:55:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=f3Wy2tusGXk",
           "verified": false
@@ -11028,7 +11028,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-02-22T14:42:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=AGKZ8sf7L6Y",
           "verified": false
@@ -11036,7 +11036,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-06-22T12:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=8FiMwBkAIKE",
           "verified": false
@@ -11519,7 +11519,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-20T20:55:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=7R7B8uBBGXQ",
           "verified": false
@@ -11527,7 +11527,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-08-01T01:36:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=yAICDaHeVDg",
           "verified": false
@@ -11644,7 +11644,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-08-31T01:13:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=9p9m40_ovPU",
           "verified": false
@@ -11652,7 +11652,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-12-31T23:03:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=C6VaB7ptN_0",
           "verified": false
@@ -11745,7 +11745,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-07-30T19:03:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=R37hR8-SPSc",
           "verified": false
@@ -11753,7 +11753,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-12-02T19:07:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=DuNO2o8cc4M",
           "verified": false
@@ -11761,7 +11761,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-07-06T20:23:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=FfWq5-ra34g",
           "verified": false
@@ -11769,7 +11769,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-10-17T18:46:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=8rtOQYNcSmY",
           "verified": false
@@ -11862,7 +11862,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-12-23T11:52:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=G5ZmxyrkTWc",
           "verified": false
@@ -11870,7 +11870,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-02-28T11:47:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=YeUQVQq5eA0",
           "verified": false
@@ -11987,7 +11987,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-04-02T16:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=JpPwflzKW4w",
           "verified": false
@@ -11995,7 +11995,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-22T02:22:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=6IWiVMSLwDs",
           "verified": false
@@ -12003,7 +12003,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-11-19T03:54:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=TT-9NsPeeg4",
           "verified": false
@@ -12011,7 +12011,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-08-31T20:50:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=UA1T6IDRbOw",
           "verified": false
@@ -12224,7 +12224,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-06-07T03:06:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=11ahrfM2fVs",
           "verified": false
@@ -12232,7 +12232,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-26T23:46:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=y97B3NxevOY",
           "verified": false
@@ -12240,7 +12240,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-04T02:29:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=qZoW2IsYe4s",
           "verified": false
@@ -12248,7 +12248,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-30T02:58:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=99XvnEZjzJk",
           "verified": false
@@ -12256,7 +12256,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-06-30T01:01:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=RIX46H8FIJE",
           "verified": false
@@ -12458,7 +12458,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-24T15:32:49Z",
           "videoUrl": "https://www.twitch.tv/videos/2755933829",
           "verified": false
@@ -12527,7 +12527,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-02-02T21:08:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=-DeTZNjArf0",
           "verified": false
@@ -12535,7 +12535,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-09-03T00:48:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=R9-k9iAYxGc",
           "verified": false
@@ -12543,7 +12543,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-09-14T21:07:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=d4W0zpuJbp0",
           "verified": false
@@ -12907,7 +12907,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-08-02T21:14:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=wbvTUwsdizw",
           "verified": false
@@ -12915,7 +12915,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-05-10T00:54:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=xD-pg_4cfaY",
           "verified": false
@@ -12923,7 +12923,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-07-02T05:02:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=hxEBOg0_KnM",
           "verified": false
@@ -12931,7 +12931,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2023-03-13T21:27:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=0dSTYFV1ydA",
           "verified": false
@@ -12939,7 +12939,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2023-10-17T23:25:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=yRyWpyXLdVw",
           "verified": false
@@ -13434,7 +13434,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-04T13:05:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=G0mz6xpbUuE",
           "verified": false
@@ -13442,7 +13442,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-03-26T14:25:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=yxEuIIbmHRs",
           "verified": false
@@ -13548,7 +13548,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-06-19T07:01:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=RPn6nQ_OpRw",
           "verified": false
@@ -13556,7 +13556,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-08-26T06:28:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=FYMRs2OCCvc",
           "verified": false
@@ -13564,7 +13564,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-11-17T00:15:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=Cb-Gc9iSpDs",
           "verified": false
@@ -13572,7 +13572,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-01-29T01:04:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=dD7dS-6d5ac",
           "verified": false
@@ -13580,7 +13580,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-10-23T04:49:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=e_837OnE2HQ",
           "verified": false
@@ -13785,7 +13785,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-20T13:54:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=D_CpyWColGw",
           "verified": false
@@ -13793,7 +13793,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-10-27T18:33:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=Z6aTZ6__50g",
           "verified": false
@@ -14067,7 +14067,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-12-05T16:21:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=H1SnSTW_kXs",
           "verified": false
@@ -14075,7 +14075,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-04-09T18:23:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=O04bv3BpkHU",
           "verified": false
@@ -14200,7 +14200,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-11-16T03:25:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=tcToGtP3Xao",
           "verified": false
@@ -14208,7 +14208,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-03-05T00:50:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=YdtqGeYzFUk",
           "verified": false
@@ -14365,7 +14365,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-01-02T20:33:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=ptO1ZlcVh9o&list=PLvW91ewFIGutnQLQqPOQT9NcTtlKORDuM",
           "verified": false
@@ -14373,7 +14373,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-12-13T01:15:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=EnOyiDc4YLo&list=PLvW91ewFIGutnQLQqPOQT9NcTtlKORDuM",
           "verified": false
@@ -14381,7 +14381,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-25T20:15:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=7Xxhv4UBVjk",
           "verified": false
@@ -14389,7 +14389,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-01-16T20:08:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=qabUO1SrYGQ&list=PLvW91ewFIGutnQLQqPOQT9NcTtlKORDuM",
           "verified": false
@@ -14615,7 +14615,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-09-21T23:00:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=sQ6I2NFN2Pg",
           "verified": false
@@ -14623,7 +14623,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-04-12T22:33:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=S_eoewveECY",
           "verified": false
@@ -14631,7 +14631,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-12-31T16:37:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=g3BqSA5s6Jk",
           "verified": false
@@ -14639,7 +14639,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-07-19T23:52:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=qew9aMaioPQ",
           "verified": false
@@ -14788,7 +14788,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-19T23:53:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=y5X_fgaA7WU",
           "verified": false
@@ -14796,7 +14796,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-29T01:02:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=qZKYlIVhVy0",
           "verified": false
@@ -14881,7 +14881,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-05-31T06:38:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=cFjH3ryGA0g",
           "verified": false
@@ -14889,7 +14889,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-08-14T16:49:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=_qw6gREUINA",
           "verified": false
@@ -14982,7 +14982,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-26T22:48:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=8pP4Z0RlDTE",
           "verified": false
@@ -14990,7 +14990,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-05-09T19:01:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=BgVcFYkikiY",
           "verified": false
@@ -14998,7 +14998,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-29T14:57:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=iLgI0qLfRLU",
           "verified": false
@@ -15006,7 +15006,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-01-24T15:31:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=cS3CkjKF0as",
           "verified": false
@@ -15163,7 +15163,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-06-17T18:16:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=ejMcqoLPbqE",
           "verified": false
@@ -15378,7 +15378,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-19T18:34:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=LoFaa5buSZY",
           "verified": false
@@ -15673,7 +15673,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-18T18:19:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=uIkW6gdxNlY",
           "verified": false
@@ -15681,7 +15681,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-10-04T10:04:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=XtNrwdlvUEo",
           "verified": false
@@ -15689,7 +15689,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-11-02T23:35:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=o21vY3RwAcw",
           "verified": false
@@ -15697,7 +15697,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-09-07T00:27:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=u_cGKTqk-6A",
           "verified": false
@@ -15705,7 +15705,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-08-06T21:09:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=wlwXCpRYuNc",
           "verified": false
@@ -16109,7 +16109,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-12T01:28:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=ULX-TvU1KiE",
           "verified": false
@@ -16318,7 +16318,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-22T23:20:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=aBFo38lm5Rg",
           "verified": false
@@ -16326,7 +16326,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-11T21:46:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=kzLSe6IsD94",
           "verified": false
@@ -16334,7 +16334,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-19T03:09:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=g3ITFb8UTr8",
           "verified": false
@@ -16485,7 +16485,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-03-14T23:36:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=ms5xPzWFNYQ",
           "verified": false
@@ -16493,7 +16493,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-12-23T20:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=yusak3x0Dwo",
           "verified": false
@@ -16501,7 +16501,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-23T18:27:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=_SVLhLydIcw",
           "verified": false
@@ -16509,7 +16509,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-04-29T17:57:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=7CN82T7zdvI",
           "verified": false
@@ -16610,7 +16610,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-09-08T11:21:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=944iIuY2mC4&list=PLnvu499YjZJioGYHx9-MRpJL8FMQ1G4o8",
           "verified": false
@@ -16721,7 +16721,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-03-24T10:21:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=DMpJdr11XZs",
           "verified": false
@@ -16729,7 +16729,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-08-18T14:41:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=UD7RLZsXFXs",
           "verified": false
@@ -16939,7 +16939,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-05-07T19:35:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=hEGl4b6PE1E",
           "verified": false
@@ -16992,7 +16992,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-17T22:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=rdZ_yQPFVTY",
           "verified": false
@@ -17141,7 +17141,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-16T21:04:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=U_nuAXxz0yI",
           "verified": false
@@ -17298,7 +17298,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-06-02T14:07:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=2tLu_139fNA",
           "verified": false
@@ -17356,7 +17356,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-01-19T01:09:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=z3E2NZbhEgU",
           "verified": false
@@ -17568,7 +17568,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-10-19T16:29:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y7A6TFoD3Ak",
           "verified": false
@@ -17576,7 +17576,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-03-22T21:50:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=TumwKuX-FJ4",
           "verified": false
@@ -17661,7 +17661,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-07T23:29:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=B8fE2lKqV4U",
           "verified": false
@@ -17690,7 +17690,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-04-19T13:39:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=_J5HaVQF9_M",
           "verified": false
@@ -17698,7 +17698,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-17T18:25:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=OCiYM-W2754",
           "verified": false
@@ -17706,7 +17706,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-05-03T15:24:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=Mzz-wCH1C6g",
           "verified": false
@@ -17936,7 +17936,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-09-30T21:40:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=6BKKuX4NIUU",
           "verified": false
@@ -18029,7 +18029,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-09-22T02:17:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=wBDI7f2TphY",
           "verified": false
@@ -18037,7 +18037,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2022-08-16T06:35:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=TPBYxVnA6p0",
           "verified": false
@@ -18483,7 +18483,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-06-11T11:58:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=kxd9BMolEQQ",
           "verified": false
@@ -18592,7 +18592,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-07-15T19:50:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=Qstmq17fCWs",
           "verified": false
@@ -18600,7 +18600,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-03-17T21:53:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=mCIOLh6jum8",
           "verified": false
@@ -18608,7 +18608,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-12-22T20:00:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=bvBEJM7vY1s",
           "verified": false
@@ -18616,7 +18616,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-01-28T20:51:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=vBQFjvigUcg",
           "verified": false
@@ -18805,7 +18805,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-04-20T09:07:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=yEZq5mCxSDk",
           "verified": false
@@ -18938,7 +18938,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-12-03T22:33:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=PP5fRbfKzcI",
           "verified": false
@@ -18946,7 +18946,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-27T00:28:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=YY9p99Wi-lM",
           "verified": false
@@ -18954,7 +18954,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-10-07T20:32:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=7y8tjaNjBvc",
           "verified": false
@@ -18962,7 +18962,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-16T00:35:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=FS2AeAewPok",
           "verified": false
@@ -18970,7 +18970,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-09-19T03:02:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=ha4ys2Gt32w",
           "verified": false
@@ -19228,7 +19228,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-04-10T11:47:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=uuKSZc46HYM",
           "verified": false
@@ -19236,7 +19236,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-07-21T03:59:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=m4Zg7mPUS9Q",
           "verified": false
@@ -19244,7 +19244,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-10-16T03:37:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=KykQ-xF3PCs",
           "verified": false
@@ -19433,7 +19433,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-11T07:34:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=wU8D-q4pEbA",
           "verified": false
@@ -19441,7 +19441,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-01-09T23:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=H07qNXu-niE",
           "verified": false
@@ -19582,7 +19582,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-26T06:43:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=S7M6X6PkrHY",
           "verified": false
@@ -19635,7 +19635,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-01-25T14:29:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=hazLncTQrf8",
           "verified": false
@@ -19728,7 +19728,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-17T18:35:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=5VYowrcs1dM",
           "verified": false
@@ -19858,7 +19858,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-05T18:03:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=ru7w2OsONUg",
           "verified": false
@@ -20140,7 +20140,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-08-01T07:00:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=KfkZx_K-gnU",
           "verified": false
@@ -20148,7 +20148,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-06-12T05:26:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=12FFAznROf4",
           "verified": false
@@ -20297,7 +20297,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-19T23:57:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=10Bt2xFm3rU",
           "verified": false
@@ -20446,7 +20446,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-23T15:00:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=rx7U-Ym5fgs",
           "verified": false
@@ -20552,7 +20552,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-10-03T22:15:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=jHs_uUcCDUI",
           "verified": false
@@ -20560,7 +20560,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-12-22T19:23:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=38k01kRw3pQ",
           "verified": false
@@ -20677,7 +20677,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-07T23:52:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=iXLFpPtlcbY",
           "verified": false
@@ -20823,7 +20823,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-07-26T14:56:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=oSNLrsqoFJ4",
           "verified": false
@@ -20831,7 +20831,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-09-29T07:01:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=DCNygjljSW8",
           "verified": false
@@ -20900,7 +20900,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-08-13T21:35:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=q3BoFZe1avk",
           "verified": false
@@ -20908,7 +20908,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-11-17T00:14:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=5WK-P7AjK1E",
           "verified": false
@@ -20969,7 +20969,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-07-02T09:39:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=hJ9yeKYV46c",
           "verified": false
@@ -21113,19 +21113,19 @@
           "verified": false
         },
         {
-          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
-          "levelName": "COMBUSTION",
-          "position": 67,
-          "achievedAt": "2025-12-25T16:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=fC-LvxgyiXw",
+          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+          "levelName": "Loops of Fury",
+          "position": 59,
+          "achievedAt": "2025-11-22T06:16:02Z",
+          "videoUrl": "https://www.youtube.com/watch?v=k3UWQ1mvTUQ",
           "verified": false
         },
         {
-          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-          "levelName": "Loops of Fury",
-          "position": 69,
-          "achievedAt": "2025-11-22T06:16:02Z",
-          "videoUrl": "https://www.youtube.com/watch?v=k3UWQ1mvTUQ",
+          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
+          "levelName": "COMBUSTION",
+          "position": 68,
+          "achievedAt": "2025-12-25T16:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=fC-LvxgyiXw",
           "verified": false
         },
         {
@@ -21324,7 +21324,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2023-04-11T22:41:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=Le4QsysR_ss",
           "verified": false
@@ -21332,7 +21332,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-10-22T23:05:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=tVU3jVVZak0",
           "verified": false
@@ -21340,7 +21340,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2022-12-12T00:23:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=k4M3eBgW04o",
           "verified": false
@@ -21654,7 +21654,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-07-03T02:27:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=1aIdHSAQX94&t=1s",
           "verified": false
@@ -21970,7 +21970,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-05-01T17:59:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=xcYFlgIfoX0",
           "verified": false
@@ -21978,7 +21978,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-19T03:46:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=6CIHbfktDpM",
           "verified": false
@@ -22259,7 +22259,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-08-22T15:26:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=Rc5UBLIaZSo",
           "verified": false
@@ -22352,7 +22352,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-07-26T21:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=UmlV8Ez_bQg&list=PLG01BSMMI8X6lCCxlqlBaIVqIV7AKr_Ps",
           "verified": false
@@ -22559,7 +22559,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-03-21T21:00:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=Ew2u9d7hsRw",
           "verified": false
@@ -22766,7 +22766,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2024-11-01T00:52:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=fkldWVu4Ilg",
           "verified": false
@@ -22909,7 +22909,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-06-01T23:52:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=oah3_TUly4U",
           "verified": false
@@ -22917,7 +22917,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-05-10T01:42:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=064OcZ1uaZQ",
           "verified": false
@@ -22925,7 +22925,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-02-07T06:49:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=GC455QZjZXU",
           "verified": false
@@ -22933,7 +22933,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-01-17T22:52:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=Sf65FpflBYg",
           "verified": false
@@ -22941,7 +22941,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-02-02T20:19:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=aWjgvKlqYU8",
           "verified": false
@@ -23071,7 +23071,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-02-12T05:33:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=x_yBz-NV6FE",
           "verified": false
@@ -23116,7 +23116,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2023-06-01T17:17:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=MfViu-SqLcA",
           "verified": false
@@ -23185,7 +23185,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-08-11T03:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=RJxetKXsKMs",
           "verified": false
@@ -23193,7 +23193,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-06-19T17:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=vZJobJr-WyE",
           "verified": false
@@ -23328,7 +23328,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-12-15T16:28:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=fyVu2dXVuHs",
           "verified": false
@@ -23569,7 +23569,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-06-27T14:00:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=QRMM7a8PY80",
           "verified": false
@@ -23669,7 +23669,7 @@
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2025-06-02T19:20:00Z",
           "videoUrl": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
           "verified": true
@@ -23677,7 +23677,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-04-08T06:57:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=oNoF_muqVAg",
           "verified": false
@@ -23846,7 +23846,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-01-04T20:08:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=Gygdr3nPtLU&t=9s",
           "verified": false
@@ -23931,7 +23931,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-10-07T04:17:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=FeOz7K9Ui3w",
           "verified": false
@@ -23939,7 +23939,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-11-21T01:56:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=CAc6otpt7a0",
           "verified": false
@@ -23947,7 +23947,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-08T19:44:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=uNXoK7K0bps",
           "verified": false
@@ -23955,7 +23955,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-01-16T01:18:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=gDVRs3quFJc",
           "verified": false
@@ -23963,7 +23963,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-06-15T00:21:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=jUOZdO0bW2E",
           "verified": false
@@ -24032,7 +24032,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-01-21T05:00:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=lHyKahEWnIY",
           "verified": false
@@ -24040,7 +24040,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-22T01:59:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=DrGau_IX6zw",
           "verified": false
@@ -24390,7 +24390,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-02-16T17:58:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=DhIw16j_e0w",
           "verified": false
@@ -24451,7 +24451,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-01-13T01:22:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=lMXaqck3zSU",
           "verified": false
@@ -24661,9 +24661,17 @@
           "verified": false
         },
         {
+          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+          "levelName": "Loops of Fury",
+          "position": 59,
+          "achievedAt": "2026-03-13T01:30:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Ujyxr9L9FDw",
+          "verified": false
+        },
+        {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-30T18:28:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=WXA8WwOn1zI",
           "verified": false
@@ -24671,17 +24679,9 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-05T03:56:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=h__hyfmEI24",
-          "verified": false
-        },
-        {
-          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-          "levelName": "Loops of Fury",
-          "position": 69,
-          "achievedAt": "2026-03-13T01:30:07Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Ujyxr9L9FDw",
           "verified": false
         },
         {
@@ -24928,7 +24928,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-11-30T05:20:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=i1sqxeMCols",
           "verified": false
@@ -24997,7 +24997,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-05-25T14:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y9ZCdGH8Qbg",
           "verified": false
@@ -25005,7 +25005,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-02-17T16:52:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=qxOLuiZt8ps",
           "verified": false
@@ -25236,7 +25236,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-11-28T19:15:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=wCJIFK_9j0w",
           "verified": false
@@ -25244,7 +25244,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-18T13:11:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=7CazWIygpgI",
           "verified": false
@@ -25345,7 +25345,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-27T04:57:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=J0SF7hM_ZvY",
           "verified": false
@@ -25353,7 +25353,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-07-01T01:25:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=FXCjNjl6nX8",
           "verified": false
@@ -25361,7 +25361,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-09-21T22:00:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=FJdQVzF8TVg",
           "verified": false
@@ -25818,7 +25818,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-02-27T00:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=dMqu9brkXww",
           "verified": false
@@ -25826,7 +25826,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-04-30T00:29:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=0HjwJqUn0Ks",
           "verified": false
@@ -25834,7 +25834,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-10-04T23:26:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=6G3sTkGHJls",
           "verified": false
@@ -25988,7 +25988,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-10T16:41:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=v82W6ZqXC4Q",
           "verified": false
@@ -25996,7 +25996,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-01-26T18:33:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=p69UyWawSdc",
           "verified": false
@@ -26004,7 +26004,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-12-19T21:24:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=xoybIRegaUo",
           "verified": false
@@ -26012,7 +26012,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-03-19T19:33:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=s9eroN-8ZZY",
           "verified": false
@@ -26208,7 +26208,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-06T23:40:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=SbIFSWZj60A",
           "verified": false
@@ -26216,7 +26216,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-20T01:26:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=--G2G4L0AYQ",
           "verified": false
@@ -26636,7 +26636,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-06-14T23:49:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=RAfxsdlY3qU",
           "verified": false
@@ -26843,7 +26843,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-08-16T16:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=8CZq5a8yKdY",
           "verified": false
@@ -27302,7 +27302,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2024-09-20T19:21:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=xHPfJqa-61A",
           "verified": false
@@ -27310,7 +27310,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-04-29T14:27:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=_hu8QFsAn4Q",
           "verified": false
@@ -27427,7 +27427,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-04-28T18:27:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=nkyA-qEqNSk",
           "verified": false
@@ -27512,7 +27512,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-11-03T20:15:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=BE0rEvxnteo",
           "verified": false
@@ -27589,7 +27589,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-03-13T19:57:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=KRB9oAkTJ8o",
           "verified": false
@@ -27711,7 +27711,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-13T02:10:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=48tCZUs824U",
           "verified": false
@@ -27719,7 +27719,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-06-25T03:36:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=hAggWpIdboc",
           "verified": false
@@ -27727,7 +27727,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-06T19:22:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=KYEM4IGBjKw",
           "verified": false
@@ -27735,7 +27735,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-05-19T20:24:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=DHGsOU18YyE",
           "verified": false
@@ -27743,7 +27743,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-01-04T02:40:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=eEBmqB6mu4Y",
           "verified": false
@@ -27908,7 +27908,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-07T23:57:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=4miDT6zVOyA",
           "verified": false
@@ -27953,7 +27953,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-11-19T11:41:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=Xz6Zofm4Ltg",
           "verified": false
@@ -28104,7 +28104,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-27T22:00:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=ya_D2HQiTTA",
           "verified": false
@@ -28165,7 +28165,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-04T04:04:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=xms39-rTWR8",
           "verified": false
@@ -28173,7 +28173,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-02-09T00:18:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=Tupiqs_fxLA",
           "verified": false
@@ -28181,7 +28181,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-09-12T04:03:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=ORzdGtpdr7c",
           "verified": false
@@ -28189,7 +28189,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-02-03T10:31:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=QC6Ii1T-ybg",
           "verified": false
@@ -28197,7 +28197,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-02-25T04:13:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=DsPj7rsSHEU",
           "verified": false
@@ -28450,7 +28450,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-19T15:29:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=D2pRiWNNfLI",
           "verified": false
@@ -29113,7 +29113,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-03-20T03:08:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=qLSRf97JBH4",
           "verified": false
@@ -29259,7 +29259,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-24T16:54:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=nqSLDgRFcWQ",
           "verified": false
@@ -29437,7 +29437,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-11T22:48:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=p1qTUQJfZ3w",
           "verified": false
@@ -29586,7 +29586,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-12-04T19:38:41Z",
           "videoUrl": "https://www.youtube.com/watch?v=wCW4HWwdBZ8",
           "verified": false
@@ -29655,7 +29655,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-18T18:07:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=_kgYCsXGdyc",
           "verified": false
@@ -29748,7 +29748,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-24T03:23:35Z",
           "videoUrl": "https://www.youtube.com/watch?v=JFePV1JCBzk",
           "verified": false
@@ -29801,7 +29801,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-08T15:01:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=7p9J9R0L6QA",
           "verified": false
@@ -29809,7 +29809,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-14T15:59:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=DbmFDJ8YEQE",
           "verified": false
@@ -29817,7 +29817,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-09-20T22:08:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=UWdCc-Tj42k",
           "verified": false
@@ -30109,7 +30109,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-04-16T18:52:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=Yv4sUxysBtA",
           "verified": false
@@ -30186,7 +30186,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-01-26T20:15:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=dfBOugHJ9-w",
           "verified": false
@@ -30194,7 +30194,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-07-05T00:00:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=dBpvbNzRPVg",
           "verified": false
@@ -30468,7 +30468,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-20T16:19:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=ozdXdGynSEc",
           "verified": false
@@ -30561,7 +30561,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-10T02:23:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=_7LgqLiAZCM",
           "verified": false
@@ -30675,7 +30675,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-04-12T22:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=3V-farukmlU",
           "verified": false
@@ -30795,9 +30795,17 @@
           "verified": false
         },
         {
+          "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
+          "levelName": "Calibrate",
+          "position": 62,
+          "achievedAt": "2026-10-18T20:25:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=aGlQHUqRM8g",
+          "verified": false
+        },
+        {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-17T13:36:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=L00fCjUc6tU",
           "verified": false
@@ -30805,7 +30813,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-05-17T16:39:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=vGKxa23FTNY",
           "verified": false
@@ -30922,7 +30930,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-14T01:08:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=NCVJsO9rsd8",
           "verified": false
@@ -30930,7 +30938,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-12-06T04:59:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=o9Y3FjuMhZE",
           "verified": false
@@ -31100,7 +31108,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-01-26T06:18:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=yyrUHG8aym4",
           "verified": false
@@ -31169,7 +31177,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-06-23T19:01:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=NjaO2HVlS2A",
           "verified": false
@@ -31177,7 +31185,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-04T21:53:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=roE2fSsu__0",
           "verified": false
@@ -31185,7 +31193,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-08-13T00:52:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=a_sjStF44nY",
           "verified": false
@@ -31193,7 +31201,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-02-09T22:47:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=xe0eeK1-HuE",
           "verified": false
@@ -31201,7 +31209,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-08-20T20:56:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=5ti8V-vKtZQ",
           "verified": false
@@ -31424,7 +31432,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-03-24T18:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=Py4PYM9VHy8",
           "verified": false
@@ -31530,7 +31538,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-02-20T21:58:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=tKsOFF6wcuk",
           "verified": false
@@ -31763,7 +31771,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-11-04T20:11:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=VslW_gttgJA",
           "verified": false
@@ -32083,7 +32091,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-01-22T06:35:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=xUkllaNOg-U",
           "verified": false
@@ -32212,7 +32220,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-08T17:37:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=Gr0XgDJ32Iw",
           "verified": false
@@ -32481,7 +32489,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-07-18T07:49:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=jF8GkrhNCdA",
           "verified": false
@@ -32626,7 +32634,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-03T18:15:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=-jq1Ju7j-mw",
           "verified": false
@@ -32634,7 +32642,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-12-02T23:03:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=2RA0xwbiimw",
           "verified": false
@@ -32858,7 +32866,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-09T20:51:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=FNEFkhh_RkU",
           "verified": false
@@ -32866,7 +32874,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-04-03T03:55:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=fhU1c7wayeM",
           "verified": false
@@ -32874,7 +32882,7 @@
         {
           "levelId": "01746dbe-64c3-486a-ba55-e2008bedaed1",
           "levelName": "Pinnacle of Life",
-          "position": 66,
+          "position": 67,
           "achievedAt": "2026-07-02T20:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=gQl5iY1ekyE",
           "verified": true
@@ -33023,7 +33031,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-04-21T16:03:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=zbC9tm9bviI",
           "verified": false
@@ -33031,7 +33039,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-04-19T23:04:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=mLXpdLJdgbk&t=5s",
           "verified": false
@@ -33449,7 +33457,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-07-16T00:02:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=JQPiRoQz8W8",
           "verified": false
@@ -33632,7 +33640,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-08-16T04:37:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=Z3OJLhZ-cXU",
           "verified": false
@@ -33807,7 +33815,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-17T15:23:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=9TOtVpIVhxs",
           "verified": false
@@ -34032,7 +34040,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-06-14T15:10:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=sjOKIJullXA",
           "verified": false
@@ -34230,7 +34238,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-11-17T21:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=s7QAKcp8zZw",
           "verified": false
@@ -34238,7 +34246,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-07-06T22:23:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=15cd9ZAHlbA",
           "verified": false
@@ -34563,7 +34571,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-12-18T15:21:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=7E9bMduDrUQ",
           "verified": false
@@ -34777,7 +34785,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-09-25T01:59:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=7nPdtdsgqvI",
           "verified": false
@@ -34785,7 +34793,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-09-10T00:03:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=JqURZPpj1Uk&t=2s",
           "verified": false
@@ -34979,7 +34987,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-03-08T21:39:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=r1oaH1px7bs",
           "verified": false
@@ -35145,7 +35153,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-25T16:10:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=lda6cbj7iJo",
           "verified": false
@@ -35222,7 +35230,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-03-02T13:05:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=xO10RRhQqkI",
           "verified": false
@@ -35251,7 +35259,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-09-28T21:30:17.210681Z",
           "videoUrl": "https://www.youtube.com/watch?v=BnQmCqkw4Jc",
           "verified": false
@@ -35520,7 +35528,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-09-14T02:34:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=drkGBE46ldk",
           "verified": false
@@ -35708,7 +35716,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-06-23T03:52:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=j5zemDHcZF8&list=PLu2DKdfSIbldyXQ5Ho2uac4fV5KOlJOc6",
           "verified": false
@@ -35882,7 +35890,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-09-06T16:24:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=ZhCauBuKwaM&t=169s",
           "verified": false
@@ -36197,7 +36205,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-23T13:39:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=lht5sB0kh-Q",
           "verified": false
@@ -36303,7 +36311,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-05-12T16:18:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=TtmGkOVo_EM",
           "verified": false
@@ -36845,7 +36853,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-08-25T20:32:56Z",
           "videoUrl": "https://www.youtube.com/watch?v=gPp1yuMUq7g",
           "verified": false
@@ -37104,7 +37112,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-08-15T22:32:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=4STN7hhSxFk",
           "verified": false
@@ -37209,13 +37217,175 @@
         }
       ]
     },
+    "0d4eb545-6ac6-4906-9d20-0aecfd451d98": {
+      "name": "Cork",
+      "levels": [
+        {
+          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+          "levelName": "Loops of Fury",
+          "position": 59,
+          "achievedAt": "2025-10-02T01:23:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
+          "verified": true
+        },
+        {
+          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
+          "levelName": "Delta",
+          "position": 115,
+          "achievedAt": "2025-12-26T21:10:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=KVFvuK5PKD0",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2025-11-24T01:03:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=42-J2kBenKs",
+          "verified": false
+        },
+        {
+          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
+          "levelName": "Terminal Rampancy",
+          "position": 126,
+          "achievedAt": "2025-05-16T00:44:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YvRsV3Dhz40",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 150,
+          "achievedAt": "2025-04-15T00:21:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0sgFrsXACFo",
+          "verified": false
+        }
+      ]
+    },
+    "ec94309b-02ff-4314-8674-b9cb9cf3a5e0": {
+      "name": "destr",
+      "levels": [
+        {
+          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+          "levelName": "Loops of Fury",
+          "position": 59,
+          "achievedAt": "2026-08-01T05:14:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=c_03zYB120s",
+          "verified": false
+        },
+        {
+          "levelId": "59a49d83-77fd-4890-a04d-689f1947ad16",
+          "levelName": "Damascus",
+          "position": 91,
+          "achievedAt": "2026-06-15T23:45:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rWP2WjIie7E",
+          "verified": false
+        },
+        {
+          "levelId": "9e4fe89f-e634-41f6-a1d7-c388d426856b",
+          "levelName": "Decks Dark",
+          "position": 92,
+          "achievedAt": "2026-05-16T22:45:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zOEaYsgCXzI",
+          "verified": false
+        },
+        {
+          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
+          "levelName": "Climax",
+          "position": 95,
+          "achievedAt": "2026-01-26T06:10:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=mOLTi1fH36E",
+          "verified": false
+        },
+        {
+          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
+          "levelName": "ORDINARY",
+          "position": 96,
+          "achievedAt": "2025-08-08T15:16:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=aopnGOYTfR4",
+          "verified": false
+        },
+        {
+          "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
+          "levelName": "Doppler (Solo)",
+          "position": 102,
+          "achievedAt": "2026-09-05T01:55:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=21AucRgD3EQ",
+          "verified": false
+        },
+        {
+          "levelId": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
+          "levelName": "Between Duality",
+          "position": 106,
+          "achievedAt": "2026-04-10T19:26:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=uOb-ajQ4bgw",
+          "verified": true
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 112,
+          "achievedAt": "2026-04-14T15:09:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kDG75nCEV6M",
+          "verified": false
+        },
+        {
+          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
+          "levelName": "Delta",
+          "position": 115,
+          "achievedAt": "2025-05-14T15:08:55Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IYCwcSr1lGE",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-10-16T15:54:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QiRzN4yLDaw",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2026-05-25T00:53:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=gyN0u2oidDg",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 141,
+          "achievedAt": "2026-08-06T20:24:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=CYQNZtsUQG0",
+          "verified": false
+        },
+        {
+          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
+          "levelName": "Starlit Stroll",
+          "position": 142,
+          "achievedAt": "2026-08-24T00:18:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2AvUUsAw4Z0",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 150,
+          "achievedAt": "2026-05-22T03:53:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Fb8VP3UfYYI",
+          "verified": false
+        }
+      ]
+    },
     "b3d6b4a4-88b2-4dd9-bee9-46fa7cd2333e": {
       "name": "nik14k",
       "levels": [
         {
           "levelId": "68f7dca1-2735-431b-84f5-5fe940e27da8",
           "levelName": "Fracture",
-          "position": 59,
+          "position": 60,
           "achievedAt": "2026-09-04T23:37:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=8n3eytrHLeA",
           "verified": false
@@ -37260,7 +37430,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2022-11-01T21:22:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=fzL31vai1ms",
           "verified": true
@@ -37273,7 +37443,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2023-10-04T23:26:34Z",
           "videoUrl": "https://www.youtube.com/watch?v=MB9TBeqaDlo",
           "verified": false
@@ -37294,7 +37464,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-03-19T17:13:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=s5gGEp2DByQ",
           "verified": false
@@ -37387,7 +37557,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-08-28T19:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=3l_sChSgew4",
           "verified": false
@@ -37472,7 +37642,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-11-14T16:01:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=jN0H5yhbKqU",
           "verified": false
@@ -37480,7 +37650,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-11-18T22:27:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=oc4ukX3-q6I",
           "verified": false
@@ -37488,7 +37658,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-06-25T21:52:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=-Q7Cxp0ETqo",
           "verified": false
@@ -37557,7 +37727,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-11-28T22:56:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=4g2onDvq4eY",
           "verified": false
@@ -37570,7 +37740,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-12-01T07:24:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=K8CxZJiZLcY",
           "verified": false
@@ -37591,7 +37761,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2025-12-27T20:30:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=0U_nnvStFi4",
           "verified": false
@@ -37612,7 +37782,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-01-16T14:50:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=-S7tjwDNYXY",
           "verified": false
@@ -37641,7 +37811,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-01-16T23:03:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=af8PQfL6lF0",
           "verified": false
@@ -37678,7 +37848,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-01-18T18:46:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=IU-wrQb3FFk",
           "verified": false
@@ -37739,7 +37909,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-02-08T15:46:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=X5vQBLOKHP8",
           "verified": false
@@ -37832,7 +38002,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-11T17:19:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=O0KS4HCrbTs",
           "verified": false
@@ -37840,7 +38010,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-22T18:17:29Z",
           "videoUrl": "https://www.youtube.com/watch?v=NSYwGLyLn7s",
           "verified": false
@@ -37869,7 +38039,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-03-29T01:40:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=9jTilXtgix4",
           "verified": false
@@ -37954,7 +38124,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-04-26T08:14:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=TY3-CRiAzLw",
           "verified": false
@@ -37967,7 +38137,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-10T22:34:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=HIbGSrwz_QU",
           "verified": false
@@ -38004,7 +38174,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-18T23:56:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=K_WG4Mqc3cU",
           "verified": false
@@ -38065,7 +38235,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-05-30T22:19:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=-6EV__5Hi70",
           "verified": false
@@ -38073,7 +38243,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-07-03T22:51:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=GMx2MJFWvFw",
           "verified": false
@@ -38150,7 +38320,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-01T11:30:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=I19zyN8WJS0",
           "verified": false
@@ -38163,7 +38333,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-12T14:19:47Z",
           "videoUrl": "https://www.youtube.com/watch?v=WOYAPI-ASY0",
           "verified": false
@@ -38208,7 +38378,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-16T18:43:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=rmQ8xaCB5KM",
           "verified": false
@@ -38216,7 +38386,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-09T09:41:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=atczggYHo7s",
           "verified": false
@@ -38269,7 +38439,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-07-24T04:57:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=l3Uu-nO2jtc",
           "verified": false
@@ -38338,7 +38508,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-02T20:16:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=pFTLSTK3dak",
           "verified": false
@@ -38391,7 +38561,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-02T22:39:12.818Z",
           "videoUrl": "https://medal.tv/clips/nf2FA3ixaYGvH4Xuf",
           "verified": false
@@ -38468,7 +38638,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-03T00:11:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=bqO2tZGQmYM",
           "verified": false
@@ -38521,7 +38691,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-08T12:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=0KQbhTfB1hU",
           "verified": false
@@ -38582,7 +38752,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-08-24T13:49:52Z",
           "videoUrl": "https://www.youtube.com/watch?v=-tou_8gkhUY",
           "verified": false
@@ -38603,9 +38773,17 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-03T18:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=nxSyZrEEpRI",
+          "verified": false
+        },
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 74,
+          "achievedAt": "2026-10-19T14:59:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=y-7xLOvPTW4",
           "verified": false
         },
         {
@@ -38632,7 +38810,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-05T15:15:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=nZSb3bSkKms",
           "verified": false
@@ -38645,7 +38823,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-06T20:22:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=FWGmfAh3tM0",
           "verified": false
@@ -38674,7 +38852,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-09-30T03:11:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=bQI1nblvigE",
           "verified": false
@@ -38719,7 +38897,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-01T00:56:28Z",
           "videoUrl": "https://www.youtube.com/watch?v=8dexALf_Ay4",
           "verified": false
@@ -38764,7 +38942,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-07T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=t7iEEk9u-xU",
           "verified": false
@@ -38785,7 +38963,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-12T23:50:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=niwW_ss2tt0",
           "verified": false
@@ -38814,7 +38992,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-14T22:03:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=dmDLldMrPRo",
           "verified": false
@@ -38875,7 +39053,7 @@
         {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
-          "position": 60,
+          "position": 61,
           "achievedAt": "2026-10-19T11:52:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=-86xw_gZCxo",
           "verified": false
@@ -38912,7 +39090,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-03-31T00:35:10Z",
           "videoUrl": "https://youtu.be/6WYnZryX_mg",
           "verified": true
@@ -38925,7 +39103,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-20T07:28:45Z",
           "videoUrl": "https://www.youtube.com/watch?v=lai06M35pR8",
           "verified": false
@@ -38954,7 +39132,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-08-25T02:44:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=Z_pfCyenpG8",
           "verified": false
@@ -38962,7 +39140,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-26T16:55:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=zXMqNEHNKgw",
           "verified": false
@@ -38999,7 +39177,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-08T18:36:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=xquLQl7xZoU",
           "verified": false
@@ -39012,7 +39190,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-11T14:12:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=4rjCApNnFn8",
           "verified": false
@@ -39020,7 +39198,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-23T06:03:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=UhLN9da4L4A",
           "verified": false
@@ -39193,7 +39371,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-17T06:47:50Z",
           "videoUrl": "https://www.youtube.com/watch?v=zx7T-3iegKU",
           "verified": false
@@ -39238,7 +39416,7 @@
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
           "levelName": "Calibrate",
-          "position": 61,
+          "position": 62,
           "achievedAt": "2026-09-19T21:01:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=2TYRXmLQW3k",
           "verified": false
@@ -39259,7 +39437,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2023-03-18T21:00:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=YvA8ehhzz0Q&t=116s",
           "verified": true
@@ -39272,7 +39450,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-06-26T09:26:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=SihxMQj4MwM",
           "verified": false
@@ -39357,7 +39535,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-09-03T16:21:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=27EY8Zb53Bs",
           "verified": false
@@ -39426,7 +39604,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-12-03T07:01:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=fCi3J6FoBYo",
           "verified": false
@@ -39479,7 +39657,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2025-12-19T04:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=DaBRIcLSyzE",
           "verified": false
@@ -39548,7 +39726,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-02-23T02:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=sZ6M9fXl-Q8",
           "verified": false
@@ -39633,7 +39811,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-02-26T06:50:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=TYfDcuK64AA",
           "verified": false
@@ -39702,7 +39880,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-08-27T23:07:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=SLVxfm_jjfw",
           "verified": false
@@ -39787,7 +39965,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-06T03:14:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=OS_z8ABx_VI",
           "verified": false
@@ -39816,7 +39994,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-09-15T16:23:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=o4BNwEI9lzo",
           "verified": false
@@ -39861,7 +40039,7 @@
         {
           "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
           "levelName": "MINUSdry",
-          "position": 62,
+          "position": 63,
           "achievedAt": "2026-10-09T20:25:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=2s4aWdsT0x4",
           "verified": false
@@ -39874,7 +40052,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-05-03T04:45:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=hjs5PjUaw9k",
           "verified": true
@@ -39887,7 +40065,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2023-05-26T22:15:08Z",
           "videoUrl": "https://www.youtube.com/watch?v=dNQMt4aQdWE",
           "verified": false
@@ -39895,7 +40073,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2023-12-27T04:16:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=8lpgy-WCacI",
           "verified": false
@@ -40012,7 +40190,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-02-10T20:14:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=9OrjvVLXyiY",
           "verified": false
@@ -40089,7 +40267,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-07-16T22:33:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=1qUQccpP9mA",
           "verified": false
@@ -40097,7 +40275,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2023-09-11T03:01:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=3cTR4XUcA28",
           "verified": true
@@ -40126,7 +40304,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-12T11:00:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=taNiSIluf-c",
           "verified": false
@@ -40203,7 +40381,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-26T12:00:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=LT9Ks76FbLI",
           "verified": false
@@ -40248,7 +40426,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2024-10-27T21:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=xqjczt-_dpU",
           "verified": false
@@ -40309,7 +40487,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-02-23T01:05:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=e7yRSg8uwVQ",
           "verified": false
@@ -40402,7 +40580,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-04-03T15:49:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=wHjFQQPKRnA",
           "verified": false
@@ -40423,7 +40601,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2025-11-01T20:52:32Z",
           "videoUrl": "https://www.youtube.com/watch?v=UHSie6cHYCY",
           "verified": false
@@ -40460,7 +40638,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-01-07T10:17:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=rpiCmXosN70",
           "verified": false
@@ -40505,7 +40683,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-01-15T10:47:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=u0BQ8UrGd-o",
           "verified": false
@@ -40558,7 +40736,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-02-18T18:35:01Z",
           "videoUrl": "https://www.youtube.com/watch?v=bji3VGTgY6I",
           "verified": false
@@ -40619,7 +40797,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-02-24T05:21:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=KQb6Q0P1mNs",
           "verified": false
@@ -40640,7 +40818,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-05T03:35:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=FfEKPB2dcUg",
           "verified": false
@@ -40717,7 +40895,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-26T01:18:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=XzTBrp8OHqs",
           "verified": false
@@ -40770,7 +40948,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-03-28T11:18:23Z",
           "videoUrl": "https://www.youtube.com/watch?v=IDdNafGm1h8",
           "verified": false
@@ -40791,7 +40969,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-04-05T19:35:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=lm-FdVDZYxs",
           "verified": false
@@ -40836,7 +41014,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-04-17T02:09:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=sLyddHoEAaw",
           "verified": false
@@ -40849,7 +41027,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-04-19T19:33:14Z",
           "videoUrl": "https://www.youtube.com/watch?v=iwtqUCOjAM8",
           "verified": false
@@ -40870,7 +41048,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-05-15T02:38:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=VvTXMKar6eE",
           "verified": false
@@ -40891,7 +41069,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-11T19:02:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=F3CRG5zDYDc",
           "verified": false
@@ -40944,7 +41122,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-06-23T09:08:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=kJ-FUBNEhr8",
           "verified": false
@@ -41013,7 +41191,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-01T18:03:17Z",
           "videoUrl": "https://www.youtube.com/watch?v=mT_ZwYmyqxU",
           "verified": false
@@ -41090,7 +41268,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-13T17:03:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=7mHizEYzgBY",
           "verified": false
@@ -41119,7 +41297,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-07-24T16:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=4bfObDbMwO4",
           "verified": false
@@ -41132,7 +41310,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-12T08:40:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=y6tvop9GeEg",
           "verified": false
@@ -41161,7 +41339,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-22T04:30:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=yb5nnfBVEdI",
           "verified": false
@@ -41214,7 +41392,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-08-28T21:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=IM8H8p_jC1A",
           "verified": false
@@ -41259,7 +41437,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-09-08T22:47:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=yjTsM7UJF6o&t=177s",
           "verified": false
@@ -41280,7 +41458,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-09-21T10:30:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=_oisxiyEhdE",
           "verified": false
@@ -41288,7 +41466,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-10-03T17:08:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=r1PmgdJbobg",
           "verified": false
@@ -41333,7 +41511,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-09-24T22:32:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=XTNPaVRj0ao",
           "verified": false
@@ -41402,7 +41580,7 @@
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
-          "position": 63,
+          "position": 64,
           "achievedAt": "2026-10-11T13:42:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=F8eZ3mhn37A",
           "verified": false
@@ -41447,7 +41625,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2024-12-25T00:05:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=RUBbpsTR5eU",
           "verified": true
@@ -41468,7 +41646,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2025-02-17T22:30:12Z",
           "videoUrl": "https://www.youtube.com/watch?v=JuAf495cjHc",
           "verified": false
@@ -41489,7 +41667,7 @@
         {
           "levelId": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
           "levelName": "Apocalyptic Trilogy",
-          "position": 64,
+          "position": 65,
           "achievedAt": "2026-10-15T05:07:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=G_G87w_ko5I",
           "verified": false
@@ -41542,7 +41720,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2022-06-19T12:08:58Z",
           "videoUrl": "https://www.youtube.com/watch?v=tYbXsNkO9HE",
           "verified": true
@@ -41555,7 +41733,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-02-23T01:46:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=h7mmP-nwUv4",
           "verified": false
@@ -41640,7 +41818,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-07-08T17:14:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=unpvJ-LDhLo",
           "verified": false
@@ -41661,7 +41839,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2024-10-03T17:54:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=CF-M33c9ZGw",
           "verified": false
@@ -41722,7 +41900,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-05-16T16:23:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=U53dNcoTgww",
           "verified": false
@@ -41751,7 +41929,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-06-20T21:33:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=YMLk6MVWkT8",
           "verified": false
@@ -41796,7 +41974,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-07-20T20:15:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=ubxTFM2U71s",
           "verified": false
@@ -41905,7 +42083,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2025-10-20T19:17:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=-_JpRSApsV4",
           "verified": false
@@ -41958,7 +42136,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-01-01T18:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=2D24ts_q-4k",
           "verified": false
@@ -42003,7 +42181,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-02-27T04:26:10Z",
           "videoUrl": "https://www.youtube.com/watch?v=j_QZvBAqMBI",
           "verified": false
@@ -42096,7 +42274,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-06-11T19:10:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=A4daQE7V9MA&list=PLg_5OBTSp1xnZkFSGimij_TbPO_wpqT2W",
           "verified": false
@@ -42149,7 +42327,7 @@
         {
           "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
           "levelName": "The Hallucination",
-          "position": 65,
+          "position": 66,
           "achievedAt": "2026-08-08T17:35:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=N4sUUb6iOXg",
           "verified": false
@@ -42186,7 +42364,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-03-10T13:35:11Z",
           "videoUrl": "https://www.youtube.com/watch?v=-lS7i91VdmE",
           "verified": false
@@ -42271,7 +42449,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-12-12T18:48:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=mmitmf0af0Y",
           "verified": false
@@ -42300,7 +42478,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2024-12-28T06:45:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=P14zhASZiek",
           "verified": false
@@ -42337,7 +42515,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-04-11T23:43:10Z",
           "videoUrl": "https://drive.google.com/file/d/1HFurG95pw7u5aRsBeh48mGeskG4Pz4Oi",
           "verified": false
@@ -42390,7 +42568,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-05-25T05:21:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=sCH2Ymfa2e4",
           "verified": false
@@ -42411,7 +42589,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2025-06-23T15:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=G9vHVluQETY",
           "verified": false
@@ -42432,7 +42610,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-01-06T04:50:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=bttKyOXWDbE",
           "verified": false
@@ -42477,7 +42655,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-01-15T20:31:02Z",
           "videoUrl": "https://www.youtube.com/watch?v=kndBDSWM1VU",
           "verified": false
@@ -42586,7 +42764,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-01-24T22:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=muR_DGJsYrw",
           "verified": false
@@ -42687,7 +42865,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-03-08T17:57:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=3Qjf_w_DDSc",
           "verified": false
@@ -42716,7 +42894,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-03-26T13:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=CAT0hFY3uHQ",
           "verified": false
@@ -42729,7 +42907,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-07-01T22:22:25Z",
           "videoUrl": "https://www.youtube.com/watch?v=PRF5FrgnjyE",
           "verified": false
@@ -42774,7 +42952,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-08-14T15:59:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=e0_RdrbGcEE",
           "verified": false
@@ -42859,7 +43037,7 @@
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
           "levelName": "COMBUSTION",
-          "position": 67,
+          "position": 68,
           "achievedAt": "2026-10-03T20:40:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=Q2s3nJ5K3EA",
           "verified": false
@@ -42920,7 +43098,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-06-26T00:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=22l59QGmL48",
           "verified": true
@@ -42933,7 +43111,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-07-18T18:57:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=aOSPZzCp04o",
           "verified": false
@@ -42946,7 +43124,7 @@
         {
           "levelId": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
           "levelName": "Haunted Ship",
-          "position": 68,
+          "position": 69,
           "achievedAt": "2026-09-02T01:08:12.547915Z",
           "videoUrl": "https://www.youtube.com/watch?v=8MgyGxOhAC0",
           "verified": false
@@ -43029,168 +43207,6 @@
           "position": 133,
           "achievedAt": "2026-08-31T17:59:12.174249Z",
           "videoUrl": "https://www.youtube.com/watch?v=l_TnYS5sukk",
-          "verified": false
-        }
-      ]
-    },
-    "0d4eb545-6ac6-4906-9d20-0aecfd451d98": {
-      "name": "Cork",
-      "levels": [
-        {
-          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-          "levelName": "Loops of Fury",
-          "position": 69,
-          "achievedAt": "2025-10-02T01:23:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
-          "verified": true
-        },
-        {
-          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
-          "levelName": "Delta",
-          "position": 115,
-          "achievedAt": "2025-12-26T21:10:22Z",
-          "videoUrl": "https://www.youtube.com/watch?v=KVFvuK5PKD0",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2025-11-24T01:03:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=42-J2kBenKs",
-          "verified": false
-        },
-        {
-          "levelId": "231fdd45-f2f7-40a0-bb86-3743eba20ec0",
-          "levelName": "Terminal Rampancy",
-          "position": 126,
-          "achievedAt": "2025-05-16T00:44:07Z",
-          "videoUrl": "https://www.youtube.com/watch?v=YvRsV3Dhz40",
-          "verified": false
-        },
-        {
-          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-          "levelName": "Trueffet",
-          "position": 150,
-          "achievedAt": "2025-04-15T00:21:29Z",
-          "videoUrl": "https://www.youtube.com/watch?v=0sgFrsXACFo",
-          "verified": false
-        }
-      ]
-    },
-    "ec94309b-02ff-4314-8674-b9cb9cf3a5e0": {
-      "name": "destr",
-      "levels": [
-        {
-          "levelId": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-          "levelName": "Loops of Fury",
-          "position": 69,
-          "achievedAt": "2026-08-01T05:14:22Z",
-          "videoUrl": "https://www.youtube.com/watch?v=c_03zYB120s",
-          "verified": false
-        },
-        {
-          "levelId": "59a49d83-77fd-4890-a04d-689f1947ad16",
-          "levelName": "Damascus",
-          "position": 91,
-          "achievedAt": "2026-06-15T23:45:26Z",
-          "videoUrl": "https://www.youtube.com/watch?v=rWP2WjIie7E",
-          "verified": false
-        },
-        {
-          "levelId": "9e4fe89f-e634-41f6-a1d7-c388d426856b",
-          "levelName": "Decks Dark",
-          "position": 92,
-          "achievedAt": "2026-05-16T22:45:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=zOEaYsgCXzI",
-          "verified": false
-        },
-        {
-          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
-          "levelName": "Climax",
-          "position": 95,
-          "achievedAt": "2026-01-26T06:10:46Z",
-          "videoUrl": "https://www.youtube.com/watch?v=mOLTi1fH36E",
-          "verified": false
-        },
-        {
-          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
-          "levelName": "ORDINARY",
-          "position": 96,
-          "achievedAt": "2025-08-08T15:16:53Z",
-          "videoUrl": "https://www.youtube.com/watch?v=aopnGOYTfR4",
-          "verified": false
-        },
-        {
-          "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
-          "levelName": "Doppler (Solo)",
-          "position": 102,
-          "achievedAt": "2026-09-05T01:55:45Z",
-          "videoUrl": "https://www.youtube.com/watch?v=21AucRgD3EQ",
-          "verified": false
-        },
-        {
-          "levelId": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
-          "levelName": "Between Duality",
-          "position": 106,
-          "achievedAt": "2026-04-10T19:26:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=uOb-ajQ4bgw",
-          "verified": true
-        },
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 112,
-          "achievedAt": "2026-04-14T15:09:34Z",
-          "videoUrl": "https://www.youtube.com/watch?v=kDG75nCEV6M",
-          "verified": false
-        },
-        {
-          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
-          "levelName": "Delta",
-          "position": 115,
-          "achievedAt": "2025-05-14T15:08:55Z",
-          "videoUrl": "https://www.youtube.com/watch?v=IYCwcSr1lGE",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2026-10-16T15:54:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=QiRzN4yLDaw",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 122,
-          "achievedAt": "2026-05-25T00:53:22Z",
-          "videoUrl": "https://www.youtube.com/watch?v=gyN0u2oidDg",
-          "verified": false
-        },
-        {
-          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
-          "levelName": "paranoia (amplitron)",
-          "position": 141,
-          "achievedAt": "2026-08-06T20:24:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=CYQNZtsUQG0",
-          "verified": false
-        },
-        {
-          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
-          "levelName": "Starlit Stroll",
-          "position": 142,
-          "achievedAt": "2026-08-24T00:18:43Z",
-          "videoUrl": "https://www.youtube.com/watch?v=2AvUUsAw4Z0",
-          "verified": false
-        },
-        {
-          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-          "levelName": "Trueffet",
-          "position": 150,
-          "achievedAt": "2026-05-22T03:53:18Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Fb8VP3UfYYI",
           "verified": false
         }
       ]
@@ -56999,7 +57015,7 @@
           "levelName": "Tartarus",
           "position": 112,
           "achievedAt": "2026-10-25T18:26:36Z",
-          "videoUrl": "https://www.youtube.com/watch?v=iMSi9eZvKDk",
+          "videoUrl": "https://www.youtube.com/watch?v=k7sRimfMbCI",
           "verified": false
         }
       ]
@@ -64633,7 +64649,7 @@
       ]
     },
     "3c46716f-3293-4fc4-8d1d-cbebe4e357d0": {
-      "name": "Ass Eater",
+      "name": "DiecedGMD",
       "levels": [
         {
           "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
