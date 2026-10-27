@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T22:01:33.055Z",
+  "generatedAt": "2026-10-27T01:41:18.879Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -11396,6 +11396,11 @@
         "date": "2026-10-18",
         "position": 189,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 186,
+        "reason": "Raised from #189 to #186"
       }
     ],
     "3a9b2d29-23d2-4486-9a47-fdf30e8e71c1": [
@@ -13110,6 +13115,11 @@
         "date": "2026-10-18",
         "position": 186,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 187,
+        "reason": "Moved down — Renevant was raised to #186"
       }
     ],
     "aff98aeb-1f8b-4ef0-9502-ddf9abdba2db": [
@@ -17670,6 +17680,11 @@
         "date": "2026-10-18",
         "position": 188,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 189,
+        "reason": "Moved down — Renevant was raised to #186"
       }
     ],
     "4559dc7d-1e3b-4f1f-a8de-9d0b152483b6": [
@@ -268111,6 +268126,11 @@
         "date": "2026-10-25",
         "position": 634,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 635,
+        "reason": "Moved down — Withered Star was placed at #624"
       }
     ],
     "6e4aa435-2b39-44c4-9788-396a98487c4d": [
@@ -318468,6 +318488,11 @@
         "date": "2026-10-25",
         "position": 756,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 757,
+        "reason": "Moved down — Withered Star was placed at #624"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
@@ -359721,6 +359746,11 @@
         "date": "2026-10-25",
         "position": 1368,
         "reason": "Moved down — Duplication was raised to #1364"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 1369,
+        "reason": "Moved down — Withered Star was placed at #624"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -376602,6 +376632,11 @@
         "date": "2026-10-18",
         "position": 187,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 188,
+        "reason": "Moved down — Renevant was raised to #186"
       }
     ],
     "973cb151-6642-4a06-a0dd-4e26f8a1404d": [
@@ -414824,10 +414859,10 @@
       "f25d76da-b519-4a4c-b82a-7cf81be6f505",
       "4559dc7d-1e3b-4f1f-a8de-9d0b152483b6",
       "3a9b2d29-23d2-4486-9a47-fdf30e8e71c1",
+      "c8971515-f6fb-42cf-8d73-af3761643f3d",
       "f4472210-6719-4b2b-a3cd-37e37a45bb63",
       "68167619-1373-4b31-8e6b-d75bff4cc806",
       "d5a4ca1c-ffaf-4247-b851-e0ec2ad1e0ca",
-      "c8971515-f6fb-42cf-8d73-af3761643f3d",
       "5a6ff981-b68a-4a1c-97ba-314d0b231fe9",
       "9215b489-4966-4465-a08f-52d4af1b3a50",
       "1de1215a-9f9d-4bdd-aa5b-0fba938a7877",
@@ -415262,6 +415297,7 @@
       "80596e2d-fa6c-433a-9bda-46afed5d836c",
       "d4800172-a44a-42e1-875a-7bfd0f0c7753",
       "f00207e5-0286-4ff2-aedc-6e9be970ccd5",
+      "031cc75c-7efb-47ab-acd1-68ca9d189c03",
       "a42ca3aa-fdb5-406c-a987-e26431dee7a2",
       "73d5173d-1fcb-491d-903e-b87e247cb54f",
       "e0f223b8-fcbf-479a-9944-6962fc51e744",
@@ -418400,6 +418436,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-26T18:05:55.413817Z|ecf3550e-fd6a-4dd0-8756-c3777877dc7c|{\"Raised\":{\"new_position\":1542,\"old_position\":1563}}"
+    "lastEventFingerprint": "2026-10-27T00:53:08.020364Z|031cc75c-7efb-47ab-acd1-68ca9d189c03|{\"Placed\":{\"new_position\":624,\"status\":\"MainList\"}}"
   }
 }
