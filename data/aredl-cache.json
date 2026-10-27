@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T01:41:18.613Z",
+  "generatedAt": "2026-10-27T06:43:59.186Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -138,7 +138,7 @@
         "UFO",
         "Wave"
       ],
-      "description": null,
+      "description": "A monochrome design level featuring many clubstep monsters scattered throughout. It was originally harder before being nerfed by Zoink following a controversy surrounding the original host. Features an extremely hard ship at 19%.",
       "song": null,
       "edel_enjoyment": 20,
       "is_edel_pending": true,
@@ -4115,7 +4115,7 @@
       "name": "Subterminal Point",
       "position": 39,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 3456,
+      "points": 3460,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113599729,
@@ -4125,6 +4125,7 @@
         "Long",
         "Timings",
         "Chokepoints",
+        "Slow-Paced",
         "Ship",
         "Wave"
       ],
@@ -4521,7 +4522,7 @@
       "name": "CHIL",
       "position": 43,
       "publisher_id": "9bbc6706-d4b6-4a41-8dda-5b5ca0740763",
-      "points": 3355,
+      "points": 3358,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114281093,
@@ -4529,6 +4530,7 @@
       "tags": [
         "2.2",
         "Long",
+        "Clicksync",
         "Fast-Paced",
         "Learny",
         "High CPS",
@@ -6292,11 +6294,65 @@
       ]
     },
     {
+      "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+      "name": "Loops of Fury",
+      "position": 59,
+      "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+      "points": 3012,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 126571887,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "XL",
+        "NONG",
+        "Timings",
+        "Unbalanced",
+        "New Swing",
+        "Overall"
+      ],
+      "description": "Grayscale effect level that contains sections where the gameplay loops several times over (hence its name). Has a very chokeable ending.",
+      "song": null,
+      "edel_enjoyment": 79.44444444,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+        "username": "enfur",
+        "global_name": "Enfur"
+      },
+      "verifications": [
+        {
+          "id": "7da9439e-d794-491d-8aeb-62454d47f2ec",
+          "submitted_by": {
+            "id": "0d4eb545-6ac6-4906-9d20-0aecfd451d98",
+            "username": "xcork",
+            "global_name": "Cork"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
+          "hide_video": false,
+          "achieved_at": "2025-10-02T01:23:03Z",
+          "created_at": "2025-11-12T04:15:11.090028Z",
+          "updated_at": "2025-11-12T04:15:11.090028Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+          "username": "enfur",
+          "global_name": "Enfur"
+        }
+      ]
+    },
+    {
       "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
       "name": "Fracture",
-      "position": 59,
+      "position": 60,
       "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-      "points": 3012,
+      "points": 2993,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 99703915,
@@ -6352,9 +6408,9 @@
     {
       "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
       "name": "poocubed",
-      "position": 60,
+      "position": 61,
       "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-      "points": 2993,
+      "points": 2975,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 85133223,
@@ -6441,9 +6497,9 @@
     {
       "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
       "name": "Calibrate",
-      "position": 61,
+      "position": 62,
       "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-      "points": 2974,
+      "points": 2956,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136981369,
@@ -6490,9 +6546,9 @@
     {
       "id": "4fac9298-93ae-4553-abe9-72a562567318",
       "name": "MINUSdry",
-      "position": 62,
+      "position": 63,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2956,
+      "points": 2938,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89414220,
@@ -6562,9 +6618,9 @@
     {
       "id": "b2252317-dcf2-432d-ba36-59642218803c",
       "name": "Saul Goodman",
-      "position": 63,
+      "position": 64,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2937,
+      "points": 2920,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90477539,
@@ -6651,9 +6707,9 @@
     {
       "id": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
       "name": "Apocalyptic Trilogy",
-      "position": 64,
+      "position": 65,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2919,
+      "points": 2902,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113443235,
@@ -6826,9 +6882,9 @@
     {
       "id": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
       "name": "The Hallucination",
-      "position": 65,
+      "position": 66,
       "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 2902,
+      "points": 2885,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81139702,
@@ -6839,6 +6895,7 @@
         "Circles",
         "Fast-Paced",
         "Chokepoints",
+        "Unbalanced",
         "Learny",
         "Flow",
         "Nerve Control",
@@ -6888,9 +6945,9 @@
     {
       "id": "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "name": "Pinnacle of Life",
-      "position": 66,
+      "position": 67,
       "publisher_id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
-      "points": 2884,
+      "points": 2868,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 144012996,
@@ -7004,9 +7061,9 @@
     {
       "id": "146c9eed-2b47-483c-93a2-6b336adea84a",
       "name": "COMBUSTION",
-      "position": 67,
+      "position": 68,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2867,
+      "points": 2851,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94359172,
@@ -7063,9 +7120,9 @@
     {
       "id": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
       "name": "Haunted Ship",
-      "position": 68,
+      "position": 69,
       "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-      "points": 2850,
+      "points": 2834,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 143523624,
@@ -7117,60 +7174,6 @@
           "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
           "username": "awesomeme360",
           "global_name": "AWESOMEME360"
-        }
-      ]
-    },
-    {
-      "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-      "name": "Loops of Fury",
-      "position": 69,
-      "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 2833,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 126571887,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "XL",
-        "NONG",
-        "Timings",
-        "Unbalanced",
-        "New Swing",
-        "Overall"
-      ],
-      "description": "Grayscale effect level that contains sections where the gameplay loops several times over (hence its name). Has a very chokeable ending.",
-      "song": null,
-      "edel_enjoyment": 79.44444444,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-        "username": "enfur",
-        "global_name": "Enfur"
-      },
-      "verifications": [
-        {
-          "id": "7da9439e-d794-491d-8aeb-62454d47f2ec",
-          "submitted_by": {
-            "id": "0d4eb545-6ac6-4906-9d20-0aecfd451d98",
-            "username": "xcork",
-            "global_name": "Cork"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
-          "hide_video": false,
-          "achieved_at": "2025-10-02T01:23:03Z",
-          "created_at": "2025-11-12T04:15:11.090028Z",
-          "updated_at": "2025-11-12T04:15:11.090028Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-          "username": "enfur",
-          "global_name": "Enfur"
         }
       ]
     },
@@ -12466,7 +12469,7 @@
       "name": "Sanctity",
       "position": 120,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 2186,
+      "points": 2191,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 135547923,
@@ -12486,7 +12489,7 @@
         "Ship",
         "Wave"
       ],
-      "description": null,
+      "description": "An Amplitron solo with a distinct red, city theme featuring a song from Bôa's hit album, Twilight. It focuses on small wave chokepoints and ship control gameplay. The level is known to be second half heavy with the city-like ending being most of the difficulty; the ending is also regarded as Amplitron's best gameplay in a level according to him.",
       "song": 1559895,
       "edel_enjoyment": 82.09090909,
       "is_edel_pending": false,
@@ -12520,7 +12523,7 @@
       "name": "The Golden",
       "position": 121,
       "publisher_id": "0d655908-d2ac-4144-946c-f8092620a51d",
-      "points": 2177,
+      "points": 2181,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 60978746,
@@ -12529,6 +12532,7 @@
         "2.1",
         "Long",
         "Fast-Paced",
+        "Learny",
         "Nerve Control",
         "Ship",
         "Wave"
@@ -13685,7 +13689,7 @@
       "name": "limbo but uwu ig idk",
       "position": 139,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 2018,
+      "points": 2022,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110705712,
@@ -13693,8 +13697,11 @@
       "tags": [
         "2.2",
         "XL",
+        "Fast-Paced",
+        "Learny",
         "Memory",
         "Gimmicky",
+        "Nerve Control",
         "Wave",
         "Duals"
       ],

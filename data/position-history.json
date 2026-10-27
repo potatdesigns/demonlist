@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T01:41:18.879Z",
+  "generatedAt": "2026-10-27T06:43:59.458Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -6152,6 +6152,11 @@
         "date": "2026-10-26",
         "position": 65,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 66,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b": [
@@ -265949,6 +265954,11 @@
         "date": "2026-10-26",
         "position": 60,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 61,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "59b15de8-3880-4755-83e7-95787b1166bb": [
@@ -291895,6 +291905,11 @@
         "date": "2026-10-26",
         "position": 62,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 63,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "94000633-1b00-4e52-ae77-48fab8aecf9d": [
@@ -304839,6 +304854,11 @@
         "date": "2026-10-26",
         "position": 63,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 64,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "1b90183d-b774-4277-8e8d-a3b5e8f857d9": [
@@ -334359,6 +334379,11 @@
         "date": "2026-10-26",
         "position": 67,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 68,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "24d0f430-f42f-45b9-af35-b6eea34be7df": [
@@ -395844,6 +395869,11 @@
         "date": "2026-10-26",
         "position": 64,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 65,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "eda48b6f-ce6c-4be3-abc1-6a5329fcaf91": [
@@ -404633,6 +404663,11 @@
         "date": "2026-10-26",
         "position": 69,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 59,
+        "reason": "Raised from #69 to #59"
       }
     ],
     "797c9539-70e6-45bb-bb29-20980d8a979b": [
@@ -412026,6 +412061,11 @@
         "date": "2026-10-26",
         "position": 59,
         "reason": "Raised from #86 to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 60,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "e6132f57-97c2-413e-82e2-bbdf2702ce83": [
@@ -412260,6 +412300,11 @@
         "date": "2026-10-26",
         "position": 61,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 62,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "c46ddc54-db3f-4641-888a-f087a38ea4c9": [
@@ -413890,6 +413935,11 @@
         "date": "2026-10-26",
         "position": 66,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 67,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "a7dce4c2-1503-4a62-94b5-15afaf40e0dc": [
@@ -414097,6 +414147,11 @@
         "date": "2026-10-26",
         "position": 68,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-10-27",
+        "position": 69,
+        "reason": "Moved down — Loops of Fury was raised to #59"
       }
     ],
     "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3": [
@@ -414732,6 +414787,7 @@
       "56d52163-e3e2-4357-9843-29002b100e07",
       "7081880b-fe8c-4d3f-8557-a895b7aee521",
       "51200df7-7a51-455c-b2c8-25cc6f6f0114",
+      "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "68f7dca1-2735-431b-84f5-5fe940e27da8",
       "c586d155-f78c-43f6-933c-3c11c4aa6600",
       "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
@@ -414742,7 +414798,6 @@
       "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "146c9eed-2b47-483c-93a2-6b336adea84a",
       "2471e1cc-ff59-471f-bc1c-eca3651a8591",
-      "c40aeba7-841e-47e8-8c05-9e02dddedb83",
       "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
       "c46ddc54-db3f-4641-888a-f087a38ea4c9",
       "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
@@ -418436,6 +418491,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-27T00:53:08.020364Z|031cc75c-7efb-47ab-acd1-68ca9d189c03|{\"Placed\":{\"new_position\":624,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-10-27T01:43:10.778685Z|c40aeba7-841e-47e8-8c05-9e02dddedb83|{\"Raised\":{\"new_position\":59,\"old_position\":69}}"
   }
 }
