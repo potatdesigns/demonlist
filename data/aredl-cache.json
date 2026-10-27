@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T18:28:44.774Z",
+  "generatedAt": "2026-10-27T22:44:20.763Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2313,7 +2313,7 @@
       "name": "KILLSTEALER",
       "position": 21,
       "publisher_id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
-      "points": 4021,
+      "points": 4024,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 138781722,
@@ -2322,6 +2322,7 @@
         "2.2",
         "XXL",
         "Fast-Paced",
+        "Learny",
         "Nerve Control",
         "Overall"
       ],
@@ -13340,7 +13341,7 @@
       "name": "Shukketsu",
       "position": 133,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2068,
+      "points": 2073,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75286957,
@@ -13354,7 +13355,8 @@
         "Timings",
         "Chokepoints",
         "Learny",
-        "High CPS"
+        "High CPS",
+        "Overall"
       ],
       "description": "Learny Kowareta inspired \"art-core\" level with a groovy breakbeat song and colorful desaturated visuals. Features a slight garden theme and is flooded with community inside jokes and memes. The gameplay itself is clicksync and fast paced, with many chokepoints throughout the level. ",
       "song": null,
@@ -13746,7 +13748,7 @@
       "name": "Graceful",
       "position": 140,
       "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-      "points": 2010,
+      "points": 2014,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71885708,
@@ -13754,7 +13756,14 @@
       "tags": [
         "2.1",
         "XL",
+        "Timings",
         "Chokepoints",
+        "Unbalanced",
+        "Learny",
+        "Slow-Paced",
+        "Nerve Control",
+        "Ship",
+        "Wave",
         "Duals",
         "Overall"
       ],
