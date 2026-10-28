@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T06:43:59.458Z",
+  "generatedAt": "2026-10-28T19:58:07.502Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -4988,6 +4988,11 @@
         "date": "2026-10-23",
         "position": 145,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 146,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f": [
@@ -5760,6 +5765,11 @@
         "date": "2026-10-23",
         "position": 150,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 151,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e": [
@@ -232725,6 +232735,11 @@
         "date": "2026-10-18",
         "position": 133,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 134,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "10d01124-1b79-4360-968a-3364b4f80b52": [
@@ -285369,6 +285384,11 @@
         "date": "2026-10-18",
         "position": 136,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 137,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "96f87d0c-dbd4-4452-a121-15739f7bf06e": [
@@ -373272,6 +373292,11 @@
         "date": "2026-10-23",
         "position": 143,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 144,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "8043f305-e0fe-46ed-acb5-93d4917a82f3": [
@@ -396808,6 +396833,11 @@
         "date": "2026-10-23",
         "position": 138,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 139,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87": [
@@ -397240,6 +397270,11 @@
         "date": "2026-10-23",
         "position": 142,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 143,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "9215b489-4966-4465-a08f-52d4af1b3a50": [
@@ -399509,6 +399544,11 @@
         "date": "2026-10-23",
         "position": 139,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 140,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "7cc25551-d5d3-40d3-b4f6-420e4c9110d0": [
@@ -400735,6 +400775,11 @@
         "date": "2026-10-23",
         "position": 149,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 150,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "1ead6aa0-ae53-40f6-939d-d073abb87d13": [
@@ -401806,6 +401851,11 @@
         "date": "2026-10-23",
         "position": 147,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 148,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "697f2982-16c0-4041-bad7-db60f6134ced": [
@@ -403361,6 +403411,11 @@
         "date": "2026-10-23",
         "position": 144,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 145,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "8d02375c-8c31-4352-af21-d4533f63e3af": [
@@ -403758,6 +403813,11 @@
         "date": "2026-10-23",
         "position": 137,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 138,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "795f5f4f-4b8b-4e65-9eb6-dc09a66e6fb5": [
@@ -404426,6 +404486,11 @@
         "date": "2026-10-23",
         "position": 151,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 133,
+        "reason": "Raised from #151 to #133"
       }
     ],
     "c40aeba7-841e-47e8-8c05-9e02dddedb83": [
@@ -406171,6 +406236,11 @@
         "date": "2026-10-23",
         "position": 148,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 149,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "ecabf47d-a7fb-4eaf-90fb-0737e5452e5a": [
@@ -407281,6 +407351,11 @@
         "date": "2026-10-23",
         "position": 140,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 141,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "51a1538a-b53a-4f31-9fed-715b4e9e5951": [
@@ -407897,6 +407972,11 @@
         "date": "2026-10-23",
         "position": 146,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 147,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "61ade6ee-e274-45b9-9537-3362259f8625": [
@@ -409947,6 +410027,11 @@
         "date": "2026-10-23",
         "position": 141,
         "reason": "Moved up — adjunto adnominal was lowered to #157"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 142,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "5476e168-1f14-4250-b7df-d01f2d029367": [
@@ -413782,6 +413867,11 @@
         "date": "2026-10-18",
         "position": 135,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 136,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "4736d3e3-6166-44eb-941d-d94a5f2d6cc4": [
@@ -414284,6 +414374,11 @@
         "date": "2026-10-18",
         "position": 134,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-10-28",
+        "position": 135,
+        "reason": "Moved down — azure blast was raised to #133"
       }
     ],
     "034634f7-f216-4f34-82dd-003eebd2897e": [
@@ -414861,6 +414956,7 @@
       "aea0cadd-9429-4f79-9d6d-8179bb518d73",
       "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
       "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
+      "2f954949-01cb-4946-be55-a8cb76b04794",
       "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
       "05c75b96-b138-47d7-847d-c13fb2650a41",
       "b158e365-0f31-485e-816d-be35f8623bf2",
@@ -414879,7 +414975,6 @@
       "53fb0da7-8845-4736-9832-c1f98bb388cc",
       "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
       "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-      "2f954949-01cb-4946-be55-a8cb76b04794",
       "7103a26a-fb0e-4e4b-b3a6-716007df87c1",
       "56aee27a-8b38-4a03-9baa-6d033211832a",
       "94d2322d-b1f2-44cc-909d-6cf18cd644ee",
@@ -418491,6 +418586,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-27T01:43:10.778685Z|c40aeba7-841e-47e8-8c05-9e02dddedb83|{\"Raised\":{\"new_position\":59,\"old_position\":69}}"
+    "lastEventFingerprint": "2026-10-28T17:24:26.052514Z|2f954949-01cb-4946-be55-a8cb76b04794|{\"Raised\":{\"new_position\":133,\"old_position\":151}}"
   }
 }

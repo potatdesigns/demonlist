@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T14:38:26.748Z",
+  "generatedAt": "2026-10-28T19:58:07.279Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -13337,11 +13337,124 @@
       "creators": []
     },
     {
+      "id": "2f954949-01cb-4946-be55-a8cb76b04794",
+      "name": "azure blast",
+      "position": 133,
+      "publisher_id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
+      "points": 2073,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 120060187,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Fast-Paced",
+        "Chokepoints",
+        "Flow",
+        "Overall"
+      ],
+      "description": "An entirely Korean megacollab with a blue colour scheme and very difficult flow gameplay. Each part is distinctive with various decoration and gameplay styles as with many Korean collabs, with chokepoints found towards the middle third of the level. The first list level to use a song from the game's built-in NCS music library.",
+      "song": null,
+      "edel_enjoyment": 51.42857143,
+      "is_edel_pending": false,
+      "gddl_tier": 34,
+      "nlw_tier": "Merciless",
+      "publisher": {
+        "id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
+        "username": "6517cb72e",
+        "global_name": "AlbinoSnail"
+      },
+      "verifications": [
+        {
+          "id": "0aa00622-9cd9-4f5f-b2e9-74856d9c9bf8",
+          "submitted_by": {
+            "id": "4d27e767-56bb-4741-b22f-2a7b2bc303f0",
+            "username": "b3681b1bd",
+            "global_name": "DNM121"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=TN0FQ3KBv4w",
+          "hide_video": false,
+          "achieved_at": "2025-06-01T17:33:00Z",
+          "created_at": "2025-11-04T18:12:08.553926Z",
+          "updated_at": "2025-11-04T18:12:08.553926Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "bcca37c2-91c9-4482-b251-e93039f91d7d",
+          "username": "wwa_06",
+          "global_name": "Wain"
+        },
+        {
+          "id": "7f35ad3f-addb-4680-9dde-5188d73956f9",
+          "username": "6517cb72e",
+          "global_name": "AlbinoSnail"
+        },
+        {
+          "id": "44f77991-aaca-485d-91f2-c8efbf70184f",
+          "username": "90f488785",
+          "global_name": "C4rin"
+        },
+        {
+          "id": "b615c4d4-71b0-471e-a5e1-bb2e639adb22",
+          "username": "69e7f0e4c",
+          "global_name": "Yonaka"
+        },
+        {
+          "id": "bd3a8158-2fb8-4485-8009-79733afb53b2",
+          "username": "66636b795",
+          "global_name": "K911unA"
+        },
+        {
+          "id": "3084ae9a-3356-4dcb-a749-35fbd14246c4",
+          "username": "8327cc569",
+          "global_name": "Cadooo"
+        },
+        {
+          "id": "3a6c77ec-a4d6-4fec-b27c-5ed5a4828c76",
+          "username": "7d66596d2",
+          "global_name": "Neogul"
+        },
+        {
+          "id": "45d8a949-c0f0-4e4d-9ed9-50c93b144c80",
+          "username": "dd87bfbac",
+          "global_name": "ihotdog"
+        },
+        {
+          "id": "b68b09a6-e6ba-40e3-935c-5e85027844fd",
+          "username": "09ffe8680",
+          "global_name": "MaLiaN"
+        },
+        {
+          "id": "a11bd9af-1daa-4bc7-a6d2-087846c450b9",
+          "username": "a7204c713",
+          "global_name": "blanc"
+        },
+        {
+          "id": "1cd9120c-8973-4412-bc9c-2b13d4b81450",
+          "username": "379ff4fa8",
+          "global_name": "Flosia"
+        },
+        {
+          "id": "6fe63e37-64fa-4817-975a-6da157457413",
+          "username": "aa103ebdd",
+          "global_name": "Inishia"
+        },
+        {
+          "id": "8006128c-3e44-4a7b-b2ed-1ac714fee24c",
+          "username": "2c54208f0",
+          "global_name": "BNDL"
+        }
+      ]
+    },
+    {
       "id": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
       "name": "Shukketsu",
-      "position": 133,
+      "position": 134,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2073,
+      "points": 2064,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75286957,
@@ -13416,9 +13529,9 @@
     {
       "id": "05c75b96-b138-47d7-847d-c13fb2650a41",
       "name": "Breakcore",
-      "position": 134,
+      "position": 135,
       "publisher_id": "215abb59-451d-448e-8aef-0baf05e83c61",
-      "points": 2060,
+      "points": 2056,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 123674931,
@@ -13464,9 +13577,9 @@
     {
       "id": "b158e365-0f31-485e-816d-be35f8623bf2",
       "name": "idontknowwhatthisis",
-      "position": 135,
+      "position": 136,
       "publisher_id": "69394575-3534-49bf-8dab-f9c34be511e6",
-      "points": 2051,
+      "points": 2047,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 137334994,
@@ -13519,9 +13632,9 @@
     {
       "id": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
       "name": "Critical Heat",
-      "position": 136,
+      "position": 137,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2043,
+      "points": 2039,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 88442157,
@@ -13578,9 +13691,9 @@
     {
       "id": "8d02375c-8c31-4352-af21-d4533f63e3af",
       "name": "WOBBLING MACHINE (Solo)",
-      "position": 137,
+      "position": 138,
       "publisher_id": "f474ba2b-e0e1-4374-a4c2-ddebcebc2ec5",
-      "points": 2035,
+      "points": 2031,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87130877,
@@ -13633,9 +13746,9 @@
     {
       "id": "0ccd1fd2-5803-44b4-8ce3-bd749907e748",
       "name": "Crystal Crusher (Solo)",
-      "position": 138,
+      "position": 139,
       "publisher_id": "b346ac5e-5694-4ad1-97de-d085f889e202",
-      "points": 2026,
+      "points": 2022,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93732702,
@@ -13690,9 +13803,9 @@
     {
       "id": "c43eb1e4-b38d-466a-8da5-987204999072",
       "name": "limbo but uwu ig idk",
-      "position": 139,
+      "position": 140,
       "publisher_id": "9256cd1d-a5df-449e-a0fe-84d44536c25e",
-      "points": 2022,
+      "points": 2014,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110705712,
@@ -13746,9 +13859,9 @@
     {
       "id": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
       "name": "Graceful",
-      "position": 140,
+      "position": 141,
       "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-      "points": 2014,
+      "points": 2006,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71885708,
@@ -13870,9 +13983,9 @@
     {
       "id": "e8324cab-fc88-47c0-993d-87ce9de64a00",
       "name": "paranoia (amplitron)",
-      "position": 141,
+      "position": 142,
       "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 2002,
+      "points": 1998,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113364415,
@@ -13922,9 +14035,9 @@
     {
       "id": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
       "name": "Starlit Stroll",
-      "position": 142,
+      "position": 143,
       "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 1994,
+      "points": 1990,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115380769,
@@ -13981,9 +14094,9 @@
     {
       "id": "68308581-f1b6-4c0f-8851-82449ab1977f",
       "name": "The Paroxysm of Rage",
-      "position": 143,
+      "position": 144,
       "publisher_id": "48bc2cab-81bb-4c63-a653-bf1c31ddacfb",
-      "points": 1986,
+      "points": 1982,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 87071894,
@@ -14039,9 +14152,9 @@
     {
       "id": "5b183ded-437a-4a25-8c81-8341fca626db",
       "name": "Blood Echo",
-      "position": 144,
+      "position": 145,
       "publisher_id": "69b31464-03ea-4543-8013-4020121bce2c",
-      "points": 1978,
+      "points": 1974,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 112242564,
@@ -14111,9 +14224,9 @@
     {
       "id": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
       "name": "Aerial Gleam",
-      "position": 145,
+      "position": 146,
       "publisher_id": "2eacf839-529f-455b-a3f3-a3a10cee38ad",
-      "points": 1970,
+      "points": 1967,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 79771070,
@@ -14179,9 +14292,9 @@
     {
       "id": "aa5788c8-80a2-4df1-a5a0-3f1b7533935e",
       "name": "DISCONNECT",
-      "position": 146,
+      "position": 147,
       "publisher_id": "249ca75a-8d0b-4c23-a57a-2185b62e35cd",
-      "points": 1963,
+      "points": 1959,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 127023313,
@@ -14225,9 +14338,9 @@
     {
       "id": "c2837416-7fb4-4866-ba91-e9c134a0a59a",
       "name": "VOID",
-      "position": 147,
+      "position": 148,
       "publisher_id": "e15a1a60-2d87-43d2-ace9-6f20dcbcad3e",
-      "points": 1955,
+      "points": 1951,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 100990392,
@@ -14279,9 +14392,9 @@
     {
       "id": "53fb0da7-8845-4736-9832-c1f98bb388cc",
       "name": "Henken",
-      "position": 148,
+      "position": 149,
       "publisher_id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
-      "points": 1947,
+      "points": 1944,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 80714349,
@@ -14368,9 +14481,9 @@
     {
       "id": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
       "name": "Starlight Summit",
-      "position": 149,
+      "position": 150,
       "publisher_id": "5e42f5cb-e1de-478d-8305-2b4032767f01",
-      "points": 1940,
+      "points": 1936,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114530859,
@@ -14410,66 +14523,6 @@
         }
       ],
       "creators": []
-    },
-    {
-      "id": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
-      "name": "Trueffet",
-      "position": 150,
-      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 1932,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 71434979,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Learny",
-        "High CPS",
-        "Wave",
-        "Overall"
-      ],
-      "description": "Memorable blue and pink SyQual extreme with extremely difficult ship, wave, and spam sections. Originally was top 3 (even technically being top 1) and features numerous iconic high-cps wave sections. Named after Trueffet Square from Maple Story.",
-      "song": 805724,
-      "edel_enjoyment": 59.47619048,
-      "is_edel_pending": false,
-      "gddl_tier": 34.76470588235294,
-      "nlw_tier": "Merciless",
-      "publisher": {
-        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-        "username": "029747e6b",
-        "global_name": "SyQual"
-      },
-      "verifications": [
-        {
-          "id": "bd2af8de-7850-4e09-a8d5-59507f3e8c41",
-          "submitted_by": {
-            "id": "1b2f8a70-5d1a-44f0-875a-3a51999fcc7b",
-            "username": "467967fb2",
-            "global_name": "Baeru"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
-          "hide_video": false,
-          "achieved_at": "2021-07-16T10:48:09Z",
-          "created_at": "2022-10-26T17:06:50Z",
-          "updated_at": "2022-10-26T17:06:50Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-          "username": "029747e6b",
-          "global_name": "SyQual"
-        },
-        {
-          "id": "1ba81bd5-6a1e-4caa-a329-fa860a43e26f",
-          "username": "764698ba3",
-          "global_name": "Rainstorm"
-        }
-      ]
     }
   ]
 }
