@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T21:43:30.061Z",
+  "generatedAt": "2026-10-28T03:37:44.182Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -9648,6 +9648,14 @@
           "position": 54,
           "achievedAt": "2026-07-16T03:22:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=_xJ0T0wHe6U",
+          "verified": false
+        },
+        {
+          "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
+          "levelName": "Calibrate",
+          "position": 62,
+          "achievedAt": "2026-10-22T03:57:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-ZfTRv9tiEo",
           "verified": false
         },
         {
@@ -27184,6 +27192,14 @@
           "position": 77,
           "achievedAt": "2026-08-26T04:37:27Z",
           "videoUrl": "https://www.youtube.com/watch?v=yfkTqZZM7no",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 100,
+          "achievedAt": "2026-10-19T02:25:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sf9-RF7By3E",
           "verified": false
         },
         {
@@ -49844,6 +49860,19 @@
         }
       ]
     },
+    "a04de72b-3bc7-4f7c-9871-568152a6c3ea": {
+      "name": "Bosh",
+      "levels": [
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 86,
+          "achievedAt": "2026-10-21T20:09:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=weOSxg6QZyk",
+          "verified": false
+        }
+      ]
+    },
     "c5d6b841-9e9a-4840-9e20-cf60b6271b8d": {
       "name": "Frice",
       "levels": [
@@ -59154,6 +59183,14 @@
           "position": 121,
           "achievedAt": "2026-05-16T15:29:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=BrjCJ96yj7A",
+          "verified": false
+        },
+        {
+          "levelId": "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f",
+          "levelName": "Trueffet",
+          "position": 150,
+          "achievedAt": "2026-03-17T18:39:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zrQBAje_-JE",
           "verified": false
         }
       ]
