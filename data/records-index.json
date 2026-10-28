@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T03:37:44.182Z",
+  "generatedAt": "2026-10-28T11:59:25.264Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -35831,6 +35831,14 @@
           "achievedAt": "2026-08-30T23:53:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=2EdN2fkeIoc",
           "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 141,
+          "achievedAt": "2026-10-22T20:11:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iNG7p2Nwv7U",
+          "verified": false
         }
       ]
     },
@@ -53187,6 +53195,19 @@
         }
       ]
     },
+    "5f771c9b-e907-47ec-bf82-02a9b0f585c0": {
+      "name": "usb",
+      "levels": [
+        {
+          "levelId": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
+          "levelName": "Between Duality",
+          "position": 106,
+          "achievedAt": "2026-06-26T09:04:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=z6RiXp9Q8rQ",
+          "verified": false
+        }
+      ]
+    },
     "789b2816-1104-4171-b174-c2500dd5a39d": {
       "name": "nekrozma",
       "levels": [
@@ -58109,6 +58130,14 @@
           "position": 131,
           "achievedAt": "2026-10-16T22:02:49Z",
           "videoUrl": "https://www.youtube.com/watch?v=n9Td0OY7VSw",
+          "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 133,
+          "achievedAt": "2026-10-23T06:44:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EUdmmHxWYeE",
           "verified": false
         }
       ]
