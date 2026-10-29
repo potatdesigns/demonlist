@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T12:08:51.802Z",
+  "generatedAt": "2026-10-29T22:21:04.863Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7048,6 +7048,19 @@
           "position": 145,
           "achievedAt": "2026-01-31T23:32:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=gbM5e1nVbjA",
+          "verified": false
+        }
+      ]
+    },
+    "cc9fa034-64af-4450-8ce4-5af76f0faf9c": {
+      "name": "mpgd610",
+      "levels": [
+        {
+          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
+          "levelName": "Silent clubstep",
+          "position": 17,
+          "achievedAt": "2026-10-25T22:35:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=2wG8YyHymnw",
           "verified": false
         }
       ]
@@ -35225,6 +35238,59 @@
         }
       ]
     },
+    "88db826c-587c-42cf-ab45-078af0258ecd": {
+      "name": "hibachidefect",
+      "levels": [
+        {
+          "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
+          "levelName": "Firework",
+          "position": 54,
+          "achievedAt": "2026-10-25T02:24:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=WX35QIa8QLg",
+          "verified": false
+        },
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 61,
+          "achievedAt": "2026-10-01T00:56:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=8dexALf_Ay4",
+          "verified": false
+        },
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 77,
+          "achievedAt": "2025-11-23T07:30:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jw5eVtGLKTs",
+          "verified": false
+        },
+        {
+          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
+          "levelName": "LIMBO",
+          "position": 79,
+          "achievedAt": "2026-08-06T23:25:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=bW-x5t939mc",
+          "verified": false
+        },
+        {
+          "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
+          "levelName": "THE JET ENGINE",
+          "position": 98,
+          "achievedAt": "2026-08-09T19:21:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=uU8kp8-e5fs",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2025-05-12T01:22:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=M3XpN4AMuxg",
+          "verified": false
+        }
+      ]
+    },
     "4f4806e0-5f32-44c3-91bf-05714f881a2d": {
       "name": "BreadGuyGD",
       "levels": [
@@ -37796,51 +37862,6 @@
           "position": 146,
           "achievedAt": "2026-07-02T03:51:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=UD9VvljheAA",
-          "verified": false
-        }
-      ]
-    },
-    "88db826c-587c-42cf-ab45-078af0258ecd": {
-      "name": "hibachidefect",
-      "levels": [
-        {
-          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
-          "levelName": "poocubed",
-          "position": 61,
-          "achievedAt": "2026-10-01T00:56:28Z",
-          "videoUrl": "https://www.youtube.com/watch?v=8dexALf_Ay4",
-          "verified": false
-        },
-        {
-          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
-          "levelName": "Solar Flare",
-          "position": 77,
-          "achievedAt": "2025-11-23T07:30:54Z",
-          "videoUrl": "https://www.youtube.com/watch?v=jw5eVtGLKTs",
-          "verified": false
-        },
-        {
-          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
-          "levelName": "LIMBO",
-          "position": 79,
-          "achievedAt": "2026-08-06T23:25:57Z",
-          "videoUrl": "https://www.youtube.com/watch?v=bW-x5t939mc",
-          "verified": false
-        },
-        {
-          "levelId": "3237ed55-fa08-43ae-a93e-bd485ffe8d55",
-          "levelName": "THE JET ENGINE",
-          "position": 98,
-          "achievedAt": "2026-08-09T19:21:56Z",
-          "videoUrl": "https://www.youtube.com/watch?v=uU8kp8-e5fs",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2025-05-12T01:22:46Z",
-          "videoUrl": "https://www.youtube.com/watch?v=M3XpN4AMuxg",
           "verified": false
         }
       ]
@@ -56181,6 +56202,19 @@
         }
       ]
     },
+    "beb8a88f-8f1f-45db-b6e3-bdbcffaf9236": {
+      "name": "PawianGD",
+      "levels": [
+        {
+          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
+          "levelName": "Natural Disaster",
+          "position": 117,
+          "achievedAt": "2026-10-14T23:42:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=9Bq9tcPgVS4",
+          "verified": false
+        }
+      ]
+    },
     "7248961d-373f-44d9-9a77-d129955a2902": {
       "name": "Helix (LGGD)",
       "levels": [
@@ -59725,6 +59759,19 @@
           "position": 122,
           "achievedAt": "2026-10-17T03:11:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=zlhU5P3Xfq0",
+          "verified": false
+        }
+      ]
+    },
+    "1e6cc8a4-09c6-496d-aac2-d15805d08a4b": {
+      "name": "Verminity",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2026-10-26T21:49:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=o1SbWvCrPKI",
           "verified": false
         }
       ]
