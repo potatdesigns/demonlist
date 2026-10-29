@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T10:18:58.954Z",
+  "generatedAt": "2026-10-29T15:05:13.955Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3130,32 +3130,32 @@
       },
       "discoveredAt": "2026-10-28T14:59:40.046Z"
     },
-    "dca848e9-1f8d-4c37-a1fd-e7a00e66d08f": {
-      "name": "Trueffet",
-      "position": 150,
+    "2f954949-01cb-4946-be55-a8cb76b04794": {
+      "name": "azure blast",
+      "position": 133,
       "verifier": {
-        "id": "yHESkazVD4Q",
-        "url": "https://www.youtube.com/watch?v=yHESkazVD4Q",
-        "title": "[EXTREME DEMON] Trueffet VERIFIED by SyQual & Rainstorm (Top 10)",
-        "channel": "Baeru",
-        "viewCount": 393153,
-        "viewsCheckedAt": "2026-10-29T10:18:58.210Z"
+        "id": "TN0FQ3KBv4w",
+        "url": "https://www.youtube.com/watch?v=TN0FQ3KBv4w",
+        "title": "[VERIFIED] Azure Blast by AlbinoSnail & More 100% / Extreme Demon / Geometry Dash 2.2",
+        "channel": "DNM121",
+        "viewCount": 41822,
+        "viewsCheckedAt": "2026-10-29T15:05:13.955Z"
       },
       "showcase": {
-        "id": "eOUJZPn8YuU",
-        "url": "https://www.youtube.com/watch?v=eOUJZPn8YuU",
-        "title": "【4K】 \"Trueffet\" [TOP 10?] by SyQual & Rainstorm (Extreme Demon) [38K SPECIAL] | Geometry Dash 2.11",
-        "channel": "Just a GD player",
-        "viewCount": 601986,
-        "viewsCheckedAt": "2026-10-29T10:18:58.210Z"
+        "id": "IWC5C8xmMUY",
+        "url": "https://www.youtube.com/watch?v=IWC5C8xmMUY",
+        "title": "Rate This! | \"Azure Blast\" by AlbinoSnail & More - Geometry Dash 2.2",
+        "channel": "Neiro",
+        "viewCount": 21745,
+        "viewsCheckedAt": "2026-10-29T15:05:13.955Z"
       },
-      "discoveredAt": "2026-10-28T14:59:40.046Z"
+      "discoveredAt": "2026-10-29T15:05:13.955Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "83XyUXyY0_I",
+      "newestVideoId": "8-PAGTUzp5E",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32563,12 +32563,41 @@
           ],
           "description": "Level: GRIEF by rRiftGD\nID: 119485203\nSong: Stalemate by Kayoszx\nhttps://www.newgrounds.com/audio/listen/482872",
           "checkedAt": "2026-10-28T14:58:42.092Z"
+        },
+        "8-PAGTUzp5E": {
+          "title": "МutіIаtеd VERIFIED // ThePurgatory",
+          "channel": "Nexus [GD]",
+          "viewCount": 4,
+          "levelIds": [],
+          "description": "Level hosted by ‪@sadcraft0o and @Phantom7Ks \n\nHappy Halloween everyone!\n\nVerified by me\n\nList of creators: \nSadcraft\nAcomet\nAdrone\nNibbles\nLekz\nDemixe + Ixy\nXero\n\nThumbnail by @K-Rxon",
+          "checkedAt": "2026-10-29T15:05:04.517Z"
+        },
+        "MlH5IPY0_uA": {
+          "title": "Best Bloodbath Remake?",
+          "channel": "Nexus [GD]",
+          "viewCount": 145271,
+          "levelIds": [
+            "151321917",
+            "467339"
+          ],
+          "description": "Level: Bl1odb9th by Netenwaboo, Nab, Peton, TophatMark, SundayGMD, CelestialCat, Youknowwho, Kz04, Vxvian, Zamos, StarSign, Awedsy, Solarion, Bali\n\nID: 151321917\n\nSong: At The Speed of Light by Dimrain47\nhttps://www.newgrounds.com/audio/listen/467339",
+          "checkedAt": "2026-10-29T15:05:04.517Z"
+        },
+        "yRiEyB7BciY": {
+          "title": "''RitUS'' by CastriX | Geometry Dash",
+          "channel": "Nexus [GD]",
+          "viewCount": 19768,
+          "levelIds": [
+            "151392646"
+          ],
+          "description": "Level: RitUS by CastriX\nID: 151392646",
+          "checkedAt": "2026-10-29T15:05:04.517Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "sfFdPlvzTew",
+      "newestVideoId": "ADj497PMMKY",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -57121,6 +57150,20 @@
           "viewCount": 74672,
           "levelIds": [],
           "checkedAt": "2026-10-27T14:14:44.480Z"
+        },
+        "ADj497PMMKY": {
+          "title": "BLACK BLIZZARD 100% | NEIRO",
+          "channel": "Neiro",
+          "viewCount": 6249,
+          "levelIds": [],
+          "checkedAt": "2026-10-29T15:05:04.787Z"
+        },
+        "qPCHY5Aq8SI": {
+          "title": "BAUSHA VORTEX 100% | NEIRO",
+          "channel": "Neiro",
+          "viewCount": 15380,
+          "levelIds": [],
+          "checkedAt": "2026-10-29T15:05:04.787Z"
         }
       }
     },
@@ -94422,7 +94465,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "yjR5gvAPsw4",
+      "newestVideoId": "U7HemktB8s0",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -105331,6 +105374,15 @@
             "137472888"
           ],
           "checkedAt": "2026-10-26T15:01:05.443Z"
+        },
+        "U7HemktB8s0": {
+          "title": "【4K】\"One5Seven\" by Sdslayer (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 66,
+          "levelIds": [
+            "135037421"
+          ],
+          "checkedAt": "2026-10-29T15:05:12.843Z"
         }
       }
     },
