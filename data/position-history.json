@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T23:48:48.370Z",
+  "generatedAt": "2026-10-29T22:09:54.396Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -25626,6 +25626,11 @@
         "date": "2026-10-25",
         "position": 262,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 261,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "93e6b9e1-4bef-4cd3-876d-b15575cf48e1": [
@@ -32703,6 +32708,11 @@
         "date": "2026-10-25",
         "position": 259,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 258,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "e9d6b403-32df-446a-be0c-a9f5af4a6937": [
@@ -37211,6 +37221,11 @@
         "date": "2026-10-25",
         "position": 258,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 257,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "62fc2ce2-c539-40c8-8c15-97d3b05e50f6": [
@@ -265647,6 +265662,11 @@
         "date": "2026-10-25",
         "position": 248,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 262,
+        "reason": "Lowered from #248 to #262"
       }
     ],
     "c586d155-f78c-43f6-933c-3c11c4aa6600": [
@@ -313490,6 +313510,11 @@
         "date": "2026-10-25",
         "position": 260,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 259,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "a860a01b-2ba5-4da2-a943-3733486a044a": [
@@ -368613,6 +368638,11 @@
         "date": "2026-10-25",
         "position": 254,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 253,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "b0b509de-4eed-4415-b419-a02abdc481c1": [
@@ -369537,6 +369567,11 @@
         "date": "2026-10-25",
         "position": 261,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 260,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "1e6f8f99-ff7f-4eb6-aa44-c39247c905c9": [
@@ -372208,6 +372243,11 @@
         "date": "2026-10-25",
         "position": 256,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 255,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "92ce0a98-11ae-4aca-9188-a8a56c5bb02d": [
@@ -389809,6 +389849,11 @@
         "date": "2026-10-25",
         "position": 255,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 254,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "f25d76da-b519-4a4c-b82a-7cf81be6f505": [
@@ -391125,6 +391170,11 @@
         "date": "2026-10-25",
         "position": 252,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 251,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "3e47f031-58c7-46f2-adc0-14bb0cf8d5d4": [
@@ -394237,6 +394287,11 @@
         "date": "2026-10-25",
         "position": 249,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-29",
+        "position": 248,
+        "reason": "Moved up — no jokes was lowered to #262"
       }
     ],
     "4cfb07b5-3e6e-4d7e-9833-d7f013a85064": [
@@ -415071,7 +415126,6 @@
       "9bfdc11a-7f8c-403e-9fd6-14ad190ae543",
       "ed79ec06-0f20-41bb-b562-898e2cd4777f",
       "ccfefc6c-63e4-4f77-83d1-0e3b6a5103d7",
-      "aa76f56a-e2c2-4aab-af9e-ea212a8efc14",
       "6407dc1b-73a0-4a69-acb9-94d7af725253",
       "1134ab5e-1d06-46c5-9682-5738393eabe7",
       "d961c3f9-9889-4f71-ba1a-38135210f988",
@@ -415086,6 +415140,7 @@
       "a454218a-1fab-4485-a760-c0da1bfb80b4",
       "7875ce6f-ede9-400e-98d9-3bd55c56885c",
       "273cc0ae-4b73-4bac-9eb2-7d95f3e4fa08",
+      "aa76f56a-e2c2-4aab-af9e-ea212a8efc14",
       "c90c017b-e7f8-4055-98cb-08ac761d63ba",
       "5db466e4-ce58-4d84-b35f-19926fe33fcd",
       "19341d85-4050-424c-be1f-8096c033aad1",
@@ -418586,6 +418641,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-28T22:49:51.962406Z|1a846f78-002e-4ae2-a3da-0f14f1c1f3c6|{\"Raised\":{\"new_position\":664,\"old_position\":715}}"
+    "lastEventFingerprint": "2026-10-29T20:43:51.055462Z|aa76f56a-e2c2-4aab-af9e-ea212a8efc14|{\"Lowered\":{\"new_position\":262,\"old_position\":248}}"
   }
 }
