@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:13:25.272Z",
+  "generatedAt": "2026-10-30T15:59:07.011Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -5615,110 +5615,11 @@
       ]
     },
     {
-      "id": "72bf2c18-1299-408b-bca2-3da986956632",
-      "name": "KOSETSU",
-      "position": 51,
-      "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-      "points": 3171,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 109439644,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Slow-Paced",
-        "Ship",
-        "Wave"
-      ],
-      "description": "Strange wintery realism collab with incredibly talented creators like Bli & Motheye. Uses an incredibly strange atmospheric song and goes a little crazy with 2.2 shaders.",
-      "song": 971534,
-      "edel_enjoyment": 48,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-        "username": "dfe1326bd",
-        "global_name": "fwefwe"
-      },
-      "verifications": [
-        {
-          "id": "9bfa5ff0-d6e3-4bd9-a502-adb98997b36f",
-          "submitted_by": {
-            "id": "76723fe8-0c98-43a6-b4db-95f8383c2a3b",
-            "username": "taiago_",
-            "global_name": "taiago"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=hZ8vFX8z_BU",
-          "hide_video": false,
-          "achieved_at": "2024-08-25T00:18:12Z",
-          "created_at": "2024-09-29T22:38:05Z",
-          "updated_at": "2024-09-29T22:38:05Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "7cf01e57-c890-4f84-b4d4-74a94ae40b18",
-          "username": "04723dee8",
-          "global_name": "MothEye"
-        },
-        {
-          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
-          "username": "f63318486",
-          "global_name": "Bli"
-        },
-        {
-          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
-          "username": "b743d0986",
-          "global_name": "PBreakerGD"
-        },
-        {
-          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
-          "username": "d10bc1be6",
-          "global_name": "Adrone"
-        },
-        {
-          "id": "428fee96-f134-45ad-8b6a-2c3cc675ea1d",
-          "username": "ee3de1f4c",
-          "global_name": "SB72"
-        },
-        {
-          "id": "a7959943-716e-4789-bc90-cc2bbbe58688",
-          "username": "73a94fd3f",
-          "global_name": "Halo"
-        },
-        {
-          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
-          "username": "fc34f3948",
-          "global_name": "Boshet"
-        },
-        {
-          "id": "b504b78a-fadb-4255-af58-546fa01d0c17",
-          "username": "72b80fd01",
-          "global_name": "Arct"
-        },
-        {
-          "id": "e3ac5d01-4f30-415e-b84f-1adfe52a32b6",
-          "username": "b375ef38e",
-          "global_name": "Alekszzz"
-        },
-        {
-          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
-          "username": "gamerknight750",
-          "global_name": "GamerKnight750"
-        }
-      ]
-    },
-    {
       "id": "1178244d-6482-4ef5-a299-c022eb193757",
       "name": "CONVULSION",
-      "position": 52,
+      "position": 51,
       "publisher_id": "c092e36a-1acb-47a8-878a-4ea71b58e359",
-      "points": 3149,
+      "points": 3175,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113322063,
@@ -5765,9 +5666,9 @@
     {
       "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
       "name": "Through The Gates",
-      "position": 53,
+      "position": 52,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3128,
+      "points": 3154,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49072489,
@@ -5854,9 +5755,9 @@
     {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 54,
+      "position": 53,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3108,
+      "points": 3133,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5956,6 +5857,105 @@
           "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
           "username": "d1219692d",
           "global_name": "Hantein"
+        }
+      ]
+    },
+    {
+      "id": "72bf2c18-1299-408b-bca2-3da986956632",
+      "name": "KOSETSU",
+      "position": 54,
+      "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
+      "points": 3112,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 109439644,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Slow-Paced",
+        "Ship",
+        "Wave"
+      ],
+      "description": "Strange wintery realism collab with incredibly talented creators like Bli & Motheye. Uses an incredibly strange atmospheric song and goes a little crazy with 2.2 shaders.",
+      "song": 971534,
+      "edel_enjoyment": 48,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
+        "username": "dfe1326bd",
+        "global_name": "fwefwe"
+      },
+      "verifications": [
+        {
+          "id": "9bfa5ff0-d6e3-4bd9-a502-adb98997b36f",
+          "submitted_by": {
+            "id": "76723fe8-0c98-43a6-b4db-95f8383c2a3b",
+            "username": "taiago_",
+            "global_name": "taiago"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=hZ8vFX8z_BU",
+          "hide_video": false,
+          "achieved_at": "2024-08-25T00:18:12Z",
+          "created_at": "2024-09-29T22:38:05Z",
+          "updated_at": "2024-09-29T22:38:05Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "7cf01e57-c890-4f84-b4d4-74a94ae40b18",
+          "username": "04723dee8",
+          "global_name": "MothEye"
+        },
+        {
+          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
+          "username": "f63318486",
+          "global_name": "Bli"
+        },
+        {
+          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
+          "username": "b743d0986",
+          "global_name": "PBreakerGD"
+        },
+        {
+          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
+          "username": "d10bc1be6",
+          "global_name": "Adrone"
+        },
+        {
+          "id": "428fee96-f134-45ad-8b6a-2c3cc675ea1d",
+          "username": "ee3de1f4c",
+          "global_name": "SB72"
+        },
+        {
+          "id": "a7959943-716e-4789-bc90-cc2bbbe58688",
+          "username": "73a94fd3f",
+          "global_name": "Halo"
+        },
+        {
+          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
+          "username": "fc34f3948",
+          "global_name": "Boshet"
+        },
+        {
+          "id": "b504b78a-fadb-4255-af58-546fa01d0c17",
+          "username": "72b80fd01",
+          "global_name": "Arct"
+        },
+        {
+          "id": "e3ac5d01-4f30-415e-b84f-1adfe52a32b6",
+          "username": "b375ef38e",
+          "global_name": "Alekszzz"
+        },
+        {
+          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
+          "username": "gamerknight750",
+          "global_name": "GamerKnight750"
         }
       ]
     },
