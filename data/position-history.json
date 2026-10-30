@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T22:09:54.396Z",
+  "generatedAt": "2026-10-30T09:13:25.492Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -318558,6 +318558,11 @@
         "date": "2026-10-27",
         "position": 757,
         "reason": "Moved down — Withered Star was placed at #624"
+      },
+      {
+        "date": "2026-10-30",
+        "position": 758,
+        "reason": "Moved down — MANIC was placed at #729"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
@@ -359821,6 +359826,11 @@
         "date": "2026-10-27",
         "position": 1369,
         "reason": "Moved down — Withered Star was placed at #624"
+      },
+      {
+        "date": "2026-10-30",
+        "position": 1370,
+        "reason": "Moved down — MANIC was placed at #729"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -415607,6 +415617,7 @@
       "73fbb61f-a4bf-4c40-81d3-251aba49852e",
       "0ea1e006-3ba1-4217-b74b-680d0fddabc6",
       "508903de-ff05-4197-816e-9c664c2fdedb",
+      "cced5037-1c78-4ea0-a65c-40af4671497b",
       "16524340-cfaa-4951-8f5e-852fe9359395",
       "19cce8ca-6d0b-4edc-849e-6472d58811ab",
       "4a0be36e-dc48-477b-8b7d-691eb8cf3726",
@@ -416109,7 +416120,6 @@
       "7cad8984-ff25-4c38-9b69-983909a6ed81",
       "282b21dc-4b14-47bd-941b-b594422ff28a",
       "7640baad-3ea7-4027-a166-6ddd58857032",
-      "a3826760-d23f-4363-ae89-9f294794f16f",
       "38ad5ac6-dc63-4475-aab7-e4936378422f",
       "2da9aad9-b7f4-4181-8bbb-5b74c0712bdf",
       "8b63f2fb-f222-4407-a420-becb866c5c4b",
@@ -416134,6 +416144,7 @@
       "95d6a9f1-ab72-4fc2-9a3d-de750f20468c",
       "f1cb2ad3-b27a-4fc6-8cc7-80ea44696bf1",
       "e14a0028-9be0-4dc0-addf-9134f3b8d4e7",
+      "a3826760-d23f-4363-ae89-9f294794f16f",
       "c84c78f9-3265-4e5d-b855-b8b19f685f9d",
       "13eecb2d-4781-4945-ba87-8c59f256db65",
       "153a9af8-7647-4685-8a6d-6834f842a800",
@@ -418641,6 +418652,6 @@
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills"
     },
-    "lastEventFingerprint": "2026-10-29T20:43:51.055462Z|aa76f56a-e2c2-4aab-af9e-ea212a8efc14|{\"Lowered\":{\"new_position\":262,\"old_position\":248}}"
+    "lastEventFingerprint": "2026-10-30T04:46:34.181807Z|cced5037-1c78-4ea0-a65c-40af4671497b|{\"Placed\":{\"new_position\":729,\"status\":\"MainList\"}}"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T02:14:45.291Z",
+  "generatedAt": "2026-10-30T09:13:25.272Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -13594,7 +13594,40 @@
       "edel_enjoyment": 55,
       "is_edel_pending": true,
       "gddl_tier": null,
-      "nlw_tier": null
+      "nlw_tier": null,
+      "publisher": {
+        "id": "69394575-3534-49bf-8dab-f9c34be511e6",
+        "username": "yelda_gd",
+        "global_name": "YeldA"
+      },
+      "verifications": [
+        {
+          "id": "2f973e49-4950-44da-b4a6-8d75a13558e2",
+          "submitted_by": {
+            "id": "69394575-3534-49bf-8dab-f9c34be511e6",
+            "username": "yelda_gd",
+            "global_name": "YeldA"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/Dg9Q6s8EOlg?si=uJNh7Kx0dJ2PdbAu",
+          "hide_video": false,
+          "achieved_at": "2026-04-04T10:30:13Z",
+          "created_at": "2026-07-29T21:49:47.143269Z",
+          "updated_at": "2026-07-29T21:49:47.143269Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "69394575-3534-49bf-8dab-f9c34be511e6",
+          "username": "yelda_gd",
+          "global_name": "YeldA"
+        },
+        {
+          "id": "327368d8-9ca7-4298-ac12-4701f0e567ff",
+          "username": "0e6f5413b",
+          "global_name": "puhyuu"
+        }
+      ]
     },
     {
       "id": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
