@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T17:54:25.288Z",
+  "generatedAt": "2026-10-30T21:53:21.921Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -25336,6 +25336,14 @@
           "verified": false
         },
         {
+          "levelId": "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
+          "levelName": "Diabolic ClubStep",
+          "position": 108,
+          "achievedAt": "2026-10-22T20:56:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ZQI-2fvP0to",
+          "verified": false
+        },
+        {
           "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
           "levelName": "Natural Disaster",
           "position": 117,
@@ -35054,6 +35062,27 @@
           "position": 121,
           "achievedAt": "2025-05-12T01:22:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=M3XpN4AMuxg",
+          "verified": false
+        }
+      ]
+    },
+    "647e0eb4-8ac4-4d0e-a1f1-3f24fa73868f": {
+      "name": "Crupice",
+      "levels": [
+        {
+          "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
+          "levelName": "Firework",
+          "position": 53,
+          "achievedAt": "2026-10-30T00:18:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1ttPuuKUHM8",
+          "verified": false
+        },
+        {
+          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
+          "levelName": "LIMBO",
+          "position": 79,
+          "achievedAt": "2026-06-03T21:08:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=OnTCXEnns5E",
           "verified": false
         }
       ]
@@ -46435,19 +46464,6 @@
           "position": 79,
           "achievedAt": "2026-05-25T07:12:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=dlT5pR518I0",
-          "verified": false
-        }
-      ]
-    },
-    "647e0eb4-8ac4-4d0e-a1f1-3f24fa73868f": {
-      "name": "Crupice",
-      "levels": [
-        {
-          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
-          "levelName": "LIMBO",
-          "position": 79,
-          "achievedAt": "2026-06-03T21:08:09Z",
-          "videoUrl": "https://www.youtube.com/watch?v=OnTCXEnns5E",
           "verified": false
         }
       ]
