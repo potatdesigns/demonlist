@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T07:40:45.510Z",
+  "generatedAt": "2026-10-31T18:09:30.692Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -418698,6 +418698,6 @@
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills",
       "5889a9e8-0220-4f6e-805d-3cf660da8c11": "Destroy"
     },
-    "lastEventFingerprint": "2026-10-31T06:09:01.924877Z|007000f3-c6b4-440a-a4b3-af7e86e132e9|{\"Swapped\":{\"upper_position\":52,\"upper_level\":{\"id\":\"007000f3-c6b4-440a-a4b3-af7e86e132e9\",\"name\":\"Firework\",\"level_id\":75206202,\"two_player\":false},\"other_level\":{\"id\":\"213ff25e-eac6-47fb-baee-6180b436ec8d\",\"name\":\"Through The Gates\",\"level_id\":49072489,\"two_player\":false}}}"
+    "lastEventFingerprint": "2026-10-31T16:43:52.617591Z|1da7e494-960b-4d17-ace1-e87540357928|{\"Removed\":{\"old_position\":null}}"
   }
 }
