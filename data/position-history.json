@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T18:09:30.692Z",
+  "generatedAt": "2026-10-31T22:00:56.386Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -203517,6 +203517,11 @@
         "date": "2026-10-25",
         "position": 544,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-31",
+        "position": 543,
+        "reason": "Moved up — Edelweiss was lowered to #555"
       }
     ],
     "d2e7ae0f-e5f1-476b-96f3-b20511d1bcae": [
@@ -225727,6 +225732,11 @@
         "date": "2026-10-25",
         "position": 535,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-31",
+        "position": 534,
+        "reason": "Moved up — Edelweiss was lowered to #555"
       }
     ],
     "2a933b79-f577-4842-9c8a-224a134b2506": [
@@ -232088,6 +232098,11 @@
         "date": "2026-10-25",
         "position": 539,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-31",
+        "position": 538,
+        "reason": "Moved up — Edelweiss was lowered to #555"
       }
     ],
     "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc": [
@@ -333315,6 +333330,11 @@
         "date": "2026-10-25",
         "position": 537,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-10-31",
+        "position": 536,
+        "reason": "Moved up — Edelweiss was lowered to #555"
       }
     ],
     "ac489d55-f4c5-4237-843d-54b9eda8f1b0": [
@@ -415467,7 +415487,6 @@
       "2e3ab25d-7517-48f4-a319-0dcaee9dd55e",
       "dd932c5c-ab90-421c-9b46-a28457f0ed40",
       "304f0f25-1c21-4c64-b66a-1a0fd4737473",
-      "9ee5a3ae-9879-45f7-a6c2-6bda86fa6d2f",
       "8c8280a7-7fe4-4b67-b17d-eb06cd1bddab",
       "cf52011e-9d63-4045-bcd4-65874fa414d4",
       "f4a5c70e-fe96-48e9-9ff1-448805bd4541",
@@ -415489,6 +415508,7 @@
       "f2afb60e-64fc-4663-9de3-77884da18af3",
       "4dea8926-65d8-43ba-97fa-3416bc7dc41b",
       "de185046-3428-44ba-accf-825ea30901e2",
+      "9ee5a3ae-9879-45f7-a6c2-6bda86fa6d2f",
       "de0bec08-d405-4b57-8ce4-953e95a92520",
       "c127a9b9-0fd5-4eb4-8ca5-c09d737ac6a3",
       "aa9a818c-983d-4f3c-b859-e474ceea1b7f",
@@ -418698,6 +418718,6 @@
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills",
       "5889a9e8-0220-4f6e-805d-3cf660da8c11": "Destroy"
     },
-    "lastEventFingerprint": "2026-10-31T16:43:52.617591Z|1da7e494-960b-4d17-ace1-e87540357928|{\"Removed\":{\"old_position\":null}}"
+    "lastEventFingerprint": "2026-10-31T21:33:44.263526Z|9ee5a3ae-9879-45f7-a6c2-6bda86fa6d2f|{\"Lowered\":{\"new_position\":555,\"old_position\":534}}"
   }
 }
