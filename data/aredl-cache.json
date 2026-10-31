@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T05:49:21.890Z",
+  "generatedAt": "2026-10-31T07:40:45.280Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -5664,100 +5664,11 @@
       "creators": []
     },
     {
-      "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
-      "name": "Through The Gates",
-      "position": 52,
-      "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3154,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 49072489,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Fast-Paced",
-        "Timings",
-        "Chokepoints",
-        "Unbalanced",
-        "Learny",
-        "High CPS",
-        "Gimmicky",
-        "Nerve Control",
-        "Duals",
-        "Overall"
-      ],
-      "description": "An initially hacked-verified level in 2018 that went through several stages. Even though it was verified in 2023, it took another three years for the level to get rated alongside other historical levels. Some say this level is a spiritual successor to Thinking Space.",
-      "song": 39464,
-      "edel_enjoyment": 58.25,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "937fa816-514d-402b-82e7-6b2bac38f687",
-        "username": "2e02d23df",
-        "global_name": "TeamTheDashers"
-      },
-      "verifications": [
-        {
-          "id": "ec4049b3-a5e2-4171-967c-efd8eaf74e6c",
-          "submitted_by": {
-            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
-            "username": "zoinkgd",
-            "global_name": "Zoink"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/4yHA6jux5UI?si=jjdP4iJS4zftkoM7",
-          "hide_video": false,
-          "achieved_at": "2023-10-13T00:24:58Z",
-          "created_at": "2026-02-19T04:14:12.965136Z",
-          "updated_at": "2026-02-19T04:14:12.965136Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "38ef4448-3361-4708-a7fc-9ad2d90c5d45",
-          "username": "7c244bc6d",
-          "global_name": "azuri "
-        },
-        {
-          "id": "53958aaa-8ab5-47d9-bb11-df090fe80739",
-          "username": "ad2aa390e",
-          "global_name": "Tan1c"
-        },
-        {
-          "id": "66e390d8-a571-47d8-8781-c36bdaf07500",
-          "username": "2deefb969",
-          "global_name": "Maestro Illuminati"
-        },
-        {
-          "id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
-          "username": "2b15dc523",
-          "global_name": "Exen"
-        },
-        {
-          "id": "aa3deaa4-b281-4817-88da-b06a242cc679",
-          "username": "fa7cc0da5",
-          "global_name": "Kentakiman"
-        },
-        {
-          "id": "d9f7795f-8a4d-4104-82ef-377656c00d06",
-          "username": "ca211449d",
-          "global_name": "KAWOC"
-        },
-        {
-          "id": "e1294726-2c9f-49ee-aa1c-d0ccbb69bbd5",
-          "username": "8938cfe0b",
-          "global_name": "Alex200371"
-        }
-      ]
-    },
-    {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 53,
+      "position": 52,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3133,
+      "points": 3154,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5857,6 +5768,95 @@
           "id": "a90caf20-8bb2-491f-a88c-b4caf5cccde1",
           "username": "d1219692d",
           "global_name": "Hantein"
+        }
+      ]
+    },
+    {
+      "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
+      "name": "Through The Gates",
+      "position": 53,
+      "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
+      "points": 3133,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 49072489,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
+        "High CPS",
+        "Gimmicky",
+        "Nerve Control",
+        "Duals",
+        "Overall"
+      ],
+      "description": "An initially hacked-verified level in 2018 that went through several stages. Even though it was verified in 2023, it took another three years for the level to get rated alongside other historical levels. Some say this level is a spiritual successor to Thinking Space.",
+      "song": 39464,
+      "edel_enjoyment": 58.25,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "937fa816-514d-402b-82e7-6b2bac38f687",
+        "username": "2e02d23df",
+        "global_name": "TeamTheDashers"
+      },
+      "verifications": [
+        {
+          "id": "ec4049b3-a5e2-4171-967c-efd8eaf74e6c",
+          "submitted_by": {
+            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
+            "username": "zoinkgd",
+            "global_name": "Zoink"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/4yHA6jux5UI?si=jjdP4iJS4zftkoM7",
+          "hide_video": false,
+          "achieved_at": "2023-10-13T00:24:58Z",
+          "created_at": "2026-02-19T04:14:12.965136Z",
+          "updated_at": "2026-02-19T04:14:12.965136Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "38ef4448-3361-4708-a7fc-9ad2d90c5d45",
+          "username": "7c244bc6d",
+          "global_name": "azuri "
+        },
+        {
+          "id": "53958aaa-8ab5-47d9-bb11-df090fe80739",
+          "username": "ad2aa390e",
+          "global_name": "Tan1c"
+        },
+        {
+          "id": "66e390d8-a571-47d8-8781-c36bdaf07500",
+          "username": "2deefb969",
+          "global_name": "Maestro Illuminati"
+        },
+        {
+          "id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
+          "username": "2b15dc523",
+          "global_name": "Exen"
+        },
+        {
+          "id": "aa3deaa4-b281-4817-88da-b06a242cc679",
+          "username": "fa7cc0da5",
+          "global_name": "Kentakiman"
+        },
+        {
+          "id": "d9f7795f-8a4d-4104-82ef-377656c00d06",
+          "username": "ca211449d",
+          "global_name": "KAWOC"
+        },
+        {
+          "id": "e1294726-2c9f-49ee-aa1c-d0ccbb69bbd5",
+          "username": "8938cfe0b",
+          "global_name": "Alex200371"
         }
       ]
     },
