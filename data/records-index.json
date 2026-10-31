@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T21:53:21.921Z",
+  "generatedAt": "2026-10-31T03:45:07.149Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7506,6 +7506,155 @@
         }
       ]
     },
+    "89e11639-5d84-4288-a62c-4c6be0bdafcf": {
+      "name": "Serpentical",
+      "levels": [
+        {
+          "levelId": "9ca78081-b7f1-4cd4-b5f8-c87ec4279a3c",
+          "levelName": "Penumbral",
+          "position": 19,
+          "achievedAt": "2026-10-26T18:46:48Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LnTvr2XGrGY",
+          "verified": false
+        },
+        {
+          "levelId": "45036980-77db-4bb5-9720-59ef3001a12e",
+          "levelName": "andromeda",
+          "position": 20,
+          "achievedAt": "2026-09-08T17:29:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=K-nmqBvqboY",
+          "verified": false
+        },
+        {
+          "levelId": "298bb7f4-38e4-4376-b8b6-8659cf2d2c00",
+          "levelName": "Anathema",
+          "position": 23,
+          "achievedAt": "2025-04-24T08:00:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=r5Vvato8uNU",
+          "verified": false
+        },
+        {
+          "levelId": "dbafbb7d-f925-406c-95e1-7298733def71",
+          "levelName": "Avernus",
+          "position": 25,
+          "achievedAt": "2025-06-03T10:32:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=vefvpRl0Kd4",
+          "verified": false
+        },
+        {
+          "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
+          "levelName": "Acheron",
+          "position": 27,
+          "achievedAt": "2025-04-06T19:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=_ec1UztPW6g",
+          "verified": false
+        },
+        {
+          "levelId": "e564dff8-304b-401d-9376-63528b7ba279",
+          "levelName": "Tunnel of Despair",
+          "position": 31,
+          "achievedAt": "2025-03-03T14:21:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5IotMZMs-xc",
+          "verified": false
+        },
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2025-06-09T16:36:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=J3jXFQmUtAk",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 40,
+          "achievedAt": "2024-07-08T19:00:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=aEpAn4mvA6o",
+          "verified": false
+        },
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 61,
+          "achievedAt": "2025-07-07T10:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=0YwdEluuvZ4",
+          "verified": false
+        },
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 63,
+          "achievedAt": "2025-03-30T16:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zgQutfo33U8",
+          "verified": false
+        },
+        {
+          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
+          "levelName": "Saul Goodman",
+          "position": 64,
+          "achievedAt": "2025-05-18T09:41:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Am_qxFneuIE",
+          "verified": false
+        },
+        {
+          "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
+          "levelName": "The Hallucination",
+          "position": 66,
+          "achievedAt": "2025-04-14T07:28:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=UST8Ge6qR4A",
+          "verified": false
+        },
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 74,
+          "achievedAt": "2025-09-09T19:06:19Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YYwPOLTNfU0",
+          "verified": false
+        },
+        {
+          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
+          "levelName": "walter white",
+          "position": 88,
+          "achievedAt": "2025-07-21T17:20:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=AfvPMsSVD5U",
+          "verified": false
+        },
+        {
+          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
+          "levelName": "Natural Disaster",
+          "position": 117,
+          "achievedAt": "2025-04-09T16:04:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7uVp4WL-7BM",
+          "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2025-07-21T17:20:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3WKMhrzkTao",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2024-08-23T14:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dmkRbiWfO_Q",
+          "verified": false
+        },
+        {
+          "levelId": "68308581-f1b6-4c0f-8851-82449ab1977f",
+          "levelName": "The Paroxysm of Rage",
+          "position": 144,
+          "achievedAt": "2024-07-15T10:59:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=nQyt6Gn6HvQ",
+          "verified": false
+        }
+      ]
+    },
     "3a4cb842-c679-40fc-ae61-a900674c67e7": {
       "name": "GuillExprex52",
       "levels": [
@@ -8966,147 +9115,6 @@
           "position": 134,
           "achievedAt": "2025-07-27T13:44:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=Tw-wAyH8dSU",
-          "verified": false
-        }
-      ]
-    },
-    "89e11639-5d84-4288-a62c-4c6be0bdafcf": {
-      "name": "Serpentical",
-      "levels": [
-        {
-          "levelId": "45036980-77db-4bb5-9720-59ef3001a12e",
-          "levelName": "andromeda",
-          "position": 20,
-          "achievedAt": "2026-09-08T17:29:01Z",
-          "videoUrl": "https://www.youtube.com/watch?v=K-nmqBvqboY",
-          "verified": false
-        },
-        {
-          "levelId": "298bb7f4-38e4-4376-b8b6-8659cf2d2c00",
-          "levelName": "Anathema",
-          "position": 23,
-          "achievedAt": "2025-04-24T08:00:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=r5Vvato8uNU",
-          "verified": false
-        },
-        {
-          "levelId": "dbafbb7d-f925-406c-95e1-7298733def71",
-          "levelName": "Avernus",
-          "position": 25,
-          "achievedAt": "2025-06-03T10:32:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=vefvpRl0Kd4",
-          "verified": false
-        },
-        {
-          "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
-          "levelName": "Acheron",
-          "position": 27,
-          "achievedAt": "2025-04-06T19:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=_ec1UztPW6g",
-          "verified": false
-        },
-        {
-          "levelId": "e564dff8-304b-401d-9376-63528b7ba279",
-          "levelName": "Tunnel of Despair",
-          "position": 31,
-          "achievedAt": "2025-03-03T14:21:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=5IotMZMs-xc",
-          "verified": false
-        },
-        {
-          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
-          "levelName": "Slaughterhouse ",
-          "position": 38,
-          "achievedAt": "2025-06-09T16:36:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=J3jXFQmUtAk",
-          "verified": false
-        },
-        {
-          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
-          "levelName": "KOCMOC",
-          "position": 40,
-          "achievedAt": "2024-07-08T19:00:07Z",
-          "videoUrl": "https://www.youtube.com/watch?v=aEpAn4mvA6o",
-          "verified": false
-        },
-        {
-          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
-          "levelName": "poocubed",
-          "position": 61,
-          "achievedAt": "2025-07-07T10:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=0YwdEluuvZ4",
-          "verified": false
-        },
-        {
-          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
-          "levelName": "MINUSdry",
-          "position": 63,
-          "achievedAt": "2025-03-30T16:30:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=zgQutfo33U8",
-          "verified": false
-        },
-        {
-          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
-          "levelName": "Saul Goodman",
-          "position": 64,
-          "achievedAt": "2025-05-18T09:41:28Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Am_qxFneuIE",
-          "verified": false
-        },
-        {
-          "levelId": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
-          "levelName": "The Hallucination",
-          "position": 66,
-          "achievedAt": "2025-04-14T07:28:28Z",
-          "videoUrl": "https://www.youtube.com/watch?v=UST8Ge6qR4A",
-          "verified": false
-        },
-        {
-          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
-          "levelName": "Sevvend Clubstep",
-          "position": 74,
-          "achievedAt": "2025-09-09T19:06:19Z",
-          "videoUrl": "https://www.youtube.com/watch?v=YYwPOLTNfU0",
-          "verified": false
-        },
-        {
-          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
-          "levelName": "walter white",
-          "position": 88,
-          "achievedAt": "2025-07-21T17:20:00Z",
-          "videoUrl": "https://www.youtube.com/watch?v=AfvPMsSVD5U",
-          "verified": false
-        },
-        {
-          "levelId": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
-          "levelName": "Natural Disaster",
-          "position": 117,
-          "achievedAt": "2025-04-09T16:04:38Z",
-          "videoUrl": "https://www.youtube.com/watch?v=7uVp4WL-7BM",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 122,
-          "achievedAt": "2025-07-21T17:20:00Z",
-          "videoUrl": "https://www.youtube.com/watch?v=3WKMhrzkTao",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 131,
-          "achievedAt": "2024-08-23T14:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=dmkRbiWfO_Q",
-          "verified": false
-        },
-        {
-          "levelId": "68308581-f1b6-4c0f-8851-82449ab1977f",
-          "levelName": "The Paroxysm of Rage",
-          "position": 144,
-          "achievedAt": "2024-07-15T10:59:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=nQyt6Gn6HvQ",
           "verified": false
         }
       ]
@@ -12292,6 +12300,14 @@
           "position": 40,
           "achievedAt": "2025-08-05T06:31:46.218511Z",
           "videoUrl": "https://www.youtube.com/watch?v=CM09AwNwM7g",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 46,
+          "achievedAt": "2026-10-13T16:05:04Z",
+          "videoUrl": "https://www.twitch.tv/videos/2899757142",
           "verified": false
         },
         {
@@ -26929,6 +26945,43 @@
         }
       ]
     },
+    "02b7fd65-7faa-4cfb-9f5e-1203fd229348": {
+      "name": "Calinos",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-10-22T16:00:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=k_PcLPg_lDE",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 46,
+          "achievedAt": "2026-05-10T16:39:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ewtG_l8PfgU",
+          "verified": false
+        },
+        {
+          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
+          "levelName": "NOMAD",
+          "position": 56,
+          "achievedAt": "2026-08-12T19:46:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=gfR9WuM5628",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2026-04-24T12:59:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=03hYuFTllH0",
+          "verified": false
+        }
+      ]
+    },
     "42638be1-95e1-4442-8cd9-df7b0a4e25bc": {
       "name": "kim",
       "levels": [
@@ -31643,6 +31696,67 @@
         }
       ]
     },
+    "49f6415c-4067-48c4-b648-8f7a88454fad": {
+      "name": "Jarmuż",
+      "levels": [
+        {
+          "levelId": "ca07a223-dd23-437a-8aed-03a5df95f863",
+          "levelName": "zorin",
+          "position": 44,
+          "achievedAt": "2026-10-19T19:47:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=KCLPtdPVLW8",
+          "verified": false
+        },
+        {
+          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
+          "levelName": "Saul Goodman",
+          "position": 64,
+          "achievedAt": "2026-01-15T10:47:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=u0BQ8UrGd-o",
+          "verified": false
+        },
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 86,
+          "achievedAt": "2026-04-04T19:57:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IMeI8_CE5X0",
+          "verified": false
+        },
+        {
+          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
+          "levelName": "Delta",
+          "position": 115,
+          "achievedAt": "2026-05-25T14:48:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=FZgGPptayrw",
+          "verified": false
+        },
+        {
+          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
+          "levelName": "NETWORK (Agat3)",
+          "position": 124,
+          "achievedAt": "2025-07-15T17:18:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Kw5PaXZtze4",
+          "verified": false
+        },
+        {
+          "levelId": "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
+          "levelName": "SPIRIT OVERCLOCK",
+          "position": 132,
+          "achievedAt": "2026-08-21T22:05:27Z",
+          "videoUrl": "https://www.youtube.com/watch?v=tfWZ450HFKw",
+          "verified": false
+        },
+        {
+          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
+          "levelName": "Graceful",
+          "position": 141,
+          "achievedAt": "2026-04-27T15:36:14Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kuY1NSewYp0",
+          "verified": false
+        }
+      ]
+    },
     "c320f158-49f3-48a4-9667-f1063627e8b5": {
       "name": "Slijee",
       "levels": [
@@ -32166,35 +32280,6 @@
           "position": 131,
           "achievedAt": "2026-04-01T15:19:31Z",
           "videoUrl": "https://www.youtube.com/watch?v=UGywrSdcAow",
-          "verified": false
-        }
-      ]
-    },
-    "02b7fd65-7faa-4cfb-9f5e-1203fd229348": {
-      "name": "Calinos",
-      "levels": [
-        {
-          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
-          "levelName": "Sakupen Circles",
-          "position": 46,
-          "achievedAt": "2026-05-10T16:39:16Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ewtG_l8PfgU",
-          "verified": false
-        },
-        {
-          "levelId": "56d52163-e3e2-4357-9843-29002b100e07",
-          "levelName": "NOMAD",
-          "position": 56,
-          "achievedAt": "2026-08-12T19:46:40Z",
-          "videoUrl": "https://www.youtube.com/watch?v=gfR9WuM5628",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 131,
-          "achievedAt": "2026-04-24T12:59:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=03hYuFTllH0",
           "verified": false
         }
       ]
@@ -39785,59 +39870,6 @@
           "position": 137,
           "achievedAt": "2025-04-17T14:56:46Z",
           "videoUrl": "https://www.youtube.com/watch?v=r1w4uExK4MU",
-          "verified": false
-        }
-      ]
-    },
-    "49f6415c-4067-48c4-b648-8f7a88454fad": {
-      "name": "Jarmuż",
-      "levels": [
-        {
-          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
-          "levelName": "Saul Goodman",
-          "position": 64,
-          "achievedAt": "2026-01-15T10:47:59Z",
-          "videoUrl": "https://www.youtube.com/watch?v=u0BQ8UrGd-o",
-          "verified": false
-        },
-        {
-          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
-          "levelName": "The Plunge",
-          "position": 86,
-          "achievedAt": "2026-04-04T19:57:50Z",
-          "videoUrl": "https://www.youtube.com/watch?v=IMeI8_CE5X0",
-          "verified": false
-        },
-        {
-          "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
-          "levelName": "Delta",
-          "position": 115,
-          "achievedAt": "2026-05-25T14:48:32Z",
-          "videoUrl": "https://www.youtube.com/watch?v=FZgGPptayrw",
-          "verified": false
-        },
-        {
-          "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
-          "levelName": "NETWORK (Agat3)",
-          "position": 124,
-          "achievedAt": "2025-07-15T17:18:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Kw5PaXZtze4",
-          "verified": false
-        },
-        {
-          "levelId": "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3",
-          "levelName": "SPIRIT OVERCLOCK",
-          "position": 132,
-          "achievedAt": "2026-08-21T22:05:27Z",
-          "videoUrl": "https://www.youtube.com/watch?v=tfWZ450HFKw",
-          "verified": false
-        },
-        {
-          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
-          "levelName": "Graceful",
-          "position": 141,
-          "achievedAt": "2026-04-27T15:36:14Z",
-          "videoUrl": "https://www.youtube.com/watch?v=kuY1NSewYp0",
           "verified": false
         }
       ]
@@ -49214,6 +49246,19 @@
         }
       ]
     },
+    "647dd9c1-837d-4939-b7f3-92c6d1d3e0cb": {
+      "name": "jbmoon",
+      "levels": [
+        {
+          "levelId": "59a49d83-77fd-4890-a04d-689f1947ad16",
+          "levelName": "Damascus",
+          "position": 91,
+          "achievedAt": "2026-10-27T04:41:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=38QAYqGj6ck",
+          "verified": false
+        }
+      ]
+    },
     "0cad9cf1-6525-4f39-8de5-ddb2ff981cb7": {
       "name": "AldarenGMD",
       "levels": [
@@ -56053,6 +56098,19 @@
           "position": 134,
           "achievedAt": "2026-02-23T22:27:33Z",
           "videoUrl": "https://www.youtube.com/watch?v=ziIyzSUg5WA",
+          "verified": false
+        }
+      ]
+    },
+    "4263d8dd-9dc6-4fc9-8fcc-e56d3f1bd3ea": {
+      "name": "GraftonGD.png",
+      "levels": [
+        {
+          "levelId": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
+          "levelName": "Waterfall",
+          "position": 113,
+          "achievedAt": "2026-10-26T19:45:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=HDHxDJ1T2ek",
           "verified": false
         }
       ]
