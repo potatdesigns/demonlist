@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T00:45:40.255Z",
+  "generatedAt": "2026-11-01T06:59:20.195Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -1971,7 +1971,7 @@
             "global_name": "Hqmy"
           },
           "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=AO--mVVFtKI",
+          "video_url": "https://www.youtube.com/live/TIlpPnjE-KA?si=F7ch1zs2Y19ZLLDx",
           "hide_video": false,
           "achieved_at": "2025-03-17T01:36:39Z",
           "created_at": "2025-04-21T05:10:00Z",
@@ -5664,11 +5664,67 @@
       "creators": []
     },
     {
+      "id": "7081880b-fe8c-4d3f-8557-a895b7aee521",
+      "name": "Snowbound",
+      "position": 52,
+      "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+      "points": 3154,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 120289520,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "XL",
+        "Fast-Paced",
+        "Chokepoints",
+        "Learny",
+        "High CPS",
+        "Flow",
+        "Nerve Control",
+        "Wave"
+      ],
+      "description": "Snow-themed XL solo extreme by amplitron, featuring an atmospheric art-design styled decoration. This level's pacing remains calm until the drop, where slow turns to flow, rapidly transitioning into fast-paced and High-CPS gameplay complementing its drum and bass track.",
+      "song": 1208210,
+      "edel_enjoyment": 60,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+        "username": "9041c2771",
+        "global_name": "Amplitron"
+      },
+      "verifications": [
+        {
+          "id": "2237005e-7028-4fee-9e9c-caefa7b2a961",
+          "submitted_by": {
+            "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+            "username": "9041c2771",
+            "global_name": "Amplitron"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=cjHwgbtAkXU",
+          "hide_video": false,
+          "achieved_at": "2025-06-04T19:14:44Z",
+          "created_at": "2026-01-15T04:50:12.660341Z",
+          "updated_at": "2026-01-15T04:50:12.660341Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
+          "username": "9041c2771",
+          "global_name": "Amplitron"
+        }
+      ]
+    },
+    {
       "id": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "name": "Firework",
-      "position": 52,
+      "position": 53,
       "publisher_id": "08caa61e-712b-43ee-8072-7926a36253a9",
-      "points": 3154,
+      "points": 3133,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 75206202,
@@ -5774,9 +5830,9 @@
     {
       "id": "213ff25e-eac6-47fb-baee-6180b436ec8d",
       "name": "Through The Gates",
-      "position": 53,
+      "position": 54,
       "publisher_id": "937fa816-514d-402b-82e7-6b2bac38f687",
-      "points": 3133,
+      "points": 3112,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 49072489,
@@ -5863,9 +5919,9 @@
     {
       "id": "72bf2c18-1299-408b-bca2-3da986956632",
       "name": "KOSETSU",
-      "position": 54,
+      "position": 55,
       "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-      "points": 3112,
+      "points": 3092,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 109439644,
@@ -5962,9 +6018,9 @@
     {
       "id": "210ae17a-e6bf-4851-91be-85501194dbf3",
       "name": "Voltage (ThePurgatory)",
-      "position": 55,
+      "position": 56,
       "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
-      "points": 3092,
+      "points": 3072,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131599104,
@@ -6093,9 +6149,9 @@
     {
       "id": "56d52163-e3e2-4357-9843-29002b100e07",
       "name": "NOMAD",
-      "position": 56,
+      "position": 57,
       "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-      "points": 3072,
+      "points": 3052,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115077305,
@@ -6148,62 +6204,6 @@
           "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
           "username": "reesevt",
           "global_name": "reesevt"
-        }
-      ]
-    },
-    {
-      "id": "7081880b-fe8c-4d3f-8557-a895b7aee521",
-      "name": "Snowbound",
-      "position": 57,
-      "publisher_id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-      "points": 3052,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 120289520,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "XL",
-        "Fast-Paced",
-        "Chokepoints",
-        "Learny",
-        "High CPS",
-        "Flow",
-        "Nerve Control",
-        "Wave"
-      ],
-      "description": "Snow-themed XL solo extreme by amplitron, featuring an atmospheric art-design styled decoration. This level's pacing remains calm until the drop, where slow turns to flow, rapidly transitioning into fast-paced and High-CPS gameplay complementing its drum and bass track.",
-      "song": 1208210,
-      "edel_enjoyment": 60,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-        "username": "9041c2771",
-        "global_name": "Amplitron"
-      },
-      "verifications": [
-        {
-          "id": "2237005e-7028-4fee-9e9c-caefa7b2a961",
-          "submitted_by": {
-            "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-            "username": "9041c2771",
-            "global_name": "Amplitron"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=cjHwgbtAkXU",
-          "hide_video": false,
-          "achieved_at": "2025-06-04T19:14:44Z",
-          "created_at": "2026-01-15T04:50:12.660341Z",
-          "updated_at": "2026-01-15T04:50:12.660341Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "a1ac4924-9f5d-416b-8a21-991aea45a2b4",
-          "username": "9041c2771",
-          "global_name": "Amplitron"
         }
       ]
     },
