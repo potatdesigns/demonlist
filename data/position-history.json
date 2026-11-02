@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T06:59:20.487Z",
+  "generatedAt": "2026-11-02T08:44:46.941Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -216649,6 +216649,11 @@
         "date": "2026-10-25",
         "position": 561,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-11-02",
+        "position": 560,
+        "reason": "Moved up — IMOISTAR was lowered to #577"
       }
     ],
     "304f0f25-1c21-4c64-b66a-1a0fd4737473": [
@@ -221268,6 +221273,11 @@
         "date": "2026-10-25",
         "position": 577,
         "reason": "Moved down — ULTRA dimension was placed at #227"
+      },
+      {
+        "date": "2026-11-02",
+        "position": 576,
+        "reason": "Moved up — IMOISTAR was lowered to #577"
       }
     ],
     "2e3ab25d-7517-48f4-a319-0dcaee9dd55e": [
@@ -415596,7 +415606,6 @@
       "9ee5a3ae-9879-45f7-a6c2-6bda86fa6d2f",
       "de0bec08-d405-4b57-8ce4-953e95a92520",
       "c127a9b9-0fd5-4eb4-8ca5-c09d737ac6a3",
-      "aa9a818c-983d-4f3c-b859-e474ceea1b7f",
       "99d8ef40-6a70-48c9-b391-537e2306bc23",
       "87b0b0a1-c13f-4e9e-aa91-224308c81340",
       "3d21d152-f67a-4698-a4a8-225b1fabbc77",
@@ -415616,6 +415625,7 @@
       "0699ae3e-703c-46f3-ab7c-835e14034561",
       "a8263edf-9774-476f-985c-060206c073a2",
       "a8fdc010-2fe8-46cb-b2d3-8638579233ca",
+      "aa9a818c-983d-4f3c-b859-e474ceea1b7f",
       "fdcc153d-eaf9-4ff0-89bc-adcfe8fa1005",
       "01036ac4-3526-45a3-84b7-b758ad24641c",
       "cde819ab-a221-41d2-acdd-3fa2952df246",
@@ -416195,6 +416205,7 @@
       "7a61e705-8154-4034-aad1-5a093a33475e",
       "572a76bc-44d9-4fca-9bfc-16d5107fe397",
       "dfd1fdab-4ebf-462a-a45f-332eeaa0c7fb",
+      "79a36bdf-e70d-475e-9759-f2707fbac2d3",
       "cb144dbe-e338-4674-b186-399579b5c0e9",
       "b00cde27-c8f5-426a-a70c-4b753a66cc01",
       "618ef0dc-3685-4a7f-9916-8e9df2f2e64d",
@@ -416260,7 +416271,6 @@
       "d89bd3e7-796d-423c-8612-680f45628782",
       "4ff6ad74-6e69-45e7-aa7f-936a5b421819",
       "6e947a59-59a8-4f6c-8619-93f45b89b9e9",
-      "79a36bdf-e70d-475e-9759-f2707fbac2d3",
       "91b822bd-c3b5-44bc-8571-be44fb50002d",
       "297f5b69-af0b-4752-8e60-7bab41ea3812",
       "3183db88-2a29-494c-aca8-e3e9b0f7f4be",
@@ -418801,8 +418811,9 @@
       "1da7e494-960b-4d17-ace1-e87540357928": "Autumn Season",
       "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9": "Friend Zone",
       "323af988-b222-4575-9ed5-3cf2d5ed82cd": "Neon Thrills",
-      "5889a9e8-0220-4f6e-805d-3cf660da8c11": "Destroy"
+      "5889a9e8-0220-4f6e-805d-3cf660da8c11": "Destroy",
+      "3eb14f3a-0e50-43f9-bc10-a3435cfcad02": "PRECISIONISKEY"
     },
-    "lastEventFingerprint": "2026-11-01T02:52:26.354452Z|7081880b-fe8c-4d3f-8557-a895b7aee521|{\"Raised\":{\"new_position\":52,\"old_position\":57}}"
+    "lastEventFingerprint": "2026-11-02T05:46:44.218250Z|aa9a818c-983d-4f3c-b859-e474ceea1b7f|{\"Lowered\":{\"new_position\":577,\"old_position\":558}}"
   }
 }
