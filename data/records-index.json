@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T14:32:56.807Z",
+  "generatedAt": "2026-11-03T00:22:32.573Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -9392,6 +9392,14 @@
           "verified": false
         },
         {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 61,
+          "achievedAt": "2026-11-01T21:51:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=lIo9OKoj5VM",
+          "verified": false
+        },
+        {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
           "levelName": "Saul Goodman",
           "position": 64,
@@ -11726,6 +11734,14 @@
           "verified": false
         },
         {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 46,
+          "achievedAt": "2026-10-29T03:03:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=glf2rvg_Fhw",
+          "verified": false
+        },
+        {
           "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
           "levelName": "poocubed",
           "position": 61,
@@ -11817,6 +11833,14 @@
           "achievedAt": "2026-07-26T20:00:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=WJYh3dW8Bfo",
           "verified": true
+        },
+        {
+          "levelId": "06898192-2f94-4b57-a18b-d95cc73c69e5",
+          "levelName": "Kyouki",
+          "position": 32,
+          "achievedAt": "2026-10-31T03:20:10Z",
+          "videoUrl": "https://www.twitch.tv/videos/2915458303",
+          "verified": false
         },
         {
           "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
@@ -27503,6 +27527,56 @@
         }
       ]
     },
+    "062d7f13-19cb-4a90-83df-6e2e7e094fa2": {
+      "name": "majin",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-10-29T18:34:43Z",
+          "videoUrl": "https://www.youtube.com/watch?v=a_f6ghvzfB8",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 40,
+          "achievedAt": "2026-09-05T15:01:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zs6R1lGT-cY",
+          "verified": false
+        },
+        {
+          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
+          "levelName": "Sakupen Circles",
+          "position": 46,
+          "achievedAt": "2026-06-15T12:43:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=w8txPE9Oass",
+          "verified": false
+        },
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 111,
+          "achievedAt": "2026-03-13T17:52:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=cyc5XBNm-5Y",
+          "verified": false
+        }
+      ]
+    },
+    "bba39947-67f3-4e26-893a-45fabae14118": {
+      "name": "AJXPROGD",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-11-01T05:39:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=VdzsEqmd7q8",
+          "verified": false
+        }
+      ]
+    },
     "548b5b84-5c21-48bc-badc-9b95b2f4f664": {
       "name": "GGonop",
       "levels": [
@@ -28782,35 +28856,6 @@
           "position": 40,
           "achievedAt": "2026-08-12T20:22:38Z",
           "videoUrl": "https://www.youtube.com/watch?v=moyfDME2AHQ",
-          "verified": false
-        }
-      ]
-    },
-    "062d7f13-19cb-4a90-83df-6e2e7e094fa2": {
-      "name": "majin",
-      "levels": [
-        {
-          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
-          "levelName": "KOCMOC",
-          "position": 40,
-          "achievedAt": "2026-09-05T15:01:40Z",
-          "videoUrl": "https://www.youtube.com/watch?v=zs6R1lGT-cY",
-          "verified": false
-        },
-        {
-          "levelId": "b0f62595-314d-4648-b23e-12756382c126",
-          "levelName": "Sakupen Circles",
-          "position": 46,
-          "achievedAt": "2026-06-15T12:43:31Z",
-          "videoUrl": "https://www.youtube.com/watch?v=w8txPE9Oass",
-          "verified": false
-        },
-        {
-          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
-          "levelName": "Sonic Wave Infinity",
-          "position": 111,
-          "achievedAt": "2026-03-13T17:52:44Z",
-          "videoUrl": "https://www.youtube.com/watch?v=cyc5XBNm-5Y",
           "verified": false
         }
       ]
@@ -50577,6 +50622,27 @@
         }
       ]
     },
+    "720f3e80-3d15-44b8-9eba-f11a1cdc27a2": {
+      "name": "Pancakes",
+      "levels": [
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 94,
+          "achievedAt": "2026-11-01T01:43:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zDL4qGs-oNs",
+          "verified": false
+        },
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 127,
+          "achievedAt": "2025-10-25T19:52:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=fYByKh1YAIA",
+          "verified": false
+        }
+      ]
+    },
     "4b1272ac-09f1-4ead-b8ad-e78068ba553d": {
       "name": "HotNooB",
       "levels": [
@@ -56378,6 +56444,14 @@
           "verified": false
         },
         {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2026-10-28T19:25:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iEzmThfma9s",
+          "verified": false
+        },
+        {
           "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
           "levelName": "Shukketsu",
           "position": 134,
@@ -59219,6 +59293,19 @@
         }
       ]
     },
+    "eb689e0c-63b2-443b-a8e9-317702ecaaec": {
+      "name": "Lukasta",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-08-26T22:37:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=W-EUEgvUxdc&t=7s",
+          "verified": false
+        }
+      ]
+    },
     "ce73b106-3143-45ed-b9c2-f02aa4dd971c": {
       "name": "Xakaro",
       "levels": [
@@ -61675,19 +61762,6 @@
         }
       ]
     },
-    "867be7a3-2c51-4130-9ada-41c89ae7a143": {
-      "name": "BlueTronnic",
-      "levels": [
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 127,
-          "achievedAt": "2024-07-07T17:26:44Z",
-          "videoUrl": "https://www.youtube.com/watch?v=jue_9swKdz8",
-          "verified": false
-        }
-      ]
-    },
     "6a8de23f-c625-43aa-83ca-6a1b93256e92": {
       "name": "BlueTronnic",
       "levels": [
@@ -61697,6 +61771,19 @@
           "position": 127,
           "achievedAt": "2024-07-07T17:26:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=jue_9swKdz8&t=1s",
+          "verified": false
+        }
+      ]
+    },
+    "867be7a3-2c51-4130-9ada-41c89ae7a143": {
+      "name": "BlueTronnic",
+      "levels": [
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 127,
+          "achievedAt": "2024-07-07T17:26:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=jue_9swKdz8",
           "verified": false
         }
       ]
@@ -61934,19 +62021,6 @@
         }
       ]
     },
-    "720f3e80-3d15-44b8-9eba-f11a1cdc27a2": {
-      "name": "Pancakes",
-      "levels": [
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 127,
-          "achievedAt": "2025-10-25T19:52:33Z",
-          "videoUrl": "https://www.youtube.com/watch?v=fYByKh1YAIA",
-          "verified": false
-        }
-      ]
-    },
     "6d61ff5d-4f8d-4879-9c98-b8b86fb48b93": {
       "name": "hazelirises",
       "levels": [
@@ -61969,6 +62043,19 @@
           "position": 127,
           "achievedAt": "2026-02-23T16:07:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=DS8i2lID3go",
+          "verified": false
+        }
+      ]
+    },
+    "c9551d58-e4cc-4e0a-aa19-e1cc0e28650f": {
+      "name": "zGamuT",
+      "levels": [
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 127,
+          "achievedAt": "2026-04-07T03:11:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=j6sPKSxMyMs",
           "verified": false
         }
       ]
@@ -64218,6 +64305,19 @@
         }
       ]
     },
+    "d7a2ee94-0fbe-4e52-9945-2d8738fdd18d": {
+      "name": "Hypo",
+      "levels": [
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 134,
+          "achievedAt": "2026-11-01T21:24:31Z",
+          "videoUrl": "https://www.youtube.com/watch?v=FhyLsuxGtbE",
+          "verified": false
+        }
+      ]
+    },
     "d4358fa8-f849-4f4d-8667-4d489bffb7c3": {
       "name": "hstorm",
       "levels": [
@@ -64810,6 +64910,19 @@
           "position": 143,
           "achievedAt": "2026-08-07T17:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=-5ur8T4WrkI",
+          "verified": false
+        }
+      ]
+    },
+    "3047c4a8-b002-4ae3-9eba-897b5d67b4d0": {
+      "name": "Muffin Cat",
+      "levels": [
+        {
+          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
+          "levelName": "Starlit Stroll",
+          "position": 143,
+          "achievedAt": "2026-09-04T18:14:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=4dP44vihjfM",
           "verified": false
         }
       ]
