@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:22:32.573Z",
+  "generatedAt": "2026-11-03T13:29:14.417Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7101,6 +7101,67 @@
           "position": 145,
           "achievedAt": "2026-01-31T23:32:24Z",
           "videoUrl": "https://www.youtube.com/watch?v=gbM5e1nVbjA",
+          "verified": false
+        }
+      ]
+    },
+    "71b0b1d7-27ca-411c-ad8c-c6537bd57e91": {
+      "name": "devan24",
+      "levels": [
+        {
+          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
+          "levelName": "Silent clubstep",
+          "position": 17,
+          "achievedAt": "2026-10-12T23:00:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6r7ub088lw4",
+          "verified": false
+        },
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-04-05T00:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=d7x5rYjfwnU",
+          "verified": false
+        },
+        {
+          "levelId": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
+          "levelName": "Eyes in the Water",
+          "position": 50,
+          "achievedAt": "2026-01-30T20:19:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=f4M5JZvH_vg",
+          "verified": false
+        },
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 63,
+          "achievedAt": "2025-11-30T05:20:18Z",
+          "videoUrl": "https://www.youtube.com/watch?v=i1sqxeMCols",
+          "verified": false
+        },
+        {
+          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
+          "levelName": "walter white",
+          "position": 88,
+          "achievedAt": "2026-07-16T22:33:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=k_5aJ_2jyCc",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 112,
+          "achievedAt": "2025-08-20T06:35:04Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JC_thvNDrrs",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-06-10T20:00:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=G17WdBZXvok",
           "verified": false
         }
       ]
@@ -25098,59 +25159,6 @@
         }
       ]
     },
-    "71b0b1d7-27ca-411c-ad8c-c6537bd57e91": {
-      "name": "devan24",
-      "levels": [
-        {
-          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
-          "levelName": "Slaughterhouse ",
-          "position": 38,
-          "achievedAt": "2026-04-05T00:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=d7x5rYjfwnU",
-          "verified": false
-        },
-        {
-          "levelId": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
-          "levelName": "Eyes in the Water",
-          "position": 50,
-          "achievedAt": "2026-01-30T20:19:16Z",
-          "videoUrl": "https://www.youtube.com/watch?v=f4M5JZvH_vg",
-          "verified": false
-        },
-        {
-          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
-          "levelName": "MINUSdry",
-          "position": 63,
-          "achievedAt": "2025-11-30T05:20:18Z",
-          "videoUrl": "https://www.youtube.com/watch?v=i1sqxeMCols",
-          "verified": false
-        },
-        {
-          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
-          "levelName": "walter white",
-          "position": 88,
-          "achievedAt": "2026-07-16T22:33:38Z",
-          "videoUrl": "https://www.youtube.com/watch?v=k_5aJ_2jyCc",
-          "verified": false
-        },
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 112,
-          "achievedAt": "2025-08-20T06:35:04Z",
-          "videoUrl": "https://www.youtube.com/watch?v=JC_thvNDrrs",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 121,
-          "achievedAt": "2026-06-10T20:00:24Z",
-          "videoUrl": "https://www.youtube.com/watch?v=G17WdBZXvok",
-          "verified": false
-        }
-      ]
-    },
     "8ac08780-daca-4408-b90d-3bb5725c7c61": {
       "name": "ILLYES",
       "levels": [
@@ -26852,6 +26860,14 @@
           "position": 38,
           "achievedAt": "2026-09-15T00:17:19Z",
           "videoUrl": "https://www.youtube.com/watch?v=Wl5vHI4EqWs",
+          "verified": false
+        },
+        {
+          "levelId": "7081880b-fe8c-4d3f-8557-a895b7aee521",
+          "levelName": "Snowbound",
+          "position": 52,
+          "achievedAt": "2026-11-03T02:09:32Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ifPGHLtKtYg",
           "verified": false
         },
         {
@@ -46815,6 +46831,14 @@
           "achievedAt": "2026-08-05T16:57:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=IWIELHCVbjU",
           "verified": false
+        },
+        {
+          "levelId": "699e6b35-7f79-4413-b300-0b30c0cdb8d6",
+          "levelName": "ORDINARY",
+          "position": 96,
+          "achievedAt": "2026-09-21T18:09:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=qdggqPDlXCY",
+          "verified": false
         }
       ]
     },
@@ -59725,6 +59749,19 @@
           "position": 121,
           "achievedAt": "2026-10-29T19:47:20Z",
           "videoUrl": "https://www.youtube.com/watch?v=LL9MkiaSQz0",
+          "verified": false
+        }
+      ]
+    },
+    "16036e72-3d3f-4a86-beb7-1bdcef54eaed": {
+      "name": "erase",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-11-02T06:53:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IrxVyqDsXvA",
           "verified": false
         }
       ]
