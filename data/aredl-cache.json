@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T22:09:18.162Z",
+  "generatedAt": "2026-11-04T02:49:20.206Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2157,8 +2157,8 @@
       ],
       "description": "Superbuffed remake of Hyper Paracosm, created by declanlc and Renn241. Notably extremely first half heavy, with most of the difficulty concentrated in the first wave parts. Sadly not the easy demon",
       "song": 469490,
-      "edel_enjoyment": 66.66666667,
-      "is_edel_pending": true,
+      "edel_enjoyment": 75.28571429,
+      "is_edel_pending": false,
       "gddl_tier": 39,
       "nlw_tier": null,
       "publisher": {
@@ -4949,7 +4949,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 28,
+      "edel_enjoyment": 42,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -10637,7 +10637,7 @@
       ],
       "description": "Vonic's participation for Twister's #DemonTime event, where participants each made a demon of any difficulty by a certain due date. A solo top 75 that took the creator 25 days to make start to finish and only 3 days to verify. Contains energetic and high-cps gameplay with difficulty spikes in its first half while resembling a decoration seemingly inspired by TamaN's style.",
       "song": 953530,
-      "edel_enjoyment": 71.68421053,
+      "edel_enjoyment": 71.6,
       "is_edel_pending": false,
       "gddl_tier": 35.5,
       "nlw_tier": null,
