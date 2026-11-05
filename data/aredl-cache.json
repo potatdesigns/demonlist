@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T07:30:45.427Z",
+  "generatedAt": "2026-11-05T15:53:25.406Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -497,73 +497,7 @@
           "updated_at": "2025-06-04T01:31:35.077470Z"
         }
       ],
-      "creators": [
-        {
-          "id": "04eaafe7-1134-4546-99cf-80b3d4e609e0",
-          "username": "1e4cff6d8",
-          "global_name": "Uriun112"
-        },
-        {
-          "id": "052f4bc9-db76-4917-a8f1-d16561a5297c",
-          "username": "67db0e197",
-          "global_name": "NoobyPro27"
-        },
-        {
-          "id": "07b114fc-deac-4aee-9ccc-cd2af0f0086e",
-          "username": "fc11be365",
-          "global_name": "ItsxEcho"
-        },
-        {
-          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
-          "username": "gamerknight750",
-          "global_name": "GamerKnight750"
-        },
-        {
-          "id": "4895df7c-1822-4dc3-8a41-0e1d134a8459",
-          "username": "d5e3036c4",
-          "global_name": "SnomGMD"
-        },
-        {
-          "id": "6874aeec-5114-4e17-b844-aac60499809a",
-          "username": "titoalper",
-          "global_name": "Titoalper"
-        },
-        {
-          "id": "6d9d44c3-4058-4ac0-94c6-41ce57f8f655",
-          "username": "9d1646bfb",
-          "global_name": "iMist"
-        },
-        {
-          "id": "8012b23a-19e7-4058-b578-d59d0182c6ef",
-          "username": "955c2a824",
-          "global_name": "3DADronX"
-        },
-        {
-          "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
-          "username": "8cc3f89f6",
-          "global_name": "Roselyne"
-        },
-        {
-          "id": "92fefe9d-3fd7-414d-824a-3388042566fd",
-          "username": "3545c884c",
-          "global_name": "iMinaY"
-        },
-        {
-          "id": "a519b896-dd7b-4ff0-afef-5004ec79ca1f",
-          "username": "lbedrockl",
-          "global_name": "Bedrock"
-        },
-        {
-          "id": "c75bf723-99c0-4e85-87a0-d9f97dede8a8",
-          "username": "334f93ea1",
-          "global_name": "IvashkaUA"
-        },
-        {
-          "id": "cbd22908-3eaf-4a82-b705-641d49952a02",
-          "username": "697033eba",
-          "global_name": "BeClaNin0"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "795f5f4f-4b8b-4e65-9eb6-dc09a66e6fb5",
@@ -1226,29 +1160,7 @@
       "edel_enjoyment": 67.77777778,
       "is_edel_pending": false,
       "gddl_tier": 39,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "e427c228-5eef-4fa1-b8bd-505a4fd94db3",
-        "username": "21f814e07",
-        "global_name": "OniLinkGD"
-      },
-      "verifications": [
-        {
-          "id": "c16a8087-abeb-424c-9b95-5db9e5baa5ea",
-          "submitted_by": {
-            "id": "bd3100d4-4bc7-48f8-bbb8-b3732ed0a799",
-            "username": "zoinkgd",
-            "global_name": "Zoink"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=9fsZ014qB3s",
-          "hide_video": false,
-          "achieved_at": "2023-09-10T15:30:11Z",
-          "created_at": "2024-02-18T05:09:00Z",
-          "updated_at": "2024-02-18T05:09:00Z"
-        }
-      ],
-      "creators": []
+      "nlw_tier": null
     },
     {
       "id": "c32b8cbb-ada5-456e-b1c9-a4e091fe3e72",
@@ -5917,800 +5829,11 @@
       ]
     },
     {
-      "id": "72bf2c18-1299-408b-bca2-3da986956632",
-      "name": "KOSETSU",
-      "position": 55,
-      "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-      "points": 3095,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 109439644,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Slow-Paced",
-        "Ship",
-        "Wave"
-      ],
-      "description": "Strange wintery realism collab with incredibly talented creators like Bli & Motheye. Uses an incredibly strange atmospheric song and goes a little crazy with 2.2 shaders.",
-      "song": 971534,
-      "edel_enjoyment": 48,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
-        "username": "dfe1326bd",
-        "global_name": "fwefwe"
-      },
-      "verifications": [
-        {
-          "id": "9bfa5ff0-d6e3-4bd9-a502-adb98997b36f",
-          "submitted_by": {
-            "id": "76723fe8-0c98-43a6-b4db-95f8383c2a3b",
-            "username": "taiago_",
-            "global_name": "taiago"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=hZ8vFX8z_BU",
-          "hide_video": false,
-          "achieved_at": "2024-08-25T00:18:12Z",
-          "created_at": "2024-09-29T22:38:05Z",
-          "updated_at": "2024-09-29T22:38:05Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "428fee96-f134-45ad-8b6a-2c3cc675ea1d",
-          "username": "ee3de1f4c",
-          "global_name": "SB72"
-        },
-        {
-          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
-          "username": "gamerknight750",
-          "global_name": "GamerKnight750"
-        },
-        {
-          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
-          "username": "b743d0986",
-          "global_name": "PBreakerGD"
-        },
-        {
-          "id": "7cf01e57-c890-4f84-b4d4-74a94ae40b18",
-          "username": "04723dee8",
-          "global_name": "MothEye"
-        },
-        {
-          "id": "a7959943-716e-4789-bc90-cc2bbbe58688",
-          "username": "73a94fd3f",
-          "global_name": "Halo"
-        },
-        {
-          "id": "b504b78a-fadb-4255-af58-546fa01d0c17",
-          "username": "72b80fd01",
-          "global_name": "Arct"
-        },
-        {
-          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
-          "username": "d10bc1be6",
-          "global_name": "Adrone"
-        },
-        {
-          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
-          "username": "fc34f3948",
-          "global_name": "Boshet"
-        },
-        {
-          "id": "e3ac5d01-4f30-415e-b84f-1adfe52a32b6",
-          "username": "b375ef38e",
-          "global_name": "Alekszzz"
-        },
-        {
-          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
-          "username": "f63318486",
-          "global_name": "Bli"
-        }
-      ]
-    },
-    {
-      "id": "210ae17a-e6bf-4851-91be-85501194dbf3",
-      "name": "Voltage (ThePurgatory)",
-      "position": 56,
-      "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
-      "points": 3074,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 131599104,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints"
-      ],
-      "description": "A yellow/orange electricity themed level created by The Purgatory team that took roughly four years to finish. Strangely it is pretty underground for its difficulty.",
-      "song": 485224,
-      "edel_enjoyment": 72.77777778,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "6e69711c-3e57-4683-960a-e656a6f61496",
-        "username": "464d9bb2f",
-        "global_name": "ThePurgatory115"
-      },
-      "verifications": [
-        {
-          "id": "daf30efd-7fcf-4cee-9646-22bf8973fa18",
-          "submitted_by": {
-            "id": "347a94c4-37c5-4d07-8ee8-2ed45fc84c33",
-            "username": "65f356e34",
-            "global_name": "Maybee"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=wBRvBN9tmlc",
-          "hide_video": false,
-          "achieved_at": "2026-01-17T17:45:06Z",
-          "created_at": "2026-03-01T21:43:32.080614Z",
-          "updated_at": "2026-03-01T21:43:32.080614Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "01774e68-2b3f-40ee-9a1e-f721b1bfca19",
-          "username": "zoffff",
-          "global_name": "zof"
-        },
-        {
-          "id": "0815b731-e6f6-4e69-aacb-16cefb8be39f",
-          "username": "865cb37e6",
-          "global_name": "Kgnstn"
-        },
-        {
-          "id": "4157eab3-4514-417b-abfe-c1448d7bd977",
-          "username": "3e078957d",
-          "global_name": "Xenith"
-        },
-        {
-          "id": "44c644fd-09c4-402c-8d2f-a69ed5eed79b",
-          "username": "42140e20b",
-          "global_name": "Lapatatatom"
-        },
-        {
-          "id": "4ac36c64-bd12-4a38-bb7c-dc0e34f6d59a",
-          "username": "971a0c9cb",
-          "global_name": "Xatz"
-        },
-        {
-          "id": "69b0298b-6397-4441-b3d0-08d43936372f",
-          "username": "60e7b5c28",
-          "global_name": "Silsa"
-        },
-        {
-          "id": "79559809-7793-42ef-bb76-c0d6269b3619",
-          "username": "18e68d149",
-          "global_name": "Acomet"
-        },
-        {
-          "id": "8d315b54-47de-4649-8f32-cb6f6530e97f",
-          "username": "8aef45683",
-          "global_name": "budapest"
-        },
-        {
-          "id": "92571890-1f78-40b3-9fb1-4211f126834e",
-          "username": "20cc65e63",
-          "global_name": "Lagnugg"
-        },
-        {
-          "id": "aa69c6f8-abff-438d-8717-8f4999b498df",
-          "username": "69fa87bc6",
-          "global_name": "Vendas"
-        },
-        {
-          "id": "b6a0a175-524d-40a5-bdbb-7e107d968955",
-          "username": "rubrumpandam",
-          "global_name": "rubrum"
-        },
-        {
-          "id": "ce1ea414-628c-4d43-a760-500d07f5ef0b",
-          "username": "phantom7ks",
-          "global_name": "Phantom7Ks"
-        },
-        {
-          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
-          "username": "fc34f3948",
-          "global_name": "Boshet"
-        },
-        {
-          "id": "e0782ee9-b685-4e91-b65c-469f5856bc87",
-          "username": "2b8056a93",
-          "global_name": "Choms"
-        },
-        {
-          "id": "e679173b-baca-48fe-88c1-160b2986f818",
-          "username": "50b135f74",
-          "global_name": "Sysafk"
-        },
-        {
-          "id": "e9b965e8-2aa5-4ed2-a51e-deb0edea1c8d",
-          "username": "6c52291c3",
-          "global_name": "Millan"
-        },
-        {
-          "id": "ef0506a7-05dd-44ad-a57c-c6ea40344c5c",
-          "username": "b89215d38",
-          "global_name": "heptanone"
-        }
-      ]
-    },
-    {
-      "id": "56d52163-e3e2-4357-9843-29002b100e07",
-      "name": "NOMAD",
-      "position": 57,
-      "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-      "points": 3055,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 115077305,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Medium",
-        "NONG",
-        "Timings",
-        "Chokepoints",
-        "Gimmicky",
-        "Cube",
-        "Ship",
-        "UFO"
-      ],
-      "description": "Using \"Exit Music (For A Film)\" by Radiohead for the song, Nomad is an extremely short and dense precision test with a mild runtime of 57 seconds, containing primarily desert and blizzard themes for its aesthetic. Has an interesting choice of gameplay, utilizing only three gamemodes: cube, ship, and UFO.",
-      "song": null,
-      "edel_enjoyment": 62.18181818,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-        "username": "reesevt",
-        "global_name": "reesevt"
-      },
-      "verifications": [
-        {
-          "id": "68b5e95e-5fa0-465b-9133-08fba9d7bea9",
-          "submitted_by": {
-            "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
-            "username": "997a90b54",
-            "global_name": "Laniakea"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/H2TkHbEX__A?is=cxYQOVuuCjA_yzus",
-          "hide_video": false,
-          "achieved_at": "2026-10-07T08:25:43.783297Z",
-          "created_at": "2026-10-07T08:25:43.783296Z",
-          "updated_at": "2026-10-07T08:25:43.783296Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
-          "username": "reesevt",
-          "global_name": "reesevt"
-        },
-        {
-          "id": "b4ab5d66-89bb-4ebc-9f43-a78e96f15bc7",
-          "username": "cb13e7a30",
-          "global_name": "danielsbadkarma"
-        }
-      ]
-    },
-    {
-      "id": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
-      "name": "NervHell",
-      "position": 58,
-      "publisher_id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
-      "points": 3035,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 143718114,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "XL",
-        "NONG",
-        "Fast-Paced",
-        "Timings",
-        "Learny",
-        "Memory",
-        "Gimmicky",
-        "Nerve Control",
-        "Overall"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 91.42857143,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
-        "username": "34aa83e5d",
-        "global_name": "ASVTeam"
-      },
-      "verifications": [
-        {
-          "id": "bc102c26-7826-41e1-a91d-b96bb2852328",
-          "submitted_by": {
-            "id": "98420c71-7c9f-4bb1-9532-228ac4216a8b",
-            "username": "chopblox",
-            "global_name": "ChopBlox"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=1zrvPgDAoaA",
-          "hide_video": false,
-          "achieved_at": "2026-08-10T00:26:32.647786Z",
-          "created_at": "2026-08-10T00:26:32.647786Z",
-          "updated_at": "2026-08-10T00:26:32.647786Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "4a196084-9f1e-49f7-9652-e8357c129a57",
-          "username": "c9545a3e5",
-          "global_name": "ItzTsumiki"
-        },
-        {
-          "id": "75136030-9625-466b-8f3e-ac0305774bdd",
-          "username": "3c908abdb",
-          "global_name": "Niom"
-        },
-        {
-          "id": "a89f8e0b-6c35-4b91-a867-f49f49c13469",
-          "username": "sparkyconjure",
-          "global_name": "SparkyConjure"
-        },
-        {
-          "id": "b57097fa-1d0c-4f0a-80ca-3b38fe71911a",
-          "username": "nhan_gdvn",
-          "global_name": "NhanGD :)"
-        },
-        {
-          "id": "cd472ada-8bf9-4891-9dbf-11fffa47ed10",
-          "username": "afc4c698a",
-          "global_name": "verunya"
-        },
-        {
-          "id": "e86064c5-8fba-479c-80a5-2e3f02fbe020",
-          "username": "8a310be14",
-          "global_name": "ComSuonCoXuong"
-        },
-        {
-          "id": "ff26578e-8519-4c1b-a8e4-af48b1164c0a",
-          "username": "3f2bdf670",
-          "global_name": "Akoru"
-        }
-      ]
-    },
-    {
-      "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
-      "name": "Loops of Fury",
-      "position": 59,
-      "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-      "points": 3016,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 126571887,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "XL",
-        "NONG",
-        "Timings",
-        "Unbalanced",
-        "New Swing",
-        "Overall"
-      ],
-      "description": "Grayscale effect level that contains sections where the gameplay loops several times over (hence its name). Has a very chokeable ending.",
-      "song": null,
-      "edel_enjoyment": 79.44444444,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-        "username": "enfur",
-        "global_name": "Enfur"
-      },
-      "verifications": [
-        {
-          "id": "7da9439e-d794-491d-8aeb-62454d47f2ec",
-          "submitted_by": {
-            "id": "0d4eb545-6ac6-4906-9d20-0aecfd451d98",
-            "username": "xcork",
-            "global_name": "Cork"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
-          "hide_video": false,
-          "achieved_at": "2025-10-02T01:23:03Z",
-          "created_at": "2025-11-12T04:15:11.090028Z",
-          "updated_at": "2025-11-12T04:15:11.090028Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-          "username": "enfur",
-          "global_name": "Enfur"
-        }
-      ]
-    },
-    {
-      "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
-      "name": "Fracture",
-      "position": 60,
-      "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-      "points": 2997,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 99703915,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Circles",
-        "Fast-Paced",
-        "Timings",
-        "Wave"
-      ],
-      "description": "A fast-paced indigo Nine Circles level that is a staple within the New Zealand Geometry Dash community. Features a sleek, polished design influenced by many of the creator's favorite creators at the time, with its structuring loosely inspired by Arctic Lights. Took over 2 years to be rated after its initial release.",
-      "song": 433947,
-      "edel_enjoyment": 50.71428571,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-        "username": "arrowgazi",
-        "global_name": "Arrow"
-      },
-      "verifications": [
-        {
-          "id": "b489a52d-ff5d-4701-b1e3-53c81f2cdb7c",
-          "submitted_by": {
-            "id": "54fca182-f83a-45e8-8978-55dc32978973",
-            "username": "5nr",
-            "global_name": "Dezstro"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
-          "hide_video": false,
-          "achieved_at": "2025-06-02T19:20:00Z",
-          "created_at": "2026-04-30T19:20:56.244427Z",
-          "updated_at": "2026-04-30T19:20:56.244427Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-          "username": "arrowgazi",
-          "global_name": "Arrow"
-        },
-        {
-          "id": "54fca182-f83a-45e8-8978-55dc32978973",
-          "username": "5nr",
-          "global_name": "Dezstro"
-        }
-      ]
-    },
-    {
-      "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
-      "name": "poocubed",
-      "position": 61,
-      "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-      "points": 2978,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 85133223,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Clicksync",
-        "Fast-Paced",
-        "Timings",
-        "Chokepoints",
-        "Unbalanced",
-        "Learny",
-        "High CPS",
-        "Gimmicky",
-        "Flow",
-        "Wave"
-      ],
-      "description": "The 3rd level in the poocu series, consisting of some of the most colorful and innocent decoration on the list. Known for its high-cps off-the-grid gameplay, as well as overall maximum bubbliness.",
-      "song": 763176,
-      "edel_enjoyment": 60.40625,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-        "username": "a59252232",
-        "global_name": "Lisp"
-      },
-      "verifications": [
-        {
-          "id": "ef10943e-3376-4ecf-8320-a232955b6f86",
-          "submitted_by": {
-            "id": "e41cbae1-9509-4a02-aac5-b873bef215e5",
-            "username": "kyass",
-            "global_name": "noelle"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=fzL31vai1ms",
-          "hide_video": false,
-          "achieved_at": "2022-11-01T21:22:13Z",
-          "created_at": "2022-11-26T20:35:01Z",
-          "updated_at": "2022-11-26T20:35:01Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "137c4641-1fc1-4738-8ad8-d9d0c69f9d1c",
-          "username": "607ec4d72",
-          "global_name": "Aespha"
-        },
-        {
-          "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-          "username": "a59252232",
-          "global_name": "Lisp"
-        },
-        {
-          "id": "88a2759c-609a-4258-9d94-a869564a0ac3",
-          "username": "afd512ca8",
-          "global_name": "Faraox"
-        },
-        {
-          "id": "8d44a5f6-d81c-47c2-b341-4e2e80b406f0",
-          "username": "f7d7677c4",
-          "global_name": "TypicalGMD"
-        },
-        {
-          "id": "b6e62977-ec39-48e2-a0ca-214b9e7b4f86",
-          "username": "c38402c40",
-          "global_name": "ar12"
-        },
-        {
-          "id": "c9077004-b785-455c-a6e5-f5de03c3ab46",
-          "username": "ea8f55b32",
-          "global_name": "ph0"
-        },
-        {
-          "id": "dca9cde4-e828-4dfa-bff2-7f1bd0d11317",
-          "username": "a00c5e579",
-          "global_name": "Earthum"
-        }
-      ]
-    },
-    {
-      "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
-      "name": "Calibrate",
-      "position": 62,
-      "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-      "points": 2960,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 136981369,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Fast-Paced",
-        "Timings",
-        "Learny",
-        "High CPS",
-        "Wave",
-        "Overall"
-      ],
-      "description": null,
-      "song": null,
-      "edel_enjoyment": 78.06666667,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-        "username": "bamvie",
-        "global_name": "Bamvie"
-      },
-      "verifications": [
-        {
-          "id": "ae37388a-1f5d-4166-91dd-2cba7ec11b1d",
-          "submitted_by": {
-            "id": "5a57a762-dce8-4a6a-b18c-5832a8eee55c",
-            "username": "0d595d2e7",
-            "global_name": "Blebae"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/6WYnZryX_mg",
-          "hide_video": false,
-          "achieved_at": "2026-03-31T00:35:10Z",
-          "created_at": "2026-05-02T13:37:33.279483Z",
-          "updated_at": "2026-05-02T13:37:33.279484Z"
-        }
-      ],
-      "creators": []
-    },
-    {
-      "id": "4fac9298-93ae-4553-abe9-72a562567318",
-      "name": "MINUSdry",
-      "position": 63,
-      "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2942,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 89414220,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "High CPS",
-        "Mirror",
-        "Cube",
-        "Ship",
-        "Old Swing",
-        "Overall"
-      ],
-      "description": "Half-joke and half-serious old styled extreme. Remake of the impossible level \"Silent Dry\". Don't get wet...",
-      "song": -4,
-      "edel_enjoyment": 56.98,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-        "username": "cdmusic",
-        "global_name": "CDMusic"
-      },
-      "verifications": [
-        {
-          "id": "67eda397-9f2b-4941-b8e9-5d59e0564993",
-          "submitted_by": {
-            "id": "1156a3b2-fb57-49f3-958d-0ac7ce908ad2",
-            "username": "549493eae",
-            "global_name": "Varium"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=YvA8ehhzz0Q&t=116s",
-          "hide_video": false,
-          "achieved_at": "2023-03-18T21:00:07Z",
-          "created_at": "2023-05-04T15:24:08Z",
-          "updated_at": "2023-05-04T15:24:08Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "1156a3b2-fb57-49f3-958d-0ac7ce908ad2",
-          "username": "549493eae",
-          "global_name": "Varium"
-        },
-        {
-          "id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
-          "username": "87adcadc6",
-          "global_name": "Sevant"
-        },
-        {
-          "id": "e508d79b-9bdf-4a04-8548-78fff3a779cc",
-          "username": "blankb",
-          "global_name": "Blankb"
-        },
-        {
-          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-          "username": "cdmusic",
-          "global_name": "CDMusic"
-        }
-      ]
-    },
-    {
-      "id": "b2252317-dcf2-432d-ba36-59642218803c",
-      "name": "Saul Goodman",
-      "position": 64,
-      "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2924,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 90477539,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Long",
-        "Fast-Paced",
-        "Learny",
-        "Flow",
-        "Wave",
-        "Overall"
-      ],
-      "description": "The hardest extreme in the Breaking Bad series, overall not supposed to be a serious level. Incredibly learny gameplay where everything is moving and bouncing, also filled to the brim with inside jokes. Atrocious endscreen.",
-      "song": 462370,
-      "edel_enjoyment": 56.26086957,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-        "username": "f7183736b",
-        "global_name": "Renn241"
-      },
-      "verifications": [
-        {
-          "id": "d1cd5006-b1a1-4877-ae3f-e597e3dd544d",
-          "submitted_by": {
-            "id": "955e8f60-f26a-4ba6-8d51-d5b98c073b4a",
-            "username": "bloomzwz",
-            "global_name": "bloom"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=hjs5PjUaw9k",
-          "hide_video": false,
-          "achieved_at": "2023-05-03T04:45:06Z",
-          "created_at": "2023-05-26T17:02:08Z",
-          "updated_at": "2023-05-26T17:02:08Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
-          "username": "mercurydt",
-          "global_name": "MercuryDT"
-        },
-        {
-          "id": "29808856-a897-4f71-992a-04d6d93cd3f1",
-          "username": "11878e1a8",
-          "global_name": "joojmiguel"
-        },
-        {
-          "id": "756e65a9-d6b7-4040-a781-c0b0011f35cc",
-          "username": "1b8689792",
-          "global_name": "NukeIIX"
-        },
-        {
-          "id": "a03addbe-414a-4814-a2ec-2cf3cbb38278",
-          "username": "e7d408ace",
-          "global_name": "GhostVandalf"
-        },
-        {
-          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-          "username": "f7183736b",
-          "global_name": "Renn241"
-        },
-        {
-          "id": "bb849c83-da29-402a-8473-e1e89eb0c556",
-          "username": "cd26ed694",
-          "global_name": "Loltad"
-        },
-        {
-          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
-          "username": "ec5f043f5",
-          "global_name": "DreamTide"
-        },
-        {
-          "id": "fba5e0f6-f0e1-4a05-930e-30b809440ec5",
-          "username": "9a683cb82",
-          "global_name": "QuacDuc"
-        }
-      ]
-    },
-    {
       "id": "f79695b9-ddb2-46ab-bef6-a231917db6d5",
       "name": "Apocalyptic Trilogy",
-      "position": 65,
+      "position": 55,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2906,
+      "points": 3095,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113443235,
@@ -6881,74 +6004,11 @@
       ]
     },
     {
-      "id": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
-      "name": "The Hallucination",
-      "position": 66,
-      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-      "points": 2888,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 81139702,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "XL",
-        "Circles",
-        "Fast-Paced",
-        "Chokepoints",
-        "Unbalanced",
-        "Learny",
-        "Flow",
-        "Nerve Control",
-        "Ship",
-        "Wave"
-      ],
-      "description": "Black and blue circles level known for its intense song and fast-paced sync gameplay. Decoration took over a year to be completed.",
-      "song": 568369,
-      "edel_enjoyment": 50.93103448,
-      "is_edel_pending": false,
-      "gddl_tier": 36.666666666666664,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-        "username": "029747e6b",
-        "global_name": "SyQual"
-      },
-      "verifications": [
-        {
-          "id": "9ba357c3-8330-438f-ab49-7ba5c55a0c7a",
-          "submitted_by": {
-            "id": "8337f139-e06a-4588-82ee-f0f010a813db",
-            "username": "d37a96c2e",
-            "global_name": "VoTcHi"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=tYbXsNkO9HE",
-          "hide_video": false,
-          "achieved_at": "2022-06-19T12:08:58Z",
-          "created_at": "2022-10-25T16:03:01Z",
-          "updated_at": "2022-10-25T16:03:01Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
-          "username": "029747e6b",
-          "global_name": "SyQual"
-        },
-        {
-          "id": "8337f139-e06a-4588-82ee-f0f010a813db",
-          "username": "d37a96c2e",
-          "global_name": "VoTcHi"
-        }
-      ]
-    },
-    {
       "id": "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "name": "Pinnacle of Life",
-      "position": 67,
+      "position": 56,
       "publisher_id": "698b64fc-0c11-4d8c-8cdf-3e4f213fd29c",
-      "points": 2871,
+      "points": 3074,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 144012996,
@@ -7060,130 +6120,711 @@
       ]
     },
     {
-      "id": "146c9eed-2b47-483c-93a2-6b336adea84a",
-      "name": "COMBUSTION",
-      "position": 68,
-      "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2854,
+      "id": "72bf2c18-1299-408b-bca2-3da986956632",
+      "name": "KOSETSU",
+      "position": 57,
+      "publisher_id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
+      "points": 3055,
       "status": "MainList",
       "requires_raw_footage": false,
-      "level_id": 94359172,
-      "two_player": false,
-      "tags": [
-        "2.1",
-        "Medium",
-        "Timings",
-        "Chokepoints",
-        "Learny",
-        "Ship",
-        "Wave"
-      ],
-      "description": "Claustrophobic 1.9 styled extreme with only about 50 seconds of gameplay. Created to be one of the hardest slow, timing based extremes at the time.",
-      "song": 797578,
-      "edel_enjoyment": 68.46875,
-      "is_edel_pending": false,
-      "gddl_tier": 37,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-        "username": "132022d6e",
-        "global_name": "Cersia"
-      },
-      "verifications": [
-        {
-          "id": "f1b96213-fd58-421a-920a-6ed6763c8b79",
-          "submitted_by": {
-            "id": "7b8a402b-0c7f-4501-9f56-1aaa54970dd8",
-            "username": "slithium",
-            "global_name": "Slithium"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=3cTR4XUcA28",
-          "hide_video": false,
-          "achieved_at": "2023-09-11T03:01:02Z",
-          "created_at": "2025-07-26T06:07:59.625024Z",
-          "updated_at": "2025-07-26T06:07:59.625024Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "7b8a402b-0c7f-4501-9f56-1aaa54970dd8",
-          "username": "slithium",
-          "global_name": "Slithium"
-        },
-        {
-          "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-          "username": "132022d6e",
-          "global_name": "Cersia"
-        }
-      ]
-    },
-    {
-      "id": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
-      "name": "Haunted Ship",
-      "position": 69,
-      "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-      "points": 2837,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 143523624,
+      "level_id": 109439644,
       "two_player": false,
       "tags": [
         "2.2",
         "Long",
-        "NONG",
-        "Fast-Paced",
         "Timings",
-        "Learny",
-        "Nerve Control",
-        "Overall"
+        "Chokepoints",
+        "Slow-Paced",
+        "Ship",
+        "Wave"
       ],
-      "description": null,
-      "song": 1585216,
-      "edel_enjoyment": 86.125,
+      "description": "Strange wintery realism collab with incredibly talented creators like Bli & Motheye. Uses an incredibly strange atmospheric song and goes a little crazy with 2.2 shaders.",
+      "song": 971534,
+      "edel_enjoyment": 48,
       "is_edel_pending": false,
-      "gddl_tier": null,
+      "gddl_tier": 37,
       "nlw_tier": null,
       "publisher": {
-        "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-        "username": "awesomeme360",
-        "global_name": "AWESOMEME360"
+        "id": "f4790ea2-5e3f-4fc5-bb8f-05bd60a61f39",
+        "username": "dfe1326bd",
+        "global_name": "fwefwe"
       },
       "verifications": [
         {
-          "id": "a8a59345-7a26-4f95-b81c-2f086044f5f8",
+          "id": "9bfa5ff0-d6e3-4bd9-a502-adb98997b36f",
           "submitted_by": {
-            "id": "decb742e-ae06-4867-bfde-e84ad2bb025f",
-            "username": "83f69ce7e",
-            "global_name": "Gnamolor"
+            "id": "76723fe8-0c98-43a6-b4db-95f8383c2a3b",
+            "username": "taiago_",
+            "global_name": "taiago"
           },
           "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=22l59QGmL48",
+          "video_url": "https://www.youtube.com/watch?v=hZ8vFX8z_BU",
           "hide_video": false,
-          "achieved_at": "2026-06-26T00:00:06Z",
-          "created_at": "2026-08-16T00:23:48.470079Z",
-          "updated_at": "2026-08-16T00:23:48.470079Z"
+          "achieved_at": "2024-08-25T00:18:12Z",
+          "created_at": "2024-09-29T22:38:05Z",
+          "updated_at": "2024-09-29T22:38:05Z"
         }
       ],
       "creators": [
         {
-          "id": "decb742e-ae06-4867-bfde-e84ad2bb025f",
-          "username": "83f69ce7e",
-          "global_name": "Gnamolor"
+          "id": "428fee96-f134-45ad-8b6a-2c3cc675ea1d",
+          "username": "ee3de1f4c",
+          "global_name": "SB72"
         },
         {
-          "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
-          "username": "awesomeme360",
-          "global_name": "AWESOMEME360"
+          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
+          "username": "gamerknight750",
+          "global_name": "GamerKnight750"
+        },
+        {
+          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
+          "username": "b743d0986",
+          "global_name": "PBreakerGD"
+        },
+        {
+          "id": "7cf01e57-c890-4f84-b4d4-74a94ae40b18",
+          "username": "04723dee8",
+          "global_name": "MothEye"
+        },
+        {
+          "id": "a7959943-716e-4789-bc90-cc2bbbe58688",
+          "username": "73a94fd3f",
+          "global_name": "Halo"
+        },
+        {
+          "id": "b504b78a-fadb-4255-af58-546fa01d0c17",
+          "username": "72b80fd01",
+          "global_name": "Arct"
+        },
+        {
+          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
+          "username": "d10bc1be6",
+          "global_name": "Adrone"
+        },
+        {
+          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
+          "username": "fc34f3948",
+          "global_name": "Boshet"
+        },
+        {
+          "id": "e3ac5d01-4f30-415e-b84f-1adfe52a32b6",
+          "username": "b375ef38e",
+          "global_name": "Alekszzz"
+        },
+        {
+          "id": "eecb71f1-7f66-431a-a146-9f168ecddbe6",
+          "username": "f63318486",
+          "global_name": "Bli"
+        }
+      ]
+    },
+    {
+      "id": "210ae17a-e6bf-4851-91be-85501194dbf3",
+      "name": "Voltage (ThePurgatory)",
+      "position": 58,
+      "publisher_id": "6e69711c-3e57-4683-960a-e656a6f61496",
+      "points": 3035,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 131599104,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints"
+      ],
+      "description": "A yellow/orange electricity themed level created by The Purgatory team that took roughly four years to finish. Strangely it is pretty underground for its difficulty.",
+      "song": 485224,
+      "edel_enjoyment": 72.77777778,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "6e69711c-3e57-4683-960a-e656a6f61496",
+        "username": "464d9bb2f",
+        "global_name": "ThePurgatory115"
+      },
+      "verifications": [
+        {
+          "id": "daf30efd-7fcf-4cee-9646-22bf8973fa18",
+          "submitted_by": {
+            "id": "347a94c4-37c5-4d07-8ee8-2ed45fc84c33",
+            "username": "65f356e34",
+            "global_name": "Maybee"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=wBRvBN9tmlc",
+          "hide_video": false,
+          "achieved_at": "2026-01-17T17:45:06Z",
+          "created_at": "2026-03-01T21:43:32.080614Z",
+          "updated_at": "2026-03-01T21:43:32.080614Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "01774e68-2b3f-40ee-9a1e-f721b1bfca19",
+          "username": "zoffff",
+          "global_name": "zof"
+        },
+        {
+          "id": "0815b731-e6f6-4e69-aacb-16cefb8be39f",
+          "username": "865cb37e6",
+          "global_name": "Kgnstn"
+        },
+        {
+          "id": "4157eab3-4514-417b-abfe-c1448d7bd977",
+          "username": "3e078957d",
+          "global_name": "Xenith"
+        },
+        {
+          "id": "44c644fd-09c4-402c-8d2f-a69ed5eed79b",
+          "username": "42140e20b",
+          "global_name": "Lapatatatom"
+        },
+        {
+          "id": "4ac36c64-bd12-4a38-bb7c-dc0e34f6d59a",
+          "username": "971a0c9cb",
+          "global_name": "Xatz"
+        },
+        {
+          "id": "69b0298b-6397-4441-b3d0-08d43936372f",
+          "username": "60e7b5c28",
+          "global_name": "Silsa"
+        },
+        {
+          "id": "79559809-7793-42ef-bb76-c0d6269b3619",
+          "username": "18e68d149",
+          "global_name": "Acomet"
+        },
+        {
+          "id": "8d315b54-47de-4649-8f32-cb6f6530e97f",
+          "username": "8aef45683",
+          "global_name": "budapest"
+        },
+        {
+          "id": "92571890-1f78-40b3-9fb1-4211f126834e",
+          "username": "20cc65e63",
+          "global_name": "Lagnugg"
+        },
+        {
+          "id": "aa69c6f8-abff-438d-8717-8f4999b498df",
+          "username": "69fa87bc6",
+          "global_name": "Vendas"
+        },
+        {
+          "id": "b6a0a175-524d-40a5-bdbb-7e107d968955",
+          "username": "rubrumpandam",
+          "global_name": "rubrum"
+        },
+        {
+          "id": "ce1ea414-628c-4d43-a760-500d07f5ef0b",
+          "username": "phantom7ks",
+          "global_name": "Phantom7Ks"
+        },
+        {
+          "id": "d5df8f7e-ca07-45fa-91ea-eec8f411f5bf",
+          "username": "fc34f3948",
+          "global_name": "Boshet"
+        },
+        {
+          "id": "e0782ee9-b685-4e91-b65c-469f5856bc87",
+          "username": "2b8056a93",
+          "global_name": "Choms"
+        },
+        {
+          "id": "e679173b-baca-48fe-88c1-160b2986f818",
+          "username": "50b135f74",
+          "global_name": "Sysafk"
+        },
+        {
+          "id": "e9b965e8-2aa5-4ed2-a51e-deb0edea1c8d",
+          "username": "6c52291c3",
+          "global_name": "Millan"
+        },
+        {
+          "id": "ef0506a7-05dd-44ad-a57c-c6ea40344c5c",
+          "username": "b89215d38",
+          "global_name": "heptanone"
+        }
+      ]
+    },
+    {
+      "id": "56d52163-e3e2-4357-9843-29002b100e07",
+      "name": "NOMAD",
+      "position": 59,
+      "publisher_id": "273b5bf9-0435-411f-9334-bce2b96016f4",
+      "points": 3016,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 115077305,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Medium",
+        "NONG",
+        "Timings",
+        "Chokepoints",
+        "Gimmicky",
+        "Cube",
+        "Ship",
+        "UFO"
+      ],
+      "description": "Using \"Exit Music (For A Film)\" by Radiohead for the song, Nomad is an extremely short and dense precision test with a mild runtime of 57 seconds, containing primarily desert and blizzard themes for its aesthetic. Has an interesting choice of gameplay, utilizing only three gamemodes: cube, ship, and UFO.",
+      "song": null,
+      "edel_enjoyment": 62.18181818,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
+        "username": "reesevt",
+        "global_name": "reesevt"
+      },
+      "verifications": [
+        {
+          "id": "68b5e95e-5fa0-465b-9133-08fba9d7bea9",
+          "submitted_by": {
+            "id": "fb0a184e-77c6-492b-abce-b91f531b7343",
+            "username": "997a90b54",
+            "global_name": "Laniakea"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/H2TkHbEX__A?is=cxYQOVuuCjA_yzus",
+          "hide_video": false,
+          "achieved_at": "2026-10-07T08:25:43.783297Z",
+          "created_at": "2026-10-07T08:25:43.783296Z",
+          "updated_at": "2026-10-07T08:25:43.783296Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "273b5bf9-0435-411f-9334-bce2b96016f4",
+          "username": "reesevt",
+          "global_name": "reesevt"
+        },
+        {
+          "id": "b4ab5d66-89bb-4ebc-9f43-a78e96f15bc7",
+          "username": "cb13e7a30",
+          "global_name": "danielsbadkarma"
+        }
+      ]
+    },
+    {
+      "id": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
+      "name": "NervHell",
+      "position": 60,
+      "publisher_id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
+      "points": 2997,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 143718114,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "XL",
+        "NONG",
+        "Fast-Paced",
+        "Timings",
+        "Learny",
+        "Memory",
+        "Gimmicky",
+        "Nerve Control",
+        "Overall"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 91.42857143,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "4a14bc77-490f-42c8-80bb-fb8cf22e706c",
+        "username": "34aa83e5d",
+        "global_name": "ASVTeam"
+      },
+      "verifications": [
+        {
+          "id": "bc102c26-7826-41e1-a91d-b96bb2852328",
+          "submitted_by": {
+            "id": "98420c71-7c9f-4bb1-9532-228ac4216a8b",
+            "username": "chopblox",
+            "global_name": "ChopBlox"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=1zrvPgDAoaA",
+          "hide_video": false,
+          "achieved_at": "2026-08-10T00:26:32.647786Z",
+          "created_at": "2026-08-10T00:26:32.647786Z",
+          "updated_at": "2026-08-10T00:26:32.647786Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "4a196084-9f1e-49f7-9652-e8357c129a57",
+          "username": "c9545a3e5",
+          "global_name": "ItzTsumiki"
+        },
+        {
+          "id": "75136030-9625-466b-8f3e-ac0305774bdd",
+          "username": "3c908abdb",
+          "global_name": "Niom"
+        },
+        {
+          "id": "a89f8e0b-6c35-4b91-a867-f49f49c13469",
+          "username": "sparkyconjure",
+          "global_name": "SparkyConjure"
+        },
+        {
+          "id": "b57097fa-1d0c-4f0a-80ca-3b38fe71911a",
+          "username": "nhan_gdvn",
+          "global_name": "NhanGD :)"
+        },
+        {
+          "id": "cd472ada-8bf9-4891-9dbf-11fffa47ed10",
+          "username": "afc4c698a",
+          "global_name": "verunya"
+        },
+        {
+          "id": "e86064c5-8fba-479c-80a5-2e3f02fbe020",
+          "username": "8a310be14",
+          "global_name": "ComSuonCoXuong"
+        },
+        {
+          "id": "ff26578e-8519-4c1b-a8e4-af48b1164c0a",
+          "username": "3f2bdf670",
+          "global_name": "Akoru"
+        }
+      ]
+    },
+    {
+      "id": "c40aeba7-841e-47e8-8c05-9e02dddedb83",
+      "name": "Loops of Fury",
+      "position": 61,
+      "publisher_id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+      "points": 2978,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 126571887,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "XL",
+        "NONG",
+        "Timings",
+        "Unbalanced",
+        "New Swing",
+        "Overall"
+      ],
+      "description": "Grayscale effect level that contains sections where the gameplay loops several times over (hence its name). Has a very chokeable ending.",
+      "song": null,
+      "edel_enjoyment": 79.44444444,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+        "username": "enfur",
+        "global_name": "Enfur"
+      },
+      "verifications": [
+        {
+          "id": "7da9439e-d794-491d-8aeb-62454d47f2ec",
+          "submitted_by": {
+            "id": "0d4eb545-6ac6-4906-9d20-0aecfd451d98",
+            "username": "xcork",
+            "global_name": "Cork"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
+          "hide_video": false,
+          "achieved_at": "2025-10-02T01:23:03Z",
+          "created_at": "2025-11-12T04:15:11.090028Z",
+          "updated_at": "2025-11-12T04:15:11.090028Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
+          "username": "enfur",
+          "global_name": "Enfur"
+        }
+      ]
+    },
+    {
+      "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
+      "name": "Fracture",
+      "position": 62,
+      "publisher_id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+      "points": 2960,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 99703915,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Circles",
+        "Fast-Paced",
+        "Timings",
+        "Wave"
+      ],
+      "description": "A fast-paced indigo Nine Circles level that is a staple within the New Zealand Geometry Dash community. Features a sleek, polished design influenced by many of the creator's favorite creators at the time, with its structuring loosely inspired by Arctic Lights. Took over 2 years to be rated after its initial release.",
+      "song": 433947,
+      "edel_enjoyment": 50.71428571,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+        "username": "arrowgazi",
+        "global_name": "Arrow"
+      },
+      "verifications": [
+        {
+          "id": "b489a52d-ff5d-4701-b1e3-53c81f2cdb7c",
+          "submitted_by": {
+            "id": "54fca182-f83a-45e8-8978-55dc32978973",
+            "username": "5nr",
+            "global_name": "Dezstro"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
+          "hide_video": false,
+          "achieved_at": "2025-06-02T19:20:00Z",
+          "created_at": "2026-04-30T19:20:56.244427Z",
+          "updated_at": "2026-04-30T19:20:56.244427Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
+          "username": "arrowgazi",
+          "global_name": "Arrow"
+        },
+        {
+          "id": "54fca182-f83a-45e8-8978-55dc32978973",
+          "username": "5nr",
+          "global_name": "Dezstro"
+        }
+      ]
+    },
+    {
+      "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+      "name": "poocubed",
+      "position": 63,
+      "publisher_id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
+      "points": 2942,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 85133223,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Clicksync",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
+        "High CPS",
+        "Gimmicky",
+        "Flow",
+        "Wave"
+      ],
+      "description": "The 3rd level in the poocu series, consisting of some of the most colorful and innocent decoration on the list. Known for its high-cps off-the-grid gameplay, as well as overall maximum bubbliness.",
+      "song": 763176,
+      "edel_enjoyment": 60.40625,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
+        "username": "a59252232",
+        "global_name": "Lisp"
+      },
+      "verifications": [
+        {
+          "id": "ef10943e-3376-4ecf-8320-a232955b6f86",
+          "submitted_by": {
+            "id": "e41cbae1-9509-4a02-aac5-b873bef215e5",
+            "username": "kyass",
+            "global_name": "noelle"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=fzL31vai1ms",
+          "hide_video": false,
+          "achieved_at": "2022-11-01T21:22:13Z",
+          "created_at": "2022-11-26T20:35:01Z",
+          "updated_at": "2022-11-26T20:35:01Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "137c4641-1fc1-4738-8ad8-d9d0c69f9d1c",
+          "username": "607ec4d72",
+          "global_name": "Aespha"
+        },
+        {
+          "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
+          "username": "a59252232",
+          "global_name": "Lisp"
+        },
+        {
+          "id": "88a2759c-609a-4258-9d94-a869564a0ac3",
+          "username": "afd512ca8",
+          "global_name": "Faraox"
+        },
+        {
+          "id": "8d44a5f6-d81c-47c2-b341-4e2e80b406f0",
+          "username": "f7d7677c4",
+          "global_name": "TypicalGMD"
+        },
+        {
+          "id": "b6e62977-ec39-48e2-a0ca-214b9e7b4f86",
+          "username": "c38402c40",
+          "global_name": "ar12"
+        },
+        {
+          "id": "c9077004-b785-455c-a6e5-f5de03c3ab46",
+          "username": "ea8f55b32",
+          "global_name": "ph0"
+        },
+        {
+          "id": "dca9cde4-e828-4dfa-bff2-7f1bd0d11317",
+          "username": "a00c5e579",
+          "global_name": "Earthum"
+        }
+      ]
+    },
+    {
+      "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
+      "name": "Calibrate",
+      "position": 64,
+      "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
+      "points": 2924,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 136981369,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Fast-Paced",
+        "Timings",
+        "Learny",
+        "High CPS",
+        "Wave",
+        "Overall"
+      ],
+      "description": null,
+      "song": null,
+      "edel_enjoyment": 78.06666667,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
+        "username": "bamvie",
+        "global_name": "Bamvie"
+      },
+      "verifications": [
+        {
+          "id": "ae37388a-1f5d-4166-91dd-2cba7ec11b1d",
+          "submitted_by": {
+            "id": "5a57a762-dce8-4a6a-b18c-5832a8eee55c",
+            "username": "0d595d2e7",
+            "global_name": "Blebae"
+          },
+          "mobile": false,
+          "video_url": "https://youtu.be/6WYnZryX_mg",
+          "hide_video": false,
+          "achieved_at": "2026-03-31T00:35:10Z",
+          "created_at": "2026-05-02T13:37:33.279483Z",
+          "updated_at": "2026-05-02T13:37:33.279484Z"
+        }
+      ],
+      "creators": []
+    },
+    {
+      "id": "4fac9298-93ae-4553-abe9-72a562567318",
+      "name": "MINUSdry",
+      "position": 65,
+      "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
+      "points": 2906,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 89414220,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "High CPS",
+        "Mirror",
+        "Cube",
+        "Ship",
+        "Old Swing",
+        "Overall"
+      ],
+      "description": "Half-joke and half-serious old styled extreme. Remake of the impossible level \"Silent Dry\". Don't get wet...",
+      "song": -4,
+      "edel_enjoyment": 56.98,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
+        "username": "cdmusic",
+        "global_name": "CDMusic"
+      },
+      "verifications": [
+        {
+          "id": "67eda397-9f2b-4941-b8e9-5d59e0564993",
+          "submitted_by": {
+            "id": "1156a3b2-fb57-49f3-958d-0ac7ce908ad2",
+            "username": "549493eae",
+            "global_name": "Varium"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=YvA8ehhzz0Q&t=116s",
+          "hide_video": false,
+          "achieved_at": "2023-03-18T21:00:07Z",
+          "created_at": "2023-05-04T15:24:08Z",
+          "updated_at": "2023-05-04T15:24:08Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "1156a3b2-fb57-49f3-958d-0ac7ce908ad2",
+          "username": "549493eae",
+          "global_name": "Varium"
+        },
+        {
+          "id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
+          "username": "87adcadc6",
+          "global_name": "Sevant"
+        },
+        {
+          "id": "e508d79b-9bdf-4a04-8548-78fff3a779cc",
+          "username": "blankb",
+          "global_name": "Blankb"
+        },
+        {
+          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
+          "username": "cdmusic",
+          "global_name": "CDMusic"
         }
       ]
     },
     {
       "id": "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
       "name": "Deadlier Clubstep",
-      "position": 70,
+      "position": 66,
       "publisher_id": "e3204e3a-aaaf-4a4c-a86d-d6353b4b01b8",
-      "points": 2821,
+      "points": 2888,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96314787,
@@ -7276,11 +6917,222 @@
       ]
     },
     {
+      "id": "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
+      "name": "The Hallucination",
+      "position": 67,
+      "publisher_id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+      "points": 2871,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 81139702,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "XL",
+        "Circles",
+        "Fast-Paced",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
+        "Flow",
+        "Nerve Control",
+        "Ship",
+        "Wave"
+      ],
+      "description": "Black and blue circles level known for its intense song and fast-paced sync gameplay. Decoration took over a year to be completed.",
+      "song": 568369,
+      "edel_enjoyment": 50.93103448,
+      "is_edel_pending": false,
+      "gddl_tier": 36.666666666666664,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+        "username": "029747e6b",
+        "global_name": "SyQual"
+      },
+      "verifications": [
+        {
+          "id": "9ba357c3-8330-438f-ab49-7ba5c55a0c7a",
+          "submitted_by": {
+            "id": "8337f139-e06a-4588-82ee-f0f010a813db",
+            "username": "d37a96c2e",
+            "global_name": "VoTcHi"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=tYbXsNkO9HE",
+          "hide_video": false,
+          "achieved_at": "2022-06-19T12:08:58Z",
+          "created_at": "2022-10-25T16:03:01Z",
+          "updated_at": "2022-10-25T16:03:01Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "11f6083f-3304-481c-865a-ee4e4d7b31f3",
+          "username": "029747e6b",
+          "global_name": "SyQual"
+        },
+        {
+          "id": "8337f139-e06a-4588-82ee-f0f010a813db",
+          "username": "d37a96c2e",
+          "global_name": "VoTcHi"
+        }
+      ]
+    },
+    {
+      "id": "146c9eed-2b47-483c-93a2-6b336adea84a",
+      "name": "COMBUSTION",
+      "position": 68,
+      "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
+      "points": 2854,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 94359172,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Medium",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "Ship",
+        "Wave"
+      ],
+      "description": "Claustrophobic 1.9 styled extreme with only about 50 seconds of gameplay. Created to be one of the hardest slow, timing based extremes at the time.",
+      "song": 797578,
+      "edel_enjoyment": 68.46875,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
+        "username": "132022d6e",
+        "global_name": "Cersia"
+      },
+      "verifications": [
+        {
+          "id": "f1b96213-fd58-421a-920a-6ed6763c8b79",
+          "submitted_by": {
+            "id": "7b8a402b-0c7f-4501-9f56-1aaa54970dd8",
+            "username": "slithium",
+            "global_name": "Slithium"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=3cTR4XUcA28",
+          "hide_video": false,
+          "achieved_at": "2023-09-11T03:01:02Z",
+          "created_at": "2025-07-26T06:07:59.625024Z",
+          "updated_at": "2025-07-26T06:07:59.625024Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "7b8a402b-0c7f-4501-9f56-1aaa54970dd8",
+          "username": "slithium",
+          "global_name": "Slithium"
+        },
+        {
+          "id": "abc98d79-6d79-48f9-9343-cb1a48092908",
+          "username": "132022d6e",
+          "global_name": "Cersia"
+        }
+      ]
+    },
+    {
+      "id": "b2252317-dcf2-432d-ba36-59642218803c",
+      "name": "Saul Goodman",
+      "position": 69,
+      "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+      "points": 2837,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 90477539,
+      "two_player": false,
+      "tags": [
+        "2.1",
+        "Long",
+        "Fast-Paced",
+        "Learny",
+        "Flow",
+        "Wave",
+        "Overall"
+      ],
+      "description": "The hardest extreme in the Breaking Bad series, overall not supposed to be a serious level. Incredibly learny gameplay where everything is moving and bouncing, also filled to the brim with inside jokes. Atrocious endscreen.",
+      "song": 462370,
+      "edel_enjoyment": 56.26086957,
+      "is_edel_pending": false,
+      "gddl_tier": 37,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+        "username": "f7183736b",
+        "global_name": "Renn241"
+      },
+      "verifications": [
+        {
+          "id": "d1cd5006-b1a1-4877-ae3f-e597e3dd544d",
+          "submitted_by": {
+            "id": "955e8f60-f26a-4ba6-8d51-d5b98c073b4a",
+            "username": "bloomzwz",
+            "global_name": "bloom"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=hjs5PjUaw9k",
+          "hide_video": false,
+          "achieved_at": "2023-05-03T04:45:06Z",
+          "created_at": "2023-05-26T17:02:08Z",
+          "updated_at": "2023-05-26T17:02:08Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
+          "username": "mercurydt",
+          "global_name": "MercuryDT"
+        },
+        {
+          "id": "29808856-a897-4f71-992a-04d6d93cd3f1",
+          "username": "11878e1a8",
+          "global_name": "joojmiguel"
+        },
+        {
+          "id": "756e65a9-d6b7-4040-a781-c0b0011f35cc",
+          "username": "1b8689792",
+          "global_name": "NukeIIX"
+        },
+        {
+          "id": "a03addbe-414a-4814-a2ec-2cf3cbb38278",
+          "username": "e7d408ace",
+          "global_name": "GhostVandalf"
+        },
+        {
+          "id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
+          "username": "f7183736b",
+          "global_name": "Renn241"
+        },
+        {
+          "id": "bb849c83-da29-402a-8473-e1e89eb0c556",
+          "username": "cd26ed694",
+          "global_name": "Loltad"
+        },
+        {
+          "id": "df27af7b-e320-47d3-8b0a-e4557a4f05c0",
+          "username": "ec5f043f5",
+          "global_name": "DreamTide"
+        },
+        {
+          "id": "fba5e0f6-f0e1-4a05-930e-30b809440ec5",
+          "username": "9a683cb82",
+          "global_name": "QuacDuc"
+        }
+      ]
+    },
+    {
       "id": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
       "name": "BRITNEY NO SCLEARS",
-      "position": 71,
+      "position": 70,
       "publisher_id": "99a5a491-422a-46d9-882a-10a1fd6cb05e",
-      "points": 2804,
+      "points": 2821,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125317359,
@@ -7327,9 +7179,9 @@
     {
       "id": "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "name": "Stellar Night",
-      "position": 72,
+      "position": 71,
       "publisher_id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-      "points": 2788,
+      "points": 2804,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 83244159,
@@ -7381,9 +7233,9 @@
     {
       "id": "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "name": "Gaggatrondra",
-      "position": 73,
+      "position": 72,
       "publisher_id": "3e2396d0-3bbd-49e3-8fb3-146fab51446a",
-      "points": 2772,
+      "points": 2788,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 114990369,
@@ -7434,9 +7286,9 @@
     {
       "id": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "name": "Sevvend Clubstep",
-      "position": 74,
+      "position": 73,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2757,
+      "points": 2772,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120255728,
@@ -7533,9 +7385,9 @@
     {
       "id": "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "name": "Edge of Destiny",
-      "position": 75,
+      "position": 74,
       "publisher_id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-      "points": 2741,
+      "points": 2757,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 89187968,
@@ -7670,9 +7522,9 @@
     {
       "id": "64b042d2-a084-4a84-83c6-fcc830e84a2e",
       "name": "Losing Your Mind",
-      "position": 76,
+      "position": 75,
       "publisher_id": "9e29d980-d0ce-4d36-8ebb-f88d4d18aec5",
-      "points": 2726,
+      "points": 2741,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 139508889,
@@ -7716,11 +7568,154 @@
       "creators": []
     },
     {
+      "id": "2471e1cc-ff59-471f-bc1c-eca3651a8591",
+      "name": "Haunted Ship",
+      "position": 76,
+      "publisher_id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
+      "points": 2726,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 143523624,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "NONG",
+        "Fast-Paced",
+        "Timings",
+        "Learny",
+        "Nerve Control",
+        "Overall"
+      ],
+      "description": null,
+      "song": 1585216,
+      "edel_enjoyment": 86.125,
+      "is_edel_pending": false,
+      "gddl_tier": null,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
+        "username": "awesomeme360",
+        "global_name": "AWESOMEME360"
+      },
+      "verifications": [
+        {
+          "id": "a8a59345-7a26-4f95-b81c-2f086044f5f8",
+          "submitted_by": {
+            "id": "decb742e-ae06-4867-bfde-e84ad2bb025f",
+            "username": "83f69ce7e",
+            "global_name": "Gnamolor"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=22l59QGmL48",
+          "hide_video": false,
+          "achieved_at": "2026-06-26T00:00:06Z",
+          "created_at": "2026-08-16T00:23:48.470079Z",
+          "updated_at": "2026-08-16T00:23:48.470079Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "decb742e-ae06-4867-bfde-e84ad2bb025f",
+          "username": "83f69ce7e",
+          "global_name": "Gnamolor"
+        },
+        {
+          "id": "e80a7aee-3c73-4286-85f0-c2f9147d9153",
+          "username": "awesomeme360",
+          "global_name": "AWESOMEME360"
+        }
+      ]
+    },
+    {
+      "id": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+      "name": "The Plunge",
+      "position": 77,
+      "publisher_id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
+      "points": 2711,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 113220284,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Ship"
+      ],
+      "description": "Atmospheric and floaty vortex themed extreme with a washed out song that takes loose White Space inspiration. Very memorable endscreen with a realistic hand.",
+      "song": 1135786,
+      "edel_enjoyment": 59.41176471,
+      "is_edel_pending": false,
+      "gddl_tier": 36,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
+        "username": "faa37b49c",
+        "global_name": "DolaLXM"
+      },
+      "verifications": [
+        {
+          "id": "7ef082c3-b56d-45ce-8e3e-4f43fc85635c",
+          "submitted_by": {
+            "id": "20371fdc-1fcd-4938-ba9e-f1b93a423389",
+            "username": "825de6500",
+            "global_name": "Gokill"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=8gW1-_u1K0Y",
+          "hide_video": false,
+          "achieved_at": "2024-12-19T00:00:06Z",
+          "created_at": "2025-02-16T23:22:26Z",
+          "updated_at": "2025-02-16T23:22:26Z"
+        }
+      ],
+      "creators": [
+        {
+          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
+          "username": "b743d0986",
+          "global_name": "PBreakerGD"
+        },
+        {
+          "id": "77e68cfa-d897-422c-a0c0-fa4f76f584b6",
+          "username": "4b2caf193",
+          "global_name": "shodai"
+        },
+        {
+          "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
+          "username": "8cc3f89f6",
+          "global_name": "Roselyne"
+        },
+        {
+          "id": "9031aebd-97b4-40d5-ab67-9f555cf79942",
+          "username": "6ba254de9",
+          "global_name": "TriplashGD"
+        },
+        {
+          "id": "98b399aa-0b64-4d35-823f-ba907a998208",
+          "username": "cb5d4f7db",
+          "global_name": "Arachnid"
+        },
+        {
+          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
+          "username": "d10bc1be6",
+          "global_name": "Adrone"
+        },
+        {
+          "id": "f60cad47-ed8d-40b8-8225-47c0610e930b",
+          "username": "1d99a3331",
+          "global_name": "G4lvatron"
+        }
+      ]
+    },
+    {
       "id": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "name": "Solar Flare",
-      "position": 77,
+      "position": 78,
       "publisher_id": "7d9efb4f-8259-40eb-b123-41785a461e58",
-      "points": 2711,
+      "points": 2696,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 90390075,
@@ -7776,9 +7771,9 @@
     {
       "id": "822815ac-fcb8-40b3-b42d-bd692095129c",
       "name": "The Catacombs",
-      "position": 78,
+      "position": 79,
       "publisher_id": "abc98d79-6d79-48f9-9343-cb1a48092908",
-      "points": 2696,
+      "points": 2681,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 104232191,
@@ -7827,9 +7822,9 @@
     {
       "id": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
       "name": "LIMBO",
-      "position": 79,
+      "position": 80,
       "publisher_id": "843a11c3-925d-4044-bc08-7c0ca34ff653",
-      "points": 2681,
+      "points": 2666,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 86084399,
@@ -8058,9 +8053,9 @@
     {
       "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
       "name": "Make Paul Dance",
-      "position": 80,
+      "position": 81,
       "publisher_id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
-      "points": 2666,
+      "points": 2652,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 115860808,
@@ -8107,9 +8102,9 @@
     {
       "id": "0029b449-c191-4a9b-91a2-40a3c96037f6",
       "name": "Codependence (Solo)",
-      "position": 81,
+      "position": 82,
       "publisher_id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
-      "points": 2652,
+      "points": 2637,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 62556400,
@@ -8306,9 +8301,9 @@
     {
       "id": "33f22458-6142-45b2-a45e-9cc488be8304",
       "name": "Collapse (Nexel)",
-      "position": 82,
+      "position": 83,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2637,
+      "points": 2623,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113256247,
@@ -8357,9 +8352,9 @@
     {
       "id": "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "name": "Belladonna",
-      "position": 83,
+      "position": 84,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2623,
+      "points": 2609,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94969889,
@@ -8415,9 +8410,9 @@
     {
       "id": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
       "name": "Mayhem",
-      "position": 84,
+      "position": 85,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
-      "points": 2609,
+      "points": 2596,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82544060,
@@ -8508,9 +8503,9 @@
     {
       "id": "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
       "name": "CHROMACAVE",
-      "position": 85,
+      "position": 86,
       "publisher_id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
-      "points": 2596,
+      "points": 2582,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131497860,
@@ -8572,89 +8567,6 @@
           "id": "ed02f142-7652-4627-a162-e3c591fa7d83",
           "username": "49d3dd113",
           "global_name": "xVoid"
-        }
-      ]
-    },
-    {
-      "id": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
-      "name": "The Plunge",
-      "position": 86,
-      "publisher_id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
-      "points": 2582,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 113220284,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Unbalanced",
-        "Ship"
-      ],
-      "description": "Atmospheric and floaty vortex themed extreme with a washed out song that takes loose White Space inspiration. Very memorable endscreen with a realistic hand.",
-      "song": 1135786,
-      "edel_enjoyment": 59.41176471,
-      "is_edel_pending": false,
-      "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "7e4225cb-d9a6-4bdb-ae1c-c0ef57ae6a27",
-        "username": "faa37b49c",
-        "global_name": "DolaLXM"
-      },
-      "verifications": [
-        {
-          "id": "7ef082c3-b56d-45ce-8e3e-4f43fc85635c",
-          "submitted_by": {
-            "id": "20371fdc-1fcd-4938-ba9e-f1b93a423389",
-            "username": "825de6500",
-            "global_name": "Gokill"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=8gW1-_u1K0Y",
-          "hide_video": false,
-          "achieved_at": "2024-12-19T00:00:06Z",
-          "created_at": "2025-02-16T23:22:26Z",
-          "updated_at": "2025-02-16T23:22:26Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "59bb8d4e-b3d5-4574-bbab-ba762114e78b",
-          "username": "b743d0986",
-          "global_name": "PBreakerGD"
-        },
-        {
-          "id": "77e68cfa-d897-422c-a0c0-fa4f76f584b6",
-          "username": "4b2caf193",
-          "global_name": "shodai"
-        },
-        {
-          "id": "8bb093af-b488-4d0d-a79e-14e5b14c7a3e",
-          "username": "8cc3f89f6",
-          "global_name": "Roselyne"
-        },
-        {
-          "id": "9031aebd-97b4-40d5-ab67-9f555cf79942",
-          "username": "6ba254de9",
-          "global_name": "TriplashGD"
-        },
-        {
-          "id": "98b399aa-0b64-4d35-823f-ba907a998208",
-          "username": "cb5d4f7db",
-          "global_name": "Arachnid"
-        },
-        {
-          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
-          "username": "d10bc1be6",
-          "global_name": "Adrone"
-        },
-        {
-          "id": "f60cad47-ed8d-40b8-8225-47c0610e930b",
-          "username": "1d99a3331",
-          "global_name": "G4lvatron"
         }
       ]
     },
@@ -9148,353 +9060,7 @@
           "updated_at": "2023-10-03T08:56:09Z"
         }
       ],
-      "creators": [
-        {
-          "id": "0af6b541-db32-4306-b253-9bf445b485b6",
-          "username": "3d91ffe97",
-          "global_name": "LassiBoy"
-        },
-        {
-          "id": "1bedc6b3-af15-41c4-a815-745e61d684cd",
-          "username": "b5762f800",
-          "global_name": "Rob Buck"
-        },
-        {
-          "id": "1f5f720e-93e6-4d06-b64e-e59f804a6bf9",
-          "username": "6233bf2a0",
-          "global_name": "Alter"
-        },
-        {
-          "id": "29688d0a-ed8f-480b-ac4a-61f3402163fb",
-          "username": "0c3eac25e",
-          "global_name": "Oskux"
-        },
-        {
-          "id": "29b6a96d-66fc-4e1c-943f-66971ae02e14",
-          "username": "a32339d89",
-          "global_name": "Logik"
-        },
-        {
-          "id": "2ac7d361-53e9-4aec-a92d-efcb1f0fb594",
-          "username": "5e37c7680",
-          "global_name": "Megaman9"
-        },
-        {
-          "id": "2c43641b-2282-4a20-93cc-e9978eb63382",
-          "username": "02913ff57",
-          "global_name": "Flaksy"
-        },
-        {
-          "id": "2c722221-bbc0-40e5-b24f-09982e5c1cc3",
-          "username": "5a12c209c",
-          "global_name": "TheTrueEclipse"
-        },
-        {
-          "id": "2e3c53e4-7c5e-48da-b781-f54bc150cdbf",
-          "username": "50af4664a",
-          "global_name": "LIEB"
-        },
-        {
-          "id": "316b1068-d193-4b95-b945-e6900301e33b",
-          "username": "821f54217",
-          "global_name": "Jo2000"
-        },
-        {
-          "id": "33c7af17-6ffc-4764-8084-1baac9dcff10",
-          "username": "13cbcd694",
-          "global_name": "Fury0313"
-        },
-        {
-          "id": "36c13bb2-a8fe-4c99-978c-e93a29ee8e51",
-          "username": "iblade",
-          "global_name": "iBlade"
-        },
-        {
-          "id": "3a3977c5-e270-4ae7-8d78-1f15d800f513",
-          "username": "3a81263d6",
-          "global_name": "Dasher3000"
-        },
-        {
-          "id": "3a438ae5-8c74-4fe1-9b50-0f2d3ff905ca",
-          "username": "07c489eeb",
-          "global_name": "PG1004"
-        },
-        {
-          "id": "3c55b173-30d0-4d6e-8387-11127bb0de86",
-          "username": "df6a1f5bc",
-          "global_name": "Metsho"
-        },
-        {
-          "id": "413b6992-10fa-45ec-a96f-02ecf68e02a3",
-          "username": "d098c207f",
-          "global_name": "Blitzmister"
-        },
-        {
-          "id": "418ed10c-c59b-4b58-b3a2-e91ca0c5e05e",
-          "username": "gdskele",
-          "global_name": "Skele"
-        },
-        {
-          "id": "43df0a0e-78e7-4d83-9b8e-85a45ee56779",
-          "username": "604728ba8",
-          "global_name": "Findexi"
-        },
-        {
-          "id": "48b0f253-15da-439f-813e-0954dbe6199a",
-          "username": "c0b405705",
-          "global_name": "Avery"
-        },
-        {
-          "id": "49f7216c-5f81-4d5f-a703-5beb432d68aa",
-          "username": "2d851d7dd",
-          "global_name": "Tygrysek"
-        },
-        {
-          "id": "4b0c633d-48fb-47fe-8cae-cdb4a897e3fc",
-          "username": "c413c77cc",
-          "global_name": "Nahuel2998"
-        },
-        {
-          "id": "4f253214-c863-437f-a83a-37a102add8b1",
-          "username": "8bd50b15b",
-          "global_name": "Toxic"
-        },
-        {
-          "id": "54e04276-3c19-448a-b6a8-2cd9e32eb53f",
-          "username": "cb82940cb",
-          "global_name": "Dzeser"
-        },
-        {
-          "id": "59f9940e-05d6-4a9e-83c0-2c16e32e40ee",
-          "username": "a1db2504b",
-          "global_name": "IronDofus435"
-        },
-        {
-          "id": "5c5b508e-8d8f-4ee9-a45d-e8c38a310f7b",
-          "username": "0821bb181",
-          "global_name": "Platnuu"
-        },
-        {
-          "id": "651a7de6-5f71-43ab-8fad-57ab7fb4b531",
-          "username": "ea613f1f3",
-          "global_name": "Allan"
-        },
-        {
-          "id": "65953aad-0af0-4183-942e-183de66aa7b6",
-          "username": "zkazia",
-          "global_name": "Kazia"
-        },
-        {
-          "id": "674ba9ba-d5fd-4235-b1c0-9600644a5936",
-          "username": "51642a9e9",
-          "global_name": "Kruso"
-        },
-        {
-          "id": "7a7db2a4-fa20-489c-86d5-2f62f8efe364",
-          "username": "542b4ed44",
-          "global_name": "Nicki1202"
-        },
-        {
-          "id": "7d4deed4-bc9a-48de-acda-f6626c0b92e1",
-          "username": "69b11143e",
-          "global_name": "Ozix"
-        },
-        {
-          "id": "84b762f0-7288-476d-8e86-a81f1bd8bc1c",
-          "username": "4e7c807c6",
-          "global_name": "VERSU5"
-        },
-        {
-          "id": "84bd56f4-4d96-41a2-8482-6e48b62b221a",
-          "username": "thejosiahturner",
-          "global_name": "josi"
-        },
-        {
-          "id": "89a49649-649a-4ce8-b851-d874d4101acd",
-          "username": "1b78add82",
-          "global_name": "Jeyzor"
-        },
-        {
-          "id": "9410dd27-437a-4982-8400-e83abe6103f3",
-          "username": "5282568dd",
-          "global_name": "Koolboom"
-        },
-        {
-          "id": "94b12249-cde4-46ee-bb02-59158232a200",
-          "username": "8e92a2917",
-          "global_name": "vArctic99"
-        },
-        {
-          "id": "96cde31b-56e9-4f80-a1db-ca75a0f375d0",
-          "username": "3af0d5ae3",
-          "global_name": "KFAOpitar"
-        },
-        {
-          "id": "97b94b31-a92e-46ab-a35c-414ed775de1b",
-          "username": "85002d976",
-          "global_name": "Brittank88"
-        },
-        {
-          "id": "987f5e77-0bde-4d52-a548-2c8fc5e29ded",
-          "username": "5a12e9df7",
-          "global_name": "Adiale"
-        },
-        {
-          "id": "9d37762e-7043-468e-bfc7-e5cff45588be",
-          "username": "482d0cb64",
-          "global_name": "Surv"
-        },
-        {
-          "id": "9f4d28f4-27e6-4dd6-a57b-b740501d1bf3",
-          "username": "df682bd3d",
-          "global_name": "Inactive"
-        },
-        {
-          "id": "aba9bdb0-baf7-404f-a01b-895ce4346311",
-          "username": "cc15aa858",
-          "global_name": "Chromatik"
-        },
-        {
-          "id": "b51f4c25-ba34-41d2-a8bf-244aee4bc1a3",
-          "username": "a3070f601",
-          "global_name": "TDChris02"
-        },
-        {
-          "id": "b9551314-a9a2-48a1-8ab8-5918748068ca",
-          "username": "1c15536b6",
-          "global_name": "Disp"
-        },
-        {
-          "id": "ba65840f-9d87-4b18-b67f-3f544779481b",
-          "username": "413bbc242",
-          "global_name": "JaredKawaii"
-        },
-        {
-          "id": "c2c8ce1c-8197-4582-aaaa-7c217bd54535",
-          "username": "286364b66",
-          "global_name": "Wod"
-        },
-        {
-          "id": "c64db5cc-e2a6-491b-8c5b-659116ff2b6a",
-          "username": "4603ab9cc",
-          "global_name": "Obsidium"
-        },
-        {
-          "id": "c79a9a87-73e9-4b70-9b1e-5862070ca647",
-          "username": "a38fcc368",
-          "global_name": "Loogiah"
-        },
-        {
-          "id": "c9e9678a-9c93-4968-aa9b-4e2133d971ec",
-          "username": "83c658862",
-          "global_name": "ErisethSP"
-        },
-        {
-          "id": "ca86844f-8d04-4419-b100-1050c759b704",
-          "username": "4d6c9b1eb",
-          "global_name": "PhantomX"
-        },
-        {
-          "id": "ce0e45f4-02c1-4c62-bfd6-970ceab4acb4",
-          "username": "b45922ecc",
-          "global_name": "Norcda"
-        },
-        {
-          "id": "ce8b2a68-4fb0-4f85-8a1c-1a0ddc46cae4",
-          "username": "xsmokes71",
-          "global_name": "Smokes"
-        },
-        {
-          "id": "d014b0ba-f8cc-4873-911c-6b7d55ecc0df",
-          "username": "d9f3b7489",
-          "global_name": "Ninetales"
-        },
-        {
-          "id": "d032e20c-02a9-4589-9a7a-0a1c8af1fa13",
-          "username": "de4d254f3",
-          "global_name": "ILRELL"
-        },
-        {
-          "id": "d8804acd-1bb2-4888-bf20-5682978902a9",
-          "username": "4eaca9fe5",
-          "global_name": "weoweoteo"
-        },
-        {
-          "id": "dd2b3727-a319-43f7-b8c0-e2ca4c73b2f1",
-          "username": "alrexx",
-          "global_name": "AlrexX"
-        },
-        {
-          "id": "e1719fd7-1604-4323-9a7a-d57445a4d221",
-          "username": "83d97d64e",
-          "global_name": "Dehznik"
-        },
-        {
-          "id": "e25f3e13-ee68-4eaf-b5b4-fecf00f731fc",
-          "username": "61a55d586",
-          "global_name": "fin"
-        },
-        {
-          "id": "e2edc318-a34d-4cb1-8da2-ac5dce83d07f",
-          "username": "41fe37752",
-          "global_name": "FozaeKitty"
-        },
-        {
-          "id": "e37bc609-6ce0-448e-8bd8-88d867ea9b11",
-          "username": "ca2348b55",
-          "global_name": "Yozyo"
-        },
-        {
-          "id": "e811eef5-0fc4-475f-a92f-e78924f8e45d",
-          "username": "whitepythor",
-          "global_name": "WhitePythor"
-        },
-        {
-          "id": "e8a6dcaa-e94e-4aa0-aadf-1f90283049ad",
-          "username": "d84edc8ee",
-          "global_name": "Megantwoo"
-        },
-        {
-          "id": "e8b1bee1-5abc-4997-8f11-7600aed97536",
-          "username": "67fef2130",
-          "global_name": "AirForce"
-        },
-        {
-          "id": "ec6ddf02-a8cf-4d09-a86c-b172be1bff8a",
-          "username": "053babd3d",
-          "global_name": "SuperSNSD"
-        },
-        {
-          "id": "efe3dfa5-6a34-4601-a2cf-19040946ccb1",
-          "username": "e5b4f366d",
-          "global_name": "Cookieszs"
-        },
-        {
-          "id": "f0e10f5f-2770-46a6-ada0-57a9a8305108",
-          "username": "b6fd36c94",
-          "global_name": "Gusearth"
-        },
-        {
-          "id": "f2151ffa-df21-499c-8aa3-47f33e060f5e",
-          "username": "705d2a10b",
-          "global_name": "Wolfstar"
-        },
-        {
-          "id": "f3b9d61f-0f2a-494c-8c60-e3e7a940af48",
-          "username": "dooorami",
-          "global_name": "Dorami"
-        },
-        {
-          "id": "fcc865f4-75e7-422a-8b00-dae2eee79f2f",
-          "username": "333b291e4",
-          "global_name": "Thomartin"
-        },
-        {
-          "id": "fdb9bde1-596c-42f0-a45b-9704f2b66246",
-          "username": "156e89f28",
-          "global_name": "Mazl"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "9e4fe89f-e634-41f6-a1d7-c388d426856b",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T07:30:45.669Z",
+  "generatedAt": "2026-11-05T15:53:25.679Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -6182,6 +6182,21 @@
         "date": "2026-10-27",
         "position": 66,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 67,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 68,
+        "reason": "Moved down — Deadlier Clubstep was raised to #66"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 67,
+        "reason": "Moved up — Saul Goodman was lowered to #69"
       }
     ],
     "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b": [
@@ -239893,6 +239908,11 @@
         "date": "2026-10-26",
         "position": 84,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 85,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "d1faed56-a544-4ada-bd14-b04cb14959f6": [
@@ -268374,6 +268394,16 @@
         "date": "2026-10-27",
         "position": 61,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 62,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 63,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "59b15de8-3880-4755-83e7-95787b1166bb": [
@@ -271985,6 +272015,11 @@
         "date": "2026-10-26",
         "position": 79,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 80,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "8ce64ed4-2cc2-4440-9a46-e1696c67e791": [
@@ -294550,6 +294585,16 @@
         "date": "2026-10-27",
         "position": 63,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 64,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 65,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "94000633-1b00-4e52-ae77-48fab8aecf9d": [
@@ -294937,6 +294982,11 @@
         "date": "2026-10-26",
         "position": 75,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 74,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "2c0bca18-1451-4804-8035-39a5cf9183dc": [
@@ -307100,6 +307150,11 @@
         "date": "2026-10-26",
         "position": 77,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 78,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a": [
@@ -307619,6 +307674,26 @@
         "date": "2026-10-27",
         "position": 64,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 65,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 66,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 67,
+        "reason": "Moved down — Deadlier Clubstep was raised to #66"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 69,
+        "reason": "Lowered from #67 to #69"
       }
     ],
     "1b90183d-b774-4277-8e8d-a3b5e8f857d9": [
@@ -324169,6 +324244,11 @@
         "date": "2026-10-31",
         "position": 81,
         "reason": "Moved up — Belladonna was lowered to #83"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 82,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "43007b17-3ace-4d9e-aada-66552f5d3561": [
@@ -337469,6 +337549,16 @@
         "date": "2026-10-27",
         "position": 68,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 69,
+        "reason": "Moved down — Deadlier Clubstep was raised to #66"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 68,
+        "reason": "Moved up — Saul Goodman was lowered to #69"
       }
     ],
     "24d0f430-f42f-45b9-af35-b6eea34be7df": [
@@ -364195,6 +364285,11 @@
         "date": "2026-10-31",
         "position": 83,
         "reason": "Lowered from #81 to #83"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 84,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "5a6ff981-b68a-4a1c-97ba-314d0b231fe9": [
@@ -368210,6 +368305,16 @@
         "date": "2026-10-26",
         "position": 70,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 69,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 66,
+        "reason": "Raised from #69 to #66"
       }
     ],
     "c5912ba1-5bd5-496b-b0ab-c5215a0360e5": [
@@ -387553,6 +387658,16 @@
         "date": "2026-11-01",
         "position": 55,
         "reason": "Moved down — Snowbound was raised to #52"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 56,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 57,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "9c12bb17-9512-4771-b6e9-9e51c819ed01": [
@@ -396116,6 +396231,11 @@
         "date": "2026-10-31",
         "position": 82,
         "reason": "Moved up — Belladonna was lowered to #83"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 83,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "a2671a91-21b2-4771-9b5d-98eec52733e7": [
@@ -398339,6 +398459,11 @@
         "date": "2026-10-26",
         "position": 86,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 77,
+        "reason": "Raised from #86 to #77"
       }
     ],
     "9da659fa-af91-4fc8-8a14-085edb85f613": [
@@ -399452,6 +399577,11 @@
         "date": "2026-10-26",
         "position": 73,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 72,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "f79695b9-ddb2-46ab-bef6-a231917db6d5": [
@@ -399689,6 +399819,11 @@
         "date": "2026-10-27",
         "position": 65,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 55,
+        "reason": "Raised from #65 to #55"
       }
     ],
     "eda48b6f-ce6c-4be3-abc1-6a5329fcaf91": [
@@ -405264,6 +405399,11 @@
         "date": "2026-10-26",
         "position": 74,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 73,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "c2837416-7fb4-4866-ba91-e9c134a0a59a": [
@@ -408578,6 +408718,16 @@
         "date": "2026-10-27",
         "position": 59,
         "reason": "Raised from #69 to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 60,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 61,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "797c9539-70e6-45bb-bb29-20980d8a979b": [
@@ -414543,6 +414693,16 @@
         "date": "2026-11-01",
         "position": 56,
         "reason": "Moved down — Snowbound was raised to #52"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 57,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 58,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "ae0be266-2806-4af8-9cb1-d962a8a83010": [
@@ -414834,6 +414994,11 @@
         "date": "2026-10-26",
         "position": 78,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 79,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "84080532-a440-4069-882c-88a286aabee1": [
@@ -415013,6 +415178,11 @@
         "date": "2026-10-26",
         "position": 85,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 86,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "56d52163-e3e2-4357-9843-29002b100e07": [
@@ -415120,6 +415290,16 @@
         "date": "2026-11-01",
         "position": 57,
         "reason": "Moved down — Snowbound was raised to #52"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 58,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 59,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47": [
@@ -415257,6 +415437,11 @@
         "date": "2026-10-26",
         "position": 72,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 71,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "2a8c1979-8f50-4652-8ff0-223471a9a7b5": [
@@ -416056,6 +416241,16 @@
         "date": "2026-10-27",
         "position": 60,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 61,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 62,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "e6132f57-97c2-413e-82e2-bbdf2702ce83": [
@@ -416295,6 +416490,16 @@
         "date": "2026-10-27",
         "position": 62,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 63,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 64,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "c46ddc54-db3f-4641-888a-f087a38ea4c9": [
@@ -416417,6 +416622,11 @@
         "date": "2026-10-26",
         "position": 71,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 70,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "b894d496-a12e-4ae7-8427-09bd1b0bb5b6": [
@@ -417554,6 +417764,11 @@
         "date": "2026-10-26",
         "position": 76,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 75,
+        "reason": "Moved up — Haunted Ship was lowered to #76"
       }
     ],
     "b986f5e6-2368-40df-9082-060d509d14f1": [
@@ -417846,6 +418061,16 @@
         "date": "2026-10-18",
         "position": 58,
         "reason": "Moved down — Artemis 13 was placed at #2"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 59,
+        "reason": "Moved down — Apocalyptic Trilogy was raised to #55"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 60,
+        "reason": "Moved down — Pinnacle of Life was raised to #56"
       }
     ],
     "7dd584da-369a-4bb8-86d3-68312926c102": [
@@ -417935,6 +418160,11 @@
         "date": "2026-10-27",
         "position": 67,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 56,
+        "reason": "Raised from #67 to #56"
       }
     ],
     "a7dce4c2-1503-4a62-94b5-15afaf40e0dc": [
@@ -418105,6 +418335,11 @@
         "date": "2026-10-26",
         "position": 80,
         "reason": "Moved down — Fracture was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 81,
+        "reason": "Moved down — The Plunge was raised to #77"
       }
     ],
     "2471e1cc-ff59-471f-bc1c-eca3651a8591": [
@@ -418147,6 +418382,11 @@
         "date": "2026-10-27",
         "position": 69,
         "reason": "Moved down — Loops of Fury was raised to #59"
+      },
+      {
+        "date": "2026-11-05",
+        "position": 76,
+        "reason": "Lowered from #69 to #76"
       }
     ],
     "e1ac9cab-8dd7-438e-98c9-fd844b1f3da3": [
@@ -418783,6 +419023,8 @@
       "7081880b-fe8c-4d3f-8557-a895b7aee521",
       "007000f3-c6b4-440a-a4b3-af7e86e132e9",
       "213ff25e-eac6-47fb-baee-6180b436ec8d",
+      "f79695b9-ddb2-46ab-bef6-a231917db6d5",
+      "01746dbe-64c3-486a-ba55-e2008bedaed1",
       "72bf2c18-1299-408b-bca2-3da986956632",
       "210ae17a-e6bf-4851-91be-85501194dbf3",
       "56d52163-e3e2-4357-9843-29002b100e07",
@@ -418792,19 +419034,18 @@
       "c586d155-f78c-43f6-933c-3c11c4aa6600",
       "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
       "4fac9298-93ae-4553-abe9-72a562567318",
-      "b2252317-dcf2-432d-ba36-59642218803c",
-      "f79695b9-ddb2-46ab-bef6-a231917db6d5",
-      "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
-      "01746dbe-64c3-486a-ba55-e2008bedaed1",
-      "146c9eed-2b47-483c-93a2-6b336adea84a",
-      "2471e1cc-ff59-471f-bc1c-eca3651a8591",
       "35f5084b-8cf0-4896-bda2-1b4596f2fb9e",
+      "cadb645e-dbc2-4c08-9cbc-a26f5cb3ac6e",
+      "146c9eed-2b47-483c-93a2-6b336adea84a",
+      "b2252317-dcf2-432d-ba36-59642218803c",
       "c46ddc54-db3f-4641-888a-f087a38ea4c9",
       "c6a61442-41b8-4ecd-b55a-7bbeb6d1cb47",
       "7236da3d-a27b-4a7d-b3ac-aa2a6aff1119",
       "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
       "94000633-1b00-4e52-ae77-48fab8aecf9d",
       "64b042d2-a084-4a84-83c6-fcc830e84a2e",
+      "2471e1cc-ff59-471f-bc1c-eca3651a8591",
+      "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
       "d3a53d45-e7e1-4ec4-9395-441816eb8425",
       "822815ac-fcb8-40b3-b42d-bd692095129c",
       "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
@@ -418814,7 +419055,6 @@
       "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "0bee4513-5d63-4c8a-b769-de32bdf5a331",
       "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
-      "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
       "5dd207e6-8773-471c-a153-4fae56250ad4",
       "345a0d2d-b272-4f17-9264-4ef3407f5314",
       "2c273751-18cc-4871-87e4-5a1a9879e05e",
@@ -422504,6 +422744,6 @@
       "6a7d287e-2c3c-4cf7-8d14-ccec5022d138": "BloodBat",
       "21fe55c1-aae2-4009-84db-26339e39fc38": "MUCKS"
     },
-    "lastEventFingerprint": "2026-11-05T06:40:04.147949Z|21fe55c1-aae2-4009-84db-26339e39fc38|\"Pending\""
+    "lastEventFingerprint": "2026-11-05T15:19:33.387300Z|b2252317-dcf2-432d-ba36-59642218803c|{\"Lowered\":{\"new_position\":69,\"old_position\":67}}"
   }
 }
