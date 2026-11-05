@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T16:44:39.245Z",
+  "generatedAt": "2026-11-05T21:40:04.499Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -841,6 +841,11 @@
           "global_name": "Latezk"
         },
         {
+          "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+          "username": "laysahlaser",
+          "global_name": "Laysah"
+        },
+        {
           "id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
           "username": "lordvadercraft",
           "global_name": "LordVadercraft"
@@ -1174,11 +1179,6 @@
           "id": "f2c6daba-658c-4026-94b5-28c199dd93f7",
           "username": ".youknowwho2",
           "global_name": "YouknowwhoGD"
-        },
-        {
-          "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-          "username": "iiilaseriii",
-          "global_name": "Laser"
         },
         {
           "id": "fa1e9493-4f20-4467-88bf-915dcc93d11d",
@@ -7641,9 +7641,9 @@
         {
           "id": "7e5b9add-ebed-4947-a55b-03c564ad93d0",
           "submitted_by": {
-            "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-            "username": "iiilaseriii",
-            "global_name": "Laser"
+            "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+            "username": "laysahlaser",
+            "global_name": "Laysah"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=LXp7t5gjyX8",
@@ -8748,9 +8748,9 @@
         {
           "id": "82127fb8-483a-421b-80da-8362e2697612",
           "submitted_by": {
-            "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-            "username": "iiilaseriii",
-            "global_name": "Laser"
+            "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+            "username": "laysahlaser",
+            "global_name": "Laysah"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=KzK62PkWOJ0",
@@ -12217,7 +12217,7 @@
       "id": "5531d67e-30cb-4cec-b42b-8b826830a7d7",
       "name": "Natural Disaster",
       "position": 117,
-      "publisher_id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
+      "publisher_id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
       "points": 2224,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -12237,17 +12237,17 @@
       "gddl_tier": 35.333333333333336,
       "nlw_tier": null,
       "publisher": {
-        "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-        "username": "iiilaseriii",
-        "global_name": "Laser"
+        "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+        "username": "laysahlaser",
+        "global_name": "Laysah"
       },
       "verifications": [
         {
           "id": "cae54143-8df1-4139-bce5-3082e8bdd178",
           "submitted_by": {
-            "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-            "username": "iiilaseriii",
-            "global_name": "Laser"
+            "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+            "username": "laysahlaser",
+            "global_name": "Laysah"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=_0GqdSFmG_8",
@@ -12282,6 +12282,11 @@
           "id": "5845053e-e88d-4c7c-8006-05a60e509ada",
           "username": "60eec989b",
           "global_name": "FreddyDash"
+        },
+        {
+          "id": "589ed93b-c14a-41ae-b625-c455f874b9ae",
+          "username": "laysahlaser",
+          "global_name": "Laysah"
         },
         {
           "id": "5b93c2c4-9f1b-4280-ae6b-859e91b0a2b8",
@@ -12327,11 +12332,6 @@
           "id": "ed7815c4-af38-43dc-94c4-4e6b7d0ae694",
           "username": "51835ef23",
           "global_name": "Szilu"
-        },
-        {
-          "id": "f4694291-b66b-4979-a2c2-bce8cf4f66d6",
-          "username": "iiilaseriii",
-          "global_name": "Laser"
         }
       ]
     },
