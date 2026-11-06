@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T04:44:53.152Z",
+  "generatedAt": "2026-11-06T13:38:43.784Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -17728,6 +17728,14 @@
           "position": 63,
           "achievedAt": "2026-10-16T21:04:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=U_nuAXxz0yI",
+          "verified": false
+        },
+        {
+          "levelId": "c46ddc54-db3f-4641-888a-f087a38ea4c9",
+          "levelName": "BRITNEY NO SCLEARS",
+          "position": 70,
+          "achievedAt": "2026-11-03T01:08:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=v3JW5H4SZ-8",
           "verified": false
         },
         {
@@ -49410,6 +49418,14 @@
           "position": 89,
           "achievedAt": "2026-04-03T11:00:13Z",
           "videoUrl": "https://www.youtube.com/watch?v=5CZJIs-JpDs",
+          "verified": false
+        },
+        {
+          "levelId": "52df535a-4674-4af7-8004-bcd5453883a9",
+          "levelName": "The Yangire",
+          "position": 94,
+          "achievedAt": "2026-10-29T00:16:02Z",
+          "videoUrl": "https://www.youtube.com/watch?v=7mPDEwH-UpY",
           "verified": false
         },
         {
