@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T13:38:43.784Z",
+  "generatedAt": "2026-11-06T22:38:46.652Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -21037,6 +21037,14 @@
           "verified": false
         },
         {
+          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
+          "levelName": "Climax",
+          "position": 95,
+          "achievedAt": "2026-08-14T21:10:12Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XlOD3PaGLq8",
+          "verified": false
+        },
+        {
           "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
           "levelName": "The Golden",
           "position": 121,
@@ -41818,7 +41826,7 @@
       ]
     },
     "530f5c69-beeb-4e06-ad69-bcf0198aa340": {
-      "name": "gif man",
+      "name": "Ngaosama",
       "levels": [
         {
           "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
@@ -46457,7 +46465,7 @@
           "levelName": "The Plunge",
           "position": 77,
           "achievedAt": "2026-10-31T23:15:25Z",
-          "videoUrl": "https://www.youtube.com/watch?v=YMRN1-haJgc",
+          "videoUrl": "https://www.youtube.com/watch?v=cTCeurvR1_g",
           "verified": false
         }
       ]
@@ -47075,6 +47083,14 @@
           "position": 78,
           "achievedAt": "2026-05-27T18:55:30Z",
           "videoUrl": "https://www.youtube.com/watch?v=GJxjvXvJVDo",
+          "verified": false
+        },
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 130,
+          "achievedAt": "2026-11-03T19:26:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=NEyOn8I3Xuk",
           "verified": false
         }
       ]
