@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T07:56:47.733Z",
+  "generatedAt": "2026-11-07T14:30:55.709Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -6631,13 +6631,7 @@
           "updated_at": "2025-11-12T04:15:11.090028Z"
         }
       ],
-      "creators": [
-        {
-          "id": "3bcbd3fc-29f1-4bfa-bcfb-08bdb624dcc2",
-          "username": "enfur",
-          "global_name": "Enfur"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "68f7dca1-2735-431b-84f5-5fe940e27da8",
@@ -6662,40 +6656,7 @@
       "edel_enjoyment": 50.71428571,
       "is_edel_pending": false,
       "gddl_tier": 36,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-        "username": "arrowgazi",
-        "global_name": "Arrow"
-      },
-      "verifications": [
-        {
-          "id": "b489a52d-ff5d-4701-b1e3-53c81f2cdb7c",
-          "submitted_by": {
-            "id": "54fca182-f83a-45e8-8978-55dc32978973",
-            "username": "5nr",
-            "global_name": "Dezstro"
-          },
-          "mobile": false,
-          "video_url": "https://youtu.be/R_-chk3SRFI?si=kKyYmZcpNtfXwNT3",
-          "hide_video": false,
-          "achieved_at": "2025-06-02T19:20:00Z",
-          "created_at": "2026-04-30T19:20:56.244427Z",
-          "updated_at": "2026-04-30T19:20:56.244427Z"
-        }
-      ],
-      "creators": [
-        {
-          "id": "17b5671c-d45b-4ad9-aa14-017160e571d2",
-          "username": "arrowgazi",
-          "global_name": "Arrow"
-        },
-        {
-          "id": "54fca182-f83a-45e8-8978-55dc32978973",
-          "username": "5nr",
-          "global_name": "Dezstro"
-        }
-      ]
+      "nlw_tier": null
     },
     {
       "id": "c586d155-f78c-43f6-933c-3c11c4aa6600",
@@ -6748,43 +6709,7 @@
           "updated_at": "2022-11-26T20:35:01Z"
         }
       ],
-      "creators": [
-        {
-          "id": "137c4641-1fc1-4738-8ad8-d9d0c69f9d1c",
-          "username": "607ec4d72",
-          "global_name": "Aespha"
-        },
-        {
-          "id": "415a3d97-c50c-4088-b770-aaaf054a3c7a",
-          "username": "a59252232",
-          "global_name": "Lisp"
-        },
-        {
-          "id": "88a2759c-609a-4258-9d94-a869564a0ac3",
-          "username": "afd512ca8",
-          "global_name": "Faraox"
-        },
-        {
-          "id": "8d44a5f6-d81c-47c2-b341-4e2e80b406f0",
-          "username": "f7d7677c4",
-          "global_name": "TypicalGMD"
-        },
-        {
-          "id": "b6e62977-ec39-48e2-a0ca-214b9e7b4f86",
-          "username": "c38402c40",
-          "global_name": "ar12"
-        },
-        {
-          "id": "c9077004-b785-455c-a6e5-f5de03c3ab46",
-          "username": "ea8f55b32",
-          "global_name": "ph0"
-        },
-        {
-          "id": "dca9cde4-e828-4dfa-bff2-7f1bd0d11317",
-          "username": "a00c5e579",
-          "global_name": "Earthum"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
