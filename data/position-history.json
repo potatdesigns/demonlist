@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T07:56:47.951Z",
+  "generatedAt": "2026-11-07T19:10:01.956Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -422797,8 +422797,10 @@
       "d17ea2ca-51ab-466f-a3d1-419a29927af5": "Havoc",
       "c7abd529-2627-4ec9-8059-b5c56ef44799": "MONHEIM",
       "6a7d287e-2c3c-4cf7-8d14-ccec5022d138": "BloodBat",
-      "21fe55c1-aae2-4009-84db-26339e39fc38": "MUCKS"
+      "21fe55c1-aae2-4009-84db-26339e39fc38": "MUCKS",
+      "7e61e712-c044-4b68-a338-fe236d0bb8a9": "frostburn",
+      "4833a64e-5755-4c30-85d8-bc356894cd51": "Embolden"
     },
-    "lastEventFingerprint": "2026-11-07T03:59:16.232999Z|5e272f5e-d1ea-4f9c-85ce-bb3a6f73876b|{\"Raised\":{\"new_position\":532,\"old_position\":611}}"
+    "lastEventFingerprint": "2026-11-07T16:03:30.955863Z|4833a64e-5755-4c30-85d8-bc356894cd51|\"Pending\""
   }
 }
