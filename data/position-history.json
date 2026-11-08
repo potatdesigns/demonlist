@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T19:10:01.956Z",
+  "generatedAt": "2026-11-08T03:02:23.174Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -363286,6 +363286,11 @@
         "date": "2026-11-05",
         "position": 1374,
         "reason": "Moved down — Xenolith (Zisthik) was placed at #182"
+      },
+      {
+        "date": "2026-11-08",
+        "position": 1375,
+        "reason": "Moved down — Friend Zone was placed at #1083"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -420106,6 +420111,7 @@
       "a178f9dc-b146-4cab-bf73-aa4c8da318a4",
       "dbc111a9-9ca0-4e7e-9769-aa0dc56a630d",
       "ae5dfdf6-ec91-4fc5-ad86-370d260c24d7",
+      "bc9d4984-6fa4-4f61-9bf8-10b57b198ef9",
       "e90de1df-1ad1-4749-9c18-35979f845e9b",
       "d40f7cef-1cc6-419e-8789-866315181da5",
       "cd9268be-23cf-4e66-b113-e8c5ff17889f",
@@ -420400,6 +420406,7 @@
       "3199593d-9a2d-409c-b6c1-266ef8e054ba",
       "db102580-d636-47c7-a23c-be9a1ab6cc54",
       "ef2be62d-fade-4390-85f6-d736bb4bcb27",
+      "323af988-b222-4575-9ed5-3cf2d5ed82cd",
       "39162ccf-96b3-4556-a957-e2c75492eeec",
       "cb8a871b-db33-47f4-aff5-c89de490a4db",
       "a56d5c3d-9f73-406c-819d-85cc9acda8eb",
@@ -420568,6 +420575,7 @@
       "6f814f2f-f65e-4db4-89b6-0522730f0db2",
       "7d4f485b-c235-4452-b713-f8616ad7f5e5",
       "55caba2f-6833-4124-b203-2612424e2e32",
+      "9ef4571c-8348-409d-a538-39f073b8c54a",
       "4345879a-e7d6-4f49-8966-324b0c983729",
       "3fd0480f-ae3a-4dd9-b2fb-fc9cf4584bbe",
       "563f711e-76cf-4d0e-9a69-fd0cefb33353",
@@ -420638,6 +420646,7 @@
       "b9b3d7ed-0cf1-4906-a367-414d59ae083a",
       "66ceb77d-900b-4fbb-95ea-cd567250eb0c",
       "d2dd87f6-7b00-44ae-bf8f-ca610e08df48",
+      "21fe55c1-aae2-4009-84db-26339e39fc38",
       "fedf5860-8cb3-44e0-976e-c8a46caa6fbc",
       "78d2148c-d0eb-468e-979a-aee250514f02",
       "1c6a1073-e2f2-401c-ad64-8622d519a342",
@@ -422801,6 +422810,6 @@
       "7e61e712-c044-4b68-a338-fe236d0bb8a9": "frostburn",
       "4833a64e-5755-4c30-85d8-bc356894cd51": "Embolden"
     },
-    "lastEventFingerprint": "2026-11-07T16:03:30.955863Z|4833a64e-5755-4c30-85d8-bc356894cd51|\"Pending\""
+    "lastEventFingerprint": "2026-11-08T00:24:37.742785Z|bc9d4984-6fa4-4f61-9bf8-10b57b198ef9|{\"Placed\":{\"new_position\":1083,\"status\":\"MainList\"}}"
   }
 }
