@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T21:35:41.147Z",
+  "generatedAt": "2026-11-09T04:11:07.762Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -3437,6 +3437,14 @@
           "verified": false
         },
         {
+          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
+          "levelName": "Silent clubstep",
+          "position": 17,
+          "achievedAt": "2026-10-28T21:45:10Z",
+          "videoUrl": "https://www.youtube.com/watch?v=_JbsJz8o4GY",
+          "verified": false
+        },
+        {
           "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
           "levelName": "Acheron",
           "position": 27,
@@ -3450,6 +3458,14 @@
           "position": 38,
           "achievedAt": "2025-07-09T22:37:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=b_zA0K-9lsA",
+          "verified": false
+        },
+        {
+          "levelId": "d79120ff-015e-457f-a164-52e98b40f411",
+          "levelName": "Subterminal Point",
+          "position": 39,
+          "achievedAt": "2026-09-19T16:30:35Z",
+          "videoUrl": "https://www.youtube.com/watch?v=GB9z989FBS0",
           "verified": false
         },
         {
@@ -9540,6 +9556,14 @@
           "position": 63,
           "achievedAt": "2026-11-01T21:51:18Z",
           "videoUrl": "https://www.youtube.com/watch?v=lIo9OKoj5VM",
+          "verified": false
+        },
+        {
+          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
+          "levelName": "MINUSdry",
+          "position": 65,
+          "achievedAt": "2026-11-08T13:31:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=uDdsbGRJYA8",
           "verified": false
         },
         {
@@ -36606,6 +36630,51 @@
         }
       ]
     },
+    "4ccd14bc-a3f3-4abc-8641-7bfcdd904593": {
+      "name": "yomayoCB",
+      "levels": [
+        {
+          "levelId": "007000f3-c6b4-440a-a4b3-af7e86e132e9",
+          "levelName": "Firework",
+          "position": 53,
+          "achievedAt": "2026-11-07T15:00:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=w8snVPnAqvE",
+          "verified": false
+        },
+        {
+          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
+          "levelName": "walter white",
+          "position": 88,
+          "achievedAt": "2026-07-27T13:06:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=63cIKYvoxio",
+          "verified": false
+        },
+        {
+          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
+          "levelName": "Sinister Silence",
+          "position": 97,
+          "achievedAt": "2026-03-15T20:30:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=FDobjhB_oZQ",
+          "verified": false
+        },
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 127,
+          "achievedAt": "2025-12-24T12:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1A1eCtcVpeQ",
+          "verified": false
+        },
+        {
+          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
+          "levelName": "Starlit Stroll",
+          "position": 143,
+          "achievedAt": "2026-05-23T19:30:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=v1mSfjXVKlw",
+          "verified": false
+        }
+      ]
+    },
     "81944479-099d-464b-bb46-acb7ef1f0319": {
       "name": "animized",
       "levels": [
@@ -48950,6 +49019,14 @@
           "achievedAt": "2026-05-25T05:22:09Z",
           "videoUrl": "https://www.youtube.com/watch?v=7mK9aQ1OdEw",
           "verified": false
+        },
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 122,
+          "achievedAt": "2026-11-06T22:31:52Z",
+          "videoUrl": "https://www.youtube.com/watch?v=U5CvCIg_WGE",
+          "verified": false
         }
       ]
     },
@@ -50517,43 +50594,6 @@
           "position": 88,
           "achievedAt": "2026-07-24T12:59:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=fDMweo9v5wc",
-          "verified": false
-        }
-      ]
-    },
-    "4ccd14bc-a3f3-4abc-8641-7bfcdd904593": {
-      "name": "yomayoCB",
-      "levels": [
-        {
-          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
-          "levelName": "walter white",
-          "position": 88,
-          "achievedAt": "2026-07-27T13:06:39Z",
-          "videoUrl": "https://www.youtube.com/watch?v=63cIKYvoxio",
-          "verified": false
-        },
-        {
-          "levelId": "9484f345-fbfb-4d82-bb6b-faa642aa3d80",
-          "levelName": "Sinister Silence",
-          "position": 97,
-          "achievedAt": "2026-03-15T20:30:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=FDobjhB_oZQ",
-          "verified": false
-        },
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 127,
-          "achievedAt": "2025-12-24T12:00:06Z",
-          "videoUrl": "https://www.youtube.com/watch?v=1A1eCtcVpeQ",
-          "verified": false
-        },
-        {
-          "levelId": "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87",
-          "levelName": "Starlit Stroll",
-          "position": 143,
-          "achievedAt": "2026-05-23T19:30:49Z",
-          "videoUrl": "https://www.youtube.com/watch?v=v1mSfjXVKlw",
           "verified": false
         }
       ]
