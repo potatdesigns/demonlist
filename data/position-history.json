@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T03:02:23.174Z",
+  "generatedAt": "2026-11-09T07:22:56.732Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -420497,6 +420497,7 @@
       "7544cdf8-4882-4a54-ba7b-201d983b9174",
       "981217ce-69a0-44ce-9776-f6306ef1ef64",
       "154af01f-c897-4523-880b-6dbf7797e9bb",
+      "ca7fdf66-1abe-41dd-ade9-de9b17a9ceea",
       "3af81501-249a-41fb-afd6-f0b5e2cb829f",
       "f68a3b09-a09f-4a9e-9472-406e6bd6ef74",
       "d923688c-5f32-4144-b94c-f8bbab1a8fc0",
@@ -420549,7 +420550,6 @@
       "1e5de489-307d-48cb-a842-2421a14bfb9c",
       "a86c295f-1209-4354-8618-18d643704a74",
       "65c96da2-0179-49b3-836b-ab115885bd0d",
-      "ca7fdf66-1abe-41dd-ade9-de9b17a9ceea",
       "6cfbbd3e-ad13-435b-8c2e-090889b2e64a",
       "fb916fc6-8d58-46b2-82e7-5d586eef6d31",
       "6d887fbb-8d7e-4291-9502-615cb077130c",
@@ -422810,6 +422810,6 @@
       "7e61e712-c044-4b68-a338-fe236d0bb8a9": "frostburn",
       "4833a64e-5755-4c30-85d8-bc356894cd51": "Embolden"
     },
-    "lastEventFingerprint": "2026-11-08T00:24:37.742785Z|bc9d4984-6fa4-4f61-9bf8-10b57b198ef9|{\"Placed\":{\"new_position\":1083,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-11-09T06:07:38.096685Z|ca7fdf66-1abe-41dd-ade9-de9b17a9ceea|{\"Raised\":{\"new_position\":1469,\"old_position\":1521}}"
   }
 }
