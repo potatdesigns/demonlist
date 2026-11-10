@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T14:09:21.684Z",
+  "generatedAt": "2026-11-10T22:45:13.655Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -16148,6 +16148,14 @@
           "position": 99,
           "achievedAt": "2025-08-14T15:44:42Z",
           "videoUrl": "https://www.youtube.com/watch?v=pTnPD_z0chY",
+          "verified": false
+        },
+        {
+          "levelId": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
+          "levelName": "Doppler (Solo)",
+          "position": 102,
+          "achievedAt": "2026-11-02T15:54:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=z0Fv6dycwqQ",
           "verified": false
         },
         {
@@ -36929,6 +36937,27 @@
         }
       ]
     },
+    "7bc69320-d5e3-4b7d-a07a-fd2e4af90d8e": {
+      "name": "purrzzival",
+      "levels": [
+        {
+          "levelId": "213ff25e-eac6-47fb-baee-6180b436ec8d",
+          "levelName": "Through The Gates",
+          "position": 54,
+          "achievedAt": "2026-11-10T07:18:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=bbOrd5W1Isw",
+          "verified": false
+        },
+        {
+          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
+          "levelName": "Verdant Landscape",
+          "position": 127,
+          "achievedAt": "2026-06-30T01:48:03Z",
+          "videoUrl": "https://www.youtube.com/watch?v=vBcHZmVrEQ4",
+          "verified": false
+        }
+      ]
+    },
     "25554cb2-0ba1-48ae-b900-299d7da3aff4": {
       "name": "Polterghast",
       "levels": [
@@ -40147,6 +40176,35 @@
           "position": 131,
           "achievedAt": "2025-10-06T14:10:57Z",
           "videoUrl": "https://www.youtube.com/watch?v=WQC_tdRz8Ww",
+          "verified": false
+        }
+      ]
+    },
+    "d8f891d9-a6a6-4295-a65a-a4b48be20ced": {
+      "name": "fwin",
+      "levels": [
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 63,
+          "achievedAt": "2026-11-06T17:01:50Z",
+          "videoUrl": "https://www.youtube.com/watch?v=tu_KdM39oPk",
+          "verified": false
+        },
+        {
+          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
+          "levelName": "Saul Goodman",
+          "position": 69,
+          "achievedAt": "2026-09-08T22:47:30Z",
+          "videoUrl": "https://www.youtube.com/watch?v=yjTsM7UJF6o&t=177s",
+          "verified": false
+        },
+        {
+          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+          "levelName": "Trickshot",
+          "position": 100,
+          "achievedAt": "2026-09-02T16:21:19Z",
+          "videoUrl": "https://www.youtube.com/watch?v=qhgnPmKEf5Y",
           "verified": false
         }
       ]
@@ -43592,27 +43650,6 @@
           "position": 145,
           "achievedAt": "2026-02-02T23:00:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=Y0huRpL9bYE",
-          "verified": false
-        }
-      ]
-    },
-    "d8f891d9-a6a6-4295-a65a-a4b48be20ced": {
-      "name": "fwin",
-      "levels": [
-        {
-          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
-          "levelName": "Saul Goodman",
-          "position": 69,
-          "achievedAt": "2026-09-08T22:47:30Z",
-          "videoUrl": "https://www.youtube.com/watch?v=yjTsM7UJF6o&t=177s",
-          "verified": false
-        },
-        {
-          "levelId": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-          "levelName": "Trickshot",
-          "position": 100,
-          "achievedAt": "2026-09-02T16:21:19Z",
-          "videoUrl": "https://www.youtube.com/watch?v=qhgnPmKEf5Y",
           "verified": false
         }
       ]
@@ -57699,6 +57736,19 @@
         }
       ]
     },
+    "e9626824-3e3e-46ff-90e3-5f53b225d8a3": {
+      "name": "AngelDxst",
+      "levels": [
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 112,
+          "achievedAt": "2026-11-10T14:22:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YarbNuSIBOk",
+          "verified": false
+        }
+      ]
+    },
     "55afd9e2-8bd8-4416-b441-34e0df99b5f3": {
       "name": "angl",
       "levels": [
@@ -60747,6 +60797,19 @@
         }
       ]
     },
+    "dc521df2-e8d5-40f9-8395-3b33f7af3e27": {
+      "name": "Lukrecja7",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-10-30T18:03:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=N-VYNIkmhLI",
+          "verified": false
+        }
+      ]
+    },
     "674be97d-915e-4363-ae01-9faf9c194c77": {
       "name": "RetroWave",
       "levels": [
@@ -63193,19 +63256,6 @@
         }
       ]
     },
-    "7bc69320-d5e3-4b7d-a07a-fd2e4af90d8e": {
-      "name": "purrzzival",
-      "levels": [
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 127,
-          "achievedAt": "2026-06-30T01:48:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=vBcHZmVrEQ4",
-          "verified": false
-        }
-      ]
-    },
     "5bc492e5-4729-43c3-b216-739e4f78342d": {
       "name": "omar",
       "levels": [
@@ -64485,6 +64535,19 @@
           "position": 131,
           "achievedAt": "2026-10-09T04:27:07Z",
           "videoUrl": "https://www.youtube.com/watch?v=sZxYBi-ZQOA",
+          "verified": false
+        }
+      ]
+    },
+    "3b1b050c-8fb4-4eb5-bd8d-c9a7a0a46527": {
+      "name": "marcelo",
+      "levels": [
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2026-10-13T13:00:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LGJ7rA1O1fY",
           "verified": false
         }
       ]
