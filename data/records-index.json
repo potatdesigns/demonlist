@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:56:31.273Z",
+  "generatedAt": "2026-11-10T01:04:55.299Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -6511,14 +6511,6 @@
           "verified": false
         },
         {
-          "levelId": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
-          "levelName": "NervHell",
-          "position": 60,
-          "achievedAt": "2026-08-10T00:26:32.647786Z",
-          "videoUrl": "https://www.youtube.com/watch?v=1zrvPgDAoaA",
-          "verified": true
-        },
-        {
           "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
           "levelName": "Sevvend Clubstep",
           "position": 73,
@@ -9511,6 +9503,14 @@
           "position": 38,
           "achievedAt": "2026-10-11T03:11:26Z",
           "videoUrl": "https://www.youtube.com/watch?v=_Amk3smN1Hg",
+          "verified": false
+        },
+        {
+          "levelId": "b0c5c3a8-02a4-4a64-ad6f-46253ff77c9a",
+          "levelName": "KOCMOC",
+          "position": 40,
+          "achievedAt": "2026-11-09T12:31:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6kwJmpTItjY",
           "verified": false
         },
         {
@@ -26060,6 +26060,14 @@
           "position": 38,
           "achievedAt": "2026-05-15T06:14:43Z",
           "videoUrl": "https://www.youtube.com/watch?v=mT6Se2XaJC4",
+          "verified": false
+        },
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 63,
+          "achievedAt": "2026-11-09T22:44:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=yTg4dAknFAU",
           "verified": false
         },
         {
@@ -45073,6 +45081,43 @@
         }
       ]
     },
+    "a6702bf6-81df-4d78-aac2-d1dee0896524": {
+      "name": "rubiks",
+      "levels": [
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 73,
+          "achievedAt": "2026-11-06T21:30:40Z",
+          "videoUrl": "https://www.youtube.com/watch?v=UH-1N1D9ua0",
+          "verified": false
+        },
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 77,
+          "achievedAt": "2026-02-16T01:14:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=s_QSbUl_49s",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 131,
+          "achievedAt": "2026-09-06T05:57:38Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dgIa8WwQDpk",
+          "verified": false
+        },
+        {
+          "levelId": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
+          "levelName": "Starlight Summit",
+          "position": 150,
+          "achievedAt": "2026-08-18T19:47:39Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6vkLSd2ao10",
+          "verified": false
+        }
+      ]
+    },
     "4e086080-9ad5-4618-bd27-6beeb06516e8": {
       "name": "zGabriel",
       "levels": [
@@ -46395,35 +46440,6 @@
           "position": 114,
           "achievedAt": "2025-03-24T15:24:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=yMfbeEV-gGI",
-          "verified": false
-        }
-      ]
-    },
-    "a6702bf6-81df-4d78-aac2-d1dee0896524": {
-      "name": "rubiks",
-      "levels": [
-        {
-          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
-          "levelName": "The Plunge",
-          "position": 77,
-          "achievedAt": "2026-02-16T01:14:15Z",
-          "videoUrl": "https://www.youtube.com/watch?v=s_QSbUl_49s",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 131,
-          "achievedAt": "2026-09-06T05:57:38Z",
-          "videoUrl": "https://www.youtube.com/watch?v=dgIa8WwQDpk",
-          "verified": false
-        },
-        {
-          "levelId": "6f5299ae-a62f-4701-b5a8-ace004b8f7ef",
-          "levelName": "Starlight Summit",
-          "position": 150,
-          "achievedAt": "2026-08-18T19:47:39Z",
-          "videoUrl": "https://www.youtube.com/watch?v=6vkLSd2ao10",
           "verified": false
         }
       ]
@@ -60728,6 +60744,19 @@
         }
       ]
     },
+    "bb35cbfe-ad41-41ba-aa9f-035359590b6f": {
+      "name": "Bokash",
+      "levels": [
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 121,
+          "achievedAt": "2026-11-08T22:58:08Z",
+          "videoUrl": "https://www.youtube.com/watch?v=E9_dK3v0bpI",
+          "verified": false
+        }
+      ]
+    },
     "c3a17a45-2581-4ebc-a46e-da89f60e75d8": {
       "name": "dice88",
       "levels": [
@@ -65523,6 +65552,27 @@
         }
       ]
     },
+    "a5d3d00e-ddb3-4780-beb1-ddd477eea87e": {
+      "name": "Shieldless",
+      "levels": [
+        {
+          "levelId": "c43eb1e4-b38d-466a-8da5-987204999072",
+          "levelName": "limbo but uwu ig idk",
+          "position": 140,
+          "achievedAt": "2026-11-09T17:52:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=AkaYKCP9io4",
+          "verified": false
+        },
+        {
+          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
+          "levelName": "Graceful",
+          "position": 141,
+          "achievedAt": "2026-08-31T16:49:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=tGUA63hDLSQ",
+          "verified": false
+        }
+      ]
+    },
     "5c0d9af0-73e6-40d7-9785-4ba0f00879b9": {
       "name": "D a G",
       "levels": [
@@ -65545,19 +65595,6 @@
           "position": 141,
           "achievedAt": "2026-08-23T17:34:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=st7npFpJi7w",
-          "verified": false
-        }
-      ]
-    },
-    "a5d3d00e-ddb3-4780-beb1-ddd477eea87e": {
-      "name": "Shieldless",
-      "levels": [
-        {
-          "levelId": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
-          "levelName": "Graceful",
-          "position": 141,
-          "achievedAt": "2026-08-31T16:49:20Z",
-          "videoUrl": "https://www.youtube.com/watch?v=tGUA63hDLSQ",
           "verified": false
         }
       ]
