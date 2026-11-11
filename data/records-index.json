@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T13:26:22.694Z",
+  "generatedAt": "2026-11-11T23:57:51.743Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -56940,6 +56940,14 @@
           "position": 112,
           "achievedAt": "2026-07-18T23:37:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=bstDsWupoW8",
+          "verified": false
+        },
+        {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 120,
+          "achievedAt": "2026-11-11T17:37:20Z",
+          "videoUrl": "https://www.youtube.com/watch?v=QNWsAkbUcxY",
           "verified": false
         }
       ]
