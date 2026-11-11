@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T21:32:27.487Z",
+  "generatedAt": "2026-11-11T08:34:39.539Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -419803,6 +419803,7 @@
       "8ab19769-1dda-4c44-abc0-2f77efe2d0a8",
       "76f8de50-715f-48e7-9897-57ce9f231c8a",
       "8c8d3627-e9ae-40eb-9251-a4e1f37f45d2",
+      "82f8f8b8-9ec2-4ebc-b55d-d0283aba7395",
       "cb00f6c1-6ba7-450f-a88f-508b9fde39ab",
       "8ece1717-4c42-4994-bfb9-4f8c7d299006",
       "b39f43f1-cad7-409f-9626-b2a18aba0c83",
@@ -419885,7 +419886,6 @@
       "c1d23639-8b81-4a91-bee6-f4cb2f8d882a",
       "f0a81550-c519-4327-95a1-759633838400",
       "3fc576f0-5caf-49a9-9c34-b74bb3c06d38",
-      "82f8f8b8-9ec2-4ebc-b55d-d0283aba7395",
       "8025f87b-dbab-4ad9-86b1-37ee7002fa7d",
       "0e6a13b5-3cf7-4750-9156-de516085146d",
       "7a68bd82-91d3-429b-933c-dbf58f49e5c4",
@@ -422816,6 +422816,6 @@
       "3be678bf-a1cd-4269-89f3-8518678ede1e": "Dance Of All Demons",
       "9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e": "Arctic Expedition"
     },
-    "lastEventFingerprint": "2026-11-10T16:48:18.009047Z|9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e|\"Pending\""
+    "lastEventFingerprint": "2026-11-11T02:40:40.280823Z|82f8f8b8-9ec2-4ebc-b55d-d0283aba7395|{\"Raised\":{\"new_position\":775,\"old_position\":857}}"
   }
 }

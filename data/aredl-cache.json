@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:35:01.438Z",
+  "generatedAt": "2026-11-11T08:34:39.327Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -308,6 +308,7 @@
         "Long",
         "Timings",
         "Chokepoints",
+        "Unbalanced",
         "High CPS",
         "Nerve Control",
         "Ship",
@@ -1635,9 +1636,10 @@
       "tags": [
         "2.2",
         "Long",
-        "Robot",
         "Timings",
-        "Learny"
+        "Learny",
+        "Slow-Paced",
+        "Robot"
       ],
       "description": "The sequel to Shardscapes and the current hardest level to use one gamemode, that being robot. Expanding on its predecessor, it features more noticeable progression, an orb cycling gimmick and most importantly much more unforgiving gameplay. Includes a CBF blocker which has sparked a significant amount of controversy within the community.",
       "song": 1132447,
@@ -1684,6 +1686,7 @@
         "Timings",
         "Learny",
         "Gimmicky",
+        "Slow-Paced",
         "Wave"
       ],
       "description": "An uncanny and extremely raw superbuffed remake of the main level Blast Processing, with gameplay by Renn241 and Blankb. Not meant to be a serious level.",
@@ -13860,7 +13863,7 @@
       "id": "7f6345fe-1f7b-4aaf-8cf6-a1e8f611f5bd",
       "name": "Graceful",
       "position": 141,
-      "publisher_id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
+      "publisher_id": "bcf70952-3e75-4708-bf98-738f9908a56a",
       "points": 2012,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -13887,24 +13890,24 @@
       "gddl_tier": 35,
       "nlw_tier": null,
       "publisher": {
-        "id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-        "username": "cbe29e54f",
+        "id": "bcf70952-3e75-4708-bf98-738f9908a56a",
+        "username": "1_3_1_9",
         "global_name": "D a G"
       },
       "verifications": [
         {
-          "id": "5abb77a0-a0c0-4121-867e-5151aea0b179",
+          "id": "5023718b-f023-41f0-bd25-a96eaf6cda7b",
           "submitted_by": {
-            "id": "5c0d9af0-73e6-40d7-9785-4ba0f00879b9",
-            "username": "cbe29e54f",
+            "id": "bcf70952-3e75-4708-bf98-738f9908a56a",
+            "username": "1_3_1_9",
             "global_name": "D a G"
           },
           "mobile": false,
           "video_url": "https://www.youtube.com/watch?v=5kOD37vQHKE",
           "hide_video": false,
           "achieved_at": "2025-01-24T07:50:12Z",
-          "created_at": "2025-12-23T23:07:06.160863Z",
-          "updated_at": "2025-12-23T23:07:06.160863Z"
+          "created_at": "2026-11-11T01:52:57.776791Z",
+          "updated_at": "2026-11-11T01:52:57.776791Z"
         }
       ],
       "creators": [
