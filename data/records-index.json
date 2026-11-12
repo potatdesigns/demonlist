@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T14:30:55.756Z",
+  "generatedAt": "2026-11-12T23:06:13.122Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -20244,7 +20244,7 @@
       ]
     },
     "be090022-5254-4015-90dd-dc9dcb347305": {
-      "name": "corzeals",
+      "name": "Corzeals",
       "levels": [
         {
           "levelId": "06898192-2f94-4b57-a18b-d95cc73c69e5",
@@ -45209,6 +45209,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 121,
+          "achievedAt": "2026-11-12T18:19:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5nVHs6WRlrc",
+          "verified": false
+        },
+        {
           "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
           "levelName": "paranoia (amplitron)",
           "position": 143,
@@ -54650,6 +54658,35 @@
           "position": 112,
           "achievedAt": "2026-02-02T05:21:21Z",
           "videoUrl": "https://www.youtube.com/watch?v=oJv8y41FIB8",
+          "verified": false
+        }
+      ]
+    },
+    "a4e94360-b712-48d7-82bf-d5afde0c5210": {
+      "name": "Magic",
+      "levels": [
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 112,
+          "achievedAt": "2026-02-12T00:43:28Z",
+          "videoUrl": "https://www.youtube.com/watch?v=N7Tg0dfXP6w",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 113,
+          "achievedAt": "2026-07-25T22:19:01Z",
+          "videoUrl": "https://www.youtube.com/watch?v=f8qIzRD-Y5s",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 122,
+          "achievedAt": "2025-11-29T02:28:09Z",
+          "videoUrl": "https://www.youtube.com/watch?v=RSxw5irpam8",
           "verified": false
         }
       ]
@@ -66357,7 +66394,7 @@
       ]
     },
     "e42c1dbe-6422-4425-bdb3-32b46f11ca17": {
-      "name": "licheniu",
+      "name": "Zbigniew Jajecznica",
       "levels": [
         {
           "levelId": "53fb0da7-8845-4736-9832-c1f98bb388cc",
