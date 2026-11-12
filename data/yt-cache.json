@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T01:21:20.098Z",
+  "generatedAt": "2026-11-12T04:07:51.104Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3067,27 +3067,6 @@
       },
       "discoveredAt": "2026-11-11T09:33:40.373Z"
     },
-    "6f5299ae-a62f-4701-b5a8-ace004b8f7ef": {
-      "name": "Starlight Summit",
-      "position": 150,
-      "verifier": {
-        "id": "LB9xx41M4Ns",
-        "url": "https://www.youtube.com/watch?v=LB9xx41M4Ns",
-        "title": "[NEW HARDEST!] \"Starlight Summit\" VERIFIED! (Extreme Demon) by hazelmrow (me)",
-        "channel": "hazelmrow",
-        "viewCount": 37419,
-        "viewsCheckedAt": "2026-11-12T01:21:19.460Z"
-      },
-      "showcase": {
-        "id": "G76zzxWOhQY",
-        "url": "https://www.youtube.com/watch?v=G76zzxWOhQY",
-        "title": "【4K】 \"Starlight Summit\" by Pengi1 | Geometry Dash 2.2",
-        "channel": "Newly Rated Extremes",
-        "viewCount": 28378,
-        "viewsCheckedAt": "2026-11-12T01:21:19.460Z"
-      },
-      "discoveredAt": "2026-11-11T15:59:06.510Z"
-    },
     "05c75b96-b138-47d7-847d-c13fb2650a41": {
       "name": "Breakcore",
       "position": 135,
@@ -3150,12 +3129,33 @@
         "viewsCheckedAt": "2026-11-12T01:21:19.460Z"
       },
       "discoveredAt": "2026-11-11T15:59:06.510Z"
+    },
+    "db14f08e-b813-475f-8518-6cdcd7db20b9": {
+      "name": "BLAZEIT",
+      "position": 58,
+      "verifier": {
+        "id": "WFUJ7Tc3FPM",
+        "url": "https://www.youtube.com/watch?v=WFUJ7Tc3FPM",
+        "title": "(VERIFIED) BLAZEIT 100% (Top 60) By Rollthedice",
+        "channel": "turtl",
+        "viewCount": 4822,
+        "viewsCheckedAt": "2026-11-12T04:07:51.104Z"
+      },
+      "showcase": {
+        "id": "erdY57lBObw",
+        "url": "https://www.youtube.com/watch?v=erdY57lBObw",
+        "title": "【4K】 \"BLAZEIT\" by rollthedice666 | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 778,
+        "viewsCheckedAt": "2026-11-12T04:07:51.104Z"
+      },
+      "discoveredAt": "2026-11-12T04:07:51.104Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "QKewf4sCVrU",
+      "newestVideoId": "QlX43U3ReIc",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32754,12 +32754,23 @@
           ],
           "description": "This is fantastic from start to finish. Each chapter brings its own stunning visuals, and the huge sense of depth really brings the world to life. It's a total masterpiece. Glad to have had the chance to verify this.\n\nHosted by Tenermul \nLevel: 3AMOK CTPAXA by Elizium Team & [cherry] team\n\nDecorators: OUH, Ivashka, Meduminge, Bratki, 1nvise, Hashinoby, Ynvie, ReBu, Hantein, LKerle, SheredX, Rinty\n\nID: 152186834\n\nSong: https://www.newgrounds.com/audio/listen/1640109",
           "checkedAt": "2026-11-11T09:33:37.003Z"
+        },
+        "QlX43U3ReIc": {
+          "title": "SILENT GRIEF",
+          "channel": "Nexus [GD]",
+          "viewCount": 1748,
+          "levelIds": [
+            "150056504",
+            "482872"
+          ],
+          "description": "Level: Silent Grief by Νngu2695\nID: 150056504\nSong: KzX - Stalemate\nhttps://www.newgrounds.com/audio/listen/482872",
+          "checkedAt": "2026-11-12T04:07:47.764Z"
         }
       }
     },
     "UCCj0f5y47A94_dahjTbem-A": {
       "name": "Neiro",
-      "newestVideoId": "9e-kC0umMbE",
+      "newestVideoId": "rGXKkNKbfeY",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -57487,6 +57498,16 @@
             "149740239"
           ],
           "checkedAt": "2026-11-11T15:58:31.634Z"
+        },
+        "rGXKkNKbfeY": {
+          "title": "SILENT GRIEF [IMPOSSIBLE]",
+          "channel": "Neiro",
+          "viewCount": 44916,
+          "levelIds": [
+            "482872",
+            "150056504"
+          ],
+          "checkedAt": "2026-11-12T04:07:48.438Z"
         }
       }
     },
@@ -105736,7 +105757,7 @@
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "B3mN3ZwL_J4",
+      "newestVideoId": "SxpmxZO9hnc",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -114249,6 +114270,15 @@
             "192586"
           ],
           "checkedAt": "2026-11-09T18:34:49.298Z"
+        },
+        "SxpmxZO9hnc": {
+          "title": "【4K】 \"Roses\" by geniusmode | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 159,
+          "levelIds": [
+            "148363163"
+          ],
+          "checkedAt": "2026-11-12T04:07:50.184Z"
         }
       }
     },
