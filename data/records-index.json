@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T13:48:29.741Z",
+  "generatedAt": "2026-11-13T23:09:11.619Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -39901,6 +39901,14 @@
           "verified": false
         },
         {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 143,
+          "achievedAt": "2026-11-09T16:18:57Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rvnEDabJb6g",
+          "verified": false
+        },
+        {
           "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
           "levelName": "Aerial Gleam",
           "position": 147,
@@ -43936,6 +43944,19 @@
           "position": 135,
           "achievedAt": "2026-01-31T00:29:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=yVxj0K1y-6s",
+          "verified": false
+        }
+      ]
+    },
+    "872e5358-2419-48b5-a591-f587c3a0c0fe": {
+      "name": "lovely",
+      "levels": [
+        {
+          "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
+          "levelName": "Saul Goodman",
+          "position": 70,
+          "achievedAt": "2026-10-11T01:16:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zUOZ7hN9KeI",
           "verified": false
         }
       ]
@@ -48476,6 +48497,43 @@
           "position": 132,
           "achievedAt": "2026-11-05T03:34:39Z",
           "videoUrl": "https://www.youtube.com/watch?v=uNKVNfwc63c",
+          "verified": false
+        }
+      ]
+    },
+    "a4873930-f567-47f2-8d9a-c9460b5081db": {
+      "name": "HotSauceFear",
+      "levels": [
+        {
+          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
+          "levelName": "Solar Flare",
+          "position": 79,
+          "achievedAt": "2026-10-26T03:15:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=DnpRTl8pmKg",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 113,
+          "achievedAt": "2026-10-02T02:34:58Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1JmJZbr2WyM",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 122,
+          "achievedAt": "2026-09-05T03:08:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Ja684KwW_cc",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 132,
+          "achievedAt": "2026-07-28T04:13:55Z",
+          "videoUrl": "https://www.youtube.com/watch?v=clksUL0rgrc",
           "verified": false
         }
       ]
