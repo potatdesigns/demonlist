@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T21:13:01.622Z",
+  "generatedAt": "2026-11-13T02:14:37.178Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -10099,11 +10099,6 @@
           "global_name": "zRobin"
         },
         {
-          "id": "12bf5593-97ca-41a7-aed6-ad8a06785d46",
-          "username": "16767b2c1",
-          "global_name": "CrispyKey"
-        },
-        {
           "id": "13290779-920e-425e-b24e-f8b810dfd502",
           "username": "ebd61707f",
           "global_name": "Tombstone"
@@ -10352,6 +10347,11 @@
           "id": "966f2102-9511-47c0-b51b-b042aa4f50be",
           "username": "kazagd",
           "global_name": "Kaza"
+        },
+        {
+          "id": "96f38ab5-c1f3-4346-acc6-9cf7fa6d6e18",
+          "username": "mc.crisp",
+          "global_name": "Crispy"
         },
         {
           "id": "9a55bf05-427d-411e-bcd7-75e2c34269d9",
@@ -14492,9 +14492,9 @@
       ],
       "creators": [
         {
-          "id": "1d1963d1-75e7-4f34-9e9d-06dd5a611b66",
-          "username": "a9d43708f",
-          "global_name": "Shtaba"
+          "id": "0d769ef8-1bdd-4e1b-b737-c80b88e4a090",
+          "username": "shtaba",
+          "global_name": "shtaba"
         },
         {
           "id": "500b2c92-32a5-423c-b742-17bb39586fe2",
