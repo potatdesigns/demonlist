@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T23:09:11.619Z",
+  "generatedAt": "2026-11-14T04:36:18.307Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -37962,6 +37962,14 @@
           "verified": false
         },
         {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 138,
+          "achievedAt": "2026-11-09T17:19:56Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LN7MFd-e-kw",
+          "verified": false
+        },
+        {
           "levelId": "5b183ded-437a-4a25-8c81-8341fca626db",
           "levelName": "Blood Echo",
           "position": 146,
@@ -53283,6 +53291,14 @@
           "verified": false
         },
         {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 143,
+          "achievedAt": "2026-11-13T07:00:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=zRt9D4GUWl0",
+          "verified": false
+        },
+        {
           "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
           "levelName": "Aerial Gleam",
           "position": 147,
@@ -57543,6 +57559,14 @@
           "position": 113,
           "achievedAt": "2026-09-27T13:55:53Z",
           "videoUrl": "https://www.youtube.com/watch?v=dmC-UVPUApQ",
+          "verified": false
+        },
+        {
+          "levelId": "aea0cadd-9429-4f79-9d6d-8179bb518d73",
+          "levelName": "Heavenly Sakupen",
+          "position": 131,
+          "achievedAt": "2026-11-13T19:48:52Z",
+          "videoUrl": "https://www.youtube.com/watch?v=rhXS429RiDo",
           "verified": false
         }
       ]
@@ -62408,6 +62432,19 @@
           "position": 123,
           "achievedAt": "2026-10-26T21:49:59Z",
           "videoUrl": "https://www.youtube.com/watch?v=o1SbWvCrPKI",
+          "verified": false
+        }
+      ]
+    },
+    "374f479a-f03c-43c1-9a2b-799dad1e0a9e": {
+      "name": "Blouki",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 123,
+          "achievedAt": "2026-11-02T11:10:57.662Z",
+          "videoUrl": "https://medal.tv/clips/nQIkmLkjujlKx3gDK",
           "verified": false
         }
       ]
