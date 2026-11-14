@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:34:49.430Z",
+  "generatedAt": "2026-11-14T22:48:40.283Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -3359,6 +3359,11 @@
       ],
       "creators": [
         {
+          "id": "2edc113d-9af5-45cb-a57c-fa65055bc4c0",
+          "username": "maxfs.",
+          "global_name": "maxfs."
+        },
+        {
           "id": "365aaf04-eee7-468d-a598-c0eb3bb4b9ec",
           "username": "a0551919b",
           "global_name": "GD Iris"
@@ -3397,11 +3402,6 @@
           "id": "71bccd04-57cc-4258-b616-b5dd5e3b6798",
           "username": "ddd7bb669",
           "global_name": "Xolarzz"
-        },
-        {
-          "id": "8b07a1db-e64e-4a14-a333-4f2ab5ccfcb4",
-          "username": "d8e5739ea",
-          "global_name": "Maxsf"
         },
         {
           "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
@@ -4400,6 +4400,11 @@
           "global_name": "Endlevel"
         },
         {
+          "id": "2edc113d-9af5-45cb-a57c-fa65055bc4c0",
+          "username": "maxfs.",
+          "global_name": "maxfs."
+        },
+        {
           "id": "34cee2c8-3290-4363-b2f4-a0c5317051f4",
           "username": "aa6ca56ba",
           "global_name": "Juhou"
@@ -4458,11 +4463,6 @@
           "id": "7ad34a20-ff1c-4dc1-811a-c3d94f4c125f",
           "username": "7974ec708",
           "global_name": "Enixity"
-        },
-        {
-          "id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
-          "username": "4ced9fe4f",
-          "global_name": "maxfs"
         },
         {
           "id": "9e463c72-fbc3-4d2f-96cd-b0df8004b18a",
@@ -11078,7 +11078,7 @@
       "id": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
       "name": "arcturus",
       "position": 108,
-      "publisher_id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
+      "publisher_id": "2edc113d-9af5-45cb-a57c-fa65055bc4c0",
       "points": 2320,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -11101,9 +11101,9 @@
       "gddl_tier": 35.666666666666664,
       "nlw_tier": null,
       "publisher": {
-        "id": "893d33c4-df1a-4bae-9153-634b8165ee4b",
-        "username": "4ced9fe4f",
-        "global_name": "maxfs"
+        "id": "2edc113d-9af5-45cb-a57c-fa65055bc4c0",
+        "username": "maxfs.",
+        "global_name": "maxfs."
       },
       "verifications": [
         {
@@ -11178,7 +11178,7 @@
       "id": "eae489bc-dbf9-47b3-9c23-9730f5343d06",
       "name": "BEELINE (Solo)",
       "position": 110,
-      "publisher_id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
+      "publisher_id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
       "points": 2299,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -11199,9 +11199,9 @@
       "gddl_tier": 34,
       "nlw_tier": null,
       "publisher": {
-        "id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
-        "username": "33b04db43",
-        "global_name": "Galaxxyss"
+        "id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
+        "username": "galaxxyss",
+        "global_name": "galaxxyss"
       },
       "verifications": [
         {
@@ -11226,11 +11226,6 @@
           "global_name": "7ak"
         },
         {
-          "id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
-          "username": "33b04db43",
-          "global_name": "Galaxxyss"
-        },
-        {
           "id": "5f33827d-f29d-4f18-9af8-a2d28cf384d9",
           "username": "waffybun",
           "global_name": "waffybun"
@@ -11244,6 +11239,11 @@
           "id": "b79dae62-81a8-4056-9a83-d4d6ed383877",
           "username": "202c93c62",
           "global_name": "pocke"
+        },
+        {
+          "id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
+          "username": "galaxxyss",
+          "global_name": "galaxxyss"
         }
       ]
     },
@@ -14004,11 +14004,6 @@
           "global_name": "Reunomi"
         },
         {
-          "id": "5e767ee2-38fb-43ef-a77e-577ea8ca5370",
-          "username": "33b04db43",
-          "global_name": "Galaxxyss"
-        },
-        {
           "id": "a18b6d52-4806-4563-802e-2ec070285301",
           "username": "e707898d8",
           "global_name": "Zentraa"
@@ -14022,6 +14017,11 @@
           "id": "e9459472-8054-4117-8e37-792e282e4036",
           "username": "7ae55125d",
           "global_name": "swiborg"
+        },
+        {
+          "id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
+          "username": "galaxxyss",
+          "global_name": "galaxxyss"
         },
         {
           "id": "f68cbcde-004e-4660-962f-437f05bf1e0a",

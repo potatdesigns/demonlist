@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T21:13:01.871Z",
+  "generatedAt": "2026-11-14T22:48:40.522Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -421659,6 +421659,7 @@
       "3cbf48a1-14c2-4886-b48c-1f040ea642b4",
       "d6f9115b-7d0a-40c3-a2ab-e58939e561a7",
       "3482d042-4023-4c5d-a2e0-8168c1bd5d4e",
+      "df00ea5d-a0b8-4dc0-ba02-1ad29232cdf7",
       "c1f5460a-6163-43c9-a626-ec9adecf605a",
       "916ab37f-53ea-44d7-abbf-830b56024ff4",
       "13e79210-5c32-4d78-9341-90090e161c3e",
@@ -421668,7 +421669,6 @@
       "2e4f4156-e426-4671-bdb5-fb6cd0442685",
       "9d5a453d-a6b9-41b6-a647-f9e18b3a3524",
       "5b9dac54-8b5f-4e22-aace-c176767a6aed",
-      "df00ea5d-a0b8-4dc0-ba02-1ad29232cdf7",
       "518d4b89-8dea-49ef-a876-c63ce7f9d32b",
       "c2b879fe-0f99-4408-aff2-b57159b44eab",
       "f4f20e3e-14ce-4ca9-84ec-10f65e0bb3ca",
@@ -424697,6 +424697,6 @@
       "9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e": "Arctic Expedition",
       "c9d2cf48-316d-4ece-9d91-6b6975a3f2ea": "Roses"
     },
-    "lastEventFingerprint": "2026-11-12T20:51:09.330956Z|c9d2cf48-316d-4ece-9d91-6b6975a3f2ea|\"Pending\""
+    "lastEventFingerprint": "2026-11-14T20:09:15.287059Z|df00ea5d-a0b8-4dc0-ba02-1ad29232cdf7|{\"Raised\":{\"new_position\":753,\"old_position\":762}}"
   }
 }
