@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T04:36:18.307Z",
+  "generatedAt": "2026-11-14T12:52:13.474Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -26811,6 +26811,14 @@
           "position": 38,
           "achievedAt": "2026-08-07T20:21:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=4LXDsQzDP4M",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 132,
+          "achievedAt": "2026-11-14T00:27:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=-l2moUg4pWo",
           "verified": false
         },
         {
