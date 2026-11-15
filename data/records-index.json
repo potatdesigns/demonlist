@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T21:54:54.248Z",
+  "generatedAt": "2026-11-15T04:25:20.065Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -4406,107 +4406,6 @@
           "position": 150,
           "achievedAt": "2026-09-20T17:22:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=mGvAnIUsdwQ",
-          "verified": false
-        }
-      ]
-    },
-    "cd6f6bc6-4e7a-4d0f-80b2-54f156fee257": {
-      "name": "lanx",
-      "levels": [
-        {
-          "levelId": "458bbbdb-a121-4a8f-a7a4-5ea68be04484",
-          "levelName": "Every End",
-          "position": 15,
-          "achievedAt": "2026-02-05T18:57:18Z",
-          "videoUrl": "https://www.youtube.com/watch?v=qCMU4Ua8vcc",
-          "verified": false
-        },
-        {
-          "levelId": "e564dff8-304b-401d-9376-63528b7ba279",
-          "levelName": "Tunnel of Despair",
-          "position": 31,
-          "achievedAt": "2024-10-18T16:48:05Z",
-          "videoUrl": "https://www.youtube.com/watch?v=RAwfsfu-faQ",
-          "verified": false
-        },
-        {
-          "levelId": "61ade6ee-e274-45b9-9537-3362259f8625",
-          "levelName": "The Salt Factory",
-          "position": 47,
-          "achievedAt": "2026-04-01T10:16:30Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ehwVQFTsJSM",
-          "verified": false
-        },
-        {
-          "levelId": "cfb5fb27-a0d8-48bc-8ed9-bae291e24f1a",
-          "levelName": "Eyes in the Water",
-          "position": 50,
-          "achievedAt": "2026-03-10T15:17:12Z",
-          "videoUrl": "https://www.youtube.com/watch?v=pWIuLVq5lm4",
-          "verified": false
-        },
-        {
-          "levelId": "4fac9298-93ae-4553-abe9-72a562567318",
-          "levelName": "MINUSdry",
-          "position": 66,
-          "achievedAt": "2025-09-04T16:14:01Z",
-          "videoUrl": "https://www.youtube.com/watch?v=bnl5n3LHHPM",
-          "verified": false
-        },
-        {
-          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
-          "levelName": "COMBUSTION",
-          "position": 69,
-          "achievedAt": "2025-05-20T19:12:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=-5UM_vGeLKE&t=59s",
-          "verified": false
-        },
-        {
-          "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
-          "levelName": "Solar Flare",
-          "position": 79,
-          "achievedAt": "2025-10-07T21:49:25Z",
-          "videoUrl": "https://www.youtube.com/watch?v=4EGomK0NKCE",
-          "verified": false
-        },
-        {
-          "levelId": "345a0d2d-b272-4f17-9264-4ef3407f5314",
-          "levelName": "walter white",
-          "position": 89,
-          "achievedAt": "2025-08-11T14:43:08Z",
-          "videoUrl": "https://www.youtube.com/watch?v=oGVsdYed8JI",
-          "verified": false
-        },
-        {
-          "levelId": "d7373b5b-fa60-4b67-9683-cf3c1f088a8d",
-          "levelName": "Climax",
-          "position": 96,
-          "achievedAt": "2025-06-26T18:20:30Z",
-          "videoUrl": "https://www.youtube.com/watch?v=Qp-l-NhNp5s",
-          "verified": false
-        },
-        {
-          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
-          "levelName": "Oblivion",
-          "position": 123,
-          "achievedAt": "2024-03-26T20:24:37Z",
-          "videoUrl": "https://www.youtube.com/watch?v=xKIRIrryaBo&t=4s",
-          "verified": false
-        },
-        {
-          "levelId": "68308581-f1b6-4c0f-8851-82449ab1977f",
-          "levelName": "The Paroxysm of Rage",
-          "position": 145,
-          "achievedAt": "2025-07-20T18:50:39Z",
-          "videoUrl": "https://www.youtube.com/watch?v=rZNz7JebQTY",
-          "verified": false
-        },
-        {
-          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
-          "levelName": "Aerial Gleam",
-          "position": 147,
-          "achievedAt": "2025-05-20T19:12:03Z",
-          "videoUrl": "https://www.youtube.com/watch?v=-5UM_vGeLKE&t=10s",
           "verified": false
         }
       ]
@@ -28158,6 +28057,27 @@
         }
       ]
     },
+    "c3b519d3-0dc1-4e37-bdd7-13525f14726f": {
+      "name": "maciussigma5",
+      "levels": [
+        {
+          "levelId": "67708587-274e-4de8-9be9-55385bbcbc9f",
+          "levelName": "Slaughterhouse ",
+          "position": 38,
+          "achievedAt": "2026-11-14T22:24:54Z",
+          "videoUrl": "https://www.youtube.com/watch?v=JZKhmJ-wj3E",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 113,
+          "achievedAt": "2026-07-15T14:35:37Z",
+          "videoUrl": "https://www.youtube.com/watch?v=InCZS6uE3Mk",
+          "verified": false
+        }
+      ]
+    },
     "548b5b84-5c21-48bc-badc-9b95b2f4f664": {
       "name": "GGonop",
       "levels": [
@@ -38483,6 +38403,19 @@
         }
       ]
     },
+    "aa9a340b-b747-4d85-b6e9-836bc172943c": {
+      "name": "tober",
+      "levels": [
+        {
+          "levelId": "51200df7-7a51-455c-b2c8-25cc6f6f0114",
+          "levelName": "NervHell",
+          "position": 61,
+          "achievedAt": "2026-11-03T16:14:49Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YH6Yls1FJpA",
+          "verified": false
+        }
+      ]
+    },
     "0d4eb545-6ac6-4906-9d20-0aecfd451d98": {
       "name": "Cork",
       "levels": [
@@ -38493,6 +38426,14 @@
           "achievedAt": "2025-10-02T01:23:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=9HBG3i5zbw8",
           "verified": true
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 113,
+          "achievedAt": "2026-11-15T02:23:00Z",
+          "videoUrl": "https://www.youtube.com/watch?v=iXRe2PZzGJw",
+          "verified": false
         },
         {
           "levelId": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
@@ -49685,6 +49626,19 @@
         }
       ]
     },
+    "6d2ee4a5-f71d-439c-aa47-ae0429e99c10": {
+      "name": "mrbananas2024",
+      "levels": [
+        {
+          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
+          "levelName": "LIMBO",
+          "position": 81,
+          "achievedAt": "2026-11-14T10:41:05Z",
+          "videoUrl": "https://www.youtube.com/watch?v=5i-hEeHmN1U",
+          "verified": false
+        }
+      ]
+    },
     "5bd415ab-c6be-49e6-9424-5b4368b6979c": {
       "name": "Airi~",
       "levels": [
@@ -50712,6 +50666,14 @@
           "position": 95,
           "achievedAt": "2025-02-05T11:30:05Z",
           "videoUrl": "https://www.youtube.com/watch?v=NptOMDIuHVs",
+          "verified": false
+        },
+        {
+          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
+          "levelName": "Tartarus",
+          "position": 113,
+          "achievedAt": "2026-11-14T18:31:53Z",
+          "videoUrl": "https://www.youtube.com/watch?v=cfDQWrAnMrY",
           "verified": false
         },
         {
@@ -57013,19 +56975,6 @@
           "position": 113,
           "achievedAt": "2026-07-10T22:50:37Z",
           "videoUrl": "https://www.youtube.com/watch?v=14W60WjLNsg&t=13s",
-          "verified": false
-        }
-      ]
-    },
-    "c3b519d3-0dc1-4e37-bdd7-13525f14726f": {
-      "name": "maciussigma5",
-      "levels": [
-        {
-          "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
-          "levelName": "Tartarus",
-          "position": 113,
-          "achievedAt": "2026-07-15T14:35:37Z",
-          "videoUrl": "https://www.youtube.com/watch?v=InCZS6uE3Mk",
           "verified": false
         }
       ]
