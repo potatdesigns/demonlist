@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T04:25:20.065Z",
+  "generatedAt": "2026-11-15T13:19:27.874Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7148,6 +7148,27 @@
           "position": 143,
           "achievedAt": "2026-06-25T15:29:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=-4uZeeMhAzI",
+          "verified": false
+        }
+      ]
+    },
+    "e6e9249a-c6fd-4727-835f-62e38c441624": {
+      "name": "humptwe",
+      "levels": [
+        {
+          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
+          "levelName": "Silent clubstep",
+          "position": 17,
+          "achievedAt": "2026-11-12T12:36:45Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1nl_L0n0CxQ",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 132,
+          "achievedAt": "2026-03-12T03:29:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=udvz6OpYKcE",
           "verified": false
         }
       ]
@@ -40743,8 +40764,8 @@
         }
       ]
     },
-    "f70e74ca-1618-4004-aae9-8899519e0009": {
-      "name": "senko",
+    "5fa14d72-9216-4843-a749-35350ca76856": {
+      "name": "Senko",
       "levels": [
         {
           "levelId": "c59d6dce-489a-40b2-aa8e-e91ff760fc2e",
@@ -62195,6 +62216,14 @@
           "achievedAt": "2026-09-05T23:13:40Z",
           "videoUrl": "https://www.youtube.com/watch?v=xsD-fgtmxeg",
           "verified": false
+        },
+        {
+          "levelId": "c28f68fa-f20c-40ed-a2fc-d3ac7e4634cc",
+          "levelName": "Shukketsu",
+          "position": 135,
+          "achievedAt": "2026-11-14T23:10:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=3ZvPvuY1mtA",
+          "verified": false
         }
       ]
     },
@@ -64036,19 +64065,6 @@
         }
       ]
     },
-    "e6e9249a-c6fd-4727-835f-62e38c441624": {
-      "name": "humptwe",
-      "levels": [
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 132,
-          "achievedAt": "2026-03-12T03:29:21Z",
-          "videoUrl": "https://www.youtube.com/watch?v=udvz6OpYKcE",
-          "verified": false
-        }
-      ]
-    },
     "f509355d-2324-4c76-bded-357730728ac3": {
       "name": "theelium",
       "levels": [
@@ -64282,7 +64298,7 @@
       ]
     },
     "6f905194-0b9d-469e-b7f5-7d2acfaffef7": {
-      "name": "HarlGD186",
+      "name": "[CBFA] HarlGD186",
       "levels": [
         {
           "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
