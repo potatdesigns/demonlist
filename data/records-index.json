@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:24:14.459Z",
+  "generatedAt": "2026-11-16T04:23:13.603Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -9654,6 +9654,14 @@
           "position": 78,
           "achievedAt": "2025-10-15T00:51:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=UtJAdvfPGf8",
+          "verified": false
+        },
+        {
+          "levelId": "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
+          "levelName": "CHROMACAVE",
+          "position": 87,
+          "achievedAt": "2026-10-18T15:42:59Z",
+          "videoUrl": "https://www.youtube.com/watch?v=VWSNaH7lczg",
           "verified": false
         },
         {
@@ -59238,6 +59246,19 @@
           "position": 121,
           "achievedAt": "2026-11-06T00:42:06Z",
           "videoUrl": "https://www.youtube.com/watch?v=9q8eha9lp8E",
+          "verified": false
+        }
+      ]
+    },
+    "7752cc07-c9ba-4a59-9f73-f770d9344386": {
+      "name": "Marcato",
+      "levels": [
+        {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 121,
+          "achievedAt": "2026-11-15T20:45:23Z",
+          "videoUrl": "https://www.youtube.com/watch?v=xF9baTOw2Cw",
           "verified": false
         }
       ]
