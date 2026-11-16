@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T10:18:42.217Z",
+  "generatedAt": "2026-11-16T20:44:30.905Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -3599,7 +3599,7 @@
         {
           "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
           "username": "f076f3539",
-          "global_name": "Vodynanitsa"
+          "global_name": "Vodyanitsa"
         },
         {
           "id": "08d49087-aa36-4277-8079-53d6b33e7caf",
@@ -4598,7 +4598,7 @@
       "publisher": {
         "id": "ca0f48b4-167c-4197-b563-a4e9175618da",
         "username": "f076f3539",
-        "global_name": "Vodynanitsa"
+        "global_name": "Vodyanitsa"
       },
       "verifications": [
         {
