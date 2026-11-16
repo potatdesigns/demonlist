@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:13:41.095Z",
+  "generatedAt": "2026-11-16T10:18:42.408Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -424695,8 +424695,9 @@
       "63174044-0138-47c9-a3f0-5b234db734b8": "OKAK",
       "3be678bf-a1cd-4269-89f3-8518678ede1e": "Dance Of All Demons",
       "9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e": "Arctic Expedition",
-      "c9d2cf48-316d-4ece-9d91-6b6975a3f2ea": "Roses"
+      "c9d2cf48-316d-4ece-9d91-6b6975a3f2ea": "Roses",
+      "4fcc9778-1c2c-43c1-b3be-f7092a982c3d": "SHIP22"
     },
-    "lastEventFingerprint": "2026-11-15T18:22:02.877255Z|70fa8e01-d84f-4d22-9b11-99854d9ca89c|{\"Raised\":{\"new_position\":1173,\"old_position\":1268}}"
+    "lastEventFingerprint": "2026-11-16T02:47:25.770939Z|4fcc9778-1c2c-43c1-b3be-f7092a982c3d|\"Pending\""
   }
 }
