@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:36:06.015Z",
+  "generatedAt": "2026-11-17T21:26:16.761Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -1201,6 +1201,11 @@
           "id": "37106d3c-7e0f-4791-8c5f-4e8d9a0c0dea",
           "username": "dubbyball",
           "global_name": "DubbyBall"
+        },
+        {
+          "id": "36b41fab-3de1-4255-b534-58f6a0e26a59",
+          "username": "plolek",
+          "global_name": "PLoLek"
         }
       ]
     },
@@ -14541,7 +14546,7 @@
       "id": "53fb0da7-8845-4736-9832-c1f98bb388cc",
       "name": "Henken",
       "position": 150,
-      "publisher_id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
+      "publisher_id": "36b41fab-3de1-4255-b534-58f6a0e26a59",
       "points": 1943,
       "status": "MainList",
       "requires_raw_footage": false,
@@ -14563,9 +14568,9 @@
       "gddl_tier": 35,
       "nlw_tier": null,
       "publisher": {
-        "id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
-        "username": "4f0001e14",
-        "global_name": "Plolek"
+        "id": "36b41fab-3de1-4255-b534-58f6a0e26a59",
+        "username": "plolek",
+        "global_name": "PLoLek"
       },
       "verifications": [
         {
@@ -14590,14 +14595,14 @@
           "global_name": "shtaba"
         },
         {
+          "id": "36b41fab-3de1-4255-b534-58f6a0e26a59",
+          "username": "plolek",
+          "global_name": "PLoLek"
+        },
+        {
           "id": "500b2c92-32a5-423c-b742-17bb39586fe2",
           "username": "4c43628f9",
           "global_name": "Avati"
-        },
-        {
-          "id": "964d9b38-48f1-4370-8d04-00fbdd99980d",
-          "username": "4f0001e14",
-          "global_name": "Plolek"
         },
         {
           "id": "e37bc609-6ce0-448e-8bd8-88d867ea9b11",
