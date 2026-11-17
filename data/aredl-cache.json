@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T03:17:21.748Z",
+  "generatedAt": "2026-11-17T12:36:06.015Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -1265,7 +1265,16 @@
       "tags": [
         "2.2",
         "XL",
-        "Timings"
+        "Clicksync",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "Flow",
+        "Nerve Control",
+        "Cube",
+        "Ship",
+        "Wave"
       ],
       "description": "Formerly known as “0 Bullet,” Created in collaboration with MiNaY & cherryteam as their hardest level yet. It showcases a neon-green structure throughout, and has fast-paced timings with excruciatingly tight gaps in-between. Its placement kicked Zodiac out of the top 150 after over 7 years.",
       "song": 1308682,
@@ -2108,6 +2117,7 @@
         "Chokepoints",
         "Unbalanced",
         "Mirror",
+        "Cube",
         "Ship"
       ],
       "description": "One of the most legendary and recognizable levels in Geometry Dash. Formerly impossible and was initially hack-verified by Sailent in 1.8. Houses the \"8 Jumps of Hell\" and the infamous 6% ship part, among other classic sections.",
@@ -2893,6 +2903,9 @@
         "2.2",
         "Long",
         "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
         "Gimmicky",
         "Overall"
       ],
@@ -3511,6 +3524,7 @@
         "Clicksync",
         "Fast-Paced",
         "Learny",
+        "High CPS",
         "Flow",
         "Overall"
       ],
@@ -3556,7 +3570,16 @@
       "tags": [
         "2.2",
         "XL",
-        "NONG"
+        "NONG",
+        "Clicksync",
+        "Timings",
+        "Unbalanced",
+        "Learny",
+        "Flow",
+        "Nerve Control",
+        "Ship",
+        "Wave",
+        "Overall"
       ],
       "description": "Laniakea's XL megacollab themed after the Touhou series. Heavily inspired by Artifice, it features various different pink and purple coloured design styles referencing the game it's based on. Has fast paced overall gameplay with the difficulty leaning toward the second half.",
       "song": null,
@@ -3712,6 +3735,10 @@
         "2.2",
         "Long",
         "Timings",
+        "Chokepoints",
+        "Learny",
+        "Gimmicky",
+        "Slow-Paced",
         "Duals"
       ],
       "description": "Initially a top 10 made without spikes and entirely dual gameplay that avoids speed changes. The verifier somehow fluked the level from 78%.",
@@ -3942,9 +3969,13 @@
       "tags": [
         "2.1",
         "Long",
+        "Timings",
+        "Unbalanced",
         "Learny",
         "High CPS",
-        "Gimmicky"
+        "Gimmicky",
+        "Ship",
+        "Overall"
       ],
       "description": "Distinct and incredibly creative extreme themed around traversing and escaping the inside of an electric tower/rod. Supposedly one of the learniest levels on the main-list with extremely high-cps and quirky gameplay.",
       "song": 935594,
@@ -4537,8 +4568,10 @@
         "Long",
         "Clicksync",
         "Fast-Paced",
+        "Timings",
         "Learny",
         "High CPS",
+        "Flow",
         "Overall"
       ],
       "description": "A pure solo project which started out in early 2.2 and took over a year to verify. To fit its Camellia song, the visuals are extremely trippy with relentless camera effect usage and rapid pulses, which are especially apparent in the second half.",
@@ -5444,9 +5477,12 @@
       "tags": [
         "2.2",
         "Long",
-        "Wave",
+        "Fast-Paced",
+        "Chokepoints",
+        "Memory",
+        "High CPS",
         "Ship",
-        "Memory"
+        "Wave"
       ],
       "description": "",
       "song": null,
@@ -5682,6 +5718,7 @@
         "XL",
         "Fast-Paced",
         "Chokepoints",
+        "Unbalanced",
         "Learny",
         "High CPS",
         "Flow",
@@ -5736,8 +5773,12 @@
       "tags": [
         "2.1",
         "XL",
+        "Clicksync",
         "Fast-Paced",
         "Timings",
+        "Chokepoints",
+        "High CPS",
+        "Flow",
         "Nerve Control",
         "Overall"
       ],
@@ -6108,7 +6149,18 @@
       "tags": [
         "2.2",
         "Long",
+        "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
+        "High CPS",
+        "Gimmicky",
+        "Flow",
+        "Mirror",
         "Nerve Control",
+        "New Swing",
+        "Duals",
         "Overall"
       ],
       "description": null,
@@ -6322,6 +6374,7 @@
       "two_player": false,
       "tags": [
         "2.2",
+        "Long",
         "Clicksync",
         "Fast-Paced",
         "Timings",
@@ -6370,8 +6423,13 @@
       "tags": [
         "2.2",
         "Long",
+        "Clicksync",
+        "Fast-Paced",
         "Timings",
-        "Chokepoints"
+        "Chokepoints",
+        "Learny",
+        "Flow",
+        "Overall"
       ],
       "description": "A yellow/orange electricity themed level created by The Purgatory team that took roughly four years to finish. Strangely it is pretty underground for its difficulty.",
       "song": 485224,
@@ -7286,6 +7344,8 @@
         "NONG",
         "Timings",
         "Chokepoints",
+        "Unbalanced",
+        "Learny",
         "Slow-Paced",
         "Cube",
         "Ship"
@@ -7539,10 +7599,12 @@
         "2.1",
         "XL",
         "Timings",
+        "Chokepoints",
         "Unbalanced",
         "Nerve Control",
         "Ship",
         "UFO",
+        "Wave",
         "Old Swing",
         "Duals",
         "Overall"
@@ -7727,6 +7789,8 @@
         "Fast-Paced",
         "Timings",
         "Learny",
+        "High CPS",
+        "Gimmicky",
         "Nerve Control",
         "Overall"
       ],
@@ -8457,6 +8521,7 @@
         "Clicksync",
         "Fast-Paced",
         "Timings",
+        "Learny",
         "High CPS",
         "Nerve Control",
         "Wave",
@@ -10016,6 +10081,9 @@
         "2.1",
         "XXL+",
         "NONG",
+        "Chokepoints",
+        "Unbalanced",
+        "Learny",
         "Nerve Control",
         "Overall"
       ],
@@ -10619,11 +10687,16 @@
       "tags": [
         "2.2",
         "Long",
-        "Overall",
         "Clicksync",
         "Fast-Paced",
+        "Timings",
+        "Chokepoints",
+        "Learny",
         "High CPS",
-        "Wave"
+        "Gimmicky",
+        "Flow",
+        "Wave",
+        "Overall"
       ],
       "description": "Fast-paced and intriguing fusion of extremes Fog and Shimmer. Consists of an entire minute of 4x speed gameplay. The song is also a collab by the artists involved in the two levels combined here. Features a randomised ending that is much more complex than the one found in Fog.",
       "song": 1144842,
@@ -12926,7 +12999,10 @@
         "Timings",
         "High CPS",
         "Flow",
-        "Overall"
+        "Cube",
+        "Ball",
+        "UFO",
+        "Wave"
       ],
       "description": "The third installment of the ATOMIC CANNON series and the first to include features from the 2.2 update. The level follows gameplay elements from the first level compared to the second, with the cps not being as high; however, a wave part is included instead of a ship. Similar to the first installment, the last ball is a homage to Lieb's very first solo level, \"Relativo,\" by featuring several designs from it.",
       "song": 157014,
@@ -14066,6 +14142,7 @@
         "Clicksync",
         "Fast-Paced",
         "Chokepoints",
+        "Unbalanced",
         "Learny",
         "High CPS",
         "Flow",
