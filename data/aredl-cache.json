@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:13:07.316Z",
+  "generatedAt": "2026-11-18T12:25:12.468Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -3067,7 +3067,7 @@
       "name": "Spectre",
       "position": 28,
       "publisher_id": "ea04240c-ddbb-43a3-a055-2084faddd743",
-      "points": 3786,
+      "points": 3787,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110815379,
@@ -3075,10 +3075,12 @@
       "tags": [
         "2.2",
         "XL",
-        "Overall",
         "Timings",
         "Chokepoints",
-        "Nerve Control"
+        "Unbalanced",
+        "Learny",
+        "Nerve Control",
+        "Overall"
       ],
       "description": "Zodiac sequel that was in the works for 4 years. Vaguely cool-toned with many parts by some of the most famous creators, like CuLuC, Darwin and Helpegasus.",
       "song": 786863,
@@ -3459,7 +3461,7 @@
       "name": "Tunnel of Despair",
       "position": 31,
       "publisher_id": "9dbaf984-c39a-407a-8093-f11b9ca2e86e",
-      "points": 3692,
+      "points": 3693,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 91351939,
@@ -3467,8 +3469,10 @@
       "tags": [
         "2.1",
         "Long",
+        "Fast-Paced",
         "Timings",
         "Chokepoints",
+        "Unbalanced",
         "Learny",
         "Wave",
         "Overall"
@@ -8625,7 +8629,7 @@
       "name": "Mayhem",
       "position": 86,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
-      "points": 2585,
+      "points": 2587,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82544060,
@@ -8633,10 +8637,12 @@
       "tags": [
         "2.1",
         "Long",
+        "Clicksync",
         "Fast-Paced",
         "Timings",
         "Chokepoints",
-        "Learny"
+        "Unbalanced",
+        "Overall"
       ],
       "description": "Construction themed CherryTeam collab mostly memorable for its off-sync sync-based gameplay. The LDM is perhaps a little too strong...",
       "song": 548289,
@@ -11029,7 +11035,7 @@
       "name": "TrakineS",
       "position": 106,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2342,
+      "points": 2343,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125788781,
@@ -11040,7 +11046,11 @@
         "Timings",
         "Chokepoints",
         "Unbalanced",
-        "Wave"
+        "Gimmicky",
+        "Slow-Paced",
+        "Cube",
+        "Wave",
+        "Overall"
       ],
       "description": null,
       "song": null,
@@ -11672,7 +11682,7 @@
       "name": "Waterfall",
       "position": 114,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2257,
+      "points": 2259,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110991117,
@@ -11680,6 +11690,7 @@
       "tags": [
         "2.2",
         "Long",
+        "Clicksync",
         "Timings",
         "Chokepoints",
         "Unbalanced",
@@ -12760,7 +12771,7 @@
       "name": "Oblivion",
       "position": 123,
       "publisher_id": "c3a17a45-2581-4ebc-a46e-da89f60e75d8",
-      "points": 2169,
+      "points": 2171,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 71025973,
@@ -12773,7 +12784,8 @@
         "Timings",
         "Chokepoints",
         "Flow",
-        "Cube"
+        "Cube",
+        "Overall"
       ],
       "description": "Claustrophobic and colourful sequel to the equally claustrophobic Cognition. Loses the old fashioned style song for a more upbeat Creo song, similar to Carcano. Surprisingly one of the most dropped extreme verifications, going through 6 verifiers.",
       "song": 829777,
