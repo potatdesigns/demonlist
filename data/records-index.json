@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T14:58:07.679Z",
+  "generatedAt": "2026-11-18T23:49:10.898Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -3659,6 +3659,14 @@
           "position": 31,
           "achievedAt": "2026-09-05T09:33:48Z",
           "videoUrl": "https://www.youtube.com/watch?v=3CtPHgLJjkM",
+          "verified": false
+        },
+        {
+          "levelId": "1085c65b-4d52-45d0-b7dd-f29e94266f4b",
+          "levelName": "cognitohazard",
+          "position": 35,
+          "achievedAt": "2026-11-17T12:48:24Z",
+          "videoUrl": "https://www.youtube.com/watch?v=XBk1RWUHDGQ",
           "verified": false
         },
         {
