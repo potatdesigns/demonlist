@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:13:07.508Z",
+  "generatedAt": "2026-11-19T10:52:33.907Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -365226,6 +365226,16 @@
         "date": "2026-11-18",
         "position": 1378,
         "reason": "Moved down — P a P a P was placed at #386"
+      },
+      {
+        "date": "2026-11-19",
+        "position": 1379,
+        "reason": "Moved down — Havoc was placed at #1284"
+      },
+      {
+        "date": "2026-11-19",
+        "position": 1380,
+        "reason": "Moved down — frostburn was placed at #785"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -422376,6 +422386,7 @@
       "ee64f57e-a76a-4248-91eb-6057c0961d26",
       "0a53ebfc-3067-4c9b-a5b7-0138f5f92e29",
       "c92735eb-ffcd-4b40-bba2-0dccd7d60cd1",
+      "7e61e712-c044-4b68-a338-fe236d0bb8a9",
       "325f03ad-e4bc-481a-89c2-1ab3a8365cae",
       "ac8f9dcd-bb7b-4183-8f15-248bbdf5c0ad",
       "c252fdbd-40e1-4bf0-a449-457602635b84",
@@ -422875,6 +422886,7 @@
       "0438b732-ff1a-4210-8acc-2b62075d9805",
       "444e179c-cabf-4c8f-88f6-6c7b7b69aa26",
       "e46a0ca2-77ae-451c-8159-7fe18afb5191",
+      "d17ea2ca-51ab-466f-a3d1-419a29927af5",
       "e348a297-5544-475b-8d72-138b8b65dc8f",
       "0245547c-cac7-4eb5-9de9-0035403e32ed",
       "0dc99b7f-c89a-431c-aaad-6a3ba4c19043",
@@ -423082,6 +423094,7 @@
       "042e302e-8af7-4a3c-a0ae-8cd9feea358c",
       "0ae8971f-4817-442d-b2d6-bfb22ffda5da",
       "822a9a23-b2ee-4a52-8d65-19f73f95df69",
+      "6e6d19c1-2bb9-4fb0-8fa2-bbfdfd8e6ee1",
       "7ba400c0-b9eb-4ced-a981-58f3addbf91b",
       "7d2968ac-9086-4137-a474-f5e351cd6747",
       "ec870d2d-01d2-4916-adbf-2fc77a56b522",
@@ -423094,6 +423107,7 @@
       "18737ea0-ed9e-4b4b-bc33-4ece955219bf",
       "2059232c-cc26-42c8-8574-3c5aa8851365",
       "5a876677-ad0b-4933-8969-ac04acfb1796",
+      "9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e",
       "f65c6f91-8d79-46ec-a94a-70f364c3f2ba",
       "2cfd3a56-3312-4e93-b157-b0a4307f6f6b",
       "f43f4ee3-e9dd-4ece-a535-902196ba9ef5",
@@ -425385,6 +425399,6 @@
       "c9d2cf48-316d-4ece-9d91-6b6975a3f2ea": "Roses",
       "4fcc9778-1c2c-43c1-b3be-f7092a982c3d": "SHIP22"
     },
-    "lastEventFingerprint": "2026-11-18T02:42:37.128669Z|b380be19-8f0a-4d65-9259-3107e338f895|{\"Placed\":{\"new_position\":386,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-11-19T04:00:30.172932Z|7e61e712-c044-4b68-a338-fe236d0bb8a9|{\"Placed\":{\"new_position\":785,\"status\":\"MainList\"}}"
   }
 }
