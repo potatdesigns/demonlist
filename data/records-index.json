@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T05:34:21.260Z",
+  "generatedAt": "2026-11-19T15:04:49.725Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -33623,6 +33623,14 @@
           "verified": false
         },
         {
+          "levelId": "72bf2c18-1299-408b-bca2-3da986956632",
+          "levelName": "KOSETSU",
+          "position": 57,
+          "achievedAt": "2026-11-16T00:57:23Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IOKcmYRGWPo",
+          "verified": false
+        },
+        {
           "levelId": "d3a53d45-e7e1-4ec4-9395-441816eb8425",
           "levelName": "Solar Flare",
           "position": 79,
@@ -44008,7 +44016,7 @@
       ]
     },
     "0be15701-afc9-4ced-ba2e-cc724057b60c": {
-      "name": "poopibun",
+      "name": "jupibun",
       "levels": [
         {
           "levelId": "b2252317-dcf2-432d-ba36-59642218803c",
@@ -45809,6 +45817,35 @@
         }
       ]
     },
+    "19e47bc4-292e-4d39-9e86-59c1d7de8df6": {
+      "name": "CowSlice",
+      "levels": [
+        {
+          "levelId": "0e3577a5-b567-4ea0-b39b-43920d3b7caf",
+          "levelName": "Sevvend Clubstep",
+          "position": 74,
+          "achievedAt": "2026-11-18T12:14:33Z",
+          "videoUrl": "https://www.youtube.com/watch?v=s5mfsXxbLig",
+          "verified": false
+        },
+        {
+          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
+          "levelName": "The Plunge",
+          "position": 78,
+          "achievedAt": "2026-04-08T17:12:11Z",
+          "videoUrl": "https://www.youtube.com/watch?v=YUutm2TVm6A",
+          "verified": false
+        },
+        {
+          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
+          "levelName": "The Golden",
+          "position": 122,
+          "achievedAt": "2024-02-06T15:10:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=PocX_wH1Hew&t=1s",
+          "verified": false
+        }
+      ]
+    },
     "4e086080-9ad5-4618-bd27-6beeb06516e8": {
       "name": "zGabriel",
       "levels": [
@@ -47088,27 +47125,6 @@
           "position": 125,
           "achievedAt": "2026-01-04T09:41:15Z",
           "videoUrl": "https://www.youtube.com/watch?v=8gdEJBiEIpc",
-          "verified": false
-        }
-      ]
-    },
-    "19e47bc4-292e-4d39-9e86-59c1d7de8df6": {
-      "name": "CowSlice",
-      "levels": [
-        {
-          "levelId": "4cfb07b5-3e6e-4d7e-9833-d7f013a85064",
-          "levelName": "The Plunge",
-          "position": 78,
-          "achievedAt": "2026-04-08T17:12:11Z",
-          "videoUrl": "https://www.youtube.com/watch?v=YUutm2TVm6A",
-          "verified": false
-        },
-        {
-          "levelId": "0c48d5ac-3c9b-42d1-af39-1b6806c8ef7b",
-          "levelName": "The Golden",
-          "position": 122,
-          "achievedAt": "2024-02-06T15:10:16Z",
-          "videoUrl": "https://www.youtube.com/watch?v=PocX_wH1Hew&t=1s",
           "verified": false
         }
       ]
@@ -62763,8 +62779,8 @@
         }
       ]
     },
-    "7ebed04f-a631-477c-aab8-d2353cd4a704": {
-      "name": "Metzneo",
+    "617382d7-a8e8-4064-8140-672900529e6c": {
+      "name": "Metzneo Alt",
       "levels": [
         {
           "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
@@ -66480,7 +66496,7 @@
       ]
     },
     "a2c5c3df-2852-4ee5-ae70-9a96deabaf69": {
-      "name": "Siempie",
+      "name": "SeaBird",
       "levels": [
         {
           "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
