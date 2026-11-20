@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T19:14:13.925Z",
+  "generatedAt": "2026-11-20T01:29:58.446Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -4025,7 +4025,7 @@
       "name": "Maniacal Chains",
       "position": 37,
       "publisher_id": "450ca74b-3df0-4f2f-a229-8ce0eda3a405",
-      "points": 3519,
+      "points": 3523,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 48991380,
@@ -4040,6 +4040,7 @@
         "Unbalanced",
         "Learny",
         "Gimmicky",
+        "Nerve Control",
         "Wave",
         "Old Swing",
         "Duals"
@@ -8886,7 +8887,7 @@
       ],
       "description": "The 2nd hardest level in the Breaking Bad series, and arguably the least interesting. Consists of typical Renn241 styled decoration with great colours and a severe lack of move triggers.",
       "song": 566004,
-      "edel_enjoyment": 46.39393939,
+      "edel_enjoyment": 46.94117647,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
