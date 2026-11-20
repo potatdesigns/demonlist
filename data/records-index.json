@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T00:11:38.846Z",
+  "generatedAt": "2026-11-20T14:46:37.913Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -3779,6 +3779,14 @@
           "position": 65,
           "achievedAt": "2026-09-19T10:11:03Z",
           "videoUrl": "https://www.youtube.com/watch?v=YuCEJHwGCsk",
+          "verified": false
+        },
+        {
+          "levelId": "146c9eed-2b47-483c-93a2-6b336adea84a",
+          "levelName": "COMBUSTION",
+          "position": 69,
+          "achievedAt": "2026-11-19T12:15:26Z",
+          "videoUrl": "https://www.youtube.com/watch?v=dg055IOMpsY",
           "verified": false
         },
         {
@@ -40996,6 +41004,35 @@
         }
       ]
     },
+    "7b301175-9198-4b90-abaf-8d1b4eb1ecca": {
+      "name": ".",
+      "levels": [
+        {
+          "levelId": "c586d155-f78c-43f6-933c-3c11c4aa6600",
+          "levelName": "poocubed",
+          "position": 64,
+          "achievedAt": "2026-11-19T17:00:06Z",
+          "videoUrl": "https://www.youtube.com/watch?v=Ht3B5p6JM9o",
+          "verified": false
+        },
+        {
+          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
+          "levelName": "Midnight",
+          "position": 102,
+          "achievedAt": "2026-10-01T21:30:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ydgkgxz_tDE",
+          "verified": false
+        },
+        {
+          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
+          "levelName": "paranoia (amplitron)",
+          "position": 143,
+          "achievedAt": "2026-08-22T13:03:36Z",
+          "videoUrl": "https://www.youtube.com/watch?v=K5fLC9jMNkA",
+          "verified": false
+        }
+      ]
+    },
     "5a57a762-dce8-4a6a-b18c-5832a8eee55c": {
       "name": "Blebae",
       "levels": [
@@ -50121,6 +50158,19 @@
         }
       ]
     },
+    "91556ce3-4778-45a1-af7e-c71c9ecb5531": {
+      "name": "Creyscent",
+      "levels": [
+        {
+          "levelId": "21bb5019-d59c-4f9b-94de-281cf4b0ced7",
+          "levelName": "LIMBO",
+          "position": 81,
+          "achievedAt": "2026-10-30T03:17:46Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6c2X7DNbIGY",
+          "verified": false
+        }
+      ]
+    },
     "6e8a4945-1229-41df-8f37-c2cf5e7064be": {
       "name": "Zerocx",
       "levels": [
@@ -54305,27 +54355,6 @@
           "position": 102,
           "achievedAt": "2026-10-01T11:00:00Z",
           "videoUrl": "https://www.youtube.com/watch?v=qYFLQdGsBqo",
-          "verified": false
-        }
-      ]
-    },
-    "7b301175-9198-4b90-abaf-8d1b4eb1ecca": {
-      "name": ".",
-      "levels": [
-        {
-          "levelId": "174221f2-19ab-48b4-8a81-50733db8bd3f",
-          "levelName": "Midnight",
-          "position": 102,
-          "achievedAt": "2026-10-01T21:30:15Z",
-          "videoUrl": "https://www.youtube.com/watch?v=ydgkgxz_tDE",
-          "verified": false
-        },
-        {
-          "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
-          "levelName": "paranoia (amplitron)",
-          "position": 143,
-          "achievedAt": "2026-08-22T13:03:36Z",
-          "videoUrl": "https://www.youtube.com/watch?v=K5fLC9jMNkA",
           "verified": false
         }
       ]
@@ -63220,6 +63249,19 @@
         }
       ]
     },
+    "a75aee63-f832-4901-9151-290a375a51b5": {
+      "name": "Meowl",
+      "levels": [
+        {
+          "levelId": "c18ebb6c-e93d-4fe3-982f-1ca7ba4b5376",
+          "levelName": "Oblivion",
+          "position": 123,
+          "achievedAt": "2026-11-18T07:31:13Z",
+          "videoUrl": "https://www.youtube.com/watch?v=s3P7oiEa7Ak",
+          "verified": false
+        }
+      ]
+    },
     "54b60d27-af49-4609-81df-f907b038b532": {
       "name": "Erixen",
       "levels": [
@@ -66564,6 +66606,19 @@
         }
       ]
     },
+    "b884d648-9e92-44f5-8dbf-67baa8e28ccb": {
+      "name": "Pxlse",
+      "levels": [
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 138,
+          "achievedAt": "2026-11-19T15:17:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=1xKtjBb77wo",
+          "verified": false
+        }
+      ]
+    },
     "3e36585f-cb6b-4a7c-9c1a-b06f4c50f42b": {
       "name": "LanLiangator",
       "levels": [
@@ -67403,6 +67458,19 @@
           "position": 147,
           "achievedAt": "2026-11-08T23:57:44Z",
           "videoUrl": "https://www.youtube.com/watch?v=vNaGInYhsIw",
+          "verified": false
+        }
+      ]
+    },
+    "e2fd1291-0b6b-4114-8f00-50c235138434": {
+      "name": "クイーンブランク",
+      "levels": [
+        {
+          "levelId": "48ef05df-7d3d-4653-8fdd-8cc67917c3b2",
+          "levelName": "Aerial Gleam",
+          "position": 147,
+          "achievedAt": "2026-11-20T02:45:15Z",
+          "videoUrl": "https://www.youtube.com/watch?v=F7t4EjSdCuM",
           "verified": false
         }
       ]
