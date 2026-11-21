@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T18:05:57.595Z",
+  "generatedAt": "2026-11-21T00:26:59.870Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -8278,60 +8278,11 @@
       ]
     },
     {
-      "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
-      "name": "Make Paul Dance",
-      "position": 82,
-      "publisher_id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
-      "points": 2641,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 115860808,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Timings",
-        "Chokepoints",
-        "Learny",
-        "High CPS",
-        "Spider",
-        "Duals"
-      ],
-      "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
-      "song": 10003020,
-      "edel_enjoyment": 81.66666667,
-      "is_edel_pending": false,
-      "gddl_tier": null,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
-        "username": "8575f2803",
-        "global_name": "Bemq"
-      },
-      "verifications": [
-        {
-          "id": "c145ddde-538e-4c8f-97d9-540c268c5dbf",
-          "submitted_by": {
-            "id": "5bd415ab-c6be-49e6-9424-5b4368b6979c",
-            "username": "airicloud",
-            "global_name": "Airi~"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=XQoF35hNKpg",
-          "hide_video": false,
-          "achieved_at": "2025-10-07T17:50:13Z",
-          "created_at": "2026-08-16T00:23:46.272244Z",
-          "updated_at": "2026-08-16T00:23:46.272244Z"
-        }
-      ],
-      "creators": []
-    },
-    {
       "id": "0029b449-c191-4a9b-91a2-40a3c96037f6",
       "name": "Codependence (Solo)",
-      "position": 83,
+      "position": 82,
       "publisher_id": "2efddc48-22f0-4f9a-a4a4-3312a18b8ade",
-      "points": 2631,
+      "points": 2645,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 62556400,
@@ -8529,9 +8480,9 @@
     {
       "id": "33f22458-6142-45b2-a45e-9cc488be8304",
       "name": "Collapse (Nexel)",
-      "position": 84,
+      "position": 83,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2613,
+      "points": 2631,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 113256247,
@@ -8581,9 +8532,9 @@
     {
       "id": "46351fca-4eee-46c3-a8ac-c9f3d930e89d",
       "name": "Belladonna",
-      "position": 85,
+      "position": 84,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2599,
+      "points": 2617,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 94969889,
@@ -8639,9 +8590,9 @@
     {
       "id": "0bee4513-5d63-4c8a-b769-de32bdf5a331",
       "name": "Mayhem",
-      "position": 86,
+      "position": 85,
       "publisher_id": "5c5b6f01-c097-4c3a-9985-80ebe4dba31e",
-      "points": 2587,
+      "points": 2603,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 82544060,
@@ -8734,9 +8685,9 @@
     {
       "id": "7d12b962-b2e5-4e36-97f5-9b1da3db7b19",
       "name": "CHROMACAVE",
-      "position": 87,
+      "position": 86,
       "publisher_id": "258a0bfc-7f9e-47a3-9a0e-5f47e2b0467b",
-      "points": 2572,
+      "points": 2590,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 131497860,
@@ -8813,9 +8764,9 @@
     {
       "id": "5dd207e6-8773-471c-a153-4fae56250ad4",
       "name": "Wavterminal",
-      "position": 88,
+      "position": 87,
       "publisher_id": "0ac2cb3d-63a7-4fa4-9986-77c6cce2de67",
-      "points": 2559,
+      "points": 2576,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 128093374,
@@ -8869,9 +8820,9 @@
     {
       "id": "345a0d2d-b272-4f17-9264-4ef3407f5314",
       "name": "walter white",
-      "position": 89,
+      "position": 88,
       "publisher_id": "b03cf94a-6c18-4bc2-83bf-e912f0535b17",
-      "points": 2545,
+      "points": 2563,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 81011195,
@@ -8928,9 +8879,9 @@
     {
       "id": "2c273751-18cc-4871-87e4-5a1a9879e05e",
       "name": "Infinite Chaos",
-      "position": 90,
+      "position": 89,
       "publisher_id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
-      "points": 2532,
+      "points": 2550,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 119689515,
@@ -9081,6 +9032,55 @@
           "global_name": "Genoxide"
         }
       ]
+    },
+    {
+      "id": "fe68a17e-503f-4d9c-bec0-fde6bd847a69",
+      "name": "Make Paul Dance",
+      "position": 90,
+      "publisher_id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
+      "points": 2537,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 115860808,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Timings",
+        "Chokepoints",
+        "Learny",
+        "High CPS",
+        "Spider",
+        "Duals"
+      ],
+      "description": "The second spider-only extreme demon. Contains the titular Paul, as well as several nasty double and triple clicks that look like they're straight out of an impossible level. ",
+      "song": 10003020,
+      "edel_enjoyment": 81.66666667,
+      "is_edel_pending": false,
+      "gddl_tier": null,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "e31b58fc-c828-4545-a4cc-e50548e3995f",
+        "username": "8575f2803",
+        "global_name": "Bemq"
+      },
+      "verifications": [
+        {
+          "id": "c145ddde-538e-4c8f-97d9-540c268c5dbf",
+          "submitted_by": {
+            "id": "5bd415ab-c6be-49e6-9424-5b4368b6979c",
+            "username": "airicloud",
+            "global_name": "Airi~"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=XQoF35hNKpg",
+          "hide_video": false,
+          "achieved_at": "2025-10-07T17:50:13Z",
+          "created_at": "2026-08-16T00:23:46.272244Z",
+          "updated_at": "2026-08-16T00:23:46.272244Z"
+        }
+      ],
+      "creators": []
     },
     {
       "id": "876b0b3b-0916-4764-94dc-2e433f8109c3",
@@ -10784,59 +10784,11 @@
       ]
     },
     {
-      "id": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
-      "name": "Trickshot",
-      "position": 101,
-      "publisher_id": "21608db7-7015-4558-aa56-6ab08f0e1873",
-      "points": 2398,
-      "status": "MainList",
-      "requires_raw_footage": false,
-      "level_id": 136135870,
-      "two_player": false,
-      "tags": [
-        "2.2",
-        "Long",
-        "Clicksync",
-        "Fast-Paced",
-        "High CPS",
-        "Flow",
-        "Wave"
-      ],
-      "description": "Vonic's participation for Twister's #DemonTime event, where participants each made a demon of any difficulty by a certain due date. A solo top 75 that took the creator 25 days to make start to finish and only 3 days to verify. Contains energetic and high-cps gameplay with difficulty spikes in its first half while resembling a decoration seemingly inspired by TamaN's style.",
-      "song": 953530,
-      "edel_enjoyment": 71.6,
-      "is_edel_pending": false,
-      "gddl_tier": 35.5,
-      "nlw_tier": null,
-      "publisher": {
-        "id": "21608db7-7015-4558-aa56-6ab08f0e1873",
-        "username": "vonical6",
-        "global_name": "vonic"
-      },
-      "verifications": [
-        {
-          "id": "5eb6b318-4d37-4d1d-85c8-230cb00e9091",
-          "submitted_by": {
-            "id": "21608db7-7015-4558-aa56-6ab08f0e1873",
-            "username": "vonical6",
-            "global_name": "vonic"
-          },
-          "mobile": false,
-          "video_url": "https://www.youtube.com/watch?v=IMLjnmnIWRc",
-          "hide_video": false,
-          "achieved_at": "2026-03-20T23:03:05Z",
-          "created_at": "2026-06-09T01:46:26.514164Z",
-          "updated_at": "2026-06-09T01:46:26.514164Z"
-        }
-      ],
-      "creators": []
-    },
-    {
       "id": "174221f2-19ab-48b4-8a81-50733db8bd3f",
       "name": "Midnight",
-      "position": 102,
+      "position": 101,
       "publisher_id": "78b8a38d-b7ed-4c99-99d2-3e8745992f9c",
-      "points": 2386,
+      "points": 2402,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 96083028,
@@ -10882,9 +10834,9 @@
     {
       "id": "e444695d-3fc6-4dc8-82f2-0da259ad6dc9",
       "name": "Doppler (Solo)",
-      "position": 103,
+      "position": 102,
       "publisher_id": "32b23a68-efe8-493e-b0a2-da9ff051a5c9",
-      "points": 2379,
+      "points": 2391,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 133489881,
@@ -10945,9 +10897,9 @@
     {
       "id": "80533210-51be-417f-a492-22edff194d94",
       "name": "Cimmerian Shade",
-      "position": 104,
+      "position": 103,
       "publisher_id": "497f9f43-afc4-4fd7-891f-ba45b6c12691",
-      "points": 2364,
+      "points": 2379,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93340783,
@@ -11002,9 +10954,9 @@
     {
       "id": "46b88712-6024-4018-b526-7d103659bcb4",
       "name": "PSYCHOPATH (DeniPol)",
-      "position": 105,
+      "position": 104,
       "publisher_id": "9f3ac7f4-ee5c-4694-9104-9cb8f9b196b0",
-      "points": 2357,
+      "points": 2368,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 103925676,
@@ -11049,9 +11001,9 @@
     {
       "id": "1a093f68-cff4-48bc-9b95-02e2aed07104",
       "name": "TrakineS",
-      "position": 106,
+      "position": 105,
       "publisher_id": "40a3584c-e2f1-4656-a7e0-1ef6f77f2a93",
-      "points": 2343,
+      "points": 2357,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 125788781,
@@ -11070,7 +11022,7 @@
       ],
       "description": null,
       "song": null,
-      "edel_enjoyment": 64.33333333,
+      "edel_enjoyment": 67.4,
       "is_edel_pending": false,
       "gddl_tier": 36,
       "nlw_tier": null,
@@ -11141,9 +11093,9 @@
     {
       "id": "414afb01-7ce8-4237-ba08-5da2ed4ee3ef",
       "name": "Between Duality",
-      "position": 107,
+      "position": 106,
       "publisher_id": "8cdfe741-4e79-4b6b-8580-ca0f1be6a53e",
-      "points": 2331,
+      "points": 2346,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 137757402,
@@ -11192,9 +11144,9 @@
     {
       "id": "5ff9fbb4-05b0-42cf-87f0-808e3482f29a",
       "name": "arcturus",
-      "position": 108,
+      "position": 107,
       "publisher_id": "2edc113d-9af5-45cb-a57c-fa65055bc4c0",
-      "points": 2320,
+      "points": 2335,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 72315402,
@@ -11241,9 +11193,9 @@
     {
       "id": "2a8c1979-8f50-4652-8ff0-223471a9a7b5",
       "name": "Diabolic ClubStep",
-      "position": 109,
+      "position": 108,
       "publisher_id": "ba992255-5255-4b94-9bcb-c478f2bf6b8a",
-      "points": 2313,
+      "points": 2324,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 73214186,
@@ -11295,9 +11247,9 @@
     {
       "id": "eae489bc-dbf9-47b3-9c23-9730f5343d06",
       "name": "BEELINE (Solo)",
-      "position": 110,
+      "position": 109,
       "publisher_id": "ece4e7c8-79ab-494f-83aa-9dd45bfe506a",
-      "points": 2303,
+      "points": 2313,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93792764,
@@ -11369,9 +11321,9 @@
     {
       "id": "e6132f57-97c2-413e-82e2-bbdf2702ce83",
       "name": "DreamStep",
-      "position": 111,
+      "position": 110,
       "publisher_id": "ec24d705-358a-48cd-9e90-2fca0002ef97",
-      "points": 2288,
+      "points": 2303,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 129235528,
@@ -11430,9 +11382,9 @@
     {
       "id": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
       "name": "Sonic Wave Infinity",
-      "position": 112,
+      "position": 111,
       "publisher_id": "4ef985cc-a731-47a5-9b3e-05bf5a6f15de",
-      "points": 2278,
+      "points": 2292,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 69685815,
@@ -11597,9 +11549,9 @@
     {
       "id": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
       "name": "Tartarus",
-      "position": 113,
+      "position": 112,
       "publisher_id": "be18a588-6ac4-4368-aaef-2b98c6f046e8",
-      "points": 2267,
+      "points": 2282,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 59075347,
@@ -11700,9 +11652,9 @@
     {
       "id": "5c8c6aa7-fc03-4adc-9363-02c6a30cc817",
       "name": "Waterfall",
-      "position": 114,
+      "position": 113,
       "publisher_id": "37c3bea0-827e-4d08-b8ae-93a5a4cbe746",
-      "points": 2259,
+      "points": 2272,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 110991117,
@@ -11890,9 +11842,9 @@
     {
       "id": "ab157b89-82de-436e-817a-24e4ad8a38ba",
       "name": "Jigsaw",
-      "position": 115,
+      "position": 114,
       "publisher_id": "1d316e4d-f0ca-4e3d-b00d-c0ca6db0be7d",
-      "points": 2247,
+      "points": 2261,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 95031870,
@@ -12081,9 +12033,9 @@
     {
       "id": "f3416b47-4beb-48af-b248-5c12bc8f1d72",
       "name": "Delta",
-      "position": 116,
+      "position": 115,
       "publisher_id": "fa35ea6b-81e5-42d6-ab78-dff77001df0b",
-      "points": 2237,
+      "points": 2251,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 93917362,
@@ -12252,6 +12204,54 @@
           "global_name": "Drakosa"
         }
       ]
+    },
+    {
+      "id": "ed9c1e0f-05ee-4e4f-84eb-9cb172cd526e",
+      "name": "Trickshot",
+      "position": 116,
+      "publisher_id": "21608db7-7015-4558-aa56-6ab08f0e1873",
+      "points": 2241,
+      "status": "MainList",
+      "requires_raw_footage": false,
+      "level_id": 136135870,
+      "two_player": false,
+      "tags": [
+        "2.2",
+        "Long",
+        "Clicksync",
+        "Fast-Paced",
+        "High CPS",
+        "Flow",
+        "Wave"
+      ],
+      "description": "Vonic's participation for Twister's #DemonTime event, where participants each made a demon of any difficulty by a certain due date. A solo top 75 that took the creator 25 days to make start to finish and only 3 days to verify. Contains energetic and high-cps gameplay with difficulty spikes in its first half while resembling a decoration seemingly inspired by TamaN's style.",
+      "song": 953530,
+      "edel_enjoyment": 71.6,
+      "is_edel_pending": false,
+      "gddl_tier": 35.5,
+      "nlw_tier": null,
+      "publisher": {
+        "id": "21608db7-7015-4558-aa56-6ab08f0e1873",
+        "username": "vonical6",
+        "global_name": "vonic"
+      },
+      "verifications": [
+        {
+          "id": "5eb6b318-4d37-4d1d-85c8-230cb00e9091",
+          "submitted_by": {
+            "id": "21608db7-7015-4558-aa56-6ab08f0e1873",
+            "username": "vonical6",
+            "global_name": "vonic"
+          },
+          "mobile": false,
+          "video_url": "https://www.youtube.com/watch?v=IMLjnmnIWRc",
+          "hide_video": false,
+          "achieved_at": "2026-03-20T23:03:05Z",
+          "created_at": "2026-06-09T01:46:26.514164Z",
+          "updated_at": "2026-06-09T01:46:26.514164Z"
+        }
+      ],
+      "creators": []
     },
     {
       "id": "7e39c9be-cbcc-4aff-a23c-08add685a336",
@@ -12718,7 +12718,7 @@
       ],
       "description": "Legendary green and yellow jungle themed extreme that reigned as top 1 for over 100 days. Known for its extremely difficult wave sections and dark atmosphere. A remake of LMAnubis' El Dorado that very nearly didn't exist. I verified the golden lets go ",
       "song": 638150,
-      "edel_enjoyment": 73.96363636,
+      "edel_enjoyment": 73.98214286,
       "is_edel_pending": false,
       "gddl_tier": 34.96153846153846,
       "nlw_tier": null,
@@ -12809,7 +12809,7 @@
       ],
       "description": "Claustrophobic and colourful sequel to the equally claustrophobic Cognition. Loses the old fashioned style song for a more upbeat Creo song, similar to Carcano. Surprisingly one of the most dropped extreme verifications, going through 6 verifiers.",
       "song": 829777,
-      "edel_enjoyment": 66.44444444,
+      "edel_enjoyment": 66.34375,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
@@ -14542,7 +14542,7 @@
       ],
       "description": "A blue space themed extreme demon that took nearly a year and a half to get rated. Its song and decoration make for a cozy atmosphere, with the intensity picking up in a brutal ship section that spans over half the levels length, and also considered to be the hardest ship part in any rated level.\n",
       "song": null,
-      "edel_enjoyment": 51.58823529,
+      "edel_enjoyment": 51.77777778,
       "is_edel_pending": false,
       "gddl_tier": 35,
       "nlw_tier": null,
