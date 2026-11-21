@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T07:49:21.463Z",
+  "generatedAt": "2026-11-21T08:51:11.082Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -49,73 +49,7 @@
           "updated_at": "2026-10-05T02:59:57.327283Z"
         }
       ],
-      "creators": [
-        {
-          "id": "03f93163-3147-4174-880f-b0b3e8c26ad4",
-          "username": "mercurydt",
-          "global_name": "MercuryDT"
-        },
-        {
-          "id": "22c603cc-a546-4ef6-8229-e9c1fc6af6a4",
-          "username": "3f7122cb5",
-          "global_name": "icedcave"
-        },
-        {
-          "id": "365aaf04-eee7-468d-a598-c0eb3bb4b9ec",
-          "username": "a0551919b",
-          "global_name": "GD Iris"
-        },
-        {
-          "id": "3d6a380b-72e1-47c2-884c-80a10d7ab9fa",
-          "username": "grenadeoftacos",
-          "global_name": "GrenadeofTacos"
-        },
-        {
-          "id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
-          "username": "82050ae5e",
-          "global_name": "NineDice"
-        },
-        {
-          "id": "4f3780ce-152f-4595-b0f6-29352f07da04",
-          "username": "f8011e6f6",
-          "global_name": "DrCuber"
-        },
-        {
-          "id": "7d889989-13e2-45a2-8403-32c4809138c8",
-          "username": "fbcb4e915",
-          "global_name": "Doop"
-        },
-        {
-          "id": "8498888f-a67c-4459-8eb8-53488540320b",
-          "username": "1e254d4b3",
-          "global_name": "Greafer"
-        },
-        {
-          "id": "9031aebd-97b4-40d5-ab67-9f555cf79942",
-          "username": "6ba254de9",
-          "global_name": "TriplashGD"
-        },
-        {
-          "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
-          "username": "5a211773f",
-          "global_name": "Realvet"
-        },
-        {
-          "id": "a03addbe-414a-4814-a2ec-2cf3cbb38278",
-          "username": "e7d408ace",
-          "global_name": "GhostVandalf"
-        },
-        {
-          "id": "dd6585cb-1733-4872-85e0-dd9ca8fb4392",
-          "username": "rynoxiouss",
-          "global_name": "Rynoxious"
-        },
-        {
-          "id": "ef0369da-d291-49c5-8059-7d212f6a30fb",
-          "username": "cdmusic",
-          "global_name": "CDMusic"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "034634f7-f216-4f34-82dd-003eebd2897e",
@@ -161,38 +95,7 @@
           "updated_at": "2026-09-19T18:44:37.071458Z"
         }
       ],
-      "creators": [
-        {
-          "id": "08a39dcc-ed4a-46b1-a018-fcddfa443b7a",
-          "username": "mvngos",
-          "global_name": "mango"
-        },
-        {
-          "id": "231709ec-f782-4315-ad7b-224890478f69",
-          "username": "a159d98fd",
-          "global_name": "cerrunogmd"
-        },
-        {
-          "id": "554cd2fc-486a-4d22-be2f-e101ee6bcc41",
-          "username": "baba_gd",
-          "global_name": "BABA"
-        },
-        {
-          "id": "5b1e3f03-5d72-48a6-8cf1-de1119293fe0",
-          "username": "2ed0ee80f",
-          "global_name": "suffixpoint"
-        },
-        {
-          "id": "71b61dff-9954-40a8-83c9-832d3db240e2",
-          "username": "realkalih",
-          "global_name": "Hexy"
-        },
-        {
-          "id": "fc59947f-1f27-483a-80bd-5c39cce93270",
-          "username": "20b0e56e5",
-          "global_name": "starhack"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "94fddf8f-5edf-4db6-8ba7-9106d5b67d08",
@@ -243,53 +146,7 @@
           "updated_at": "2026-06-24T14:05:24.746715Z"
         }
       ],
-      "creators": [
-        {
-          "id": "06b6cb22-6ef2-4ebd-8bb4-14a2f1532381",
-          "username": "e60197dd2",
-          "global_name": "Null66"
-        },
-        {
-          "id": "153c06c1-54c8-4e42-9daa-5684769c1b5f",
-          "username": "53538010b",
-          "global_name": "Tusol"
-        },
-        {
-          "id": "171c5e1d-9c2e-4956-b6fa-ad003691c7fd",
-          "username": "0bff3e912",
-          "global_name": "UnderCookedWaffle"
-        },
-        {
-          "id": "9e66153c-3064-4628-b791-aa2a9c783abe",
-          "username": "ec99836c7",
-          "global_name": "Neomarbilan"
-        },
-        {
-          "id": "a8d43ace-e9a7-405f-9c92-b7fc3f15cd17",
-          "username": "5c64ec9a0",
-          "global_name": "EXXXZOR"
-        },
-        {
-          "id": "bb109773-2f6c-4ebe-9e48-d9a12ba1fbe0",
-          "username": "b1bba2778",
-          "global_name": "IL1ghtlyOne"
-        },
-        {
-          "id": "bcccb6cb-450f-433a-aafa-9dc8b6c959f1",
-          "username": "b94e6b566",
-          "global_name": "SunFl0werBoy"
-        },
-        {
-          "id": "bed0c217-790d-49b2-b52c-a13698b9b792",
-          "username": "e0b467465",
-          "global_name": "Ashirymafik"
-        },
-        {
-          "id": "c390e5c8-b267-4328-96ec-4830ab2edb95",
-          "username": "d1c80e379",
-          "global_name": "Ex3r0"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "f9158d5d-ecda-414c-a507-b8eb99d4d99f",
@@ -339,118 +196,7 @@
           "updated_at": "2025-09-19T18:48:30.806345Z"
         }
       ],
-      "creators": [
-        {
-          "id": "14f19422-c186-4789-8e1c-26701413701a",
-          "username": "821489497",
-          "global_name": "Kugelblitz"
-        },
-        {
-          "id": "18d06623-3918-4f3d-ad38-2248231a27b5",
-          "username": "5719b196e",
-          "global_name": "Hyperbola"
-        },
-        {
-          "id": "1c6dfc44-37a3-4109-bc15-9ab29de45249",
-          "username": "5c91a607f",
-          "global_name": "DiamondSkull"
-        },
-        {
-          "id": "1d2470ca-4f5b-4881-9174-44336026922e",
-          "username": "090db9dcb",
-          "global_name": "V45c70m14"
-        },
-        {
-          "id": "29b7c3d4-e08f-4769-9193-e93fbce40841",
-          "username": "kevellium",
-          "global_name": "kevellium"
-        },
-        {
-          "id": "34b2857d-ae98-471c-a8bd-814a816e9bb0",
-          "username": "a8ed10d6d",
-          "global_name": "ThunderDarkness"
-        },
-        {
-          "id": "41b7f949-fbe4-4aa6-9a56-45e37009f53c",
-          "username": "82050ae5e",
-          "global_name": "NineDice"
-        },
-        {
-          "id": "435f10eb-5deb-4d2c-993f-0791aa2c227e",
-          "username": "gamerknight750",
-          "global_name": "GamerKnight750"
-        },
-        {
-          "id": "5f09095d-0f0b-4113-a79c-3b5728898d91",
-          "username": "cairoxgd",
-          "global_name": "CairoX"
-        },
-        {
-          "id": "71985365-661d-4fdd-84b5-4bc61ed13aa0",
-          "username": "8e3596710",
-          "global_name": "Meatius"
-        },
-        {
-          "id": "8d885e81-8aea-4142-9c86-6d1c93f6c33d",
-          "username": "9ead73645",
-          "global_name": "maxmur"
-        },
-        {
-          "id": "94485064-5183-4842-9b2b-ba55cf4d2566",
-          "username": "5a211773f",
-          "global_name": "Realvet"
-        },
-        {
-          "id": "a8027312-0863-4951-bfc8-79d83df436dd",
-          "username": "4c4ec6fea",
-          "global_name": "crowlley"
-        },
-        {
-          "id": "bf1c22f8-8ae1-4007-aed4-74d4206444a9",
-          "username": "d27c0c11a",
-          "global_name": "NcaT"
-        },
-        {
-          "id": "c3957d44-1751-4ede-901e-1e73d1db210e",
-          "username": "725d4a6e4",
-          "global_name": "Rin04"
-        },
-        {
-          "id": "c990e6b7-03b0-4cb6-82c8-150c82bc1ae9",
-          "username": "74646444d",
-          "global_name": "crowiley"
-        },
-        {
-          "id": "cae03003-0667-4966-8d9c-d816be47b913",
-          "username": "b6b738a5a",
-          "global_name": "kurewa"
-        },
-        {
-          "id": "cba9427c-5e42-47b5-8d77-25968b3f7778",
-          "username": "d10bc1be6",
-          "global_name": "Adrone"
-        },
-        {
-          "id": "d397f573-44de-4e56-abd6-369ea4aceb7b",
-          "username": "jawis",
-          "global_name": "Jawis"
-        },
-        {
-          "id": "d3fec483-c70a-4d63-8f2c-81c8f2613efa",
-          "username": "451994ec8",
-          "global_name": "UFWM"
-        },
-        {
-          "id": "e38b644b-52f2-45d1-83da-283e2c7b6f90",
-          "username": "f04ff7662",
-          "global_name": "Meox"
-        },
-        {
-          "id": "f6602e50-1ca8-43b0-b648-7e0443456247",
-          "username": "0b312765e",
-          "global_name": "HaydenDom"
-        }
-      ]
+      "creators": []
     },
     {
       "id": "4ece95db-18aa-4dd2-9fba-9991e1cce1bc",
