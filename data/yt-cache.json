@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T08:50:12.548Z",
+  "generatedAt": "2026-11-21T08:50:44.891Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -3129,6 +3129,27 @@
         "viewsCheckedAt": "2026-11-21T08:50:12.548Z"
       },
       "discoveredAt": "2026-11-21T08:50:12.548Z"
+    },
+    "5a7db296-3286-4056-8ed6-5dd92658125f": {
+      "name": "METROPOLIS",
+      "position": 28,
+      "verifier": {
+        "id": "JtWMtMFdK24",
+        "url": "https://www.youtube.com/watch?v=JtWMtMFdK24",
+        "title": "(TOP 30) METROPOLIS BY KZLR VERIFIED // NEW HARDEST",
+        "channel": "Ascended",
+        "viewCount": 10768,
+        "viewsCheckedAt": "2026-11-21T08:50:44.891Z"
+      },
+      "showcase": {
+        "id": "RxqA2KiR9gA",
+        "url": "https://www.youtube.com/watch?v=RxqA2KiR9gA",
+        "title": "\"Metropolis\" (Demon) by DesTicY [All Coins] | Geometry Dash 2.11",
+        "channel": "Viprin",
+        "viewCount": 36444,
+        "viewsCheckedAt": "2026-11-21T08:50:44.891Z"
+      },
+      "discoveredAt": "2026-11-21T08:50:44.891Z"
     }
   },
   "channelIndex": {
@@ -115387,7 +115408,5 @@
       }
     }
   },
-  "queue": [
-    "5a7db296-3286-4056-8ed6-5dd92658125f"
-  ]
+  "queue": []
 }
