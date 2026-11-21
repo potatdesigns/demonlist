@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:55:00.979Z",
+  "generatedAt": "2026-11-21T08:50:12.548Z",
   "levels": {
     "94fddf8f-5edf-4db6-8ba7-9106d5b67d08": {
       "name": "Society",
@@ -2731,27 +2731,6 @@
       },
       "discoveredAt": "2026-11-20T16:51:58.757Z"
     },
-    "c2837416-7fb4-4866-ba91-e9c134a0a59a": {
-      "name": "VOID",
-      "position": 149,
-      "verifier": {
-        "id": "kN1FUoucoSc",
-        "url": "https://www.youtube.com/watch?v=kN1FUoucoSc",
-        "title": "(Verified!) Void 100%!",
-        "channel": "Whizkid05",
-        "viewCount": 52544,
-        "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
-      },
-      "showcase": {
-        "id": "QtIvzDHky3s",
-        "url": "https://www.youtube.com/watch?v=QtIvzDHky3s",
-        "title": "HARDEST SHIP IN AN EXTREME? | VOID by Nikoberry",
-        "channel": "fnm04",
-        "viewCount": 81138,
-        "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
-      },
-      "discoveredAt": "2026-11-20T16:51:58.757Z"
-    },
     "fc8ff1d3-9cec-4f59-9ea9-25b9f61fcd87": {
       "name": "Starlit Stroll",
       "position": 144,
@@ -2769,27 +2748,6 @@
         "title": "【4K】\"Starlit Stroll\" by Enfur & More (Extreme Demon) | GD 2.2",
         "channel": "zof",
         "viewCount": 18993,
-        "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
-      },
-      "discoveredAt": "2026-11-20T16:51:58.757Z"
-    },
-    "53fb0da7-8845-4736-9832-c1f98bb388cc": {
-      "name": "Henken",
-      "position": 150,
-      "verifier": {
-        "id": "M--2oQKrV68",
-        "url": "https://www.youtube.com/watch?v=M--2oQKrV68",
-        "title": "\"Henken\" by Plolek and Yozyo VERIFIED (Extreme Demon)",
-        "channel": "Gokill GD",
-        "viewCount": 52240,
-        "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
-      },
-      "showcase": {
-        "id": "-HhIFBFXDJg",
-        "url": "https://www.youtube.com/watch?v=-HhIFBFXDJg",
-        "title": "NEW TOP 15 VERIFIED! | Henken - Geometry Dash",
-        "channel": "Neiro",
-        "viewCount": 84526,
         "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
       },
       "discoveredAt": "2026-11-20T16:51:58.757Z"
@@ -3150,12 +3108,33 @@
         "viewsCheckedAt": "2026-11-21T02:55:00.251Z"
       },
       "discoveredAt": "2026-11-20T16:51:58.757Z"
+    },
+    "70607b1e-a97c-444a-b598-dbeb9bb2f30b": {
+      "name": "frame reframe",
+      "position": 124,
+      "verifier": {
+        "id": "WqVmhGKN0oE",
+        "url": "https://www.youtube.com/watch?v=WqVmhGKN0oE",
+        "title": "[Verified] frame reframe 100% // adumme6",
+        "channel": "Rediio",
+        "viewCount": 4154,
+        "viewsCheckedAt": "2026-11-21T08:50:12.548Z"
+      },
+      "showcase": {
+        "id": "G--hwHiYHqQ",
+        "url": "https://www.youtube.com/watch?v=G--hwHiYHqQ",
+        "title": "【4K】 \"frame reframe\" by iamMarmur | Geometry Dash 2.2",
+        "channel": "Newly Rated Extremes",
+        "viewCount": 981,
+        "viewsCheckedAt": "2026-11-21T08:50:12.548Z"
+      },
+      "discoveredAt": "2026-11-21T08:50:12.548Z"
     }
   },
   "channelIndex": {
     "UCZwP1iUQiAKYQp5w-9mJb_w": {
       "name": "Nexus",
-      "newestVideoId": "102mpaPgrI8",
+      "newestVideoId": "l1hQM5NAJJE",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -32896,6 +32875,26 @@
           ],
           "description": "Cool level that came out 4 days ago with only 200 downloads\nLevel: hitboxes by tTo4st\nID: 152408593\nSong: https://www.newgrounds.com/audio/listen/684441",
           "checkedAt": "2026-11-20T16:51:12.933Z"
+        },
+        "l1hQM5NAJJE": {
+          "title": "TON 618 // TOP 1 REMAKE",
+          "channel": "Nexus [GD]",
+          "viewCount": 31749,
+          "levelIds": [
+            "595394"
+          ],
+          "description": "Level by @SlyeGD & Irnasvazis\nSong: Sparkler by Djjaner\nhttps://www.newgrounds.com/audio/listen/595394",
+          "checkedAt": "2026-11-21T08:50:09.543Z"
+        },
+        "W9c-EjemHak": {
+          "title": "FLATLINE #shorts #geometrydash",
+          "channel": "Nexus [GD]",
+          "viewCount": 15401,
+          "levelIds": [
+            "151914229"
+          ],
+          "description": "ID: 151914229",
+          "checkedAt": "2026-11-21T08:50:09.543Z"
         }
       }
     },
@@ -95061,7 +95060,7 @@
     },
     "UC5Ljfy4cP_jmMN2UckIOpMg": {
       "name": "zof",
-      "newestVideoId": "35Dl1mWS-LY",
+      "newestVideoId": "HsuruGLgrsE",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -106013,12 +106012,21 @@
             "136336179"
           ],
           "checkedAt": "2026-11-17T17:29:47.407Z"
+        },
+        "HsuruGLgrsE": {
+          "title": "【4K】\"RAWSTAR\" by WarningGoat (Extreme Demon) | GD 2.2",
+          "channel": "zof",
+          "viewCount": 43,
+          "levelIds": [
+            "134027693"
+          ],
+          "checkedAt": "2026-11-21T08:50:11.456Z"
         }
       }
     },
     "UClz5PjabyNVXnb0UsoQn0cw": {
       "name": "Newly Rated Extremes",
-      "newestVideoId": "H2NOQyn8g-0",
+      "newestVideoId": "GjpNfWJLUOc",
       "oldestPageToken": null,
       "backfillDone": true,
       "videos": {
@@ -114560,6 +114568,16 @@
             "682970"
           ],
           "checkedAt": "2026-11-16T18:11:25.247Z"
+        },
+        "GjpNfWJLUOc": {
+          "title": "【4K】 \"Limerence\" by Ramppi | Geometry Dash 2.2",
+          "channel": "Newly Rated Extremes",
+          "viewCount": 318,
+          "levelIds": [
+            "150662017",
+            "233860"
+          ],
+          "checkedAt": "2026-11-21T08:50:11.717Z"
         }
       }
     },
@@ -115369,5 +115387,7 @@
       }
     }
   },
-  "queue": []
+  "queue": [
+    "5a7db296-3286-4056-8ed6-5dd92658125f"
+  ]
 }
