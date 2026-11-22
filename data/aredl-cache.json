@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T21:17:11.230Z",
+  "generatedAt": "2026-11-22T01:45:32.740Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -2693,7 +2693,7 @@
       "name": "Defeated Circles",
       "position": 24,
       "publisher_id": "525b02eb-4e95-4ccd-80ca-cf60977d9a47",
-      "points": 3920,
+      "points": 3924,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 120012581,
@@ -2704,6 +2704,9 @@
         "NONG",
         "Circles",
         "Timings",
+        "Chokepoints",
+        "Unbalanced",
+        "Nerve Control",
         "Wave"
       ],
       "description": "A Nine Circles styled level which takes heavy inspiration from the \"You So Defeated\" challenges, being especially apparent in the level's timing-based segments and its song choice. The level is overall first-half heavy, though the difficulty does not step down much in the latter half, ending off on a dual wave and a spam corridor.",
@@ -3072,14 +3075,14 @@
       "name": "METROPOLIS",
       "position": 28,
       "publisher_id": "4e3d9678-dcfa-4f85-aeb4-dc059936ce77",
-      "points": 3789,
+      "points": 3790,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 144560194,
       "two_player": false,
       "tags": [
         "2.2",
-        "Long",
+        "Medium",
         "Timings",
         "Gimmicky",
         "Cube"
@@ -13129,6 +13132,7 @@
         "Clicksync",
         "Fast-Paced",
         "Timings",
+        "Learny",
         "High CPS",
         "Flow",
         "Cube",
@@ -13398,7 +13402,6 @@
         "1.9PS",
         "Medium",
         "Fast-Paced",
-        "Timings",
         "Chokepoints",
         "Unbalanced",
         "High CPS",
@@ -13496,7 +13499,7 @@
       ],
       "description": "Redecoration of the 1.9 styled level of the same name. The completely greyscale decoration and unnerving song makes for a generally unsettling experience. Also one of the shorter extremes on the list, being less than 45 seconds.",
       "song": null,
-      "edel_enjoyment": 44.4137931,
+      "edel_enjoyment": 45.93333333,
       "is_edel_pending": false,
       "gddl_tier": 34.6,
       "nlw_tier": null,
