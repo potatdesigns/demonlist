@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T03:19:49.580Z",
+  "generatedAt": "2026-11-23T13:48:02.129Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -326168,6 +326168,11 @@
         "date": "2026-11-23",
         "position": 769,
         "reason": "Moved down — COMA was placed at #499"
+      },
+      {
+        "date": "2026-11-23",
+        "position": 770,
+        "reason": "Moved down — Enamored was placed at #678"
       }
     ],
     "01e17fa2-f8e4-4639-b2db-3bac3101846a": [
@@ -368676,6 +368681,11 @@
         "date": "2026-11-23",
         "position": 1388,
         "reason": "Moved down — COMA was placed at #499"
+      },
+      {
+        "date": "2026-11-23",
+        "position": 1389,
+        "reason": "Moved down — Enamored was placed at #678"
       }
     ],
     "2b21bef2-3eba-489c-bac2-59ff8d74f0e1": [
@@ -426965,6 +426975,7 @@
       "3ec372e0-e0cf-49cd-bcab-bef8e41945fb",
       "1a846f78-002e-4ae2-a3da-0f14f1c1f3c6",
       "72134ba7-8852-4983-bcf9-c43aa0617fc5",
+      "e5469062-510c-4f2c-903c-25425519ec13",
       "42967603-65ed-4ae6-b773-a069425e1cf1",
       "1506061c-4fcb-4b79-bb59-677004bcc88e",
       "2cc1281f-6c10-4e49-a853-8fd9494fb19f",
@@ -430093,8 +430104,18 @@
       "3be678bf-a1cd-4269-89f3-8518678ede1e": "Dance Of All Demons",
       "9203bf8c-dcad-4c1b-b8ba-febdc4f8a57e": "Arctic Expedition",
       "c9d2cf48-316d-4ece-9d91-6b6975a3f2ea": "Roses",
-      "4fcc9778-1c2c-43c1-b3be-f7092a982c3d": "SHIP22"
+      "4fcc9778-1c2c-43c1-b3be-f7092a982c3d": "SHIP22",
+      "1cf7e679-4c25-479b-9a8f-c45e5c5048bf": "SOAP",
+      "19b44e84-fab8-4ad9-82a7-4034e614bbae": "Death by Glamour",
+      "d3a66a03-aca7-4402-b5a7-70b7cafbb4d5": "2MYCORE",
+      "8f017a00-83c8-4014-b950-b856161ce5c2": "shiny deoxys",
+      "665103ae-7397-40b7-82e7-76b0a55d53bb": "Through The Garden",
+      "b06f9b6f-d999-45dd-8697-b9e74b16c4ab": "R o s e",
+      "010d04fe-acb2-49e2-8ecb-35654433b500": "Limerence",
+      "a105c7d3-aec8-4e46-89a5-2b3cf82fca75": "PIXELATED KISSES",
+      "7241f71e-26ab-476d-9b45-d7840083fcdf": "RAZORBLADE",
+      "5095bed6-806c-4963-9b0d-d120e9a0e7f4": "Amok"
     },
-    "lastEventFingerprint": "2026-11-23T02:40:09.336938Z|6e43b247-2d5a-4939-aafa-e7e276536af3|{\"Placed\":{\"new_position\":499,\"status\":\"MainList\"}}"
+    "lastEventFingerprint": "2026-11-23T12:41:05.767367Z|e5469062-510c-4f2c-903c-25425519ec13|{\"Placed\":{\"new_position\":678,\"status\":\"MainList\"}}"
   }
 }
