@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:48:01.825Z",
+  "generatedAt": "2026-11-24T01:19:44.265Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -6971,7 +6971,7 @@
       "name": "Calibrate",
       "position": 66,
       "publisher_id": "91577fea-d9c1-48bd-8d5c-bf616fd9eb92",
-      "points": 2902,
+      "points": 2904,
       "status": "MainList",
       "requires_raw_footage": false,
       "level_id": 136981369,
@@ -6987,7 +6987,7 @@
         "Overall"
       ],
       "description": null,
-      "song": null,
+      "song": 878357,
       "edel_enjoyment": 78.06666667,
       "is_edel_pending": false,
       "gddl_tier": 37,
