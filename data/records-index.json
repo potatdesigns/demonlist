@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:52:15.341Z",
+  "generatedAt": "2026-11-25T01:51:12.067Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -32750,6 +32750,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 122,
+          "achievedAt": "2026-11-24T20:19:23Z",
+          "videoUrl": "https://www.youtube.com/watch?v=fC_9xfibpXc",
+          "verified": false
+        },
+        {
           "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
           "levelName": "Critical Heat",
           "position": 140,
@@ -40455,6 +40463,14 @@
           "position": 123,
           "achievedAt": "2026-09-04T02:21:04Z",
           "videoUrl": "https://www.youtube.com/watch?v=okKgRD_tx8Q",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 134,
+          "achievedAt": "2026-11-19T21:15:34Z",
+          "videoUrl": "https://www.youtube.com/watch?v=6SV7WPvh_eM",
           "verified": false
         },
         {
@@ -57810,7 +57826,7 @@
       ]
     },
     "48763677-ede8-448c-8cc9-ec7d117116b8": {
-      "name": "Teto テト",
+      "name": "重音テト",
       "levels": [
         {
           "levelId": "dee17e9e-bdfb-4183-a18b-894f24df5edf",
@@ -59739,6 +59755,19 @@
         }
       ]
     },
+    "4209572d-cdde-4e05-a640-a2f77f96f077": {
+      "name": "Lostkost",
+      "levels": [
+        {
+          "levelId": "d022317b-32cc-462b-98a1-9aa37a6c8431",
+          "levelName": "The Wonder of You",
+          "position": 120,
+          "achievedAt": "2026-11-23T21:25:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=kDsv4OeneI8",
+          "verified": false
+        }
+      ]
+    },
     "28c22fea-de75-444f-97dc-a412da8aba8e": {
       "name": "roboctopus09",
       "levels": [
@@ -61605,6 +61634,14 @@
           "position": 123,
           "achievedAt": "2026-10-04T18:26:16Z",
           "videoUrl": "https://www.youtube.com/watch?v=9vIr1ywOkF4",
+          "verified": false
+        },
+        {
+          "levelId": "da77ff62-f03a-40e5-a11c-4753ea7f568a",
+          "levelName": "Critical Heat",
+          "position": 140,
+          "achievedAt": "2026-11-24T06:04:29Z",
+          "videoUrl": "https://www.youtube.com/watch?v=EN0lXIgKiGw",
           "verified": false
         }
       ]
