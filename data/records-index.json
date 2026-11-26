@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T16:40:39.187Z",
+  "generatedAt": "2026-11-26T01:28:14.609Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -53076,6 +53076,14 @@
           "verified": false
         },
         {
+          "levelId": "6f662d8e-ce54-4d7d-855d-d8fef3d3d13a",
+          "levelName": "Sanctity",
+          "position": 122,
+          "achievedAt": "2026-11-25T18:55:16Z",
+          "videoUrl": "https://www.youtube.com/watch?v=u2XGeK0-nLM",
+          "verified": false
+        },
+        {
           "levelId": "e8324cab-fc88-47c0-993d-87ce9de64a00",
           "levelName": "paranoia (amplitron)",
           "position": 145,
@@ -55765,6 +55773,27 @@
           "position": 112,
           "achievedAt": "2026-11-19T05:05:39.647595Z",
           "videoUrl": "https://www.bilibili.com/video/BV1aEW96AEhg",
+          "verified": false
+        }
+      ]
+    },
+    "8db95627-8874-4761-8f93-5b90c213b300": {
+      "name": "Cabe",
+      "levels": [
+        {
+          "levelId": "994ebf0f-e54e-49e4-bb7d-24097535d19d",
+          "levelName": "Sonic Wave Infinity",
+          "position": 112,
+          "achievedAt": "2026-11-25T07:49:52Z",
+          "videoUrl": "https://www.youtube.com/watch?v=ebpvatkwh4Q",
+          "verified": false
+        },
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 134,
+          "achievedAt": "2026-10-09T04:27:07Z",
+          "videoUrl": "https://www.youtube.com/watch?v=sZxYBi-ZQOA",
           "verified": false
         }
       ]
@@ -65662,19 +65691,6 @@
           "position": 134,
           "achievedAt": "2026-10-08T05:25:54Z",
           "videoUrl": "https://www.youtube.com/watch?v=17iqEwkX2BI",
-          "verified": false
-        }
-      ]
-    },
-    "8db95627-8874-4761-8f93-5b90c213b300": {
-      "name": "Cabe",
-      "levels": [
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 134,
-          "achievedAt": "2026-10-09T04:27:07Z",
-          "videoUrl": "https://www.youtube.com/watch?v=sZxYBi-ZQOA",
           "verified": false
         }
       ]
