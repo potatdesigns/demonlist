@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:52:09.574Z",
+  "generatedAt": "2026-11-26T05:46:28.214Z",
   "levels": [
     {
       "id": "f3dd5ead-dda4-415c-affb-2308dd09a0d4",
@@ -3089,8 +3089,8 @@
       ],
       "description": null,
       "song": 114645,
-      "edel_enjoyment": null,
-      "is_edel_pending": false,
+      "edel_enjoyment": 100,
+      "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
       "publisher": {
@@ -6450,7 +6450,7 @@
       ],
       "description": null,
       "song": 10007171,
-      "edel_enjoyment": 85,
+      "edel_enjoyment": 57.5,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
@@ -13828,7 +13828,7 @@
       ],
       "description": null,
       "song": 1042067,
-      "edel_enjoyment": 60,
+      "edel_enjoyment": 75,
       "is_edel_pending": true,
       "gddl_tier": null,
       "nlw_tier": null,
