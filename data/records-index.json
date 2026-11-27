@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T01:25:40.294Z",
+  "generatedAt": "2026-11-27T15:59:30.847Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -7209,27 +7209,6 @@
           "position": 145,
           "achievedAt": "2026-06-25T15:29:36Z",
           "videoUrl": "https://www.youtube.com/watch?v=-4uZeeMhAzI",
-          "verified": false
-        }
-      ]
-    },
-    "e6e9249a-c6fd-4727-835f-62e38c441624": {
-      "name": "humptwe",
-      "levels": [
-        {
-          "levelId": "d6f7ba38-9787-42a2-acf2-4585e69cbb91",
-          "levelName": "Silent clubstep",
-          "position": 17,
-          "achievedAt": "2026-11-12T12:36:45Z",
-          "videoUrl": "https://www.youtube.com/watch?v=1nl_L0n0CxQ",
-          "verified": false
-        },
-        {
-          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
-          "levelName": "UNKNOWN",
-          "position": 134,
-          "achievedAt": "2026-03-12T03:29:21Z",
-          "videoUrl": "https://www.youtube.com/watch?v=udvz6OpYKcE",
           "verified": false
         }
       ]
@@ -63774,7 +63753,7 @@
       ]
     },
     "1d491700-f8b8-4490-bd9c-4cbe205ac318": {
-      "name": "CalleGMDstreeT",
+      "name": "CalleStreet",
       "levels": [
         {
           "levelId": "f8b060e5-3bda-43ec-ba57-1b439863caa5",
@@ -65109,6 +65088,19 @@
           "position": 134,
           "achievedAt": "2026-02-14T19:29:51Z",
           "videoUrl": "https://www.youtube.com/watch?v=FjSaXOYACGY",
+          "verified": false
+        }
+      ]
+    },
+    "e6e9249a-c6fd-4727-835f-62e38c441624": {
+      "name": "humptwe",
+      "levels": [
+        {
+          "levelId": "20c0ea80-99d8-4474-87c8-2bd814a1ea73",
+          "levelName": "UNKNOWN",
+          "position": 134,
+          "achievedAt": "2026-03-12T03:29:21Z",
+          "videoUrl": "https://www.youtube.com/watch?v=udvz6OpYKcE",
           "verified": false
         }
       ]
