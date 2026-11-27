@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T16:14:32.860Z",
+  "generatedAt": "2026-11-27T01:25:40.294Z",
   "players": {
     "07b9abc9-2273-47bf-b462-22c2b2b213ee": {
       "name": "Doggie",
@@ -9204,6 +9204,14 @@
           "verified": false
         },
         {
+          "levelId": "4ae11fe6-fd93-4a4b-8481-3048d3edf736",
+          "levelName": "Acheron",
+          "position": 27,
+          "achievedAt": "2026-11-24T01:19:44Z",
+          "videoUrl": "https://www.youtube.com/watch?v=LgTGPBZKrX0",
+          "verified": false
+        },
+        {
           "levelId": "e564dff8-304b-401d-9376-63528b7ba279",
           "levelName": "Tunnel of Despair",
           "position": 32,
@@ -17773,7 +17781,7 @@
       ]
     },
     "c1befcad-ab3e-450c-a9a2-a174b1eb29f5": {
-      "name": "future",
+      "name": "slaylarius",
       "levels": [
         {
           "levelId": "3d351b86-3762-4eee-95aa-8dbd16189531",
@@ -35082,7 +35090,7 @@
       ]
     },
     "b32a84d8-0684-4bf3-8d6f-8cd88f3641a8": {
-      "name": "zizO",
+      "name": "zizo",
       "levels": [
         {
           "levelId": "7081880b-fe8c-4d3f-8557-a895b7aee521",
@@ -58921,6 +58929,19 @@
         }
       ]
     },
+    "442678a1-d7c0-4189-b3fb-556e4939633a": {
+      "name": "Zqchi",
+      "levels": [
+        {
+          "levelId": "ab157b89-82de-436e-817a-24e4ad8a38ba",
+          "levelName": "Jigsaw",
+          "position": 115,
+          "achievedAt": "2026-11-26T15:25:22Z",
+          "videoUrl": "https://www.youtube.com/watch?v=IY0y6lmRyb0",
+          "verified": false
+        }
+      ]
+    },
     "a5515c19-6e67-437a-a9c6-724a6fc6e68f": {
       "name": "drema",
       "levels": [
@@ -64534,19 +64555,6 @@
           "position": 130,
           "achievedAt": "2026-10-25T13:52:55Z",
           "videoUrl": "https://www.youtube.com/watch?v=ePL1JPIC0BQ",
-          "verified": false
-        }
-      ]
-    },
-    "fe2d574d-792f-4596-99d5-49b0fea1c2d3": {
-      "name": "Sleemy",
-      "levels": [
-        {
-          "levelId": "aa141ae4-eb2e-4fa2-a26b-a244d070e54b",
-          "levelName": "Verdant Landscape",
-          "position": 130,
-          "achievedAt": "2026-11-22T15:48:00Z",
-          "videoUrl": "https://www.youtube.com/watch?v=9T7KJAJIQZ0",
           "verified": false
         }
       ]
