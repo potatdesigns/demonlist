@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T18:29:56.633Z",
+  "generatedAt": "2026-11-28T11:02:26.835Z",
   "history": {
     "4ae11fe6-fd93-4a4b-8481-3048d3edf736": [
       {
@@ -430653,8 +430653,10 @@
       "a105c7d3-aec8-4e46-89a5-2b3cf82fca75": "PIXELATED KISSES",
       "7241f71e-26ab-476d-9b45-d7840083fcdf": "RAZORBLADE",
       "5095bed6-806c-4963-9b0d-d120e9a0e7f4": "Amok",
-      "ca7ed15f-97a3-4650-bf4a-66c0e4558509": "tunnel rat"
+      "ca7ed15f-97a3-4650-bf4a-66c0e4558509": "tunnel rat",
+      "7b027458-cf0a-4f52-8bec-2dc03ab3b2f7": "Bisharp Minor",
+      "74b0d351-3c2c-401b-968b-55ab157382a5": "Hyper Ascend"
     },
-    "lastEventFingerprint": "2026-11-27T16:47:43.824171Z|48ef05df-7d3d-4653-8fdd-8cc67917c3b2|{\"Raised\":{\"new_position\":140,\"old_position\":149}}"
+    "lastEventFingerprint": "2026-11-28T04:59:34.039303Z|74b0d351-3c2c-401b-968b-55ab157382a5|\"Pending\""
   }
 }
